@@ -1,0 +1,12 @@
+[
+  {
+    "idBloco": 23,
+    "IdRegiao": 35,
+    "NomeRegiao": "Serra Talhada"
+  },
+  {
+    "idBloco": 25,
+    "IdRegiao": 37,
+    "NomeRegiao": "Região Treinamento 2"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "idBloco": 40,
+    "NomeBloco": "Abolição",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 41,
+    "NomeBloco": "Alcântara",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 42,
+    "NomeBloco": "Barra Mansa",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 43,
+    "NomeBloco": "Cabo Frio",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 44,
+    "NomeBloco": "Campo Grande",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 45,
+    "NomeBloco": "Caxias",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 46,
+    "NomeBloco": "Del Castilho",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 47,
+    "NomeBloco": "Lote XV",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 48,
+    "NomeBloco": "Macaé",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 49,
+    "NomeBloco": "Niterói",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 50,
+    "NomeBloco": "Norte",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 51,
+    "NomeBloco": "Nova Iguaçu",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 52,
+    "NomeBloco": "Petrópolis",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 53,
+    "NomeBloco": "Piabetá",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 54,
+    "NomeBloco": "Realengo",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 55,
+    "NomeBloco": "Recreio",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 56,
+    "NomeBloco": "Santa Cruz",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 57,
+    "NomeBloco": "Sul",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 58,
+    "NomeBloco": "Taquara",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 141,
+    "NomeBloco": "Realengo",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 142,
+    "NomeBloco": "Recreio ",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 143,
+    "NomeBloco": "Macaé ",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 149,
+    "NomeBloco": "Santa Cruz",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 150,
+    "NomeBloco": "Sul",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 151,
+    "NomeBloco": "Piabetá ",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 152,
+    "NomeBloco": "Honório Gurgel",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 153,
+    "NomeBloco": "Inhaúma",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 156,
+    "NomeBloco": "Norte",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 157,
+    "NomeBloco": "Norte",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 261,
+    "NomeBloco": "santa cruz",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 262,
+    "NomeBloco": "Santa Cruz",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 298,
+    "NomeBloco": "ALCANTARA",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 299,
+    "NomeBloco": "SANTA CRUZ",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 304,
+    "NomeBloco": "BARRA MANSA ",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 308,
+    "NomeBloco": "Santa Cruz",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 309,
+    "NomeBloco": "Santa Cruz",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 314,
+    "NomeBloco": "NOVA IGUACU",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 315,
+    "NomeBloco": "NOVA IGUACU",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 316,
+    "NomeBloco": "DEL CASTILHO",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 318,
+    "NomeBloco": "lote",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 329,
+    "NomeBloco": "Petrópolis",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 330,
+    "NomeBloco": "Petrópolis",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 331,
+    "NomeBloco": "Petrópolis",
+    "IdEstadoBloco": 47
+  },
+  {
+    "idBloco": 337,
+    "NomeBloco": "Petrópolis",
+    "IdEstadoBloco": 47
+  }
+]

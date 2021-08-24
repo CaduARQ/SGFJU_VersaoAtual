@@ -1,0 +1,597 @@
+[
+  {
+    "idBloco": 160,
+    "IdRegiao": 1363,
+    "NomeRegiao": "Região Azenha"
+  },
+  {
+    "idBloco": 160,
+    "IdRegiao": 1364,
+    "NomeRegiao": "Região Cavalhada"
+  },
+  {
+    "idBloco": 160,
+    "IdRegiao": 1365,
+    "NomeRegiao": "Região Ipanema"
+  },
+  {
+    "idBloco": 160,
+    "IdRegiao": 1366,
+    "NomeRegiao": "Região Cristal"
+  },
+  {
+    "idBloco": 160,
+    "IdRegiao": 1367,
+    "NomeRegiao": "Região Cristo Redentor"
+  },
+  {
+    "idBloco": 160,
+    "IdRegiao": 1368,
+    "NomeRegiao": "Região Viamão Centro"
+  },
+  {
+    "idBloco": 160,
+    "IdRegiao": 1369,
+    "NomeRegiao": "Região Alto Petrópolis"
+  },
+  {
+    "idBloco": 160,
+    "IdRegiao": 1866,
+    "NomeRegiao": "ana "
+  },
+  {
+    "idBloco": 160,
+    "IdRegiao": 2044,
+    "NomeRegiao": "Lajeado"
+  },
+  {
+    "idBloco": 161,
+    "IdRegiao": 1671,
+    "NomeRegiao": "Região Alvorada"
+  },
+  {
+    "idBloco": 161,
+    "IdRegiao": 1672,
+    "NomeRegiao": "Região Jardim Algarve"
+  },
+  {
+    "idBloco": 161,
+    "IdRegiao": 1673,
+    "NomeRegiao": "Região Sarandi"
+  },
+  {
+    "idBloco": 161,
+    "IdRegiao": 1674,
+    "NomeRegiao": "Região Leopoldina"
+  },
+  {
+    "idBloco": 161,
+    "IdRegiao": 1675,
+    "NomeRegiao": "Região Parque dos Maias"
+  },
+  {
+    "idBloco": 161,
+    "IdRegiao": 1676,
+    "NomeRegiao": "Região Passo das Pedras"
+  },
+  {
+    "idBloco": 161,
+    "IdRegiao": 2051,
+    "NomeRegiao": "Região Lageado"
+  },
+  {
+    "idBloco": 161,
+    "IdRegiao": 2226,
+    "NomeRegiao": "morro santana"
+  },
+  {
+    "idBloco": 161,
+    "IdRegiao": 2227,
+    "NomeRegiao": "passo das pedras"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 1664,
+    "NomeRegiao": "Região Canoas"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 1665,
+    "NomeRegiao": "Região Niterói"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 1666,
+    "NomeRegiao": "Região Rio Branco"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 1667,
+    "NomeRegiao": "Região Guajuviras"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 1668,
+    "NomeRegiao": "Região Boqueirão"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 1669,
+    "NomeRegiao": "Região Mathias 2"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 1670,
+    "NomeRegiao": "Região Mathias  Florianópolis"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 2037,
+    "NomeRegiao": "tramandaí"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 2041,
+    "NomeRegiao": "Niterói"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 2042,
+    "NomeRegiao": "Niterói"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 2046,
+    "NomeRegiao": "rio branco"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 2047,
+    "NomeRegiao": "regiao rio branco "
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 2048,
+    "NomeRegiao": "regiao rio branco "
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 2049,
+    "NomeRegiao": "regiao"
+  },
+  {
+    "idBloco": 162,
+    "IdRegiao": 2050,
+    "NomeRegiao": "regiao rio branco "
+  },
+  {
+    "idBloco": 163,
+    "IdRegiao": 1677,
+    "NomeRegiao": "Região Partenon"
+  },
+  {
+    "idBloco": 163,
+    "IdRegiao": 1678,
+    "NomeRegiao": "Região Bom Jesus"
+  },
+  {
+    "idBloco": 163,
+    "IdRegiao": 1679,
+    "NomeRegiao": "Região Mapa"
+  },
+  {
+    "idBloco": 163,
+    "IdRegiao": 1680,
+    "NomeRegiao": "Região Lomba do Pinheiro"
+  },
+  {
+    "idBloco": 163,
+    "IdRegiao": 1681,
+    "NomeRegiao": "Região Restinga 2"
+  },
+  {
+    "idBloco": 163,
+    "IdRegiao": 1682,
+    "NomeRegiao": "Região Restinga 2"
+  },
+  {
+    "idBloco": 163,
+    "IdRegiao": 1683,
+    "NomeRegiao": "Região Viamão 40"
+  },
+  {
+    "idBloco": 163,
+    "IdRegiao": 2039,
+    "NomeRegiao": "VIAMÃO"
+  },
+  {
+    "idBloco": 164,
+    "IdRegiao": 1645,
+    "NomeRegiao": "Região Gravataí"
+  },
+  {
+    "idBloco": 164,
+    "IdRegiao": 1646,
+    "NomeRegiao": "Região Morada do Vale"
+  },
+  {
+    "idBloco": 164,
+    "IdRegiao": 1647,
+    "NomeRegiao": "Região Fátima"
+  },
+  {
+    "idBloco": 164,
+    "IdRegiao": 1648,
+    "NomeRegiao": "Região Cachoerinha"
+  },
+  {
+    "idBloco": 164,
+    "IdRegiao": 1649,
+    "NomeRegiao": "Região Gravataí 69"
+  },
+  {
+    "idBloco": 164,
+    "IdRegiao": 1650,
+    "NomeRegiao": "Região Gravataí 79"
+  },
+  {
+    "idBloco": 165,
+    "IdRegiao": 1370,
+    "NomeRegiao": "Região Uruguaiana"
+  },
+  {
+    "idBloco": 165,
+    "IdRegiao": 1371,
+    "NomeRegiao": "Região Quaraí"
+  },
+  {
+    "idBloco": 165,
+    "IdRegiao": 1372,
+    "NomeRegiao": "Região Alegrete"
+  },
+  {
+    "idBloco": 165,
+    "IdRegiao": 1373,
+    "NomeRegiao": "Região São Borja"
+  },
+  {
+    "idBloco": 166,
+    "IdRegiao": 1684,
+    "NomeRegiao": "Região Gramado"
+  },
+  {
+    "idBloco": 166,
+    "IdRegiao": 1685,
+    "NomeRegiao": "Região Taquara"
+  },
+  {
+    "idBloco": 166,
+    "IdRegiao": 1686,
+    "NomeRegiao": "Região Canela"
+  },
+  {
+    "idBloco": 166,
+    "IdRegiao": 1687,
+    "NomeRegiao": "Região Parobé"
+  },
+  {
+    "idBloco": 167,
+    "IdRegiao": 2026,
+    "NomeRegiao": "Região Capão da Canoa"
+  },
+  {
+    "idBloco": 167,
+    "IdRegiao": 2027,
+    "NomeRegiao": "Região Torres"
+  },
+  {
+    "idBloco": 167,
+    "IdRegiao": 2028,
+    "NomeRegiao": "Região Torres"
+  },
+  {
+    "idBloco": 167,
+    "IdRegiao": 2029,
+    "NomeRegiao": "Região Tramandaí"
+  },
+  {
+    "idBloco": 167,
+    "IdRegiao": 2030,
+    "NomeRegiao": "Região Cidreira"
+  },
+  {
+    "idBloco": 167,
+    "IdRegiao": 2031,
+    "NomeRegiao": "Região Osório"
+  },
+  {
+    "idBloco": 167,
+    "IdRegiao": 2036,
+    "NomeRegiao": "TORRES"
+  },
+  {
+    "idBloco": 168,
+    "IdRegiao": 1658,
+    "NomeRegiao": "Região Santa Maria"
+  },
+  {
+    "idBloco": 168,
+    "IdRegiao": 1659,
+    "NomeRegiao": "Região Camobi"
+  },
+  {
+    "idBloco": 168,
+    "IdRegiao": 1660,
+    "NomeRegiao": "Região Prado"
+  },
+  {
+    "idBloco": 168,
+    "IdRegiao": 1661,
+    "NomeRegiao": "Região São Gabriel"
+  },
+  {
+    "idBloco": 168,
+    "IdRegiao": 1662,
+    "NomeRegiao": "Região Cruz Alta"
+  },
+  {
+    "idBloco": 168,
+    "IdRegiao": 1663,
+    "NomeRegiao": "Região Santiago"
+  },
+  {
+    "idBloco": 169,
+    "IdRegiao": 2124,
+    "NomeRegiao": "Região Santa Cruz"
+  },
+  {
+    "idBloco": 169,
+    "IdRegiao": 2125,
+    "NomeRegiao": "Região Cachoeira do Sul"
+  },
+  {
+    "idBloco": 169,
+    "IdRegiao": 2126,
+    "NomeRegiao": "Região Venâncio Aires"
+  },
+  {
+    "idBloco": 169,
+    "IdRegiao": 2127,
+    "NomeRegiao": "Região Rio Pardo"
+  },
+  {
+    "idBloco": 170,
+    "IdRegiao": 1641,
+    "NomeRegiao": "Região Guaíba"
+  },
+  {
+    "idBloco": 170,
+    "IdRegiao": 1642,
+    "NomeRegiao": "Região Camaquã"
+  },
+  {
+    "idBloco": 170,
+    "IdRegiao": 1643,
+    "NomeRegiao": "Região Charqueadas"
+  },
+  {
+    "idBloco": 170,
+    "IdRegiao": 1644,
+    "NomeRegiao": "Região Eldorado"
+  },
+  {
+    "idBloco": 170,
+    "IdRegiao": 2053,
+    "NomeRegiao": "GUAIIBA"
+  },
+  {
+    "idBloco": 171,
+    "IdRegiao": 1598,
+    "NomeRegiao": "Sede São Leopoldo"
+  },
+  {
+    "idBloco": 171,
+    "IdRegiao": 1599,
+    "NomeRegiao": "Região Portão"
+  },
+  {
+    "idBloco": 171,
+    "IdRegiao": 1600,
+    "NomeRegiao": "Região Sapucaia"
+  },
+  {
+    "idBloco": 171,
+    "IdRegiao": 1601,
+    "NomeRegiao": "Região Walderez"
+  },
+  {
+    "idBloco": 171,
+    "IdRegiao": 1602,
+    "NomeRegiao": "Região Montenegro"
+  },
+  {
+    "idBloco": 172,
+    "IdRegiao": 1605,
+    "NomeRegiao": "Região Novo Hamburgo"
+  },
+  {
+    "idBloco": 172,
+    "IdRegiao": 1606,
+    "NomeRegiao": "Região Sapiranga"
+  },
+  {
+    "idBloco": 172,
+    "IdRegiao": 1607,
+    "NomeRegiao": "Região Campo Bom"
+  },
+  {
+    "idBloco": 172,
+    "IdRegiao": 1608,
+    "NomeRegiao": "Região Estância Velha"
+  },
+  {
+    "idBloco": 172,
+    "IdRegiao": 2035,
+    "NomeRegiao": "Novo  hamburgo"
+  },
+  {
+    "idBloco": 172,
+    "IdRegiao": 2038,
+    "NomeRegiao": "sede novo hamburgo"
+  },
+  {
+    "idBloco": 172,
+    "IdRegiao": 2040,
+    "NomeRegiao": "Novo Hamburgo"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1609,
+    "NomeRegiao": "Região Pelotas"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1610,
+    "NomeRegiao": "Região Areal"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1611,
+    "NomeRegiao": "Região Fragata"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1612,
+    "NomeRegiao": "Região Fragata"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1613,
+    "NomeRegiao": "Região Capão do Leão"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1614,
+    "NomeRegiao": "Região Canguçu"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1615,
+    "NomeRegiao": "Região Morro Redondo"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1616,
+    "NomeRegiao": "Região Jaguarão "
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1617,
+    "NomeRegiao": "Região Hidráulica"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1618,
+    "NomeRegiao": "Região Hidráulica"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1619,
+    "NomeRegiao": "Região Rio Grande"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1620,
+    "NomeRegiao": "Região Junção"
+  },
+  {
+    "idBloco": 173,
+    "IdRegiao": 1621,
+    "NomeRegiao": "Região Três Vendas"
+  },
+  {
+    "idBloco": 174,
+    "IdRegiao": 1603,
+    "NomeRegiao": "Região Bagé"
+  },
+  {
+    "idBloco": 174,
+    "IdRegiao": 1604,
+    "NomeRegiao": "Região Santana do Livramento"
+  },
+  {
+    "idBloco": 175,
+    "IdRegiao": 806,
+    "NomeRegiao": "Região Caxias"
+  },
+  {
+    "idBloco": 175,
+    "IdRegiao": 807,
+    "NomeRegiao": "Região São José"
+  },
+  {
+    "idBloco": 175,
+    "IdRegiao": 808,
+    "NomeRegiao": "Região Desvio Rizzo"
+  },
+  {
+    "idBloco": 175,
+    "IdRegiao": 809,
+    "NomeRegiao": "Região Farroupilha"
+  },
+  {
+    "idBloco": 175,
+    "IdRegiao": 810,
+    "NomeRegiao": "Região Bento Gonçalves"
+  },
+  {
+    "idBloco": 175,
+    "IdRegiao": 811,
+    "NomeRegiao": "Região Vacarias"
+  },
+  {
+    "idBloco": 176,
+    "IdRegiao": 1651,
+    "NomeRegiao": "Região Passo Fundo"
+  },
+  {
+    "idBloco": 176,
+    "IdRegiao": 1652,
+    "NomeRegiao": "Região Passo Carazinho"
+  },
+  {
+    "idBloco": 176,
+    "IdRegiao": 1653,
+    "NomeRegiao": "Região Passo Erechim"
+  },
+  {
+    "idBloco": 176,
+    "IdRegiao": 1654,
+    "NomeRegiao": "Região Erechim"
+  },
+  {
+    "idBloco": 176,
+    "IdRegiao": 1655,
+    "NomeRegiao": "Região Santa Rosa"
+  },
+  {
+    "idBloco": 176,
+    "IdRegiao": 1656,
+    "NomeRegiao": "Região Ijuí"
+  },
+  {
+    "idBloco": 176,
+    "IdRegiao": 1657,
+    "NomeRegiao": "Região Frederico Westplahen"
+  },
+  {
+    "idBloco": 177,
+    "IdRegiao": 1838,
+    "NomeRegiao": "Região Catedral"
+  },
+  {
+    "idBloco": 177,
+    "IdRegiao": 2052,
+    "NomeRegiao": "central"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "idBloco": 27,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 6
+  }
+]

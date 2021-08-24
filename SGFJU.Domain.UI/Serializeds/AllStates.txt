@@ -1,0 +1,142 @@
+[
+  {
+    "NomeEstado": "S�o Paulo",
+    "SiglaEstado": "SP",
+    "Id": 28
+  },
+  {
+    "NomeEstado": "Acre",
+    "SiglaEstado": "AC",
+    "Id": 29
+  },
+  {
+    "NomeEstado": "Alagoas",
+    "SiglaEstado": "AL",
+    "Id": 30
+  },
+  {
+    "NomeEstado": "Amapá",
+    "SiglaEstado": "AP",
+    "Id": 31
+  },
+  {
+    "NomeEstado": "Amazonas",
+    "SiglaEstado": "AM",
+    "Id": 32
+  },
+  {
+    "NomeEstado": "Bahia",
+    "SiglaEstado": "BA",
+    "Id": 33
+  },
+  {
+    "NomeEstado": "Ceará",
+    "SiglaEstado": "CE",
+    "Id": 34
+  },
+  {
+    "NomeEstado": "Distrito Federal",
+    "SiglaEstado": "DF",
+    "Id": 35
+  },
+  {
+    "NomeEstado": "Espírito Santo",
+    "SiglaEstado": "ES",
+    "Id": 36
+  },
+  {
+    "NomeEstado": "Goiás",
+    "SiglaEstado": "GO",
+    "Id": 37
+  },
+  {
+    "NomeEstado": "Maranhão",
+    "SiglaEstado": "MA",
+    "Id": 38
+  },
+  {
+    "NomeEstado": "Mato Grosso",
+    "SiglaEstado": "MT",
+    "Id": 39
+  },
+  {
+    "NomeEstado": "Mato Grosso Dos Sul",
+    "SiglaEstado": "MS",
+    "Id": 40
+  },
+  {
+    "NomeEstado": "Minas Gerais",
+    "SiglaEstado": "MG",
+    "Id": 41
+  },
+  {
+    "NomeEstado": "Pará",
+    "SiglaEstado": "PA",
+    "Id": 42
+  },
+  {
+    "NomeEstado": "Paraíba",
+    "SiglaEstado": "PB",
+    "Id": 43
+  },
+  {
+    "NomeEstado": "Paraná",
+    "SiglaEstado": "PR",
+    "Id": 44
+  },
+  {
+    "NomeEstado": "Pernambuco",
+    "SiglaEstado": "PE",
+    "Id": 45
+  },
+  {
+    "NomeEstado": "Piauí",
+    "SiglaEstado": "PI",
+    "Id": 46
+  },
+  {
+    "NomeEstado": "Rio de Janeiro",
+    "SiglaEstado": "RJ",
+    "Id": 47
+  },
+  {
+    "NomeEstado": "Rio Grande do Norte",
+    "SiglaEstado": "RN",
+    "Id": 48
+  },
+  {
+    "NomeEstado": "Rio Grande do Sul",
+    "SiglaEstado": "RS",
+    "Id": 49
+  },
+  {
+    "NomeEstado": "Rondônia",
+    "SiglaEstado": "RO",
+    "Id": 50
+  },
+  {
+    "NomeEstado": "Roraima",
+    "SiglaEstado": "RR",
+    "Id": 51
+  },
+  {
+    "NomeEstado": "Santa Catarina",
+    "SiglaEstado": "SC",
+    "Id": 52
+  },
+  {
+    "NomeEstado": "Sergipe",
+    "SiglaEstado": "SE",
+    "Id": 53
+  },
+  {
+    "NomeEstado": "Tocantins",
+    "SiglaEstado": "TO",
+    "Id": 54
+  },
+  {
+    "NomeEstado": "Campos",
+    "SiglaEstado": "CA",
+    "Id": 55
+  }
+]

@@ -1,0 +1,950 @@
+[
+  {
+    "IdEstado": 32,
+    "IdRegiao": 522,
+    "IdIgreja": 1962,
+    "NomeIgreja": "Sede Estadual"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 618,
+    "IdIgreja": 1937,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 620,
+    "IdIgreja": 2095,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 620,
+    "IdIgreja": 2130,
+    "NomeIgreja": "Duque de Caxias"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 621,
+    "IdIgreja": 1945,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 621,
+    "IdIgreja": 1946,
+    "NomeIgreja": "Vale do Amanhecer"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 623,
+    "IdIgreja": 2100,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 623,
+    "IdIgreja": 2101,
+    "NomeIgreja": "Colônia Oliveira Machado"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 623,
+    "IdIgreja": 2102,
+    "NomeIgreja": "Santa Luzia"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 625,
+    "IdIgreja": 2103,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 626,
+    "IdIgreja": 2104,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 627,
+    "IdIgreja": 2111,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 627,
+    "IdIgreja": 2112,
+    "NomeIgreja": "Japiim 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 628,
+    "IdIgreja": 2114,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 629,
+    "IdIgreja": 2116,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 629,
+    "IdIgreja": 2117,
+    "NomeIgreja": "Petropólis 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 629,
+    "IdIgreja": 2118,
+    "NomeIgreja": "Jardim Petropólis"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 631,
+    "IdIgreja": 2120,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 632,
+    "IdIgreja": 2148,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 633,
+    "IdIgreja": 2149,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 633,
+    "IdIgreja": 2150,
+    "NomeIgreja": "Beija-Flor"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 633,
+    "IdIgreja": 2151,
+    "NomeIgreja": "São Judas"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 634,
+    "IdIgreja": 2156,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 634,
+    "IdIgreja": 2157,
+    "NomeIgreja": "Vila Amazonas"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 634,
+    "IdIgreja": 2158,
+    "NomeIgreja": "Bairro da União"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 748,
+    "IdIgreja": 2055,
+    "NomeIgreja": "Zumbi"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 748,
+    "IdIgreja": 2056,
+    "NomeIgreja": "Nova Luz"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 748,
+    "IdIgreja": 2057,
+    "NomeIgreja": "Colônia Antônio Aleixo"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 748,
+    "IdIgreja": 2196,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 750,
+    "IdIgreja": 2188,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 750,
+    "IdIgreja": 2189,
+    "NomeIgreja": "São José 3 "
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 750,
+    "IdIgreja": 2190,
+    "NomeIgreja": "Novo Reino"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 750,
+    "IdIgreja": 2191,
+    "NomeIgreja": "Tancredo Neves"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 750,
+    "IdIgreja": 2192,
+    "NomeIgreja": "São José dos Campos"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 751,
+    "IdIgreja": 2209,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 752,
+    "IdIgreja": 2230,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 752,
+    "IdIgreja": 2231,
+    "NomeIgreja": "Jardim Aleixo"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 752,
+    "IdIgreja": 2232,
+    "NomeIgreja": "Coroado 1"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 753,
+    "IdIgreja": 2239,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 753,
+    "IdIgreja": 2240,
+    "NomeIgreja": "Armando Mendes 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 753,
+    "IdIgreja": 2241,
+    "NomeIgreja": "Sharp"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 754,
+    "IdIgreja": 2267,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 754,
+    "IdIgreja": 2268,
+    "NomeIgreja": "Nova Floresta"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 754,
+    "IdIgreja": 2269,
+    "NomeIgreja": "Itaúba"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 754,
+    "IdIgreja": 2270,
+    "NomeIgreja": "Jorge Teixeira 3"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 754,
+    "IdIgreja": 2271,
+    "NomeIgreja": "Gilberto Mestrinho"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 755,
+    "IdIgreja": 2277,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 755,
+    "IdIgreja": 2278,
+    "NomeIgreja": "Nova Vitória"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 756,
+    "IdIgreja": 2288,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 757,
+    "IdIgreja": 2295,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 757,
+    "IdIgreja": 2296,
+    "NomeIgreja": "João Paulo 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 757,
+    "IdIgreja": 2297,
+    "NomeIgreja": "Santa Inês "
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 758,
+    "IdIgreja": 2303,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 759,
+    "IdIgreja": 2306,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 759,
+    "IdIgreja": 2307,
+    "NomeIgreja": "Jorge Teixeira 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 763,
+    "IdIgreja": 2197,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 763,
+    "IdIgreja": 2198,
+    "NomeIgreja": "Florestal 1"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 764,
+    "IdIgreja": 2207,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 764,
+    "IdIgreja": 2208,
+    "NomeIgreja": "Santa Etelvina"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 765,
+    "IdIgreja": 2210,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 765,
+    "IdIgreja": 2211,
+    "NomeIgreja": "Vitória Régia"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 765,
+    "IdIgreja": 2212,
+    "NomeIgreja": "Areal"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 766,
+    "IdIgreja": 2217,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 766,
+    "IdIgreja": 2218,
+    "NomeIgreja": "União da Vitória"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 766,
+    "IdIgreja": 2219,
+    "NomeIgreja": "Lagoa Azul"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 766,
+    "IdIgreja": 2220,
+    "NomeIgreja": "Jesus Me Deu"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 767,
+    "IdIgreja": 2224,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 767,
+    "IdIgreja": 2225,
+    "NomeIgreja": "Novo Israel 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 767,
+    "IdIgreja": 2226,
+    "NomeIgreja": "Campos Sales"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 767,
+    "IdIgreja": 2227,
+    "NomeIgreja": "Parque Riachuelo"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 768,
+    "IdIgreja": 2228,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 768,
+    "IdIgreja": 2229,
+    "NomeIgreja": "Gustavo Nascimento"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 769,
+    "IdIgreja": 2233,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 770,
+    "IdIgreja": 2234,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 770,
+    "IdIgreja": 2235,
+    "NomeIgreja": "Canaranas"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 770,
+    "IdIgreja": 2236,
+    "NomeIgreja": "Aliança com Deus"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 771,
+    "IdIgreja": 2237,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 771,
+    "IdIgreja": 2238,
+    "NomeIgreja": "Nova Cidade 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 772,
+    "IdIgreja": 2250,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 772,
+    "IdIgreja": 2251,
+    "NomeIgreja": "IURD 28"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 773,
+    "IdIgreja": 2255,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 773,
+    "IdIgreja": 2256,
+    "NomeIgreja": "Terra Nova 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 773,
+    "IdIgreja": 2257,
+    "NomeIgreja": "Terra Nova 3"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 773,
+    "IdIgreja": 2258,
+    "NomeIgreja": "Monte Pascoal"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 773,
+    "IdIgreja": 2259,
+    "NomeIgreja": "Piorini"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 773,
+    "IdIgreja": 2260,
+    "NomeIgreja": "Santa Marta"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 773,
+    "IdIgreja": 2261,
+    "NomeIgreja": "Florestal 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 774,
+    "IdIgreja": 2262,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 774,
+    "IdIgreja": 2263,
+    "NomeIgreja": "Riacho Doce"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 775,
+    "IdIgreja": 2272,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 775,
+    "IdIgreja": 2273,
+    "NomeIgreja": "Cidade Nova 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 775,
+    "IdIgreja": 2274,
+    "NomeIgreja": "Cidade Nova 3"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 776,
+    "IdIgreja": 2275,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 776,
+    "IdIgreja": 2276,
+    "NomeIgreja": "Mundo Novo"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 749,
+    "IdIgreja": 2058,
+    "NomeIgreja": "Alvorada 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 749,
+    "IdIgreja": 2059,
+    "NomeIgreja": "Alvorada 3"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 749,
+    "IdIgreja": 2060,
+    "NomeIgreja": "Dom Pedro"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 749,
+    "IdIgreja": 2772,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 760,
+    "IdIgreja": 2178,
+    "NomeIgreja": "Compensa 4"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 760,
+    "IdIgreja": 2179,
+    "NomeIgreja": "Ponta Negra"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 760,
+    "IdIgreja": 2180,
+    "NomeIgreja": "Vila Marinho"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 760,
+    "IdIgreja": 2181,
+    "NomeIgreja": "Glória"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 760,
+    "IdIgreja": 2182,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 760,
+    "IdIgreja": 2183,
+    "NomeIgreja": "Compensa 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 760,
+    "IdIgreja": 2187,
+    "NomeIgreja": "Compensa 6"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 760,
+    "IdIgreja": 2195,
+    "NomeIgreja": "Vila da Prata"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 761,
+    "IdIgreja": 4718,
+    "NomeIgreja": "Nova Esperança"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 761,
+    "IdIgreja": 4961,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 762,
+    "IdIgreja": 4719,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 762,
+    "IdIgreja": 4720,
+    "NomeIgreja": "Ajuricaba"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 777,
+    "IdIgreja": 3783,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 778,
+    "IdIgreja": 4934,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 779,
+    "IdIgreja": 5697,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 780,
+    "IdIgreja": 4938,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 781,
+    "IdIgreja": 4958,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 781,
+    "IdIgreja": 4959,
+    "NomeIgreja": "Bairro da Paz"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 1638,
+    "IdIgreja": 4960,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 844,
+    "IdIgreja": 2686,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 844,
+    "IdIgreja": 2687,
+    "NomeIgreja": "Cacau Pirera"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 844,
+    "IdIgreja": 2688,
+    "NomeIgreja": "Morada do Sol"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 844,
+    "IdIgreja": 2689,
+    "NomeIgreja": "Mutirão do Cacau"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 845,
+    "IdIgreja": 2691,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 845,
+    "IdIgreja": 2692,
+    "NomeIgreja": "Itapiranga"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 845,
+    "IdIgreja": 2693,
+    "NomeIgreja": "Jardim Lorena"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 845,
+    "IdIgreja": 2694,
+    "NomeIgreja": "Uricurituba"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 845,
+    "IdIgreja": 2695,
+    "NomeIgreja": "Silves"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 846,
+    "IdIgreja": 2699,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 846,
+    "IdIgreja": 2700,
+    "NomeIgreja": "Careiro Castanho"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 846,
+    "IdIgreja": 2701,
+    "NomeIgreja": "Manaquiri"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 848,
+    "IdIgreja": 2773,
+    "NomeIgreja": "Borba"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 849,
+    "IdIgreja": 2703,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 849,
+    "IdIgreja": 2704,
+    "NomeIgreja": "Coari 2"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 849,
+    "IdIgreja": 2705,
+    "NomeIgreja": "Codajás"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 849,
+    "IdIgreja": 2706,
+    "NomeIgreja": "Anori"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 850,
+    "IdIgreja": 2707,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 850,
+    "IdIgreja": 2708,
+    "NomeIgreja": "Boa Vista dos Ramos "
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 851,
+    "IdIgreja": 2709,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 851,
+    "IdIgreja": 2710,
+    "NomeIgreja": "Mutirão"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 851,
+    "IdIgreja": 2711,
+    "NomeIgreja": "Liberdade"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 851,
+    "IdIgreja": 2712,
+    "NomeIgreja": "Novo Airão"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 852,
+    "IdIgreja": 2713,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 852,
+    "IdIgreja": 2714,
+    "NomeIgreja": "Novo Aripuanã"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 853,
+    "IdIgreja": 2715,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 853,
+    "IdIgreja": 2716,
+    "NomeIgreja": "Itaúna"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 853,
+    "IdIgreja": 2717,
+    "NomeIgreja": "Barreirinha"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 853,
+    "IdIgreja": 2718,
+    "NomeIgreja": "Juruti"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 853,
+    "IdIgreja": 2719,
+    "NomeIgreja": "Palmares"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 854,
+    "IdIgreja": 2720,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 855,
+    "IdIgreja": 2721,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 856,
+    "IdIgreja": 2722,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 856,
+    "IdIgreja": 2723,
+    "NomeIgreja": "Benjamin Constant"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 856,
+    "IdIgreja": 2724,
+    "NomeIgreja": "Santo Antônio do Içá"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 856,
+    "IdIgreja": 2725,
+    "NomeIgreja": "Tonantins "
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 856,
+    "IdIgreja": 2726,
+    "NomeIgreja": "São Paulo de Olivença "
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 857,
+    "IdIgreja": 2727,
+    "NomeIgreja": "Sede"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 857,
+    "IdIgreja": 2728,
+    "NomeIgreja": "Fonte Boa"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 857,
+    "IdIgreja": 2729,
+    "NomeIgreja": "Alvarães"
+  },
+  {
+    "IdEstado": 32,
+    "IdRegiao": 858,
+    "IdIgreja": 2730,
+    "NomeIgreja": "Sede"
+  }
+]

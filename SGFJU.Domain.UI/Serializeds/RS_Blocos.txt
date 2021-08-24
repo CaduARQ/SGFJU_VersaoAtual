@@ -1,0 +1,92 @@
+[
+  {
+    "idBloco": 160,
+    "NomeBloco": "Bloco Azenha",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 161,
+    "NomeBloco": "Bloco Alvorada",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 162,
+    "NomeBloco": "Bloco Canoas",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 163,
+    "NomeBloco": "Bloco Partenon",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 164,
+    "NomeBloco": "Bloco Gravataí",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 165,
+    "NomeBloco": "Bloco Uruguaiana",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 166,
+    "NomeBloco": "Bloco Gramado",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 167,
+    "NomeBloco": "Bloco Capão da Canoa",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 168,
+    "NomeBloco": "Bloco Santa Maria",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 169,
+    "NomeBloco": "Bloco Santa Cruz",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 170,
+    "NomeBloco": "Bloco Guaíba",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 171,
+    "NomeBloco": "Bloco São Leopoldo",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 172,
+    "NomeBloco": "Bloco Novo Hamburgo",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 173,
+    "NomeBloco": "Bloco Pelotas",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 174,
+    "NomeBloco": "Bloco Bagé",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 175,
+    "NomeBloco": "Bloco Caxias",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 176,
+    "NomeBloco": "Bloco Passo Fundo",
+    "IdEstadoBloco": 49
+  },
+  {
+    "idBloco": 177,
+    "NomeBloco": "Bloco Catedral",
+    "IdEstadoBloco": 49
+  }
+]

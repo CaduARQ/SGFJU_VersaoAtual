@@ -1,0 +1,22 @@
+[
+  {
+    "Code": 2,
+    "Descricao": "Sozinho",
+    "Codigo": 0
+  },
+  {
+    "Code": 3,
+    "Descricao": "Família",
+    "Codigo": 0
+  },
+  {
+    "Code": 4,
+    "Descricao": "Amigo",
+    "Codigo": 0
+  },
+  {
+    "Code": 5,
+    "Descricao": "Hostel/Albergue",
+    "Codigo": 0
+  }
+]

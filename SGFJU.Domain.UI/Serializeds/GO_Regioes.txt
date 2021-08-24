@@ -1,0 +1,302 @@
+[
+  {
+    "idBloco": 235,
+    "IdRegiao": 1102,
+    "NomeRegiao": "SEDE ESTADUAL"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1110,
+    "NomeRegiao": "ALPHAVILLE"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1114,
+    "NomeRegiao": "CAMPINAS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1116,
+    "NomeRegiao": "CERRADO"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1119,
+    "NomeRegiao": "CIDADE JARDIM"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1121,
+    "NomeRegiao": "CIDADE LIVRE"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1123,
+    "NomeRegiao": "FINSOCIAL"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1126,
+    "NomeRegiao": "GARAVELO IGUALDADE"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1128,
+    "NomeRegiao": "GARAVELO PARK"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1132,
+    "NomeRegiao": "ITAIPU"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1133,
+    "NomeRegiao": "JARDIM CURITIBA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1134,
+    "NomeRegiao": "JARDIM DAS OLIVEIRAS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1135,
+    "NomeRegiao": "JARDIM GUANABARA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1137,
+    "NomeRegiao": "JARDIM LIBERDADE"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1138,
+    "NomeRegiao": "JARDIM NOVA ERA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1139,
+    "NomeRegiao": "JARDIM TIRADENTES"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1140,
+    "NomeRegiao": "JOÃO BRÁZ"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1141,
+    "NomeRegiao": "NOVA ESPERANÇA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1142,
+    "NomeRegiao": "PAPILON PARK"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1143,
+    "NomeRegiao": "PARQUE ATHENEU"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1144,
+    "NomeRegiao": "PEDRO LUDOVICO"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1145,
+    "NomeRegiao": "RECANTO DO BOSQUE"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1146,
+    "NomeRegiao": "RIO FORMOSO"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1148,
+    "NomeRegiao": "SÃO JUDAS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1151,
+    "NomeRegiao": "SETOR DOS AFONSOS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1154,
+    "NomeRegiao": "T-63"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1156,
+    "NomeRegiao": "T-9"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1157,
+    "NomeRegiao": "URIAS MAGALHÃES"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1159,
+    "NomeRegiao": "VERA CRUZ"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1160,
+    "NomeRegiao": "VILA BOA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1162,
+    "NomeRegiao": "VILA BRASÍLIA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1164,
+    "NomeRegiao": "VILA CONCORDIA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1166,
+    "NomeRegiao": "VILA MORAIS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1167,
+    "NomeRegiao": "VILA UNIÃO"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1206,
+    "NomeRegiao": "ANAPÓLIS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1207,
+    "NomeRegiao": "ANICUNS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1208,
+    "NomeRegiao": "APARECIDA DE GOIÂNIA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1209,
+    "NomeRegiao": "BAIRRO POPULAR"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1210,
+    "NomeRegiao": "CALDAS NOVAS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1213,
+    "NomeRegiao": "CATALÃO"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1215,
+    "NomeRegiao": "CERES"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1217,
+    "NomeRegiao": "GOIANIRA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1219,
+    "NomeRegiao": "INHUMAS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1223,
+    "NomeRegiao": "IPORÁ"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1236,
+    "NomeRegiao": "ITUMBIARA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1238,
+    "NomeRegiao": "JAIARA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1239,
+    "NomeRegiao": "JARAGUÁ"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1344,
+    "NomeRegiao": "jATAÍ"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1345,
+    "NomeRegiao": "JK"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1346,
+    "NomeRegiao": "JUSSARA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1347,
+    "NomeRegiao": "MINEIROS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1348,
+    "NomeRegiao": "PIRES DO RIO"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1349,
+    "NomeRegiao": "PORANGATU"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1350,
+    "NomeRegiao": "QUIRINOPOLIS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1351,
+    "NomeRegiao": "RIO VERDE"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1352,
+    "NomeRegiao": "RUBIATABA"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1353,
+    "NomeRegiao": "SÃO LUIS"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1354,
+    "NomeRegiao": "SENADOR CANEDO"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1355,
+    "NomeRegiao": "TRINDADE"
+  },
+  {
+    "idBloco": 235,
+    "IdRegiao": 1356,
+    "NomeRegiao": "URUAÇU"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "idBloco": 182,
+    "NomeBloco": "Bloco Sinop",
+    "IdEstadoBloco": 39
+  },
+  {
+    "idBloco": 183,
+    "NomeBloco": "Bloco Rondonópolis",
+    "IdEstadoBloco": 39
+  },
+  {
+    "idBloco": 184,
+    "NomeBloco": "Bloco Cáceres",
+    "IdEstadoBloco": 39
+  },
+  {
+    "idBloco": 185,
+    "NomeBloco": "Bloco Barra do Garças",
+    "IdEstadoBloco": 39
+  },
+  {
+    "idBloco": 203,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 39
+  },
+  {
+    "idBloco": 204,
+    "NomeBloco": "Bloco Tangará",
+    "IdEstadoBloco": 39
+  },
+  {
+    "idBloco": 327,
+    "NomeBloco": "Sede Estadual",
+    "IdEstadoBloco": 39
+  }
+]

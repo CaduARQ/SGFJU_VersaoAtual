@@ -1,0 +1,12 @@
+[
+  {
+    "idBloco": 349,
+    "IdRegiao": 2000,
+    "NomeRegiao": "[REGIAO_TESTE]"
+  },
+  {
+    "idBloco": 349,
+    "IdRegiao": 2149,
+    "NomeRegiao": "Região teste 2"
+  }
+]

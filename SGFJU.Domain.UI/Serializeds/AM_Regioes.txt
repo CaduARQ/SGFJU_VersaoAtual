@@ -1,0 +1,337 @@
+[
+  {
+    "idBloco": 132,
+    "IdRegiao": 522,
+    "NomeRegiao": "Catedral"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 618,
+    "NomeRegiao": "Cachoeirinha"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 620,
+    "NomeRegiao": "Praça 14"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 621,
+    "NomeRegiao": "Polivalente"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 623,
+    "NomeRegiao": "Educandos"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 625,
+    "NomeRegiao": "Betânia"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 626,
+    "NomeRegiao": "Mauazinho"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 627,
+    "NomeRegiao": "Raiz"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 628,
+    "NomeRegiao": "Japiim 1"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 629,
+    "NomeRegiao": "Petropólis"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 630,
+    "NomeRegiao": "Raiz"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 631,
+    "NomeRegiao": "Centro"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 632,
+    "NomeRegiao": "São Francisco"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 633,
+    "NomeRegiao": "Shangrilá"
+  },
+  {
+    "idBloco": 144,
+    "IdRegiao": 634,
+    "NomeRegiao": "Parque 10"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 748,
+    "NomeRegiao": "São José 1 "
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 750,
+    "NomeRegiao": "São José 2 "
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 751,
+    "NomeRegiao": "Ouro Verde"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 752,
+    "NomeRegiao": "Coroado 2"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 753,
+    "NomeRegiao": "Armando Mendes"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 754,
+    "NomeRegiao": "Jorge Teixeira"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 755,
+    "NomeRegiao": "Grande Vitória"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 756,
+    "NomeRegiao": "Belford Roxo"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 757,
+    "NomeRegiao": "João Paulo"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 758,
+    "NomeRegiao": "Novo Aleixo"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 759,
+    "NomeRegiao": "Amazonino Mendes"
+  },
+  {
+    "idBloco": 145,
+    "IdRegiao": 841,
+    "NomeRegiao": "São José 2"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 763,
+    "NomeRegiao": "Manôa"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 764,
+    "NomeRegiao": "Viver Melhor"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 765,
+    "NomeRegiao": "Monte das Oliveiras"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 766,
+    "NomeRegiao": "Carbrás"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 767,
+    "NomeRegiao": "Novo Israel"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 768,
+    "NomeRegiao": "Mutirão"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 769,
+    "NomeRegiao": "Américo Medeiros"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 770,
+    "NomeRegiao": "Cidade de Deus"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 771,
+    "NomeRegiao": "Nova Cidade"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 772,
+    "NomeRegiao": "Braga Mendes"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 773,
+    "NomeRegiao": "Terra Nova "
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 774,
+    "NomeRegiao": "Cidade Nova"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 775,
+    "NomeRegiao": "Timbiras"
+  },
+  {
+    "idBloco": 146,
+    "IdRegiao": 776,
+    "NomeRegiao": "Parque das Nações"
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 749,
+    "NomeRegiao": "Alvorada"
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 760,
+    "NomeRegiao": "Compensa 1"
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 761,
+    "NomeRegiao": "Lírio do Vale 1"
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 762,
+    "NomeRegiao": "Redenção"
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 777,
+    "NomeRegiao": "Compensa 3"
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 778,
+    "NomeRegiao": "Santo Antônio "
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 779,
+    "NomeRegiao": "Campos Elíseos"
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 780,
+    "NomeRegiao": "Lírio do Vale 2"
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 781,
+    "NomeRegiao": "Santos Dumont"
+  },
+  {
+    "idBloco": 147,
+    "IdRegiao": 1638,
+    "NomeRegiao": "Redenção"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 842,
+    "NomeRegiao": "Itacoatira"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 843,
+    "NomeRegiao": "randuba"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 844,
+    "NomeRegiao": "Iranduba"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 845,
+    "NomeRegiao": "Itacoatiara"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 846,
+    "NomeRegiao": "Autazes"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 848,
+    "NomeRegiao": "Borba"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 849,
+    "NomeRegiao": "Coari"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 850,
+    "NomeRegiao": "Maués"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 851,
+    "NomeRegiao": "Manacapuru"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 852,
+    "NomeRegiao": "Manicoré "
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 853,
+    "NomeRegiao": "Parintins"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 854,
+    "NomeRegiao": "Presidente Figueiredo "
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 855,
+    "NomeRegiao": "Rio Preto da Eva"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 856,
+    "NomeRegiao": "Tabatinga"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 857,
+    "NomeRegiao": "Tefé"
+  },
+  {
+    "idBloco": 148,
+    "IdRegiao": 858,
+    "NomeRegiao": "São Gabriel da Cachoeira"
+  }
+]

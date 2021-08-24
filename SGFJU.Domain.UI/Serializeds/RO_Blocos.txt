@@ -1,0 +1,27 @@
+[
+  {
+    "idBloco": 343,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 50
+  },
+  {
+    "idBloco": 344,
+    "NomeBloco": "Bloco Cacoal",
+    "IdEstadoBloco": 50
+  },
+  {
+    "idBloco": 345,
+    "NomeBloco": "Bloco Ariquemes",
+    "IdEstadoBloco": 50
+  },
+  {
+    "idBloco": 346,
+    "NomeBloco": "Bloco JI Paraná",
+    "IdEstadoBloco": 50
+  },
+  {
+    "idBloco": 347,
+    "NomeBloco": "Bloco Vilhena",
+    "IdEstadoBloco": 50
+  }
+]

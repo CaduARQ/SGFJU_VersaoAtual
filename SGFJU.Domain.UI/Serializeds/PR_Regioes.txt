@@ -1,0 +1,572 @@
+[
+  {
+    "idBloco": 91,
+    "IdRegiao": 218,
+    "NomeRegiao": "Afonso Pena"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 219,
+    "NomeRegiao": "Almirante Tamandaré"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 220,
+    "NomeRegiao": "Alto Maracanã"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 221,
+    "NomeRegiao": "Araucária"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 222,
+    "NomeRegiao": "Bairro Novo"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 223,
+    "NomeRegiao": "Bairro Alto"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 224,
+    "NomeRegiao": "Boa Vista"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 225,
+    "NomeRegiao": "Cachoeira"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 226,
+    "NomeRegiao": "Cajuru"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 227,
+    "NomeRegiao": "Campo Comprido"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 228,
+    "NomeRegiao": "Campo Largo"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 231,
+    "NomeRegiao": "CIC"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 232,
+    "NomeRegiao": "Fazenda Rio Grande"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 233,
+    "NomeRegiao": "Mandirituba"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 234,
+    "NomeRegiao": "Guaraituba"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 236,
+    "NomeRegiao": "Jardim Cruzeiro"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 240,
+    "NomeRegiao": "Pilarzinho"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 242,
+    "NomeRegiao": "Pinhais"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 244,
+    "NomeRegiao": "Pinheirinho"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 245,
+    "NomeRegiao": "Piraquara"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 247,
+    "NomeRegiao": "Portão"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 250,
+    "NomeRegiao": "Santa Felicidade"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 252,
+    "NomeRegiao": "Santa Rita"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 253,
+    "NomeRegiao": "São Gabriel"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 254,
+    "NomeRegiao": "São José dos Pinhais"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 255,
+    "NomeRegiao": "Sitio Cercado"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 274,
+    "NomeRegiao": "Campina Grande"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 275,
+    "NomeRegiao": "Campina Grande"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 301,
+    "NomeRegiao": "Vila Hauer"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 302,
+    "NomeRegiao": "Templo Maior"
+  },
+  {
+    "idBloco": 91,
+    "IdRegiao": 1934,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 210,
+    "NomeRegiao": "Cascavel"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 211,
+    "NomeRegiao": "Toledo"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 212,
+    "NomeRegiao": "Umuarama"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1935,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1936,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1937,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1938,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1939,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1940,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1941,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1942,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1943,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1944,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1945,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1946,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1947,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1948,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1949,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1950,
+    "NomeRegiao": "TOLEDO"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1951,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1952,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1953,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1954,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1955,
+    "NomeRegiao": "UMUARAMA "
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1956,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1957,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1958,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1959,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1960,
+    "NomeRegiao": "CASCAVEL'"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1961,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1962,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1963,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1964,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1965,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1966,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1967,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1968,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1969,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1970,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1971,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1972,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1973,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1974,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 1975,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 2055,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 2056,
+    "NomeRegiao": "CASCAVEL"
+  },
+  {
+    "idBloco": 92,
+    "IdRegiao": 2058,
+    "NomeRegiao": "Cascavel"
+  },
+  {
+    "idBloco": 93,
+    "IdRegiao": 229,
+    "NomeRegiao": "Foz do Iguaçu"
+  },
+  {
+    "idBloco": 93,
+    "IdRegiao": 230,
+    "NomeRegiao": "Medianeira"
+  },
+  {
+    "idBloco": 94,
+    "IdRegiao": 256,
+    "NomeRegiao": "Guarapuava"
+  },
+  {
+    "idBloco": 94,
+    "IdRegiao": 257,
+    "NomeRegiao": "Laranjeiras"
+  },
+  {
+    "idBloco": 94,
+    "IdRegiao": 258,
+    "NomeRegiao": "Pitanga"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 235,
+    "NomeRegiao": "Londrina"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 237,
+    "NomeRegiao": "Apucarana"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 238,
+    "NomeRegiao": "Arapongas"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 239,
+    "NomeRegiao": "Cambé"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 241,
+    "NomeRegiao": "Cornélio Procópio"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 243,
+    "NomeRegiao": "Cinco Conjuntos"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 246,
+    "NomeRegiao": "Ouro Branco"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 248,
+    "NomeRegiao": "Rolândia"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 249,
+    "NomeRegiao": "Ibiporã"
+  },
+  {
+    "idBloco": 95,
+    "IdRegiao": 251,
+    "NomeRegiao": "Santo Antônio da Platina"
+  },
+  {
+    "idBloco": 96,
+    "IdRegiao": 259,
+    "NomeRegiao": "Maringá"
+  },
+  {
+    "idBloco": 96,
+    "IdRegiao": 260,
+    "NomeRegiao": "Paiçandu"
+  },
+  {
+    "idBloco": 96,
+    "IdRegiao": 261,
+    "NomeRegiao": "Campo Mourão"
+  },
+  {
+    "idBloco": 96,
+    "IdRegiao": 262,
+    "NomeRegiao": "Cianorte"
+  },
+  {
+    "idBloco": 96,
+    "IdRegiao": 263,
+    "NomeRegiao": "Sarandi"
+  },
+  {
+    "idBloco": 96,
+    "IdRegiao": 264,
+    "NomeRegiao": "Paranavaí"
+  },
+  {
+    "idBloco": 97,
+    "IdRegiao": 213,
+    "NomeRegiao": "Pato Branco"
+  },
+  {
+    "idBloco": 97,
+    "IdRegiao": 214,
+    "NomeRegiao": "Dois Vizinhos"
+  },
+  {
+    "idBloco": 97,
+    "IdRegiao": 215,
+    "NomeRegiao": "Francisco Beltrão"
+  },
+  {
+    "idBloco": 97,
+    "IdRegiao": 216,
+    "NomeRegiao": "Palmas"
+  },
+  {
+    "idBloco": 97,
+    "IdRegiao": 217,
+    "NomeRegiao": "Santa Izabel do Oeste"
+  },
+  {
+    "idBloco": 98,
+    "IdRegiao": 265,
+    "NomeRegiao": "Paranaguá"
+  },
+  {
+    "idBloco": 98,
+    "IdRegiao": 266,
+    "NomeRegiao": "Guaratuba"
+  },
+  {
+    "idBloco": 98,
+    "IdRegiao": 267,
+    "NomeRegiao": "Matinhos"
+  },
+  {
+    "idBloco": 98,
+    "IdRegiao": 268,
+    "NomeRegiao": "Parque São João"
+  },
+  {
+    "idBloco": 99,
+    "IdRegiao": 269,
+    "NomeRegiao": "Ponta Grossa"
+  },
+  {
+    "idBloco": 99,
+    "IdRegiao": 270,
+    "NomeRegiao": "Irati"
+  },
+  {
+    "idBloco": 99,
+    "IdRegiao": 271,
+    "NomeRegiao": "Castro"
+  },
+  {
+    "idBloco": 99,
+    "IdRegiao": 272,
+    "NomeRegiao": "Telêmaco Borba"
+  },
+  {
+    "idBloco": 99,
+    "IdRegiao": 273,
+    "NomeRegiao": "União da Vitória"
+  },
+  {
+    "idBloco": 99,
+    "IdRegiao": 1918,
+    "NomeRegiao": "Ponta Grossa"
+  }
+]

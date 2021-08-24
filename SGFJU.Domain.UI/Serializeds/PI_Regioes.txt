@@ -1,0 +1,177 @@
+[
+  {
+    "idBloco": 120,
+    "IdRegiao": 436,
+    "NomeRegiao": "São Joaquim"
+  },
+  {
+    "idBloco": 120,
+    "IdRegiao": 437,
+    "NomeRegiao": "Água Mineral"
+  },
+  {
+    "idBloco": 120,
+    "IdRegiao": 438,
+    "NomeRegiao": "Buenos Aires"
+  },
+  {
+    "idBloco": 121,
+    "IdRegiao": 439,
+    "NomeRegiao": "Piçarreira"
+  },
+  {
+    "idBloco": 121,
+    "IdRegiao": 441,
+    "NomeRegiao": "São Crisóvão"
+  },
+  {
+    "idBloco": 121,
+    "IdRegiao": 442,
+    "NomeRegiao": "Satélite"
+  },
+  {
+    "idBloco": 121,
+    "IdRegiao": 443,
+    "NomeRegiao": "Anita Ferraz"
+  },
+  {
+    "idBloco": 122,
+    "IdRegiao": 449,
+    "NomeRegiao": "Barão- Sede"
+  },
+  {
+    "idBloco": 122,
+    "IdRegiao": 450,
+    "NomeRegiao": "Parque Piauí"
+  },
+  {
+    "idBloco": 122,
+    "IdRegiao": 451,
+    "NomeRegiao": "Porto Alegre"
+  },
+  {
+    "idBloco": 122,
+    "IdRegiao": 452,
+    "NomeRegiao": "Promorar"
+  },
+  {
+    "idBloco": 122,
+    "IdRegiao": 1881,
+    "NomeRegiao": "Barão"
+  },
+  {
+    "idBloco": 122,
+    "IdRegiao": 1882,
+    "NomeRegiao": "Parque Piauí"
+  },
+  {
+    "idBloco": 122,
+    "IdRegiao": 1883,
+    "NomeRegiao": "Porto Alegre"
+  },
+  {
+    "idBloco": 123,
+    "IdRegiao": 453,
+    "NomeRegiao": "Dirceu-Sede"
+  },
+  {
+    "idBloco": 123,
+    "IdRegiao": 454,
+    "NomeRegiao": "Parque Jurema"
+  },
+  {
+    "idBloco": 123,
+    "IdRegiao": 455,
+    "NomeRegiao": "Renascença"
+  },
+  {
+    "idBloco": 124,
+    "IdRegiao": 446,
+    "NomeRegiao": "Formosa-Sede"
+  },
+  {
+    "idBloco": 124,
+    "IdRegiao": 447,
+    "NomeRegiao": "Guarita"
+  },
+  {
+    "idBloco": 124,
+    "IdRegiao": 448,
+    "NomeRegiao": "Parque Alvorada"
+  },
+  {
+    "idBloco": 125,
+    "IdRegiao": 456,
+    "NomeRegiao": "Parnaíba-Sede"
+  },
+  {
+    "idBloco": 125,
+    "IdRegiao": 457,
+    "NomeRegiao": "Bairro de Fatima"
+  },
+  {
+    "idBloco": 125,
+    "IdRegiao": 460,
+    "NomeRegiao": "Barras"
+  },
+  {
+    "idBloco": 125,
+    "IdRegiao": 1833,
+    "NomeRegiao": "Esperantina"
+  },
+  {
+    "idBloco": 126,
+    "IdRegiao": 462,
+    "NomeRegiao": "Piripiri-Sede"
+  },
+  {
+    "idBloco": 126,
+    "IdRegiao": 463,
+    "NomeRegiao": "Altos"
+  },
+  {
+    "idBloco": 126,
+    "IdRegiao": 464,
+    "NomeRegiao": "Campo Maior"
+  },
+  {
+    "idBloco": 127,
+    "IdRegiao": 466,
+    "NomeRegiao": "Bom Jesus-Sede"
+  },
+  {
+    "idBloco": 127,
+    "IdRegiao": 467,
+    "NomeRegiao": "Corrente"
+  },
+  {
+    "idBloco": 127,
+    "IdRegiao": 468,
+    "NomeRegiao": "São Raimundo Nonato"
+  },
+  {
+    "idBloco": 128,
+    "IdRegiao": 469,
+    "NomeRegiao": "Picos-Sede"
+  },
+  {
+    "idBloco": 128,
+    "IdRegiao": 471,
+    "NomeRegiao": "Floriano"
+  },
+  {
+    "idBloco": 128,
+    "IdRegiao": 472,
+    "NomeRegiao": "Água Branca"
+  },
+  {
+    "idBloco": 128,
+    "IdRegiao": 473,
+    "NomeRegiao": "Valença"
+  },
+  {
+    "idBloco": 129,
+    "IdRegiao": 1819,
+    "NomeRegiao": "Catedral"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "idBloco": 349,
+    "NomeBloco": "[BL_TESTE]",
+    "IdEstadoBloco": 56
+  },
+  {
+    "idBloco": 351,
+    "NomeBloco": "Bloco Teste 2",
+    "IdEstadoBloco": 56
+  }
+]

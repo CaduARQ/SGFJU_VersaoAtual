@@ -1,0 +1,317 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="R.aspx.cs" Inherits="SGFJU.UI.Views.R" %>
+
+
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register assembly="Telerik.Web.Design" namespace="Telerik.Web.Design" tagprefix="design" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">    
+    <link href="../Styles/LabForm.css" rel="stylesheet" />
+    <link href="" rel="stylesheet" />
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="FolderContent" runat="server">
+</asp:Content>
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+
+
+    <telerik:RadWindowManager ID="rwmUIApp" Skin="WebBlue" runat="server" />
+    
+
+    <telerik:RadWindowManager ID="RadWindowManager1" runat="server" />
+
+    <telerik:RadNavigation runat="server" ID="contactNavigation" Skin="Vista" CssClass="secondaryMenu">
+        <Nodes>                        
+            <telerik:NavigationNode Text="Novo Jovem" SpriteCssClass="icon icon-Send" NavigateUrl="RegistraJovem.aspx" ></telerik:NavigationNode>
+            <telerik:NavigationNode CssClass="rightScndNav">                
+                <NodeTemplate>                    
+                    <%--<telerik:RadSearchBox runat="server" Skin="BlackMetroTouch" Width="340px" DropDownSettings-Height="300px" ID="mainSearch"
+                        CssClass="hidden" ShowLoadingIcon="false">
+                    </telerik:RadSearchBox>--%>
+                    <%--<span class="button searchBtn"><span class="icon icon-Search"></span></span>--%>
+                </NodeTemplate>
+            </telerik:NavigationNode>
+        </Nodes>
+    </telerik:RadNavigation>    
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!-- Menu Lateral -->
+<div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Principal</a>
+                </li>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Eventos</a>
+                </li>
+                <li>
+                    <a href="#">Equipe</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trabalhos<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Dropdown heading</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+                <li>
+                    <a href="#">RS</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            
+           
+           <!-- FINAL BREADCRUMBS -->
+           
+           <!-- Conteúdo Currículo -->
+
+<div class="container">
+    <div class="page-header">
+        <h1>Cadastro de Currículo<span class="pull-right label label-default">!</span></h1>
+    </div>
+   <div class="col-md-12">
+            <div class="panel with-nav-tabs panel-info">
+                <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1info" data-toggle="tab">Informações Pessoais</a></li>
+                            <li><a href="#tab2info" data-toggle="tab">Complemento</a></li>
+                            <li><a href="#tab3info" data-toggle="tab">Escolaridade</a></li>
+                            <li><a href="#tab4info" data-toggle="tab">Idiomas</a></li>
+                            <li><a href="#tab5info" data-toggle="tab">Referências</a></li>
+                            <li><a href="#tab6info" data-toggle="tab">Cursos</a></li>
+                            <li><a href="#tab7info" data-toggle="tab">Projetos Sociais</a></li>
+                            <li><a href="#tab8info" data-toggle="tab">Informações Adicionais</a></li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown">Mais<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#tab9info" data-toggle="tab">Anexos</a></li>
+                                    <li><a href="#tab10info" data-toggle="tab">Visualizar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1info">
+                        <form class="form-horizontal">
+                <fieldset>
+
+                <!-- Formulário Informações Pessoais -->
+                <legend>Informações Pessoais</legend>
+
+                <!-- Nome input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="nomeCompleto">Nome</label>  
+                    <div class="col-md-8">
+                        <input id="nomeCompleto" name="nomeCompleto" type="text" placeholder="Nome Completo" class="form-control input-md" required="">
+                        <span class="help-block">Insira seu nome Completo sem abreviaturas</span>  
+                    </div>
+                </div>
+
+                <!-- Gênero input Radios -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="sexo">Gênero</label>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label for="sexo-0">
+                            <input type="radio" name="sexo" id="sexo-0" value="0">
+                            Masculino
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="sexo-1">
+                            <input type="radio" name="sexo" id="sexo" value="1">
+                            Feminino
+                            </label>
+                	    </div>
+                    </div>
+                </div>
+
+<!-- Aniversário input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dthNascimento">Data de Nascimento</label>  
+  <div class="col-md-5">
+  <input id="dthNascimento" name="dthNascimento" type="text" placeholder="Data de Nascimento" class="form-control input-md" required="">
+  <span class="help-block">Insira a data do seu nascimento</span>  
+  </div>
+</div>
+
+<!-- Logradouro input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="logradouro">Endereço</label>  
+  <div class="col-md-6">
+  <input id="logradouro" name="logradouro" type="text" placeholder="Endereço" class="form-control input-md">
+  <span class="help-block">Insira somente o Logradouro</span>  
+  </div>
+</div>
+
+<!-- Número input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="numero">Número</label>  
+  <div class="col-md-4">
+  <input id="numero" name="numero" type="text" placeholder="Número" class="form-control input-md">
+  <span class="help-block">Insira o número do domicílio</span>  
+  </div>
+</div>
+
+<!-- Bairro input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bairro">Bairro</label>  
+  <div class="col-md-6">
+  <input id="bairro" name="bairro" type="text" placeholder="Bairro / Distrito" class="form-control input-md">
+  <span class="help-block">Insira o Bairro ou Distrito do domicílio</span>  
+  </div>
+</div>
+
+<!-- Complemento input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="complemento">Complemento</label>  
+  <div class="col-md-8">
+  <input id="complemento" name="complemento" type="text" placeholder="Complemento" class="form-control input-md">
+  <span class="help-block">Insira informações adicionais ao endereço</span>  
+  </div>
+</div>
+
+<!-- Search CEP input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cep">CEP</label>
+  <div class="col-md-4">
+    <input id="cep" name="cep" type="search" placeholder="CEP / ZIPCODE" class="form-control input-md">
+    <p class="help-block">Insira o código de postagem do domicílio</p>
+  </div>
+</div>
+</fieldset>
+</form>
+    </div>
+                        <div class="tab-pane fade" id="tab2info">
+                            <div class="container">
+                                <div class="row">
+                            	    <div class="col-md-4">
+                                        <div class="contacts">
+                                            <label>Contatos:</label>
+                                                <div class="form-group multiple-form-group input-group">
+                                                    <div class="input-group-btn input-group-select">
+                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                            <span class="concept">Phone</span> <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="#phone">Phone</a></li>
+                                                            <li><a href="#fax">Fax</a></li>
+                                                            <li><a href="#skype">Skype</a></li>
+                                                            <li><a href="#email">E-mail</a></li>
+                                                            <li><a href="#www">Web</a></li>
+                                                        </ul>
+                                                        <input type="hidden" class="input-group-select-val" name="contacts['type'][]" value="phone">
+                                                    </div>
+                                                    <input type="text" name="contacts['value'][]" class="form-control">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-success btn-add">+</button>
+                                                    </span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                        </div>
+                        <div class="tab-pane fade" id="tab3info">Info 3</div>
+                        <div class="tab-pane fade" id="tab4info">Info 4</div>
+                        <div class="tab-pane fade" id="tab5info">Info 5</div>
+                        <div class="tab-pane fade" id="tab6info">Info 6</div>
+                        <div class="tab-pane fade" id="tab7info">Info 7</div>
+                        <div class="tab-pane fade" id="tab8info">Info 8</div>
+                        <div class="tab-pane fade" id="tab9info">
+                            <div class="container">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><strong>Upload Arquivos</strong> <small>Currículo e Documentos</small></div>
+                                        <div class="panel-body">
+
+                                        <!-- Standar Form -->
+                                            <h4>Selecione arquivos de seu computador</h4>
+                                                <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+                                                    <div class="form-inline">
+                                                        <div class="form-group">
+                                                            <input type="file" name="files[]" id="js-upload-files" multiple>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload Arquivos</button>
+                                                    </div>
+                                                </form>
+
+                                        <!-- Drop Zone -->
+                                            <h4>Arraste e solte os arquivos abaixo</h4>
+                                                <div class="upload-drop-zone" id="drop-zone">Somente arraste e solte os arquivos aqui
+                                                    
+                                                </div>
+
+                                        <!-- Progress Bar -->
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                    <span class="sr-only">40% Complete</span>
+                                                </div>
+                                            </div>
+
+                                        <!-- Upload Finished -->
+                                            <div class="js-upload-finished">
+                                                <h3>Arquivos Processados</h3>
+                                                <div class="list-group">
+                                                    <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">OK</span>image-01.jpg</a>
+                                                    <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Sucesso</span>image-02.jpg</a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div> 
+                                <!-- /container -->
+                            </div>
+                        <div class="tab-pane fade" id="tab10info">Info 10</div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- FIM CONTEÚDO CURRÍCULO -->
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+</asp:Content>

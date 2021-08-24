@@ -1,0 +1,112 @@
+[
+  {
+    "idBloco": 71,
+    "NomeBloco": "Belo Horizonte",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 72,
+    "NomeBloco": "Bloco Betim ",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 73,
+    "NomeBloco": "Bloco Divinópolis",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 74,
+    "NomeBloco": "Bloco Eldorado",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 75,
+    "NomeBloco": "Bloco Governador Valadares",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 76,
+    "NomeBloco": "Bloco Juiz de Fora",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 77,
+    "NomeBloco": "Bloco Montes Claros",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 78,
+    "NomeBloco": "Bloco Venda Nova ",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 79,
+    "NomeBloco": "Bloco Muriaé",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 80,
+    "NomeBloco": "Bloco Ribeirão das Neves",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 81,
+    "NomeBloco": "Bloco Sete Lagoas",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 82,
+    "NomeBloco": "Bloco Uberlândia",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 83,
+    "NomeBloco": "Bloco Uberaba ",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 84,
+    "NomeBloco": "Bloco Teófilo Otoni",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 85,
+    "NomeBloco": "Bloco Itabira",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 86,
+    "NomeBloco": "Bloco Varginha",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 87,
+    "NomeBloco": "Bloco Poços de Caldas",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 88,
+    "NomeBloco": "Bloco Conselheiro Lafaiete",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 89,
+    "NomeBloco": "Bloco Barreiro",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 90,
+    "NomeBloco": "Sede Estadual - Templo Maior",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 324,
+    "NomeBloco": "Excluir Catedral",
+    "IdEstadoBloco": 41
+  },
+  {
+    "idBloco": 325,
+    "NomeBloco": "Excluir - Templo",
+    "IdEstadoBloco": 41
+  }
+]

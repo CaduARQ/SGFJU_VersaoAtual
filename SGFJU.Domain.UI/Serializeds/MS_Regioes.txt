@@ -1,0 +1,167 @@
+[
+  {
+    "idBloco": 100,
+    "IdRegiao": 276,
+    "NomeRegiao": "Aero Rancho"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 277,
+    "NomeRegiao": "Jardim Mato Grosso"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 278,
+    "NomeRegiao": "São Conrado"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 279,
+    "NomeRegiao": "Julio de Castilho"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 280,
+    "NomeRegiao": "Nova Lima"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 281,
+    "NomeRegiao": "Coronel Antoino"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 282,
+    "NomeRegiao": "Mata do Jacinto"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 283,
+    "NomeRegiao": "Tiradentes"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 284,
+    "NomeRegiao": "Manoel da Costa Lima"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 285,
+    "NomeRegiao": "Moreninha"
+  },
+  {
+    "idBloco": 100,
+    "IdRegiao": 286,
+    "NomeRegiao": "Universitário"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 287,
+    "NomeRegiao": "Dourados/Sede"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 288,
+    "NomeRegiao": "Naviraí"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 289,
+    "NomeRegiao": "Ponta Porã"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 290,
+    "NomeRegiao": "Amambai"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 291,
+    "NomeRegiao": "Bonito"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 292,
+    "NomeRegiao": "Sidrolândia"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 293,
+    "NomeRegiao": "Maracaju"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 294,
+    "NomeRegiao": "Nova Alvorada"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 295,
+    "NomeRegiao": "Nova Andradina"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 2060,
+    "NomeRegiao": "Dourados Sede"
+  },
+  {
+    "idBloco": 101,
+    "IdRegiao": 2148,
+    "NomeRegiao": "Água Boa"
+  },
+  {
+    "idBloco": 102,
+    "IdRegiao": 299,
+    "NomeRegiao": "Corumbá /Sede"
+  },
+  {
+    "idBloco": 102,
+    "IdRegiao": 300,
+    "NomeRegiao": "Anastácio"
+  },
+  {
+    "idBloco": 103,
+    "IdRegiao": 296,
+    "NomeRegiao": "Sede Três Lagoas"
+  },
+  {
+    "idBloco": 103,
+    "IdRegiao": 297,
+    "NomeRegiao": "Bataguassu"
+  },
+  {
+    "idBloco": 103,
+    "IdRegiao": 298,
+    "NomeRegiao": "Paranaíba"
+  },
+  {
+    "idBloco": 158,
+    "IdRegiao": 783,
+    "NomeRegiao": "Chapadão do Sul"
+  },
+  {
+    "idBloco": 158,
+    "IdRegiao": 784,
+    "NomeRegiao": "Cassilândia"
+  },
+  {
+    "idBloco": 158,
+    "IdRegiao": 785,
+    "NomeRegiao": "Coxim"
+  },
+  {
+    "idBloco": 158,
+    "IdRegiao": 786,
+    "NomeRegiao": "São Gabriel"
+  },
+  {
+    "idBloco": 159,
+    "IdRegiao": 787,
+    "NomeRegiao": "Sede Estadual "
+  },
+  {
+    "idBloco": 159,
+    "IdRegiao": 788,
+    "NomeRegiao": "Excluir - Catedral"
+  }
+]

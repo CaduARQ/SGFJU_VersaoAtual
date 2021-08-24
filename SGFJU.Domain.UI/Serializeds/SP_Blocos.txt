@@ -1,0 +1,152 @@
+[
+  {
+    "idBloco": 15,
+    "NomeBloco": "Bloco Leste1",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 16,
+    "NomeBloco": "Bloco Sul1",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 17,
+    "NomeBloco": "Bloco ABC",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 18,
+    "NomeBloco": "Bloco Osasco",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 19,
+    "NomeBloco": "Bloco Mogi",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 20,
+    "NomeBloco": "Bloco Santos",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 21,
+    "NomeBloco": "Bloco Ribeirão Preto",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 22,
+    "NomeBloco": "Bloco São José Do Rio Preto",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 23,
+    "NomeBloco": "Bloco São José Dos Campos",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 24,
+    "NomeBloco": "Bloco Presidente Prudente",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 25,
+    "NomeBloco": "Bloco Guarulhos",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 26,
+    "NomeBloco": "Bloco São Bernardo Do Campo",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 27,
+    "NomeBloco": "Bloco Campinas",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 28,
+    "NomeBloco": "Bloco Limeira",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 29,
+    "NomeBloco": "Bloco Lauzane",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 30,
+    "NomeBloco": "Bloco Sorocaba",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 31,
+    "NomeBloco": "Bloco Bauru",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 32,
+    "NomeBloco": "Bloco Jundiaí",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 33,
+    "NomeBloco": "Bloco Franca",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 34,
+    "NomeBloco": "Bloco Praia Grande",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 35,
+    "NomeBloco": "Bloco Itaquera",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 62,
+    "NomeBloco": "Templo De Salomão ",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 328,
+    "NomeBloco": "CAMPINAS",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 333,
+    "NomeBloco": "Presidente Prudente ",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  },
+  {
+    "idBloco": 354,
+    "NomeBloco": "Bloco Teste Excluir",
+    "IdEstadoBloco": 28,
+    "EstadoBloco": null
+  }
+]

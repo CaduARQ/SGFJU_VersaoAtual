@@ -1,0 +1,5 @@
+{
+  "TempoDecorridoSerializacao": "00:00:02.45",
+  "Estado": "Rio Grande do Norte",
+  "QuantidadeObreirosComRamos": 166
+}

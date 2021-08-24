@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <!--abaixo css que permite seleção-->
+    <link href="css/plugins/dataTables/Select-1.3.1/select.dataTables.min.css" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+                    <li>
+                        <a href="RegistraJovem.aspx"><i class="fa fa-th-large"></i> <span class="nav-label">Voluntários</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="RegistraJovem.aspx">Novo Jovem</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="ConsultaGeralParametros.html">Geral Parâmetros</a></li>
+                            <li><a href="TodosJovens.aspx">Todos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Gerenciar</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#"><i class="fa fa-user-circle"></i>Coordenadores <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="GerenciaCoordenadoresEstado.html">Gerenciar</a>
+                                    </li>
+                                    <li>
+                                        <a href="GerenciaCoordPanoramaEstado.html">Panorama do Estado</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-tree"></i>Árvore da Vida <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="GerenciaArvoreDaVidaEstadual.html">Associar Jovens</a>
+                                    </li>
+                                    <li>
+                                        <a href="GerenciaArvoreVidaObreirosAssociacoes.html">Desassociar Jovens</a>
+                                    </li>
+                                    <li>
+                                        <a href="GerenciaArvoreVidaObreiros.html">Obreiros</a>
+                                    </li>
+                                    <li>
+                                        <a href="GerenciaAVJovensEmAcompanhamento.html">Em Acompanhamento</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquise por palavra-chave..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+                        <li>
+                            <a onclick="ExecutarActionX072433()">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2 class="text-success font-bold">
+                        Ficha de Obreiro <!--- <span id="lblIdentificadorEstado_Bloco" class="text-success font-bold"></span>-->
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </h2>
+
+                    <div class="row m-b-lg m-t-lg">
+                        <div class="col-md-1">
+                            <canvas id="canvas" width=160 height="116"></canvas>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="profile-info">
+                                <div class="">
+                                    <div>
+                                        <h2 class="no-margins font-bold text-success" id="nomeDoJovem">
+                                        </h2>
+                                        <h4 id="nomeDoPerfilUsuario"></h4>
+                                        <h4>Acompanhado desde <i class="glyphicon glyphicon-calendar"></i></h4>
+                                        <h5 id="lblInicioAcompanhamento" class="text-success font-bold" style="font-family: Helvetica"></h5>
+                                        <hr class="hr-line-solid" />
+                                        <h4>Sendo acompanhado pelo obreiro <i class="glyphicon glyphicon-user"></i></h4>
+                                        <h5 id="lblNomeObreiro" class="text-success font-bold" style="font-family: Helvetica"></h5>
+                                        <hr class="hr-line-solid" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <!---->
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+
+                                </div>
+                                <div class="panel-body" align="left">
+                                    <div class="row">
+
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <h3>Estado</h3>
+                                                <h3 class="text-success" style="font-family: Helvetica" id="lblNomeEstado"></h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-7">
+                                            <div class="form-group">
+                                                <h3>Bloco</h3>
+                                                <h3 class="text-success" style="font-family: Helvetica" id="lblNomeBloco"></h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <h3>Região</h3>
+                                                <h3 class="text-success" style="font-family: Helvetica" id="lblNomeRegiao"></h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-7">
+                                            <div class="form-group">
+                                                <h3>Igreja</h3>
+                                                <h3 class="text-success" style="font-family: Helvetica" id="lblNomeIgreja"></h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <!---->
+                                <div class="panel panel-success" id="pnlPesquisa">
+                                    <div class="panel-heading">
+                                        Jovens acompanhados
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <!---->
+                                        <div class="table-responsive">
+                                            <table id="tblJovensAcompanhadosObreiro" class="table table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>IdX</th>
+                                                        <th>Nome</th>
+                                                        <th>Ações</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                            <div class="col-lg-8">
+                                <!---->
+                                <div class="panel panel-info" id="pnlPesquisa">
+                                    <div class="panel-heading">
+                                        Registrar novo histórico
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <!---->
+                                        <div class="row">
+                                            <!---->
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="font-bold" style="font-family: Helvetica;" for="form_name">Status do Jovem</label>
+                                                    <select required id="cboStatusAcompanhamento" name="cboStatusAcompanhamento" class="select2_demo_3 form-control">
+                                                        <option value="1">Iniciando na fé</option>
+                                                        <option value="2">Batizado nas águas</option>
+                                                        <option value="3">Batizado com o Espírito Santo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <!---->
+                                        <div class="row">
+                                            <!---->
+                                            <div class="col-sm-10">
+                                                <div class="form-group">
+
+                                                    <label class="font-bold" style="font-family: Helvetica;" for="txtTestemunho">Escreva histórico do Jovem</label>
+                                                    <textarea id="txtTestemunho" class="md-textarea form-control" cols="10" rows="7"></textarea>
+
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+
+                                        <hr class="hr-line-solid" />
+
+                                        <div class="row">
+                                            <!---->
+                                            <div class="col-sm-2">
+                                                <div class="form-group">
+                                                    <button class="btn btn-success dim btn-outline" onclick="registraHistoricoJovem()" type="button" style="width: 350px;">
+                                                        <i class="fa fa-edit"></i><i class="fa fa-user"></i> Registrar histórico do Jovem
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                            <!-- modal para visualizar texto do histórico -->
+                            <div class="modal inmodal" id="mostraTextoHistorico" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content modal-xl animated bounceInRight">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                            <i class="fa fa-user modal-icon"></i><i class="fa fa-history modal-icon"></i>
+
+                                            <h4 class="modal-title">Histórico de Acompanhamento</h4>
+                                            <h3 class="text-success font-bold" id="lblNomeJOvem"></h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form role="form">
+
+                                                <div class="form-group">
+                                                    <label class="text-success font-bold">Histórico - </label><label id="txtDataHistorico" class="text-success font-bold"></label>
+                                                    <textarea id="txtTextoHistoricoAcompanhamento" required class="md-textarea form-control" cols="10" rows="7"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="float-right">
+                    <strong></strong>
+                </div>
+                <div>
+                    <strong>Copyright</strong> FJU Oficial &copy; 2020
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Steps -->
+    <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+    <!-- Jquery Validate -->
+    <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="js/plugins/select2/select2.full.min.js"></script>
+
+    <!-- Input Mask-->
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- Nestable List -->
+    <script src="js/plugins/nestable/jquery.nestable.js"></script>
+
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+
+    <!--abaixo biblioteca que permite multipla seleção de registros-->
+    <script src="js/plugins/dataTables/Select-1.3.1/dataTables.select.min.js"></script>
+
+    <!-- Toastr script -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+    <!-- SGFJU Scripts -->
+    <script src="js/SGFJU.Domain.UI.Client.js"></script>
+    <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+    <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            carregaDadosObreiro();
+        });
+
+        function carregaDadosObreiro() {
+            var url_ = new URL(location.href);
+            var vIdX = url_.searchParams.get("x");
+            var obreiroParametro = {
+                IdObreiroX: vIdX
+            };
+
+            if (vIdX != undefined) {
+                $.ajax({
+                    type: "POST",
+                    data: JSON.stringify(obreiroParametro),
+                    url: 'api/ArvoreVidaConsulta/ObterObreiroPorIDX',
+                    contentType: "application/json"
+                }).done(function (resultSetObreiro) {
+
+                    $('#nomeDoJovem').html(ToTitleCase(resultSetObreiro.NomeObreiro));
+                    //$('#lblNomeObreiro').html(ToTitleCase(resultSetObreiro.NomeObreiro));
+                    //$('#lblInicioAcompanhamento').html(resultSetObreiro.DataInicioAcompanhamento);
+
+                    $('#lblNomeBloco').html(resultSetObreiro.NomeBloco);
+                    $('#lblNomeEstado').html(resultSetObreiro.NomeEstado);
+                    $('#lblNomeRegiao').html(resultSetObreiro.NomeRegiao);
+                    $('#lblNomeIgreja').html(resultSetObreiro.NomeIgreja);
+
+                    trataImagemFotoPerfil('http://fjuoficial.org/SGFJU2.0/FotosJovens/' + resultSetObreiro.NomeArquivoFoto);
+
+                    carregaJovensAcompanhadosObreiro(resultSetObreiro.JovensQueObreiroAcompanha);
+                });
+            }
+        }
+
+        function carregaJovensAcompanhadosObreiro(resultaSetJovensAcompanhados) {
+            //
+            $('#tblJovensAcompanhadosObreiro').DataTable({
+                data: resultaSetJovensAcompanhados,
+                pageLength: 12,
+                destroy: true,
+                dom: 'Bfrtip',
+                buttons: [
+                ],
+                columns: [
+                    { data: 'IdX' },
+                    { data: 'Nome' },
+                    {
+                        data: null,
+                        defaultContent: '<div class="btn-group"> <button type="button" alt="Histórico do Árvore da Vida" class="btn btn-warning btn-xs dt-view" style="margin-right:16px;"><span class="fa fa-search" aria-hidden="true"></span><span class="fa fa-history" aria-hidden="true"></span></button> </div>'
+                    }
+                ],
+                columnDefs: [
+                    {
+                        targets: [0],
+                        visible: false,
+                        searchable: false
+                    }
+                ]
+            });
+        }
+
+        function trataImagemFotoPerfil(urlFoto) {
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            var img = new Image();
+            img.onload = function () {
+
+                // set size proportional to image
+                canvas.height = 165;//canvas.width * (img.height / img.width);
+                //190 old value of with of canvas
+
+                // step 1 - resize to 50%
+                var oc = document.createElement('canvas'),
+                    octx = oc.getContext('2d');
+
+                oc.width = img.width * 0.5;
+                oc.height = img.height * 0.5;
+                octx.drawImage(img, 0, 0, oc.width, oc.height);
+
+                // step 2
+                octx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5);
+
+                // step 3, resize to final size
+                ctx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5,
+                    0, 0, canvas.width, canvas.height);
+            }
+            img.src = urlFoto;
+        }
+    </script>
+
+</body>
+</html>

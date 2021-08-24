@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="MySql.Data" Version="8.0.20" />
+    <PackageReference Include="NHibernate" Version="5.2.7" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SGfju.Domain.Model.Infra.ExceptionManager\SGFJU.Domain.Model.Infra.ExceptionManager.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Security\SGFJU.Domain.Model.Infra.Security.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Util\SGFJU.Domain.Model.Infra.Util.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model\SGFJU.Domain.Model.csproj" />
+  </ItemGroup>
+
+</Project>

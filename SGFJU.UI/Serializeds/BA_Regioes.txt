@@ -1,0 +1,7 @@
+[
+  {
+    "idBloco": 27,
+    "IdRegiao": 41,
+    "NomeRegiao": "Região Feira de Santanna"
+  }
+]

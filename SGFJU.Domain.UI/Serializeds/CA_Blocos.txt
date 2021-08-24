@@ -1,0 +1,12 @@
+[
+  {
+    "idBloco": 59,
+    "NomeBloco": "Excluir - Bloco 1",
+    "IdEstadoBloco": 55
+  },
+  {
+    "idBloco": 131,
+    "NomeBloco": "Bloco Campos dos Goytacazes",
+    "IdEstadoBloco": 55
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "idBloco": 15,
+    "IdRegiao": 6,
+    "NomeRegiao": "Cidade Mineira"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 7,
+    "NomeRegiao": "Araranguá"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 8,
+    "NomeRegiao": "Içara"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 10,
+    "NomeRegiao": "Fátima"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 11,
+    "NomeRegiao": "Iriiú"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 12,
+    "NomeRegiao": "Patrópolis"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 14,
+    "NomeRegiao": "Forquilinhas"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 15,
+    "NomeRegiao": "Cidade Mineira"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 16,
+    "NomeRegiao": "Santa Luzia"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 17,
+    "NomeRegiao": "Urussanga"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 18,
+    "NomeRegiao": "Turvo"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 19,
+    "NomeRegiao": "Sede Criciúma"
+  },
+  {
+    "idBloco": 15,
+    "IdRegiao": 21,
+    "NomeRegiao": "Próspera"
+  },
+  {
+    "idBloco": 16,
+    "IdRegiao": 9,
+    "NomeRegiao": "Barra Velha"
+  },
+  {
+    "idBloco": 16,
+    "IdRegiao": 20,
+    "NomeRegiao": "Vila Nova"
+  }
+]

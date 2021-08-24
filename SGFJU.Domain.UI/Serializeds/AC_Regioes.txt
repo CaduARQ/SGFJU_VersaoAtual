@@ -1,0 +1,97 @@
+[
+  {
+    "idBloco": 60,
+    "IdRegiao": 56,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 57,
+    "NomeRegiao": "Boca do Acre"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1622,
+    "NomeRegiao": "Excluir - Sede Estadual"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1623,
+    "NomeRegiao": "Santa Inês"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1624,
+    "NomeRegiao": "Tucumã"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1625,
+    "NomeRegiao": "Raimundo Melo"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1626,
+    "NomeRegiao": "Vila Acre"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1627,
+    "NomeRegiao": "Centro"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1628,
+    "NomeRegiao": "Tancredo Neves"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1629,
+    "NomeRegiao": "Sobral"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1630,
+    "NomeRegiao": "Floresta"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1631,
+    "NomeRegiao": "Cruzeiro do Sul"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1632,
+    "NomeRegiao": "Eurinepé"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1633,
+    "NomeRegiao": "Tarauacá"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1634,
+    "NomeRegiao": "Sena Madureira"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1635,
+    "NomeRegiao": "Brasiléia"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1636,
+    "NomeRegiao": "Senador Guiomard"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1792,
+    "NomeRegiao": "Cruzeiro do Sul"
+  },
+  {
+    "idBloco": 60,
+    "IdRegiao": 1851,
+    "NomeRegiao": "Cruzeiro do Sul"
+  }
+]

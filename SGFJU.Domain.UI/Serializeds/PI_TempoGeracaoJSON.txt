@@ -1,0 +1,5 @@
+{
+  "TempoDecorridoSerializacao": "00:00:02.83",
+  "Estado": "Piauí",
+  "QuantidadeObreirosComRamos": 49
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "idBloco": 133,
+    "NomeBloco": "Sede Estadual",
+    "IdEstadoBloco": 45
+  },
+  {
+    "idBloco": 134,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 45
+  },
+  {
+    "idBloco": 135,
+    "NomeBloco": "Bloco Metropolitana Norte ",
+    "IdEstadoBloco": 45
+  },
+  {
+    "idBloco": 136,
+    "NomeBloco": "Bloco Metropolitana Sul",
+    "IdEstadoBloco": 45
+  },
+  {
+    "idBloco": 137,
+    "NomeBloco": "Bloco Zona da Mata",
+    "IdEstadoBloco": 45
+  },
+  {
+    "idBloco": 138,
+    "NomeBloco": "Bloco Sertão ",
+    "IdEstadoBloco": 45
+  },
+  {
+    "idBloco": 139,
+    "NomeBloco": "Bloco Agreste ",
+    "IdEstadoBloco": 45
+  },
+  {
+    "idBloco": 140,
+    "NomeBloco": "Bloco São Francisco ",
+    "IdEstadoBloco": 45
+  }
+]

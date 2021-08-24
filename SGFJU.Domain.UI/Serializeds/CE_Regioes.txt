@@ -1,0 +1,557 @@
+[
+  {
+    "idBloco": 206,
+    "IdRegiao": 932,
+    "NomeRegiao": "Abolição "
+  },
+  {
+    "idBloco": 206,
+    "IdRegiao": 933,
+    "NomeRegiao": "Aldeota"
+  },
+  {
+    "idBloco": 206,
+    "IdRegiao": 934,
+    "NomeRegiao": "Aldeota"
+  },
+  {
+    "idBloco": 206,
+    "IdRegiao": 935,
+    "NomeRegiao": "Seis Bocas"
+  },
+  {
+    "idBloco": 206,
+    "IdRegiao": 936,
+    "NomeRegiao": "Papicu"
+  },
+  {
+    "idBloco": 206,
+    "IdRegiao": 937,
+    "NomeRegiao": "Praia do Futuro"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 955,
+    "NomeRegiao": "Caucaia"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 956,
+    "NomeRegiao": "Metrópole"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 957,
+    "NomeRegiao": "Araturi"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 958,
+    "NomeRegiao": "Jurema"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 959,
+    "NomeRegiao": "Potira"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 960,
+    "NomeRegiao": "Icaraí"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 961,
+    "NomeRegiao": "São Gonçalo"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 962,
+    "NomeRegiao": "Paracuru"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 1869,
+    "NomeRegiao": "Araturi"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 1870,
+    "NomeRegiao": "Caucaia"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 1871,
+    "NomeRegiao": "Jurema"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 1872,
+    "NomeRegiao": "Parque Potira"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 1873,
+    "NomeRegiao": "Araturi"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 1874,
+    "NomeRegiao": "Icaraí"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 1875,
+    "NomeRegiao": "Metrópole "
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 1876,
+    "NomeRegiao": "Paracuru"
+  },
+  {
+    "idBloco": 207,
+    "IdRegiao": 1877,
+    "NomeRegiao": "São Gonçalo"
+  },
+  {
+    "idBloco": 208,
+    "IdRegiao": 963,
+    "NomeRegiao": "Barra"
+  },
+  {
+    "idBloco": 208,
+    "IdRegiao": 964,
+    "NomeRegiao": "Barra 2"
+  },
+  {
+    "idBloco": 208,
+    "IdRegiao": 965,
+    "NomeRegiao": "Carlito Pamplona"
+  },
+  {
+    "idBloco": 208,
+    "IdRegiao": 966,
+    "NomeRegiao": "Jardim Guanabara"
+  },
+  {
+    "idBloco": 208,
+    "IdRegiao": 967,
+    "NomeRegiao": "Jardim Iracema"
+  },
+  {
+    "idBloco": 208,
+    "IdRegiao": 968,
+    "NomeRegiao": "Padre Andrade "
+  },
+  {
+    "idBloco": 208,
+    "IdRegiao": 969,
+    "NomeRegiao": "Pirambu"
+  },
+  {
+    "idBloco": 208,
+    "IdRegiao": 970,
+    "NomeRegiao": "Presidente Kennedy"
+  },
+  {
+    "idBloco": 209,
+    "IdRegiao": 971,
+    "NomeRegiao": "Genibaú"
+  },
+  {
+    "idBloco": 209,
+    "IdRegiao": 972,
+    "NomeRegiao": "João XXIII"
+  },
+  {
+    "idBloco": 209,
+    "IdRegiao": 973,
+    "NomeRegiao": "Antônio Bezerra "
+  },
+  {
+    "idBloco": 209,
+    "IdRegiao": 974,
+    "NomeRegiao": "Conjunto Ceará 1"
+  },
+  {
+    "idBloco": 209,
+    "IdRegiao": 975,
+    "NomeRegiao": "Conjunto Ceará 2"
+  },
+  {
+    "idBloco": 209,
+    "IdRegiao": 976,
+    "NomeRegiao": "Santa Rosa"
+  },
+  {
+    "idBloco": 209,
+    "IdRegiao": 977,
+    "NomeRegiao": "Santa Cecília"
+  },
+  {
+    "idBloco": 210,
+    "IdRegiao": 978,
+    "NomeRegiao": "José Walter"
+  },
+  {
+    "idBloco": 210,
+    "IdRegiao": 979,
+    "NomeRegiao": "Conjunto Esperança"
+  },
+  {
+    "idBloco": 210,
+    "IdRegiao": 980,
+    "NomeRegiao": "Planalto Castelão"
+  },
+  {
+    "idBloco": 210,
+    "IdRegiao": 981,
+    "NomeRegiao": "São Cristovão"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 982,
+    "NomeRegiao": "Maracanaú"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 983,
+    "NomeRegiao": "Acarape"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 984,
+    "NomeRegiao": "Baturité"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 985,
+    "NomeRegiao": "Jereissati 1"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 986,
+    "NomeRegiao": "Jereissati 2"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 987,
+    "NomeRegiao": "Maranguape"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 988,
+    "NomeRegiao": "Maravilhas"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 989,
+    "NomeRegiao": "Pajuçara"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 990,
+    "NomeRegiao": "Timbó"
+  },
+  {
+    "idBloco": 211,
+    "IdRegiao": 991,
+    "NomeRegiao": "Vila das Flores"
+  },
+  {
+    "idBloco": 212,
+    "IdRegiao": 992,
+    "NomeRegiao": "Messejana"
+  },
+  {
+    "idBloco": 212,
+    "IdRegiao": 994,
+    "NomeRegiao": "Barro Duro"
+  },
+  {
+    "idBloco": 212,
+    "IdRegiao": 995,
+    "NomeRegiao": "Aerolândia"
+  },
+  {
+    "idBloco": 212,
+    "IdRegiao": 996,
+    "NomeRegiao": "Itaitinga"
+  },
+  {
+    "idBloco": 212,
+    "IdRegiao": 997,
+    "NomeRegiao": "Santa Maria"
+  },
+  {
+    "idBloco": 212,
+    "IdRegiao": 1006,
+    "NomeRegiao": "Messejana 2"
+  },
+  {
+    "idBloco": 212,
+    "IdRegiao": 1007,
+    "NomeRegiao": "Conjunto Palmeiras"
+  },
+  {
+    "idBloco": 212,
+    "IdRegiao": 1008,
+    "NomeRegiao": "Tancredo Neves"
+  },
+  {
+    "idBloco": 212,
+    "IdRegiao": 1009,
+    "NomeRegiao": "Barrocão"
+  },
+  {
+    "idBloco": 213,
+    "IdRegiao": 1010,
+    "NomeRegiao": "Parangaba"
+  },
+  {
+    "idBloco": 213,
+    "IdRegiao": 1011,
+    "NomeRegiao": "São José"
+  },
+  {
+    "idBloco": 213,
+    "IdRegiao": 1012,
+    "NomeRegiao": "Serrinha"
+  },
+  {
+    "idBloco": 213,
+    "IdRegiao": 1013,
+    "NomeRegiao": "Otávio Bonfim"
+  },
+  {
+    "idBloco": 213,
+    "IdRegiao": 1014,
+    "NomeRegiao": "Pan americano"
+  },
+  {
+    "idBloco": 213,
+    "IdRegiao": 1015,
+    "NomeRegiao": "Parque Jerusalém"
+  },
+  {
+    "idBloco": 213,
+    "IdRegiao": 1016,
+    "NomeRegiao": "Montese"
+  },
+  {
+    "idBloco": 213,
+    "IdRegiao": 1017,
+    "NomeRegiao": "Bela Vista"
+  },
+  {
+    "idBloco": 214,
+    "IdRegiao": 1018,
+    "NomeRegiao": "Crateús"
+  },
+  {
+    "idBloco": 214,
+    "IdRegiao": 1019,
+    "NomeRegiao": "Nova Russas"
+  },
+  {
+    "idBloco": 214,
+    "IdRegiao": 1020,
+    "NomeRegiao": "Tauá"
+  },
+  {
+    "idBloco": 215,
+    "IdRegiao": 1021,
+    "NomeRegiao": "Eusébio"
+  },
+  {
+    "idBloco": 215,
+    "IdRegiao": 1022,
+    "NomeRegiao": "Aracati"
+  },
+  {
+    "idBloco": 215,
+    "IdRegiao": 1023,
+    "NomeRegiao": "Aquiraz"
+  },
+  {
+    "idBloco": 215,
+    "IdRegiao": 1024,
+    "NomeRegiao": "Área Verde"
+  },
+  {
+    "idBloco": 215,
+    "IdRegiao": 1025,
+    "NomeRegiao": "Beberibe"
+  },
+  {
+    "idBloco": 216,
+    "IdRegiao": 1026,
+    "NomeRegiao": "Iguatu"
+  },
+  {
+    "idBloco": 216,
+    "IdRegiao": 1027,
+    "NomeRegiao": "Icó"
+  },
+  {
+    "idBloco": 216,
+    "IdRegiao": 1028,
+    "NomeRegiao": "Mombaça"
+  },
+  {
+    "idBloco": 216,
+    "IdRegiao": 1029,
+    "NomeRegiao": "Várzea Alegre "
+  },
+  {
+    "idBloco": 217,
+    "IdRegiao": 1030,
+    "NomeRegiao": "Itapipoca"
+  },
+  {
+    "idBloco": 217,
+    "IdRegiao": 1031,
+    "NomeRegiao": "Acaraú"
+  },
+  {
+    "idBloco": 217,
+    "IdRegiao": 1032,
+    "NomeRegiao": "Trairi"
+  },
+  {
+    "idBloco": 217,
+    "IdRegiao": 1033,
+    "NomeRegiao": "Itapajé"
+  },
+  {
+    "idBloco": 218,
+    "IdRegiao": 1034,
+    "NomeRegiao": "Juazeiro do Norte"
+  },
+  {
+    "idBloco": 218,
+    "IdRegiao": 1035,
+    "NomeRegiao": "Crato"
+  },
+  {
+    "idBloco": 218,
+    "IdRegiao": 1036,
+    "NomeRegiao": "Brejo Santo"
+  },
+  {
+    "idBloco": 218,
+    "IdRegiao": 1037,
+    "NomeRegiao": "Campos Sales"
+  },
+  {
+    "idBloco": 218,
+    "IdRegiao": 1038,
+    "NomeRegiao": "Barbalha"
+  },
+  {
+    "idBloco": 219,
+    "IdRegiao": 1039,
+    "NomeRegiao": "Morada Nova"
+  },
+  {
+    "idBloco": 219,
+    "IdRegiao": 1040,
+    "NomeRegiao": "Limoeiro"
+  },
+  {
+    "idBloco": 219,
+    "IdRegiao": 1041,
+    "NomeRegiao": "Russas"
+  },
+  {
+    "idBloco": 220,
+    "IdRegiao": 1042,
+    "NomeRegiao": "Quixeramobim"
+  },
+  {
+    "idBloco": 220,
+    "IdRegiao": 1043,
+    "NomeRegiao": "Quixadá "
+  },
+  {
+    "idBloco": 220,
+    "IdRegiao": 1044,
+    "NomeRegiao": "Canindé"
+  },
+  {
+    "idBloco": 221,
+    "IdRegiao": 1045,
+    "NomeRegiao": "Sobral 1"
+  },
+  {
+    "idBloco": 221,
+    "IdRegiao": 1046,
+    "NomeRegiao": "Sobral 2"
+  },
+  {
+    "idBloco": 221,
+    "IdRegiao": 1047,
+    "NomeRegiao": "Sobral 3"
+  },
+  {
+    "idBloco": 221,
+    "IdRegiao": 1048,
+    "NomeRegiao": "Tianguá"
+  },
+  {
+    "idBloco": 221,
+    "IdRegiao": 1049,
+    "NomeRegiao": "Santa Quitéria"
+  },
+  {
+    "idBloco": 221,
+    "IdRegiao": 1050,
+    "NomeRegiao": "Camocim"
+  },
+  {
+    "idBloco": 221,
+    "IdRegiao": 1051,
+    "NomeRegiao": "São Benedito"
+  },
+  {
+    "idBloco": 221,
+    "IdRegiao": 1052,
+    "NomeRegiao": "Guaraciaba do Norte"
+  },
+  {
+    "idBloco": 221,
+    "IdRegiao": 1053,
+    "NomeRegiao": "Reriutaba"
+  },
+  {
+    "idBloco": 222,
+    "IdRegiao": 1054,
+    "NomeRegiao": "Pacajus"
+  },
+  {
+    "idBloco": 222,
+    "IdRegiao": 1055,
+    "NomeRegiao": "Horizonte"
+  },
+  {
+    "idBloco": 222,
+    "IdRegiao": 1056,
+    "NomeRegiao": "Cascavel "
+  },
+  {
+    "idBloco": 302,
+    "IdRegiao": 1640,
+    "NomeRegiao": "Catedral"
+  },
+  {
+    "idBloco": 302,
+    "IdRegiao": 1811,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 302,
+    "IdRegiao": 1880,
+    "NomeRegiao": "Sede Estadual"
+  }
+]

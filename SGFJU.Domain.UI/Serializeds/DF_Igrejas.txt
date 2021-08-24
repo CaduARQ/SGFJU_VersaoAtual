@@ -1,0 +1,1076 @@
+[
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1105,
+    "IdIgreja": 3766,
+    "NomeIgreja": "Sede Agrovila"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1105,
+    "IdIgreja": 3767,
+    "NomeIgreja": "São Sebastião 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1105,
+    "IdIgreja": 3768,
+    "NomeIgreja": "Bosque"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1107,
+    "IdIgreja": 3350,
+    "NomeIgreja": "Sede Águas Bonitas"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1107,
+    "IdIgreja": 3358,
+    "NomeIgreja": "Girassol"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1107,
+    "IdIgreja": 3359,
+    "NomeIgreja": "Sede águas Bonitas"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1107,
+    "IdIgreja": 3360,
+    "NomeIgreja": "Solar da Barragem"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1108,
+    "IdIgreja": 3392,
+    "NomeIgreja": "Sede Águas Lindas"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1108,
+    "IdIgreja": 3393,
+    "NomeIgreja": "Águas Lindas 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1108,
+    "IdIgreja": 3394,
+    "NomeIgreja": "Águas Lindas 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1108,
+    "IdIgreja": 3395,
+    "NomeIgreja": "Camping Club"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1108,
+    "IdIgreja": 3396,
+    "NomeIgreja": "Guaira"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1108,
+    "IdIgreja": 3397,
+    "NomeIgreja": "Pérola"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1109,
+    "IdIgreja": 3426,
+    "NomeIgreja": "Sede Arapoangas"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1109,
+    "IdIgreja": 3427,
+    "NomeIgreja": "Arapoangas 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1109,
+    "IdIgreja": 3428,
+    "NomeIgreja": "Arapoangas 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1109,
+    "IdIgreja": 3429,
+    "NomeIgreja": "Vale do Amanhecer"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1111,
+    "IdIgreja": 3447,
+    "NomeIgreja": "Sede Asa Norte"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1111,
+    "IdIgreja": 3448,
+    "NomeIgreja": "Varjão"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1115,
+    "IdIgreja": 3461,
+    "NomeIgreja": "Sede Brasilinha"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1115,
+    "IdIgreja": 3462,
+    "NomeIgreja": "Brasilinha 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1115,
+    "IdIgreja": 3463,
+    "NomeIgreja": "Brasilinha 16"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1115,
+    "IdIgreja": 3464,
+    "NomeIgreja": "Brasilinha 17"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1115,
+    "IdIgreja": 3465,
+    "NomeIgreja": "Imigrantes "
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1115,
+    "IdIgreja": 3466,
+    "NomeIgreja": "Jardim Paquetá"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1115,
+    "IdIgreja": 3467,
+    "NomeIgreja": "São João da Aliança"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1124,
+    "IdIgreja": 3474,
+    "NomeIgreja": "Sede Brazlândia"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1124,
+    "IdIgreja": 3475,
+    "NomeIgreja": "Incra 8"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1124,
+    "IdIgreja": 3476,
+    "NomeIgreja": "Veredas"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1124,
+    "IdIgreja": 3477,
+    "NomeIgreja": "Padre Bernardo"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1127,
+    "IdIgreja": 3478,
+    "NomeIgreja": "Sede Ceilândia Centro"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1127,
+    "IdIgreja": 3479,
+    "NomeIgreja": "Ceilândia Sul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1127,
+    "IdIgreja": 3480,
+    "NomeIgreja": "Guariroba"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1127,
+    "IdIgreja": 3481,
+    "NomeIgreja": "Via Leste"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1129,
+    "IdIgreja": 3482,
+    "NomeIgreja": "Sede Ceilândia Norte"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1129,
+    "IdIgreja": 3483,
+    "NomeIgreja": "Setor O 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1130,
+    "IdIgreja": 3484,
+    "NomeIgreja": "Sede Conic"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1130,
+    "IdIgreja": 3485,
+    "NomeIgreja": "Vila Planalto"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1131,
+    "IdIgreja": 3488,
+    "NomeIgreja": "Sede Cristalina"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1147,
+    "IdIgreja": 3489,
+    "NomeIgreja": "Sede Formosa"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1147,
+    "IdIgreja": 3490,
+    "NomeIgreja": "Formosinha"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1147,
+    "IdIgreja": 3491,
+    "NomeIgreja": "Setor Nordeste"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1147,
+    "IdIgreja": 3492,
+    "NomeIgreja": "Setor Ferroviário"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1149,
+    "IdIgreja": 3508,
+    "NomeIgreja": "Sede Gama Centro"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1149,
+    "IdIgreja": 3509,
+    "NomeIgreja": "Serra Dourada"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1149,
+    "IdIgreja": 3510,
+    "NomeIgreja": "Lago Azul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1150,
+    "IdIgreja": 3511,
+    "NomeIgreja": "Sede Gama Leste"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1150,
+    "IdIgreja": 3512,
+    "NomeIgreja": "Gama Leste 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1152,
+    "IdIgreja": 3517,
+    "NomeIgreja": "Sede Guará"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1152,
+    "IdIgreja": 3518,
+    "NomeIgreja": "Guara 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1152,
+    "IdIgreja": 3519,
+    "NomeIgreja": "Candângolandia"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1152,
+    "IdIgreja": 3520,
+    "NomeIgreja": "Bandeirante"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1152,
+    "IdIgreja": 3521,
+    "NomeIgreja": "Vargem Bonita"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1153,
+    "IdIgreja": 3526,
+    "NomeIgreja": "Sede Itapoã"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1153,
+    "IdIgreja": 3527,
+    "NomeIgreja": "Itapoã 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1153,
+    "IdIgreja": 3528,
+    "NomeIgreja": "Itapoã 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1155,
+    "IdIgreja": 3529,
+    "NomeIgreja": "Sede Jardim ingá"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1155,
+    "IdIgreja": 3530,
+    "NomeIgreja": "Jardim Ingá 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1155,
+    "IdIgreja": 3531,
+    "NomeIgreja": "Jardim ipê"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1155,
+    "IdIgreja": 3532,
+    "NomeIgreja": "Marajó"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1158,
+    "IdIgreja": 3538,
+    "NomeIgreja": "Sede Jardim Brasília"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1158,
+    "IdIgreja": 3539,
+    "NomeIgreja": "Barragem 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1158,
+    "IdIgreja": 3540,
+    "NomeIgreja": "Barragem 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1158,
+    "IdIgreja": 3541,
+    "NomeIgreja": "Jardim paraiso"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1158,
+    "IdIgreja": 3542,
+    "NomeIgreja": "Setor 10"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1161,
+    "IdIgreja": 3552,
+    "NomeIgreja": "Sede Luziânia"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1161,
+    "IdIgreja": 3553,
+    "NomeIgreja": "Luziânia 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1161,
+    "IdIgreja": 3554,
+    "NomeIgreja": "Vila Alvorada"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1161,
+    "IdIgreja": 3555,
+    "NomeIgreja": "Vila Guará"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1163,
+    "IdIgreja": 3556,
+    "NomeIgreja": "Sede M Norte"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1163,
+    "IdIgreja": 3557,
+    "NomeIgreja": "L Norte 15"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1163,
+    "IdIgreja": 3558,
+    "NomeIgreja": "L Norte 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1165,
+    "IdIgreja": 3568,
+    "NomeIgreja": "Sede Novo Gama"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1165,
+    "IdIgreja": 3569,
+    "NomeIgreja": "Pedregal 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1165,
+    "IdIgreja": 3570,
+    "NomeIgreja": "Vale Pedregal"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1165,
+    "IdIgreja": 3571,
+    "NomeIgreja": "Lunabel 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1165,
+    "IdIgreja": 3572,
+    "NomeIgreja": "Lunabel 4"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1165,
+    "IdIgreja": 3573,
+    "NomeIgreja": "Boa Vista 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1168,
+    "IdIgreja": 3576,
+    "NomeIgreja": "Sede P Norte "
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1168,
+    "IdIgreja": 3577,
+    "NomeIgreja": "Pinheiros"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1168,
+    "IdIgreja": 3578,
+    "NomeIgreja": "Casa Branca"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1169,
+    "IdIgreja": 3582,
+    "NomeIgreja": "Sede P Sul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1169,
+    "IdIgreja": 3583,
+    "NomeIgreja": "P Sul 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1169,
+    "IdIgreja": 3584,
+    "NomeIgreja": "P Sul 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1170,
+    "IdIgreja": 3592,
+    "NomeIgreja": "Sede Paranoá"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1170,
+    "IdIgreja": 3593,
+    "NomeIgreja": "Paranoá 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1171,
+    "IdIgreja": 3603,
+    "NomeIgreja": "Sede Planaltina 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1171,
+    "IdIgreja": 3604,
+    "NomeIgreja": "Buritis 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1171,
+    "IdIgreja": 3605,
+    "NomeIgreja": "Mestre d Armas 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1172,
+    "IdIgreja": 3607,
+    "NomeIgreja": "Sede Planaltina 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1172,
+    "IdIgreja": 3608,
+    "NomeIgreja": "Buritis 4"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1172,
+    "IdIgreja": 3609,
+    "NomeIgreja": "Estância 4"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1172,
+    "IdIgreja": 3610,
+    "NomeIgreja": "Estância 5"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1172,
+    "IdIgreja": 3611,
+    "NomeIgreja": "Mestre D' Armas 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1173,
+    "IdIgreja": 3612,
+    "NomeIgreja": "Sede Posse"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1173,
+    "IdIgreja": 3613,
+    "NomeIgreja": "Rosário"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1173,
+    "IdIgreja": 3614,
+    "NomeIgreja": "Simolândia"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1174,
+    "IdIgreja": 3615,
+    "NomeIgreja": "Sede QNQ"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1174,
+    "IdIgreja": 3616,
+    "NomeIgreja": "QNR"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1174,
+    "IdIgreja": 3617,
+    "NomeIgreja": "QNP"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1175,
+    "IdIgreja": 3624,
+    "NomeIgreja": "Sede Recanto das Emas"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1175,
+    "IdIgreja": 3625,
+    "NomeIgreja": "Recanto 115"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1175,
+    "IdIgreja": 3626,
+    "NomeIgreja": "Recanto 803"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1180,
+    "IdIgreja": 3630,
+    "NomeIgreja": "Sede Riacho Fundo 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1180,
+    "IdIgreja": 3631,
+    "NomeIgreja": "ADE"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1181,
+    "IdIgreja": 3636,
+    "NomeIgreja": "Sede Riacho Fundo 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1181,
+    "IdIgreja": 3637,
+    "NomeIgreja": "Caub"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1181,
+    "IdIgreja": 3638,
+    "NomeIgreja": "Qc"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1182,
+    "IdIgreja": 3664,
+    "NomeIgreja": "Sede Samambaia Norte"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1182,
+    "IdIgreja": 3665,
+    "NomeIgreja": "Samambaia norte 407"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1182,
+    "IdIgreja": 3666,
+    "NomeIgreja": "Samambaia norte 415"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1182,
+    "IdIgreja": 3667,
+    "NomeIgreja": "Samambaia Norte 423"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1182,
+    "IdIgreja": 3668,
+    "NomeIgreja": "Samambaia Norte 429"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1183,
+    "IdIgreja": 3669,
+    "NomeIgreja": "Sede samambaia Sul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1183,
+    "IdIgreja": 3670,
+    "NomeIgreja": "Samambaia Sul 316"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1185,
+    "IdIgreja": 3679,
+    "NomeIgreja": "Sede Setor O"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1185,
+    "IdIgreja": 3680,
+    "NomeIgreja": "Sol Nascente"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1185,
+    "IdIgreja": 3681,
+    "NomeIgreja": "Condomínio Privê"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1186,
+    "IdIgreja": 3691,
+    "NomeIgreja": "Sede Sobradinho 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1186,
+    "IdIgreja": 3692,
+    "NomeIgreja": "Nova Colina"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1187,
+    "IdIgreja": 3700,
+    "NomeIgreja": "Sede Sobradinho 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1187,
+    "IdIgreja": 3701,
+    "NomeIgreja": "Grande Colorado"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1187,
+    "IdIgreja": 3702,
+    "NomeIgreja": "Setor de mansões"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1187,
+    "IdIgreja": 3703,
+    "NomeIgreja": "Fercal"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3469,
+    "NomeIgreja": "Sede Santo Antonio"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3470,
+    "NomeIgreja": "Park 11"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3471,
+    "NomeIgreja": "Queiroz"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3472,
+    "NomeIgreja": "Buritis"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3473,
+    "NomeIgreja": "Park S.A"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3723,
+    "NomeIgreja": "Sede Santo Antônio"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3724,
+    "NomeIgreja": "Park 11"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3725,
+    "NomeIgreja": "Queiroz"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3726,
+    "NomeIgreja": "Buritis"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1188,
+    "IdIgreja": 3727,
+    "NomeIgreja": "Park S.A"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1189,
+    "IdIgreja": 3453,
+    "NomeIgreja": "Sede São Sebastião"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1189,
+    "IdIgreja": 3454,
+    "NomeIgreja": "Morro Azul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1189,
+    "IdIgreja": 3455,
+    "NomeIgreja": "Marajó"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1189,
+    "IdIgreja": 3730,
+    "NomeIgreja": "Sede São Sebastião"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1189,
+    "IdIgreja": 3731,
+    "NomeIgreja": "Morro Azul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1189,
+    "IdIgreja": 3732,
+    "NomeIgreja": "Marajó"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1190,
+    "IdIgreja": 3435,
+    "NomeIgreja": "Sede Sudoeste"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1190,
+    "IdIgreja": 3436,
+    "NomeIgreja": "Estrutural 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1190,
+    "IdIgreja": 3437,
+    "NomeIgreja": "Estrutural 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1190,
+    "IdIgreja": 3438,
+    "NomeIgreja": "Estrutural 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1190,
+    "IdIgreja": 3736,
+    "NomeIgreja": "Sede Sudoeste"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1190,
+    "IdIgreja": 3737,
+    "NomeIgreja": "Estrutural 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1190,
+    "IdIgreja": 3738,
+    "NomeIgreja": "Estrutural 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1190,
+    "IdIgreja": 3739,
+    "NomeIgreja": "Estrutural 3"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1191,
+    "IdIgreja": 3424,
+    "NomeIgreja": "Sede Santa Maria Norte"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1191,
+    "IdIgreja": 3425,
+    "NomeIgreja": "Santa Maria Norte 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1191,
+    "IdIgreja": 3744,
+    "NomeIgreja": "Sede Santa Maria"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1191,
+    "IdIgreja": 3745,
+    "NomeIgreja": "Santa maria Norte 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1192,
+    "IdIgreja": 3417,
+    "NomeIgreja": "Sede Taguatinga Norte"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1192,
+    "IdIgreja": 3418,
+    "NomeIgreja": "Vicente Pires 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1192,
+    "IdIgreja": 3419,
+    "NomeIgreja": "Vicente Pires 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1192,
+    "IdIgreja": 3746,
+    "NomeIgreja": "Sede Taguatinga Norte "
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1192,
+    "IdIgreja": 3747,
+    "NomeIgreja": "Vicente Pires 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1192,
+    "IdIgreja": 3748,
+    "NomeIgreja": "Vicente Pires 2"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1193,
+    "IdIgreja": 3411,
+    "NomeIgreja": "Sede Taguatinga Centro"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1193,
+    "IdIgreja": 3412,
+    "NomeIgreja": "Pistão Sul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1193,
+    "IdIgreja": 3413,
+    "NomeIgreja": "Águas Claras"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1193,
+    "IdIgreja": 3414,
+    "NomeIgreja": "Arniqueiras"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1193,
+    "IdIgreja": 3749,
+    "NomeIgreja": "Sede Taguatinga Centro"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1193,
+    "IdIgreja": 3750,
+    "NomeIgreja": "Pistão Sul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1193,
+    "IdIgreja": 3751,
+    "NomeIgreja": "Águas Claras"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1193,
+    "IdIgreja": 3752,
+    "NomeIgreja": "Arniqueiras"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1194,
+    "IdIgreja": 3367,
+    "NomeIgreja": "Sede Valparaíso"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1194,
+    "IdIgreja": 3378,
+    "NomeIgreja": "Valparaíso 1"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1194,
+    "IdIgreja": 3379,
+    "NomeIgreja": "Céu Azul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1194,
+    "IdIgreja": 3380,
+    "NomeIgreja": "Jardim Céu Azul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1194,
+    "IdIgreja": 3381,
+    "NomeIgreja": "Cruzeiro do Sul"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1194,
+    "IdIgreja": 3382,
+    "NomeIgreja": "Vila Guaíra"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1194,
+    "IdIgreja": 3383,
+    "NomeIgreja": "Anhanguera"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1194,
+    "IdIgreja": 3390,
+    "NomeIgreja": "Esplanada "
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1194,
+    "IdIgreja": 3391,
+    "NomeIgreja": "Ipanema "
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1195,
+    "IdIgreja": 3401,
+    "NomeIgreja": "Sede Ocidental"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1195,
+    "IdIgreja": 3402,
+    "NomeIgreja": "Nova Friburgo"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1195,
+    "IdIgreja": 3403,
+    "NomeIgreja": "Jardim ABC"
+  },
+  {
+    "IdEstado": 35,
+    "IdRegiao": 1535,
+    "IdIgreja": 4962,
+    "NomeIgreja": "Catedral Distrito Federal"
+  }
+]

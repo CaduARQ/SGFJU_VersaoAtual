@@ -1,0 +1,262 @@
+[
+  {
+    "idBloco": 223,
+    "IdRegiao": 1094,
+    "NomeRegiao": "Alecrim"
+  },
+  {
+    "idBloco": 223,
+    "IdRegiao": 1095,
+    "NomeRegiao": "Cidade Esperança"
+  },
+  {
+    "idBloco": 223,
+    "IdRegiao": 1096,
+    "NomeRegiao": "Ribeira"
+  },
+  {
+    "idBloco": 223,
+    "IdRegiao": 1097,
+    "NomeRegiao": "Felipe Camarão"
+  },
+  {
+    "idBloco": 223,
+    "IdRegiao": 1227,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 223,
+    "IdRegiao": 1228,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 223,
+    "IdRegiao": 1229,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 224,
+    "IdRegiao": 1098,
+    "NomeRegiao": "Igapo "
+  },
+  {
+    "idBloco": 224,
+    "IdRegiao": 1099,
+    "NomeRegiao": "Parque dos coqueiros"
+  },
+  {
+    "idBloco": 224,
+    "IdRegiao": 1100,
+    "NomeRegiao": "Amarante"
+  },
+  {
+    "idBloco": 224,
+    "IdRegiao": 1101,
+    "NomeRegiao": "Panatis"
+  },
+  {
+    "idBloco": 225,
+    "IdRegiao": 1113,
+    "NomeRegiao": "Nova natal"
+  },
+  {
+    "idBloco": 225,
+    "IdRegiao": 1117,
+    "NomeRegiao": "Santarém"
+  },
+  {
+    "idBloco": 225,
+    "IdRegiao": 1120,
+    "NomeRegiao": "Panorama"
+  },
+  {
+    "idBloco": 225,
+    "IdRegiao": 1122,
+    "NomeRegiao": "Brasil novo"
+  },
+  {
+    "idBloco": 225,
+    "IdRegiao": 1125,
+    "NomeRegiao": "Alvorada"
+  },
+  {
+    "idBloco": 226,
+    "IdRegiao": 1176,
+    "NomeRegiao": "Rosa dos ventos"
+  },
+  {
+    "idBloco": 226,
+    "IdRegiao": 1177,
+    "NomeRegiao": "Parnamirim Centro"
+  },
+  {
+    "idBloco": 226,
+    "IdRegiao": 1178,
+    "NomeRegiao": "Parnamirim SR"
+  },
+  {
+    "idBloco": 226,
+    "IdRegiao": 2034,
+    "NomeRegiao": "Santos Reis"
+  },
+  {
+    "idBloco": 227,
+    "IdRegiao": 1196,
+    "NomeRegiao": "Planalto "
+  },
+  {
+    "idBloco": 227,
+    "IdRegiao": 1197,
+    "NomeRegiao": "Ponta negra"
+  },
+  {
+    "idBloco": 227,
+    "IdRegiao": 1198,
+    "NomeRegiao": "Eucaliptos"
+  },
+  {
+    "idBloco": 228,
+    "IdRegiao": 1199,
+    "NomeRegiao": "Ceará-mirim"
+  },
+  {
+    "idBloco": 228,
+    "IdRegiao": 1200,
+    "NomeRegiao": "Extremoz"
+  },
+  {
+    "idBloco": 229,
+    "IdRegiao": 1203,
+    "NomeRegiao": "Macaíba"
+  },
+  {
+    "idBloco": 229,
+    "IdRegiao": 1204,
+    "NomeRegiao": "Monte alegre"
+  },
+  {
+    "idBloco": 229,
+    "IdRegiao": 1205,
+    "NomeRegiao": "Mipibu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1211,
+    "NomeRegiao": "Mossoró"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1212,
+    "NomeRegiao": "Abolição 4"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1214,
+    "NomeRegiao": "Alto são manoel"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1216,
+    "NomeRegiao": "Macau"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1221,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1222,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1224,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1225,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1226,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1230,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1231,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1232,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1233,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1234,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1235,
+    "NomeRegiao": "Assu"
+  },
+  {
+    "idBloco": 230,
+    "IdRegiao": 1237,
+    "NomeRegiao": "Pau dos ferros"
+  },
+  {
+    "idBloco": 231,
+    "IdRegiao": 1255,
+    "NomeRegiao": "Nova cruz"
+  },
+  {
+    "idBloco": 231,
+    "IdRegiao": 1256,
+    "NomeRegiao": "Santo antonio"
+  },
+  {
+    "idBloco": 231,
+    "IdRegiao": 1257,
+    "NomeRegiao": "pipa"
+  },
+  {
+    "idBloco": 231,
+    "IdRegiao": 1258,
+    "NomeRegiao": "Goianinha"
+  },
+  {
+    "idBloco": 232,
+    "IdRegiao": 1286,
+    "NomeRegiao": "Santa cruz"
+  },
+  {
+    "idBloco": 232,
+    "IdRegiao": 1287,
+    "NomeRegiao": "Caico"
+  },
+  {
+    "idBloco": 232,
+    "IdRegiao": 1288,
+    "NomeRegiao": "Currais novos"
+  },
+  {
+    "idBloco": 238,
+    "IdRegiao": 1136,
+    "NomeRegiao": "Sede estadual "
+  }
+]

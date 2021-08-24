@@ -1,0 +1,12 @@
+[
+  {
+    "idBloco": 21,
+    "NomeBloco": "Bloco Norte",
+    "IdEstadoBloco": 5
+  },
+  {
+    "idBloco": 22,
+    "NomeBloco": "Bloco Leste",
+    "IdEstadoBloco": 5
+  }
+]

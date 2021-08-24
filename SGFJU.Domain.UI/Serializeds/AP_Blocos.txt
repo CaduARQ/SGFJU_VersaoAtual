@@ -1,0 +1,17 @@
+[
+  {
+    "idBloco": 335,
+    "NomeBloco": "Amapá",
+    "IdEstadoBloco": 31
+  },
+  {
+    "idBloco": 336,
+    "NomeBloco": "Bloco Amapá",
+    "IdEstadoBloco": 31
+  },
+  {
+    "idBloco": 341,
+    "NomeBloco": "Bloco Amapá",
+    "IdEstadoBloco": 31
+  }
+]

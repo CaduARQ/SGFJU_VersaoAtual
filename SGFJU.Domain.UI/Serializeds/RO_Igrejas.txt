@@ -1,0 +1,224 @@
+[
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1853,
+    "IdIgreja": 5802,
+    "NomeIgreja": "SEDE ESTADUAL"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1854,
+    "IdIgreja": 5841,
+    "NomeIgreja": "PARQUE CEARÁ"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1854,
+    "IdIgreja": 5842,
+    "NomeIgreja": "TANCREDO NEVES"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1854,
+    "IdIgreja": 5843,
+    "NomeIgreja": "LAGOINHA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1855,
+    "IdIgreja": 5803,
+    "NomeIgreja": "MARIANA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1855,
+    "IdIgreja": 5844,
+    "NomeIgreja": "SÃO FRANCISCO"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1855,
+    "IdIgreja": 5845,
+    "NomeIgreja": "MARIANA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1856,
+    "IdIgreja": 5846,
+    "NomeIgreja": "JK"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1856,
+    "IdIgreja": 5847,
+    "NomeIgreja": "JARDIM SANTANA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1857,
+    "IdIgreja": 5804,
+    "NomeIgreja": "IPANEMA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1857,
+    "IdIgreja": 5848,
+    "NomeIgreja": "ESPERANÇA DA COMUNIDADE"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1857,
+    "IdIgreja": 5849,
+    "NomeIgreja": "IPANEMA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1858,
+    "IdIgreja": 5850,
+    "NomeIgreja": "COSTA E SILVA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1858,
+    "IdIgreja": 5851,
+    "NomeIgreja": "NACIONAL"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1858,
+    "IdIgreja": 5852,
+    "NomeIgreja": "BALSA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1859,
+    "IdIgreja": 5805,
+    "NomeIgreja": "CIDADE NOVA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1859,
+    "IdIgreja": 5853,
+    "NomeIgreja": "ELDORADO"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1859,
+    "IdIgreja": 5854,
+    "NomeIgreja": "COAHB"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1859,
+    "IdIgreja": 5855,
+    "NomeIgreja": "CIDADE NOVA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1859,
+    "IdIgreja": 5856,
+    "NomeIgreja": "GUAPORÉ"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1859,
+    "IdIgreja": 5857,
+    "NomeIgreja": "GURGEL"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1859,
+    "IdIgreja": 5858,
+    "NomeIgreja": "ELETRO NORTE"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1860,
+    "IdIgreja": 5859,
+    "NomeIgreja": "UNIÃO DA VITÓRIA"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1860,
+    "IdIgreja": 5860,
+    "NomeIgreja": "APONIÃ"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1860,
+    "IdIgreja": 5861,
+    "NomeIgreja": "IGARAPÉ"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1861,
+    "IdIgreja": 5862,
+    "NomeIgreja": "LIBERDADE"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1861,
+    "IdIgreja": 5863,
+    "NomeIgreja": "NOVA PORTO VELHO"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1861,
+    "IdIgreja": 5864,
+    "NomeIgreja": "TUCUMANZAL"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1861,
+    "IdIgreja": 5865,
+    "NomeIgreja": "AREAL"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1862,
+    "IdIgreja": 5866,
+    "NomeIgreja": "ULISSES"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1862,
+    "IdIgreja": 5867,
+    "NomeIgreja": "MARCOS FREIRE"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1863,
+    "IdIgreja": 5868,
+    "NomeIgreja": "CANDEIAS DO JAMARI"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1863,
+    "IdIgreja": 5869,
+    "NomeIgreja": "TRIUNFO"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1863,
+    "IdIgreja": 5870,
+    "NomeIgreja": "ITAPUÃ"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1864,
+    "IdIgreja": 5871,
+    "NomeIgreja": "JACI PARANÁ"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1864,
+    "IdIgreja": 5872,
+    "NomeIgreja": "UNIÃO BANDEIRANTES"
+  },
+  {
+    "IdEstado": 50,
+    "IdRegiao": 1864,
+    "IdIgreja": 5873,
+    "NomeIgreja": "NOVA MUTUM"
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "idBloco": 263,
+    "NomeBloco": "Bloco Catedral",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 264,
+    "NomeBloco": "Bloco Itapuã",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 265,
+    "NomeBloco": "Cajazeiras X",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 266,
+    "NomeBloco": "Pau da Lima",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 267,
+    "NomeBloco": "Caminho de Areia",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 268,
+    "NomeBloco": "Dois Leões",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 269,
+    "NomeBloco": "Fazenda Grande",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 270,
+    "NomeBloco": "Tancredo Neves",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 271,
+    "NomeBloco": "Paripe",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 272,
+    "NomeBloco": "Vilas do Atlântico",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 273,
+    "NomeBloco": "Simões Filho",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 274,
+    "NomeBloco": "Candeias",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 275,
+    "NomeBloco": "Camaçari",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 276,
+    "NomeBloco": "Alagoinhas",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 277,
+    "NomeBloco": "Feira de Santana I",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 278,
+    "NomeBloco": "Feira de Santana 2",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 279,
+    "NomeBloco": "Santo Antônio de Jesus",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 280,
+    "NomeBloco": "Itabuna",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 281,
+    "NomeBloco": "Vitória da Conquista",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 282,
+    "NomeBloco": "Juazeiro",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 283,
+    "NomeBloco": "Barreiras",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 284,
+    "NomeBloco": "Jequié",
+    "IdEstadoBloco": 33
+  },
+  {
+    "idBloco": 342,
+    "NomeBloco": "Sede Estadual ",
+    "IdEstadoBloco": 33
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "idBloco": 206,
+    "NomeBloco": "Abolição ",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 207,
+    "NomeBloco": "Caucaia",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 208,
+    "NomeBloco": "Jardim Guanabara",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 209,
+    "NomeBloco": "Genibaú",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 210,
+    "NomeBloco": "José Walter",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 211,
+    "NomeBloco": "Maracanaú",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 212,
+    "NomeBloco": "Messejana",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 213,
+    "NomeBloco": "Parangaba",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 214,
+    "NomeBloco": "Crateús",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 215,
+    "NomeBloco": "Eusébio",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 216,
+    "NomeBloco": "Iguatu",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 217,
+    "NomeBloco": "Itapipoca",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 218,
+    "NomeBloco": "Juazeiro do Norte",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 219,
+    "NomeBloco": "Morada Nova",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 220,
+    "NomeBloco": "Quixeramobim",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 221,
+    "NomeBloco": "Sobral",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 222,
+    "NomeBloco": "Pacajus",
+    "IdEstadoBloco": 34
+  },
+  {
+    "idBloco": 302,
+    "NomeBloco": "Catedral",
+    "IdEstadoBloco": 34
+  }
+]

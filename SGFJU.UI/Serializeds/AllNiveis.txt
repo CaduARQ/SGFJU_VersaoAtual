@@ -1,0 +1,17 @@
+[
+  {
+    "Code": 1,
+    "Descricao": "Bom",
+    "Codigo": 0
+  },
+  {
+    "Code": 2,
+    "Descricao": "Regular",
+    "Codigo": 0
+  },
+  {
+    "Code": 3,
+    "Descricao": "Excelente",
+    "Codigo": 0
+  }
+]

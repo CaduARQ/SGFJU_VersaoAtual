@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB722258-E004-4B69-A7E4-35E2CBBA6C9B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGFJU.UI</RootNamespace>
+    <AssemblyName>SGFJU.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <UpgradeBackupLocation />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.1.2\lib\net461\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="HibernatingRhinos.Profiler.Appender">
+      <HintPath>..\..\..\..\..\..\___0x048516_Sys\.Net_Development\NHibernate.Profiler-v5.0-Build-5043\Profiler\HibernatingRhinos.Profiler.Appender.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.20\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.2.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.2.7\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.7.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.7.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.7.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.4.7.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Telerik.Web.Design">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\Telerik.Web.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Device.Detection">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\Telerik.Web.Device.Detection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.Spreadsheet">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Web.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\Telerik.Web.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\Telerik.Web.UI.Skins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip">
+      <HintPath>..\lib\RCAJAX\2019.2.514.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.20\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=5.11.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.4\lib\net47\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.4\lib\net47\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.20\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lab.Master.cs">
+      <DependentUpon>Lab.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lab.Master.designer.cs">
+      <DependentUpon>Lab.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Lab2.aspx.cs">
+      <DependentUpon>Lab2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lab2.aspx.designer.cs">
+      <DependentUpon>Lab2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\cut.aspx.cs">
+      <DependentUpon>cut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\cut.aspx.designer.cs">
+      <DependentUpon>cut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAdicionaIgrejasRegiao.aspx.cs">
+      <DependentUpon>formAdicionaIgrejasRegiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formAdicionaIgrejasRegiao.aspx.designer.cs">
+      <DependentUpon>formAdicionaIgrejasRegiao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAtualizaBloco.aspx.cs">
+      <DependentUpon>formAtualizaBloco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formAtualizaBloco.aspx.designer.cs">
+      <DependentUpon>formAtualizaBloco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formAtualizaRegiao.aspx.cs">
+      <DependentUpon>formAtualizaRegiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formAtualizaRegiao.aspx.designer.cs">
+      <DependentUpon>formAtualizaRegiao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formRelatorioTotalPorEstado.aspx.cs">
+      <DependentUpon>formRelatorioTotalPorEstado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formRelatorioTotalPorEstado.aspx.designer.cs">
+      <DependentUpon>formRelatorioTotalPorEstado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmCorrigeErros.aspx.cs">
+      <DependentUpon>frmCorrigeErros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmCorrigeErros.aspx.designer.cs">
+      <DependentUpon>frmCorrigeErros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmRegistraRegioesSemMaster.aspx.cs">
+      <DependentUpon>frmRegistraRegioesSemMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmRegistraRegioesSemMaster.aspx.designer.cs">
+      <DependentUpon>frmRegistraRegioesSemMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmVisualizarIgrejas.aspx.cs">
+      <DependentUpon>frmVisualizarIgrejas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmVisualizarIgrejas.aspx.designer.cs">
+      <DependentUpon>frmVisualizarIgrejas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GeraDTO.aspx.cs">
+      <DependentUpon>GeraDTO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\GeraDTO.aspx.designer.cs">
+      <DependentUpon>GeraDTO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistraIgrejas.aspx.cs">
+      <DependentUpon>RegistraIgrejas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RegistraIgrejas.aspx.designer.cs">
+      <DependentUpon>RegistraIgrejas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistraRegiao.aspx.cs">
+      <DependentUpon>RegistraRegiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RegistraRegiao.aspx.designer.cs">
+      <DependentUpon>RegistraRegiao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistraUsuario.aspx.cs">
+      <DependentUpon>RegistraUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RegistraUsuario.aspx.designer.cs">
+      <DependentUpon>RegistraUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\tempPage.aspx.cs">
+      <DependentUpon>tempPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\tempPage.aspx.designer.cs">
+      <DependentUpon>tempPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\Controllers\UsuariosController.cs" />
+    <Content Include="App_Code\Controllers\InstrumentationAppController.cs" />
+    <Compile Include="paginaTeste.aspx.cs">
+      <DependentUpon>paginaTeste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginaTeste.aspx.designer.cs">
+      <DependentUpon>paginaTeste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FJUDoor.aspx.cs">
+      <DependentUpon>FJUDoor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FJUDoor.aspx.designer.cs">
+      <DependentUpon>FJUDoor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FJUDoor_lab.aspx.cs">
+      <DependentUpon>FJUDoor_lab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FJUDoor_lab.aspx.designer.cs">
+      <DependentUpon>FJUDoor_lab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formBeingCut.aspx.cs">
+      <DependentUpon>formBeingCut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formBeingCut.aspx.designer.cs">
+      <DependentUpon>formBeingCut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Lab2.aspx.cs">
+      <DependentUpon>Lab2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Lab2.aspx.designer.cs">
+      <DependentUpon>Lab2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LabForm.aspx.cs">
+      <DependentUpon>LabForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\LabForm.aspx.designer.cs">
+      <DependentUpon>LabForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\R.aspx.cs">
+      <DependentUpon>R.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\R.aspx.designer.cs">
+      <DependentUpon>R.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistraBlocos.aspx.cs">
+      <DependentUpon>RegistraBlocos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RegistraBlocos.aspx.designer.cs">
+      <DependentUpon>RegistraBlocos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistraJovem2.aspx.cs">
+      <DependentUpon>RegistraJovem2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RegistraJovem2.aspx.designer.cs">
+      <DependentUpon>RegistraJovem2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SGFJUPaginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="App_Code\Controllers\GenericController.cs" />
+    <Content Include="App_Code\Controllers\JovensController.cs" />
+    <Content Include="App_Code\Controllers\ProjetosController.cs" />
+    <Compile Include="UI_App.Master.cs">
+      <DependentUpon>UI_App.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI_App.Master.designer.cs">
+      <DependentUpon>UI_App.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FJUDoor__old.aspx.cs">
+      <DependentUpon>FJUDoor__old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FJUDoor__old.aspx.designer.cs">
+      <DependentUpon>FJUDoor__old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisCultura.aspx.cs">
+      <DependentUpon>formInformacoesAdicionaisCultura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisCultura.aspx.designer.cs">
+      <DependentUpon>formInformacoesAdicionaisCultura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisEsporte.aspx.cs">
+      <DependentUpon>formInformacoesAdicionaisEsporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisEsporte.aspx.designer.cs">
+      <DependentUpon>formInformacoesAdicionaisEsporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisMidia.aspx.cs">
+      <DependentUpon>formInformacoesAdicionaisMidia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisMidia.aspx.designer.cs">
+      <DependentUpon>formInformacoesAdicionaisMidia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisProjeto.aspx.cs">
+      <DependentUpon>formInformacoesAdicionaisProjeto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisProjeto.aspx.designer.cs">
+      <DependentUpon>formInformacoesAdicionaisProjeto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisUniversitarios.aspx.cs">
+      <DependentUpon>formInformacoesAdicionaisUniversitarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\formInformacoesAdicionaisUniversitarios.aspx.designer.cs">
+      <DependentUpon>formInformacoesAdicionaisUniversitarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListaTodosJovens.aspx.cs">
+      <DependentUpon>ListaTodosJovens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ListaTodosJovens.aspx.designer.cs">
+      <DependentUpon>ListaTodosJovens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistraJovem.aspx.cs">
+      <DependentUpon>RegistraJovem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RegistraJovem.aspx.designer.cs">
+      <DependentUpon>RegistraJovem.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\Controllers\EstadosController.cs" />
+    <Content Include="App_Code\Controllers\RegioesController.cs" />
+    <Content Include="App_Code\Controllers\BlocosController.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controls\FolderNavigationControl.ascx.cs">
+      <DependentUpon>FolderNavigationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FolderNavigationControl.ascx.designer.cs">
+      <DependentUpon>FolderNavigationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MobileNavigation.ascx.cs">
+      <DependentUpon>MobileNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MobileNavigation.ascx.designer.cs">
+      <DependentUpon>MobileNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Lab2.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Views\cut.aspx" />
+    <Content Include="Views\formAdicionaIgrejasRegiao.aspx" />
+    <Content Include="Views\formAtualizaBloco.aspx" />
+    <Content Include="Views\formAtualizaRegiao.aspx" />
+    <Content Include="Views\formRelatorioTotalPorEstado.aspx" />
+    <Content Include="Views\frmCorrigeErros.aspx" />
+    <Content Include="Views\frmVisualizarIgrejas.aspx" />
+    <Content Include="Views\GeraDTO.aspx" />
+    <Content Include="Views\RegistraIgrejas.aspx" />
+    <Content Include="Views\RegistraUsuario.aspx" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadCaptcha\0.wav" />
+    <Content Include="App_Data\RadCaptcha\1.wav" />
+    <Content Include="App_Data\RadCaptcha\2.wav" />
+    <Content Include="App_Data\RadCaptcha\3.wav" />
+    <Content Include="App_Data\RadCaptcha\4.wav" />
+    <Content Include="App_Data\RadCaptcha\5.wav" />
+    <Content Include="App_Data\RadCaptcha\6.wav" />
+    <Content Include="App_Data\RadCaptcha\7.wav" />
+    <Content Include="App_Data\RadCaptcha\8.wav" />
+    <Content Include="App_Data\RadCaptcha\9.wav" />
+    <Content Include="App_Data\RadCaptcha\A.wav" />
+    <Content Include="App_Data\RadCaptcha\B.wav" />
+    <Content Include="App_Data\RadCaptcha\C.wav" />
+    <Content Include="App_Data\RadCaptcha\D.wav" />
+    <Content Include="App_Data\RadCaptcha\E.wav" />
+    <Content Include="App_Data\RadCaptcha\F.wav" />
+    <Content Include="App_Data\RadCaptcha\G.wav" />
+    <Content Include="App_Data\RadCaptcha\H.wav" />
+    <Content Include="App_Data\RadCaptcha\I.wav" />
+    <Content Include="App_Data\RadCaptcha\J.wav" />
+    <Content Include="App_Data\RadCaptcha\K.wav" />
+    <Content Include="App_Data\RadCaptcha\L.wav" />
+    <Content Include="App_Data\RadCaptcha\M.wav" />
+    <Content Include="App_Data\RadCaptcha\N.wav" />
+    <Content Include="App_Data\RadCaptcha\O.wav" />
+    <Content Include="App_Data\RadCaptcha\P.wav" />
+    <Content Include="App_Data\RadCaptcha\Q.wav" />
+    <Content Include="App_Data\RadCaptcha\R.wav" />
+    <Content Include="App_Data\RadCaptcha\S.wav" />
+    <Content Include="App_Data\RadCaptcha\T.wav" />
+    <Content Include="App_Data\RadCaptcha\U.wav" />
+    <Content Include="App_Data\RadCaptcha\V.wav" />
+    <Content Include="App_Data\RadCaptcha\W.wav" />
+    <Content Include="App_Data\RadCaptcha\X.wav" />
+    <Content Include="App_Data\RadCaptcha\Y.wav" />
+    <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="Controls\FolderNavigationControl.ascx" />
+    <Content Include="Controls\MobileNavigation.ascx" />
+    <Content Include="Fonts\OutlookSampleApp.svg" />
+    <Content Include="Fotosusuarios\cadueju.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\backgrounds\header_about.gif" />
+    <Content Include="Images\backgrounds\header_calendar.gif" />
+    <Content Include="Images\backgrounds\header_contacts.gif" />
+    <Content Include="Images\backgrounds\header_mail.gif" />
+    <Content Include="Images\backgrounds\header_notes.gif" />
+    <Content Include="Images\bcelso.png" />
+    <Content Include="Images\contacts\ALFKI.jpg" />
+    <Content Include="Images\contacts\ANATR.jpg" />
+    <Content Include="Images\contacts\ANTON.jpg" />
+    <Content Include="Images\contacts\AROUT.jpg" />
+    <Content Include="Images\contacts\BERGS.jpg" />
+    <Content Include="Images\contacts\BLAUS.jpg" />
+    <Content Include="Images\contacts\BLONP.jpg" />
+    <Content Include="Images\contacts\BOLID.jpg" />
+    <Content Include="Images\contacts\BONAP.jpg" />
+    <Content Include="Images\contacts\logoPequenoRedondo.jpeg" />
+    <Content Include="Images\favicon-16x16.png" />
+    <Content Include="Images\FJU%28LOGO%29_AZUL.png" />
+    <Content Include="Images\FJU%28LOGO%29 BRANCO.png" />
+    <Content Include="Images\FJU%28LOGO%29 CINZA.png" />
+    <Content Include="Images\fjulogo2.png" />
+    <Content Include="Images\fundo_site_topo.jpg" />
+    <Content Include="Images\ico-pass.png" />
+    <Content Include="Images\ico-user.png" />
+    <Content Include="Images\logo-universal.png" />
+    <Content Include="Images\logoPequenoRedondo.png" />
+    <Content Include="Images\mail-orientation.png" />
+    <Content Include="Images\photo-profile-s.png" />
+    <Content Include="Images\photo-profile.png" />
+    <Content Include="Images\product-icons.png" />
+    <Content Include="Images\telerik-logo.png" />
+    <Content Include="Images\topoExtendSGR.jpg" />
+    <Content Include="paginaTeste.aspx" />
+    <Content Include="Scripts\LabForm.js" />
+    <Content Include="Styles\calendar.css" />
+    <Content Include="Styles\common.css" />
+    <Content Include="Styles\contacts.css" />
+    <Content Include="Styles\LabForm.css" />
+    <Content Include="Styles\login.css" />
+    <Content Include="Styles\mail.css" />
+    <Content Include="Styles\MainsLogin.css" />
+    <Content Include="Styles\notes.css" />
+    <Content Include="Styles\styles.css" />
+    <Content Include="Styles\UI_App.css" />
+    <Content Include="Views\FJUDoor_lab.aspx" />
+    <Content Include="Views\FJUDoor__old.aspx" />
+    <Content Include="Views\FJUDoor.aspx" />
+    <Content Include="Views\formBeingCut.aspx" />
+    <Content Include="Views\formInformacoesAdicionaisCultura.aspx" />
+    <Content Include="Views\formInformacoesAdicionaisEsporte.aspx" />
+    <Content Include="Views\formInformacoesAdicionaisMidia.aspx" />
+    <Content Include="Views\formInformacoesAdicionaisProjeto.aspx" />
+    <Content Include="Views\formInformacoesAdicionaisUniversitarios.aspx" />
+    <Content Include="Views\frmRegistraRegioesSemMaster.aspx" />
+    <Content Include="Views\Lab2.aspx" />
+    <Content Include="Views\LabForm.aspx" />
+    <Content Include="Views\ListaTodosJovens.aspx" />
+    <Content Include="Views\R.aspx" />
+    <Content Include="Views\RegistraBlocos.aspx" />
+    <Content Include="Views\RegistraJovem.aspx" />
+    <Content Include="Views\RegistraJovem2.aspx" />
+    <Content Include="Views\RegistraRegiao.aspx" />
+    <Content Include="Views\tempPage.aspx" />
+    <Content Include="web.config" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="Fonts\OutlookSampleApp.eot" />
+    <Content Include="Fonts\OutlookSampleApp.ttf" />
+    <Content Include="Fonts\OutlookSampleApp.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadSpell\de-DE.tdf" />
+    <Content Include="App_Data\RadSpell\en-US.tdf" />
+    <Content Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="Lab.Master" />
+    <None Include="packages.config" />
+    <Content Include="UI_App.Master" />
+    <Content Include="Scripts\SGFJU.Domain.Model.UI.Client.JS" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Styles\common.scss" />
+    <Content Include="Styles\bootstrap.css.map" />
+    <Content Include="Styles\bootstrap.min.css.map" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGFJU.Bussiness.Facade\SGFJU.Bussiness.Facade.csproj">
+      <Project>{b7bc40b9-98c1-4b14-8cc5-6b0189c36885}</Project>
+      <Name>SGFJU.Bussiness.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGFJU.Common.UnityContainer\SGFJU.Common.UnityContainer.csproj">
+      <Project>{a0d52dc7-56be-4604-8981-6d2dfb8362cf}</Project>
+      <Name>SGFJU.Common.UnityContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGfju.Domain.Model.Infra.ExceptionManager\SGFJU.Domain.Model.Infra.ExceptionManager.csproj">
+      <Project>{f24f7c7b-0fca-4917-ad94-20d6d735a553}</Project>
+      <Name>SGFJU.Domain.Model.Infra.ExceptionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Logging\SGFJU.Domain.Model.Infra.Logging.csproj">
+      <Project>{2c1c2051-ab2b-41d3-bbbb-42597b044702}</Project>
+      <Name>SGFJU.Domain.Model.Infra.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Serialization\SGFJU.Domain.Model.Infra.Serialization.csproj">
+      <Project>{2165c5dc-59e0-417f-8f6b-ef8045cac0ab}</Project>
+      <Name>SGFJU.Domain.Model.Infra.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGFJU.Domain.Model\SGFJU.Domain.Model.csproj">
+      <Project>{b3e0fc76-328c-4e6f-b97b-d33322c71163}</Project>
+      <Name>SGFJU.Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGFJU.Interfaces\SGFJU.Interfaces.csproj">
+      <Project>{e0933f50-ef1a-42d9-9e79-7aa44a2e463c}</Project>
+      <Name>SGFJU.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGFJU.ServicesLayer.DTO\SGFJU.ServicesLayer.DTO.csproj">
+      <Project>{31708578-5176-4421-9f68-690199f0f0bd}</Project>
+      <Name>SGFJU.ServicesLayer.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FotosJovens\" />
+    <Folder Include="LogWebApp\" />
+    <Folder Include="ResourceFiles\" />
+    <Folder Include="Serializeds\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49573</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55792/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,7 @@
+[
+  {
+    "idBloco": 235,
+    "NomeBloco": "BLOCO GOIÁS",
+    "IdEstadoBloco": 37
+  }
+]

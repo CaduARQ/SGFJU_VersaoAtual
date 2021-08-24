@@ -1,0 +1,44 @@
+[
+  {
+    "IdEstado": 27,
+    "IdRegiao": 38,
+    "IdIgreja": 45,
+    "NomeIgreja": "Sede Treinamento 3"
+  },
+  {
+    "IdEstado": 27,
+    "IdRegiao": 38,
+    "IdIgreja": 46,
+    "NomeIgreja": "Treinamento 3 - Bairro"
+  },
+  {
+    "IdEstado": 27,
+    "IdRegiao": 39,
+    "IdIgreja": 47,
+    "NomeIgreja": "Sede Treinamento 4"
+  },
+  {
+    "IdEstado": 27,
+    "IdRegiao": 39,
+    "IdIgreja": 48,
+    "NomeIgreja": "Treinamento 4 logo ali"
+  },
+  {
+    "IdEstado": 27,
+    "IdRegiao": 39,
+    "IdIgreja": 49,
+    "NomeIgreja": "Treinamento 4 do morro alto"
+  },
+  {
+    "IdEstado": 27,
+    "IdRegiao": 39,
+    "IdIgreja": 50,
+    "NomeIgreja": "Treinamento 4 igreja de bairro"
+  },
+  {
+    "IdEstado": 27,
+    "IdRegiao": 39,
+    "IdIgreja": 51,
+    "NomeIgreja": "Treinamento 4 igreja no centro da cidade"
+  }
+]

@@ -1,0 +1,817 @@
+[
+  {
+    "idBloco": 263,
+    "IdRegiao": 1374,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 263,
+    "IdRegiao": 1375,
+    "NomeRegiao": "Barra"
+  },
+  {
+    "idBloco": 263,
+    "IdRegiao": 1376,
+    "NomeRegiao": "Itaparica"
+  },
+  {
+    "idBloco": 263,
+    "IdRegiao": 1377,
+    "NomeRegiao": "Mar Grande"
+  },
+  {
+    "idBloco": 263,
+    "IdRegiao": 1380,
+    "NomeRegiao": "Nordeste"
+  },
+  {
+    "idBloco": 263,
+    "IdRegiao": 1382,
+    "NomeRegiao": "Pernambués"
+  },
+  {
+    "idBloco": 263,
+    "IdRegiao": 1383,
+    "NomeRegiao": "Pituba"
+  },
+  {
+    "idBloco": 263,
+    "IdRegiao": 1385,
+    "NomeRegiao": "Santa Cruz"
+  },
+  {
+    "idBloco": 263,
+    "IdRegiao": 1387,
+    "NomeRegiao": "Vale das Pedrinhas"
+  },
+  {
+    "idBloco": 263,
+    "IdRegiao": 2136,
+    "NomeRegiao": "PERNMBUES"
+  },
+  {
+    "idBloco": 264,
+    "IdRegiao": 1378,
+    "NomeRegiao": "Sede - Itapuã"
+  },
+  {
+    "idBloco": 264,
+    "IdRegiao": 1379,
+    "NomeRegiao": "Bairro da Paz"
+  },
+  {
+    "idBloco": 264,
+    "IdRegiao": 1381,
+    "NomeRegiao": "Boca do Rio I"
+  },
+  {
+    "idBloco": 264,
+    "IdRegiao": 1384,
+    "NomeRegiao": "Boca do Rio II"
+  },
+  {
+    "idBloco": 264,
+    "IdRegiao": 1386,
+    "NomeRegiao": "Imbuí"
+  },
+  {
+    "idBloco": 264,
+    "IdRegiao": 1388,
+    "NomeRegiao": "Vale da Muriçoca"
+  },
+  {
+    "idBloco": 265,
+    "IdRegiao": 1389,
+    "NomeRegiao": "Cajazeiras X"
+  },
+  {
+    "idBloco": 265,
+    "IdRegiao": 1390,
+    "NomeRegiao": "Águas Claras 1"
+  },
+  {
+    "idBloco": 265,
+    "IdRegiao": 1392,
+    "NomeRegiao": "Cajazeiras 6"
+  },
+  {
+    "idBloco": 265,
+    "IdRegiao": 1393,
+    "NomeRegiao": "Nova Brasília"
+  },
+  {
+    "idBloco": 265,
+    "IdRegiao": 1395,
+    "NomeRegiao": "Campinas de Pirajá"
+  },
+  {
+    "idBloco": 265,
+    "IdRegiao": 1396,
+    "NomeRegiao": "Valéria"
+  },
+  {
+    "idBloco": 265,
+    "IdRegiao": 1398,
+    "NomeRegiao": "Mussurunga"
+  },
+  {
+    "idBloco": 266,
+    "IdRegiao": 1391,
+    "NomeRegiao": "Pau da Lima"
+  },
+  {
+    "idBloco": 266,
+    "IdRegiao": 1394,
+    "NomeRegiao": "Castelo Branco 1"
+  },
+  {
+    "idBloco": 266,
+    "IdRegiao": 1397,
+    "NomeRegiao": "Castelo Branco 2"
+  },
+  {
+    "idBloco": 266,
+    "IdRegiao": 1399,
+    "NomeRegiao": "São Rafael"
+  },
+  {
+    "idBloco": 266,
+    "IdRegiao": 1400,
+    "NomeRegiao": "Sete de Abril"
+  },
+  {
+    "idBloco": 267,
+    "IdRegiao": 1401,
+    "NomeRegiao": "Caminho de Areia"
+  },
+  {
+    "idBloco": 267,
+    "IdRegiao": 1402,
+    "NomeRegiao": "Lobato"
+  },
+  {
+    "idBloco": 267,
+    "IdRegiao": 1403,
+    "NomeRegiao": "Plataforma"
+  },
+  {
+    "idBloco": 267,
+    "IdRegiao": 1404,
+    "NomeRegiao": "Santa Luzia"
+  },
+  {
+    "idBloco": 267,
+    "IdRegiao": 1405,
+    "NomeRegiao": "Uruguai"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1407,
+    "NomeRegiao": "Dois Leões"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1410,
+    "NomeRegiao": "Aquidabã"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1412,
+    "NomeRegiao": "Aquidabã"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1415,
+    "NomeRegiao": "Brotas"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1417,
+    "NomeRegiao": "Cine Bahia"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1418,
+    "NomeRegiao": "Cosme de Farias"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1420,
+    "NomeRegiao": "Federação"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1422,
+    "NomeRegiao": "Liberdade"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1425,
+    "NomeRegiao": "Matatu de Brotas"
+  },
+  {
+    "idBloco": 268,
+    "IdRegiao": 1428,
+    "NomeRegiao": "Vasco da Gama"
+  },
+  {
+    "idBloco": 269,
+    "IdRegiao": 1406,
+    "NomeRegiao": "Fazenda Grande"
+  },
+  {
+    "idBloco": 269,
+    "IdRegiao": 1408,
+    "NomeRegiao": "Engenho Velho de Brotas"
+  },
+  {
+    "idBloco": 269,
+    "IdRegiao": 1411,
+    "NomeRegiao": "Vale do Matatu"
+  },
+  {
+    "idBloco": 269,
+    "IdRegiao": 1413,
+    "NomeRegiao": "São Caetano"
+  },
+  {
+    "idBloco": 269,
+    "IdRegiao": 1414,
+    "NomeRegiao": "San Martins"
+  },
+  {
+    "idBloco": 269,
+    "IdRegiao": 1416,
+    "NomeRegiao": "Largo do Tanque"
+  },
+  {
+    "idBloco": 269,
+    "IdRegiao": 1419,
+    "NomeRegiao": "Pirajá do Lobato"
+  },
+  {
+    "idBloco": 270,
+    "IdRegiao": 1421,
+    "NomeRegiao": "Tancredo Neves"
+  },
+  {
+    "idBloco": 270,
+    "IdRegiao": 1423,
+    "NomeRegiao": "Estrada das Barreiras"
+  },
+  {
+    "idBloco": 270,
+    "IdRegiao": 1424,
+    "NomeRegiao": "São Gonçalo"
+  },
+  {
+    "idBloco": 270,
+    "IdRegiao": 1426,
+    "NomeRegiao": "Engomadeira"
+  },
+  {
+    "idBloco": 270,
+    "IdRegiao": 1427,
+    "NomeRegiao": "Sussuarana"
+  },
+  {
+    "idBloco": 270,
+    "IdRegiao": 2097,
+    "NomeRegiao": "tancredo neves"
+  },
+  {
+    "idBloco": 271,
+    "IdRegiao": 1432,
+    "NomeRegiao": "Região Paripe 1"
+  },
+  {
+    "idBloco": 271,
+    "IdRegiao": 1434,
+    "NomeRegiao": "Paripe 2"
+  },
+  {
+    "idBloco": 271,
+    "IdRegiao": 1437,
+    "NomeRegiao": "Alto de Coutos 1"
+  },
+  {
+    "idBloco": 271,
+    "IdRegiao": 1440,
+    "NomeRegiao": "Fazenda Coutos"
+  },
+  {
+    "idBloco": 271,
+    "IdRegiao": 1443,
+    "NomeRegiao": "Ilha Amarela"
+  },
+  {
+    "idBloco": 271,
+    "IdRegiao": 1446,
+    "NomeRegiao": "Mirantes de Periperi"
+  },
+  {
+    "idBloco": 271,
+    "IdRegiao": 1450,
+    "NomeRegiao": "Periperi"
+  },
+  {
+    "idBloco": 271,
+    "IdRegiao": 1452,
+    "NomeRegiao": "Periperi"
+  },
+  {
+    "idBloco": 271,
+    "IdRegiao": 1998,
+    "NomeRegiao": "Região Paripe 1"
+  },
+  {
+    "idBloco": 272,
+    "IdRegiao": 1429,
+    "NomeRegiao": "Vilas do Atlântico"
+  },
+  {
+    "idBloco": 272,
+    "IdRegiao": 1430,
+    "NomeRegiao": "Lauro de Freitas"
+  },
+  {
+    "idBloco": 272,
+    "IdRegiao": 1431,
+    "NomeRegiao": "Parque Santa Rita"
+  },
+  {
+    "idBloco": 272,
+    "IdRegiao": 1433,
+    "NomeRegiao": "Itinga"
+  },
+  {
+    "idBloco": 272,
+    "IdRegiao": 1435,
+    "NomeRegiao": "São Cristóvão"
+  },
+  {
+    "idBloco": 272,
+    "IdRegiao": 1436,
+    "NomeRegiao": "Avenida Aliomar"
+  },
+  {
+    "idBloco": 272,
+    "IdRegiao": 1438,
+    "NomeRegiao": "Vida Nova"
+  },
+  {
+    "idBloco": 272,
+    "IdRegiao": 1439,
+    "NomeRegiao": "Vilas de Abrantes"
+  },
+  {
+    "idBloco": 272,
+    "IdRegiao": 1441,
+    "NomeRegiao": "Jauá"
+  },
+  {
+    "idBloco": 273,
+    "IdRegiao": 1442,
+    "NomeRegiao": "Simões Filho"
+  },
+  {
+    "idBloco": 273,
+    "IdRegiao": 1444,
+    "NomeRegiao": "Cia"
+  },
+  {
+    "idBloco": 273,
+    "IdRegiao": 1447,
+    "NomeRegiao": "Areia Branca"
+  },
+  {
+    "idBloco": 273,
+    "IdRegiao": 1448,
+    "NomeRegiao": "Santo Amaro"
+  },
+  {
+    "idBloco": 273,
+    "IdRegiao": 1449,
+    "NomeRegiao": "Saubara"
+  },
+  {
+    "idBloco": 274,
+    "IdRegiao": 1451,
+    "NomeRegiao": "candeias"
+  },
+  {
+    "idBloco": 274,
+    "IdRegiao": 1453,
+    "NomeRegiao": "Madre de Deus"
+  },
+  {
+    "idBloco": 274,
+    "IdRegiao": 1455,
+    "NomeRegiao": "Nova Candeias"
+  },
+  {
+    "idBloco": 274,
+    "IdRegiao": 1456,
+    "NomeRegiao": "São Francisco do Conde"
+  },
+  {
+    "idBloco": 274,
+    "IdRegiao": 1457,
+    "NomeRegiao": "São Sebastião do Passé"
+  },
+  {
+    "idBloco": 275,
+    "IdRegiao": 1454,
+    "NomeRegiao": "Camaçari"
+  },
+  {
+    "idBloco": 275,
+    "IdRegiao": 1459,
+    "NomeRegiao": "Phoc"
+  },
+  {
+    "idBloco": 275,
+    "IdRegiao": 1460,
+    "NomeRegiao": "Pojuca"
+  },
+  {
+    "idBloco": 275,
+    "IdRegiao": 1463,
+    "NomeRegiao": "Mata de São João"
+  },
+  {
+    "idBloco": 275,
+    "IdRegiao": 1465,
+    "NomeRegiao": "Monte Gordo"
+  },
+  {
+    "idBloco": 275,
+    "IdRegiao": 1469,
+    "NomeRegiao": "Barra de Pojuca"
+  },
+  {
+    "idBloco": 275,
+    "IdRegiao": 1471,
+    "NomeRegiao": "Dias D'Ávila"
+  },
+  {
+    "idBloco": 275,
+    "IdRegiao": 2098,
+    "NomeRegiao": "MONTE GORDO"
+  },
+  {
+    "idBloco": 276,
+    "IdRegiao": 1458,
+    "NomeRegiao": "Alagoinhas"
+  },
+  {
+    "idBloco": 276,
+    "IdRegiao": 1461,
+    "NomeRegiao": "Catu"
+  },
+  {
+    "idBloco": 276,
+    "IdRegiao": 1462,
+    "NomeRegiao": "Entre Rios"
+  },
+  {
+    "idBloco": 276,
+    "IdRegiao": 1464,
+    "NomeRegiao": "Ribeira do Pombal"
+  },
+  {
+    "idBloco": 276,
+    "IdRegiao": 1466,
+    "NomeRegiao": "Santa Terezinha"
+  },
+  {
+    "idBloco": 276,
+    "IdRegiao": 1467,
+    "NomeRegiao": "Esplanada"
+  },
+  {
+    "idBloco": 276,
+    "IdRegiao": 2059,
+    "NomeRegiao": "Ribeira do Pombal"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1468,
+    "NomeRegiao": "Feira de Santana"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1470,
+    "NomeRegiao": "Amélia Rodrigues"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1472,
+    "NomeRegiao": "Campo Limpo"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1473,
+    "NomeRegiao": "Conceição do Coité"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1475,
+    "NomeRegiao": "Conceição do Jacuípe"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1476,
+    "NomeRegiao": "Ipirá"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1478,
+    "NomeRegiao": "Jacobina"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1480,
+    "NomeRegiao": "Presidente Dutra"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1481,
+    "NomeRegiao": "São Gonçalo"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1482,
+    "NomeRegiao": "Santo Estêvão"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1484,
+    "NomeRegiao": "Irecê"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1486,
+    "NomeRegiao": "Seabra"
+  },
+  {
+    "idBloco": 277,
+    "IdRegiao": 1487,
+    "NomeRegiao": "Xique Xique"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1474,
+    "NomeRegiao": "Feira de Santana 2"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1477,
+    "NomeRegiao": "Cachoeira"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1479,
+    "NomeRegiao": "Cruz das Almas"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1483,
+    "NomeRegiao": "Itaberaba"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1485,
+    "NomeRegiao": "Euclides de Cunha"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1488,
+    "NomeRegiao": "Cansanção"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1492,
+    "NomeRegiao": "Muritiba"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1497,
+    "NomeRegiao": "Serrinha"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1499,
+    "NomeRegiao": "Serrinha"
+  },
+  {
+    "idBloco": 278,
+    "IdRegiao": 1502,
+    "NomeRegiao": "Tomba"
+  },
+  {
+    "idBloco": 279,
+    "IdRegiao": 1489,
+    "NomeRegiao": "Santo Antônio de Jesus"
+  },
+  {
+    "idBloco": 279,
+    "IdRegiao": 1490,
+    "NomeRegiao": "Amargosa"
+  },
+  {
+    "idBloco": 279,
+    "IdRegiao": 1491,
+    "NomeRegiao": "São Benedito"
+  },
+  {
+    "idBloco": 279,
+    "IdRegiao": 1493,
+    "NomeRegiao": "Nazaré"
+  },
+  {
+    "idBloco": 279,
+    "IdRegiao": 1495,
+    "NomeRegiao": "Valença 1"
+  },
+  {
+    "idBloco": 279,
+    "IdRegiao": 1496,
+    "NomeRegiao": "Valença 2"
+  },
+  {
+    "idBloco": 279,
+    "IdRegiao": 1498,
+    "NomeRegiao": "Castro Alves"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1500,
+    "NomeRegiao": "Itabuna"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1501,
+    "NomeRegiao": "Baianão II"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1503,
+    "NomeRegiao": "Canavieiras"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1504,
+    "NomeRegiao": "Eunápolis"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1505,
+    "NomeRegiao": "Ilhéus"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1506,
+    "NomeRegiao": "Itabuna II - Fátima"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1507,
+    "NomeRegiao": "Itabuna III - São Caetano"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1508,
+    "NomeRegiao": "Lomanto"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1509,
+    "NomeRegiao": "Malhado"
+  },
+  {
+    "idBloco": 280,
+    "IdRegiao": 1510,
+    "NomeRegiao": "Porto Seguro"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1511,
+    "NomeRegiao": "Vitória da Conquista"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1513,
+    "NomeRegiao": "Brumado"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1517,
+    "NomeRegiao": "Paramirim"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1518,
+    "NomeRegiao": "URBIS IV"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1526,
+    "NomeRegiao": "Itapetinga"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1530,
+    "NomeRegiao": "Poções"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1531,
+    "NomeRegiao": "Cândido Sales"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1532,
+    "NomeRegiao": "Guanambi"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1533,
+    "NomeRegiao": "Caetité"
+  },
+  {
+    "idBloco": 281,
+    "IdRegiao": 1534,
+    "NomeRegiao": "Bairro Brasil"
+  },
+  {
+    "idBloco": 282,
+    "IdRegiao": 1512,
+    "NomeRegiao": "Juazeiro"
+  },
+  {
+    "idBloco": 282,
+    "IdRegiao": 1514,
+    "NomeRegiao": "Paulo Afonso"
+  },
+  {
+    "idBloco": 282,
+    "IdRegiao": 1515,
+    "NomeRegiao": "Remanso"
+  },
+  {
+    "idBloco": 282,
+    "IdRegiao": 1516,
+    "NomeRegiao": "Bonfim"
+  },
+  {
+    "idBloco": 283,
+    "IdRegiao": 1519,
+    "NomeRegiao": "Barreiras"
+  },
+  {
+    "idBloco": 283,
+    "IdRegiao": 1520,
+    "NomeRegiao": "Barreiras 2"
+  },
+  {
+    "idBloco": 283,
+    "IdRegiao": 1521,
+    "NomeRegiao": "Ibotirama"
+  },
+  {
+    "idBloco": 283,
+    "IdRegiao": 1522,
+    "NomeRegiao": "Luis Eduardo"
+  },
+  {
+    "idBloco": 283,
+    "IdRegiao": 1523,
+    "NomeRegiao": "Bom Jesus da Lapa"
+  },
+  {
+    "idBloco": 284,
+    "IdRegiao": 1524,
+    "NomeRegiao": "Jequié"
+  },
+  {
+    "idBloco": 284,
+    "IdRegiao": 1525,
+    "NomeRegiao": "Jequié IV"
+  },
+  {
+    "idBloco": 284,
+    "IdRegiao": 1527,
+    "NomeRegiao": "Gandú"
+  },
+  {
+    "idBloco": 284,
+    "IdRegiao": 1528,
+    "NomeRegiao": "Ipiaú"
+  },
+  {
+    "idBloco": 284,
+    "IdRegiao": 1529,
+    "NomeRegiao": "Jaguaquara"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "idBloco": 21,
+    "IdRegiao": 22,
+    "NomeRegiao": "São José II"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 23,
+    "NomeRegiao": "Mutirão"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 24,
+    "NomeRegiao": "Amazonino Mendes"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 25,
+    "NomeRegiao": "Tancredo Neves"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 26,
+    "NomeRegiao": "Manoa"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 27,
+    "NomeRegiao": "Cidade de Deus"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 29,
+    "NomeRegiao": "Cidade de Deus"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 30,
+    "NomeRegiao": "Braga Mendes"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 31,
+    "NomeRegiao": "Cidade Nova"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 32,
+    "NomeRegiao": "Belford Roxo"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 33,
+    "NomeRegiao": "Américo de Medeiros"
+  },
+  {
+    "idBloco": 21,
+    "IdRegiao": 34,
+    "NomeRegiao": "Armando Mendes"
+  },
+  {
+    "idBloco": 22,
+    "IdRegiao": 28,
+    "NomeRegiao": "São José I"
+  }
+]

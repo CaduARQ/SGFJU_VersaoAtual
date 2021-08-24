@@ -1,0 +1,42 @@
+[
+  {
+    "idBloco": 132,
+    "NomeBloco": "Central",
+    "IdEstadoBloco": 32
+  },
+  {
+    "idBloco": 144,
+    "NomeBloco": "Sul",
+    "IdEstadoBloco": 32
+  },
+  {
+    "idBloco": 145,
+    "NomeBloco": "Leste",
+    "IdEstadoBloco": 32
+  },
+  {
+    "idBloco": 146,
+    "NomeBloco": "Norte",
+    "IdEstadoBloco": 32
+  },
+  {
+    "idBloco": 147,
+    "NomeBloco": "Oeste",
+    "IdEstadoBloco": 32
+  },
+  {
+    "idBloco": 148,
+    "NomeBloco": "Interior",
+    "IdEstadoBloco": 32
+  },
+  {
+    "idBloco": 186,
+    "NomeBloco": "Norte",
+    "IdEstadoBloco": 32
+  },
+  {
+    "idBloco": 187,
+    "NomeBloco": "leste",
+    "IdEstadoBloco": 32
+  }
+]

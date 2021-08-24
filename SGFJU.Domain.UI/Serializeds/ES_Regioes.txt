@@ -1,0 +1,187 @@
+[
+  {
+    "idBloco": 285,
+    "IdRegiao": 1564,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 285,
+    "IdRegiao": 1565,
+    "NomeRegiao": "Cleto Nunes"
+  },
+  {
+    "idBloco": 285,
+    "IdRegiao": 1566,
+    "NomeRegiao": "Jardim Camburi"
+  },
+  {
+    "idBloco": 285,
+    "IdRegiao": 1567,
+    "NomeRegiao": "Maruipe"
+  },
+  {
+    "idBloco": 286,
+    "IdRegiao": 1568,
+    "NomeRegiao": "Itapoa"
+  },
+  {
+    "idBloco": 286,
+    "IdRegiao": 1569,
+    "NomeRegiao": "Coqueiral"
+  },
+  {
+    "idBloco": 286,
+    "IdRegiao": 1570,
+    "NomeRegiao": "Gloria"
+  },
+  {
+    "idBloco": 286,
+    "IdRegiao": 1571,
+    "NomeRegiao": "Jardim Colorado"
+  },
+  {
+    "idBloco": 286,
+    "IdRegiao": 1572,
+    "NomeRegiao": "Cobilandia"
+  },
+  {
+    "idBloco": 287,
+    "IdRegiao": 1573,
+    "NomeRegiao": "Feu Rosa"
+  },
+  {
+    "idBloco": 287,
+    "IdRegiao": 1574,
+    "NomeRegiao": "Jacaraipe"
+  },
+  {
+    "idBloco": 287,
+    "IdRegiao": 1575,
+    "NomeRegiao": "Nova Almeida"
+  },
+  {
+    "idBloco": 287,
+    "IdRegiao": 1576,
+    "NomeRegiao": "Novo Horizonte"
+  },
+  {
+    "idBloco": 287,
+    "IdRegiao": 2133,
+    "NomeRegiao": "NOVO HORIZONTE"
+  },
+  {
+    "idBloco": 287,
+    "IdRegiao": 2135,
+    "NomeRegiao": "NOVO HORIZONTE"
+  },
+  {
+    "idBloco": 288,
+    "IdRegiao": 1577,
+    "NomeRegiao": "Laranjeiras"
+  },
+  {
+    "idBloco": 288,
+    "IdRegiao": 1578,
+    "NomeRegiao": "Serra Sede"
+  },
+  {
+    "idBloco": 289,
+    "IdRegiao": 1579,
+    "NomeRegiao": "Campo Grande"
+  },
+  {
+    "idBloco": 289,
+    "IdRegiao": 1580,
+    "NomeRegiao": "Cariacica"
+  },
+  {
+    "idBloco": 289,
+    "IdRegiao": 1581,
+    "NomeRegiao": "Itacibá"
+  },
+  {
+    "idBloco": 290,
+    "IdRegiao": 1582,
+    "NomeRegiao": "Aracruz"
+  },
+  {
+    "idBloco": 290,
+    "IdRegiao": 1583,
+    "NomeRegiao": "Bela Vista"
+  },
+  {
+    "idBloco": 291,
+    "IdRegiao": 1584,
+    "NomeRegiao": "São Gabriel da Palha"
+  },
+  {
+    "idBloco": 291,
+    "IdRegiao": 1585,
+    "NomeRegiao": "Colatina"
+  },
+  {
+    "idBloco": 292,
+    "IdRegiao": 1586,
+    "NomeRegiao": "Guarapari "
+  },
+  {
+    "idBloco": 292,
+    "IdRegiao": 1587,
+    "NomeRegiao": "Guarapari Centro"
+  },
+  {
+    "idBloco": 293,
+    "IdRegiao": 1588,
+    "NomeRegiao": "Teixeira de Freitas"
+  },
+  {
+    "idBloco": 293,
+    "IdRegiao": 1589,
+    "NomeRegiao": "Praça da Bíblia"
+  },
+  {
+    "idBloco": 293,
+    "IdRegiao": 1590,
+    "NomeRegiao": "Itamaraju"
+  },
+  {
+    "idBloco": 294,
+    "IdRegiao": 1591,
+    "NomeRegiao": "Linhares"
+  },
+  {
+    "idBloco": 295,
+    "IdRegiao": 1592,
+    "NomeRegiao": "São Mateus"
+  },
+  {
+    "idBloco": 296,
+    "IdRegiao": 1593,
+    "NomeRegiao": "Cachoeiro"
+  },
+  {
+    "idBloco": 296,
+    "IdRegiao": 1594,
+    "NomeRegiao": "Castelo"
+  },
+  {
+    "idBloco": 296,
+    "IdRegiao": 1595,
+    "NomeRegiao": "Guaçuí"
+  },
+  {
+    "idBloco": 296,
+    "IdRegiao": 1596,
+    "NomeRegiao": "Ibatiba"
+  },
+  {
+    "idBloco": 296,
+    "IdRegiao": 1597,
+    "NomeRegiao": "Venda Nova"
+  },
+  {
+    "idBloco": 296,
+    "IdRegiao": 2207,
+    "NomeRegiao": "Mimoso do Sul"
+  }
+]

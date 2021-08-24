@@ -1,0 +1,20 @@
+[
+  {
+    "IdEstado": 6,
+    "IdRegiao": 41,
+    "IdIgreja": 52,
+    "NomeIgreja": "Sede Feira de Santanna"
+  },
+  {
+    "IdEstado": 6,
+    "IdRegiao": 41,
+    "IdIgreja": 53,
+    "NomeIgreja": "Igreja bairro"
+  },
+  {
+    "IdEstado": 6,
+    "IdRegiao": 41,
+    "IdIgreja": 54,
+    "NomeIgreja": "Igreja feira 3"
+  }
+]

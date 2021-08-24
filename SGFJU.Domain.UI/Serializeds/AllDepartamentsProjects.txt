@@ -1,0 +1,50 @@
+﻿[
+  {
+    "IdProjeto": 18,
+    "NomeProjeto": "Cultura",
+    "IdDepartamento": 8,
+    "NomeDepartamento": "BANDA"
+  },
+  {
+    "IdProjeto": 18,
+    "NomeProjeto": "Cultura",
+    "IdDepartamento": 9,
+    "NomeDepartamento": "DANÇA"
+  },
+  {
+    "IdProjeto": 16,
+    "NomeProjeto": "Midía",
+    "IdDepartamento": 10,
+    "NomeDepartamento": "Fotografia"
+  },
+  {
+    "IdProjeto": 16,
+    "NomeProjeto": "Midía",
+    "IdDepartamento": 11,
+    "NomeDepartamento": "Jornalismo"
+  },
+  {
+    "IdProjeto": 16,
+    "NomeProjeto": "Midía",
+    "IdDepartamento": 12,
+    "NomeDepartamento": "Marketing"
+  },
+  {
+    "IdProjeto": 16,
+    "NomeProjeto": "Midía",
+    "IdDepartamento": 13,
+    "NomeDepartamento": "Audiovisual"
+  },
+  {
+    "IdProjeto": 16,
+    "NomeProjeto": "Midía",
+    "IdDepartamento": 14,
+    "NomeDepartamento": "DesignGrafico"
+  },
+  {
+    "IdProjeto": 12,
+    "NomeProjeto": "Esporte",
+    "IdDepartamento": 15,
+    "NomeDepartamento": "ArtesMarciais"
+  }
+]

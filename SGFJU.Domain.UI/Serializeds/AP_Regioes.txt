@@ -1,0 +1,97 @@
+[
+  {
+    "idBloco": 335,
+    "IdRegiao": 1807,
+    "NomeRegiao": "Excluir - Paraiso"
+  },
+  {
+    "idBloco": 335,
+    "IdRegiao": 1809,
+    "NomeRegiao": "Excluir - Paraiso"
+  },
+  {
+    "idBloco": 335,
+    "IdRegiao": 1984,
+    "NomeRegiao": "Laranjal do Jari"
+  },
+  {
+    "idBloco": 335,
+    "IdRegiao": 2182,
+    "NomeRegiao": "Muca"
+  },
+  {
+    "idBloco": 336,
+    "IdRegiao": 1810,
+    "NomeRegiao": "Região Paraíso"
+  },
+  {
+    "idBloco": 336,
+    "IdRegiao": 1887,
+    "NomeRegiao": " "
+  },
+  {
+    "idBloco": 336,
+    "IdRegiao": 1888,
+    "NomeRegiao": "Santana"
+  },
+  {
+    "idBloco": 336,
+    "IdRegiao": 1889,
+    "NomeRegiao": " "
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1820,
+    "NomeRegiao": "Cidade Nova"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1821,
+    "NomeRegiao": "Trem"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1822,
+    "NomeRegiao": "Congós"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1823,
+    "NomeRegiao": "Infraero 2"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1824,
+    "NomeRegiao": "Novo Horizonte"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1825,
+    "NomeRegiao": "Santana"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1826,
+    "NomeRegiao": "Oiapoque"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1827,
+    "NomeRegiao": "Laranjal"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1840,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1867,
+    "NomeRegiao": "Brasil Novo"
+  },
+  {
+    "idBloco": 341,
+    "IdRegiao": 1995,
+    "NomeRegiao": "Paraiso"
+  }
+]

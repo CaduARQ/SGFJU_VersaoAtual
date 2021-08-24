@@ -1,0 +1,7 @@
+[
+  {
+    "idBloco": 26,
+    "NomeBloco": "Bloco Treinamento 3",
+    "IdEstadoBloco": 27
+  }
+]

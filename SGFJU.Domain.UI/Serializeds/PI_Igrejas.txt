@@ -1,0 +1,764 @@
+[
+  {
+    "IdEstado": 46,
+    "IdRegiao": 436,
+    "IdIgreja": 1200,
+    "NomeIgreja": "Poty Velho"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 436,
+    "IdIgreja": 1201,
+    "NomeIgreja": "Codipe"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 436,
+    "IdIgreja": 1202,
+    "NomeIgreja": "Parque Brasil"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 436,
+    "IdIgreja": 1203,
+    "NomeIgreja": "Monte Verde"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 436,
+    "IdIgreja": 1204,
+    "NomeIgreja": "Jacinta Andrade"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 436,
+    "IdIgreja": 1205,
+    "NomeIgreja": "São Joaquim-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 437,
+    "IdIgreja": 1214,
+    "NomeIgreja": "Água Mineral-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 437,
+    "IdIgreja": 1215,
+    "NomeIgreja": "Primavera"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 437,
+    "IdIgreja": 1216,
+    "NomeIgreja": "Centenário"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 438,
+    "IdIgreja": 5173,
+    "NomeIgreja": "Buenos Aires-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 438,
+    "IdIgreja": 5174,
+    "NomeIgreja": "Mocambinho"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 438,
+    "IdIgreja": 5175,
+    "NomeIgreja": "Alto Alegre"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5176,
+    "NomeIgreja": "Piçarreira-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5177,
+    "NomeIgreja": "Planalto Uruguai"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5178,
+    "NomeIgreja": "Parque Mão Santa"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5179,
+    "NomeIgreja": "Parque Universitários"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5180,
+    "NomeIgreja": "Vila Maria"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5834,
+    "NomeIgreja": "união"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5875,
+    "NomeIgreja": "União"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5878,
+    "NomeIgreja": "União"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5879,
+    "NomeIgreja": "União"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5883,
+    "NomeIgreja": "União"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 439,
+    "IdIgreja": 5884,
+    "NomeIgreja": "Anita Ferraz"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 441,
+    "IdIgreja": 5182,
+    "NomeIgreja": "São Cristovão-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 441,
+    "IdIgreja": 5183,
+    "NomeIgreja": "Dom Severino"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 441,
+    "IdIgreja": 5184,
+    "NomeIgreja": "José de Freitas"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 441,
+    "IdIgreja": 5185,
+    "NomeIgreja": "União"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 441,
+    "IdIgreja": 5186,
+    "NomeIgreja": "Miguel Alves"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 441,
+    "IdIgreja": 5833,
+    "NomeIgreja": "união"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 441,
+    "IdIgreja": 5876,
+    "NomeIgreja": "União"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 441,
+    "IdIgreja": 5877,
+    "NomeIgreja": "União"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 442,
+    "IdIgreja": 5204,
+    "NomeIgreja": "Satélite-Sede "
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 442,
+    "IdIgreja": 5205,
+    "NomeIgreja": "Santa Barbara"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 443,
+    "IdIgreja": 5207,
+    "NomeIgreja": "Anita Ferraz-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 443,
+    "IdIgreja": 5208,
+    "NomeIgreja": "Nova Teresina"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 449,
+    "IdIgreja": 5539,
+    "NomeIgreja": "Barão-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 449,
+    "IdIgreja": 5540,
+    "NomeIgreja": "Vermelha"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 449,
+    "IdIgreja": 5541,
+    "NomeIgreja": "Cerâmica Cil"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 449,
+    "IdIgreja": 5542,
+    "NomeIgreja": "Piçarra"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 449,
+    "IdIgreja": 5543,
+    "NomeIgreja": "Monte Castelo"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 449,
+    "IdIgreja": 5544,
+    "NomeIgreja": "Vila Jerusalém"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 450,
+    "IdIgreja": 5557,
+    "NomeIgreja": "Parque Piauí-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 450,
+    "IdIgreja": 5558,
+    "NomeIgreja": "Vamos Ver O Sol"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 450,
+    "IdIgreja": 5559,
+    "NomeIgreja": "Bela Vista"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 450,
+    "IdIgreja": 5837,
+    "NomeIgreja": "Sede Parque Piauí"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 450,
+    "IdIgreja": 5838,
+    "NomeIgreja": "Bela Vista"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 450,
+    "IdIgreja": 5839,
+    "NomeIgreja": "Vamos ver o Sol"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 450,
+    "IdIgreja": 5840,
+    "NomeIgreja": "Lourival Parente"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 451,
+    "IdIgreja": 5571,
+    "NomeIgreja": "Porto Alegre-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 451,
+    "IdIgreja": 5572,
+    "NomeIgreja": "Irmã Dulce"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 451,
+    "IdIgreja": 5573,
+    "NomeIgreja": "Demerval lobão"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 451,
+    "IdIgreja": 5574,
+    "NomeIgreja": "Monsenhor Gil"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 452,
+    "IdIgreja": 5577,
+    "NomeIgreja": "Promorar-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 452,
+    "IdIgreja": 5578,
+    "NomeIgreja": "Promorar 2"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 452,
+    "IdIgreja": 5579,
+    "NomeIgreja": "Santa Fé"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 452,
+    "IdIgreja": 5580,
+    "NomeIgreja": "Angelim"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 453,
+    "IdIgreja": 5590,
+    "NomeIgreja": "Dirceu-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 453,
+    "IdIgreja": 5591,
+    "NomeIgreja": "Alto da Ressureição"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 454,
+    "IdIgreja": 5592,
+    "NomeIgreja": "Parque Jurema-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 454,
+    "IdIgreja": 5597,
+    "NomeIgreja": "Trancredo Neves"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 455,
+    "IdIgreja": 5607,
+    "NomeIgreja": "Renascença-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 455,
+    "IdIgreja": 5608,
+    "NomeIgreja": "Deus Quer"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 446,
+    "IdIgreja": 5222,
+    "NomeIgreja": "Formosa-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 446,
+    "IdIgreja": 5223,
+    "NomeIgreja": "Multirão"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 447,
+    "IdIgreja": 5526,
+    "NomeIgreja": "Guarita-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 447,
+    "IdIgreja": 5527,
+    "NomeIgreja": "Boa Vista"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 447,
+    "IdIgreja": 5528,
+    "NomeIgreja": "Rua Cem"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 448,
+    "IdIgreja": 5529,
+    "NomeIgreja": "Parque Alvorada-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 456,
+    "IdIgreja": 5610,
+    "NomeIgreja": "Parnaíba-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 456,
+    "IdIgreja": 5611,
+    "NomeIgreja": "Luis Correia"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 456,
+    "IdIgreja": 5612,
+    "NomeIgreja": "Bairro Piauí"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 456,
+    "IdIgreja": 5613,
+    "NomeIgreja": "Cocal"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 456,
+    "IdIgreja": 5614,
+    "NomeIgreja": "Buriti dos Lopes"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 456,
+    "IdIgreja": 5615,
+    "NomeIgreja": "Guarita"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 457,
+    "IdIgreja": 5622,
+    "NomeIgreja": "Bairro de Fátima- Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 457,
+    "IdIgreja": 5623,
+    "NomeIgreja": "Centro Parnaíba"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 457,
+    "IdIgreja": 5624,
+    "NomeIgreja": "Ilha Grande"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 460,
+    "IdIgreja": 5633,
+    "NomeIgreja": "Barras-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 460,
+    "IdIgreja": 5634,
+    "NomeIgreja": "Porto"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 460,
+    "IdIgreja": 5635,
+    "NomeIgreja": "Boa Hora"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 1833,
+    "IdIgreja": 5641,
+    "NomeIgreja": "Esperantina-Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 1833,
+    "IdIgreja": 5642,
+    "NomeIgreja": "Batalha"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 1833,
+    "IdIgreja": 5643,
+    "NomeIgreja": "Campo Largo"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 1833,
+    "IdIgreja": 5644,
+    "NomeIgreja": "Joaquim Pires"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 1833,
+    "IdIgreja": 5645,
+    "NomeIgreja": "Luzilândia"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 1833,
+    "IdIgreja": 5646,
+    "NomeIgreja": "Madeiros"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 462,
+    "IdIgreja": 5616,
+    "NomeIgreja": "Piripiri Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 462,
+    "IdIgreja": 5617,
+    "NomeIgreja": "Piracuruca"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 462,
+    "IdIgreja": 5618,
+    "NomeIgreja": "Pedro II"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 463,
+    "IdIgreja": 5619,
+    "NomeIgreja": "Altos Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 463,
+    "IdIgreja": 5620,
+    "NomeIgreja": "Alto Longá"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 463,
+    "IdIgreja": 5621,
+    "NomeIgreja": "São João da Serra"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 464,
+    "IdIgreja": 5630,
+    "NomeIgreja": "Campo Maior Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 464,
+    "IdIgreja": 5631,
+    "NomeIgreja": "São Miguel do Tapuio"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 464,
+    "IdIgreja": 5632,
+    "NomeIgreja": "Castelo"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 466,
+    "IdIgreja": 5568,
+    "NomeIgreja": "Bom Jesus Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 466,
+    "IdIgreja": 5569,
+    "NomeIgreja": "Cristino Castro"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 466,
+    "IdIgreja": 5570,
+    "NomeIgreja": "Colônia"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 467,
+    "IdIgreja": 5575,
+    "NomeIgreja": "Corrente Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 467,
+    "IdIgreja": 5576,
+    "NomeIgreja": "Gilbués"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 468,
+    "IdIgreja": 5587,
+    "NomeIgreja": "São Raimundo Nonato Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 468,
+    "IdIgreja": 5588,
+    "NomeIgreja": "Canto do Buriti"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 468,
+    "IdIgreja": 5589,
+    "NomeIgreja": "São João do Piauí"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5271,
+    "NomeIgreja": "Picos sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5272,
+    "NomeIgreja": "JUNCO"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5273,
+    "NomeIgreja": "OEIRAS"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5274,
+    "NomeIgreja": "PADRE MARCOS"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5275,
+    "NomeIgreja": "JAICÓS"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5276,
+    "NomeIgreja": "MARCOLÂNDIA"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5277,
+    "NomeIgreja": "FRONTEIRAS"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5278,
+    "NomeIgreja": "PAULISTANA"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5279,
+    "NomeIgreja": "SIMÕES"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 469,
+    "IdIgreja": 5280,
+    "NomeIgreja": "SIMPLICIO MENDES"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 471,
+    "IdIgreja": 5530,
+    "NomeIgreja": "Floriano Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 471,
+    "IdIgreja": 5531,
+    "NomeIgreja": "São José dos Peixes"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 471,
+    "IdIgreja": 5532,
+    "NomeIgreja": "Uruçuí"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 471,
+    "IdIgreja": 5533,
+    "NomeIgreja": "Guadalupe"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 472,
+    "IdIgreja": 5545,
+    "NomeIgreja": "Água Branca Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 472,
+    "IdIgreja": 5546,
+    "NomeIgreja": "São Pedro"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 472,
+    "IdIgreja": 5547,
+    "NomeIgreja": "Amarante"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 472,
+    "IdIgreja": 5548,
+    "NomeIgreja": "Barro Duro"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 472,
+    "IdIgreja": 5549,
+    "NomeIgreja": "Regeneração"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 473,
+    "IdIgreja": 5560,
+    "NomeIgreja": "Valença Sede"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 473,
+    "IdIgreja": 5561,
+    "NomeIgreja": "Elesbão Veloso"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 473,
+    "IdIgreja": 5562,
+    "NomeIgreja": "Inhuma"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 1819,
+    "IdIgreja": 5524,
+    "NomeIgreja": "Catedral"
+  },
+  {
+    "IdEstado": 46,
+    "IdRegiao": 1819,
+    "IdIgreja": 5525,
+    "NomeIgreja": "Sub-Sede"
+  }
+]

@@ -1,0 +1,416 @@
+[
+  {
+    "IdEstado": 55,
+    "IdRegiao": 500,
+    "IdIgreja": 1393,
+    "NomeIgreja": "Catedral"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 500,
+    "IdIgreja": 4935,
+    "NomeIgreja": "Catedral"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 501,
+    "IdIgreja": 1396,
+    "NomeIgreja": "Parque Prazeres"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 501,
+    "IdIgreja": 1397,
+    "NomeIgreja": "Alvorada Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 502,
+    "IdIgreja": 1398,
+    "NomeIgreja": "Eldorado Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 503,
+    "IdIgreja": 1399,
+    "NomeIgreja": "Goytacazes Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 503,
+    "IdIgreja": 1400,
+    "NomeIgreja": "Donana"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 503,
+    "IdIgreja": 1401,
+    "NomeIgreja": "Tócos"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 503,
+    "IdIgreja": 1402,
+    "NomeIgreja": "Poço Gordo"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 503,
+    "IdIgreja": 1403,
+    "NomeIgreja": "Nova Goytacazes"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 504,
+    "IdIgreja": 1411,
+    "NomeIgreja": "Guarus Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 504,
+    "IdIgreja": 1412,
+    "NomeIgreja": "São Matheus"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 505,
+    "IdIgreja": 1413,
+    "NomeIgreja": "Ips Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 506,
+    "IdIgreja": 1414,
+    "NomeIgreja": "Nogueira Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 506,
+    "IdIgreja": 1415,
+    "NomeIgreja": "Aeroporto"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 506,
+    "IdIgreja": 1416,
+    "NomeIgreja": "Km.8"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 507,
+    "IdIgreja": 1417,
+    "NomeIgreja": "Penha Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 508,
+    "IdIgreja": 1418,
+    "NomeIgreja": "São José Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 508,
+    "IdIgreja": 1419,
+    "NomeIgreja": "Aldeia"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 508,
+    "IdIgreja": 1420,
+    "NomeIgreja": "Três Vendas"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 508,
+    "IdIgreja": 1421,
+    "NomeIgreja": "Cidade Luz"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 509,
+    "IdIgreja": 1427,
+    "NomeIgreja": "Saturnino Braga Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 509,
+    "IdIgreja": 1428,
+    "NomeIgreja": "Sabonete"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 509,
+    "IdIgreja": 1429,
+    "NomeIgreja": "Barra do Açu"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 509,
+    "IdIgreja": 1430,
+    "NomeIgreja": "Baixa Grande"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 509,
+    "IdIgreja": 1431,
+    "NomeIgreja": "Farol"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 510,
+    "IdIgreja": 1436,
+    "NomeIgreja": "Travessão Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 510,
+    "IdIgreja": 1437,
+    "NomeIgreja": "Morro do Coco"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 510,
+    "IdIgreja": 1438,
+    "NomeIgreja": "Km.14"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 510,
+    "IdIgreja": 1439,
+    "NomeIgreja": "Conselheiro Josino"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 510,
+    "IdIgreja": 1440,
+    "NomeIgreja": "Santa Ana"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 511,
+    "IdIgreja": 1443,
+    "NomeIgreja": "Turf Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 511,
+    "IdIgreja": 1444,
+    "NomeIgreja": "Barcelos"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 511,
+    "IdIgreja": 1445,
+    "NomeIgreja": "Pecuária"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 511,
+    "IdIgreja": 1446,
+    "NomeIgreja": "Novo Jockey"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 511,
+    "IdIgreja": 1447,
+    "NomeIgreja": "Donana"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 511,
+    "IdIgreja": 1448,
+    "NomeIgreja": "Califórnia"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 511,
+    "IdIgreja": 1449,
+    "NomeIgreja": "Corrientes"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 512,
+    "IdIgreja": 1453,
+    "NomeIgreja": "Ururaí Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 512,
+    "IdIgreja": 1454,
+    "NomeIgreja": "Tapera"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 512,
+    "IdIgreja": 1455,
+    "NomeIgreja": "Ponta da Lama"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 513,
+    "IdIgreja": 1457,
+    "NomeIgreja": "Bom Jesus Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 514,
+    "IdIgreja": 1461,
+    "NomeIgreja": "Grussaí Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 514,
+    "IdIgreja": 1462,
+    "NomeIgreja": "Atafona"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 514,
+    "IdIgreja": 1463,
+    "NomeIgreja": "São João da Barra"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 514,
+    "IdIgreja": 1464,
+    "NomeIgreja": "Tele Santana"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 514,
+    "IdIgreja": 1465,
+    "NomeIgreja": "Degredo"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 515,
+    "IdIgreja": 1481,
+    "NomeIgreja": "Boa Fortuna"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 515,
+    "IdIgreja": 1482,
+    "NomeIgreja": "Cardoso Moreira"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 515,
+    "IdIgreja": 1488,
+    "NomeIgreja": "Natividade"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 515,
+    "IdIgreja": 1489,
+    "NomeIgreja": "Italva"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 515,
+    "IdIgreja": 1490,
+    "NomeIgreja": "Surubi"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 515,
+    "IdIgreja": 1491,
+    "NomeIgreja": "Porciúncula"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 515,
+    "IdIgreja": 1494,
+    "NomeIgreja": "Itaperuna Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 516,
+    "IdIgreja": 1466,
+    "NomeIgreja": "Pádua Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 516,
+    "IdIgreja": 1467,
+    "NomeIgreja": "Itaocara"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 516,
+    "IdIgreja": 1468,
+    "NomeIgreja": "Miracema"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 516,
+    "IdIgreja": 1469,
+    "NomeIgreja": "Pirapetinga"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 517,
+    "IdIgreja": 1476,
+    "NomeIgreja": "São Francisco Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 517,
+    "IdIgreja": 1477,
+    "NomeIgreja": "Praça João Pessoa"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 517,
+    "IdIgreja": 1478,
+    "NomeIgreja": "Gargaú"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 517,
+    "IdIgreja": 1479,
+    "NomeIgreja": "Guaxindibá"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 517,
+    "IdIgreja": 1480,
+    "NomeIgreja": "Barra do Itabapoana"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 518,
+    "IdIgreja": 1473,
+    "NomeIgreja": "São Fídelis Sede"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 518,
+    "IdIgreja": 1474,
+    "NomeIgreja": "Cambuci"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 518,
+    "IdIgreja": 1475,
+    "NomeIgreja": "Coroados"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 1865,
+    "IdIgreja": 5790,
+    "NomeIgreja": "Santa Rosa"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 1865,
+    "IdIgreja": 5791,
+    "NomeIgreja": "Calabouço"
+  },
+  {
+    "IdEstado": 55,
+    "IdRegiao": 1865,
+    "IdIgreja": 5792,
+    "NomeIgreja": "Custodópolis Sede"
+  }
+]

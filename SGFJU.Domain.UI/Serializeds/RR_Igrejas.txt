@@ -1,0 +1,110 @@
+[
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1742,
+    "IdIgreja": 5194,
+    "NomeIgreja": "Cantà"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1742,
+    "IdIgreja": 5195,
+    "NomeIgreja": "Alvorada"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1743,
+    "IdIgreja": 5200,
+    "NomeIgreja": "Asa Branca"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1743,
+    "IdIgreja": 5201,
+    "NomeIgreja": "Mercejana"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1743,
+    "IdIgreja": 5202,
+    "NomeIgreja": "Aparecida"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1744,
+    "IdIgreja": 5188,
+    "NomeIgreja": "Cidade Nova"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1744,
+    "IdIgreja": 5189,
+    "NomeIgreja": "Centenário"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1744,
+    "IdIgreja": 5190,
+    "NomeIgreja": "São Bento"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1744,
+    "IdIgreja": 5191,
+    "NomeIgreja": "Bela Vista"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1744,
+    "IdIgreja": 5192,
+    "NomeIgreja": "Mucajaì"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1745,
+    "IdIgreja": 5220,
+    "NomeIgreja": "CARÃNÃ"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1745,
+    "IdIgreja": 5221,
+    "NomeIgreja": "Satélite"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1747,
+    "IdIgreja": 5226,
+    "NomeIgreja": "Cenador H. Campos"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1747,
+    "IdIgreja": 5227,
+    "NomeIgreja": "Pintolandia II"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1747,
+    "IdIgreja": 5228,
+    "NomeIgreja": "Cidadão "
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1748,
+    "IdIgreja": 5233,
+    "NomeIgreja": "Cantà"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1748,
+    "IdIgreja": 5234,
+    "NomeIgreja": "Alvorada"
+  },
+  {
+    "IdEstado": 51,
+    "IdRegiao": 1764,
+    "IdIgreja": 5820,
+    "NomeIgreja": "Sede"
+  }
+]

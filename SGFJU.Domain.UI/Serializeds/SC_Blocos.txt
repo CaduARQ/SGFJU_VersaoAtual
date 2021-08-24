@@ -1,0 +1,82 @@
+[
+  {
+    "idBloco": 36,
+    "NomeBloco": "Bloco Criciuma",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 37,
+    "NomeBloco": "Bloco Norte",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 38,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 39,
+    "NomeBloco": "Bloco Oeste",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 301,
+    "NomeBloco": "capital",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 306,
+    "NomeBloco": "Bloco Lages",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 307,
+    "NomeBloco": "Lages",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 311,
+    "NomeBloco": "Bloco Jaraguá do Sul",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 312,
+    "NomeBloco": "Bloco Blumenau",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 313,
+    "NomeBloco": "Excluir Bloco Blumenau ",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 317,
+    "NomeBloco": "Bloco Balneário Camboriú",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 332,
+    "NomeBloco": "Bloco Chapecó",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 334,
+    "NomeBloco": "Bloco Joinville",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 338,
+    "NomeBloco": "Excluir -BC",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 339,
+    "NomeBloco": "Bloco Caçador",
+    "IdEstadoBloco": 52
+  },
+  {
+    "idBloco": 348,
+    "NomeBloco": "Bloco Tubarão",
+    "IdEstadoBloco": 52
+  }
+]

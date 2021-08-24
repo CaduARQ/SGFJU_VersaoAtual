@@ -1,0 +1,82 @@
+[
+  {
+    "idBloco": 1,
+    "NomeBloco": "Bloco Sul",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 2,
+    "NomeBloco": "Bloco Leste",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 3,
+    "NomeBloco": "Bloco Templo de Salomão",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 4,
+    "NomeBloco": "Bloco Lauzane",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 5,
+    "NomeBloco": "Bloco Guarulhos",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 6,
+    "NomeBloco": "Bloco Oeste ",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 7,
+    "NomeBloco": "Bloco Sul",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 8,
+    "NomeBloco": "Bloco Oeste",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 9,
+    "NomeBloco": "Bloco Jundiaí",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 10,
+    "NomeBloco": "Ribeirão Preto",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 11,
+    "NomeBloco": "Presidente Prudente",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 12,
+    "NomeBloco": "ABC",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 13,
+    "NomeBloco": "São Bernardo do Campo",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 14,
+    "NomeBloco": "Mogi",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 24,
+    "NomeBloco": "Bloco Treinamento",
+    "IdEstadoBloco": 1
+  },
+  {
+    "idBloco": 33,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 5
+  }
+]

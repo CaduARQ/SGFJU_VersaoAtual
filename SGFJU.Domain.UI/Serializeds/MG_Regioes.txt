@@ -1,0 +1,857 @@
+[
+  {
+    "idBloco": 71,
+    "IdRegiao": 789,
+    "NomeRegiao": "Alto Vera Cruz"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 790,
+    "NomeRegiao": "Amazonas"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 791,
+    "NomeRegiao": "Barroca"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 792,
+    "NomeRegiao": "Caetés"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 793,
+    "NomeRegiao": "Cristiano Machado"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 794,
+    "NomeRegiao": "Goiânia"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 795,
+    "NomeRegiao": "Guarani"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 796,
+    "NomeRegiao": "Horto"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 797,
+    "NomeRegiao": "Itabirito"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 798,
+    "NomeRegiao": "Nova Lima"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 799,
+    "NomeRegiao": "Padre Eustáquio"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 800,
+    "NomeRegiao": "Pedra Azul"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 801,
+    "NomeRegiao": "Royal"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 802,
+    "NomeRegiao": "Sabará"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 803,
+    "NomeRegiao": "São Cristovão"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 804,
+    "NomeRegiao": "São Gabriel"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 805,
+    "NomeRegiao": "Savassi"
+  },
+  {
+    "idBloco": 71,
+    "IdRegiao": 2076,
+    "NomeRegiao": "vicosa"
+  },
+  {
+    "idBloco": 72,
+    "IdRegiao": 812,
+    "NomeRegiao": "Betim"
+  },
+  {
+    "idBloco": 72,
+    "IdRegiao": 813,
+    "NomeRegiao": "Citrolândia"
+  },
+  {
+    "idBloco": 72,
+    "IdRegiao": 814,
+    "NomeRegiao": "Igarapé"
+  },
+  {
+    "idBloco": 72,
+    "IdRegiao": 815,
+    "NomeRegiao": "Alterosa"
+  },
+  {
+    "idBloco": 72,
+    "IdRegiao": 816,
+    "NomeRegiao": "Teresópolis"
+  },
+  {
+    "idBloco": 72,
+    "IdRegiao": 817,
+    "NomeRegiao": "Mateus Leme"
+  },
+  {
+    "idBloco": 72,
+    "IdRegiao": 818,
+    "NomeRegiao": "PTB"
+  },
+  {
+    "idBloco": 72,
+    "IdRegiao": 819,
+    "NomeRegiao": "Sarzedo"
+  },
+  {
+    "idBloco": 72,
+    "IdRegiao": 2075,
+    "NomeRegiao": "PTB"
+  },
+  {
+    "idBloco": 73,
+    "IdRegiao": 993,
+    "NomeRegiao": "Divinópolis"
+  },
+  {
+    "idBloco": 73,
+    "IdRegiao": 998,
+    "NomeRegiao": "Abaeté"
+  },
+  {
+    "idBloco": 73,
+    "IdRegiao": 999,
+    "NomeRegiao": "Arcos"
+  },
+  {
+    "idBloco": 73,
+    "IdRegiao": 1000,
+    "NomeRegiao": "Campo Belo"
+  },
+  {
+    "idBloco": 73,
+    "IdRegiao": 1001,
+    "NomeRegiao": "Formiga"
+  },
+  {
+    "idBloco": 73,
+    "IdRegiao": 1002,
+    "NomeRegiao": "Itaúna"
+  },
+  {
+    "idBloco": 73,
+    "IdRegiao": 1003,
+    "NomeRegiao": "Nova Serrana"
+  },
+  {
+    "idBloco": 73,
+    "IdRegiao": 1004,
+    "NomeRegiao": "Oliveira"
+  },
+  {
+    "idBloco": 73,
+    "IdRegiao": 1005,
+    "NomeRegiao": "Pará de Minas"
+  },
+  {
+    "idBloco": 74,
+    "IdRegiao": 923,
+    "NomeRegiao": "Eldorado"
+  },
+  {
+    "idBloco": 74,
+    "IdRegiao": 924,
+    "NomeRegiao": "Industrial"
+  },
+  {
+    "idBloco": 74,
+    "IdRegiao": 925,
+    "NomeRegiao": "Laguna"
+  },
+  {
+    "idBloco": 74,
+    "IdRegiao": 926,
+    "NomeRegiao": "Pindorama"
+  },
+  {
+    "idBloco": 74,
+    "IdRegiao": 927,
+    "NomeRegiao": "Novo Progresso"
+  },
+  {
+    "idBloco": 74,
+    "IdRegiao": 928,
+    "NomeRegiao": "Nova Contagem"
+  },
+  {
+    "idBloco": 74,
+    "IdRegiao": 929,
+    "NomeRegiao": "Petrolândia"
+  },
+  {
+    "idBloco": 74,
+    "IdRegiao": 930,
+    "NomeRegiao": "Riacho"
+  },
+  {
+    "idBloco": 74,
+    "IdRegiao": 931,
+    "NomeRegiao": "Alvorada"
+  },
+  {
+    "idBloco": 75,
+    "IdRegiao": 1083,
+    "NomeRegiao": "Governador Valadares"
+  },
+  {
+    "idBloco": 75,
+    "IdRegiao": 1084,
+    "NomeRegiao": "Caratinga"
+  },
+  {
+    "idBloco": 75,
+    "IdRegiao": 1085,
+    "NomeRegiao": "Coronel Fabriciano"
+  },
+  {
+    "idBloco": 75,
+    "IdRegiao": 1086,
+    "NomeRegiao": "Ipatinga"
+  },
+  {
+    "idBloco": 75,
+    "IdRegiao": 1087,
+    "NomeRegiao": "Manhuaçu"
+  },
+  {
+    "idBloco": 76,
+    "IdRegiao": 942,
+    "NomeRegiao": "Juiz de Fora"
+  },
+  {
+    "idBloco": 76,
+    "IdRegiao": 943,
+    "NomeRegiao": "Jóquei Clube"
+  },
+  {
+    "idBloco": 76,
+    "IdRegiao": 944,
+    "NomeRegiao": "Benfica"
+  },
+  {
+    "idBloco": 76,
+    "IdRegiao": 945,
+    "NomeRegiao": "Santa Luzia"
+  },
+  {
+    "idBloco": 77,
+    "IdRegiao": 1065,
+    "NomeRegiao": "Montes Claros"
+  },
+  {
+    "idBloco": 77,
+    "IdRegiao": 1066,
+    "NomeRegiao": "Jardim Palmeiras"
+  },
+  {
+    "idBloco": 77,
+    "IdRegiao": 1067,
+    "NomeRegiao": "Maracanã"
+  },
+  {
+    "idBloco": 77,
+    "IdRegiao": 1068,
+    "NomeRegiao": "Bocaiúva"
+  },
+  {
+    "idBloco": 77,
+    "IdRegiao": 1069,
+    "NomeRegiao": "Janaúba"
+  },
+  {
+    "idBloco": 77,
+    "IdRegiao": 1070,
+    "NomeRegiao": "Januária"
+  },
+  {
+    "idBloco": 77,
+    "IdRegiao": 1071,
+    "NomeRegiao": "Pirapora"
+  },
+  {
+    "idBloco": 77,
+    "IdRegiao": 1072,
+    "NomeRegiao": "Salinas"
+  },
+  {
+    "idBloco": 77,
+    "IdRegiao": 1073,
+    "NomeRegiao": "São Francisco"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 827,
+    "NomeRegiao": "Venda Nova"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 828,
+    "NomeRegiao": "Céu Azul"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 829,
+    "NomeRegiao": "Paraúna"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 830,
+    "NomeRegiao": "Mantiqueira"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 831,
+    "NomeRegiao": "Fortaleza"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 832,
+    "NomeRegiao": "Vila Olga"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 833,
+    "NomeRegiao": "São Bernardo"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 834,
+    "NomeRegiao": "Santa Mônica"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 835,
+    "NomeRegiao": "Santa Luzia"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 836,
+    "NomeRegiao": "Lagoa Santa"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 837,
+    "NomeRegiao": "São Benedito"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 838,
+    "NomeRegiao": "Vila Esportiva"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 839,
+    "NomeRegiao": "Vespasiano"
+  },
+  {
+    "idBloco": 78,
+    "IdRegiao": 2082,
+    "NomeRegiao": "fortaleza"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 946,
+    "NomeRegiao": "Muriaé"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 947,
+    "NomeRegiao": "Além Paraíba"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 948,
+    "NomeRegiao": "Carangola"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 949,
+    "NomeRegiao": "Cataguases"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 950,
+    "NomeRegiao": "Ponte Nova"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 951,
+    "NomeRegiao": "Ponte Nova 2"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 952,
+    "NomeRegiao": "Úba"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 953,
+    "NomeRegiao": "Viçosa"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 954,
+    "NomeRegiao": "Visconde do Rio Branco"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2077,
+    "NomeRegiao": "vicosa"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2078,
+    "NomeRegiao": "vicosa"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2079,
+    "NomeRegiao": "vicosa"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2080,
+    "NomeRegiao": "vicosa"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2081,
+    "NomeRegiao": "vicosa"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2083,
+    "NomeRegiao": "ponte nova 2"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2084,
+    "NomeRegiao": "ponte nova 2"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2085,
+    "NomeRegiao": "ponte nova 2"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2086,
+    "NomeRegiao": "ponte nova 2"
+  },
+  {
+    "idBloco": 79,
+    "IdRegiao": 2087,
+    "NomeRegiao": "ponte nova 2"
+  },
+  {
+    "idBloco": 80,
+    "IdRegiao": 909,
+    "NomeRegiao": "Ribeirão das Neves"
+  },
+  {
+    "idBloco": 80,
+    "IdRegiao": 910,
+    "NomeRegiao": "Esmeraldas"
+  },
+  {
+    "idBloco": 80,
+    "IdRegiao": 911,
+    "NomeRegiao": "Esperança"
+  },
+  {
+    "idBloco": 80,
+    "IdRegiao": 912,
+    "NomeRegiao": "Florença "
+  },
+  {
+    "idBloco": 80,
+    "IdRegiao": 913,
+    "NomeRegiao": "Justinópolis"
+  },
+  {
+    "idBloco": 80,
+    "IdRegiao": 914,
+    "NomeRegiao": "São Francisco"
+  },
+  {
+    "idBloco": 80,
+    "IdRegiao": 915,
+    "NomeRegiao": "Veneza"
+  },
+  {
+    "idBloco": 81,
+    "IdRegiao": 1357,
+    "NomeRegiao": "Sete Lagoas"
+  },
+  {
+    "idBloco": 81,
+    "IdRegiao": 1546,
+    "NomeRegiao": "Sete Lagoas"
+  },
+  {
+    "idBloco": 81,
+    "IdRegiao": 1547,
+    "NomeRegiao": "Curvelo"
+  },
+  {
+    "idBloco": 81,
+    "IdRegiao": 1548,
+    "NomeRegiao": "Corinto"
+  },
+  {
+    "idBloco": 81,
+    "IdRegiao": 1549,
+    "NomeRegiao": "Diamantina"
+  },
+  {
+    "idBloco": 81,
+    "IdRegiao": 1550,
+    "NomeRegiao": "Matozinhos"
+  },
+  {
+    "idBloco": 81,
+    "IdRegiao": 1551,
+    "NomeRegiao": "Nova Cidade"
+  },
+  {
+    "idBloco": 81,
+    "IdRegiao": 1552,
+    "NomeRegiao": "Pedro Leopoldo"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1536,
+    "NomeRegiao": "Uberlândia"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1537,
+    "NomeRegiao": "Araguari"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1538,
+    "NomeRegiao": "Buritis"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1539,
+    "NomeRegiao": "Ituiutaba"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1540,
+    "NomeRegiao": "João Pinheiro"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1541,
+    "NomeRegiao": "Luizote"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1542,
+    "NomeRegiao": "Paracatu"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1543,
+    "NomeRegiao": "Planalto"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1544,
+    "NomeRegiao": "Tocantins"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1545,
+    "NomeRegiao": "Unaí"
+  },
+  {
+    "idBloco": 82,
+    "IdRegiao": 1839,
+    "NomeRegiao": "Uberlandia"
+  },
+  {
+    "idBloco": 83,
+    "IdRegiao": 1074,
+    "NomeRegiao": "Uberaba"
+  },
+  {
+    "idBloco": 83,
+    "IdRegiao": 1075,
+    "NomeRegiao": "Araxá"
+  },
+  {
+    "idBloco": 83,
+    "IdRegiao": 1076,
+    "NomeRegiao": "Frutal"
+  },
+  {
+    "idBloco": 83,
+    "IdRegiao": 1077,
+    "NomeRegiao": "Gameleira"
+  },
+  {
+    "idBloco": 83,
+    "IdRegiao": 1078,
+    "NomeRegiao": "Iturama"
+  },
+  {
+    "idBloco": 83,
+    "IdRegiao": 1079,
+    "NomeRegiao": "Pacaembu"
+  },
+  {
+    "idBloco": 83,
+    "IdRegiao": 1080,
+    "NomeRegiao": "Patos de Minas"
+  },
+  {
+    "idBloco": 83,
+    "IdRegiao": 1081,
+    "NomeRegiao": "Patrocínio"
+  },
+  {
+    "idBloco": 83,
+    "IdRegiao": 1082,
+    "NomeRegiao": "São Gotardo"
+  },
+  {
+    "idBloco": 84,
+    "IdRegiao": 1088,
+    "NomeRegiao": "Teófilo Otoni"
+  },
+  {
+    "idBloco": 84,
+    "IdRegiao": 1089,
+    "NomeRegiao": "Almenara"
+  },
+  {
+    "idBloco": 84,
+    "IdRegiao": 1090,
+    "NomeRegiao": "Araçuaí"
+  },
+  {
+    "idBloco": 84,
+    "IdRegiao": 1091,
+    "NomeRegiao": "Malacacheta"
+  },
+  {
+    "idBloco": 84,
+    "IdRegiao": 1092,
+    "NomeRegiao": "Nanuque"
+  },
+  {
+    "idBloco": 84,
+    "IdRegiao": 1093,
+    "NomeRegiao": "Pedra Azul"
+  },
+  {
+    "idBloco": 85,
+    "IdRegiao": 938,
+    "NomeRegiao": "Itabira"
+  },
+  {
+    "idBloco": 85,
+    "IdRegiao": 939,
+    "NomeRegiao": "Barão de Cocais"
+  },
+  {
+    "idBloco": 85,
+    "IdRegiao": 940,
+    "NomeRegiao": "Guanhães"
+  },
+  {
+    "idBloco": 85,
+    "IdRegiao": 941,
+    "NomeRegiao": "João Monlevade"
+  },
+  {
+    "idBloco": 85,
+    "IdRegiao": 1868,
+    "NomeRegiao": "Itabira-Sede"
+  },
+  {
+    "idBloco": 86,
+    "IdRegiao": 1057,
+    "NomeRegiao": "Varginha"
+  },
+  {
+    "idBloco": 86,
+    "IdRegiao": 1058,
+    "NomeRegiao": "Alfenas"
+  },
+  {
+    "idBloco": 86,
+    "IdRegiao": 1059,
+    "NomeRegiao": "Itajubá"
+  },
+  {
+    "idBloco": 86,
+    "IdRegiao": 1060,
+    "NomeRegiao": "Lavras"
+  },
+  {
+    "idBloco": 86,
+    "IdRegiao": 1061,
+    "NomeRegiao": "Machado"
+  },
+  {
+    "idBloco": 86,
+    "IdRegiao": 1062,
+    "NomeRegiao": "São Lourenço"
+  },
+  {
+    "idBloco": 86,
+    "IdRegiao": 1063,
+    "NomeRegiao": "Três Corações"
+  },
+  {
+    "idBloco": 86,
+    "IdRegiao": 1064,
+    "NomeRegiao": "Três Pontas"
+  },
+  {
+    "idBloco": 86,
+    "IdRegiao": 1852,
+    "NomeRegiao": "Alfenas"
+  },
+  {
+    "idBloco": 87,
+    "IdRegiao": 820,
+    "NomeRegiao": "Poços de Caldas"
+  },
+  {
+    "idBloco": 87,
+    "IdRegiao": 821,
+    "NomeRegiao": "Andradas"
+  },
+  {
+    "idBloco": 87,
+    "IdRegiao": 822,
+    "NomeRegiao": "Extrema"
+  },
+  {
+    "idBloco": 87,
+    "IdRegiao": 823,
+    "NomeRegiao": "Guaxupé"
+  },
+  {
+    "idBloco": 87,
+    "IdRegiao": 824,
+    "NomeRegiao": "Passos"
+  },
+  {
+    "idBloco": 87,
+    "IdRegiao": 825,
+    "NomeRegiao": "Pouso Alegre"
+  },
+  {
+    "idBloco": 87,
+    "IdRegiao": 826,
+    "NomeRegiao": "São Sebastião do Paraíso"
+  },
+  {
+    "idBloco": 88,
+    "IdRegiao": 1245,
+    "NomeRegiao": "Conselheiro Lafaiete"
+  },
+  {
+    "idBloco": 88,
+    "IdRegiao": 1246,
+    "NomeRegiao": "Barbacena"
+  },
+  {
+    "idBloco": 88,
+    "IdRegiao": 1247,
+    "NomeRegiao": "Congonhas"
+  },
+  {
+    "idBloco": 88,
+    "IdRegiao": 1248,
+    "NomeRegiao": "Mariana"
+  },
+  {
+    "idBloco": 88,
+    "IdRegiao": 1249,
+    "NomeRegiao": "São João Del Rei"
+  },
+  {
+    "idBloco": 89,
+    "IdRegiao": 916,
+    "NomeRegiao": "Barreiro"
+  },
+  {
+    "idBloco": 89,
+    "IdRegiao": 917,
+    "NomeRegiao": "Cardoso"
+  },
+  {
+    "idBloco": 89,
+    "IdRegiao": 918,
+    "NomeRegiao": "Durval de Barros"
+  },
+  {
+    "idBloco": 89,
+    "IdRegiao": 919,
+    "NomeRegiao": "Ibirité"
+  },
+  {
+    "idBloco": 89,
+    "IdRegiao": 920,
+    "NomeRegiao": "Jatobá"
+  },
+  {
+    "idBloco": 89,
+    "IdRegiao": 921,
+    "NomeRegiao": "Milionários"
+  },
+  {
+    "idBloco": 89,
+    "IdRegiao": 922,
+    "NomeRegiao": "Vale do Jatobá"
+  },
+  {
+    "idBloco": 90,
+    "IdRegiao": 208,
+    "NomeRegiao": "Sede Estadual - Templo Maior"
+  }
+]

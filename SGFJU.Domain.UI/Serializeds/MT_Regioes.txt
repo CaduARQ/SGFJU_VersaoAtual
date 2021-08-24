@@ -1,0 +1,212 @@
+[
+  {
+    "idBloco": 182,
+    "IdRegiao": 1901,
+    "NomeRegiao": "Sede Regional Sinop"
+  },
+  {
+    "idBloco": 182,
+    "IdRegiao": 1902,
+    "NomeRegiao": "Alta Floresta"
+  },
+  {
+    "idBloco": 182,
+    "IdRegiao": 1903,
+    "NomeRegiao": "Guarantã do Norte"
+  },
+  {
+    "idBloco": 182,
+    "IdRegiao": 1904,
+    "NomeRegiao": "Juara"
+  },
+  {
+    "idBloco": 182,
+    "IdRegiao": 1905,
+    "NomeRegiao": "Lucas do Rio Verde"
+  },
+  {
+    "idBloco": 182,
+    "IdRegiao": 1906,
+    "NomeRegiao": "Nova Mutum"
+  },
+  {
+    "idBloco": 182,
+    "IdRegiao": 1907,
+    "NomeRegiao": "Peixoto de Azevedo"
+  },
+  {
+    "idBloco": 182,
+    "IdRegiao": 1908,
+    "NomeRegiao": "Sorriso"
+  },
+  {
+    "idBloco": 183,
+    "IdRegiao": 896,
+    "NomeRegiao": "Sede Regional- Rondonópolis"
+  },
+  {
+    "idBloco": 183,
+    "IdRegiao": 897,
+    "NomeRegiao": "Jaciara"
+  },
+  {
+    "idBloco": 183,
+    "IdRegiao": 898,
+    "NomeRegiao": "Primavera"
+  },
+  {
+    "idBloco": 184,
+    "IdRegiao": 1890,
+    "NomeRegiao": "Sede Regional Cáceres"
+  },
+  {
+    "idBloco": 184,
+    "IdRegiao": 1891,
+    "NomeRegiao": "Mirassol D`Oeste"
+  },
+  {
+    "idBloco": 184,
+    "IdRegiao": 1892,
+    "NomeRegiao": "Pontes e Lacerda"
+  },
+  {
+    "idBloco": 184,
+    "IdRegiao": 1893,
+    "NomeRegiao": "Poconé"
+  },
+  {
+    "idBloco": 184,
+    "IdRegiao": 1894,
+    "NomeRegiao": "Comodoro"
+  },
+  {
+    "idBloco": 184,
+    "IdRegiao": 1899,
+    "NomeRegiao": "Sede Regional Cáceres"
+  },
+  {
+    "idBloco": 185,
+    "IdRegiao": 1895,
+    "NomeRegiao": "Sede Regional Barra do Garça"
+  },
+  {
+    "idBloco": 185,
+    "IdRegiao": 1896,
+    "NomeRegiao": "Água Boa"
+  },
+  {
+    "idBloco": 185,
+    "IdRegiao": 1897,
+    "NomeRegiao": "Confresa"
+  },
+  {
+    "idBloco": 185,
+    "IdRegiao": 1898,
+    "NomeRegiao": "Querência"
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 884,
+    "NomeRegiao": "Jardim Florianópolis "
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 885,
+    "NomeRegiao": "Tijucal"
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 886,
+    "NomeRegiao": "Osmar Cabral"
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 887,
+    "NomeRegiao": "Planalto"
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 888,
+    "NomeRegiao": "Cpa 2"
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 889,
+    "NomeRegiao": "Três Barras "
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 890,
+    "NomeRegiao": "Pedra 90"
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 891,
+    "NomeRegiao": "Jardim Industriário "
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 892,
+    "NomeRegiao": "Cristo Rei"
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 893,
+    "NomeRegiao": "Nova Várzea"
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 894,
+    "NomeRegiao": "Couto Magalhães"
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 895,
+    "NomeRegiao": "Mapim "
+  },
+  {
+    "idBloco": 203,
+    "IdRegiao": 1900,
+    "NomeRegiao": "Parque Cuiabá"
+  },
+  {
+    "idBloco": 204,
+    "IdRegiao": 899,
+    "NomeRegiao": "Sede Regional- Tangará"
+  },
+  {
+    "idBloco": 204,
+    "IdRegiao": 900,
+    "NomeRegiao": "Rosário Oeste "
+  },
+  {
+    "idBloco": 204,
+    "IdRegiao": 901,
+    "NomeRegiao": "Barra do Bugres "
+  },
+  {
+    "idBloco": 204,
+    "IdRegiao": 902,
+    "NomeRegiao": "Nova Olímpia "
+  },
+  {
+    "idBloco": 204,
+    "IdRegiao": 903,
+    "NomeRegiao": "Campo Novo "
+  },
+  {
+    "idBloco": 204,
+    "IdRegiao": 904,
+    "NomeRegiao": "Juína "
+  },
+  {
+    "idBloco": 204,
+    "IdRegiao": 905,
+    "NomeRegiao": "Aripuanã"
+  },
+  {
+    "idBloco": 327,
+    "IdRegiao": 1750,
+    "NomeRegiao": "Sede Estadual Cuiabá"
+  }
+]

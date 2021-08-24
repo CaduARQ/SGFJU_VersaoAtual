@@ -1,0 +1,452 @@
+[
+  {
+    "idBloco": 36,
+    "IdRegiao": 7,
+    "NomeRegiao": "Urussanga"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 9,
+    "NomeRegiao": "Santa Luzia"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 16,
+    "NomeRegiao": "Próspera"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 17,
+    "NomeRegiao": "Sombrio"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 18,
+    "NomeRegiao": "Turvo"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 19,
+    "NomeRegiao": "Içara"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 20,
+    "NomeRegiao": "Cidade Mineira"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 21,
+    "NomeRegiao": "Rio Maina"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 22,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 23,
+    "NomeRegiao": "Araranguá"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 1784,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 1803,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 1804,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 1829,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 1849,
+    "NomeRegiao": "Criciúma"
+  },
+  {
+    "idBloco": 36,
+    "IdRegiao": 1850,
+    "NomeRegiao": "Forquilhinha Sul "
+  },
+  {
+    "idBloco": 37,
+    "IdRegiao": 8,
+    "NomeRegiao": "Vila Nova"
+  },
+  {
+    "idBloco": 37,
+    "IdRegiao": 11,
+    "NomeRegiao": "Fátima"
+  },
+  {
+    "idBloco": 37,
+    "IdRegiao": 12,
+    "NomeRegiao": "Petrópolis"
+  },
+  {
+    "idBloco": 37,
+    "IdRegiao": 13,
+    "NomeRegiao": "Iririú"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 15,
+    "NomeRegiao": "Ingleses"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 54,
+    "NomeRegiao": "teste"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1639,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1776,
+    "NomeRegiao": "Canasvieiras"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1777,
+    "NomeRegiao": "Costeira"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1778,
+    "NomeRegiao": "Barreiros"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1779,
+    "NomeRegiao": "Ipiranga"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1780,
+    "NomeRegiao": "Campinas"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1781,
+    "NomeRegiao": "Biguaçu"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1782,
+    "NomeRegiao": "Jardim Atlantico"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1783,
+    "NomeRegiao": "Forquilinhas"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1785,
+    "NomeRegiao": "Barra do Aririú"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1787,
+    "NomeRegiao": "Palhoça "
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1790,
+    "NomeRegiao": "Trindade"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1793,
+    "NomeRegiao": "Forquilinhas"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1828,
+    "NomeRegiao": "Barreiros"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1830,
+    "NomeRegiao": "Forquilinhas"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1831,
+    "NomeRegiao": "Campinas"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 1832,
+    "NomeRegiao": "Barreiros"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 2063,
+    "NomeRegiao": "Tapera"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 2072,
+    "NomeRegiao": "Biguaçu"
+  },
+  {
+    "idBloco": 38,
+    "IdRegiao": 2161,
+    "NomeRegiao": "FORQUILHINHAS"
+  },
+  {
+    "idBloco": 39,
+    "IdRegiao": 1712,
+    "NomeRegiao": "Lages"
+  },
+  {
+    "idBloco": 306,
+    "IdRegiao": 1713,
+    "NomeRegiao": "Curitibanos"
+  },
+  {
+    "idBloco": 306,
+    "IdRegiao": 1716,
+    "NomeRegiao": "Rio do Sul"
+  },
+  {
+    "idBloco": 306,
+    "IdRegiao": 1717,
+    "NomeRegiao": "Lages"
+  },
+  {
+    "idBloco": 311,
+    "IdRegiao": 1719,
+    "NomeRegiao": "Jaragua do Sul"
+  },
+  {
+    "idBloco": 311,
+    "IdRegiao": 1720,
+    "NomeRegiao": "Mafra"
+  },
+  {
+    "idBloco": 311,
+    "IdRegiao": 1721,
+    "NomeRegiao": "Rio Negrinho"
+  },
+  {
+    "idBloco": 311,
+    "IdRegiao": 1722,
+    "NomeRegiao": "Canoinhas"
+  },
+  {
+    "idBloco": 312,
+    "IdRegiao": 1724,
+    "NomeRegiao": "Sede Blumenau"
+  },
+  {
+    "idBloco": 312,
+    "IdRegiao": 1725,
+    "NomeRegiao": "Excluir Região Brusque"
+  },
+  {
+    "idBloco": 312,
+    "IdRegiao": 1726,
+    "NomeRegiao": "Brusque"
+  },
+  {
+    "idBloco": 312,
+    "IdRegiao": 1727,
+    "NomeRegiao": "Gaspar"
+  },
+  {
+    "idBloco": 312,
+    "IdRegiao": 1728,
+    "NomeRegiao": "Garcia"
+  },
+  {
+    "idBloco": 312,
+    "IdRegiao": 1729,
+    "NomeRegiao": "Itoupava Norte"
+  },
+  {
+    "idBloco": 312,
+    "IdRegiao": 1730,
+    "NomeRegiao": "Indaial"
+  },
+  {
+    "idBloco": 312,
+    "IdRegiao": 1731,
+    "NomeRegiao": "Ibirama"
+  },
+  {
+    "idBloco": 312,
+    "IdRegiao": 1732,
+    "NomeRegiao": "Timbó"
+  },
+  {
+    "idBloco": 317,
+    "IdRegiao": 1735,
+    "NomeRegiao": "Cordeiros"
+  },
+  {
+    "idBloco": 317,
+    "IdRegiao": 1736,
+    "NomeRegiao": "Itapema"
+  },
+  {
+    "idBloco": 317,
+    "IdRegiao": 1737,
+    "NomeRegiao": "Itajaí"
+  },
+  {
+    "idBloco": 317,
+    "IdRegiao": 1738,
+    "NomeRegiao": "Navegantes"
+  },
+  {
+    "idBloco": 317,
+    "IdRegiao": 1739,
+    "NomeRegiao": "Tijucas"
+  },
+  {
+    "idBloco": 317,
+    "IdRegiao": 1805,
+    "NomeRegiao": "Balneário"
+  },
+  {
+    "idBloco": 317,
+    "IdRegiao": 1806,
+    "NomeRegiao": "Balneário"
+  },
+  {
+    "idBloco": 332,
+    "IdRegiao": 1786,
+    "NomeRegiao": "Chapecó"
+  },
+  {
+    "idBloco": 332,
+    "IdRegiao": 1788,
+    "NomeRegiao": "Xanxerê"
+  },
+  {
+    "idBloco": 332,
+    "IdRegiao": 1789,
+    "NomeRegiao": "Efapi"
+  },
+  {
+    "idBloco": 332,
+    "IdRegiao": 1791,
+    "NomeRegiao": "São Miguel do Oeste"
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1794,
+    "NomeRegiao": "Joinville"
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1795,
+    "NomeRegiao": "Barra Velha"
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1796,
+    "NomeRegiao": "Fátima"
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1797,
+    "NomeRegiao": "Vila Nova "
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1798,
+    "NomeRegiao": "Petrópolis"
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1799,
+    "NomeRegiao": "Iririú"
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1800,
+    "NomeRegiao": "Excluir"
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1801,
+    "NomeRegiao": "Excluir"
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1835,
+    "NomeRegiao": "Excluir"
+  },
+  {
+    "idBloco": 334,
+    "IdRegiao": 1836,
+    "NomeRegiao": "Excluir"
+  },
+  {
+    "idBloco": 339,
+    "IdRegiao": 1812,
+    "NomeRegiao": "Sede Caçador"
+  },
+  {
+    "idBloco": 339,
+    "IdRegiao": 1813,
+    "NomeRegiao": "Excluir - Catedral"
+  },
+  {
+    "idBloco": 339,
+    "IdRegiao": 1814,
+    "NomeRegiao": "Excluir - Sede"
+  },
+  {
+    "idBloco": 339,
+    "IdRegiao": 1815,
+    "NomeRegiao": "VIDEIRA"
+  },
+  {
+    "idBloco": 339,
+    "IdRegiao": 1816,
+    "NomeRegiao": "CAMPOS NOVOS"
+  },
+  {
+    "idBloco": 339,
+    "IdRegiao": 1817,
+    "NomeRegiao": "JOAÇABA"
+  },
+  {
+    "idBloco": 339,
+    "IdRegiao": 1818,
+    "NomeRegiao": "CONCÓRDIA"
+  },
+  {
+    "idBloco": 348,
+    "IdRegiao": 1878,
+    "NomeRegiao": "Imbituba"
+  },
+  {
+    "idBloco": 348,
+    "IdRegiao": 1879,
+    "NomeRegiao": "Laguna"
+  },
+  {
+    "idBloco": 348,
+    "IdRegiao": 2064,
+    "NomeRegiao": "Tubarão"
+  }
+]

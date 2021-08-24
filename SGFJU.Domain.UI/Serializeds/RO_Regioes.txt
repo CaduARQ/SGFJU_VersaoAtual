@@ -1,0 +1,132 @@
+[
+  {
+    "idBloco": 343,
+    "IdRegiao": 1853,
+    "NomeRegiao": "SEDE ESTADUAL"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1854,
+    "NomeRegiao": "TANCREDO NEVES"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1855,
+    "NomeRegiao": "SÃO FRANCISCO"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1856,
+    "NomeRegiao": "JK"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1857,
+    "NomeRegiao": "ESPERANÇA DA COMUNIDADE"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1858,
+    "NomeRegiao": "COSTA E SILVA"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1859,
+    "NomeRegiao": "ELDORADO"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1860,
+    "NomeRegiao": "UNIÃO DA VITÓRIA"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1861,
+    "NomeRegiao": "LIBERDADE"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1862,
+    "NomeRegiao": "ULISSES"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1863,
+    "NomeRegiao": "CANDEIAS DO JAMARI"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 1864,
+    "NomeRegiao": "JACI PARANÁ"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 2093,
+    "NomeRegiao": "Balsa"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 2203,
+    "NomeRegiao": "Humaitá"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 2204,
+    "NomeRegiao": "Guajará-Mirim"
+  },
+  {
+    "idBloco": 343,
+    "IdRegiao": 2205,
+    "NomeRegiao": "Lábrea "
+  },
+  {
+    "idBloco": 344,
+    "IdRegiao": 2190,
+    "NomeRegiao": "Cacoal"
+  },
+  {
+    "idBloco": 344,
+    "IdRegiao": 2191,
+    "NomeRegiao": "Espigão do Oeste"
+  },
+  {
+    "idBloco": 344,
+    "IdRegiao": 2192,
+    "NomeRegiao": "Rolim de Moura"
+  },
+  {
+    "idBloco": 345,
+    "IdRegiao": 2188,
+    "NomeRegiao": "Machadinho"
+  },
+  {
+    "idBloco": 345,
+    "IdRegiao": 2189,
+    "NomeRegiao": "Ariquemes"
+  },
+  {
+    "idBloco": 345,
+    "IdRegiao": 2202,
+    "NomeRegiao": "Buritis"
+  },
+  {
+    "idBloco": 346,
+    "IdRegiao": 2193,
+    "NomeRegiao": "Ji Paraná"
+  },
+  {
+    "idBloco": 347,
+    "IdRegiao": 2185,
+    "NomeRegiao": "[excluir]"
+  },
+  {
+    "idBloco": 347,
+    "IdRegiao": 2186,
+    "NomeRegiao": "[excluir]"
+  },
+  {
+    "idBloco": 347,
+    "IdRegiao": 2187,
+    "NomeRegiao": "Vilhena"
+  }
+]

@@ -1,0 +1,8 @@
+C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Util\bin\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Util.deps.json
+C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Util\bin\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Util.dll
+C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Util\bin\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Util.pdb
+C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Util\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Util.AssemblyInfoInputs.cache
+C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Util\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Util.AssemblyInfo.cs
+C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Util\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Util.dll
+C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Util\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Util.pdb
+C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Util\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Util.csprojAssemblyReference.cache

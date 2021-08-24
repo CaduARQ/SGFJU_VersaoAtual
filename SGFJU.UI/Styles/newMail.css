@@ -1,0 +1,123 @@
+﻿/*.content {
+	flex: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}*/
+html .sidebar {
+  display: none; }
+
+html .sidebarScnd,
+html .editorWrapper {
+  height: 100%;
+  box-sizing: border-box; }
+
+html .sidebarScnd {
+  width: 30%;
+  min-width: 330px;
+  float: left; }
+  html .sidebarScnd label {
+    width: 70px;
+    line-height: 36px;
+    float: left; }
+    html .sidebarScnd label + div,
+    html .sidebarScnd label + span {
+      width: 300px;
+      float: left; }
+  html .sidebarScnd .dropDownWrapper {
+    position: relative; }
+  html .sidebarScnd .RadDropDownList {
+    width: 300px; }
+
+html .editorWrapper {
+  overflow: hidden; }
+
+.sidebarScnd {
+  padding: 15px 30px 15px 15px;
+  background: #f7f7f7;
+  position: relative; }
+  .sidebarScnd .row {
+    margin-bottom: 23px; }
+    .sidebarScnd .row:after {
+      content: "";
+      display: block;
+      clear: both; }
+
+html .editorWrapper {
+  padding: 30px;
+  border: 0; }
+  html .editorWrapper .RadEditor {
+    border: 0; }
+  html .editorWrapper .reToolBar {
+    border: 0; }
+  html .editorWrapper .reContent {
+    border-width: 1px 0 0;
+    padding-top: 20px; }
+
+.mobile .container {
+  padding-top: 0; }
+
+.mobile .sidebarScnd {
+  height: auto;
+  width: auto;
+  max-width: none;
+  float: none; }
+  .mobile .sidebarScnd .row {
+    padding-left: 70px;
+    display: block;
+    position: relative; }
+
+.mobile .editorWrapper {
+  padding: 2px 0 0; }
+
+html .main-header {
+  background-image: url("../Images/backgrounds/header_mail.gif"); }
+
+html .help-menu .rmRootGroup {
+  color: #25a0da; }
+
+html .RadToolTip .addBtn {
+  color: #25a0da; }
+
+html .mobile .breadcrumb {
+  color: #25a0da; }
+  html .mobile .breadcrumb .item.expanded {
+    background-color: #25a0da; }
+
+html .mobile .RadMenuPopup_MetroTouch .rmItem.rmSelected {
+  color: #0082cc; }
+
+.sidebarScnd .emailToolBar {
+  position: absolute;
+  bottom: -20px;
+  right: -3px;
+  color: #25a0da;
+  font-size: 14px;
+  cursor: pointer; }
+  .sidebarScnd .emailToolBar span {
+    display: inline-block;
+    line-height: 10px;
+    padding-right: 4px; }
+    .sidebarScnd .emailToolBar span:first-child {
+      border-right: 1px solid #777; }
+
+.sidebarScnd .RadAutoCompleteBox .racToken.invalidEmail {
+  border: 0;
+  background: #ff004e; }
+  .sidebarScnd .RadAutoCompleteBox .racToken.invalidEmail .racRemoveTokenLink {
+    top: 0;
+    right: 0;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 0 0 5px;
+    background: #cc003e; }
+
+html .RadWindow.warning .rwIcon {
+  color: #fff;
+  background: none;
+  text-align: center; }
+  html .RadWindow.warning .rwIcon:before {
+    font: 24px "OutlookSampleApp";
+    line-height: 30px;
+    content: "\e624";
+    display: block; }

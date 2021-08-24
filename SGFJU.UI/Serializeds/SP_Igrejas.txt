@@ -1,0 +1,80 @@
+[
+  {
+    "IdEstado": 1,
+    "IdRegiao": 1,
+    "IdIgreja": 1,
+    "NomeIgreja": "Igreja sede"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 2,
+    "IdIgreja": 2,
+    "NomeIgreja": "AE Carvalho (sede)"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 2,
+    "IdIgreja": 3,
+    "NomeIgreja": "Vila Mariana (Sede)"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 2,
+    "IdIgreja": 6,
+    "NomeIgreja": "AE Carvalho (Sede)"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 2,
+    "IdIgreja": 7,
+    "NomeIgreja": "Jardim Limoeiro"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 2,
+    "IdIgreja": 8,
+    "NomeIgreja": "Vila Nhocune"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 2,
+    "IdIgreja": 9,
+    "NomeIgreja": "Vila Rê"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 2,
+    "IdIgreja": 10,
+    "NomeIgreja": "Jardim São Carlos"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 5,
+    "IdIgreja": 37,
+    "NomeIgreja": "Vila Carrão ( Sede )"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 13,
+    "IdIgreja": 38,
+    "NomeIgreja": "Lapa( Sede )"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 36,
+    "IdIgreja": 39,
+    "NomeIgreja": "Sede Treinamento"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 36,
+    "IdIgreja": 40,
+    "NomeIgreja": "Trienamento !"
+  },
+  {
+    "IdEstado": 1,
+    "IdRegiao": 36,
+    "IdIgreja": 41,
+    "NomeIgreja": "Treinamento 2"
+  }
+]

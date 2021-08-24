@@ -1,0 +1,97 @@
+﻿@import "_newCommon.scss";
+
+
+$page-color: #25a0da;
+$selected-color: #0082cc;
+
+// Overwrite hover color
+html {
+	.main-header {
+		background-image: url('../Images/backgrounds/header_mail.gif');
+	}
+
+	.help-menu .rmRootGroup {
+		color: $page-color;
+	}
+
+	// Tooltip
+	.RadToolTip {
+
+		.addBtn {
+			color: $page-color;
+		}
+
+	}
+	
+	// mobile
+	.mobile {
+
+		.breadcrumb {
+			color: $page-color;
+
+			.item.expanded {
+				background-color: $page-color;
+			}
+		}
+
+		.RadMenuPopup_MetroTouch .rmItem.rmSelected {
+			color: $selected-color;
+		}
+	}
+}
+
+// secondary sidebar
+.sidebarScnd {
+
+	.emailToolBar {
+		position: absolute;
+		bottom: -20px;
+		right: -3px;
+		color: #25a0da;
+		font-size: 14px;
+		cursor: pointer;
+
+		span {
+			display: inline-block;
+			line-height: 10px;
+			padding-right: 4px;
+
+			&:first-child{
+				border-right: 1px solid #777;
+			}
+		}
+	}
+
+	.RadAutoCompleteBox {
+
+		.racToken.invalidEmail {
+			border: 0;
+			background: #ff004e;
+
+			.racRemoveTokenLink {
+				top: 0;
+				right: 0;
+				height: 22px;
+				line-height: 22px;
+				margin: 0 0 0 5px;
+				background: #cc003e;
+			}
+		}
+
+	}
+}
+
+
+
+html .RadWindow.warning .rwIcon {
+	color: #fff;
+	background: none;
+	text-align: center;
+
+	&:before {
+		font: 24px "OutlookSampleApp";
+		line-height: 30px;
+		content: "\e624";
+		display: block;
+	}
+}

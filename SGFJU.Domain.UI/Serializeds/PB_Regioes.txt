@@ -1,0 +1,167 @@
+[
+  {
+    "idBloco": 188,
+    "IdRegiao": 847,
+    "NomeRegiao": "Catedral Estadual"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 859,
+    "NomeRegiao": "Mandacaru"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 860,
+    "NomeRegiao": "Cabedelo"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 861,
+    "NomeRegiao": "Cristo 2"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 862,
+    "NomeRegiao": "Santa Rita"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 863,
+    "NomeRegiao": "Bayeux "
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 864,
+    "NomeRegiao": "Oitizeiro"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 865,
+    "NomeRegiao": "Monsenhor"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 866,
+    "NomeRegiao": "Tibiri"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 873,
+    "NomeRegiao": "Mangabeira"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 1842,
+    "NomeRegiao": "Alhandra"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 1843,
+    "NomeRegiao": "Pedras de Fogo"
+  },
+  {
+    "idBloco": 188,
+    "IdRegiao": 2216,
+    "NomeRegiao": "Mamanguape"
+  },
+  {
+    "idBloco": 189,
+    "IdRegiao": 867,
+    "NomeRegiao": "Campina Grande"
+  },
+  {
+    "idBloco": 189,
+    "IdRegiao": 868,
+    "NomeRegiao": "Catolé"
+  },
+  {
+    "idBloco": 189,
+    "IdRegiao": 869,
+    "NomeRegiao": "Malvinas"
+  },
+  {
+    "idBloco": 189,
+    "IdRegiao": 870,
+    "NomeRegiao": "Lago Seca"
+  },
+  {
+    "idBloco": 189,
+    "IdRegiao": 871,
+    "NomeRegiao": "Queimadas"
+  },
+  {
+    "idBloco": 189,
+    "IdRegiao": 872,
+    "NomeRegiao": "Novo Cruzeiro"
+  },
+  {
+    "idBloco": 190,
+    "IdRegiao": 1844,
+    "NomeRegiao": "Patos"
+  },
+  {
+    "idBloco": 190,
+    "IdRegiao": 1845,
+    "NomeRegiao": "Cajazeiras"
+  },
+  {
+    "idBloco": 190,
+    "IdRegiao": 1846,
+    "NomeRegiao": "Catolé do Rocha"
+  },
+  {
+    "idBloco": 190,
+    "IdRegiao": 1847,
+    "NomeRegiao": "Itaporanga"
+  },
+  {
+    "idBloco": 190,
+    "IdRegiao": 1848,
+    "NomeRegiao": "Souza"
+  },
+  {
+    "idBloco": 350,
+    "IdRegiao": 2212,
+    "NomeRegiao": "Sapé"
+  },
+  {
+    "idBloco": 350,
+    "IdRegiao": 2213,
+    "NomeRegiao": "Guarabira"
+  },
+  {
+    "idBloco": 350,
+    "IdRegiao": 2214,
+    "NomeRegiao": "Araruna"
+  },
+  {
+    "idBloco": 350,
+    "IdRegiao": 2215,
+    "NomeRegiao": "Itabaiana"
+  },
+  {
+    "idBloco": 350,
+    "IdRegiao": 2217,
+    "NomeRegiao": "Mamanguape"
+  },
+  {
+    "idBloco": 350,
+    "IdRegiao": 2218,
+    "NomeRegiao": "SAPE"
+  },
+  {
+    "idBloco": 350,
+    "IdRegiao": 2219,
+    "NomeRegiao": "SAPE"
+  },
+  {
+    "idBloco": 350,
+    "IdRegiao": 2220,
+    "NomeRegiao": "SAPE"
+  },
+  {
+    "idBloco": 350,
+    "IdRegiao": 2221,
+    "NomeRegiao": "SAPE"
+  }
+]

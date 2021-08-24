@@ -1,0 +1,26 @@
+[
+  {
+    "IdEstado": 17,
+    "IdRegiao": 42,
+    "IdIgreja": 55,
+    "NomeIgreja": "Sede Capital"
+  },
+  {
+    "IdEstado": 17,
+    "IdRegiao": 42,
+    "IdIgreja": 56,
+    "NomeIgreja": "capita 1"
+  },
+  {
+    "IdEstado": 17,
+    "IdRegiao": 42,
+    "IdIgreja": 57,
+    "NomeIgreja": "capital 2"
+  },
+  {
+    "IdEstado": 17,
+    "IdRegiao": 42,
+    "IdIgreja": 58,
+    "NomeIgreja": "capital bairro"
+  }
+]

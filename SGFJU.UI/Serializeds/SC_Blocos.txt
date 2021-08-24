@@ -1,0 +1,32 @@
+[
+  {
+    "idBloco": 15,
+    "NomeBloco": "Bloco Sul",
+    "IdEstadoBloco": 25
+  },
+  {
+    "idBloco": 16,
+    "NomeBloco": "Bloco Norte",
+    "IdEstadoBloco": 25
+  },
+  {
+    "idBloco": 17,
+    "NomeBloco": "Bloco Oeste",
+    "IdEstadoBloco": 25
+  },
+  {
+    "idBloco": 18,
+    "NomeBloco": "Bloco Balneário",
+    "IdEstadoBloco": 25
+  },
+  {
+    "idBloco": 19,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 25
+  },
+  {
+    "idBloco": 20,
+    "NomeBloco": "Bloco Blumenau",
+    "IdEstadoBloco": 25
+  }
+]

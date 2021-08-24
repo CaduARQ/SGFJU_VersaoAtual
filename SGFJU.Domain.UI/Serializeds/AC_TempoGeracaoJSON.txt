@@ -1,0 +1,5 @@
+{
+  "TempoDecorridoSerializacao": "00:00:06.99",
+  "Estado": "Acre",
+  "QuantidadeObreirosComRamos": 43
+}

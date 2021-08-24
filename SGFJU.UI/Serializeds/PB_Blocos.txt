@@ -1,0 +1,7 @@
+[
+  {
+    "idBloco": 37,
+    "NomeBloco": "Blocoa Capital",
+    "IdEstadoBloco": 16
+  }
+]

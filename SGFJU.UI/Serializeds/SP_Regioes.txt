@@ -1,0 +1,37 @@
+[
+  {
+    "idBloco": 1,
+    "IdRegiao": 1,
+    "NomeRegiao": "João dias"
+  },
+  {
+    "idBloco": 2,
+    "IdRegiao": 2,
+    "NomeRegiao": "AE Carvalho"
+  },
+  {
+    "idBloco": 2,
+    "IdRegiao": 3,
+    "NomeRegiao": "Vila Mariana"
+  },
+  {
+    "idBloco": 2,
+    "IdRegiao": 4,
+    "NomeRegiao": "Vila Mariana"
+  },
+  {
+    "idBloco": 2,
+    "IdRegiao": 5,
+    "NomeRegiao": "Vila Carrão"
+  },
+  {
+    "idBloco": 2,
+    "IdRegiao": 13,
+    "NomeRegiao": "Lapa"
+  },
+  {
+    "idBloco": 24,
+    "IdRegiao": 36,
+    "NomeRegiao": "Sede Treinamento"
+  }
+]

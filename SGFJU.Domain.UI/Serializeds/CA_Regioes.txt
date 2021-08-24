@@ -1,0 +1,102 @@
+[
+  {
+    "idBloco": 131,
+    "IdRegiao": 500,
+    "NomeRegiao": "Sede Estadual Catedral"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 501,
+    "NomeRegiao": "Alvorada"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 502,
+    "NomeRegiao": "Eldorado"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 503,
+    "NomeRegiao": "Goytacazes"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 504,
+    "NomeRegiao": "Guarus"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 505,
+    "NomeRegiao": "Ips"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 506,
+    "NomeRegiao": "Nogueira"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 507,
+    "NomeRegiao": "Penha"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 508,
+    "NomeRegiao": "São José"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 509,
+    "NomeRegiao": "Saturnino Braga"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 510,
+    "NomeRegiao": "Travessão"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 511,
+    "NomeRegiao": "Turf"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 512,
+    "NomeRegiao": "Ururaí"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 513,
+    "NomeRegiao": "Bom Jesus"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 514,
+    "NomeRegiao": "Grussaí"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 515,
+    "NomeRegiao": "Itaperuna"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 516,
+    "NomeRegiao": "Pádua"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 517,
+    "NomeRegiao": "São Francisco"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 518,
+    "NomeRegiao": "São Fídelis"
+  },
+  {
+    "idBloco": 131,
+    "IdRegiao": 1865,
+    "NomeRegiao": "Custodópolis"
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "idBloco": 104,
+    "NomeBloco": "Sede Estadual",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 105,
+    "NomeBloco": "Bloco Forquilha ",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 106,
+    "NomeBloco": "Bloco Cohama",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 107,
+    "NomeBloco": "Bloco Anjo da Guarda",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 108,
+    "NomeBloco": "Bloco Maiobão",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 109,
+    "NomeBloco": "Bloco Cidade Operária",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 110,
+    "NomeBloco": "Bloco Coroadinho",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 111,
+    "NomeBloco": "Bloco Imperatriz",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 112,
+    "NomeBloco": "Bloco Pinheiro",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 113,
+    "NomeBloco": "Bloco Bacabal",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 114,
+    "NomeBloco": "Bloco Caxias",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 115,
+    "NomeBloco": "Bloco Chapadinha",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 116,
+    "NomeBloco": "Bloco Rosário",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 117,
+    "NomeBloco": "Bloco Santa Inês",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 118,
+    "NomeBloco": "Bloco Presidente Dutra",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 119,
+    "NomeBloco": "Bloco Balsas",
+    "IdEstadoBloco": 38
+  },
+  {
+    "idBloco": 198,
+    "NomeBloco": "Excluir - Catedral",
+    "IdEstadoBloco": 38
+  }
+]

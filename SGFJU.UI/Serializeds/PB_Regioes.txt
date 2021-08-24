@@ -1,0 +1,7 @@
+[
+  {
+    "idBloco": 37,
+    "IdRegiao": 43,
+    "NomeRegiao": "Região Capital"
+  }
+]

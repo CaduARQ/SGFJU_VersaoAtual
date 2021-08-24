@@ -1,0 +1,182 @@
+[
+  {
+    "idBloco": 61,
+    "IdRegiao": 58,
+    "NomeRegiao": "Clima Bom"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 59,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 458,
+    "NomeRegiao": "Barro Duro"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 459,
+    "NomeRegiao": "Barra de São Miguel"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 461,
+    "NomeRegiao": "Benedito Bentes"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 465,
+    "NomeRegiao": "Dubeaux Leão"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 470,
+    "NomeRegiao": "Eustáquio Gomes"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 474,
+    "NomeRegiao": "Eustáquio Gomes"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 475,
+    "NomeRegiao": "Farol"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 476,
+    "NomeRegiao": "Jacintinho "
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 477,
+    "NomeRegiao": "Marechal Deodoro "
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 478,
+    "NomeRegiao": "Paripueira "
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 479,
+    "NomeRegiao": "Pilar"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 480,
+    "NomeRegiao": "Ponta Grossa"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 481,
+    "NomeRegiao": "Rio Largo"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 482,
+    "NomeRegiao": "Tabuleiro "
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 483,
+    "NomeRegiao": "João Sampaio"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 484,
+    "NomeRegiao": "Village"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 485,
+    "NomeRegiao": "Arapiraca"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 486,
+    "NomeRegiao": "Boca da Mata"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 487,
+    "NomeRegiao": "Colônia"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 488,
+    "NomeRegiao": "Coruripe"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 489,
+    "NomeRegiao": "Delmiro Gouveia"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 490,
+    "NomeRegiao": "Maragogi"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 491,
+    "NomeRegiao": "Murici"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 492,
+    "NomeRegiao": "Palmeira dos Indios "
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 493,
+    "NomeRegiao": "Penedo"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 494,
+    "NomeRegiao": "Santana do Ipanema"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 495,
+    "NomeRegiao": "São Luis"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 496,
+    "NomeRegiao": "São Miguel"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 497,
+    "NomeRegiao": "Taquarana "
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 498,
+    "NomeRegiao": "União"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 499,
+    "NomeRegiao": "Viçosa"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 654,
+    "NomeRegiao": "Teotônio Vilela"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 2171,
+    "NomeRegiao": "ARAPIRACA"
+  },
+  {
+    "idBloco": 61,
+    "IdRegiao": 2172,
+    "NomeRegiao": "ARAPIRACA"
+  }
+]

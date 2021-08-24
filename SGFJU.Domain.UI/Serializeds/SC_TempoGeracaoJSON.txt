@@ -1,0 +1,5 @@
+{
+  "TempoDecorridoSerializacao": "00:00:03.93",
+  "Estado": "Santa Catarina",
+  "QuantidadeObreirosComRamos": 154
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "IdEstado": 5,
+    "IdRegiao": 22,
+    "IdIgreja": 29,
+    "NomeIgreja": "São José II ( Sede )"
+  },
+  {
+    "IdEstado": 5,
+    "IdRegiao": 22,
+    "IdIgreja": 30,
+    "NomeIgreja": "São José III"
+  },
+  {
+    "IdEstado": 5,
+    "IdRegiao": 23,
+    "IdIgreja": 31,
+    "NomeIgreja": "Buriti"
+  },
+  {
+    "IdEstado": 5,
+    "IdRegiao": 23,
+    "IdIgreja": 32,
+    "NomeIgreja": "Gustavo Nascimento"
+  },
+  {
+    "IdEstado": 5,
+    "IdRegiao": 23,
+    "IdIgreja": 33,
+    "NomeIgreja": "Mutirão ( Sede )"
+  },
+  {
+    "IdEstado": 5,
+    "IdRegiao": 24,
+    "IdIgreja": 35,
+    "NomeIgreja": "Amazonino Mendes( sede )"
+  },
+  {
+    "IdEstado": 5,
+    "IdRegiao": 25,
+    "IdIgreja": 34,
+    "NomeIgreja": "Tancredo Neves ( Sede )"
+  },
+  {
+    "IdEstado": 5,
+    "IdRegiao": 27,
+    "IdIgreja": 36,
+    "NomeIgreja": "Cidade de Deus( Sede )"
+  }
+]

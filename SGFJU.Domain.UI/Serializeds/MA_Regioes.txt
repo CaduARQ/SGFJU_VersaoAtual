@@ -1,0 +1,312 @@
+[
+  {
+    "idBloco": 104,
+    "IdRegiao": 879,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 105,
+    "IdRegiao": 303,
+    "NomeRegiao": "Forquilha"
+  },
+  {
+    "idBloco": 105,
+    "IdRegiao": 304,
+    "NomeRegiao": "Cohatrac"
+  },
+  {
+    "idBloco": 105,
+    "IdRegiao": 305,
+    "NomeRegiao": "Anil"
+  },
+  {
+    "idBloco": 105,
+    "IdRegiao": 306,
+    "NomeRegiao": "Maracana"
+  },
+  {
+    "idBloco": 106,
+    "IdRegiao": 307,
+    "NomeRegiao": "Parque Vitória"
+  },
+  {
+    "idBloco": 106,
+    "IdRegiao": 308,
+    "NomeRegiao": "São Francisco"
+  },
+  {
+    "idBloco": 106,
+    "IdRegiao": 309,
+    "NomeRegiao": "Turu"
+  },
+  {
+    "idBloco": 106,
+    "IdRegiao": 310,
+    "NomeRegiao": "Divineia"
+  },
+  {
+    "idBloco": 106,
+    "IdRegiao": 311,
+    "NomeRegiao": "Vila Luizão"
+  },
+  {
+    "idBloco": 106,
+    "IdRegiao": 312,
+    "NomeRegiao": "Raposa"
+  },
+  {
+    "idBloco": 106,
+    "IdRegiao": 313,
+    "NomeRegiao": "Cohama"
+  },
+  {
+    "idBloco": 107,
+    "IdRegiao": 314,
+    "NomeRegiao": "Anjo da Guarda"
+  },
+  {
+    "idBloco": 107,
+    "IdRegiao": 315,
+    "NomeRegiao": "Vila Embratel"
+  },
+  {
+    "idBloco": 107,
+    "IdRegiao": 316,
+    "NomeRegiao": "MAURO FECURY"
+  },
+  {
+    "idBloco": 108,
+    "IdRegiao": 317,
+    "NomeRegiao": "MAIOBAO"
+  },
+  {
+    "idBloco": 108,
+    "IdRegiao": 318,
+    "NomeRegiao": "RIBAMAR"
+  },
+  {
+    "idBloco": 108,
+    "IdRegiao": 319,
+    "NomeRegiao": "VILA OPERARIA"
+  },
+  {
+    "idBloco": 109,
+    "IdRegiao": 320,
+    "NomeRegiao": "CIDADE OPERARIA"
+  },
+  {
+    "idBloco": 109,
+    "IdRegiao": 321,
+    "NomeRegiao": "CIDADE OLIMPICA1"
+  },
+  {
+    "idBloco": 109,
+    "IdRegiao": 322,
+    "NomeRegiao": "SAO RAIMUNDO"
+  },
+  {
+    "idBloco": 109,
+    "IdRegiao": 2211,
+    "NomeRegiao": "Santa Clara -Sede"
+  },
+  {
+    "idBloco": 110,
+    "IdRegiao": 323,
+    "NomeRegiao": "COROADINHO"
+  },
+  {
+    "idBloco": 110,
+    "IdRegiao": 324,
+    "NomeRegiao": "JOAO PAULO"
+  },
+  {
+    "idBloco": 110,
+    "IdRegiao": 325,
+    "NomeRegiao": "BOM JESUS"
+  },
+  {
+    "idBloco": 111,
+    "IdRegiao": 326,
+    "NomeRegiao": "IMPERATRIZ"
+  },
+  {
+    "idBloco": 111,
+    "IdRegiao": 327,
+    "NomeRegiao": "ACAILANDIA"
+  },
+  {
+    "idBloco": 111,
+    "IdRegiao": 328,
+    "NomeRegiao": "ESTREITO"
+  },
+  {
+    "idBloco": 111,
+    "IdRegiao": 329,
+    "NomeRegiao": "SANTA RITA DE IMPERATRIZ "
+  },
+  {
+    "idBloco": 111,
+    "IdRegiao": 330,
+    "NomeRegiao": "BURITICUPU"
+  },
+  {
+    "idBloco": 111,
+    "IdRegiao": 331,
+    "NomeRegiao": "GRAJAU"
+  },
+  {
+    "idBloco": 112,
+    "IdRegiao": 332,
+    "NomeRegiao": "PINHEIRO"
+  },
+  {
+    "idBloco": 112,
+    "IdRegiao": 333,
+    "NomeRegiao": "SAO BENTO"
+  },
+  {
+    "idBloco": 112,
+    "IdRegiao": 334,
+    "NomeRegiao": "SANTA HELENA "
+  },
+  {
+    "idBloco": 112,
+    "IdRegiao": 335,
+    "NomeRegiao": "CURURUPU"
+  },
+  {
+    "idBloco": 112,
+    "IdRegiao": 336,
+    "NomeRegiao": "VIANA "
+  },
+  {
+    "idBloco": 112,
+    "IdRegiao": 337,
+    "NomeRegiao": "CARUTAPERA"
+  },
+  {
+    "idBloco": 113,
+    "IdRegiao": 338,
+    "NomeRegiao": "BACABAL"
+  },
+  {
+    "idBloco": 113,
+    "IdRegiao": 339,
+    "NomeRegiao": "LAGO DA PEDRA"
+  },
+  {
+    "idBloco": 113,
+    "IdRegiao": 340,
+    "NomeRegiao": "COROATA"
+  },
+  {
+    "idBloco": 113,
+    "IdRegiao": 341,
+    "NomeRegiao": "PEDREIRAS"
+  },
+  {
+    "idBloco": 113,
+    "IdRegiao": 342,
+    "NomeRegiao": "MIRANDA"
+  },
+  {
+    "idBloco": 113,
+    "IdRegiao": 343,
+    "NomeRegiao": "SAO MATEUS"
+  },
+  {
+    "idBloco": 114,
+    "IdRegiao": 344,
+    "NomeRegiao": "CAXIAS"
+  },
+  {
+    "idBloco": 114,
+    "IdRegiao": 345,
+    "NomeRegiao": "CODO"
+  },
+  {
+    "idBloco": 114,
+    "IdRegiao": 346,
+    "NomeRegiao": "COELHO NETO"
+  },
+  {
+    "idBloco": 115,
+    "IdRegiao": 347,
+    "NomeRegiao": "CHAPADINHA"
+  },
+  {
+    "idBloco": 115,
+    "IdRegiao": 348,
+    "NomeRegiao": "VARGEM GRANDE"
+  },
+  {
+    "idBloco": 115,
+    "IdRegiao": 349,
+    "NomeRegiao": "SAO BERNARDO"
+  },
+  {
+    "idBloco": 115,
+    "IdRegiao": 350,
+    "NomeRegiao": "TUTOIA"
+  },
+  {
+    "idBloco": 116,
+    "IdRegiao": 351,
+    "NomeRegiao": "ROSARIO"
+  },
+  {
+    "idBloco": 116,
+    "IdRegiao": 352,
+    "NomeRegiao": "BARREIRINHAS"
+  },
+  {
+    "idBloco": 116,
+    "IdRegiao": 353,
+    "NomeRegiao": "ITAPECURU"
+  },
+  {
+    "idBloco": 116,
+    "IdRegiao": 354,
+    "NomeRegiao": "MORROS"
+  },
+  {
+    "idBloco": 117,
+    "IdRegiao": 355,
+    "NomeRegiao": "SANTA INES"
+  },
+  {
+    "idBloco": 117,
+    "IdRegiao": 356,
+    "NomeRegiao": "ZE DOCA"
+  },
+  {
+    "idBloco": 117,
+    "IdRegiao": 357,
+    "NomeRegiao": "SANTA LUZIA DO TIDE"
+  },
+  {
+    "idBloco": 118,
+    "IdRegiao": 358,
+    "NomeRegiao": "PRESIDENTE DUTRA "
+  },
+  {
+    "idBloco": 118,
+    "IdRegiao": 359,
+    "NomeRegiao": "BARRA DO CORDA"
+  },
+  {
+    "idBloco": 118,
+    "IdRegiao": 360,
+    "NomeRegiao": "COLINAS"
+  },
+  {
+    "idBloco": 118,
+    "IdRegiao": 361,
+    "NomeRegiao": "SAO JOAO DOS PATOS "
+  },
+  {
+    "idBloco": 119,
+    "IdRegiao": 362,
+    "NomeRegiao": "BALSAS "
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "idBloco": 223,
+    "NomeBloco": "Central",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 224,
+    "NomeBloco": "Centro Norte",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 225,
+    "NomeBloco": "Norte",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 226,
+    "NomeBloco": "Parnamirim",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 227,
+    "NomeBloco": "Sul",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 228,
+    "NomeBloco": "Metropolitano",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 229,
+    "NomeBloco": "Grande Natal ",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 230,
+    "NomeBloco": "Alto Oeste",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 231,
+    "NomeBloco": "Agreste",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 232,
+    "NomeBloco": "Seridó",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 233,
+    "NomeBloco": "Seridó",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 234,
+    "NomeBloco": "Seridó",
+    "IdEstadoBloco": 48
+  },
+  {
+    "idBloco": 238,
+    "NomeBloco": "Catedral de Natal",
+    "IdEstadoBloco": 48
+  }
+]

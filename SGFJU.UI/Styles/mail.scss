@@ -1,0 +1,236 @@
+﻿$page-color: #25a0da;
+$hovered-color: $page-color;
+$selected-color: #0082cc;
+
+
+
+// Overwrite hover color
+html {
+
+	.main-header {
+		background-image: url('../Images/backgrounds/header_mail.gif');
+	}
+
+	.sidebar .btn-new-node,
+	.help-menu .rmRootGroup {
+		color: $page-color;
+	}
+
+	// Tooltip
+	.RadToolTip {
+
+		.addBtn {
+			color: $page-color;
+		}
+
+	}
+
+	// Scroller
+	.scroller {
+		overflow: hidden;
+	}
+
+	// SeachBox
+	.rightScndNav {
+
+		.RadSearchBox .rsbButtonSearch.rsbHovered {
+			background: $hovered-color;
+			border-color: $hovered-color;
+		}
+
+		.button:hover {
+			color: $hovered-color;
+		}
+
+		.RadSearchBox .rsbButtonSearch {
+
+			&:focus,
+			&:hover {
+				background-color: $hovered-color;
+			}
+		}
+	}
+
+	// Grid
+	.RadGrid {
+		.rgActionButton.rgExpand:hover,
+		.rgActionButton.rgCollapse {
+			color: $selected-color;
+		}
+	}
+
+	// TreeView
+	.RadTreeView .rtMinus {
+		color: $selected-color;
+	}
+
+
+	// mobile
+	.mobile {
+
+		.breadcrumb {
+			color: $page-color;
+
+			.item.expanded {
+				background-color: $page-color;
+			}
+		}
+
+		.RadMenuPopup_MetroTouch .rmItem.rmSelected {
+			color: $selected-color;
+		}
+	}
+}
+
+
+html .RadAutoCompleteBox .invalidEmail {
+	border-color: #F4004B;
+	background-color: #F4004B;
+	color: white;
+}
+
+.email-cc, .email-bcc {
+	display:none;
+}
+
+.RadWindow .rwIcon
+{
+	content: "\e61f";
+}
+
+// mail laout
+.bottom .horizontalBtn,
+.right .verticalBtn {
+	color: $selected-color;
+}
+
+	// Vertical configuration
+	.right {
+
+		.RadGrid {
+			height: 100% !important;
+		}
+
+		.gridWrapper,
+		.mailDetails {
+			width: 30%;
+			height: 100%;
+			float: left;
+		}
+
+		.mailDetails {
+			width: 70%;
+		}
+	}
+	
+
+// Menu
+.RadMenu .rmGroup.rmVertical>li.rmSeparator {
+	border-bottom: 0;
+}
+
+// Grid
+html .RadGrid {
+	border: 0;
+
+	&,
+	& * {
+		cursor: pointer;
+	}
+
+	.rgMasterTable td {
+		padding: 0;
+	}
+
+	.rgRow {
+		height: 36px;
+	}
+
+	.mobile-column {
+
+		.from,
+		.received,
+		.subject {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.from {
+			width: 58%;
+			float: left;
+			overflow: hidden;
+		}
+
+		.received {
+			width: 40%;
+			float: right;
+		}
+
+		.subject {
+			clear: both;
+			display: block;
+		}
+	}
+}
+
+// Grid wrapper
+.gridWrapper {
+	position: relative;
+	border-bottom: 1px solid #fff;
+}
+
+
+.emailActions {
+	display: none;
+	position: absolute;
+	right: 30px;
+	top: 3px;
+	font-weight: normal;
+
+	.icon {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+}
+
+// mail details
+.mailDetails {
+	border-top: 1px solid #cdcdcd;
+	background: #fff;
+
+	.header {
+		padding: 0 30px;
+		color: #000;
+		background: #e8e8e8;
+
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+
+	#subject {
+		padding: 15px 0;
+		font-size: 22px;
+		border-bottom: 1px solid #fff;
+	}
+
+	#from {
+		float: left;
+		padding: 10px 0;
+	}
+
+	#recieved {
+		float: right;
+		padding: 10px 0;
+	}
+
+	#body {
+		padding: 30px;
+
+	}
+}
+
+

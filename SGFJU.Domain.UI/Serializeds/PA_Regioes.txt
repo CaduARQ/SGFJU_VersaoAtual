@@ -1,0 +1,547 @@
+[
+  {
+    "idBloco": 191,
+    "IdRegiao": 1306,
+    "NomeRegiao": "Abaetetuba"
+  },
+  {
+    "idBloco": 191,
+    "IdRegiao": 1307,
+    "NomeRegiao": "Barcarena"
+  },
+  {
+    "idBloco": 191,
+    "IdRegiao": 1308,
+    "NomeRegiao": "Cametá"
+  },
+  {
+    "idBloco": 191,
+    "IdRegiao": 1309,
+    "NomeRegiao": "Igarapé Miri"
+  },
+  {
+    "idBloco": 191,
+    "IdRegiao": 1310,
+    "NomeRegiao": "Moju"
+  },
+  {
+    "idBloco": 191,
+    "IdRegiao": 1311,
+    "NomeRegiao": "Vila do Conde"
+  },
+  {
+    "idBloco": 191,
+    "IdRegiao": 1312,
+    "NomeRegiao": "Vila dos Cabanos"
+  },
+  {
+    "idBloco": 191,
+    "IdRegiao": 1313,
+    "NomeRegiao": "Breves"
+  },
+  {
+    "idBloco": 191,
+    "IdRegiao": 1996,
+    "NomeRegiao": "Soure"
+  },
+  {
+    "idBloco": 191,
+    "IdRegiao": 2001,
+    "NomeRegiao": "Vigia"
+  },
+  {
+    "idBloco": 192,
+    "IdRegiao": 1314,
+    "NomeRegiao": "Altamira"
+  },
+  {
+    "idBloco": 192,
+    "IdRegiao": 1315,
+    "NomeRegiao": "Independente"
+  },
+  {
+    "idBloco": 193,
+    "IdRegiao": 1324,
+    "NomeRegiao": "Castanhal"
+  },
+  {
+    "idBloco": 193,
+    "IdRegiao": 1325,
+    "NomeRegiao": "Capitão Poço"
+  },
+  {
+    "idBloco": 193,
+    "IdRegiao": 1326,
+    "NomeRegiao": "Bragança"
+  },
+  {
+    "idBloco": 193,
+    "IdRegiao": 1327,
+    "NomeRegiao": "Capanema"
+  },
+  {
+    "idBloco": 193,
+    "IdRegiao": 1328,
+    "NomeRegiao": "Mãe do Rio"
+  },
+  {
+    "idBloco": 193,
+    "IdRegiao": 1329,
+    "NomeRegiao": "Marapanim"
+  },
+  {
+    "idBloco": 193,
+    "IdRegiao": 1330,
+    "NomeRegiao": "Paragominas"
+  },
+  {
+    "idBloco": 193,
+    "IdRegiao": 1331,
+    "NomeRegiao": "Salinas"
+  },
+  {
+    "idBloco": 194,
+    "IdRegiao": 1332,
+    "NomeRegiao": "Marabá"
+  },
+  {
+    "idBloco": 194,
+    "IdRegiao": 1333,
+    "NomeRegiao": "Canaã dos Carajás"
+  },
+  {
+    "idBloco": 194,
+    "IdRegiao": 1334,
+    "NomeRegiao": "Cidade Nova Marabá"
+  },
+  {
+    "idBloco": 194,
+    "IdRegiao": 1335,
+    "NomeRegiao": "Parauapebas"
+  },
+  {
+    "idBloco": 194,
+    "IdRegiao": 1336,
+    "NomeRegiao": "Rio Verde"
+  },
+  {
+    "idBloco": 194,
+    "IdRegiao": 1337,
+    "NomeRegiao": "Rio Xingu"
+  },
+  {
+    "idBloco": 194,
+    "IdRegiao": 1338,
+    "NomeRegiao": "Sol Poente"
+  },
+  {
+    "idBloco": 194,
+    "IdRegiao": 1339,
+    "NomeRegiao": "Xinguara"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 874,
+    "NomeRegiao": "Benevides"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 875,
+    "NomeRegiao": "Carananduba"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 876,
+    "NomeRegiao": "Mosqueiro"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 877,
+    "NomeRegiao": "Santa Isabel"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 878,
+    "NomeRegiao": "Vigia"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 1997,
+    "NomeRegiao": "Benevides"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 2002,
+    "NomeRegiao": "Vigia"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 2003,
+    "NomeRegiao": "Mosqueiro"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 2004,
+    "NomeRegiao": "Santa Izabel do Pará "
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 2005,
+    "NomeRegiao": "Mosqueiro"
+  },
+  {
+    "idBloco": 195,
+    "IdRegiao": 2006,
+    "NomeRegiao": "Benevides"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1316,
+    "NomeRegiao": "Santarém"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1317,
+    "NomeRegiao": "Almeirim"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1318,
+    "NomeRegiao": "Caranazal"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1319,
+    "NomeRegiao": "Cohab Santarém"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1320,
+    "NomeRegiao": "Itaituba"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1321,
+    "NomeRegiao": "Maracanã"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1322,
+    "NomeRegiao": "Novo Progresso"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1323,
+    "NomeRegiao": "Óbidos"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1909,
+    "NomeRegiao": "SANTAREM 1"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1910,
+    "NomeRegiao": "MARACANÃ 1"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1911,
+    "NomeRegiao": "CARANAZAL 1"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1912,
+    "NomeRegiao": "COHAB 1"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1913,
+    "NomeRegiao": "NOVO PROGRESSO 1"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1914,
+    "NomeRegiao": "ITAITUBA 1"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1915,
+    "NomeRegiao": "OBIDOS 1"
+  },
+  {
+    "idBloco": 196,
+    "IdRegiao": 1916,
+    "NomeRegiao": "ALMEIRIM  1"
+  },
+  {
+    "idBloco": 197,
+    "IdRegiao": 1340,
+    "NomeRegiao": "Tucuruí"
+  },
+  {
+    "idBloco": 197,
+    "IdRegiao": 1341,
+    "NomeRegiao": "Tailândia"
+  },
+  {
+    "idBloco": 197,
+    "IdRegiao": 1342,
+    "NomeRegiao": "Novo Progresso"
+  },
+  {
+    "idBloco": 197,
+    "IdRegiao": 1343,
+    "NomeRegiao": "Novo Repartimento"
+  },
+  {
+    "idBloco": 197,
+    "IdRegiao": 2009,
+    "NomeRegiao": "Tucuruí "
+  },
+  {
+    "idBloco": 197,
+    "IdRegiao": 2173,
+    "NomeRegiao": "Pará"
+  },
+  {
+    "idBloco": 197,
+    "IdRegiao": 2174,
+    "NomeRegiao": "Pará"
+  },
+  {
+    "idBloco": 197,
+    "IdRegiao": 2175,
+    "NomeRegiao": "Pará"
+  },
+  {
+    "idBloco": 199,
+    "IdRegiao": 880,
+    "NomeRegiao": "Júlio Cesar "
+  },
+  {
+    "idBloco": 199,
+    "IdRegiao": 881,
+    "NomeRegiao": "Apil"
+  },
+  {
+    "idBloco": 199,
+    "IdRegiao": 882,
+    "NomeRegiao": "Jurunas"
+  },
+  {
+    "idBloco": 199,
+    "IdRegiao": 883,
+    "NomeRegiao": "Marambaia"
+  },
+  {
+    "idBloco": 199,
+    "IdRegiao": 906,
+    "NomeRegiao": "Apil"
+  },
+  {
+    "idBloco": 199,
+    "IdRegiao": 907,
+    "NomeRegiao": "Presidente Vargas"
+  },
+  {
+    "idBloco": 199,
+    "IdRegiao": 908,
+    "NomeRegiao": "Sacramenta"
+  },
+  {
+    "idBloco": 199,
+    "IdRegiao": 1261,
+    "NomeRegiao": "Sacramenta 2"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1262,
+    "NomeRegiao": "Batista Campos"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1263,
+    "NomeRegiao": "Cidade Velha"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1264,
+    "NomeRegiao": "Condor"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1265,
+    "NomeRegiao": "Cremação"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1266,
+    "NomeRegiao": "Guamá"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1267,
+    "NomeRegiao": "Marco"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1268,
+    "NomeRegiao": "Pedreira"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1270,
+    "NomeRegiao": "Roberto Camelier"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1271,
+    "NomeRegiao": "São Brás"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1272,
+    "NomeRegiao": "Terra Firme"
+  },
+  {
+    "idBloco": 200,
+    "IdRegiao": 1273,
+    "NomeRegiao": "Umarizal"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1274,
+    "NomeRegiao": "Águas Brancas"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1275,
+    "NomeRegiao": "Águas Lindas"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1276,
+    "NomeRegiao": "Cidade Nova 7"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1278,
+    "NomeRegiao": "Cidade Nova 8"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1279,
+    "NomeRegiao": "Coqueiro"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1282,
+    "NomeRegiao": "Curuçambá"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1283,
+    "NomeRegiao": "Decouville"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1284,
+    "NomeRegiao": "Distrito Industrial "
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1285,
+    "NomeRegiao": "Marituba"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1289,
+    "NomeRegiao": "Samambaia"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1290,
+    "NomeRegiao": "Quarenta Horas"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1291,
+    "NomeRegiao": "Soure"
+  },
+  {
+    "idBloco": 201,
+    "IdRegiao": 1292,
+    "NomeRegiao": "Transcoqueiro"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1293,
+    "NomeRegiao": "Agulha"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1294,
+    "NomeRegiao": "Agulha 2"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1295,
+    "NomeRegiao": "Augusto Montenegro"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1296,
+    "NomeRegiao": "Bengui Ajax"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1297,
+    "NomeRegiao": "Bengui Betânia"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1298,
+    "NomeRegiao": "Conjunto Maguari"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1299,
+    "NomeRegiao": "Icoaraci"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1300,
+    "NomeRegiao": "Jardim Sideral"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1301,
+    "NomeRegiao": "Outeiro "
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1302,
+    "NomeRegiao": "Parklandia"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1303,
+    "NomeRegiao": "Pedro Teixeira"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1304,
+    "NomeRegiao": "Tapanã"
+  },
+  {
+    "idBloco": 202,
+    "IdRegiao": 1305,
+    "NomeRegiao": "Tenoné"
+  },
+  {
+    "idBloco": 322,
+    "IdRegiao": 1741,
+    "NomeRegiao": "Sede Estadual"
+  }
+]

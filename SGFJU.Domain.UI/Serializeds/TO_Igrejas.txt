@@ -1,0 +1,440 @@
+[
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1688,
+    "IdIgreja": 4913,
+    "NomeIgreja": "Sede Guaraí"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1688,
+    "IdIgreja": 5151,
+    "NomeIgreja": "Arapoema"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1688,
+    "IdIgreja": 5152,
+    "NomeIgreja": "Nova Olinda"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1688,
+    "IdIgreja": 5153,
+    "NomeIgreja": "Cacau"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1688,
+    "IdIgreja": 5162,
+    "NomeIgreja": "Pedro Afonso"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1688,
+    "IdIgreja": 5163,
+    "NomeIgreja": "Colmeia"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1689,
+    "IdIgreja": 5299,
+    "NomeIgreja": "Sede  Colinas"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1689,
+    "IdIgreja": 5300,
+    "NomeIgreja": "Arapoema"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1689,
+    "IdIgreja": 5301,
+    "NomeIgreja": "Nova Olinda"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1689,
+    "IdIgreja": 5302,
+    "NomeIgreja": "Cacau"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1690,
+    "IdIgreja": 5154,
+    "NomeIgreja": "Sede Araguaína"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1690,
+    "IdIgreja": 5155,
+    "NomeIgreja": "Tocantinópolis"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1690,
+    "IdIgreja": 5156,
+    "NomeIgreja": "Céu Azul"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1690,
+    "IdIgreja": 5157,
+    "NomeIgreja": "Itapuã"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1690,
+    "IdIgreja": 5158,
+    "NomeIgreja": "Nova Araguaia"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1749,
+    "IdIgreja": 5159,
+    "NomeIgreja": "Sede Araguaína Sul"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1749,
+    "IdIgreja": 5160,
+    "NomeIgreja": "Filadélfia"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1691,
+    "IdIgreja": 5193,
+    "NomeIgreja": "Sede Natividade"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1692,
+    "IdIgreja": 5165,
+    "NomeIgreja": "Sede Campos Belos"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1692,
+    "IdIgreja": 5166,
+    "NomeIgreja": "Arraias"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1692,
+    "IdIgreja": 5167,
+    "NomeIgreja": "Combinado"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1692,
+    "IdIgreja": 5168,
+    "NomeIgreja": "Taguatinga"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1692,
+    "IdIgreja": 5169,
+    "NomeIgreja": "Dianópolis"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1692,
+    "IdIgreja": 5170,
+    "NomeIgreja": "Almas"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1693,
+    "IdIgreja": 4898,
+    "NomeIgreja": "Miranorte"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1693,
+    "IdIgreja": 4899,
+    "NomeIgreja": "Lajeado"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1693,
+    "IdIgreja": 4900,
+    "NomeIgreja": "Porto 2"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1693,
+    "IdIgreja": 5187,
+    "NomeIgreja": "Sede Miracema"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1694,
+    "IdIgreja": 4901,
+    "NomeIgreja": "Vila Planalto"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1694,
+    "IdIgreja": 4914,
+    "NomeIgreja": "Sede Porto Nacional"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1695,
+    "IdIgreja": 4897,
+    "NomeIgreja": "Conceição"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1695,
+    "IdIgreja": 4916,
+    "NomeIgreja": "Sede Redenção"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1696,
+    "IdIgreja": 4895,
+    "NomeIgreja": "Pium"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1696,
+    "IdIgreja": 4896,
+    "NomeIgreja": "Cristalândia"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1696,
+    "IdIgreja": 4915,
+    "NomeIgreja": "Sede Pouso Alegre"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 4893,
+    "NomeIgreja": "Araguaçu "
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 4894,
+    "NomeIgreja": "Peixe"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 4903,
+    "NomeIgreja": "Sol Nascente"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 4904,
+    "NomeIgreja": "Alvorada"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 4905,
+    "NomeIgreja": "Formoso"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 4906,
+    "NomeIgreja": "Malvinas"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 4907,
+    "NomeIgreja": "Talismã"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 5181,
+    "NomeIgreja": "Sede Jd. Servilha"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 6008,
+    "NomeIgreja": "Sede Jd Sevilha"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 6009,
+    "NomeIgreja": "Araguaçu"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1697,
+    "IdIgreja": 6010,
+    "NomeIgreja": "Peixe"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1698,
+    "IdIgreja": 4908,
+    "NomeIgreja": "Peixe"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1698,
+    "IdIgreja": 4909,
+    "NomeIgreja": "Araguaçu"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1698,
+    "IdIgreja": 4917,
+    "NomeIgreja": "Sede Gurupi"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1917,
+    "IdIgreja": 6014,
+    "NomeIgreja": "Sede Jd Sevilha"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1917,
+    "IdIgreja": 6015,
+    "NomeIgreja": "Araguaçu"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1917,
+    "IdIgreja": 6016,
+    "NomeIgreja": "Peixe"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1699,
+    "IdIgreja": 4891,
+    "NomeIgreja": "Augustinópolis "
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1699,
+    "IdIgreja": 4892,
+    "NomeIgreja": "Buriti"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1699,
+    "IdIgreja": 4918,
+    "NomeIgreja": "Sede Araguatins"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1700,
+    "IdIgreja": 4889,
+    "NomeIgreja": "Arno 33"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1700,
+    "IdIgreja": 4890,
+    "NomeIgreja": "Arno 61"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1700,
+    "IdIgreja": 4919,
+    "NomeIgreja": "Sede Arno 32"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1701,
+    "IdIgreja": 4888,
+    "NomeIgreja": "Lago Sul"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1701,
+    "IdIgreja": 4920,
+    "NomeIgreja": "Sede Taquari"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1702,
+    "IdIgreja": 4887,
+    "NomeIgreja": "Alto Paraná"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1702,
+    "IdIgreja": 4921,
+    "NomeIgreja": "Sede Araguaia"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1705,
+    "IdIgreja": 4884,
+    "NomeIgreja": "Divinópolis"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1705,
+    "IdIgreja": 4885,
+    "NomeIgreja": "Barrolândia"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1705,
+    "IdIgreja": 4886,
+    "NomeIgreja": "Lagoa da Confusão "
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1706,
+    "IdIgreja": 4880,
+    "NomeIgreja": "Aureny 1"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1706,
+    "IdIgreja": 4881,
+    "NomeIgreja": "Aureny II"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1706,
+    "IdIgreja": 4882,
+    "NomeIgreja": "Aureny IV"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1706,
+    "IdIgreja": 5172,
+    "NomeIgreja": "Sede Aureny 3"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1707,
+    "IdIgreja": 4883,
+    "NomeIgreja": "Taquaruçu"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1707,
+    "IdIgreja": 5171,
+    "NomeIgreja": "Sede Taquaralto"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1718,
+    "IdIgreja": 4911,
+    "NomeIgreja": "Catedral"
+  },
+  {
+    "IdEstado": 54,
+    "IdRegiao": 1718,
+    "IdIgreja": 4912,
+    "NomeIgreja": "Teotônio"
+  }
+]

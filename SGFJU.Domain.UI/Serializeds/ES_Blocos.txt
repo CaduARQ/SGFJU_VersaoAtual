@@ -1,0 +1,62 @@
+[
+  {
+    "idBloco": 285,
+    "NomeBloco": "Bloco Catedral",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 286,
+    "NomeBloco": "Bloco Vila Velha",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 287,
+    "NomeBloco": "Bloco Feu Rosa",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 288,
+    "NomeBloco": "Bloco Laranjeiras",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 289,
+    "NomeBloco": "Bloco Campo Grande",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 290,
+    "NomeBloco": "Bloco Aracruz",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 291,
+    "NomeBloco": "Bloco Centro Oeste",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 292,
+    "NomeBloco": "Bloco Litora Sul",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 293,
+    "NomeBloco": "Bloco Teixeira de Freitas",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 294,
+    "NomeBloco": "Bloco Linhares",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 295,
+    "NomeBloco": "Bloco Norte",
+    "IdEstadoBloco": 36
+  },
+  {
+    "idBloco": 296,
+    "NomeBloco": "Bloco Sul",
+    "IdEstadoBloco": 36
+  }
+]

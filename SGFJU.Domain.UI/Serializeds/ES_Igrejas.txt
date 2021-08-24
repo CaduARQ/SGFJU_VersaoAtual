@@ -1,0 +1,650 @@
+[
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1564,
+    "IdIgreja": 4589,
+    "NomeIgreja": "Catedral"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1564,
+    "IdIgreja": 4679,
+    "NomeIgreja": "Catedral"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1565,
+    "IdIgreja": 4484,
+    "NomeIgreja": "São Pedro"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1565,
+    "IdIgreja": 4485,
+    "NomeIgreja": "São Torquato"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1565,
+    "IdIgreja": 4486,
+    "NomeIgreja": "Cleto Nunes"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1565,
+    "IdIgreja": 6011,
+    "NomeIgreja": "Inhanguetá"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1566,
+    "IdIgreja": 4487,
+    "NomeIgreja": "Jardim Camburi"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1566,
+    "IdIgreja": 4488,
+    "NomeIgreja": "Jardim Carapina"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1567,
+    "IdIgreja": 4489,
+    "NomeIgreja": "Maruipe"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1567,
+    "IdIgreja": 4490,
+    "NomeIgreja": "Avenida Vitória"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1568,
+    "IdIgreja": 4491,
+    "NomeIgreja": "Itapoa"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1569,
+    "IdIgreja": 4492,
+    "NomeIgreja": "João Goulart"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1569,
+    "IdIgreja": 4493,
+    "NomeIgreja": "Riviera da Barra"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1569,
+    "IdIgreja": 4494,
+    "NomeIgreja": "Terra Vermelha"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1570,
+    "IdIgreja": 4495,
+    "NomeIgreja": "Gloria"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1570,
+    "IdIgreja": 4496,
+    "NomeIgreja": "Alecrim"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1570,
+    "IdIgreja": 4497,
+    "NomeIgreja": "Aribiri"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1570,
+    "IdIgreja": 4498,
+    "NomeIgreja": "Vila Batista"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1571,
+    "IdIgreja": 4499,
+    "NomeIgreja": "Jardim Colorado"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1571,
+    "IdIgreja": 4500,
+    "NomeIgreja": "Guaranhus"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1572,
+    "IdIgreja": 4501,
+    "NomeIgreja": "Cobilandia"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1572,
+    "IdIgreja": 4502,
+    "NomeIgreja": "Rio Marinho"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1572,
+    "IdIgreja": 4503,
+    "NomeIgreja": "Castelo Branco"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1573,
+    "IdIgreja": 4504,
+    "NomeIgreja": "Feu Rosa"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1573,
+    "IdIgreja": 4505,
+    "NomeIgreja": "Vila Nova de Colares"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1574,
+    "IdIgreja": 4506,
+    "NomeIgreja": "Jacaraipe"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1575,
+    "IdIgreja": 4507,
+    "NomeIgreja": "Nova Almeida"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1576,
+    "IdIgreja": 4508,
+    "NomeIgreja": "Cidade Continental"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1576,
+    "IdIgreja": 4509,
+    "NomeIgreja": "Novo Horizonte"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1576,
+    "IdIgreja": 4510,
+    "NomeIgreja": "Jardim Limoeiro"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1576,
+    "IdIgreja": 4511,
+    "NomeIgreja": "Balneário de Carapebus"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1577,
+    "IdIgreja": 4512,
+    "NomeIgreja": "Laranjeiras"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1577,
+    "IdIgreja": 4513,
+    "NomeIgreja": "Central Carapina"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1577,
+    "IdIgreja": 4514,
+    "NomeIgreja": "Eldorado"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1577,
+    "IdIgreja": 4515,
+    "NomeIgreja": "Jardim Tropical"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1577,
+    "IdIgreja": 4516,
+    "NomeIgreja": "Serra Dourada 2"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1577,
+    "IdIgreja": 4517,
+    "NomeIgreja": "Barcelona"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1578,
+    "IdIgreja": 4518,
+    "NomeIgreja": "Serra Sede"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1579,
+    "IdIgreja": 4519,
+    "NomeIgreja": "Campo Grande"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1579,
+    "IdIgreja": 4520,
+    "NomeIgreja": "Bela Aurora"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1579,
+    "IdIgreja": 4521,
+    "NomeIgreja": "Rosa da Penha 2"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1579,
+    "IdIgreja": 4522,
+    "NomeIgreja": "Marechal Floriano"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1580,
+    "IdIgreja": 4523,
+    "NomeIgreja": "Cariacica"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1580,
+    "IdIgreja": 4524,
+    "NomeIgreja": "Santa Maria de Jetibá"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1580,
+    "IdIgreja": 4525,
+    "NomeIgreja": "Itaguaçu"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1580,
+    "IdIgreja": 4526,
+    "NomeIgreja": "Itarana"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1580,
+    "IdIgreja": 4527,
+    "NomeIgreja": "Santa Leopoldina"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1581,
+    "IdIgreja": 4528,
+    "NomeIgreja": "Itacibá"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1582,
+    "IdIgreja": 4529,
+    "NomeIgreja": "Planalto"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1582,
+    "IdIgreja": 4530,
+    "NomeIgreja": "Vila do Riacho"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1582,
+    "IdIgreja": 4531,
+    "NomeIgreja": "Aracruz"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1583,
+    "IdIgreja": 4532,
+    "NomeIgreja": "Bela Vista"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1583,
+    "IdIgreja": 4533,
+    "NomeIgreja": "Ibiraçu"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1584,
+    "IdIgreja": 4534,
+    "NomeIgreja": "São Gabriel da Palha"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1584,
+    "IdIgreja": 4535,
+    "NomeIgreja": "Nova Venécia"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1584,
+    "IdIgreja": 4536,
+    "NomeIgreja": "Águia Branca"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1584,
+    "IdIgreja": 4537,
+    "NomeIgreja": "Barra de São Francisco"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1584,
+    "IdIgreja": 4538,
+    "NomeIgreja": "Ecoporanga"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1584,
+    "IdIgreja": 4539,
+    "NomeIgreja": "São Domingos"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1584,
+    "IdIgreja": 4540,
+    "NomeIgreja": "Baixo Gandu"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1584,
+    "IdIgreja": 4541,
+    "NomeIgreja": "Aimorés"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1585,
+    "IdIgreja": 4542,
+    "NomeIgreja": "Colatina"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1585,
+    "IdIgreja": 4543,
+    "NomeIgreja": "São Silvano"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1586,
+    "IdIgreja": 4544,
+    "NomeIgreja": "Guarapari"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1586,
+    "IdIgreja": 4545,
+    "NomeIgreja": "Perocão"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1586,
+    "IdIgreja": 4546,
+    "NomeIgreja": "Bela Vista"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1586,
+    "IdIgreja": 4547,
+    "NomeIgreja": "Anchieta"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1586,
+    "IdIgreja": 4548,
+    "NomeIgreja": "Marataízes"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1586,
+    "IdIgreja": 4549,
+    "NomeIgreja": "Piúma"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1586,
+    "IdIgreja": 4550,
+    "NomeIgreja": "Itaoca"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1587,
+    "IdIgreja": 4551,
+    "NomeIgreja": "Guarapari Centro"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1588,
+    "IdIgreja": 4552,
+    "NomeIgreja": "Teixeira de Freitas"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1588,
+    "IdIgreja": 4553,
+    "NomeIgreja": "Mucuri"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1588,
+    "IdIgreja": 4554,
+    "NomeIgreja": "São Lourenço"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1588,
+    "IdIgreja": 4555,
+    "NomeIgreja": "Posto da Mata"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1588,
+    "IdIgreja": 4556,
+    "NomeIgreja": "Itabatã"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1588,
+    "IdIgreja": 4557,
+    "NomeIgreja": "Itanhém"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1588,
+    "IdIgreja": 4558,
+    "NomeIgreja": "Medeiros Neto"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1589,
+    "IdIgreja": 4559,
+    "NomeIgreja": "Praça da Bíblia"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1590,
+    "IdIgreja": 4560,
+    "NomeIgreja": "Itamaraju"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1590,
+    "IdIgreja": 4561,
+    "NomeIgreja": "Prado "
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1590,
+    "IdIgreja": 4562,
+    "NomeIgreja": "Alcobaça"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1590,
+    "IdIgreja": 4563,
+    "NomeIgreja": "Caravelas"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1591,
+    "IdIgreja": 4564,
+    "NomeIgreja": "Linhares"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1591,
+    "IdIgreja": 4565,
+    "NomeIgreja": "Aviso"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1591,
+    "IdIgreja": 4566,
+    "NomeIgreja": "Interlagos"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1591,
+    "IdIgreja": 4567,
+    "NomeIgreja": "Interlagos 2"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1591,
+    "IdIgreja": 4568,
+    "NomeIgreja": "Santa Cruz 1"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1591,
+    "IdIgreja": 4569,
+    "NomeIgreja": "Sooretama"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1591,
+    "IdIgreja": 4570,
+    "NomeIgreja": "Bebedouro"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1592,
+    "IdIgreja": 4571,
+    "NomeIgreja": "São Mateus"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1592,
+    "IdIgreja": 4572,
+    "NomeIgreja": "Jaguaré"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1592,
+    "IdIgreja": 4573,
+    "NomeIgreja": "Pedro Canário"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1592,
+    "IdIgreja": 4574,
+    "NomeIgreja": "Bom Sucesso"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1592,
+    "IdIgreja": 4575,
+    "NomeIgreja": "Pinheiros"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1592,
+    "IdIgreja": 4576,
+    "NomeIgreja": "Santo Antônio"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1592,
+    "IdIgreja": 4577,
+    "NomeIgreja": "Guriri "
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1593,
+    "IdIgreja": 4578,
+    "NomeIgreja": "Cachoeiro"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1593,
+    "IdIgreja": 4579,
+    "NomeIgreja": "Aeroporto"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1593,
+    "IdIgreja": 4580,
+    "NomeIgreja": "Mimoso do Sul"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1594,
+    "IdIgreja": 4581,
+    "NomeIgreja": "Castelo"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1595,
+    "IdIgreja": 4582,
+    "NomeIgreja": "Guaçuí"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1595,
+    "IdIgreja": 4583,
+    "NomeIgreja": "Jeronimo Monteiro"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1595,
+    "IdIgreja": 4584,
+    "NomeIgreja": "Alegre"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1596,
+    "IdIgreja": 4585,
+    "NomeIgreja": "Ibatiba"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1596,
+    "IdIgreja": 4586,
+    "NomeIgreja": "Lajinha"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1597,
+    "IdIgreja": 4587,
+    "NomeIgreja": "Venda Nova"
+  },
+  {
+    "IdEstado": 36,
+    "IdRegiao": 1597,
+    "IdIgreja": 4588,
+    "NomeIgreja": "Afonso Claudio"
+  }
+]

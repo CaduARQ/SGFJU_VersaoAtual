@@ -1,0 +1,1106 @@
+[
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1102,
+    "IdIgreja": 5511,
+    "NomeIgreja": "SEDE ESTADUAL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1110,
+    "IdIgreja": 5196,
+    "NomeIgreja": "ABADIA DE GOIÁS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1110,
+    "IdIgreja": 5197,
+    "NomeIgreja": "BUENA VISTA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1110,
+    "IdIgreja": 5198,
+    "NomeIgreja": "BUENA VISTA IV"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1110,
+    "IdIgreja": 5199,
+    "NomeIgreja": "GUAPÓ"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1114,
+    "IdIgreja": 4475,
+    "NomeIgreja": "CINE CAPRI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1114,
+    "IdIgreja": 4476,
+    "NomeIgreja": "COIMBRA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1114,
+    "IdIgreja": 4477,
+    "NomeIgreja": "CINE CAPRI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1114,
+    "IdIgreja": 5203,
+    "NomeIgreja": "SANTO ANTONIO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1116,
+    "IdIgreja": 5206,
+    "NomeIgreja": "PONTA KAYANA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1119,
+    "IdIgreja": 5209,
+    "NomeIgreja": "EDEA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1119,
+    "IdIgreja": 5210,
+    "NomeIgreja": "GOIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1119,
+    "IdIgreja": 5211,
+    "NomeIgreja": "INDIARA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1121,
+    "IdIgreja": 4480,
+    "NomeIgreja": "COLINA AZUL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1121,
+    "IdIgreja": 4481,
+    "NomeIgreja": "MONTE CRISTO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1121,
+    "IdIgreja": 4482,
+    "NomeIgreja": "PARQUE DAS NAÇÕES"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1121,
+    "IdIgreja": 4483,
+    "NomeIgreja": "PONTAL SUL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1123,
+    "IdIgreja": 5224,
+    "NomeIgreja": "JARDIM DAS HORTENCIAS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1123,
+    "IdIgreja": 5225,
+    "NomeIgreja": "MARIA DILCE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1126,
+    "IdIgreja": 5229,
+    "NomeIgreja": "ALTO PARAISO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1126,
+    "IdIgreja": 5230,
+    "NomeIgreja": "ARAGOIANIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1126,
+    "IdIgreja": 5231,
+    "NomeIgreja": "GARAVELO II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1126,
+    "IdIgreja": 5232,
+    "NomeIgreja": "MADRE GERMANA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1128,
+    "IdIgreja": 5236,
+    "NomeIgreja": "FAIÇALVILLE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1128,
+    "IdIgreja": 5237,
+    "NomeIgreja": "GRAJAU"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1132,
+    "IdIgreja": 5238,
+    "NomeIgreja": "AEROPORTO SUL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1133,
+    "IdIgreja": 5239,
+    "NomeIgreja": "MORADA DO SOL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1133,
+    "IdIgreja": 5240,
+    "NomeIgreja": "SÃO DOMINGOS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1134,
+    "IdIgreja": 5241,
+    "NomeIgreja": "BURITI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1134,
+    "IdIgreja": 5242,
+    "NomeIgreja": "INDEPENDENCIA DAS MANSÕES"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1134,
+    "IdIgreja": 5446,
+    "NomeIgreja": "BONFINOPOLIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1135,
+    "IdIgreja": 5243,
+    "NomeIgreja": "TERESOPOLIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1135,
+    "IdIgreja": 5244,
+    "NomeIgreja": "VALE DOS SONHOS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1135,
+    "IdIgreja": 5245,
+    "NomeIgreja": "ORLANDO DE MORAIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1137,
+    "IdIgreja": 5246,
+    "NomeIgreja": "BAIRRO DA VITÓRIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1138,
+    "IdIgreja": 5247,
+    "NomeIgreja": "CARDOSO I"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1138,
+    "IdIgreja": 5248,
+    "NomeIgreja": "VILA MARIANA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1139,
+    "IdIgreja": 5250,
+    "NomeIgreja": "BURITI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1139,
+    "IdIgreja": 5251,
+    "NomeIgreja": "INDEPENDENCIA DAS MANSÕES"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1140,
+    "IdIgreja": 5255,
+    "NomeIgreja": "CAROLINA "
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1140,
+    "IdIgreja": 5256,
+    "NomeIgreja": "SÃO MARCOS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1141,
+    "IdIgreja": 5257,
+    "NomeIgreja": "CAPUAVA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1141,
+    "IdIgreja": 5258,
+    "NomeIgreja": "SOLAR VILLE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1141,
+    "IdIgreja": 5259,
+    "NomeIgreja": "VILA REGINA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1142,
+    "IdIgreja": 5260,
+    "NomeIgreja": "CIDADE VERA CRUZ"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1142,
+    "IdIgreja": 5261,
+    "NomeIgreja": "VEIGA JARDIM"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1143,
+    "IdIgreja": 5262,
+    "NomeIgreja": "BELA VISTA II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1143,
+    "IdIgreja": 5263,
+    "NomeIgreja": "CONJUNTO FABIANA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1143,
+    "IdIgreja": 5264,
+    "NomeIgreja": "SANTA LUZIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1144,
+    "IdIgreja": 5265,
+    "NomeIgreja": "LUDOVICO II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1144,
+    "IdIgreja": 5266,
+    "NomeIgreja": "VILA ALZIRA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1145,
+    "IdIgreja": 5267,
+    "NomeIgreja": "BALNEARIO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1146,
+    "IdIgreja": 5268,
+    "NomeIgreja": "CENTER VILLE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1146,
+    "IdIgreja": 5269,
+    "NomeIgreja": "ELI FORTE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1146,
+    "IdIgreja": 5270,
+    "NomeIgreja": "SANTA FÉ"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1148,
+    "IdIgreja": 5281,
+    "NomeIgreja": "NEROPOLIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1148,
+    "IdIgreja": 5282,
+    "NomeIgreja": "NEROPOLIS II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1148,
+    "IdIgreja": 5283,
+    "NomeIgreja": "NEROPOLIS III"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1151,
+    "IdIgreja": 5284,
+    "NomeIgreja": "SANTO ANTONIO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1154,
+    "IdIgreja": 4478,
+    "NomeIgreja": "PARQUE AMAZÔNIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1156,
+    "IdIgreja": 4479,
+    "NomeIgreja": "C-12"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1157,
+    "IdIgreja": 5285,
+    "NomeIgreja": "VILA PARAISO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1159,
+    "IdIgreja": 5286,
+    "NomeIgreja": "BURITI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1159,
+    "IdIgreja": 5287,
+    "NomeIgreja": "JARDIM MARISTA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1159,
+    "IdIgreja": 5288,
+    "NomeIgreja": "MAYSA II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1159,
+    "IdIgreja": 5289,
+    "NomeIgreja": "PARQUE EL DOURADO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1159,
+    "IdIgreja": 5290,
+    "NomeIgreja": "VERA CRUZ I"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1160,
+    "IdIgreja": 5291,
+    "NomeIgreja": "CELINA PARK"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1162,
+    "IdIgreja": 5292,
+    "NomeIgreja": "VILA REDENÇÃO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1162,
+    "IdIgreja": 5293,
+    "NomeIgreja": "JARDIM BONANÇA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1164,
+    "IdIgreja": 5294,
+    "NomeIgreja": "SANTO HILARIO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1166,
+    "IdIgreja": 5295,
+    "NomeIgreja": "AGUA BRANCA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1166,
+    "IdIgreja": 5296,
+    "NomeIgreja": "NOVO MUNDO I"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1166,
+    "IdIgreja": 5297,
+    "NomeIgreja": "NOVO MUNDO II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1167,
+    "IdIgreja": 5298,
+    "NomeIgreja": "PARQUE ANHANGUERA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5303,
+    "NomeIgreja": "ABADIANIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5304,
+    "NomeIgreja": "BAIRRO INDUSTRIAL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5305,
+    "NomeIgreja": "CALIXTOPOLIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5306,
+    "NomeIgreja": "CAMPO LIMPO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5307,
+    "NomeIgreja": "CONJUNTO FILOSTRO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5308,
+    "NomeIgreja": "GOIANAPOLIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5309,
+    "NomeIgreja": "JUDIAI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5310,
+    "NomeIgreja": "LEOPOLDO DE BULHOES"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5311,
+    "NomeIgreja": "MORUMBI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5312,
+    "NomeIgreja": "PARAISO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5313,
+    "NomeIgreja": "RECANTO DO SOL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5314,
+    "NomeIgreja": "SILVANIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5315,
+    "NomeIgreja": "VIANOPOLIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1206,
+    "IdIgreja": 5316,
+    "NomeIgreja": "VILA IZABEL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1207,
+    "IdIgreja": 5318,
+    "NomeIgreja": "AMERICANO DO BRASIL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1207,
+    "IdIgreja": 5319,
+    "NomeIgreja": "SANCLERLANDIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1208,
+    "IdIgreja": 5332,
+    "NomeIgreja": "EXPANSUL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1208,
+    "IdIgreja": 5333,
+    "NomeIgreja": "HIDROLANDIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1208,
+    "IdIgreja": 5334,
+    "NomeIgreja": "SANTO ANDRE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1208,
+    "IdIgreja": 5335,
+    "NomeIgreja": "RETIRO DO BOSQUE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1209,
+    "IdIgreja": 5338,
+    "NomeIgreja": "VENEZA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1210,
+    "IdIgreja": 5344,
+    "NomeIgreja": "CORUMBAIBA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1210,
+    "IdIgreja": 5345,
+    "NomeIgreja": "CROMINIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1210,
+    "IdIgreja": 5346,
+    "NomeIgreja": "MORRINHOS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1210,
+    "IdIgreja": 5347,
+    "NomeIgreja": "PIRACANJUBA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1210,
+    "IdIgreja": 5348,
+    "NomeIgreja": "PONTALINA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1210,
+    "IdIgreja": 5349,
+    "NomeIgreja": "SANTA EFIGENIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1213,
+    "IdIgreja": 5350,
+    "NomeIgreja": "CASTELO BRANCO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1213,
+    "IdIgreja": 5351,
+    "NomeIgreja": "IPAMERI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1213,
+    "IdIgreja": 5352,
+    "NomeIgreja": "VILA CHAUD"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1215,
+    "IdIgreja": 5353,
+    "NomeIgreja": "CARMO DO RIO VERDE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1215,
+    "IdIgreja": 5354,
+    "NomeIgreja": "CRIXAS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1215,
+    "IdIgreja": 5355,
+    "NomeIgreja": "ITAPACI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1215,
+    "IdIgreja": 5356,
+    "NomeIgreja": "ITAPURANGA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1215,
+    "IdIgreja": 5357,
+    "NomeIgreja": "RIALMA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1215,
+    "IdIgreja": 5358,
+    "NomeIgreja": "SANTA TEREZINHA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1215,
+    "IdIgreja": 5359,
+    "NomeIgreja": "URUANA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1217,
+    "IdIgreja": 5360,
+    "NomeIgreja": "BRAZABRANTES"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1217,
+    "IdIgreja": 5361,
+    "NomeIgreja": "CATURAI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1217,
+    "IdIgreja": 5362,
+    "NomeIgreja": "CORA CORALINA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1217,
+    "IdIgreja": 5363,
+    "NomeIgreja": "JARDIM PRIMAVERA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1217,
+    "IdIgreja": 5364,
+    "NomeIgreja": "PALMARES"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1217,
+    "IdIgreja": 5365,
+    "NomeIgreja": "TRIUNFO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1219,
+    "IdIgreja": 5366,
+    "NomeIgreja": "CIDADE DE GOIAS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1219,
+    "IdIgreja": 5367,
+    "NomeIgreja": "ITABERAI"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1219,
+    "IdIgreja": 5368,
+    "NomeIgreja": "ITAUÇU"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1219,
+    "IdIgreja": 5369,
+    "NomeIgreja": "MOZARLANDIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1219,
+    "IdIgreja": 5370,
+    "NomeIgreja": "NOVA VENEZA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1223,
+    "IdIgreja": 5463,
+    "NomeIgreja": "CAIAPONIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1223,
+    "IdIgreja": 5464,
+    "NomeIgreja": "DORVELÂNDIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1223,
+    "IdIgreja": 5465,
+    "NomeIgreja": "PIRANHAS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1236,
+    "IdIgreja": 5371,
+    "NomeIgreja": "BOM JESUS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1236,
+    "IdIgreja": 5372,
+    "NomeIgreja": "GOIATUBA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1236,
+    "IdIgreja": 5373,
+    "NomeIgreja": "JOVIANIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1236,
+    "IdIgreja": 5374,
+    "NomeIgreja": "NORMA GILBALDE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1236,
+    "IdIgreja": 5375,
+    "NomeIgreja": "SANTA INES"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1236,
+    "IdIgreja": 5376,
+    "NomeIgreja": "VILA BENTANIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1238,
+    "IdIgreja": 5377,
+    "NomeIgreja": "ALEXANDRINA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1238,
+    "IdIgreja": 5378,
+    "NomeIgreja": "JANDAIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1239,
+    "IdIgreja": 5379,
+    "NomeIgreja": "BAIRRO BOA VISTA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1239,
+    "IdIgreja": 5380,
+    "NomeIgreja": "DHEMA DA MATA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1239,
+    "IdIgreja": 5381,
+    "NomeIgreja": "GOIANESIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1239,
+    "IdIgreja": 5382,
+    "NomeIgreja": "PETROLINA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1239,
+    "IdIgreja": 5383,
+    "NomeIgreja": "SÃO FRANCISCO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1239,
+    "IdIgreja": 5384,
+    "NomeIgreja": "SETOR SUL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1344,
+    "IdIgreja": 5385,
+    "NomeIgreja": "JARDIM RIO CLARO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1345,
+    "IdIgreja": 5386,
+    "NomeIgreja": "BAIRRO DE LURDES"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1345,
+    "IdIgreja": 5387,
+    "NomeIgreja": "COCALZINHO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1345,
+    "IdIgreja": 5388,
+    "NomeIgreja": "CORUMBA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1345,
+    "IdIgreja": 5389,
+    "NomeIgreja": "PIRENOPOLIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1345,
+    "IdIgreja": 5390,
+    "NomeIgreja": "SÃO JOÃO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1346,
+    "IdIgreja": 5391,
+    "NomeIgreja": "BRITANIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1346,
+    "IdIgreja": 5392,
+    "NomeIgreja": "ITAPIRAPUÃ"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1346,
+    "IdIgreja": 5393,
+    "NomeIgreja": "MATRINCHÃ"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1346,
+    "IdIgreja": 5394,
+    "NomeIgreja": "SANTA FÉ II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1347,
+    "IdIgreja": 5397,
+    "NomeIgreja": "BOA VISTA II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1347,
+    "IdIgreja": 5398,
+    "NomeIgreja": "CRUVINEL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1347,
+    "IdIgreja": 5399,
+    "NomeIgreja": "PORTELÂNDIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1348,
+    "IdIgreja": 5401,
+    "NomeIgreja": "CRISTIANOPOLIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1349,
+    "IdIgreja": 5405,
+    "NomeIgreja": "MINAÇU"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1349,
+    "IdIgreja": 5406,
+    "NomeIgreja": "MUNDO NOVO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1349,
+    "IdIgreja": 5407,
+    "NomeIgreja": "NOVA CRIXAS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1349,
+    "IdIgreja": 5408,
+    "NomeIgreja": "SÃO MIGUEL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1350,
+    "IdIgreja": 5409,
+    "NomeIgreja": "CAÇU"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1350,
+    "IdIgreja": 5410,
+    "NomeIgreja": "GOUVELÂNDIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1350,
+    "IdIgreja": 5411,
+    "NomeIgreja": "PARANAIGUARA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1350,
+    "IdIgreja": 5412,
+    "NomeIgreja": "SÃO SIMÃO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1351,
+    "IdIgreja": 5413,
+    "NomeIgreja": "ACREÚNA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1351,
+    "IdIgreja": 5414,
+    "NomeIgreja": "BAIRRO LIBERDADE II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1351,
+    "IdIgreja": 5415,
+    "NomeIgreja": "MAURILÂNDIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1351,
+    "IdIgreja": 5416,
+    "NomeIgreja": "MOTIVIDIU"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1351,
+    "IdIgreja": 5417,
+    "NomeIgreja": "MORADA DO SOL"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1351,
+    "IdIgreja": 5418,
+    "NomeIgreja": "PROMISSÃO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1351,
+    "IdIgreja": 5419,
+    "NomeIgreja": "SANTA HELENA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1352,
+    "IdIgreja": 5420,
+    "NomeIgreja": "NOVA GLÓRIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1353,
+    "IdIgreja": 5421,
+    "NomeIgreja": "FIRMINOPOLIS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1353,
+    "IdIgreja": 5422,
+    "NomeIgreja": "JANDAIA II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1354,
+    "IdIgreja": 5423,
+    "NomeIgreja": "BELA VISTA DE GOIÁS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1354,
+    "IdIgreja": 5424,
+    "NomeIgreja": "BOA VISTA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1354,
+    "IdIgreja": 5425,
+    "NomeIgreja": "MORADA DO MORRO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1354,
+    "IdIgreja": 5426,
+    "NomeIgreja": "VILA GALVÃO"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1355,
+    "IdIgreja": 5432,
+    "NomeIgreja": "CAMPESTRE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1355,
+    "IdIgreja": 5433,
+    "NomeIgreja": "CRISTINA II"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1355,
+    "IdIgreja": 5434,
+    "NomeIgreja": "GUARUJÁ PARK"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1355,
+    "IdIgreja": 5435,
+    "NomeIgreja": "PALMEIRAS"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1355,
+    "IdIgreja": 5436,
+    "NomeIgreja": "SANTA BARBARA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1356,
+    "IdIgreja": 5440,
+    "NomeIgreja": "CAMPINORTE"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1356,
+    "IdIgreja": 5441,
+    "NomeIgreja": "NIQUELÂNDIA"
+  },
+  {
+    "IdEstado": 37,
+    "IdRegiao": 1356,
+    "IdIgreja": 5442,
+    "NomeIgreja": "SÃO VICENTE"
+  }
+]

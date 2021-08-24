@@ -1,0 +1,110 @@
+[
+  {
+    "IdEstado": 25,
+    "IdRegiao": 6,
+    "IdIgreja": 27,
+    "NomeIgreja": "Pinheirinho"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 7,
+    "IdIgreja": 11,
+    "NomeIgreja": "Mato Alto"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 7,
+    "IdIgreja": 12,
+    "NomeIgreja": "Arroio do Silva"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 7,
+    "IdIgreja": 15,
+    "NomeIgreja": "Urussanguinha"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 7,
+    "IdIgreja": 16,
+    "NomeIgreja": "Maracajá"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 8,
+    "IdIgreja": 18,
+    "NomeIgreja": "Balneário Rincão"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 8,
+    "IdIgreja": 19,
+    "NomeIgreja": "Vila Nova"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 10,
+    "IdIgreja": 21,
+    "NomeIgreja": "Aventureiro"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 10,
+    "IdIgreja": 22,
+    "NomeIgreja": "Jardim Paraíso"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 19,
+    "IdIgreja": 4,
+    "NomeIgreja": "Morro da fumaça"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 19,
+    "IdIgreja": 5,
+    "NomeIgreja": "Siderópolis"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 19,
+    "IdIgreja": 23,
+    "NomeIgreja": "Cocal do Sul"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 19,
+    "IdIgreja": 24,
+    "NomeIgreja": "4º linha"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 19,
+    "IdIgreja": 28,
+    "NomeIgreja": "São Luiz"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 21,
+    "IdIgreja": 25,
+    "NomeIgreja": "Morro da fumaça"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 21,
+    "IdIgreja": 26,
+    "NomeIgreja": "Morro Grande"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 9,
+    "IdIgreja": 20,
+    "NomeIgreja": "Piçarras"
+  },
+  {
+    "IdEstado": 25,
+    "IdRegiao": 20,
+    "IdIgreja": 17,
+    "NomeIgreja": "Pirabeiraba"
+  }
+]

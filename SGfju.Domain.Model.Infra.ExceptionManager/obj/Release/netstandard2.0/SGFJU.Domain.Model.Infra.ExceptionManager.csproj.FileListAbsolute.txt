@@ -1,0 +1,8 @@
+C:\Users\Intel\source\repos\SGFJU\SGfju.Domain.Model.Infra.ExceptionManager\bin\Release\netstandard2.0\SGFJU.Domain.Model.Infra.ExceptionManager.deps.json
+C:\Users\Intel\source\repos\SGFJU\SGfju.Domain.Model.Infra.ExceptionManager\bin\Release\netstandard2.0\SGFJU.Domain.Model.Infra.ExceptionManager.dll
+C:\Users\Intel\source\repos\SGFJU\SGfju.Domain.Model.Infra.ExceptionManager\bin\Release\netstandard2.0\SGFJU.Domain.Model.Infra.ExceptionManager.pdb
+C:\Users\Intel\source\repos\SGFJU\SGfju.Domain.Model.Infra.ExceptionManager\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.ExceptionManager.csprojAssemblyReference.cache
+C:\Users\Intel\source\repos\SGFJU\SGfju.Domain.Model.Infra.ExceptionManager\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.ExceptionManager.AssemblyInfoInputs.cache
+C:\Users\Intel\source\repos\SGFJU\SGfju.Domain.Model.Infra.ExceptionManager\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.ExceptionManager.AssemblyInfo.cs
+C:\Users\Intel\source\repos\SGFJU\SGfju.Domain.Model.Infra.ExceptionManager\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.ExceptionManager.dll
+C:\Users\Intel\source\repos\SGFJU\SGfju.Domain.Model.Infra.ExceptionManager\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.ExceptionManager.pdb

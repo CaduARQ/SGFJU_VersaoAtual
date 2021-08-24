@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unity" Version="5.11.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.DataAccess.Oracle\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Logging\SGFJU.Domain.Model.Infra.Logging.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Serialization\SGFJU.Domain.Model.Infra.Serialization.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model\SGFJU.Domain.Model.csproj" />
+    <ProjectReference Include="..\SGFJU.Interfaces\SGFJU.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

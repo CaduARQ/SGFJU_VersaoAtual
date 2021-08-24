@@ -1,0 +1,20 @@
+[
+  {
+    "IdEstado": 18,
+    "IdRegiao": 37,
+    "IdIgreja": 42,
+    "NomeIgreja": "Sede Treinamento 2"
+  },
+  {
+    "IdEstado": 18,
+    "IdRegiao": 37,
+    "IdIgreja": 43,
+    "NomeIgreja": "Trainamento 1"
+  },
+  {
+    "IdEstado": 18,
+    "IdRegiao": 37,
+    "IdIgreja": 44,
+    "NomeIgreja": "Treinamento 3"
+  }
+]

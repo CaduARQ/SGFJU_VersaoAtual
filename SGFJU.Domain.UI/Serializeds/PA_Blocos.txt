@@ -1,0 +1,62 @@
+[
+  {
+    "idBloco": 191,
+    "NomeBloco": "Bloco Abaetetuba ",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 192,
+    "NomeBloco": "Bloco Altamira",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 193,
+    "NomeBloco": "Bloco Castanhal",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 194,
+    "NomeBloco": "Bloco Marabá",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 195,
+    "NomeBloco": "Bloco Benevides",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 196,
+    "NomeBloco": "Bloco Santarém ",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 197,
+    "NomeBloco": "Bloco Tucuruí",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 199,
+    "NomeBloco": "Bloco Belém ",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 200,
+    "NomeBloco": "Bloco São Brás",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 201,
+    "NomeBloco": "Bloco Ananindeua",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 202,
+    "NomeBloco": "Bloco Tapanã",
+    "IdEstadoBloco": 42
+  },
+  {
+    "idBloco": 322,
+    "NomeBloco": "Sede Estadual",
+    "IdEstadoBloco": 42
+  }
+]

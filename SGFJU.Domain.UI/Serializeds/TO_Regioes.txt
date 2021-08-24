@@ -1,0 +1,127 @@
+[
+  {
+    "idBloco": 178,
+    "IdRegiao": 1688,
+    "NomeRegiao": "Guaraí"
+  },
+  {
+    "idBloco": 178,
+    "IdRegiao": 1689,
+    "NomeRegiao": "Colinas"
+  },
+  {
+    "idBloco": 178,
+    "IdRegiao": 1690,
+    "NomeRegiao": "Araguaína"
+  },
+  {
+    "idBloco": 178,
+    "IdRegiao": 1749,
+    "NomeRegiao": "Araguaína Sul "
+  },
+  {
+    "idBloco": 178,
+    "IdRegiao": 2045,
+    "NomeRegiao": "Araguaia"
+  },
+  {
+    "idBloco": 241,
+    "IdRegiao": 1691,
+    "NomeRegiao": "Natividade"
+  },
+  {
+    "idBloco": 241,
+    "IdRegiao": 1692,
+    "NomeRegiao": "Campos Belos"
+  },
+  {
+    "idBloco": 242,
+    "IdRegiao": 1693,
+    "NomeRegiao": "Miracema"
+  },
+  {
+    "idBloco": 242,
+    "IdRegiao": 1694,
+    "NomeRegiao": "Porto Nacional"
+  },
+  {
+    "idBloco": 243,
+    "IdRegiao": 1695,
+    "NomeRegiao": "Redenção"
+  },
+  {
+    "idBloco": 244,
+    "IdRegiao": 1696,
+    "NomeRegiao": "Pouso Alegre"
+  },
+  {
+    "idBloco": 245,
+    "IdRegiao": 1697,
+    "NomeRegiao": "Jd. Servilha"
+  },
+  {
+    "idBloco": 245,
+    "IdRegiao": 1698,
+    "NomeRegiao": "Gurupi "
+  },
+  {
+    "idBloco": 245,
+    "IdRegiao": 1917,
+    "NomeRegiao": "Jardim Sevilha"
+  },
+  {
+    "idBloco": 247,
+    "IdRegiao": 1699,
+    "NomeRegiao": "Araguatins"
+  },
+  {
+    "idBloco": 248,
+    "IdRegiao": 1700,
+    "NomeRegiao": "Arno 32"
+  },
+  {
+    "idBloco": 249,
+    "IdRegiao": 1701,
+    "NomeRegiao": "Taquari"
+  },
+  {
+    "idBloco": 250,
+    "IdRegiao": 1702,
+    "NomeRegiao": "Araguaia"
+  },
+  {
+    "idBloco": 250,
+    "IdRegiao": 1703,
+    "NomeRegiao": "Araguaia"
+  },
+  {
+    "idBloco": 250,
+    "IdRegiao": 2043,
+    "NomeRegiao": "Araguaia"
+  },
+  {
+    "idBloco": 251,
+    "IdRegiao": 1704,
+    "NomeRegiao": "Santana do Araguaia"
+  },
+  {
+    "idBloco": 251,
+    "IdRegiao": 1705,
+    "NomeRegiao": "Paraíso"
+  },
+  {
+    "idBloco": 252,
+    "IdRegiao": 1706,
+    "NomeRegiao": "Aureny 3"
+  },
+  {
+    "idBloco": 252,
+    "IdRegiao": 1707,
+    "NomeRegiao": "Taquaralto"
+  },
+  {
+    "idBloco": 310,
+    "IdRegiao": 1718,
+    "NomeRegiao": "Palmas"
+  }
+]

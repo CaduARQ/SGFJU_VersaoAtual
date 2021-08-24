@@ -1,0 +1,47 @@
+[
+  {
+    "idBloco": 91,
+    "NomeBloco": "Capital",
+    "IdEstadoBloco": 44
+  },
+  {
+    "idBloco": 92,
+    "NomeBloco": "Cascavel",
+    "IdEstadoBloco": 44
+  },
+  {
+    "idBloco": 93,
+    "NomeBloco": "Foz do Iguaçu",
+    "IdEstadoBloco": 44
+  },
+  {
+    "idBloco": 94,
+    "NomeBloco": "Guarapuava",
+    "IdEstadoBloco": 44
+  },
+  {
+    "idBloco": 95,
+    "NomeBloco": "Londrina",
+    "IdEstadoBloco": 44
+  },
+  {
+    "idBloco": 96,
+    "NomeBloco": "Maringá",
+    "IdEstadoBloco": 44
+  },
+  {
+    "idBloco": 97,
+    "NomeBloco": "Pato Branco",
+    "IdEstadoBloco": 44
+  },
+  {
+    "idBloco": 98,
+    "NomeBloco": "Paranaguá",
+    "IdEstadoBloco": 44
+  },
+  {
+    "idBloco": 99,
+    "NomeBloco": "Ponta Grossa",
+    "IdEstadoBloco": 44
+  }
+]

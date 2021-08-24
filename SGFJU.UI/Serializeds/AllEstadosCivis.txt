@@ -1,0 +1,27 @@
+[
+  {
+    "Code": 1,
+    "Descricao": "Casado(a)",
+    "Codigo": 0
+  },
+  {
+    "Code": 2,
+    "Descricao": "Solteiro(a)",
+    "Codigo": 0
+  },
+  {
+    "Code": 3,
+    "Descricao": "Divorciado(a)",
+    "Codigo": 0
+  },
+  {
+    "Code": 4,
+    "Descricao": "Viúvo(a)",
+    "Codigo": 0
+  },
+  {
+    "Code": 5,
+    "Descricao": "Morando Junto",
+    "Codigo": 0
+  }
+]

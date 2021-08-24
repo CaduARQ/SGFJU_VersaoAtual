@@ -1,0 +1,5 @@
+{
+  "TempoDecorridoSerializacao": "00:00:04.19",
+  "Estado": "Amazonas",
+  "QuantidadeObreirosComRamos": 219
+}

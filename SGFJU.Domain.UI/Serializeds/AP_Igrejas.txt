@@ -1,0 +1,380 @@
+[
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1807,
+    "IdIgreja": 5476,
+    "NomeIgreja": "Paraíso"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1807,
+    "IdIgreja": 5477,
+    "NomeIgreja": "Coração"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1807,
+    "IdIgreja": 5478,
+    "NomeIgreja": "Mazagão"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1807,
+    "IdIgreja": 5479,
+    "NomeIgreja": "Parque das Laranjeiras"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5494,
+    "NomeIgreja": "Paraíso"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5495,
+    "NomeIgreja": "Coração"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5496,
+    "NomeIgreja": "Mazagão"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5497,
+    "NomeIgreja": "Parque das Laranjeiras"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5502,
+    "NomeIgreja": "Paraíso"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5503,
+    "NomeIgreja": "Coração"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5504,
+    "NomeIgreja": "Mazagão"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5505,
+    "NomeIgreja": "Parque das Laranjeiras"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5506,
+    "NomeIgreja": "Paraíso"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5507,
+    "NomeIgreja": "Sede Paraíso"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5508,
+    "NomeIgreja": "Igreja Coração"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5509,
+    "NomeIgreja": "Igreja Mazagão"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1810,
+    "IdIgreja": 5510,
+    "NomeIgreja": "Igreja Parque das Laranjeiras"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1820,
+    "IdIgreja": 5534,
+    "NomeIgreja": "Cidade Nova"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1820,
+    "IdIgreja": 5535,
+    "NomeIgreja": "Pacoval"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1820,
+    "IdIgreja": 5536,
+    "NomeIgreja": "Pantanal"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1820,
+    "IdIgreja": 5537,
+    "NomeIgreja": "Renascer"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1820,
+    "IdIgreja": 5538,
+    "NomeIgreja": "Afuá"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1821,
+    "IdIgreja": 5550,
+    "NomeIgreja": "Trem"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1821,
+    "IdIgreja": 5551,
+    "NomeIgreja": "Marabaixo 1"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1821,
+    "IdIgreja": 5552,
+    "NomeIgreja": "Marabaixo 2"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1821,
+    "IdIgreja": 5553,
+    "NomeIgreja": "Nova Esperança"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1821,
+    "IdIgreja": 5554,
+    "NomeIgreja": "Araxá"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1821,
+    "IdIgreja": 5555,
+    "NomeIgreja": "Muca"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1821,
+    "IdIgreja": 5556,
+    "NomeIgreja": "Pedrinhas"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1822,
+    "IdIgreja": 5563,
+    "NomeIgreja": "Congós"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1822,
+    "IdIgreja": 5564,
+    "NomeIgreja": "Marco Zero"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1822,
+    "IdIgreja": 5565,
+    "NomeIgreja": "Zerão"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1822,
+    "IdIgreja": 5566,
+    "NomeIgreja": "Porto Grande"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1822,
+    "IdIgreja": 5567,
+    "NomeIgreja": "Ferreira Gomes"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1823,
+    "IdIgreja": 5581,
+    "NomeIgreja": "Infraero 2"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1823,
+    "IdIgreja": 5582,
+    "NomeIgreja": "Amazonas"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1823,
+    "IdIgreja": 5583,
+    "NomeIgreja": "Açaí"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1823,
+    "IdIgreja": 5584,
+    "NomeIgreja": "Brasil Novo"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1823,
+    "IdIgreja": 5585,
+    "NomeIgreja": "Ilha Mirim"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1823,
+    "IdIgreja": 5586,
+    "NomeIgreja": "Infraero 1"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1824,
+    "IdIgreja": 5593,
+    "NomeIgreja": "Ipê"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1824,
+    "IdIgreja": 5594,
+    "NomeIgreja": "Novo horizonte"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1824,
+    "IdIgreja": 5595,
+    "NomeIgreja": "Jardim1"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1824,
+    "IdIgreja": 5596,
+    "NomeIgreja": "Jardim2"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1825,
+    "IdIgreja": 5598,
+    "NomeIgreja": "Santana"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1825,
+    "IdIgreja": 5599,
+    "NomeIgreja": "Area Portuária"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1825,
+    "IdIgreja": 5600,
+    "NomeIgreja": "Fazendinha"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1825,
+    "IdIgreja": 5601,
+    "NomeIgreja": "Fortaleza"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1825,
+    "IdIgreja": 5602,
+    "NomeIgreja": "Ilha de Santana"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1825,
+    "IdIgreja": 5603,
+    "NomeIgreja": "Pedra Branca"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1825,
+    "IdIgreja": 5604,
+    "NomeIgreja": "vale Verde"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1825,
+    "IdIgreja": 5605,
+    "NomeIgreja": "Amazonas"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1826,
+    "IdIgreja": 5625,
+    "NomeIgreja": "Oiapoque"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1826,
+    "IdIgreja": 5626,
+    "NomeIgreja": "Amapá"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1826,
+    "IdIgreja": 5627,
+    "NomeIgreja": "Calçoene"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1826,
+    "IdIgreja": 5628,
+    "NomeIgreja": "Cutias"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1826,
+    "IdIgreja": 5629,
+    "NomeIgreja": "Lourenço"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1827,
+    "IdIgreja": 5636,
+    "NomeIgreja": "Laranjal Jari"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1827,
+    "IdIgreja": 5637,
+    "NomeIgreja": "Monte Dourado"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1827,
+    "IdIgreja": 5638,
+    "NomeIgreja": "Sarney"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1827,
+    "IdIgreja": 5639,
+    "NomeIgreja": "Vitória do jari"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1827,
+    "IdIgreja": 5640,
+    "NomeIgreja": "Tartarugalzinho"
+  },
+  {
+    "IdEstado": 31,
+    "IdRegiao": 1840,
+    "IdIgreja": 5836,
+    "NomeIgreja": "Sede Estadual"
+  }
+]

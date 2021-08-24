@@ -1,0 +1,308 @@
+[
+  {
+    "IdEstado": 29,
+    "IdRegiao": 56,
+    "IdIgreja": 12,
+    "NomeIgreja": "Catedral Estadual"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 57,
+    "IdIgreja": 4680,
+    "NomeIgreja": "Piquiá"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 57,
+    "IdIgreja": 4681,
+    "NomeIgreja": "Pauini"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1623,
+    "IdIgreja": 4682,
+    "NomeIgreja": "Belo Jardim I"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1623,
+    "IdIgreja": 4683,
+    "NomeIgreja": "Belo Jardim II"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1623,
+    "IdIgreja": 4684,
+    "NomeIgreja": "Extrema"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1623,
+    "IdIgreja": 4685,
+    "NomeIgreja": "Abunã"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1623,
+    "IdIgreja": 4686,
+    "NomeIgreja": "Nova Califórnia"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1624,
+    "IdIgreja": 4687,
+    "NomeIgreja": "Manoel Julião"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1624,
+    "IdIgreja": 4688,
+    "NomeIgreja": "Bujari"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1624,
+    "IdIgreja": 4689,
+    "NomeIgreja": "Primavera"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1624,
+    "IdIgreja": 4690,
+    "NomeIgreja": "Universitário"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1624,
+    "IdIgreja": 5324,
+    "NomeIgreja": "Universitário"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1624,
+    "IdIgreja": 5325,
+    "NomeIgreja": "Manoel Julião"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1624,
+    "IdIgreja": 5326,
+    "NomeIgreja": "Primavera"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1624,
+    "IdIgreja": 5327,
+    "NomeIgreja": "Bujari"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1625,
+    "IdIgreja": 5427,
+    "NomeIgreja": "Placas"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1625,
+    "IdIgreja": 5428,
+    "NomeIgreja": "Vila Incra"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1625,
+    "IdIgreja": 5429,
+    "NomeIgreja": "Porto Acre"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1625,
+    "IdIgreja": 5430,
+    "NomeIgreja": "Vila do V"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1626,
+    "IdIgreja": 5431,
+    "NomeIgreja": "Santo Afonso"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1627,
+    "IdIgreja": 5447,
+    "NomeIgreja": "Chico Mendes"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1627,
+    "IdIgreja": 5448,
+    "NomeIgreja": "Cidade Nova"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1627,
+    "IdIgreja": 5449,
+    "NomeIgreja": "Taquari"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1627,
+    "IdIgreja": 5450,
+    "NomeIgreja": "Vitória"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1628,
+    "IdIgreja": 5451,
+    "NomeIgreja": "Horto Florestal"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1628,
+    "IdIgreja": 5452,
+    "NomeIgreja": "Montanhês"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1629,
+    "IdIgreja": 5453,
+    "NomeIgreja": "Bahia"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1629,
+    "IdIgreja": 5454,
+    "NomeIgreja": "João Paulo"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1630,
+    "IdIgreja": 5455,
+    "NomeIgreja": "Nova Esperança"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1630,
+    "IdIgreja": 5456,
+    "NomeIgreja": "Esperança"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1630,
+    "IdIgreja": 5457,
+    "NomeIgreja": "Calafate"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1630,
+    "IdIgreja": 5458,
+    "NomeIgreja": "Portal da Amazônia"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1631,
+    "IdIgreja": 5437,
+    "NomeIgreja": "25 de Agosto"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1631,
+    "IdIgreja": 5438,
+    "NomeIgreja": "Aeroporto Velho"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1631,
+    "IdIgreja": 5439,
+    "NomeIgreja": "Cohab"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1631,
+    "IdIgreja": 5443,
+    "NomeIgreja": "Guajará"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1631,
+    "IdIgreja": 5444,
+    "NomeIgreja": "Mâncio Lima "
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1631,
+    "IdIgreja": 5445,
+    "NomeIgreja": "Rodrigues Alves"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1631,
+    "IdIgreja": 5787,
+    "NomeIgreja": "Cruzeiro do sul-Sede"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1632,
+    "IdIgreja": 5459,
+    "NomeIgreja": "Ipixuna"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1632,
+    "IdIgreja": 5460,
+    "NomeIgreja": "Envira"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1633,
+    "IdIgreja": 5461,
+    "NomeIgreja": "Tarauacá II"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1633,
+    "IdIgreja": 5462,
+    "NomeIgreja": "Feijó"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1634,
+    "IdIgreja": 5466,
+    "NomeIgreja": "Manoel Urbano"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1635,
+    "IdIgreja": 5467,
+    "NomeIgreja": "Epitaciolândia"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1635,
+    "IdIgreja": 5468,
+    "NomeIgreja": "Xapuri"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1635,
+    "IdIgreja": 5469,
+    "NomeIgreja": "Assis Brasil"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1636,
+    "IdIgreja": 5470,
+    "NomeIgreja": "Plácido de Castro"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1636,
+    "IdIgreja": 5471,
+    "NomeIgreja": "Acrelândia"
+  },
+  {
+    "IdEstado": 29,
+    "IdRegiao": 1636,
+    "IdIgreja": 5472,
+    "NomeIgreja": "Capixaba"
+  }
+]

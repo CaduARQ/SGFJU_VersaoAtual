@@ -1,0 +1,611 @@
+2020-03-24 19:44:44.8191|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|This is a test fluent message '637206758848241498'.
+2020-03-24 19:47:45.8079|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 19:47:45' - Descrição do Erro: gerar log
+2020-03-24 21:07:26.6280|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 21:07:26' - Descrição do Erro: Exceção do tipo 'System.Exception' foi acionada.
+2020-03-24 21:08:13.4254|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 21:08:13' - Descrição do Erro: Exceção do tipo 'System.Exception' foi acionada.
+2020-03-24 21:09:15.5141|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 21:09:15' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-24 21:23:48.8470|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 21:23:48' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-24 21:25:57.5228|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 21:25:57' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-24 21:30:35.4918|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 21:30:35' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-24 21:33:27.6048|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 21:33:27' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-24 21:39:44.9647|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 21:39:44' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-24 21:58:27.5750|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 21:58:27' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-24 22:06:52.4958|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 22:06:52' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-24 22:25:40.8995|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2020 22:25:40' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-25 11:15:54.0038|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2020 11:15:54' - Descrição do Erro: exceção de teste
+2020-03-25 16:05:07.3785|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2020 16:05:07' - Descrição do Erro: TelaLogin.Camada de negócios:Uma exceção foi acionada pelo destino de uma chamada. Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 40
+   em SGFJU.UI.Views.FJUDoor.btnLogin_Click1(Object sender, EventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\FJUDoor.aspx.cs:linha 37
+2020-03-25 16:06:48.2611|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2020 16:06:48' - Descrição do Erro: TelaLogin.Camada de negócios:Uma exceção foi acionada pelo destino de uma chamada. Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 40
+   em SGFJU.UI.Views.FJUDoor.btnLogin_Click1(Object sender, EventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\FJUDoor.aspx.cs:linha 37
+2020-03-26 10:27:10.6425|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 10:27:10' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 12:13:52.2702|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 12:13:52' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 12:20:22.2947|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 12:20:22' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 12:22:31.2581|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 12:22:31' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 12:52:34.4579|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 12:52:34' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 12:56:28.5251|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 12:56:28' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 12:59:42.7113|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 12:59:42' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 13:14:41.6539|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 13:14:41' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 13:16:49.7856|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 13:16:49' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 13:27:08.4273|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 13:27:08' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 13:30:52.2216|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 13:30:52' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 13:32:01.4487|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 13:32:01' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 13:34:09.3616|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 13:34:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 13:40:00.5358|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 13:40:00' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 15:46:29.5589|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 15:46:29' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 17:21:26.4629|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 17:21:26' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 17:41:32.1286|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 17:41:32' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 17:53:49.4517|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 17:53:49' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 18:16:38.8644|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 18:16:38' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 18:19:39.2675|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 18:19:39' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 18:57:42.4844|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 18:57:42' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 19:04:13.0972|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 19:04:13' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 19:37:48.8537|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 19:37:48' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-26 21:00:58.1767|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2020 21:00:58' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 11:17:35.7505|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 11:17:35' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 11:33:51.7513|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 11:33:51' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 11:36:06.9519|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 11:36:06' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 11:38:37.5788|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 11:38:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 11:56:22.3759|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 11:56:22' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 12:33:34.8758|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 12:33:34' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 13:39:53.6170|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 13:39:53' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 15:39:25.5725|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 15:39:25' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 15:51:45.1269|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 15:51:45' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 16:07:35.2897|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 16:07:35' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Referência de objeto não definida para uma instância de um objeto. : 
+2020-03-27 16:15:33.2380|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 16:15:33' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 16:24:40.3171|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 16:24:40' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 16:34:08.0831|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 16:34:08' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 16:50:06.0307|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 16:50:06' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 16:55:50.8096|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 16:55:50' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Referência de objeto não definida para uma instância de um objeto. : 
+2020-03-27 17:29:07.9420|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 17:29:07' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 17:46:32.3837|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 17:46:32' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 17:51:01.6344|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 17:51:01' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.SalvarJovem(Jovem aggregateRoot, IList`1 idiomasFaladosJovem, IList`1 habilidadesPossuidasPeloJovem, JovemProjeto projetoAQualJovemPertence, Testemunho testemunhoDoJovem) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 75: 
+
+ Source: NHibernate  
+
+ Inner Exception Message: object references an unsaved transient instance - save the transient instance before flushing or set cascade action for the property to something that would make it autosave. Type: SGFJU.Domain.Model.ValueObjects.Projeto, Entity: SGFJU.Domain.Model.ValueObjects.Projeto 
+
+ -------------------------------------- : 
+2020-03-27 17:55:06.5943|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 17:55:06' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:00:19.7082|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:00:19' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:08:01.9882|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:08:01' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:11:52.4890|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:11:52' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:13:53.8722|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:13:53' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:16:23.2786|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:16:23' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:16:43.8668|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:16:43' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:18:23.5168|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:18:23' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:18:48.8160|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:18:48' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:19:11.6381|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:19:11' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:29:58.6720|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:29:58' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:35:40.4493|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:35:40' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 18:37:10.5558|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 18:37:10' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 19:08:57.1127|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 19:08:57' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 19:16:19.2944|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 19:16:19' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 19:47:51.8232|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 19:47:51' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 22:26:19.0020|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 22:26:19' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 22:27:44.0460|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 22:27:44' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 22:44:12.0456|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 22:44:12' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 22:46:09.1918|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 22:46:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 23:36:00.0355|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 23:36:00' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 23:40:53.3711|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 23:40:53' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-27 23:53:37.1989|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2020 23:53:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 00:00:37.1914|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 00:00:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 00:48:34.6363|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 00:48:34' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 01:06:35.5027|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 01:06:35' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 01:11:06.1548|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 01:11:06' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 01:22:23.6133|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 01:22:23' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:17:45.5806|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:17:45' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:21:24.2267|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:21:24' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:24:26.5007|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:24:26' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:31:14.1618|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:31:14' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:35:00.5599|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:35:00' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:42:49.9594|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:42:49' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:44:22.0984|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:44:22' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:45:32.3806|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:45:32' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:50:09.4010|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:50:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 10:53:24.9033|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 10:53:24' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 11:25:01.0560|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 11:25:01' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 13:04:42.6522|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 13:04:42' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-28 13:21:39.6124|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/03/2020 13:21:39' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 12:03:12.2062|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 12:03:12' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 17:41:09.1121|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 17:41:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 18:41:17.0374|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 18:41:17' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 18:55:50.0656|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 18:55:50' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 20:05:04.4538|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 20:05:04' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 20:13:46.7434|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 20:13:46' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 20:38:37.0820|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 20:38:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 20:42:36.0860|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 20:42:36' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Referência de objeto não definida para uma instância de um objeto. : 
+2020-03-29 21:01:28.8777|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 21:01:28' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 21:07:12.9055|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 21:07:12' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 21:16:26.6972|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 21:16:26' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 21:46:17.8304|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 21:46:17' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 21:53:29.5328|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 21:53:29' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-29 22:04:59.2159|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/03/2020 22:04:59' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 15:26:15.7110|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 15:26:15' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 17:32:48.4687|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 17:32:48' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 17:59:22.8169|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 17:59:22' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 18:04:11.8776|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 18:04:11' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 18:36:35.6590|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 18:36:35' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 18:57:22.3449|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 18:57:22' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 19:02:18.6814|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 19:02:18' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 19:09:16.1206|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 19:09:16' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 19:18:38.9070|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 19:18:38' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Camada ORM Erro ocorrido 
+
+  Classe: JovemRepositoryImpl.SalvarJovem 
+
+ StackTrace:    em NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   em NHibernate.Type.EntityType.GetReferenceValue(Object value, ISessionImplementor session)
+   em NHibernate.Type.ManyToOneType.NullSafeSet(DbCommand cmd, Object value, Int32 index, ISessionImplementor session)
+   em NHibernate.Type.ComponentType.NullSafeSet(DbCommand st, Object value, Int32 begin, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   em NHibernate.Action.EntityInsertAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteInserts()
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.Save(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.SalvarJovem(Jovem aggregateRoot, IList`1 idiomasFaladosJovem, IList`1 habilidadesPossuidasPeloJovem, JovemProjeto projetoAQualJovemPertence, Testemunho testemunhoDoJovem) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 62: 
+
+ Source: NHibernate  
+
+ Inner Exception Message:  
+
+ -------------------------------------- : 
+2020-03-30 19:48:53.5307|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 19:48:53' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 19:54:58.7611|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 19:54:58' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 20:01:08.2863|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 20:01:08' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 20:05:14.3388|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 20:05:14' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 20:11:06.5879|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 20:11:06' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Camada ORM Erro ocorrido 
+
+  Classe: JovemRepositoryImpl.SalvarJovem 
+
+ StackTrace:    em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.Save(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.SalvarJovem(Jovem aggregateRoot, IList`1 idiomasFaladosJovem, IList`1 habilidadesPossuidasPeloJovem, JovemProjeto projetoAQualJovemPertence, Testemunho testemunhoDoJovem) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 54: 
+
+ Source: NHibernate  
+
+ Inner Exception Message:  
+
+ -------------------------------------- : 
+2020-03-30 20:19:22.3198|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 20:19:22' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 20:24:20.3740|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 20:24:20' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 20:35:10.0128|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 20:35:10' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 20:41:38.0820|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 20:41:38' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 20:52:19.1234|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 20:52:19' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 20:56:11.4694|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 20:56:11' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-30 21:04:03.2225|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2020 21:04:03' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-31 17:04:49.4230|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/03/2020 17:04:49' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-31 17:15:26.5484|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/03/2020 17:15:26' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-31 17:20:26.6089|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/03/2020 17:20:26' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-31 17:35:50.9227|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/03/2020 17:35:50' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-31 17:36:47.2198|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/03/2020 17:36:47' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-31 17:37:17.6627|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/03/2020 17:37:17' - Descrição do Erro: O thread estava sendo anulado.
+2020-03-31 17:38:20.5540|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/03/2020 17:38:20' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 11:22:23.7489|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 11:22:23' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 11:28:27.0102|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 11:28:27' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 11:31:31.4799|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 11:31:31' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 11:35:03.9727|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 11:35:03' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 11:37:38.3500|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 11:37:38' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:06:11.5415|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:06:11' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:12:29.4298|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:12:29' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:14:37.5459|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:14:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:19:05.1752|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:19:05' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:22:54.1850|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:22:54' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:25:52.1431|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:25:52' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:26:59.0918|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:26:59' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:28:21.3866|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:28:21' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:33:26.6060|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:33:26' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 12:36:08.9493|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 12:36:08' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 13:25:08.7292|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 13:25:08' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 15:38:35.2796|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 15:38:35' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 16:39:02.5568|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 16:39:02' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 16:45:41.5081|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 16:45:41' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 17:18:08.7077|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 17:18:08' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-01 18:36:32.1188|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2020 18:36:32' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-02 13:24:16.4148|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '02/04/2020 13:24:16' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-02 13:41:09.3792|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '02/04/2020 13:41:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-02 16:37:07.1473|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '02/04/2020 16:37:07' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-02 17:27:47.0031|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '02/04/2020 17:27:47' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-05 14:48:19.5738|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/04/2020 14:48:19' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-05 14:56:09.8889|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/04/2020 14:56:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-05 15:02:59.1246|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/04/2020 15:02:59' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-05 15:05:44.7537|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/04/2020 15:05:44' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-05 15:10:48.2553|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/04/2020 15:10:48' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-05 15:15:17.3737|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/04/2020 15:15:17' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-05 15:17:52.4344|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/04/2020 15:17:52' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-05 15:57:11.6217|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/04/2020 15:57:11' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-06 17:04:11.7294|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/04/2020 17:04:11' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-06 17:49:25.4086|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/04/2020 17:49:25' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-06 17:57:55.7640|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/04/2020 17:57:55' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-06 18:03:31.7911|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/04/2020 18:03:31' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-06 18:10:45.9850|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/04/2020 18:10:45' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 16:21:19.5720|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 16:21:19' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 16:31:24.3232|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 16:31:24' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 16:42:09.6187|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 16:42:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 16:47:25.1124|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 16:47:25' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 16:55:42.6028|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 16:55:42' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 16:59:25.9993|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 16:59:25' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:01:02.0904|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:01:02' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:02:19.9350|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:02:19' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:19:06.7613|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:19:06' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:20:05.3904|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:20:05' - Descrição do Erro: Erro ocorrido CAMADA_APP 
+
+  StackTrace:    em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em SGFJU.UI.Views.RegistraRegiao.btnCadastraRegiao_Click(Object sender, EventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraRegiao.aspx.cs:linha 131: 
+
+ Source: mscorlib  
+
+ Inner Exception Message:  
+
+ --------------------------------------
+2020-04-07 17:23:06.9781|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:23:06' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:23:44.6503|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:23:44' - Descrição do Erro: Erro ocorrido CAMADA_APP 
+
+  StackTrace:    em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em SGFJU.UI.Views.RegistraRegiao.btnCadastraRegiao_Click(Object sender, EventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraRegiao.aspx.cs:linha 131: 
+
+ Source: mscorlib  
+
+ Inner Exception Message:  
+
+ --------------------------------------
+2020-04-07 17:28:07.7180|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:28:07' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:30:49.6230|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:30:49' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:31:08.1923|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:31:08' - Descrição do Erro: Erro ocorrido CAMADA_APP 
+
+  StackTrace:    em SGFJU.UI.Views.RegistraRegiao.PreencheGridRegioes() na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraRegiao.aspx.cs:linha 71
+   em SGFJU.UI.Views.RegistraRegiao.btnCadastraRegiao_Click(Object sender, EventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraRegiao.aspx.cs:linha 149: 
+
+ Source: SGFJU.UI  
+
+ Inner Exception Message:  
+
+ --------------------------------------
+2020-04-07 17:32:44.4967|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:32:44' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:34:08.9208|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:34:08' - Descrição do Erro: Erro ocorrido CAMADA_APP 
+
+  StackTrace:    em SGFJU.UI.Views.RegistraRegiao.PreencheGridRegioes() na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraRegiao.aspx.cs:linha 71
+   em SGFJU.UI.Views.RegistraRegiao.btnCadastraRegiao_Click(Object sender, EventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraRegiao.aspx.cs:linha 153: 
+
+ Source: SGFJU.UI  
+
+ Inner Exception Message:  
+
+ --------------------------------------
+2020-04-07 17:36:43.9825|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:36:43' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:38:58.6750|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:38:58' - Descrição do Erro: Erro ocorrido CAMADA_APP 
+
+  StackTrace:    em SGFJU.UI.Views.RegistraRegiao.PreencheGridRegioes() na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraRegiao.aspx.cs:linha 71
+   em SGFJU.UI.Views.RegistraRegiao.btnCadastraRegiao_Click(Object sender, EventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraRegiao.aspx.cs:linha 153: 
+
+ Source: SGFJU.UI  
+
+ Inner Exception Message:  
+
+ --------------------------------------
+2020-04-07 17:39:48.4401|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:39:48' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-07 17:45:12.5869|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/04/2020 17:45:12' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-08 13:49:45.7265|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/04/2020 13:49:45' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-08 13:56:39.4658|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/04/2020 13:56:39' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-08 14:07:00.8636|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/04/2020 14:07:00' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-08 14:17:24.1673|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/04/2020 14:17:24' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-08 14:39:24.0068|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/04/2020 14:39:24' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-08 15:09:10.0615|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/04/2020 15:09:10' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-08 16:21:06.1555|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/04/2020 16:21:06' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-08 16:22:29.2056|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/04/2020 16:22:29' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-08 16:24:29.6059|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/04/2020 16:24:29' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-09 16:34:55.1989|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/04/2020 16:34:55' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-09 16:39:55.3595|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/04/2020 16:39:55' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-09 16:42:08.2034|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/04/2020 16:42:08' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-09 16:49:14.2761|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/04/2020 16:49:14' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 12:27:19.4040|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 12:27:19' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 13:23:34.8437|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 13:23:34' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 13:27:21.4294|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 13:27:21' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 14:01:34.3879|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 14:01:34' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 14:10:36.1034|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 14:10:36' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 14:19:51.8773|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 14:19:51' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 14:28:11.2072|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 14:28:11' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 14:37:13.0318|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 14:37:13' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 17:00:01.8537|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 17:00:01' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 17:09:45.5511|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 17:09:45' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 17:52:21.4288|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 17:52:21' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-10 17:54:23.7126|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/04/2020 17:54:23' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-11 14:05:43.7883|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/04/2020 14:05:43' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-11 14:51:48.2467|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/04/2020 14:51:48' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-11 15:24:12.7142|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/04/2020 15:24:12' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-11 16:07:36.6536|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/04/2020 16:07:36' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-11 19:07:38.5443|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/04/2020 19:07:38' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-12 14:59:31.2503|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '12/04/2020 14:59:31' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-12 15:44:37.5228|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '12/04/2020 15:44:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-12 16:31:17.7704|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '12/04/2020 16:31:17' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-12 17:21:54.3727|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '12/04/2020 17:21:54' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-12 18:19:14.6489|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '12/04/2020 18:19:14' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-12 18:20:13.1065|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '12/04/2020 18:20:13' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-12 18:23:02.8083|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '12/04/2020 18:23:02' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-13 11:07:01.8826|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/04/2020 11:07:01' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-13 11:35:17.0578|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/04/2020 11:35:17' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-13 12:14:22.4672|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/04/2020 12:14:22' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-13 13:17:00.9883|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/04/2020 13:17:00' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-13 13:17:04.9770|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/04/2020 13:17:04' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-13 14:12:11.1504|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/04/2020 14:12:11' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-13 16:25:45.1955|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/04/2020 16:25:45' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-13 20:43:16.7941|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/04/2020 20:43:16' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-14 11:27:06.2006|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/04/2020 11:27:06' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-14 12:17:44.5168|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/04/2020 12:17:44' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-14 12:20:39.8592|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/04/2020 12:20:39' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-14 15:26:23.0127|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/04/2020 15:26:23' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-14 15:42:00.0571|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/04/2020 15:42:00' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-14 15:47:00.5844|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/04/2020 15:47:00' - Descrição do Erro: Ocorreu o seguinte erro, ao carregar controles da páginaReferência de objeto não definida para uma instância de um objeto.
+2020-04-14 15:47:07.0822|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/04/2020 15:47:07' - Descrição do Erro: Ocorreu o seguinte erro, ao carregar controles da páginaReferência de objeto não definida para uma instância de um objeto.
+2020-04-14 15:47:41.1384|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/04/2020 15:47:41' - Descrição do Erro: Ocorreu o seguinte erro, ao carregar controles da páginaReferência de objeto não definida para uma instância de um objeto.
+2020-04-14 18:11:28.9607|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/04/2020 18:11:28' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 13:36:02.8928|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 13:36:02' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 14:02:37.4538|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 14:02:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 14:02:58.1873|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 14:02:58' - Descrição do Erro: Erro  
+
+  StackTrace:    em System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   em System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   em System.Web.UI.DataBinder.Eval(Object container, String expression)
+   em System.Web.UI.TemplateControl.Eval(String expression)
+   em ASP.views_registraigrejas_aspx.__DataBind__control35(Object sender, EventArgs e) na c:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraIgrejas.aspx:linha 130
+   em System.Web.UI.Control.OnDataBinding(EventArgs e)
+   em System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   em System.Web.UI.Control.DataBind()
+   em System.Web.UI.Control.DataBindChildren()
+   em System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   em System.Web.UI.Control.DataBind()
+   em System.Web.UI.Control.DataBindChildren()
+   em System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   em System.Web.UI.Control.DataBind()
+   em Telerik.Web.UI.GridItem.SetupItem(Boolean dataBind, Object dataItem, GridColumn[] columns, ControlCollection rows)
+   em Telerik.Web.UI.GridItemBuilder.InitializeItem(Int32 dataSourceIndex, String& nextItemHierarchicalIndex, Boolean& itemIsInEditMode)
+   em Telerik.Web.UI.GridItemBuilder.CreateItems(GridGroupingContext group)
+   em Telerik.Web.UI.GridTableView.CreateItems(IEnumerator enumerator, GridColumn[] columns, ControlCollection controls)
+   em Telerik.Web.UI.GridTableView.CreateControlHierarchy(Boolean useDataSource)
+   em Telerik.Web.UI.GridTableView.CreateChildControls(IEnumerable dataSource, Boolean useDataSource)
+   em System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   em System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   em System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   em System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   em Telerik.Web.UI.GridTableView.PerformSelect()
+   em System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   em Telerik.Web.UI.GridTableView.DataBind()
+   em Telerik.Web.UI.RadGrid.DataBind()
+   em SGFJU.UI.Views.RegistraIgrejas.PreencheGridRegioes() na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraIgrejas.aspx.cs:linha 73
+   em SGFJU.UI.Views.RegistraIgrejas.CarregaControles() na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraIgrejas.aspx.cs:linha 31: 
+
+ Source: System.Web  
+
+ Inner Exception Message:  
+
+ --------------------------------------
+2020-04-15 14:03:42.1883|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 14:03:42' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 14:10:42.3240|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 14:10:42' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 14:17:18.5609|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 14:17:18' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 14:18:12.7444|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 14:18:12' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 18:00:41.4658|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 18:00:41' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 18:02:21.7058|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 18:02:21' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 18:12:04.0605|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 18:12:04' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 18:19:03.8036|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 18:19:03' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 18:22:57.6801|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 18:22:57' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 18:24:40.0802|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 18:24:40' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 18:44:09.0311|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 18:44:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 18:52:27.2214|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 18:52:27' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-15 18:54:53.5607|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '15/04/2020 18:54:53' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 14:27:37.5863|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 14:27:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 14:34:04.6238|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 14:34:04' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 14:43:22.3453|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 14:43:22' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 15:13:36.4849|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 15:13:36' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 15:46:41.0519|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 15:46:41' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 15:58:37.7610|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 15:58:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 16:01:03.5660|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 16:01:03' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 20:21:09.6825|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 20:21:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 20:29:08.6385|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 20:29:08' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-16 20:39:54.8570|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '16/04/2020 20:39:54' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 11:09:58.9164|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 11:09:58' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 11:24:48.6237|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 11:24:48' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 12:04:47.1324|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 12:04:47' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 13:07:43.0492|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 13:07:43' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 13:12:49.6231|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 13:12:49' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 13:16:56.6420|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 13:16:56' - Descrição do Erro: Erro ocorrido CAMADA_APP 
+
+  StackTrace:    em System.Collections.Specialized.NameValueCollection.Set(String name, String value)
+   em System.Collections.Specialized.NameValueCollection.set_Item(String name, String value)
+   em SGFJU.UI.Views.formAdicionaIgrejasRegiao.limpaControles() na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\formAdicionaIgrejasRegiao.aspx.cs:linha 118
+   em SGFJU.UI.Views.formAdicionaIgrejasRegiao.btnCadastraIgreja_Click(Object sender, EventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\formAdicionaIgrejasRegiao.aspx.cs:linha 74: 
+
+ Source: System  
+
+ Inner Exception Message:  
+
+ --------------------------------------
+2020-04-17 13:19:11.2625|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 13:19:11' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 13:22:06.4367|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 13:22:06' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 13:30:20.1053|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 13:30:20' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 13:41:25.0066|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 13:41:25' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 13:45:59.2841|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 13:45:59' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 13:46:37.1746|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 13:46:37' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 14:01:13.7227|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 14:01:13' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 14:02:21.0974|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 14:02:21' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 15:37:44.9878|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 15:37:44' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 15:41:04.0862|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 15:41:04' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 15:53:38.0355|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 15:53:38' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 15:56:59.5211|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 15:56:59' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 15:58:52.1644|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 15:58:52' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-17 16:19:08.4596|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/04/2020 16:19:08' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-18 19:44:23.2694|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2020 19:44:23' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-18 20:00:31.3389|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2020 20:00:31' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-18 20:15:12.8674|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2020 20:15:12' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-18 20:17:31.0297|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2020 20:17:31' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-18 20:23:09.2602|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2020 20:23:09' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-18 20:26:12.3912|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2020 20:26:12' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-18 20:52:15.0710|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2020 20:52:15' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-19 15:07:50.0591|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2020 15:07:50' - Descrição do Erro: O thread estava sendo anulado.
+2020-04-19 15:43:07.3301|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2020 15:43:07' - Descrição do Erro: gerando exceção de teste
+2020-04-30 14:08:08.7455|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/04/2020 14:08:08' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Camada ORM Erro ocorrido 
+
+  Classe: JovemRepositoryImpl.SalvarJovem 
+
+ StackTrace:    em NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   em NHibernate.Type.EntityType.GetReferenceValue(Object value, ISessionImplementor session)
+   em NHibernate.Type.ManyToOneType.NullSafeSet(DbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(DbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(IPersistentCollection collection, Object id, ISessionImplementor session)
+   em NHibernate.Action.CollectionRecreateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.SalvarJovem(Jovem aggregateRoot, IList`1 idiomasFaladosJovem, IList`1 habilidadesPossuidasPeloJovem, JovemProjeto projetoAQualJovemPertence, Testemunho testemunhoDoJovem) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 77: 
+
+ Source: NHibernate  
+
+ Inner Exception Message:  
+
+ -------------------------------------- : 
+2020-04-30 14:22:08.7564|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/04/2020 14:22:08' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Camada ORM Erro ocorrido 
+
+  Classe: JovemRepositoryImpl.SalvarJovem 
+
+ StackTrace:    em NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   em NHibernate.Type.EntityType.GetReferenceValue(Object value, ISessionImplementor session)
+   em NHibernate.Type.ManyToOneType.NullSafeSet(DbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(DbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(IPersistentCollection collection, Object id, ISessionImplementor session)
+   em NHibernate.Action.CollectionRecreateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.SalvarJovem(Jovem aggregateRoot, IList`1 idiomasFaladosJovem, IList`1 habilidadesPossuidasPeloJovem, JovemProjeto projetoAQualJovemPertence, Testemunho testemunhoDoJovem) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 77: 
+
+ Source: NHibernate  
+
+ Inner Exception Message:  
+
+ -------------------------------------- : 
+2020-04-30 14:28:36.1135|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/04/2020 14:28:36' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Camada ORM Erro ocorrido 
+
+  Classe: JovemRepositoryImpl.SalvarJovem 
+
+ StackTrace:    em NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   em NHibernate.Type.EntityType.GetReferenceValue(Object value, ISessionImplementor session)
+   em NHibernate.Type.ManyToOneType.NullSafeSet(DbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(DbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(IPersistentCollection collection, Object id, ISessionImplementor session)
+   em NHibernate.Action.CollectionRecreateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.SalvarJovem(Jovem aggregateRoot, IList`1 idiomasFaladosJovem, IList`1 habilidadesPossuidasPeloJovem, JovemProjeto projetoAQualJovemPertence, Testemunho testemunhoDoJovem) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 77: 
+
+ Source: NHibernate  
+
+ Inner Exception Message:  
+
+ -------------------------------------- : 
+2020-04-30 14:30:16.6276|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/04/2020 14:30:16' - Descrição do Erro: Ocorreu o seguinte erro na camada de negócios Camada ORM Erro ocorrido 
+
+  Classe: JovemRepositoryImpl.SalvarJovem 
+
+ StackTrace:    em NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   em NHibernate.Type.EntityType.GetReferenceValue(Object value, ISessionImplementor session)
+   em NHibernate.Type.ManyToOneType.NullSafeSet(DbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(DbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   em NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(IPersistentCollection collection, Object id, ISessionImplementor session)
+   em NHibernate.Action.CollectionRecreateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.SalvarJovem(Jovem aggregateRoot, IList`1 idiomasFaladosJovem, IList`1 habilidadesPossuidasPeloJovem, JovemProjeto projetoAQualJovemPertence, Testemunho testemunhoDoJovem) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 77: 
+
+ Source: NHibernate  
+
+ Inner Exception Message:  
+
+ -------------------------------------- : 
+2020-05-07 00:56:40.4034|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/05/2020 00:56:40' - Descrição do Erro: Erro ocorrido CAMADA_APP 
+
+  StackTrace:    em SGFJU.Domain.Model.Entities.JovemHabilidadeProjeto.Equals(Object obj) na C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model\Entities\JovemHabilidadeProjeto.cs:linha 19
+   em System.Collections.Generic.ObjectEqualityComparer`1.Equals(T x, T y)
+   em System.Linq.Set`1.Find(TElement value, Boolean add)
+   em System.Linq.Enumerable.<DistinctIterator>d__64`1.MoveNext()
+   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   em SGFJU.UI.Views.RegistraJovem.RadWizard1_FinishButtonClick(Object sender, WizardEventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraJovem.aspx.cs:linha 526: 
+
+ Source: SGFJU.Domain.Model  
+
+ Inner Exception Message:  
+
+ --------------------------------------
+2020-05-10 15:04:52.4061|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/05/2020 15:04:52' - Descrição do Erro: Erro ocorrido CAMADA_APP 
+
+  StackTrace:    em SGFJU.UI.Views.PaginaTeste.RegerarArquivoJSONDTO(FacadeEstadoImpl facade, BlocoDTO blocoNovoDTO) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraBlocos.aspx.cs:linha 146
+   em SGFJU.UI.Views.PaginaTeste.btnCadastrBloco_Click1(Object sender, EventArgs e) na C:\Users\Intel\source\repos\SGFJU\SGFJU.UI\Views\RegistraBlocos.aspx.cs:linha 86: 
+
+ Source: SGFJU.UI  
+
+ Inner Exception Message:  
+
+ --------------------------------------

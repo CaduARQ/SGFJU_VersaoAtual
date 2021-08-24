@@ -1,0 +1,137 @@
+[
+  {
+    "idBloco": 236,
+    "IdRegiao": 1103,
+    "NomeRegiao": "Bugio"
+  },
+  {
+    "idBloco": 236,
+    "IdRegiao": 1104,
+    "NomeRegiao": "Siqueira campos"
+  },
+  {
+    "idBloco": 236,
+    "IdRegiao": 1106,
+    "NomeRegiao": "Siqueira campos"
+  },
+  {
+    "idBloco": 236,
+    "IdRegiao": 1112,
+    "NomeRegiao": "Eduardo Gomes"
+  },
+  {
+    "idBloco": 236,
+    "IdRegiao": 1118,
+    "NomeRegiao": "São Conrado"
+  },
+  {
+    "idBloco": 239,
+    "IdRegiao": 1179,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 246,
+    "IdRegiao": 1201,
+    "NomeRegiao": "Sede Barra"
+  },
+  {
+    "idBloco": 246,
+    "IdRegiao": 1202,
+    "NomeRegiao": "18 Do Forte"
+  },
+  {
+    "idBloco": 253,
+    "IdRegiao": 1218,
+    "NomeRegiao": "Sede Augusto Franco"
+  },
+  {
+    "idBloco": 253,
+    "IdRegiao": 1220,
+    "NomeRegiao": "Sede Augusto Franco"
+  },
+  {
+    "idBloco": 253,
+    "IdRegiao": 1240,
+    "NomeRegiao": "Sede Atalaia"
+  },
+  {
+    "idBloco": 254,
+    "IdRegiao": 1241,
+    "NomeRegiao": "Sede João Alves"
+  },
+  {
+    "idBloco": 254,
+    "IdRegiao": 1242,
+    "NomeRegiao": "Sede Marcos Freire 2"
+  },
+  {
+    "idBloco": 254,
+    "IdRegiao": 1243,
+    "NomeRegiao": "Sede Conjunto Jardim"
+  },
+  {
+    "idBloco": 255,
+    "IdRegiao": 1244,
+    "NomeRegiao": "Sede Itabaiana"
+  },
+  {
+    "idBloco": 256,
+    "IdRegiao": 1250,
+    "NomeRegiao": "Sede Propriá"
+  },
+  {
+    "idBloco": 256,
+    "IdRegiao": 1251,
+    "NomeRegiao": "Sede Capela"
+  },
+  {
+    "idBloco": 256,
+    "IdRegiao": 1252,
+    "NomeRegiao": "Sede Carmópolis"
+  },
+  {
+    "idBloco": 256,
+    "IdRegiao": 1253,
+    "NomeRegiao": "Sede Aquidab"
+  },
+  {
+    "idBloco": 256,
+    "IdRegiao": 1254,
+    "NomeRegiao": "Sede Neopólis"
+  },
+  {
+    "idBloco": 256,
+    "IdRegiao": 1977,
+    "NomeRegiao": "NEOPOLIS"
+  },
+  {
+    "idBloco": 258,
+    "IdRegiao": 1259,
+    "NomeRegiao": "Sede Estancia"
+  },
+  {
+    "idBloco": 258,
+    "IdRegiao": 1260,
+    "NomeRegiao": "Sede Itabaianinha"
+  },
+  {
+    "idBloco": 259,
+    "IdRegiao": 1269,
+    "NomeRegiao": "Sede Glória"
+  },
+  {
+    "idBloco": 260,
+    "IdRegiao": 1277,
+    "NomeRegiao": "Sede Lagarto"
+  },
+  {
+    "idBloco": 260,
+    "IdRegiao": 1280,
+    "NomeRegiao": "Sede Simão Dias"
+  },
+  {
+    "idBloco": 260,
+    "IdRegiao": 1281,
+    "NomeRegiao": "Sede Tobias Barreto"
+  }
+]

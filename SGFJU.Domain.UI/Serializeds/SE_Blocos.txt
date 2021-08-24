@@ -1,0 +1,67 @@
+[
+  {
+    "idBloco": 236,
+    "NomeBloco": "Bloco Catedral  ",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 239,
+    "NomeBloco": "Sede Estadual ( Catedral)",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 246,
+    "NomeBloco": "Bloco Barra",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 253,
+    "NomeBloco": "Bloco Augusto Franco",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 254,
+    "NomeBloco": "Bloco Socorro",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 255,
+    "NomeBloco": "Bloco Itabaiana",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 256,
+    "NomeBloco": "Bloco Propriá",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 257,
+    "NomeBloco": "Bloco Est",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 258,
+    "NomeBloco": "Bloco Estancia",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 259,
+    "NomeBloco": "Bloco Glória",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 260,
+    "NomeBloco": "Bloco Lagarto",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 297,
+    "NomeBloco": "Bloco Lagarto",
+    "IdEstadoBloco": 53
+  },
+  {
+    "idBloco": 340,
+    "NomeBloco": "Bloco Sede estadual Catedral",
+    "IdEstadoBloco": 53
+  }
+]

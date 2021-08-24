@@ -1,0 +1,17 @@
+[
+  {
+    "idBloco": 26,
+    "IdRegiao": 38,
+    "NomeRegiao": "Região Treinamento 3"
+  },
+  {
+    "idBloco": 26,
+    "IdRegiao": 39,
+    "NomeRegiao": "Região Treinamento 4"
+  },
+  {
+    "idBloco": 26,
+    "IdRegiao": 40,
+    "NomeRegiao": "Região Treinamento 5"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "idBloco": 323,
+    "IdRegiao": 1742,
+    "NomeRegiao": "Silvio Leite"
+  },
+  {
+    "idBloco": 326,
+    "IdRegiao": 1743,
+    "NomeRegiao": "Buritis"
+  },
+  {
+    "idBloco": 326,
+    "IdRegiao": 1744,
+    "NomeRegiao": "Raià Do Sol"
+  },
+  {
+    "idBloco": 326,
+    "IdRegiao": 1745,
+    "NomeRegiao": "Santa Tereza"
+  },
+  {
+    "idBloco": 326,
+    "IdRegiao": 1746,
+    "NomeRegiao": "Caracaraì"
+  },
+  {
+    "idBloco": 326,
+    "IdRegiao": 1747,
+    "NomeRegiao": "Pintolandia"
+  },
+  {
+    "idBloco": 326,
+    "IdRegiao": 1748,
+    "NomeRegiao": "Silvio Leite"
+  },
+  {
+    "idBloco": 326,
+    "IdRegiao": 1764,
+    "NomeRegiao": "Catedral"
+  }
+]

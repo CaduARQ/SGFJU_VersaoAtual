@@ -1,0 +1,12 @@
+[
+  {
+    "idBloco": 23,
+    "NomeBloco": "Bloco Sertão",
+    "IdEstadoBloco": 18
+  },
+  {
+    "idBloco": 25,
+    "NomeBloco": "Bloco Treinamento 2",
+    "IdEstadoBloco": 18
+  }
+]

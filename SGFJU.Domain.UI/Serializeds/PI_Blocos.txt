@@ -1,0 +1,52 @@
+[
+  {
+    "idBloco": 120,
+    "NomeBloco": "São Joaquim",
+    "IdEstadoBloco": 46
+  },
+  {
+    "idBloco": 121,
+    "NomeBloco": "Piçarreira",
+    "IdEstadoBloco": 46
+  },
+  {
+    "idBloco": 122,
+    "NomeBloco": "Barão",
+    "IdEstadoBloco": 46
+  },
+  {
+    "idBloco": 123,
+    "NomeBloco": "Dirceu",
+    "IdEstadoBloco": 46
+  },
+  {
+    "idBloco": 124,
+    "NomeBloco": "Formosa",
+    "IdEstadoBloco": 46
+  },
+  {
+    "idBloco": 125,
+    "NomeBloco": "Parnaíba",
+    "IdEstadoBloco": 46
+  },
+  {
+    "idBloco": 126,
+    "NomeBloco": "Piripiri",
+    "IdEstadoBloco": 46
+  },
+  {
+    "idBloco": 127,
+    "NomeBloco": "Bom Jesus",
+    "IdEstadoBloco": 46
+  },
+  {
+    "idBloco": 128,
+    "NomeBloco": "Picos",
+    "IdEstadoBloco": 46
+  },
+  {
+    "idBloco": 129,
+    "NomeBloco": "Catedral",
+    "IdEstadoBloco": 46
+  }
+]

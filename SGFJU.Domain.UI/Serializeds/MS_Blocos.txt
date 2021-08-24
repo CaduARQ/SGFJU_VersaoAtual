@@ -1,0 +1,32 @@
+[
+  {
+    "idBloco": 100,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 40
+  },
+  {
+    "idBloco": 101,
+    "NomeBloco": "Bloco Dourados",
+    "IdEstadoBloco": 40
+  },
+  {
+    "idBloco": 102,
+    "NomeBloco": "Bloco Corumbá",
+    "IdEstadoBloco": 40
+  },
+  {
+    "idBloco": 103,
+    "NomeBloco": "Bloco Três Lagoas",
+    "IdEstadoBloco": 40
+  },
+  {
+    "idBloco": 158,
+    "NomeBloco": "Bloco Chapadão do Sul",
+    "IdEstadoBloco": 40
+  },
+  {
+    "idBloco": 159,
+    "NomeBloco": "Sede Estadual",
+    "IdEstadoBloco": 40
+  }
+]

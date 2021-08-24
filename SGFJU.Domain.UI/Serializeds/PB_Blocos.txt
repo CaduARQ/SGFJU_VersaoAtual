@@ -1,0 +1,22 @@
+[
+  {
+    "idBloco": 188,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 43
+  },
+  {
+    "idBloco": 189,
+    "NomeBloco": "Bloco Campina Grande",
+    "IdEstadoBloco": 43
+  },
+  {
+    "idBloco": 190,
+    "NomeBloco": "Bloco Patos",
+    "IdEstadoBloco": 43
+  },
+  {
+    "idBloco": 350,
+    "NomeBloco": "Bloco Sapé",
+    "IdEstadoBloco": 43
+  }
+]

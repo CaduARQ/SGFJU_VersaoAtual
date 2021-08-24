@@ -1,0 +1,87 @@
+[
+  {
+    "idBloco": 178,
+    "NomeBloco": "Bloco Araguaina ",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 179,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 180,
+    "NomeBloco": "Bloco Capital",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 181,
+    "NomeBloco": "Bloco Guaraí",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 240,
+    "NomeBloco": "Bloco Araguaina Sul",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 241,
+    "NomeBloco": "Bloco Campos Belos",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 242,
+    "NomeBloco": "Bloco Porto Nacional",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 243,
+    "NomeBloco": "Bloco Redenção",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 244,
+    "NomeBloco": "Bloco Pouso Alegre",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 245,
+    "NomeBloco": "Bloco Jd. Servilha",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 247,
+    "NomeBloco": "Bloco Araguatins",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 248,
+    "NomeBloco": "Bloco Arno 32",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 249,
+    "NomeBloco": "Bloco Taquari",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 250,
+    "NomeBloco": "Bloco Araguaia",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 251,
+    "NomeBloco": "Bloco Paraíso",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 252,
+    "NomeBloco": "Bloco Aureny 3",
+    "IdEstadoBloco": 54
+  },
+  {
+    "idBloco": 310,
+    "NomeBloco": "Bloco Palmas",
+    "IdEstadoBloco": 54
+  }
+]

@@ -1,0 +1,487 @@
+[
+  {
+    "idBloco": 133,
+    "IdRegiao": 1773,
+    "NomeRegiao": "Sede Estadual"
+  },
+  {
+    "idBloco": 133,
+    "IdRegiao": 1886,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 578,
+    "NomeRegiao": "Água Fria "
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 579,
+    "NomeRegiao": "Beberibe "
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 580,
+    "NomeRegiao": "Bomba do Hemetério"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 581,
+    "NomeRegiao": "Brasilit"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 582,
+    "NomeRegiao": "Campo Grande "
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 583,
+    "NomeRegiao": "Casa Amarela "
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 584,
+    "NomeRegiao": "Caxangá"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 585,
+    "NomeRegiao": "Encruzilhada "
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 586,
+    "NomeRegiao": "Engenho do Meio"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 588,
+    "NomeRegiao": "Ibura "
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 591,
+    "NomeRegiao": "Ipsep"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 593,
+    "NomeRegiao": "Iputinga "
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 595,
+    "NomeRegiao": "Jardim São Paulo"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 596,
+    "NomeRegiao": "Jordão"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 600,
+    "NomeRegiao": "Nova Descoberta"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 601,
+    "NomeRegiao": "Torrões"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 1919,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 134,
+    "IdRegiao": 1920,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 602,
+    "NomeRegiao": "Abreu e Lima"
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 603,
+    "NomeRegiao": "Afogados "
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 604,
+    "NomeRegiao": "Beira  Mar 2"
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 608,
+    "NomeRegiao": "Caixa D´água"
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 611,
+    "NomeRegiao": "Camaragibe "
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 614,
+    "NomeRegiao": "Goiana "
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 615,
+    "NomeRegiao": "Cruz de Rebouças "
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 617,
+    "NomeRegiao": "Igarassu"
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 619,
+    "NomeRegiao": "Janga "
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 622,
+    "NomeRegiao": "Jardim Atlântico "
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 624,
+    "NomeRegiao": "Jardim  Paulista "
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 679,
+    "NomeRegiao": "Maranguape 0"
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 684,
+    "NomeRegiao": "Paratibe "
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 690,
+    "NomeRegiao": "Paulista"
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 691,
+    "NomeRegiao": "Peixinhos"
+  },
+  {
+    "idBloco": 135,
+    "IdRegiao": 692,
+    "NomeRegiao": "Rio Doce"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 693,
+    "NomeRegiao": "Boa Viagem"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 694,
+    "NomeRegiao": "Cabo"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 695,
+    "NomeRegiao": "Cabo 2"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 697,
+    "NomeRegiao": "Cajueiro Seco"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 698,
+    "NomeRegiao": "Candeias"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 701,
+    "NomeRegiao": "Cavaleiro"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 704,
+    "NomeRegiao": "Cidade do Ó"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 706,
+    "NomeRegiao": "Jaboatão"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 708,
+    "NomeRegiao": "Jardim Piedade"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 710,
+    "NomeRegiao": "Parque do Capibaribe"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 711,
+    "NomeRegiao": "Piedade"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 712,
+    "NomeRegiao": "Pina"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 713,
+    "NomeRegiao": "Ponte dos carvalhos"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 714,
+    "NomeRegiao": "Prazeres"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 715,
+    "NomeRegiao": "São Lourenço"
+  },
+  {
+    "idBloco": 136,
+    "IdRegiao": 1885,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 137,
+    "IdRegiao": 553,
+    "NomeRegiao": "Carpina "
+  },
+  {
+    "idBloco": 137,
+    "IdRegiao": 567,
+    "NomeRegiao": "Condado"
+  },
+  {
+    "idBloco": 137,
+    "IdRegiao": 568,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 137,
+    "IdRegiao": 569,
+    "NomeRegiao": "Paudalho"
+  },
+  {
+    "idBloco": 137,
+    "IdRegiao": 570,
+    "NomeRegiao": "Timbaúba"
+  },
+  {
+    "idBloco": 137,
+    "IdRegiao": 571,
+    "NomeRegiao": "Vitória"
+  },
+  {
+    "idBloco": 138,
+    "IdRegiao": 532,
+    "NomeRegiao": "Afogados da Ingazeira"
+  },
+  {
+    "idBloco": 138,
+    "IdRegiao": 533,
+    "NomeRegiao": "Araripina"
+  },
+  {
+    "idBloco": 138,
+    "IdRegiao": 534,
+    "NomeRegiao": "Arco Verde"
+  },
+  {
+    "idBloco": 138,
+    "IdRegiao": 535,
+    "NomeRegiao": "Buíque"
+  },
+  {
+    "idBloco": 138,
+    "IdRegiao": 536,
+    "NomeRegiao": "Ouricuri"
+  },
+  {
+    "idBloco": 138,
+    "IdRegiao": 537,
+    "NomeRegiao": "Salgueiro"
+  },
+  {
+    "idBloco": 138,
+    "IdRegiao": 538,
+    "NomeRegiao": "São José do Egito "
+  },
+  {
+    "idBloco": 138,
+    "IdRegiao": 539,
+    "NomeRegiao": "Serra Talhada"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 720,
+    "NomeRegiao": "Belo Jardim"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 723,
+    "NomeRegiao": "Caruaru"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 725,
+    "NomeRegiao": "Garanhuns"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 728,
+    "NomeRegiao": "Gravatá"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 730,
+    "NomeRegiao": "Lajedo"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 731,
+    "NomeRegiao": "Leão Dourado"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 732,
+    "NomeRegiao": "Limoeiro"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 733,
+    "NomeRegiao": "Palmares"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 734,
+    "NomeRegiao": "Pesqueira"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 735,
+    "NomeRegiao": "Petrópolis"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 736,
+    "NomeRegiao": "Santa Cruz"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 737,
+    "NomeRegiao": "Surubim "
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 738,
+    "NomeRegiao": "Toritama"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 1933,
+    "NomeRegiao": "Santa Cruz"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 2074,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 139,
+    "IdRegiao": 2180,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 572,
+    "NomeRegiao": "Areia Branca"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 573,
+    "NomeRegiao": "Petrolândia"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 574,
+    "NomeRegiao": "Petrolina"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 575,
+    "NomeRegiao": "Petrolina 2"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 576,
+    "NomeRegiao": "Petrolina 6"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 577,
+    "NomeRegiao": "Santa Maria da Boa Vista"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 1932,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 1976,
+    "NomeRegiao": "Petrolândia"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 1978,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 1979,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 1980,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 1981,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 1982,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 1983,
+    "NomeRegiao": "EXCLUIR"
+  },
+  {
+    "idBloco": 140,
+    "IdRegiao": 2071,
+    "NomeRegiao": "EXCLUIR"
+  }
+]

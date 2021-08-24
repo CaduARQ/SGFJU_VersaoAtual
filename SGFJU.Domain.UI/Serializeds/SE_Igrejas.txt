@@ -1,0 +1,470 @@
+[
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1103,
+    "IdIgreja": 3279,
+    "NomeIgreja": "Jardim Centenário"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1103,
+    "IdIgreja": 3280,
+    "NomeIgreja": "Bairro América"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1103,
+    "IdIgreja": 3342,
+    "NomeIgreja": "Sede Bugio"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1104,
+    "IdIgreja": 3291,
+    "NomeIgreja": "Laranjeiras"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1104,
+    "IdIgreja": 3292,
+    "NomeIgreja": "Riachuelo"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1104,
+    "IdIgreja": 3293,
+    "NomeIgreja": "Salgado Filho"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1104,
+    "IdIgreja": 3294,
+    "NomeIgreja": "Centro"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1104,
+    "IdIgreja": 3295,
+    "NomeIgreja": "Itaporanga"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1104,
+    "IdIgreja": 3351,
+    "NomeIgreja": "Sede Siqueira campos"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1112,
+    "IdIgreja": 3302,
+    "NomeIgreja": "São cristovão"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1112,
+    "IdIgreja": 3303,
+    "NomeIgreja": "Rosa Elze"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1112,
+    "IdIgreja": 3352,
+    "NomeIgreja": "Sede Eduardo Gomes"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1118,
+    "IdIgreja": 3361,
+    "NomeIgreja": "Sede São Conrado"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1179,
+    "IdIgreja": 3326,
+    "NomeIgreja": "Sede Estadual"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1201,
+    "IdIgreja": 3377,
+    "NomeIgreja": "Sede Barra"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1201,
+    "IdIgreja": 3388,
+    "NomeIgreja": "Pirambú"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1201,
+    "IdIgreja": 3389,
+    "NomeIgreja": "Santo Amaro"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1201,
+    "IdIgreja": 3433,
+    "NomeIgreja": "Indústrial"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1201,
+    "IdIgreja": 3434,
+    "NomeIgreja": "Porto Dantas"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1202,
+    "IdIgreja": 3398,
+    "NomeIgreja": "Sede 18 do Forte"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1202,
+    "IdIgreja": 3399,
+    "NomeIgreja": "Maracajú"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1202,
+    "IdIgreja": 3400,
+    "NomeIgreja": "Santos Dumont"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1218,
+    "IdIgreja": 3486,
+    "NomeIgreja": "Padre Pedro"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1218,
+    "IdIgreja": 3487,
+    "NomeIgreja": "Santa Maria"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1218,
+    "IdIgreja": 3513,
+    "NomeIgreja": "Sede Augusto Franco"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1240,
+    "IdIgreja": 3505,
+    "NomeIgreja": "Mosqueiro"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1240,
+    "IdIgreja": 3506,
+    "NomeIgreja": "Coroa do meio"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1240,
+    "IdIgreja": 3507,
+    "NomeIgreja": "Sede Atalaia"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1241,
+    "IdIgreja": 3549,
+    "NomeIgreja": "Sede João Alves"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1241,
+    "IdIgreja": 3550,
+    "NomeIgreja": "Fernando Collor"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1241,
+    "IdIgreja": 3551,
+    "NomeIgreja": "Lamarão"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1242,
+    "IdIgreja": 3564,
+    "NomeIgreja": "Sede Marcos Freire2"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1242,
+    "IdIgreja": 3565,
+    "NomeIgreja": "Piabeta"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1242,
+    "IdIgreja": 3566,
+    "NomeIgreja": "Marcos Freire 3"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1242,
+    "IdIgreja": 3567,
+    "NomeIgreja": "Albano"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1243,
+    "IdIgreja": 3574,
+    "NomeIgreja": "Sede Conjunto Jardim"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1243,
+    "IdIgreja": 3575,
+    "NomeIgreja": "Parque dos Farois"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1244,
+    "IdIgreja": 3594,
+    "NomeIgreja": "Sede Itabaiana"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1244,
+    "IdIgreja": 3595,
+    "NomeIgreja": "Areia Branca"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1244,
+    "IdIgreja": 3596,
+    "NomeIgreja": "Frei Paulo"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1244,
+    "IdIgreja": 3597,
+    "NomeIgreja": "Campo do Brito"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1244,
+    "IdIgreja": 3598,
+    "NomeIgreja": "Pinhão"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1244,
+    "IdIgreja": 3599,
+    "NomeIgreja": "Carira"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1244,
+    "IdIgreja": 3600,
+    "NomeIgreja": "Malhador"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1250,
+    "IdIgreja": 3641,
+    "NomeIgreja": "Sede Propriá"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1250,
+    "IdIgreja": 3642,
+    "NomeIgreja": "Colégio"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1250,
+    "IdIgreja": 3643,
+    "NomeIgreja": "São Francisco"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1250,
+    "IdIgreja": 3644,
+    "NomeIgreja": "Lourdes"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1251,
+    "IdIgreja": 3660,
+    "NomeIgreja": "Sede Capela"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1251,
+    "IdIgreja": 3661,
+    "NomeIgreja": "Saúde"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1251,
+    "IdIgreja": 3662,
+    "NomeIgreja": "Siriri"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1251,
+    "IdIgreja": 3663,
+    "NomeIgreja": "Dores"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1252,
+    "IdIgreja": 3674,
+    "NomeIgreja": "Sede Carmópolis"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1252,
+    "IdIgreja": 3675,
+    "NomeIgreja": "Rosário"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1252,
+    "IdIgreja": 3676,
+    "NomeIgreja": "Maruim"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1253,
+    "IdIgreja": 3677,
+    "NomeIgreja": "Sede Aquidab"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1253,
+    "IdIgreja": 3678,
+    "NomeIgreja": "Muribeca"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1254,
+    "IdIgreja": 3682,
+    "NomeIgreja": "Sede Neopólis"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1254,
+    "IdIgreja": 3683,
+    "NomeIgreja": "Japoatã"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1254,
+    "IdIgreja": 3684,
+    "NomeIgreja": "Pacatuba"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1254,
+    "IdIgreja": 3685,
+    "NomeIgreja": "Poxim"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1259,
+    "IdIgreja": 3709,
+    "NomeIgreja": "Sede Estancia"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1259,
+    "IdIgreja": 3710,
+    "NomeIgreja": "Cidade Nova"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1259,
+    "IdIgreja": 3711,
+    "NomeIgreja": "Indiaroba"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1260,
+    "IdIgreja": 3740,
+    "NomeIgreja": "Sede Itabaianinha"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1260,
+    "IdIgreja": 3741,
+    "NomeIgreja": "Tomar de Gerú"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1260,
+    "IdIgreja": 3742,
+    "NomeIgreja": "Umbaúba"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1260,
+    "IdIgreja": 3743,
+    "NomeIgreja": "Cristinápolis"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1269,
+    "IdIgreja": 3753,
+    "NomeIgreja": "Sede Glória"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1269,
+    "IdIgreja": 3754,
+    "NomeIgreja": "Monte Alegre"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1269,
+    "IdIgreja": 3755,
+    "NomeIgreja": "Canindé"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1269,
+    "IdIgreja": 3756,
+    "NomeIgreja": "Porto da Folha"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1277,
+    "IdIgreja": 3775,
+    "NomeIgreja": "Sede Lagarto"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1277,
+    "IdIgreja": 3776,
+    "NomeIgreja": "Colonia 13"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1277,
+    "IdIgreja": 3777,
+    "NomeIgreja": "Salgado"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1277,
+    "IdIgreja": 3778,
+    "NomeIgreja": "Jenipapo"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1280,
+    "IdIgreja": 3779,
+    "NomeIgreja": "Sede Simão Dias"
+  },
+  {
+    "IdEstado": 53,
+    "IdRegiao": 1280,
+    "IdIgreja": 3780,
+    "NomeIgreja": "Poço Verde"
+  }
+]

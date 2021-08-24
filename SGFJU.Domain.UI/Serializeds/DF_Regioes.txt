@@ -1,0 +1,272 @@
+[
+  {
+    "idBloco": 237,
+    "IdRegiao": 1105,
+    "NomeRegiao": "São Sebastião 3"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1107,
+    "NomeRegiao": "Águas Bonitas"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1108,
+    "NomeRegiao": "Águas Lindas"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1109,
+    "NomeRegiao": "Arapoangas"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1111,
+    "NomeRegiao": "Asa Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1115,
+    "NomeRegiao": "Brasilinha"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1124,
+    "NomeRegiao": "Brazllândia"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1127,
+    "NomeRegiao": "Ceilândia Centro"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1129,
+    "NomeRegiao": "Ceilândia Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1130,
+    "NomeRegiao": "Conic"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1131,
+    "NomeRegiao": "Cristalina"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1147,
+    "NomeRegiao": "Formosa"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1149,
+    "NomeRegiao": "Gama Centro"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1150,
+    "NomeRegiao": "Gama Leste"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1152,
+    "NomeRegiao": "Guará"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1153,
+    "NomeRegiao": "Itapoã"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1155,
+    "NomeRegiao": "Jardim Ingá"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1158,
+    "NomeRegiao": "Jardim Brasilia"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1161,
+    "NomeRegiao": "Luziania"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1163,
+    "NomeRegiao": "M.Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1165,
+    "NomeRegiao": "Novo Gama"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1168,
+    "NomeRegiao": "P. Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1169,
+    "NomeRegiao": "P. Sul"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1170,
+    "NomeRegiao": "Paranoá"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1171,
+    "NomeRegiao": "Planaltina 1"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1172,
+    "NomeRegiao": "Planaltina 3"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1173,
+    "NomeRegiao": "Posse"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1174,
+    "NomeRegiao": "QNQ"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1175,
+    "NomeRegiao": "Recanto das Emas"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1180,
+    "NomeRegiao": "Riacho Fundo 1"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1181,
+    "NomeRegiao": "Riacho Fundo 2"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1182,
+    "NomeRegiao": "Samambaia Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1183,
+    "NomeRegiao": "Samambaia sul 307"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1184,
+    "NomeRegiao": "Samambaia 108"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1185,
+    "NomeRegiao": "Setor O"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1186,
+    "NomeRegiao": "Sobradinho 1"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1187,
+    "NomeRegiao": "Sobradinho 2"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1188,
+    "NomeRegiao": "Santo Antonio"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1189,
+    "NomeRegiao": "São Sebastião"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1190,
+    "NomeRegiao": "Sudoeste"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1191,
+    "NomeRegiao": "Santa Maria Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1192,
+    "NomeRegiao": "Taguatinga Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1193,
+    "NomeRegiao": "Taguatinga Centro"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1194,
+    "NomeRegiao": "Valparaiso"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1195,
+    "NomeRegiao": "Ocidental"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 1535,
+    "NomeRegiao": "Catedral"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 2159,
+    "NomeRegiao": "Ceilândia Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 2168,
+    "NomeRegiao": "catedral"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 2178,
+    "NomeRegiao": "Ceilândia Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 2179,
+    "NomeRegiao": "Ceilândia Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 2183,
+    "NomeRegiao": "Ceilândia Norte"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 2223,
+    "NomeRegiao": "CLAUDIA BATISTA DOS SANTOS"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 2224,
+    "NomeRegiao": "CATEDRAL"
+  },
+  {
+    "idBloco": 237,
+    "IdRegiao": 2225,
+    "NomeRegiao": "CATEDRAL"
+  }
+]
