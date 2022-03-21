@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj": {}
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj",
         "projectName": "SGFJU.Bussiness.Facade",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Bussiness.Facade\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Bussiness.Facade\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,17 +32,17 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj"
               }
             }
           }
@@ -77,18 +77,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj",
         "projectName": "SGFJU.Common.UnityContainer",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Common.UnityContainer\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Common.UnityContainer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -109,20 +109,20 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj"
               }
             }
           }
@@ -157,18 +157,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj",
         "projectName": "SGFJU.Domain.Model.Infra.DataAccess.MySql",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -189,17 +189,17 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
               }
             }
           }
@@ -246,18 +246,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj",
         "projectName": "SGFJU.Domain.Model.Infra.ExceptionManager",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\SGFJU.Domain.Model.Infra.ExceptionManager.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGfju.Domain.Model.Infra.ExceptionManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -306,18 +306,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj",
         "projectName": "SGFJU.Domain.Model.Infra.Logging",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\SGFJU.Domain.Model.Infra.Logging.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Logging\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -338,11 +338,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj"
               },
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
               }
             }
           }
@@ -381,18 +381,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj",
         "projectName": "SGFJU.Domain.Model.Infra.Security",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\SGFJU.Domain.Model.Infra.Security.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Security\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -441,18 +441,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj",
         "projectName": "SGFJU.Domain.Model.Infra.Serialization",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -473,8 +473,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj"
               }
             }
           }
@@ -517,18 +517,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj",
         "projectName": "SGFJU.Domain.Model.Infra.Util",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\SGFJU.Domain.Model.Infra.Util.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Util\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -577,18 +577,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj",
         "projectName": "SGFJU.Domain.Model",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -609,8 +609,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj": {
-                "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj"
               }
             }
           }
@@ -641,18 +641,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj",
         "projectName": "SGFJU.Interfaces",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -701,18 +701,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj",
         "projectName": "SGFJU.ServicesLayer.DTO",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -761,7 +761,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     }

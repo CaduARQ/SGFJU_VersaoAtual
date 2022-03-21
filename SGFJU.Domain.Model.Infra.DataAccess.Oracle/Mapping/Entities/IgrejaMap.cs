@@ -20,6 +20,13 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Mapping.Entities
                 .Not
                 .LazyLoad();
 
+            this.References<Bloco>(t => t.TipoIgreja)
+                .Column("ID_TIPOIGREJA")
+                .Cascade
+                .None()
+                .Not
+                .LazyLoad();
+
             HasMany(x => x.IgrejaQueCoordena)
                 .AsBag()
                 .Cascade.All()

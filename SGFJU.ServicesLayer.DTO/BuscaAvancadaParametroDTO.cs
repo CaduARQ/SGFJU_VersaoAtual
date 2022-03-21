@@ -16,5 +16,9 @@ namespace SGFJU.ServicesLayer.DTO
         public string IdX { get; set; }
         public string PalavrasChaveConcatenadasPesquisa { get; set; }
         public IList<string> PalavrasChavePesquisa { get; set; }
+        public char SofreuVicio { get; set; }
+        public char SofreuAutomutilacao { get; set; }
+        public char SofreuDepressao { get; set; }
+        public char Sexo { get; set; }
     }
 }

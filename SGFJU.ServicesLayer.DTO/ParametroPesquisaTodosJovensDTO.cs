@@ -11,5 +11,6 @@ namespace SGFJU.ServicesLayer.DTO
         public int IdRegiaoJovem { get; set; }
         public int IdIgreja { get; set; }
         public string FotoEstaNoDiretorio { get; set; }
+        public char EhParaListarFichasExpiradas { get; set; }
     }
 }

@@ -162,5 +162,20 @@ namespace SGFJU.Domain.UI.Controllers
                 throw new Exception(mensagemTratada);
             }
         }
+
+        [HttpPost]
+        [Route("api/AltarJovem/ListaJovensLevantadosParaOAltarPorParametro")]
+        public IList<TodosJovensDTO> ListaJovensLevantadosParaOAltarPorParametro([FromBody] AltarJovemParametroPesquisaDTO parametrosPesquisa) {
+            try {
+                var facade = new AltarJovemFacadeImpl();
+
+                return facade.ListaJovensLevantadosParaOAltarPorParametro(parametrosPesquisa);
+            }
+            catch (Exception controllerExc) {
+                var mensagemTratada = ExceptionManager.FormatExceptionMessage(controllerExc, "CAMADA_UI.Controller");
+                LoggerHelper.WriteLogError(mensagemTratada);
+                throw new Exception(mensagemTratada);
+            }
+        }
     }
 }

@@ -7147,11 +7147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Testes\\SGFJU.Testes.csproj",
+      "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Testes\\SGFJU.Testes.csproj",
       "projectName": "SGFJU.Testes",
-      "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Testes\\SGFJU.Testes.csproj",
+      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Testes\\SGFJU.Testes.csproj",
       "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Testes\\obj\\",
+      "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Testes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -7172,8 +7172,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
-              "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj"
+            "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj"
             }
           }
         }
@@ -7223,7 +7223,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
       }
     }
   }

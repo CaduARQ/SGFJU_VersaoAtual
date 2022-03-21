@@ -1,13 +1,13 @@
 [
   {
     "idBloco": 15,
-    "NomeBloco": "Bloco Leste1",
+    "NomeBloco": "Bloco Leste",
     "IdEstadoBloco": 28,
     "EstadoBloco": null
   },
   {
     "idBloco": 16,
-    "NomeBloco": "Bloco Sul1",
+    "NomeBloco": "Bloco Sul",
     "IdEstadoBloco": 28,
     "EstadoBloco": null
   },
@@ -127,7 +127,7 @@
   },
   {
     "idBloco": 62,
-    "NomeBloco": "Templo De Salomão ",
+    "NomeBloco": "Templo De Salomão",
     "IdEstadoBloco": 28,
     "EstadoBloco": null
   },
@@ -144,8 +144,8 @@
     "EstadoBloco": null
   },
   {
-    "idBloco": 354,
-    "NomeBloco": "Bloco Teste Excluir",
+    "idBloco": 361,
+    "NomeBloco": "Bloco Teste Exclusão",
     "IdEstadoBloco": 28,
     "EstadoBloco": null
   }

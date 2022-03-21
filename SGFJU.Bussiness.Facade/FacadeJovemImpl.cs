@@ -364,6 +364,31 @@ namespace SGFJU.Bussiness.Facade
                 throw new FacadeException(excGeneral.Message, excGeneral);
             }
         }
+
+        public void ExcluirAutorizacaoCamisa(AutorizacaoCompraCamisaDTO autorizacaoParaExcluir) { 
+            try {
+                this.__diContainer
+                       .GetServiceImplementationToType<JovemRepository>().ExcluirAutorizacaoCamisa(autorizacaoParaExcluir);
+            }
+            catch (DomainException exceptionFacade) {
+                throw new FacadeException(exceptionFacade.Message, exceptionFacade);
+            }
+            catch (Exception excGeneral) {
+                throw new FacadeException(excGeneral.Message, excGeneral);
+            }
+        }
+        public IList<AutorizacaoCompraCamisaDTO> RetornaHistoricoSolicitacoesCamisa(JovemDTO pJovem) {
+            try {
+                return this.__diContainer
+                           .GetServiceImplementationToType<JovemRepository>().RetornaHistoricoSolicitacoesCamisa(pJovem);
+            }
+            catch (DomainException exceptionFacade) {
+                throw new FacadeException(exceptionFacade.Message, exceptionFacade);
+            }
+            catch (Exception excGeneral) {
+                throw new FacadeException(excGeneral.Message, excGeneral);
+            }
+        }
         public bool AindaPodeSolicitarCamisa(int pIdJovem) {
             try {
                 return this.__diContainer

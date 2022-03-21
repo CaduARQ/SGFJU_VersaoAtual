@@ -77,6 +77,9 @@
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <HintPath>..\packages\NLog.4.7.0\lib\net45\NLog.dll</HintPath>
     </Reference>
+    <Reference Include="NodaTime, Version=3.0.9.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NodaTime.3.0.9\lib\netstandard2.0\NodaTime.dll</HintPath>
+    </Reference>
     <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
       <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
     </Reference>
@@ -107,8 +110,8 @@
     <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -176,6 +179,7 @@
   <ItemGroup>
     <Content Include="BuscaEspecializadaTestemunho.html" />
     <Content Include="CentralAutorizacaoCamisa.html" />
+    <Content Include="css\Sino.css" />
     <Content Include="DashboardArvoreVidaEstadual.html" />
     <Content Include="DashboardArvoreVidaNacional.html" />
     <Content Include="DashboardAVEstados.html" />
@@ -189,10 +193,18 @@
     <Content Include="GerenciaCamisasFJUEstado.html" />
     <Content Include="GerenciaCamisasFJU.html" />
     <Content Include="GerenciaCoordPanoramaEstado.html" />
-    <Content Include="GerenciaObreirosArvoreVida.html" />
+    <Content Include="GerenciaPanoramaObreirosArvoreVida.html" />
+    <Content Include="GerenciaRelatoriosFJU.html" />
     <Content Include="js\plugins\mark\jquery.mark.min.js" />
     <Content Include="js\plugins\mark\mark.min.js" />
+    <Content Include="ListaJovensLevantadosAltar.html" />
     <Content Include="PainelControle.html" />
+    <Content Include="RegistrarPatrimonio.aspx" />
+    <Content Include="Serializeds\menuPastorEstadual.txt" />
+    <Content Include="Serializeds\menuSecretariaBR.txt" />
+    <Content Include="Serializeds\menuSecretariaEstadual.txt" />
+    <Content Include="Serializeds\menuADMGeral.txt" />
+    <Content Include="TranferIgreja.html" />
     <Content Include="VisualizaFichaJovemImpressao.aspx" />
     <Content Include="AlteraCoordenador.aspx" />
     <Content Include="AlteraUsuario.aspx" />
@@ -1623,7 +1635,17 @@
   <ItemGroup>
     <Compile Include="Controllers\ArvoreVidaConsultaController.cs" />
     <Compile Include="Controllers\ArvoreVidaDashboardController.cs" />
+    <Compile Include="Controllers\AutorizacoesCamisaController.cs" />
     <Compile Include="Controllers\BuscaAvancadaTestemunhoController.cs" />
+    <Compile Include="Controllers\GerenciaPatrimonioController.cs" />
+    <Compile Include="Controllers\RelatoriosReuniaoFJUController.cs" />
+    <Compile Include="RegistrarPatrimonio.aspx.cs">
+      <DependentUpon>RegistrarPatrimonio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarPatrimonio.aspx.designer.cs">
+      <DependentUpon>RegistrarPatrimonio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="VisualizaFichaJovemImpressao.aspx.cs">
       <DependentUpon>VisualizaFichaJovemImpressao.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1859,12 +1881,12 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controls\" />
     <Folder Include="FotosJovens\" />
+    <Folder Include="FotosPatrimonioFJU\" />
     <Folder Include="FotosTestemunhosAntes\" />
     <Folder Include="FotosTestemunhosDepois\" />
     <Folder Include="FotosUsuarios\" />
     <Folder Include="LogWebApp\" />
     <Folder Include="Models\" />
-    <Folder Include="Serializeds\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SGFJU.Bussiness.Facade\SGFJU.Bussiness.Facade.csproj">

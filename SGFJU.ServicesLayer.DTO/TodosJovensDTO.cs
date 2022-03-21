@@ -38,5 +38,6 @@ namespace SGFJU.ServicesLayer.DTO
         public int IdObreiroAcompanha { get; set; }
         public string NomeObreiroAcompanha { get; set; }
         public string ClassificacaoJovem { get; set; }
+        public bool FichaEstaExpirada { get; set; }
     }
 }

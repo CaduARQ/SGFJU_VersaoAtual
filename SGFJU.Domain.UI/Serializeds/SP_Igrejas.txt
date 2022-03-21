@@ -11967,6 +11967,16 @@
     "IdRegiao": 0,
     "NomeRegiaoJovem": null,
     "IdIgreja": 0,
+    "NomeIgreja": "Igreja Para Exclusão"
+  },
+  {
+    "IdEstado": 28,
+    "NomeEstado": null,
+    "IdBlocoJovem": 0,
+    "NomeBlocoJovem": null,
+    "IdRegiao": 0,
+    "NomeRegiaoJovem": null,
+    "IdIgreja": 0,
     "NomeIgreja": "MONTE MOR"
   },
   {

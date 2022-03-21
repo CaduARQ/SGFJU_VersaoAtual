@@ -116,48 +116,9 @@
                             FJU
                         </div>
                     </li>
-                    <li>
-                        <a href="RegistraJovem.aspx"><i class="fa fa-th-large"></i> <span class="nav-label">Voluntários</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="RegistraJovem.aspx">Novo Jovem</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Relatórios</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ConsultaGeralParametros.html">Geral Parâmetros</a></li>
-                            <li><a href="TodosJovens.aspx">Todos</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="lnkDashboard"><i class="fa fa-pie-chart"></i> <span class="nav-label">Dashboard</span>  </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Gerenciar</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="GerenciaIgrejasEstado.html">Igrejas</a></li>
-                            <li><a href="GerenciaCoordenadoresEstado.html">Coordenadores</a></li>
-                            <li>
-                                <a href="#"><i class="fa fa-tree"></i>Árvore da Vida <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaArvoreDaVidaEstadual.html">Associar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreiros.html">Obreiros</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaAcompanhamento.html">Acompanhamento</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    
+                    
+                
                 </ul>
 
             </div>
@@ -209,7 +170,6 @@
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li><a class="nav-link active" data-toggle="tab" href="#tabGeral">Parâmetros de pesquisa</a></li>
                                     <li><a class="nav-link" data-toggle="tab" href="#tabKeywords">Chaves de pesquisa</a></li>
-                                    <li><a class="nav-link" data-toggle="tab" href="#tabDetalhes">Detalhes</a></li>
                                 </ul>
                                 <div class="tab-content">
                                     <div role="tabpanel" id="tabGeral" class="tab-pane active">
@@ -286,52 +246,22 @@
                                                     <!--<input class="tagsinput form-control" type="text" value="depressão,automutilação" />-->
                                                     <input id="hotKeysPesquisa" class="tagsinput form-control" type="text" value="" />
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="tabpanel" id="tabDetalhes" class="tab-pane">
-                                        <div class="panel-body">
-                                            <div class="row">
 
-                                                <div class="col-sm-4">
+                                                <div class="col-md-2">
                                                     <div class="form-group">
-                                                        <label for="form_name">Sofreu com depressão</label>
-                                                        <div class="checkbox checkbox-primary">
-                                                            <input id="chkDepressao" name="chkDepressao" type="checkbox" value="S">
-                                                            <label for="chkDepressao">
-                                                                Sim
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label for="form_name">Sofreu com Automutilação</label>
-                                                        <div class="checkbox checkbox-primary">
-                                                            <input id="chkAutomutilacao" name="chkAutomutilacao" type="checkbox" value="S">
-                                                            <label for="chkAutomutilacao">
-                                                                Sim
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label for="form_name">Sofreu com algum vício</label>
-                                                        <div class="checkbox checkbox-primary">
-                                                            <input id="chkVicio" name="chkVicio" type="checkbox" value="S">
-                                                            <label for="chkVicio">
-                                                                Sim
-                                                            </label>
-                                                        </div>
+                                                        <label for="form_name">Sexo *</label>
+                                                        <select required id="cboSexo" name="cboSexo" class="select2_demo_3 form-control">
+                                                            <option></option>
+                                                            <option value="M">Masculino</option>
+                                                            <option value="F">Feminino</option>
+                                                        </select>
                                                     </div>
                                                 </div>
 
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -345,9 +275,8 @@
                                         Ações
                                     </div>
                                     <div class="panel-body" align="center">
-                                        <button id="btnPesquisa" onclick="realizaBuscaAvancadaDeTestemunho()" class="btn btn-outline-dark " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
-                                        <button id="btnRefresh" onclick="resetaPesquisa()" class="btn btn-outline-dark " type="button"><i class="fa fa-recycle"></i>&nbsp;Resetar</button>
-                                        <button id="btnAdicionarIgreja" onclick="cadastrarCoordenadorFJU()" class="btn btn-outline-dark " type="button"><i class="fa fa-plus"></i>&nbsp;Cadastrar</button>
+                                        <button id="btnPesquisa" onclick="realizaBuscaAvancadaDeTestemunho()" class="btn btn-outline-success " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar testemunhos</button>
+                                        <button id="btnRefresh" onclick="resetaPesquisa()" class="btn btn-outline-info " type="button"><i class="fa fa-recycle"></i>&nbsp;Resetar</button>
                                     </div>
                                 </div>
                             </div>
@@ -365,110 +294,97 @@
                             <!---->
                         </div>
 
+                        <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+                        <div class="modal inmodal" id="modalTextoTestemunho" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                        <i class="fa fa-book modal-icon"></i>
+                                        <h4 class="modal-title">Testemunho</h4>
+                                        <h3 class="text-success font-bold" id="lblNomeJovemTestemunho"></h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form">
+
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">História de superação</label>
+                                                <textarea id="txtTextoTestemunhoSelecionado" required class="lg-textarea form-control" cols="8" rows="8"></textarea>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!---->
 
                         <div class="row" id="rowResultado">
-
                             <div class="col-lg-12">
-                                <!---->
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <!---->
+                                <div class="ibox" id="iBoxResultadoPesquisa">
+                                    <div class="ibox-title">
+                                        <h5>Resultado da pesquisa</h5>
+                                    </div>
+                                    <div class="ibox-content">
                                         <div class="panel panel-success" id="pnlPesquisa">
                                             <div class="panel-heading">
-                                                Resultado da pesquisa
+                                                Dados Retornados
                                             </div>
                                             <div class="panel-body" align="center">
-                                                <!---->
+                                                <!-- DataTable-->
                                                 <div class="table-responsive">
-                                                    <table id="tblResultadoBuscaAvancadaTestemunho" class="table table-striped table-hover">
+                                                    <table id="tblResultadoBuscaAvancadaTestemunho"
+                                                           class="table table-striped table-bordered table-hover dataTables-example">
                                                         <thead>
                                                             <tr>
+                                                                <th>IdJovem</th>
                                                                 <th>IdX</th>
+                                                                <th>TextoTestemunho</th>
+                                                                <th>Estado</th>
+                                                                <th>Bloco</th>
+                                                                <th>Região</th>
+                                                                <th>Igreja</th>
                                                                 <th>Nome</th>
+                                                                <th>Foto</th>
+                                                                <th>Whatsapp</th>
+                                                                <th>Status</th>
                                                                 <th>Ações</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                         </tbody>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th>IdJovem</th>
+                                                                <th>IdX</th>
+                                                                <th>TextoTestemunho</th>
+                                                                <th>Estado</th>
+                                                                <th>Bloco</th>
+                                                                <th>Região</th>
+                                                                <th>Igreja</th>
+                                                                <th>Nome</th>
+                                                                <th>Foto</th>
+                                                                <th>Whatsapp</th>
+                                                                <th>Status</th>
+                                                                <th>Ações</th>
+                                                            </tr>
+                                                        </tfoot>
                                                     </table>
                                                 </div>
-                                                <!---->
+                                                <!-- End DataTable -->
                                             </div>
                                         </div>
-                                        <!---->
                                     </div>
-                                    <div class="col-lg-8">
-                                        <!---->
-                                        <div class="panel panel-info" id="pnlPesquisa">
-                                            <div class="panel-heading">
-                                                Testemunho selecionado
-                                            </div>
 
-                                            <!--<div class="panel-body" align="center">
-
-        <div class="row">
-
-            <div class="col-sm-8">
-                <div class="form-group">
-                    <label for="form_name">Achar no texto </label>
-                    <input id="txtKeyWordTexto" type="text" name="txtKeyWordTexto" class="form-control" >
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm-12">
-                <div class="form-group">
-
-                    <label class="font-bold" style="font-family: Helvetica;" for="txtTestemunho">Tesxto do Testemunho selecionado</label>
-                    <textarea id="txtTestemunho" class="md-textarea form-control context" cols="10" rows="15"></textarea>
-
-                </div>
-            </div>
-
-        </div>
-    </div>-->
-                                            <!--INICIO DO TESTE-->
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">Search</div>
-                                                <div class="panel-body">
-                                                    <div class="search row">
-                                                        <div class="col-xs-6">
-                                                            <span>Type in a keyword:</span>
-                                                            <input type="text" name="keyword" class="form-control input-sm" value="Lorem">
-                                                        </div>
-                                                        <div class="col-xs-6">
-                                                            <span>Search options:</span>
-                                                            <input type="checkbox" name="opt[]" value="separateWordSearch" checked> separate word search
-                                                            <br>
-                                                            <input type="checkbox" name="opt[]" value="diacritics" checked> diacritics
-                                                            <br>
-                                                            <input type="checkbox" name="opt[]" value="debug"> debug
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="panel panel-default">
-                                                <div class="panel-body context">
-                                                    <p id="txtTestemunho">                                                        
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <!--FIM DO TESTE-->
-
-                                        </div>
-                                        <!---->
-                                    </div>
                                 </div>
-                                <!---->
+
                             </div>
                         </div>
+
+                        <!---->
                     </div>
 
                     <!-- -->
@@ -527,85 +443,54 @@
                 <script src="js/SGFJU.Domain.UI.Bind.Specialized.js"></script>
 
                 <script>
+                    var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
                     var __testemunhosRetornados = undefined;
                     var __keywordsUsed = undefined;
-                    
+                    var __resultSetTodosJovens = null;
+                    var tblTodosJovens;
+
                     $(document).ready(function () {
 
-                        var mark = function() {
+                        $("#cboEstado").select2();
+                        $("#cboBloco").select2();
+                        $("#cboRegiao").select2();
+                        $("#cboIgreja").select2();
 
-                        // Read the keyword
-                        var keyword = $("input[name='keyword']").val();
+                        facadeUser.ConfigurarPaginaX072470();
 
-                        // Determine selected options
-                        var options = {};
-                        $("input[name='opt[]']").each(function() {
-                          options[$(this).val()] = $(this).is(":checked");
-                        });
-
-                        // Remove previous marked elements and mark
-                        // the new keyword inside the context
-                        $(".context").unmark({
-                              done: function() {
-                                $(".context").mark(keyword, options);
-                              }
-                            });
-                        };
-
-                        $("input[name='keyword']").on("input", mark);
-                        $("input[type='checkbox']").on("change", mark);
+                        ConfiguraPerfilUsuarioLogado();
 
                         $('.tagsinput').tagsinput({
                             tagClass: 'label label-primary'
                         });
 
-                        ConfiguraPerfilUsuarioLogado();
+                        $('#tblResultadoBuscaAvancadaTestemunho tbody').on('click', 'button', function () {
+                            var classeDoBotao = $(this).prop('class');
+                            var indiceDaLinha = tblTodosJovens.row($(this).parents('tr')).index();
+                            var idJovem = __resultSetTodosJovens[indiceDaLinha].IdJovem;
+                            var pIdX = __resultSetTodosJovens[indiceDaLinha].IdX;
+                            var nomeJovem = __resultSetTodosJovens[indiceDaLinha].Nome;
+                            var textoSelecionado = __resultSetTodosJovens[indiceDaLinha].TextoTestemunho;
+                            var numeroWhatsapp = __resultSetTodosJovens[indiceDaLinha].WhatsappSemFormatacao;
+                            dadoJovemSelecionado = __resultSetTodosJovens[indiceDaLinha];
 
-                        $('#tblResultadoBuscaAvancadaTestemunho tbody').on('click', 'tr', function () {
-                            var tblResultadoBusca = $('#tblResultadoBuscaAvancadaTestemunho').DataTable();
+                            if (classeDoBotao == 'btn btn-primary btn-xs dt-edit')
+                                location.href = 'VisualizaJovemE.html?idJovem=' + idJovem + '&SPG=BAT'
+                            else if (classeDoBotao == 'btn btn-info btn-xs dt-edit')
+                                location.href = 'https://api.whatsapp.com/send?phone=+55' + numeroWhatsapp;
+                            else if (classeDoBotao == 'btn btn-success btn-xs dt-view') {
 
-                            //var classeDoBotao = $(this).prop('class');
-                            //var indiceDaLinha = tblResultadoBusca.row($(this).parents('tr')).index();
-                            //var __idxSelecionado = __testemunhosRetornados[indiceDaLinha].IdX;
-                            //var dadoHistoricoSelecionado = __resultSetTodoHistorico.HistoricoAcompanhamento[indiceDaLinha];
+                                $('#lblNomeJovemTestemunho').text(nomeJovem);
 
-                            var __idxSelecionado = tblResultadoBusca.row(this).data().IdX;
-                            obterTestemunhoSelecionado(__idxSelecionado);
+                                $('#txtTextoTestemunhoSelecionado').val(textoSelecionado);
 
-                            //if (classeDoBotao == 'btn btn-warning btn-xs dt-view') {
-                            //    $('#mostraTextoHistorico').modal('show');
-                            //}
+                                $('#modalTextoTestemunho').modal('show');
+                            }
+
                         });
 
                     });
 
-                    /*
-                    $(function() {
-
-                      var mark = function() {
-
-                        // Read the keyword
-                        var keyword = $("input[name='keyword']").val();
-
-                        // Determine selected options
-                        var options = {};
-                        $("input[name='opt[]']").each(function() {
-                          options[$(this).val()] = $(this).is(":checked");
-                        });
-
-                        // Remove previous marked elements and mark
-                        // the new keyword inside the context
-                        $(".context").unmark({
-                          done: function() {
-                            $(".context").mark(keyword, options);
-                          }
-                        });
-                      };
-
-                      $("input[name='keyword']").on("input", mark);
-                      $("input[type='checkbox']").on("change", mark);
-
-                    });*/
 
 
                     function realizaBuscaAvancadaDeTestemunho() {
@@ -616,12 +501,26 @@
                         var vIdRegiao = $('#cboRegiao').val();
                         var vIdIgreja = $('#cboIgreja').val();
                         var hotKeysSearch = $('#hotKeysPesquisa').tagsinput('items');
+                        var vSofreuVicio = undefined;
+                        var vSofreuAutomutilacao = undefined;
+                        var vSofreuDepressao = undefined;
+                        var vSexo = $('#cboSexo').val();
+
+                        console.log('está checado será? ' + $('#chkDepressao').is(':checked'));
+
+                        if ($('#chkDepressao').is(':checked'))
+                            vSofreuDepressao = 'S';
+
+                        if ($('#chkAutomutilacao').is(':checked'))
+                            vSofreuAutomutilacao = 'S';
+
+                        if ($('#chkVicio').is(':checked'))
+                            vSofreuVicio = 'S';
 
                         var items = $('#hotKeysPesquisa').tagsinput("items");
                         var tags = '';
-                        for(i = 0; i < items.length; i++)
-                        {
-                            if(JSON.stringify(items[i]).indexOf('{') >= 0) {
+                        for (i = 0; i < items.length; i++) {
+                            if (JSON.stringify(items[i]).indexOf('{') >= 0) {
                                 tags += items[i].TagValue;
                                 tags += ' ';
                             } else {
@@ -638,7 +537,11 @@
                             IdRegiao: vIdRegiao,
                             IdIgreja: vIdIgreja,
                             PalavrasChavePesquisa: hotKeysSearch.join(' '),
-                            PalavrasChaveConcatenadasPesquisa: tags
+                            PalavrasChaveConcatenadasPesquisa: tags,
+                            SofreuVicio: vSofreuVicio,
+                            SofreuAutomutilacao: vSofreuAutomutilacao,
+                            SofreuDepressao: vSofreuDepressao,
+                            Sexo: vSexo
                         };
 
                         $.ajax({
@@ -649,32 +552,90 @@
                         }).done(function (resultSetBuscaAvancadaTestemunho) {
 
                             __testemunhosRetornados = resultSetBuscaAvancadaTestemunho;
+                            __resultSetTodosJovens = resultSetBuscaAvancadaTestemunho;
 
-                            $('#tblResultadoBuscaAvancadaTestemunho').DataTable({
+
+                            tblTodosJovens = $('#tblResultadoBuscaAvancadaTestemunho').DataTable({
                                 data: resultSetBuscaAvancadaTestemunho,
-                                pageLength: 20,
+                                pageLength: 50,
                                 destroy: true,
                                 dom: 'Bfrtip',
                                 buttons: [
                                 ],
                                 columns: [
+                                    { data: 'IdJovem' },
                                     { data: 'IdX' },
+                                    { data: 'TextoTestemunho' },
+                                    { data: 'NomeEstado' },
+                                    { data: 'NomeBloco' },
+                                    { data: 'NomeRegiao' },
+                                    { data: 'NomeIgreja' },
                                     { data: 'Nome' },
                                     {
+                                        data: 'FotoEstaNoDiretorio',
+                                        render: function (data, type, row) {
+                                            console.log(row.NomeArquivoFoto);
+                                            if (data == "S") {
+                                                var urlImgEncoded = encodeURI(__HOST_CONFIGURADO + '/FotosJovens/' + row.NomeArquivoFoto);
+                                                return "<img src=" + urlImgEncoded + " class='rounded-circle img-sm'  />";
+                                            }
+                                            else {
+                                                return "<img src=" + __HOST_CONFIGURADO + '/img/jovemsemfoto.jpg' + " class='rounded-circle img-sm' />"
+                                            }
+                                        }
+                                    },
+                                    { data: 'Whatsapp' },
+                                    {
+                                        data: 'ClassificacaoJovem',
+                                        render: function (data, type, row) {
+                                            if (row.ClassificacaoJovem == 'I')
+                                                return "<span class='label'>Inativo</span>"
+                                            else if (row.ClassificacaoJovem == 'F')
+                                                return "<span class='label'>Afastado</span>"
+                                            else if (row.ClassificacaoJovem == 'A')
+                                                return "<span class='label label-info'>Ativo</span>"
+                                            else if (row.ClassificacaoJovem == 'N')
+                                                return "<span class='label label-success'>Iniciante</span>"
+                                            else if (row.ClassificacaoJovem == 'L')
+                                                return "<span class='label label-warning'>Altar</span>"
+                                            else if (row.ClassificacaoJovem == 'O' || row.ClassificacaoJovem == '' || row.ClassificacaoJovem == undefined)
+                                                return "<span class='label label-danger'>Não Definido</span>"
+                                        }
+                                    },
+                                    {
                                         data: null,
-                                        defaultContent: '<div class="btn-group"> <button type="button" alt="Histórico do Árvore da Vida" class="btn btn-warning btn-xs dt-view" style="margin-right:16px;"><span class="fa fa-search" aria-hidden="true"></span><span class="fa fa-history" aria-hidden="true"></span></button> </div>'
+                                        defaultContent: '<div class="btn-group"> | <button type="button" alt="Visualizar" class="btn btn-success btn-xs dt-view" style="margin-right:16px;"><span class="glyphicon glyphicon-search " aria-hidden="true"></span><span class="fa fa-id-badge " aria-hidden="true"></span></button> | <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button> | <button type="button" class="btn btn-info btn-xs dt-edit"><i class="fa fa-whatsapp" aria-hidden="true"></i></button> | </div>'
                                     }
                                 ],
                                 columnDefs: [
                                     {
-                                        targets: [0],
+                                        targets: [0, 1, 2],
                                         visible: false,
                                         searchable: false
                                     }
                                 ]
                             });
 
+                            $('#lblQuantidadeResgistrosRetornados').html(tblTodosJovens.data().count());
+
                             $('#iBoxParametrosPesquisa').children('.ibox-content').toggleClass('sk-loading');//#spinner
+                        });
+                    }
+
+                    function resetaPesquisa() {
+                        $('#cboBloco').val($('#cboBloco option:first-child').val()).trigger('change');
+                        $('#cboRegiao').empty().trigger("change");
+                        $('#cboIgreja').empty().trigger("change");
+                        $('#cboSexo').val($('#cboSexo option:first-child').val()).trigger('change');
+                        $('#lblQuantidadeResgistrosRetornados').html('');
+                        $('#hotKeysPesquisa').tagsinput('removeAll');
+
+                        var objTable = $('#tblResultadoBuscaAvancadaTestemunho').DataTable();
+                        objTable.clear().draw();
+                        swal({
+                            title: "Mensagem de notificação",
+                            text: 'Pesquisa resetada com sucesso!',
+                            type: "success"
                         });
                     }
 
@@ -687,7 +648,7 @@
                         }).done(function (resultSetTestemunhoSelecionado) {
 
                             $('#txtTestemunho').text(resultSetTestemunhoSelecionado.TextoTestemunho);
-                            
+
                         });
                     }
                 </script>

@@ -133,6 +133,7 @@ function ConfiguraPerfilLogado() {
 }
 
 function configuraPerfilMenuSecretariaEstadual() {
+    
     var __TEMPLATE_ITEM_MENU = '<li><a class="dropdown-item" href="GerenciaUsuariosEstado.aspx"><i class="fa fa-address-book-o"></i> Gerenciar Usuários</a></li>';
     var ___ITEM_MENU_GERENCIA_ACOES = '<li><a class="dropdown-item" href="GerenciaAcoesUsuarios.html"><i class="fa fa-user-md"></i> Log de Ações dos Usuários</a></li>';
     //
@@ -142,6 +143,11 @@ function configuraPerfilMenuSecretariaEstadual() {
         $('.dropdown-menu li:eq(0)').after(__TEMPLATE_ITEM_MENU);
         $('.dropdown-menu li:eq(0)').after(___ITEM_MENU_GERENCIA_ACOES);
     }
+}
+
+function configuraSinalizadorFichasExpiradas() {
+    
+
 }
 
 function verify_IS() {
@@ -176,6 +182,22 @@ function spinnerOff() {
     document.getElementById("overlay").style.display = "none";
 }
 
+function RRM_Function() {
+
+    $.ajax({
+        type: "GET",
+        url: "api/X/RMM",
+        contentType: "application/json"
+    }).done(function (RMM) {
+
+        $('.metismenu').append(RMM);
+
+        $(".metismenu").metisMenu('dispose');
+        $(".metismenu").metisMenu();
+    });
+
+}
+
 $(document).ready(function () {
     //registraSpinner();
 
@@ -184,6 +206,8 @@ $(document).ready(function () {
     configuraHOST();
     //console.log('::: SGFJU.Host configurado é -> ' + __HOST_CONFIGURADO);
     verify_IS();
+
+    RRM_Function();
 
     __PERFILLOGADO = ConfiguraPerfilLogado();
     console.log(__PERFILLOGADO);

@@ -25,5 +25,7 @@ namespace SGFJU.Domain.Model.Repositories
         bool IgrejaPossuiCoordenador(IgrejaCoordenador igrejaCoordenadorParametro);
         IList<IgrejaCoordenadorDTO> RetornaInformacoesIgrejasEstado(Estado estadoParametro);
         void AtualizarIgreja(Igreja igrejaAAtualizar);
+        bool TranfereIgrejaDeRegiao(IgrejaDTO igrejaASerTransferida, RegiaoDTO regiaoDestino);
+        bool TranfereRegiaoDeBloco(RegiaoDTO regiaoASerTransferida, BlocoDTO blocoDestino);
     }
 }

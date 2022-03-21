@@ -2441,11 +2441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj",
+      "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj",
       "projectName": "SGFJU.Domain.Model.Infra.Serialization",
-      "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj",
+      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\SGFJU.Domain.Model.Infra.Serialization.csproj",
       "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\obj\\",
+      "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.Serialization\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -2466,8 +2466,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj"
+            "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj"
             }
           }
         }
@@ -2510,7 +2510,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
       }
     }
   }

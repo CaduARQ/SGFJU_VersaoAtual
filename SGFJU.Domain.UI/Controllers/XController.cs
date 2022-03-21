@@ -4,6 +4,7 @@ using SGFJU.Domain.UI.Helpers;
 using SGFJU.ServicesLayer.DTO;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -38,6 +39,55 @@ namespace SGFJU.Domain.UI.Controllers
             }
             catch (Exception controllerExc)
             {
+                var mensagemTratada = ExceptionManager.FormatExceptionMessage(controllerExc, "CAMADA_UI.Controller");
+                LoggerHelper.WriteLogError(mensagemTratada);
+                throw new Exception(mensagemTratada);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/X/RMM")]
+        public string RMM() {
+            try {
+                var vHTMLMenuPerfil = string.Empty;
+                var vCodigoPerfil = SessionHelper.RetornaUsuarioLogado().PerfilUsuario.Code;
+                var vDiretorioBase = "~/Serializeds/";
+                var vCaminhoArquivoHTMLCompleto = string.Empty;
+
+                if (vCodigoPerfil == 4) {
+                    vCaminhoArquivoHTMLCompleto =
+                        System.Web.Hosting.HostingEnvironment.MapPath(vDiretorioBase + "menuADMGeral.txt");
+                    vHTMLMenuPerfil = File.ReadAllText(path: vCaminhoArquivoHTMLCompleto);
+                }
+                else if (vCodigoPerfil == 5) {
+                    vCaminhoArquivoHTMLCompleto =
+                            System.Web.Hosting.HostingEnvironment.MapPath(vDiretorioBase + "menuPastorEstadual.txt");
+                    vHTMLMenuPerfil = File.ReadAllText(path: vCaminhoArquivoHTMLCompleto);
+                }
+                else if (vCodigoPerfil == 6) {
+                    vCaminhoArquivoHTMLCompleto =
+                            System.Web.Hosting.HostingEnvironment.MapPath(vDiretorioBase + "menuSecretariaEstadual.txt");
+                    vHTMLMenuPerfil = File.ReadAllText(path: vCaminhoArquivoHTMLCompleto);
+                }
+                else if (vCodigoPerfil == 7) {
+                    vCaminhoArquivoHTMLCompleto =
+                            System.Web.Hosting.HostingEnvironment.MapPath(vDiretorioBase + "menuSecretariaBloco.txt");
+                    vHTMLMenuPerfil = File.ReadAllText(path: vCaminhoArquivoHTMLCompleto);
+                }
+                else if (vCodigoPerfil == 9) {
+                    vCaminhoArquivoHTMLCompleto =
+                            System.Web.Hosting.HostingEnvironment.MapPath(vDiretorioBase + "menuSecretariaRegional.txt");
+                    vHTMLMenuPerfil = File.ReadAllText(path: vCaminhoArquivoHTMLCompleto);
+                }
+                else if (vCodigoPerfil == 13) {
+                    vCaminhoArquivoHTMLCompleto =
+                            System.Web.Hosting.HostingEnvironment.MapPath(vDiretorioBase + "menuSecretariaBR.txt");
+                    vHTMLMenuPerfil = File.ReadAllText(path: vCaminhoArquivoHTMLCompleto);
+                }
+
+                return vHTMLMenuPerfil;
+            }
+            catch (Exception controllerExc) {
                 var mensagemTratada = ExceptionManager.FormatExceptionMessage(controllerExc, "CAMADA_UI.Controller");
                 LoggerHelper.WriteLogError(mensagemTratada);
                 throw new Exception(mensagemTratada);

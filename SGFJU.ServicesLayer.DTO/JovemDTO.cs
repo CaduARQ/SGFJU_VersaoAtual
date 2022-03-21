@@ -21,6 +21,8 @@ namespace SGFJU.ServicesLayer.DTO
         public int Id { get; set; }
         public string IdX { get; set; }
         public string Nome { get; set; }
+        public bool FichaEstaExpirada { get; set; }
+        public string PeriodicidadeFichaJovem { get; set; }
         public string NomeArquivoFoto { get; set; }
         public string NomeArquivoFotoFormatado { get; set; }
         public string NomeAutorizadorCompraCamisa { get; set; }

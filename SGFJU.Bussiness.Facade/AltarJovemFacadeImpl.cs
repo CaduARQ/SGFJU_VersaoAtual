@@ -127,5 +127,18 @@ namespace SGFJU.Bussiness.Facade
                 throw new FacadeException(excGeneral.Message, excGeneral);
             }
         }
+
+        public IList<TodosJovensDTO> ListaJovensLevantadosParaOAltarPorParametro(AltarJovemParametroPesquisaDTO parametrosPesquisa) { 
+            try {
+                return this.__diContainer
+                           .GetServiceImplementationToType<AltarJovemRepository>().ListaJovensLevantadosParaOAltarPorParametro(parametrosPesquisa);
+            }
+            catch (DomainException exceptionFacade) {
+                throw new FacadeException(exceptionFacade.MensagemExcecaoDetalhada, exceptionFacade);
+            }
+            catch (Exception excGeneral) {
+                throw new FacadeException(excGeneral.Message, excGeneral);
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@ using SGFJU.Domain.Model.Repositories;
 using SGFJU.ServicesLayer.DTO;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -554,6 +555,92 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 telefoneformatado = match;
                 //telefoneformatado = $"({match.Groups[1]}) {match.Groups[2]}-{match.Groups[3]}";
                 return telefoneformatado;
+            }
+        }
+        public IList<TodosJovensDTO> ListaJovensLevantadosParaOAltarPorParametro(AltarJovemParametroPesquisaDTO parametrosPesquisa) {
+            try {
+                var retornoConsultaGeral = new List<TodosJovensDTO>();
+                var _DAO = new DAO();
+                var tinfo = CultureInfo.CurrentCulture.TextInfo;
+                MySqlConnection conexao = null;
+                MySqlDataReader resultadoReader = null;
+                var SQLQuery = new StringBuilder();
+                var SQLWhere = new StringBuilder();
+                SQLWhere.Append(" WHERE 1 = 1 ");
+
+                SQLQuery.Append("  SELECT JV.ID_JOVEM,                          ");
+                SQLQuery.Append("         JV.NOME,                              ");
+                SQLQuery.Append("         JV.NOMEARQUIVOFOTO,                   ");                
+                SQLQuery.Append("         ED.NOMEESTADO,                        ");
+                SQLQuery.Append("         BL.NOMEBLOCO,                         ");
+                SQLQuery.Append("         REG.NOMEREGIAO,                       ");
+                SQLQuery.Append("         IGJ.NOMEIGREJA,                       ");
+                SQLQuery.Append("         CT.WHATSAPP                           ");
+                SQLQuery.Append("	FROM      sgfju_dev.SGFJU_TBL_JOVEM JV      ");
+                SQLQuery.Append("	INNER JOIN sgfju_dev.SGFJU_TBL_CONTATO CT   ");
+                SQLQuery.Append("			ON JV.ID_CONTATO = CT.ID_CONTATO    ");
+                SQLQuery.Append("	INNER JOIN sgfju_dev.SGFJU_TBL_IGREJA IGJ   ");
+                SQLQuery.Append("			ON JV.ID_IGREJA = IGJ.ID_IGREJA     ");
+                SQLQuery.Append("	INNER JOIN sgfju_dev.SGFJU_TBL_REGIAO REG   ");
+                SQLQuery.Append("			ON IGJ.ID_REGIAO = REG.ID_REGIAO    ");
+                SQLQuery.Append("   INNER JOIN sgfju_dev.SGFJU_TBL_BLOCO  BL    ");
+                SQLQuery.Append("		   ON REG.ID_BLOCO = BL.ID_BLOCO        ");
+                SQLQuery.Append("   INNER JOIN sgfju_dev.SGFJU_TBL_ESTADO ED    ");
+                SQLQuery.Append("		   ON BL.ID_ESTADO = ED.ID_ESTADO       ");
+
+                SQLWhere.Append(" AND JV.ClassificacaoJovem = 'L' ");
+
+                if (parametrosPesquisa.IdEstado != 0)
+                {
+                    SQLWhere.Append(" AND ED.ID_ESTADO = " + parametrosPesquisa.IdEstado.ToString() + " ");
+                }
+
+                if (parametrosPesquisa.IdBlocoJovem != 0)
+                {
+                    SQLWhere.Append(" AND BL.ID_BLOCO = " + parametrosPesquisa.IdBlocoJovem.ToString() + " ");
+                }
+
+                if (parametrosPesquisa.IdRegiaoJovem != 0)
+                {
+                    SQLWhere.Append(" AND REG.ID_REGIAO = " + parametrosPesquisa.IdRegiaoJovem.ToString() + " ");
+                }
+
+                if (parametrosPesquisa.IdIgreja != 0)
+                {
+                    SQLWhere.Append(" AND IGJ.ID_IGREJA = " + parametrosPesquisa.IdIgreja.ToString() + " ");
+                }
+
+                using (conexao = _DAO.GetConnection()) {
+                    conexao.Open();
+                    using (resultadoReader = _DAO.ExecuteQuery(SQLQuery.ToString() + SQLWhere.ToString(), ref conexao))
+                    {
+                        while (resultadoReader.Read())
+                        {
+                            var TELEFONE_FORMATADO = FormataTelefone(resultadoReader["WHATSAPP"].ToString());
+                            retornoConsultaGeral.Add(new TodosJovensDTO
+                            {
+                                IdJovem = int.Parse(resultadoReader["ID_JOVEM"].ToString()),
+                                NomeJovem = tinfo.ToTitleCase(resultadoReader["Nome"].ToString()),
+                                NomeEstado = tinfo.ToTitleCase(resultadoReader["NOMEESTADO"].ToString()),
+                                NomeBlocoJovem = tinfo.ToTitleCase(resultadoReader["NOMEBLOCO"].ToString()),
+                                NomeRegiaoJovem = tinfo.ToTitleCase(resultadoReader["NOMEREGIAO"].ToString()),
+                                NomeIgrejaJovem = tinfo.ToTitleCase(resultadoReader["NOMEIGREJA"].ToString()),
+                                Whatsapp = TELEFONE_FORMATADO,   //string.Format("{0:(##) #####-####}", resultadoReader["WHATSAPP"].ToString().Replace('-', ' ').Trim()),
+                                WhatsappSemFormatacao = resultadoReader["WHATSAPP"].ToString(),
+                                NomeArquivoFoto = resultadoReader["NOMEARQUIVOFOTO"].ToString(),
+                                NomeArquivoFotoFormatado = (!string.IsNullOrEmpty(resultadoReader["NOMEARQUIVOFOTO"].ToString())) ?
+                                                              ConfigurationManager.AppSettings["HOST_PROD"] + resultadoReader["NOMEARQUIVOFOTO"].ToString() :
+                                                              ConfigurationManager.AppSettings["HOST_PROD"] + "UsuarioNaoSelecionado.png"
+                            });
+                        }
+                    }
+                }
+
+                return retornoConsultaGeral;
+            }
+            catch (Exception dataException) {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
+                throw new DomainException(mensagemTratada, dataException);
             }
         }
     }

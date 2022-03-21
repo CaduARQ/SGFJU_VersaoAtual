@@ -33,6 +33,155 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <style type="text/css">
+        
+.ringing-bell {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: translate(-50%, -50%)
+}
+
+.faa-ring {
+    color: red
+}
+
+@-webkit-keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        -ms-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        -ms-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        -ms-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-ring {
+    -webkit-animation: ring 2s ease infinite;
+    animation: ring 2s ease infinite;
+    transform-origin-x: 50%;
+    transform-origin-y: 0px;
+    transform-origin-z: initial
+}
+
+    </style>
 
 </head>
 
@@ -58,62 +207,7 @@
                             FJU
                         </div>
                     </li>
-                    <li class="active">
-                        <a href="RegistraJovem.aspx"><i class="fa fa-th-large"></i> <span class="nav-label">Voluntários</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ConsultaGeralParametros.html">Geral Parâmetros</a></li>
-                            <li><a href="GerenciaCamisasFJUEstado.html">Autorizações Camisas</a></li>
-                            <li><a href="TodosJovens.aspx">Todos</a></li>
-                            <!--<li>
-                                <a href="#"><i class="fa fa-search"></i> <span class="nav-label">Avançada</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="BuscaEspecializadaTestemunho.html">Testemunho</a>
-                                        </li>
-                                    </ul>
-                                </ul>
-                            </li>-->
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Gerenciar</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li>
-                                <a href="#"><i class="fa fa-user-circle"></i>Coordenadores <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaCoordenadoresEstado.html">Gerenciar</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaCoordPanoramaEstado.html">Panorama do Estado</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-tree"></i>Árvore da Vida <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaArvoreDaVidaEstadual.html">Associar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreirosAssociacoes.html">Desassociar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreiros.html">Obreiros</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaAVJovensEmAcompanhamento.html">Em Acompanhamento</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    
                 </ul>
 
             </div>
@@ -200,6 +294,8 @@
                             <span id="lblNomeJovemHeader" class="text-success font-bold"></span>
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                             <span id="lblClassificacao" class="label"></span>
+                            <i id="iconeFichaExpirada" class='fa fa-bell faa-ring animated fa-1x'></i>
+                            <span id="lblMensagemExpiracaoFicha" class="label label-danger"></span>
                         </h2>
 
                         <div class="row m-b-lg m-t-lg">
@@ -277,7 +373,7 @@
                                 <!---->
                             </div>
                             <div class="col-md-1">
-								<img src="img/ehaltarjovem.png" id="imgAltarJovem" height="26px" width="56px" />
+                                <img src="img/ehaltarjovem.png" id="imgAltarJovem" height="26px" width="56px" />
                             </div>
 
                         </div>
@@ -1017,6 +1113,9 @@
             //ConfigurarInformacoesPerfil();
             PreencherFormularioJovem();
 
+            
+            
+
             $('#modalAlteraClassificacaoJovem').on('shown.bs.modal', function (e) {
                 $('#cboClassificacaoJovem').val(__ClassificacaoAtual).trigger('change.select2');
             });
@@ -1044,6 +1143,7 @@
 				$('#lnkLinkVisualizaPDF_Ficha').prop('href', 'VisualizaFichaJovemImpressao.aspx?idJovem=' + vIdJovem);
 				$('#lnkLinkVisualizaPDF_Ficha').prop('target', '_blank');
 				//configuraLinkVisualizacaoPDFFicha(vIdJovem);                
+                verificaExpiracaoFicha(jovemRetorno.FichaEstaExpirada);
 
                 $('#nomeJovem').html(ToTitleCase(jovemRetorno.Nome));
                 $('#lblNomeJovem').text(ToTitleCase(jovemRetorno.Nome));
@@ -1374,6 +1474,10 @@
                 $('#lnkLinkRetorno').prop('href', 'GerenciaNacionalAltarJovem.html');
                 $('#lnkLinkRetorno').text('Gerência Altar Jovem');
             }
+            else if (vOrgm == 'BAT') {
+                $('#lnkLinkRetorno').prop('href', 'BuscaEspecializadaTestemunho.html');
+                $('#lnkLinkRetorno').text('Busca Avançada de Testemunhos');
+            }
         }
 
         function trataImagemFotoPerfil(urlFoto) {
@@ -1494,6 +1598,18 @@
 
         function abreModalAlteraClassificacao() {
             $('#modalAlteraClassificacaoJovem').modal('show');
+        }
+        
+        function verificaExpiracaoFicha(pAFichaEstaExpirada) {
+            if (pAFichaEstaExpirada) {
+                $('#iconeFichaExpirada').show();
+                $('#lblMensagemExpiracaoFicha').text('Esta ficha está expirada!');
+                $('#lblMensagemExpiracaoFicha').show();
+            }
+            else {
+                $('#iconeFichaExpirada').hide();
+                $('#lblMensagemExpiracaoFicha').hide();
+            }
         }
 
     </script>

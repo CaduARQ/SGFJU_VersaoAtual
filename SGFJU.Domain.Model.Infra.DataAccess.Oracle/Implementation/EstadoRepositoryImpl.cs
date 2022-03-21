@@ -629,5 +629,55 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 throw new DomainException(erroMessage, dataException);
             }
         }
+
+        public bool TranfereIgrejaDeRegiao(IgrejaDTO igrejaASerTransferida, RegiaoDTO regiaoDestino) {
+            try {
+                var _DAO = new DAO();
+                var tinfo = CultureInfo.CurrentCulture.TextInfo;
+                var sqlCMD = new StringBuilder();
+                MySqlConnection conexao = null;
+                MySqlDataReader resultadoReader = null;
+
+                sqlCMD.Append(" UPDATE SGFJU_DEV.SGFJU_TBL_IGREJA ");
+                sqlCMD.Append("    SET ID_REGIAO = " + regiaoDestino.IdRegiao + " ");
+                sqlCMD.Append("  WHERE ID_IGREJA = " + igrejaASerTransferida.IdIgreja);
+
+                using (conexao = _DAO.GetConnection()) {
+                    conexao.Open();
+                    _DAO.ExecuteNonQuery(sqlCMD.ToString());
+                }
+                return true;
+            }
+            catch (Exception dataException) {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
+                var erroMessage = string.Format("{0}.{1} - {2}", this.GetType().Name, "ObterJovemInformacoesDetalhadas", dataException.Message);
+                throw new DomainException(erroMessage, dataException);
+            }
+        }
+        public bool TranfereRegiaoDeBloco(RegiaoDTO regiaoASerTransferida, BlocoDTO blocoDestino) { 
+            try {
+                var _DAO = new DAO();
+                var tinfo = CultureInfo.CurrentCulture.TextInfo;
+                var sqlCMD = new StringBuilder();
+                MySqlConnection conexao = null;
+                MySqlDataReader resultadoReader = null;
+
+                sqlCMD.Append(" UPDATE SGFJU_DEV.SGFJU_TBL_REGIAO ");
+                sqlCMD.Append("    SET ID_BLOCO = " + blocoDestino.idBloco + " ");
+                sqlCMD.Append("  WHERE ID_REGIAO = " + regiaoASerTransferida.IdRegiao);
+
+                using (conexao = _DAO.GetConnection())
+                {
+                    conexao.Open();
+                    _DAO.ExecuteNonQuery(sqlCMD.ToString());
+                }
+                return true;
+            }
+            catch (Exception dataException) {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
+                var erroMessage = string.Format("{0}.{1} - {2}", this.GetType().Name, "ObterJovemInformacoesDetalhadas", dataException.Message);
+                throw new DomainException(erroMessage, dataException);
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using NodaTime;
 using SGFJU.Bussiness.Facade;
 using SGFJU.Domain.Model.Entities;
 using SGFJU.Domain.Model.Infra.ExceptionManager;
@@ -279,6 +280,45 @@ namespace SGFJU.Domain.UI.Controllers
                                                               NomeProjeto = c.NomeProjeto
                                                           }
                                                   }).ToList());
+                    
+                    var dataCadastro = DateTime.Parse(jovemRetorno.DataCadastro);
+                    var dataUltimaAtualizacao = (!string.IsNullOrEmpty(jovemRetorno.DataUltimaAtualizacao)) ?
+                                                   DateTime.Parse(jovemRetorno.DataUltimaAtualizacao) : new Nullable<DateTime>(); 
+                    var dataAtual = DateTime.Now;
+
+                    LocalDate start = new LocalDate(dataCadastro.Year, dataCadastro.Month, dataCadastro.Day);
+                    LocalDate end = new LocalDate(dataAtual.Year, dataAtual.Month, dataAtual.Day);
+
+                    LocalDate dataUltimaAtualizacaoDate = LocalDate.MinIsoValue;
+                    LocalDate startUltimaAtualizacao = LocalDate.MinIsoValue;
+                    LocalDate endUltimaAtualizacao = new LocalDate(dataAtual.Year, dataAtual.Month, dataAtual.Day);
+                    int mesesDesdeUltimaAtualizacao = 0;
+
+                    if (dataUltimaAtualizacao.HasValue) { 
+                    }
+                    /*
+                        dataUltimaAtualizacaoDate = new LocalDate(dataUltimaAtualizacao.Value.Year,
+                                                                  dataUltimaAtualizacao.Value.Month,
+                                                                  dataUltimaAtualizacao.Value.Day);*/
+                    
+
+
+
+                    Period periodDataCadastro = Period.Between(start, end);
+                    int mesesDesdeCadastro = periodDataCadastro.Months;
+
+                    if (mesesDesdeCadastro >= 6 && dataUltimaAtualizacaoDate == LocalDate.MinIsoValue) {
+                        jovemRetorno.FichaEstaExpirada = true;
+                        jovemRetorno.PeriodicidadeFichaJovem = $"A ficha está expirada desde {periodDataCadastro.Days}";
+                    }
+                    else if (mesesDesdeUltimaAtualizacao >= 6) {
+                        jovemRetorno.FichaEstaExpirada = true;
+                        jovemRetorno.PeriodicidadeFichaJovem = $"A ficha está expirada desde {periodDataCadastro.Days}";
+                    }
+                    else if (mesesDesdeCadastro < 6) {
+                        jovemRetorno.FichaEstaExpirada = false;
+                        jovemRetorno.PeriodicidadeFichaJovem = $"A ficha expira em {periodDataCadastro.Days}";
+                    }
                 }
 
                 return jovemRetorno;

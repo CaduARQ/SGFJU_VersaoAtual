@@ -589,6 +589,10 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                     SQLWhere.Append(" AND IGJ.ID_IGREJA = " + parametrosPesquisa.IdIgreja.ToString() + " ");
                 }
 
+                if (parametrosPesquisa.EhParaListarFichasExpiradas == 'S') {
+                    SQLWhere.Append(" AND ( TIMESTAMPDIFF(month, NOW(), DATAULTIMAATUALIZACAO) >= 6 OR DATAULTIMAATUALIZACAO IS NULL ) ");
+                }
+
                 using (conexao = _DAO.GetConnection()){
                     conexao.Open();
                     using (resultadoReader = _DAO.ExecuteQuery(SQLQuery.ToString() + SQLWhere.ToString() + " ORDER BY JV.DATACADASTRO DESC", ref conexao)) {                        
@@ -1115,6 +1119,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                             jovemRetorno.AutorizacoesCompraCamisa 
                                 = autorizacoesCamisaQueOJovemPossui.Select(aut => new AutorizacaoCompraCamisaDTO {
                                     IdJovem = aut.JovemAutorizado.Id,
+                                    IdAutorizacao = aut.Id,
                                     CodigoAutorizacaoCompraCamisa = aut.CodigoAutorizacaoCompraCamisa,
                                     DataAutorizacaoCompraCamisa = aut.DataAutorizacaoCompraCamisa.Value.ToString("dd/MM/yyyy"),                                    
                                     NomeAutorizadorCompraCamisa = aut.NomeAutorizadorCompraCamisa,
@@ -1351,6 +1356,10 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
 
                 if (!string.IsNullOrEmpty(parametrosConsultaGeral.Nome)) {
                     SQLWhere.Append(" AND JV.NOME LIKE '%" + parametrosConsultaGeral.Nome + "%' ");
+                }
+
+                if (parametrosConsultaGeral.EhParaListarFichasExpiradas == 'S') {
+                    SQLWhere.Append(" AND ( TIMESTAMPDIFF(month, NOW(), DATAULTIMAATUALIZACAO) >= 6 OR DATAULTIMAATUALIZACAO IS NULL ) ");
                 }
 
                 if (parametrosConsultaGeral.IdTipoEstadoCivil != 0) {
@@ -2200,7 +2209,20 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                     using (var transaction = session.BeginTransaction()) {
                         try {
                             foreach (var solicitacao in pSolicitacoesAutorizacaoCompra) {
-                                session.Save(new JovemAutorizacao { 
+                                var novaAutorizacao = new JovemAutorizacao
+                                {
+                                    JovemAutorizado = new Jovem { Id = solicitacao.IdJovem },
+                                    CodigoAutorizacaoCompraCamisa = solicitacao.CodigoAutorizacaoCompraCamisa,
+                                    NomeAutorizadorCompraCamisa = solicitacao.NomeAutorizadorCompraCamisa,
+                                    NomeCamisaAutorizada = solicitacao.NomeCamisaAutorizada,
+                                    OrigemCompraCamisa = solicitacao.OrigemCompraCamisa,
+                                    DataAutorizacaoCompraCamisa = DateTime.Parse(solicitacao.DataAutorizacaoCompraCamisa)
+                                };
+                                session.Save(novaAutorizacao);
+
+                                session.Save(new JovemAutorizacaoHistorico
+                                {
+                                    Id = novaAutorizacao.Id,
                                     JovemAutorizado = new Jovem { Id = solicitacao.IdJovem },
                                     CodigoAutorizacaoCompraCamisa = solicitacao.CodigoAutorizacaoCompraCamisa,
                                     NomeAutorizadorCompraCamisa = solicitacao.NomeAutorizadorCompraCamisa,
@@ -2495,6 +2517,66 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
             }
         }
 
+        public void ExcluirAutorizacaoCamisa(AutorizacaoCompraCamisaDTO autorizacaoParaExcluir) {
+            try {
+                var _DAO = new DAO();
+                var tinfo = CultureInfo.CurrentCulture.TextInfo;
+                MySqlConnection conexao = null;
+                MySqlDataReader resultadoReader = null;
+                var SQLQuery = $"DELETE FROM SGFJU_DEV.SGFJU_TBL_JOVEM_AUTORIZACAO " +
+                               $" WHERE ID_AUTORIZACAO = {autorizacaoParaExcluir.IdAutorizacao} " ;
+
+                using (conexao = _DAO.GetConnection()) {
+                    conexao.Open();
+                    _DAO.ExecuteNonQuery(new List<string> { SQLQuery });
+                }
+            }
+            catch (Exception dataException)
+            {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
+                throw new DomainException(mensagemTratada, dataException);
+            }
+        }
+
+        public IList<AutorizacaoCompraCamisaDTO> RetornaHistoricoSolicitacoesCamisa(JovemDTO pJovem) {
+            try
+            {
+                var retornoConsultaGeral = new List<JovemAutorizacaoCamisaDTO>();
+                var _DAO = new DAO();
+                var tinfo = CultureInfo.CurrentCulture.TextInfo;
+                var historicoRetorno = new List<AutorizacaoCompraCamisaDTO>();
+                MySqlConnection conexao = null;
+                MySqlDataReader resultadoReader = null;
+                var SQLQuery = $"SELECT * FROM SGFJU_DEV.SGFJU_TBL_HISTORICO_AUTORIZACAO_CAMISA WHERE ID_JOVEM = {pJovem.Id}";
+                var possuiCamisaDeObreiro = false;
+                var possuiCamisaDeProjeto = false;
+
+                using (conexao = _DAO.GetConnection()) {
+                    conexao.Open();
+                    using (resultadoReader = _DAO.ExecuteQuery(SQLQuery, ref conexao)) {
+                        while (resultadoReader.Read()){
+                            historicoRetorno.Add(new AutorizacaoCompraCamisaDTO {
+                                IdJovem = int.Parse(resultadoReader["ID_JOVEM"].ToString()),
+                                IdAutorizacao = int.Parse(resultadoReader["ID_AUTORIZACAO"].ToString()),
+                                CodigoAutorizacaoCompraCamisa = resultadoReader["CodigoAutorizacaoCompraCamisa"].ToString(),
+                                DataAutorizacaoCompraCamisa = DateTime.Parse( resultadoReader["DataAutorizacaoCompraCamisa"].ToString() ).ToString("dd/MM/yyyy"),
+                                NomeAutorizadorCompraCamisa = resultadoReader["NomeAutorizadorCompraCamisa"].ToString(),
+                                NomeCamisaAutorizada = resultadoReader["NOMECAMISAAUTORIZADA"].ToString(),
+                                OrigemCompraCamisa = resultadoReader["OrigemCompraCamisa"].ToString()
+                            });
+                        }
+                    }
+                }
+
+                return historicoRetorno;
+            }
+            catch (Exception dataException)
+            {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
+                throw new DomainException(mensagemTratada, dataException);
+            }
+        }
+
         public void AlteraClassificacaoJovem(JovemDTO jovemParametro) {
             try
             {
@@ -2520,5 +2602,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 throw new DomainException(mensagemTratada, dataException);
             }
         }
+
+        
     }
 }

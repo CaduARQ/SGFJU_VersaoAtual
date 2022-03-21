@@ -28,6 +28,7 @@ namespace SGFJU.Common.UnityContainer
             __unityContainer.RegisterType(typeof(ArvoreVidaRepository), typeof(ArvoreVidaRepositoryImpl));
             __unityContainer.RegisterType(typeof(AVDashboardRepository), typeof(AVDashboardRepositoryImpl));
             __unityContainer.RegisterType(typeof(BuscaAvancadaTestemunhoRepository), typeof(BuscaAvancadaTestemunhoRepositoryImpl));
+            __unityContainer.RegisterType(typeof(RelatorioReuniaoFJUIgrejaRepository), typeof(RelatorioReuniaoFJUIgrejaRepositoryImpl));
             __unityContainer.RegisterType(typeof(Serializer), typeof(JSONSerializer));
 
             __unityContainer.RegisterType(typeof(ErrorLogger), typeof(ErrorLoggerImpl));

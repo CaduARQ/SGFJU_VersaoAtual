@@ -15,5 +15,6 @@ namespace SGFJU.Domain.Model.Repositories
         IList<AltarJovemDTO> ObterTodosJovensAltarJovemOleo();
         IList<AltarJovemDTO> ObterTodosJovensAltarJovemSal();
         IList<AltarJovemDTO> ObterTodosJovensAltarJovemLuz();
+        IList<TodosJovensDTO> ListaJovensLevantadosParaOAltarPorParametro(AltarJovemParametroPesquisaDTO parametrosPesquisa);
     }
 }

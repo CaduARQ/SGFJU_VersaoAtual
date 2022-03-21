@@ -41,6 +41,8 @@ namespace SGFJU.Bussiness.Facade
         IList<JovemAutorizacaoCamisaDTO> PesquisaAutorizacoesCamisaFJUPorParametro(ConsultaGeralDTO parametrosConsultaGeral);
         RespostaAprovacaoCompraCamisa VerificaCodigoArcacenter(AutorizacaoCompraCamisaDTO codigoArcaCenter);
         RespostaAprovacaoCompraCamisa DarBaixaCamisa(AutorizacaoCompraCamisaDTO codigoAutorizacaASerDadoBaixa);
+        void ExcluirAutorizacaoCamisa(AutorizacaoCompraCamisaDTO autorizacaoParaExcluir);
+        IList<AutorizacaoCompraCamisaDTO> RetornaHistoricoSolicitacoesCamisa(JovemDTO pJovem);
         bool AindaPodeSolicitarCamisa(int pIdJovem);
         void AlteraClassificacaoJovem(JovemDTO jovemParametro);
     }

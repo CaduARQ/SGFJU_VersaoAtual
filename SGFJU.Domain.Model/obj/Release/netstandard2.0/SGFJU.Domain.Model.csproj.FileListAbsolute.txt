@@ -9,3 +9,14 @@ C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\
 C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\SGFJU.Domain.Model.csproj.CopyComplete
 C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\SGFJU.Domain.Model.dll
 C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\SGFJU.Domain.Model.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\bin\Release\netstandard2.0\SGFJU.Domain.Model.deps.json
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\bin\Release\netstandard2.0\SGFJU.Domain.Model.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\bin\Release\netstandard2.0\SGFJU.Domain.Model.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\bin\Release\netstandard2.0\SGFJU.ServicesLayer.DTO.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\bin\Release\netstandard2.0\SGFJU.ServicesLayer.DTO.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\SGFJU.Domain.Model.csprojAssemblyReference.cache
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\SGFJU.Domain.Model.AssemblyInfoInputs.cache
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\SGFJU.Domain.Model.AssemblyInfo.cs
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\SGFJU.Domain.Model.csproj.CopyComplete
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\SGFJU.Domain.Model.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model\obj\Release\netstandard2.0\SGFJU.Domain.Model.pdb

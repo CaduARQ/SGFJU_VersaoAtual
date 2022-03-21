@@ -62,38 +62,7 @@
                             FJU
                         </div>
                     </li>
-                    <li>
-                        <a href="RegistraJovem.aspx"><i class="fa fa-th-large"></i> <span class="nav-label">Voluntários</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="RegistraJovem.aspx">Novo Jovem</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ConsultaGeralParametros.html">Geral Parâmetros</a></li>
-                            <li><a href="TodosJovens.aspx">Todos</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Gerenciar</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li>
-                                <a href="#"><i class="fa fa-tree"></i>Árvore da Vida <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaArvoreDaVidaEstadual.html">Associar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreirosAssociacoes.html">Desassociar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreiros.html">Obreiros</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    
                 </ul>
                 
             </div>
@@ -180,33 +149,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <a href="profile.html" class="dropdown-item">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="float-right text-muted small">12 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <a href="grid_options.html" class="dropdown-item">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="float-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="notifications.html" class="dropdown-item">
-                                    <strong>See All Alerts</strong>
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                        </li>
+
                     </ul>
                 </li>
 
@@ -308,8 +251,9 @@
                                 Ações
                             </div>
                             <div class="panel-body" align="center">
-                                <button id="btnPesquisa" onclick="PesquisarPorParametro()" class="btn btn-success " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
+                                <button id="btnPesquisa" onclick="PesquisarPorParametro('')" class="btn btn-success " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
                                 <button id="btnRefresh" onclick="resetaPesquisa()" class="btn btn-info " type="button"><i class="fa fa-recycle"></i>&nbsp;Reseta Pesquisa</button>
+                                <button id="btnFichasExpiradas" onclick="PesquisarPorParametro('S')" class="btn btn-danger " type="button"><i class="fa fa-recycle"></i>&nbsp;Fichas Expiradas</button>
                             </div>
                         </div>
                     </div>
@@ -467,464 +411,7 @@
                 </div>
             </div>
         </div>
-        <div class="small-chat-box fadeInRight animated">
-
-            <div class="heading" draggable="true">
-                <small class="chat-date float-right">
-                    02.19.2015
-                </small>
-                Small chat
-            </div>
-
-            <div class="content">
-
-                <div class="left">
-                    <div class="author-name">
-                        Monica Jackson <small class="chat-date">
-                        10:02 am
-                    </small>
-                    </div>
-                    <div class="chat-message active">
-                        Lorem Ipsum is simply dummy text input.
-                    </div>
-
-                </div>
-                <div class="right">
-                    <div class="author-name">
-                        Mick Smith
-                        <small class="chat-date">
-                            11:24 am
-                        </small>
-                    </div>
-                    <div class="chat-message">
-                        Lorem Ipsum is simpl.
-                    </div>
-                </div>
-                <div class="left">
-                    <div class="author-name">
-                        Alice Novak
-                        <small class="chat-date">
-                            08:45 pm
-                        </small>
-                    </div>
-                    <div class="chat-message active">
-                        Check this stock char.
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="author-name">
-                        Anna Lamson
-                        <small class="chat-date">
-                            11:24 am
-                        </small>
-                    </div>
-                    <div class="chat-message">
-                        The standard chunk of Lorem Ipsum
-                    </div>
-                </div>
-                <div class="left">
-                    <div class="author-name">
-                        Mick Lane
-                        <small class="chat-date">
-                            08:45 pm
-                        </small>
-                    </div>
-                    <div class="chat-message active">
-                        I belive that. Lorem Ipsum is simply dummy text.
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="form-chat">
-                <div class="input-group input-group-sm">
-                    <input type="text" class="form-control">
-                    <span class="input-group-btn"> <button
-                        class="btn btn-primary" type="button">Send
-                </button> </span></div>
-            </div>
-
-        </div>
-        <div id="small-chat">
-
-            <span class="badge badge-warning float-right">5</span>
-            <a class="open-small-chat" href="">
-                <i class="fa fa-comments"></i>
-
-            </a>
-        </div>
-        <div id="right-sidebar" class="animated">
-            <div class="sidebar-container">
-
-                <ul class="nav nav-tabs navs-3">
-                    <li>
-                        <a class="nav-link active" data-toggle="tab" href="#tab-1"> Notes </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" data-toggle="tab" href="#tab-2"> Projects </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" data-toggle="tab" href="#tab-3"> <i class="fa fa-gear"></i> </a>
-                    </li>
-                </ul>
-
-                <div class="tab-content">
-
-
-                    <div id="tab-1" class="tab-pane active">
-
-                        <div class="sidebar-title">
-                            <h3> <i class="fa fa-comments-o"></i> Latest Notes</h3>
-                            <small><i class="fa fa-tim"></i> You have 10 new message.</small>
-                        </div>
-
-                        <div>
-
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="float-left text-center">
-                                        <img alt="image" class="rounded-circle message-avatar" src="img/a1.jpg">
-
-                                        <div class="m-t-xs">
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-
-                                        There are many variations of passages of Lorem Ipsum available.
-                                        <br>
-                                        <small class="text-muted">Today 4:21 pm</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="float-left text-center">
-                                        <img alt="image" class="rounded-circle message-avatar" src="img/a2.jpg">
-                                    </div>
-                                    <div class="media-body">
-                                        The point of using Lorem Ipsum is that it has a more-or-less normal.
-                                        <br>
-                                        <small class="text-muted">Yesterday 2:45 pm</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="float-left text-center">
-                                        <img alt="image" class="rounded-circle message-avatar" src="img/a3.jpg">
-
-                                        <div class="m-t-xs">
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-                                        Mevolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                                        <br>
-                                        <small class="text-muted">Yesterday 1:10 pm</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="float-left text-center">
-                                        <img alt="image" class="rounded-circle message-avatar" src="img/a4.jpg">
-                                    </div>
-
-                                    <div class="media-body">
-                                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
-                                        <br>
-                                        <small class="text-muted">Monday 8:37 pm</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="float-left text-center">
-                                        <img alt="image" class="rounded-circle message-avatar" src="img/a8.jpg">
-                                    </div>
-                                    <div class="media-body">
-
-                                        All the Lorem Ipsum generators on the Internet tend to repeat.
-                                        <br>
-                                        <small class="text-muted">Today 4:21 pm</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="float-left text-center">
-                                        <img alt="image" class="rounded-circle message-avatar" src="img/a7.jpg">
-                                    </div>
-                                    <div class="media-body">
-                                        Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                                        <br>
-                                        <small class="text-muted">Yesterday 2:45 pm</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="float-left text-center">
-                                        <img alt="image" class="rounded-circle message-avatar" src="img/a3.jpg">
-
-                                        <div class="m-t-xs">
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                            <i class="fa fa-star text-warning"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below.
-                                        <br>
-                                        <small class="text-muted">Yesterday 1:10 pm</small>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="sidebar-message">
-                                <a href="#">
-                                    <div class="float-left text-center">
-                                        <img alt="image" class="rounded-circle message-avatar" src="img/a4.jpg">
-                                    </div>
-                                    <div class="media-body">
-                                        Uncover many web sites still in their infancy. Various versions have.
-                                        <br>
-                                        <small class="text-muted">Monday 8:37 pm</small>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div id="tab-2" class="tab-pane">
-
-                        <div class="sidebar-title">
-                            <h3> <i class="fa fa-cube"></i> Latest projects</h3>
-                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
-                        </div>
-
-                        <ul class="sidebar-list">
-                            <li>
-                                <a href="#">
-                                    <div class="small float-right m-t-xs">9 hours ago</div>
-                                    <h4>Business valuation</h4>
-                                    It is a long established fact that a reader will be distracted.
-
-                                    <div class="small">Completion with: 22%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
-                                    </div>
-                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small float-right m-t-xs">9 hours ago</div>
-                                    <h4>Contract with Company </h4>
-                                    Many desktop publishing packages and web page editors.
-
-                                    <div class="small">Completion with: 48%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 48%;" class="progress-bar"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small float-right m-t-xs">9 hours ago</div>
-                                    <h4>Meeting</h4>
-                                    By the readable content of a page when looking at its layout.
-
-                                    <div class="small">Completion with: 14%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="label label-primary float-right">NEW</span>
-                                    <h4>The generated</h4>
-                                    There are many variations of passages of Lorem Ipsum available.
-                                    <div class="small">Completion with: 22%</div>
-                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small float-right m-t-xs">9 hours ago</div>
-                                    <h4>Business valuation</h4>
-                                    It is a long established fact that a reader will be distracted.
-
-                                    <div class="small">Completion with: 22%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
-                                    </div>
-                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small float-right m-t-xs">9 hours ago</div>
-                                    <h4>Contract with Company </h4>
-                                    Many desktop publishing packages and web page editors.
-
-                                    <div class="small">Completion with: 48%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 48%;" class="progress-bar"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="small float-right m-t-xs">9 hours ago</div>
-                                    <h4>Meeting</h4>
-                                    By the readable content of a page when looking at its layout.
-
-                                    <div class="small">Completion with: 14%</div>
-                                    <div class="progress progress-mini">
-                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="label label-primary float-right">NEW</span>
-                                    <h4>The generated</h4>
-                                    <!--<div class="small float-right m-t-xs">9 hours ago</div>-->
-                                    There are many variations of passages of Lorem Ipsum available.
-                                    <div class="small">Completion with: 22%</div>
-                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <div id="tab-3" class="tab-pane">
-
-                        <div class="sidebar-title">
-                            <h3><i class="fa fa-gears"></i> Settings</h3>
-                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
-                        </div>
-
-                        <div class="setings-item">
-                    <span>
-                        Show notifications
-                    </span>
-                            <div class="switch">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
-                                    <label class="onoffswitch-label" for="example">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="setings-item">
-                    <span>
-                        Disable Chat
-                    </span>
-                            <div class="switch">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
-                                    <label class="onoffswitch-label" for="example2">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="setings-item">
-                    <span>
-                        Enable history
-                    </span>
-                            <div class="switch">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
-                                    <label class="onoffswitch-label" for="example3">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="setings-item">
-                    <span>
-                        Show charts
-                    </span>
-                            <div class="switch">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
-                                    <label class="onoffswitch-label" for="example4">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="setings-item">
-                    <span>
-                        Offline users
-                    </span>
-                            <div class="switch">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
-                                    <label class="onoffswitch-label" for="example5">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="setings-item">
-                    <span>
-                        Global search
-                    </span>
-                            <div class="switch">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
-                                    <label class="onoffswitch-label" for="example6">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="setings-item">
-                    <span>
-                        Update everyday
-                    </span>
-                            <div class="switch">
-                                <div class="onoffswitch">
-                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
-                                    <label class="onoffswitch-label" for="example7">
-                                        <span class="onoffswitch-inner"></span>
-                                        <span class="onoffswitch-switch"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="sidebar-content">
-                            <h4>Settings</h4>
-                            <div class="small">
-                                I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                And typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
     <!-- Mainly scripts -->
@@ -978,6 +465,7 @@
         var hostUrl = "http://" + document.location.hostname;
         var primeiraPesquisa = false;
         var vExisteUltimoPesquisaRetorno = false;
+        var __EH_RESULTSET_FICHAS_EXPIRADAS = undefined;
 
         $(document).ready(function () {
 
@@ -1043,7 +531,7 @@
                         ],
                         columnDefs: [
                             {
-                                targets: [0],
+                                targets: [0, 1],
                                 visible: false,
                                 searchable: false
                             }]
@@ -1139,14 +627,18 @@
             });
         }
 
-        function PesquisarPorParametro() {
+        function PesquisarPorParametro(EhPararListarExpiradas) {
             $('#iBoxResultadoPesquisa').children('.ibox-content').toggleClass('sk-loading');//#spinner
+            var vEhPararListarExpiradas = (EhPararListarExpiradas != '') ? EhPararListarExpiradas : '';
+            __EH_RESULTSET_FICHAS_EXPIRADAS = (EhPararListarExpiradas != '') ? true : false;
+
             var parametroPesquisaDTO = {
                 IdEstado: 0,
                 IdBlocoJovem: $('#cboBloco').val(),
                 IdRegiaoJovem: $('#cboRegiao').val(),
                 IdIgreja: $('#cboIgreja').val(),
-                FotoEstaNoDiretorio: $('input[name=rbTemFoto]:checked').val()
+                FotoEstaNoDiretorio: $('input[name=rbTemFoto]:checked').val(),
+                EhParaListarFichasExpiradas: vEhPararListarExpiradas
             };
             
             $.ajax({
@@ -1175,7 +667,17 @@
                             { data: 'NomeBlocoJovem' },
                             { data: 'NomeRegiaoJovem' },
                             { data: 'NomeIgrejaJovem' },
-                            { data: 'NomeJovem' },
+                            {
+                                data: 'NomeJovem',
+                                render: function (data, type, row) {
+                                    //'NomeJovem'
+                                    console.log('::valor do parâmetro ->'+EhPararListarExpiradas);
+                                    if (vEhPararListarExpiradas == 'S')
+                                        return '<span id="lblClassificacao" class="label-danger">' + row.NomeJovem + '</span>';
+                                    else
+                                        return row.NomeJovem;
+                                }
+                            },
                             {
                                 data: 'FotoEstaNoDiretorio',
                                 render: function (data, type, row) {
@@ -1213,6 +715,8 @@
                                 searchable: false
                             }]
                     });
+
+                    
                     
                     $('#lblQuantidadeResgistrosRetornados').html(tblTodosJovens.data().count());
                 }
@@ -1223,7 +727,8 @@
 
                     $('#lblQuantidadeResgistrosRetornados').html(table.data().count());
                 }
-                
+
+                vEhPararListarExpiradas = undefined;
             });
         }
 

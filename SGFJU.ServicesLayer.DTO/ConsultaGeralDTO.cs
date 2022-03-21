@@ -24,6 +24,7 @@ namespace SGFJU.ServicesLayer.DTO
         public int IdHabilidade { get; set; }
         public int IdNivel { get; set; }
         public string CodigoAutorizacaoSGFJU { get; set; }
+        public char EhParaListarFichasExpiradas { get; set; }
         //
         public int IdTipoEstadoCivil { get; set; }
         public int IdTipoMoradia { get; set; }

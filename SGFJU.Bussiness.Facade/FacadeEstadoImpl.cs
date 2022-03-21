@@ -265,5 +265,35 @@ namespace SGFJU.Bussiness.Facade
                 throw new FacadeException(mensagemErroExcecao, excGeneral);
             }
         }
+        public bool TranfereIgrejaDeRegiao(IgrejaDTO igrejaASerTransferida, RegiaoDTO regiaoDestino) { 
+            try {
+                return this.__diContainer
+                       .GetServiceImplementationToType<EstadoRepository>()
+                       .TranfereIgrejaDeRegiao(igrejaASerTransferida, regiaoDestino);
+            }
+            catch (DomainException exceptionFacade) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(exceptionFacade);
+                throw new FacadeException(mensagemErroExcecao, exceptionFacade);
+            }
+            catch (Exception excGeneral) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excGeneral);
+                throw new FacadeException(mensagemErroExcecao, excGeneral);
+            }
+        }
+        public bool TranfereRegiaoDeBloco(RegiaoDTO regiaoASerTransferida, BlocoDTO blocoDestino) { 
+            try {
+                return this.__diContainer
+                       .GetServiceImplementationToType<EstadoRepository>()
+                       .TranfereRegiaoDeBloco(regiaoASerTransferida, blocoDestino);
+            }
+            catch (DomainException exceptionFacade) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(exceptionFacade);
+                throw new FacadeException(mensagemErroExcecao, exceptionFacade);
+            }
+            catch (Exception excGeneral) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excGeneral);
+                throw new FacadeException(mensagemErroExcecao, excGeneral);
+            }
+        }
     }
 }

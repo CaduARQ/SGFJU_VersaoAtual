@@ -129,7 +129,7 @@ namespace ConsoleTester
             });
             */
 
-            
+
 
             /*
             var acompanhamentoTS = new JovemObreiro {
@@ -175,7 +175,7 @@ namespace ConsoleTester
 
 
 
-            
+            /*
             var repositoriocoordenador = new CoordenadorRepositoryImpl();
             
             var igCoordenador = new IgrejaCoordenador{
@@ -220,6 +220,48 @@ namespace ConsoleTester
 
             var jovem = (new JovemRepositoryImpl()).ObterJovemInformacoesDetalhadas(new Jovem { Id = idNovoCoordenador });
 
+            */
+
+            var patrimonioRepository = new PatrimonioRepositoryImpl();
+            patrimonioRepository.Save(new ItemPatrimonio {
+                CategoriaItem = new CategoriaItemPatrimonio { Code = 6 },
+                DescricaoPatrimonio = "Microfone Shure importado da Bélgica",
+                LocalCompra = "Instrumentos musicais Store",
+                DataCompra = DateTime.Now,
+                Marca = "Shure",
+                NomeArquivoCartaDoacao = "CartaDoacaoMicrofone.pdf",
+                NomeArquivoPDFNotaFiscal = "NotaFiscalMicrofoneShure.pdf",
+                Modelo = "SHU18594bW3",
+                ValorUnitario = decimal.Parse("2000.00"),
+                NomeItemPatrimonio = "Microfone Shure",
+                NomeArquivoImagemItem1 = "ShureMicrofone.png"
+            });
+
+            /*
+            var repo = new RelatorioReuniaoFJUIgrejaRepositoryImpl();
+            
+            var relatorios = new List<RelatorioReuniaoFJUIgrejaDTO>{
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 6,    IdReuniaoFJURelatorio = 10, QuantidadeJovens = 50 },
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 5669, IdReuniaoFJURelatorio = 10, QuantidadeJovens = 80 },
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 5670, IdReuniaoFJURelatorio = 10, QuantidadeJovens = 138 },
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 5671, IdReuniaoFJURelatorio = 10, QuantidadeJovens = 190 },
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 5691, IdReuniaoFJURelatorio = 10, QuantidadeJovens = 250 },
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 5692, IdReuniaoFJURelatorio = 10, QuantidadeJovens = 56 },
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 5693, IdReuniaoFJURelatorio = 10, QuantidadeJovens = 67 },
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 5694, IdReuniaoFJURelatorio = 10, QuantidadeJovens = 240 },
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 7,    IdReuniaoFJURelatorio = 10, QuantidadeJovens = 480 },
+                    new RelatorioReuniaoFJUIgrejaDTO { IdIgrejaRelatorio = 2654, IdReuniaoFJURelatorio = 10, QuantidadeJovens = 300 }
+            };
+
+            var respostaProcessamento = repo.ProcessarFechamentoRelatorioDTO(new FechamentoRelatorioDTO { 
+                IdEstadoFechamentoRelatorio = 28,
+                IdReuniaoFechamentoRelatorio = 10,
+                DataInicialRelatorioFJU = "2021-11-06",
+                DataFinalRelatorioFJU = "2021-11-07"
+            }); */
+
+            //var repo = new AltarJovemRepositoryImpl();
+            //var resultado = repo.ListaJovensLevantadosParaOAltarPorParametro(new AltarJovemParametroPesquisaDTO { IdEstado = 28 });
                 Console.ReadKey();
 
             //var estados = sessaoAberta.CreateCriteria<Jovem>().List<Jovem>();

@@ -16,5 +16,6 @@ namespace SGFJU.Bussiness.Facade
         IList<AltarJovemDTO> ObterTodosJovensAltarJovemOleo();
         IList<AltarJovemDTO> ObterTodosJovensAltarJovemSal();
         IList<AltarJovemDTO> ObterTodosJovensAltarJovemLuz();
+        IList<TodosJovensDTO> ListaJovensLevantadosParaOAltarPorParametro(AltarJovemParametroPesquisaDTO parametrosPesquisa);
     }
 }

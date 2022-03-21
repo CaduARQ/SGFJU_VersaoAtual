@@ -2158,8 +2158,9 @@
                                         Ações
                                     </div>
                                     <div class="panel-body" align="center">
-                                        <button id="btnPesquisa" onclick="PesquisarPorParametro()" class="btn btn-outline-dark " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
+                                        <button id="btnPesquisa" onclick="PesquisarPorParametro('')" class="btn btn-outline-dark " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
                                         <button id="btnRefresh" onclick="resetaPesquisa()" class="btn btn-outline-dark " type="button"><i class="fa fa-recycle"></i>&nbsp;Resetar</button>
+                                        <button id="btnFichasExpiradas" onclick="PesquisarPorParametro('S')" class="btn btn-danger " type="button"><i class="fa fa-recycle"></i>&nbsp;Fichas Expiradas</button>
                                     </div>
                                 </div>
                             </div>
@@ -2561,8 +2562,10 @@
                         });
                     }
 
-                    function PesquisarPorParametro() {
+                    function PesquisarPorParametro(EhPararListarExpiradas) {
                         $('#iBoxResultadoPesquisa').children('.ibox-content').toggleClass('sk-loading');
+                        var vEhPararListarExpiradas = (EhPararListarExpiradas != '') ? EhPararListarExpiradas : '';
+                        console.log('::Eh para listar expiradas ?-> '+vEhPararListarExpiradas);
 
                         var vIdEstado = $("#cboEstado").val();
                         var vIdBlocoJovem = $("#cboBloco").val();
@@ -2702,6 +2705,8 @@
                             IdHabilidade: vIdHabilidade,
                             IdNivel: vIdNivel,
                             Nome: pNome,
+
+                            EhParaListarFichasExpiradas: vEhPararListarExpiradas,
                             //
                             IdTipoEstadoCivil: vIdTipoEstadoCivil,
                             IdIdTipoMoradia: vIdIdTipoMoradia,
@@ -2806,7 +2811,16 @@
                                         { data: 'NomeBlocoJovem' },
                                         { data: 'NomeRegiaoJovem' },
                                         { data: 'NomeIgrejaJovem' },
-                                        { data: 'NomeJovem' },
+                                        {
+                                            data: 'NomeJovem',
+                                            render: function (data, type, row) {
+                                                console.log('paraetro' + vEhPararListarExpiradas);
+                                                if (vEhPararListarExpiradas == 'S')
+                                                    return '<span id="lblClassificacao" class="label-danger">' + row.NomeJovem + '</span>';
+                                                else
+                                                    return row.NomeJovem;
+                                            }
+                                        },
                                         {
                                             data: 'FotoEstaNoDiretorio',
                                             render: function (data, type, row) {

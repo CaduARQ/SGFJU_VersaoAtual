@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj",
       "projectName": "SGFJU.ServicesLayer.DTO",
-      "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj",
+      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj",
       "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\obj\\",
+      "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -239,7 +239,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
       }
     }
   }

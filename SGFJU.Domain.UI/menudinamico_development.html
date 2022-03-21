@@ -55,19 +55,7 @@
                             FJU
                         </div>
                     </li>
-                    <!--<li class="active">
-                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li class="active"><a href="DashboardNacional.html">Nacional</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse">
-                        <li><a href="TodosJovensNacional.html">Jovens</a></li>
-                        <li><a href="ConsultaGeral.html">Geral</a></li>
-                    </ul>
-                </li>-->
+                    
                 </ul>
 
             </div>
@@ -174,11 +162,11 @@
                 '  <li><a href="#URL_NO_FILHO#">#NOME_NO_FILHO#</a></li> '
             '</ul>';
             var TEMPLATE_ITEM_MENU = ' <li><a href="#URL_NO_FILHO#">#NOME_NO_FILHO#</a></li> ';
-            var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+            //var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
 
             $(document).ready(function () {
 
-                facadeUser.ConfigurarPaginaX072470();
+                //facadeUser.ConfigurarPaginaX072470();
 
                 var rootNdes = [
                     {
@@ -227,7 +215,41 @@
                     },
                 ];
 
+                var stringHTML_Menu = '<li class="active"> ' +
+                                    '    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> <span class="fa arrow"></span></a> ' +
+                                    '    <ul class="nav nav-second-level"> ' +
+                                    '        <li class="active"><a href="DashboardNacional.html">Nacional</a></li> ' +
+                                    '    </ul> ' +
+                    '</li> ';
+
+                stringHTML_Menu += '<li> ' +
+                    '    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a> ' +
+                    '    <ul class="nav nav-second-level collapse"> ' +
+                    '        <li><a href="TodosJovensNacional.html">Jovens</a></li> ' +
+                    '        <li><a href="ConsultaGeral.html">Geral</a></li> ' +
+                    '    </ul> ' +
+                    '</li> ';
+
                 
+
+                /*
+                $.ajax({
+                    type: "GET",
+                    url: "api/X/RMM",
+                    contentType: "application/json"
+                }).done(function (RMM) {
+
+                    console.log(RMM);
+
+                    $('.metismenu').append(RMM);
+
+                    $(".metismenu").metisMenu('dispose');                    $(".metismenu").metisMenu();
+                });
+                */
+
+                RRM_Function();
+
+                /*
                 $('.metismenu').append(
                         '<li class="active"> ' +
                         '    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> <span class="fa arrow"></span></a> ' +
@@ -243,10 +265,8 @@
                         '    </ul> ' +
                         '</li> '
                 );
-
-                $(".metismenu").metisMenu({
-                    
-                });
+                */
+                
 
                 /*
                 $('#side-menu').append(
@@ -275,9 +295,7 @@
                 });*/
 
                 /*
-                    
-                 */
-                /*
+                
                 for (var i = 0; i < rootNdes.length; i++) {
                     var classeItemMenu = (rootNdes[i].EhMenuAtivo) ? 'Class="active"' : '';
                     $('#side-menu').append(
@@ -288,6 +306,12 @@
                             .replace('#EH_MENU_ATIVO#', classeItemMenu)
                     );
 
+                    console.log(TEMPLATE_ROOT_NODE
+                        .replace('#CLASSE_ICONE_MENU#', rootNdes[i].ClasseIconeItemMenu)
+                        .replace('#ID_NODE_ROOT#', 'itemMenuRoot' + i)
+                        .replace('#NOME_ROOT_NODE#', rootNdes[i].TituloMenu)
+                        .replace('#EH_MENU_ATIVO#', classeItemMenu));
+                    
                     if (rootNdes[i].Filhos.length > 0) {
                         for (var fl = 0; fl < rootNdes[i].Filhos.length; fl++) {
                             if (rootNdes[i].Filhos[fl].Filhos.length > 0) {
@@ -308,7 +332,7 @@
                         }
                     }
 
-                }*/
+                } */
 
             });
 

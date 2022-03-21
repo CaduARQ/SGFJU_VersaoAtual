@@ -21,5 +21,7 @@ namespace SGFJU.Bussiness.Facade
         bool JaExisteIgrejaNaRegiao(IgrejaDTO igrejaAVerificar);
         IList<IgrejaCoordenadorDTO> RetornaInformacoesIgrejasEstado(Estado estadoParametro);
         bool IgrejaPossuiCoordenador(IgrejaCoordenador igrejaCoordenadorParametroB);
+        bool TranfereIgrejaDeRegiao(IgrejaDTO igrejaASerTransferida, RegiaoDTO regiaoDestino);
+        bool TranfereRegiaoDeBloco(RegiaoDTO regiaoASerTransferida, BlocoDTO blocoDestino);
     }
 }

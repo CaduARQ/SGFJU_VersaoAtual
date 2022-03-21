@@ -66,63 +66,7 @@
                             FJU
                         </div>
                     </li>
-                    <li class="active">
-                        <a href="RegistraJovem.aspx"><i class="fa fa-th-large"></i> <span class="nav-label">Voluntários</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">                            
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ConsultaGeralParametros.html">Geral Parâmetros</a></li>
-                            <li><a href="GerenciaCamisasFJUEstado.html">Autorizações Camisas</a></li>
-                            <li><a href="TodosJovens.aspx">Todos</a></li>
-                            <li>
-                                <a href="#"><i class="fa fa-search"></i> <span class="nav-label">Avançada</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level collapse">
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="BuscaEspecializadaTestemunho.html">Testemunho</a>
-                                        </li>
-                                    </ul>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Gerenciar</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <%--<li><a href="GerenciaCoordenadoresEstado.html">Coordenadores</a></li>--%>
-                            <li>
-                                <a href="#"><i class="fa fa-user-circle"></i>Coordenadores <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaCoordenadoresEstado.html">Gerenciar</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaCoordPanoramaEstado.html">Panorama do Estado</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-tree"></i>Árvore da Vida <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaArvoreDaVidaEstadual.html">Associar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreirosAssociacoes.html">Desassociar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreiros.html">Obreiros</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaAVJovensEmAcompanhamento.html">Em Acompanhamento</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    
                 </ul>
 
             </div>

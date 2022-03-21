@@ -114,38 +114,7 @@
                             FJU
                         </div>
                     </li>
-                    <li>
-                        <a href="RegistraJovem.aspx"><i class="fa fa-th-large"></i> <span class="nav-label">Voluntários</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="RegistraJovem.aspx">Novo Jovem</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ConsultaGeralParametros.html">Geral Parâmetros</a></li>
-                            <li><a href="TodosJovens.aspx">Todos</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Gerenciar</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li>
-                                <a href="#"><i class="fa fa-tree"></i>Árvore da Vida <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaArvoreDaVidaEstadual.html">Associar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreirosAssociacoes.html">Desassociar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreiros.html">Obreiros</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    
                 </ul>
 
             </div>
@@ -2207,8 +2176,9 @@
                                         Ações
                                     </div>
                                     <div class="panel-body" align="center">
-                                        <button id="btnPesquisa" onclick="PesquisarPorParametro()" class="btn btn-outline-dark " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
+                                        <button id="btnPesquisa" onclick="PesquisarPorParametro('')" class="btn btn-outline-dark " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
                                         <button id="btnRefresh" onclick="resetaPesquisa()" class="btn btn-outline-dark " type="button"><i class="fa fa-recycle"></i>&nbsp;Resetar</button>
+                                        <button id="btnFichasExpiradas" onclick="PesquisarPorParametro('S')" class="btn btn-danger " type="button"><i class="fa fa-recycle"></i>&nbsp;Fichas Expiradas</button>
                                     </div>
                                 </div>
                             </div>
@@ -2611,8 +2581,10 @@
                         });
                     }
 
-                    function PesquisarPorParametro() {
+                    function PesquisarPorParametro(EhPararListarExpiradas) {
                         $('#iBoxResultadoPesquisa').children('.ibox-content').toggleClass('sk-loading');
+                        var vEhPararListarExpiradas = (EhPararListarExpiradas != '') ? EhPararListarExpiradas : '';
+                        console.log('::Eh para listar expiradas ?-> '+vEhPararListarExpiradas);
 
                         var vIdEstado = $("#cboEstado").val();
                         var vIdBlocoJovem = $("#cboBloco").val();
@@ -2623,7 +2595,7 @@
                         var vIdHabilidade = $("#cboHabilidades").val();
                         var vIdNivel = $('#cboNivel').val();
                         var pNome = $('#txtNome').val();
-                        //
+
 
                         var vIdTipoEstadoCivil = $('#cboTipoEstadoCivil').val();
                         var vIdIdTipoMoradia = $('#cboTipoMoradia').val();
@@ -2758,6 +2730,8 @@
                             IdHabilidade: vIdHabilidade,
                             IdNivel: vIdNivel,
                             Nome: pNome,
+
+                            EhParaListarFichasExpiradas: vEhPararListarExpiradas,
                             //
                             IdTipoEstadoCivil: vIdTipoEstadoCivil,
                             IdIdTipoMoradia: vIdIdTipoMoradia,
@@ -2862,11 +2836,19 @@
                                         { data: 'NomeBlocoJovem' },
                                         { data: 'NomeRegiaoJovem' },
                                         { data: 'NomeIgrejaJovem' },
-                                        { data: 'NomeJovem' },
+                                        {
+                                            data: 'NomeJovem',
+                                            render: function (data, type, row) {
+                                                console.log('paraetro' + vEhPararListarExpiradas);
+                                                if (vEhPararListarExpiradas == 'S')
+                                                    return '<span id="lblClassificacao" class="label-danger">' + row.NomeJovem + '</span>';
+                                                else
+                                                    return row.NomeJovem;
+                                            }
+                                        },
                                         {
                                             data: 'FotoEstaNoDiretorio',
-                                            render: function (data, type, row) {
-                                                console.log(row.NomeArquivoFoto);
+                                            render: function (data, type, row) {                                                
                                                 if (data == "S") {
                                                     var urlImgEncoded = encodeURI(__HOST_CONFIGURADO + '/FotosJovens/' + row.NomeArquivoFoto);
                                                     return "<img src=" + urlImgEncoded + " class='rounded-circle img-sm'  />";
@@ -2920,6 +2902,7 @@
                                 $('#lblQuantidadeResgistrosRetornados').html(table.data().count());
                             }
 
+                            //vEhPararListarExpiradas = undefined;
                         });
                     }
 

@@ -136,52 +136,7 @@
                             FJU
                         </div>
                     </li>
-                    <li>
-                        <a href="RegistraJovem.aspx"><i class="fa fa-th-large"></i> <span class="nav-label">Voluntários</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="RegistraJovem.aspx">Novo Jovem</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ConsultaGeralParametros.html">Geral Parâmetros</a></li>
-                            <li><a href="TodosJovens.aspx">Todos</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Gerenciar</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li>
-                                <a href="#"><i class="fa fa-user-circle"></i>Coordenadores <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaCoordenadoresEstado.html">Gerenciar</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaCoordPanoramaEstado.html">Panorama do Estado</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-tree"></i>Árvore da Vida <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaArvoreDaVidaEstadual.html">Associar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreirosAssociacoes.html">Desassociar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreiros.html">Obreiros</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaAVJovensEmAcompanhamento.html">Em Acompanhamento</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    
                 </ul>
 
             </div>
@@ -429,18 +384,62 @@
                                     <div class="panel-body" align="center">
                                         <!---->
                                         <div class="row">
+
+                                            <!-- Tab para autorizações das camisas. Já efetivadas, e a efetivar -->
+                                            <ul id="tabAutorizacoes" class="nav nav-tabs">
+                                                <li id="autorizacoesEfetivadas"><a id="tabAutorizacoesEfetivadas" class="nav-link active" data-toggle="tab" href="#tabAEfetivadas"><i class="fa fa-briefcase"></i> Efetivadas</a></li>
+                                                <li id="autorizacoesAEfetivar"><a id="tabAutorizacoesAEfetivar" class="nav-link" data-toggle="tab" href="#tabAPEfetivacao"><i class="fa fa-briefcase"></i> Pendentes de efetivação</a></li>
+                                                <li id="historicoAutorizacoes"><a id="tabHistoricoAutorizacoes" class="nav-link" data-toggle="tab" href="#tabHistAut"><i class="fa fa-history"></i> Historico</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div id="tabAEfetivadas" class="tab-pane  active">
+                                                    <table class="table table-bordered" id="tblAutorizacoesEfetivadas">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>IdAutorizacao</th>
+                                                                <th>Autorizado Por</th>
+                                                                <th>Camisa</th>
+                                                                <th>Data</th>
+                                                                <th>Ações</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div id="tabAPEfetivacao" class="tab-pane">
+                                                    <!---->
+                                                    <table class="table table-bordered" id="tblSolicitacoesAdicionadas">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Autorizado Por</th>
+                                                                <th>Camisa</th>
+                                                                <th>Data</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                    <!---->
+                                                </div>
+                                                <div id="tabHistAut" class="tab-pane">
+
+                                                    <table class="table table-bordered" id="tblHistoricoSolicitacoes">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>IdAutorizacao</th>
+                                                                <th>Autorizador</th>
+                                                                <th>Camisa</th>
+                                                                <th>Data</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div>
                                             <!---->
-                                            <table class="table table-bordered" id="tblSolicitacoesAdicionadas">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Autorizado Por</th>
-                                                        <th>Camisa</th>
-                                                        <th>Data autorização</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                </tbody>
-                                            </table>
                                             <!---->
                                         </div>
                                         <!---->
@@ -559,9 +558,12 @@
         var __autorizacoesConcedidas;
         var __retornoFuncaoAjax;
         var __autorizacoesAdquiridas = undefined;
+        var __tblAutorizacoesConcedidas = undefined;
 
         $(document).ready(function () {
             facadeUser.ConfigurarPaginaX072470();
+
+            spinnerOn();
 
             $.ajax({
                 type: "GET",
@@ -609,7 +611,77 @@
                 });
                 /**/
             });
+
+            $('#tblAutorizacoesEfetivadas tbody').on('click', 'button', function () {
+                var classeDoBotao = $(this).prop('class');
+
+                var indiceDaLinha = __tblAutorizacoesConcedidas.row($(this).parents('tr')).index();
+                var idAutorizacao = __autorizacoesAdquiridas[indiceDaLinha].IdAutorizacao;
+
+                console.log('::id da autorização -> ' + idAutorizacao);
+          
+                if (classeDoBotao == 'btn btn-danger btn-xs dt-delete')
+                    excluirAutorizacao(idAutorizacao);
+                
+            });
+
+            $('#autorizacoesConcedidas').on('hide.bs.modal', function (e) {
+
+                carregaDadosJovem();
+
+                $('#tabAutorizacoes li:eq(0) a').tab('show');
+
+            });
+            //#autorizacoesConcedidas
+
+            spinnerOff();
         });
+
+        function excluirAutorizacao(pIdAutorizacao) {
+            spinnerOn();
+
+            var objAutorizacaoDTO = {
+                IdAutorizacao: pIdAutorizacao
+            };
+
+            swal({
+                title: "Deseja realmente excluir esta solicitação de compra de camisa ? ",
+                text: "Exclusão de Solicitação de compra de camisa",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Sim, Desejo excluir!",
+                closeOnConfirm: false
+            }, function () {
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify(objAutorizacaoDTO),
+                        url: "api/AutorizacoesCamisa/ExcluirAutorizacaoCamisa",
+                        contentType: "application/json"
+                    }).done(function (resultSetExclusaoAutorizacao) {
+
+                        if (resultSetExclusaoAutorizacao.RequisicaoBemSucedida)
+                            swal({
+                                title: "Confirmação",
+                                text: 'Autorização excluida com sucesso!!!',
+                                type: "success"
+                            }, function () {
+                                    carregaDadosJovem();
+                                    $('#tabAutorizacoes li:eq(2) a').tab('show');
+                                    spinnerOff();
+                            });
+                        else                            
+                            swal({
+                                title: "Solicitação",
+                                text: respostaSolicitacaoAutorizacao.RespostaSoliciticao,
+                                type: "error"
+                            });
+
+                    });
+            })
+
+            
+        }
 
         function carregaDadosJovem() {
             var url_ = new URL(location.href);
@@ -648,10 +720,38 @@
                     console.log(' obj resultSetJovem.AutorizacoesCompraCamisa ' + resultSetJovem.AutorizacoesCompraCamisa.length);
                     __autorizacoesAdquiridas = resultSetJovem.AutorizacoesCompraCamisa;
 
+                    console.log(JSON.stringify( __autorizacoesAdquiridas ));
+
+                    __tblAutorizacoesConcedidas = $('#tblAutorizacoesEfetivadas').DataTable({
+                        data: __autorizacoesAdquiridas,
+                        pageLength: 12,
+                        destroy: true,
+                        dom: 'Bfrtip',
+                        buttons: [
+                        ],
+                        columns: [
+                            { data: 'IdAutorizacao'},
+                            { data: 'NomeAutorizadorCompraCamisa' },
+                            { data: 'NomeCamisaAutorizada' },
+                            { data: 'DataAutorizacaoCompraCamisa' },
+                            {
+                                data: null,
+                                defaultContent: '<div class="btn-group"> <button type="button" class="btn btn-danger btn-xs dt-delete"><span class="glyphicon glyphicon-remove glyphicon-trash" aria-hidden="true"></span></button> </div>'
+                            }
+                        ],
+                        columnDefs: [
+                            {
+                                targets: [0],
+                                visible: false,
+                                searchable: false
+                            }]
+                    });
+
                     //trataImagemFotoPerfil('http://fjuoficial.org/SGFJU2.0/FotosJovens/' + resultSetJovem.NomeArquivoFoto);
                     trataImagemFotoPerfil('https://localhost:44388//FotosJovens/SP_ID_128953_2021-04-0712_SP_ID_USUARIO_258_2021-01-1112WhatsApp Image 2020-11-02 at 11.57.09.jpeg');
 
                     //carregaJovensAcompanhadosObreiro(resultSetJovem.JovensQueObreiroAcompanha);
+                    carregarHistoricoAutorizacoesJovem(resultSetJovem.Id);
                 });
             }
         }
@@ -819,6 +919,8 @@
 
             limpaControles();
 
+            $('#tabAutorizacoes li:eq(1) a').tab('show');
+
             swal({
                     title: "Confirmação",
                     text: 'Camisa adicionad com sucesso!',
@@ -982,6 +1084,42 @@
                 return false;
 
             return true;
+        }
+
+        function carregarHistoricoAutorizacoesJovem(pIdJovem) {
+            var jovemDTO = {
+                Id: pIdJovem
+            };
+
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(jovemDTO),
+                url: "api/AutorizacoesCamisa/RetornaHistoricoSolicitacoesCamisa",
+                contentType: "application/json"
+            }).done(function (resultSetHistoricoSolicitacoesJovem) {
+
+                $('#tblHistoricoSolicitacoes').DataTable({
+                    data: resultSetHistoricoSolicitacoesJovem,
+                    pageLength: 12,
+                    destroy: true,
+                    dom: 'Bfrtip',
+                    buttons: [
+                    ],
+                    columns: [
+                        { data: 'IdAutorizacao'},
+                        { data: 'NomeAutorizadorCompraCamisa' },
+                        { data: 'NomeCamisaAutorizada' },
+                        { data: 'DataAutorizacaoCompraCamisa' }
+                    ],
+                    columnDefs: [
+                        {
+                            targets: [0],
+                            visible: false,
+                            searchable: false
+                        }]
+                });
+                
+            });
         }
     </script>
 

@@ -7,6 +7,7 @@ namespace SGFJU.ServicesLayer.DTO
     public class AutorizacaoCompraCamisaDTO
     {
         public int IdJovem { get; set; }
+        public int IdAutorizacao { get; set; }
         public string NomeAutorizadorCompraCamisa { get; set; }
         public string DataAutorizacaoCompraCamisa { get; set; }
         public string CodigoAutorizacaoCompraCamisa { get; set; }

@@ -6724,11 +6724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj",
+      "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj",
       "projectName": "SGFJU.Bussiness.Facade",
-      "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj",
+      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Bussiness.Facade\\SGFJU.Bussiness.Facade.csproj",
       "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Bussiness.Facade\\obj\\",
+      "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Bussiness.Facade\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6749,17 +6749,17 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj": {
-              "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj"
+            "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Common.UnityContainer\\SGFJU.Common.UnityContainer.csproj"
             },
-            "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
-              "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj"
+            "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model.Infra.DataAccess.Oracle\\SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj"
             },
-            "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
-              "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
+            "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Domain.Model\\SGFJU.Domain.Model.csproj"
             },
-            "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj": {
-              "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj"
+            "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.ServicesLayer.DTO\\SGFJU.ServicesLayer.DTO.csproj"
             }
           }
         }
@@ -6794,7 +6794,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
       }
     }
   }

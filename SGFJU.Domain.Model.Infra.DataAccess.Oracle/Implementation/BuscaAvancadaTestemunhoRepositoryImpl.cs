@@ -9,8 +9,10 @@ using SGFJU.ServicesLayer.DTO;
 
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Globalization;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
 {
@@ -28,6 +30,11 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 SQLQuery.Append("  SELECT JV.ID_JOVEM,                          ");
                 SQLQuery.Append("         JV.NOME,                              ");
                 SQLQuery.Append("         JV.NOMEARQUIVOFOTO,                   ");
+                /*campos que estão faltando*/
+                SQLQuery.Append("         JV.DATANASCIMENTO,                    ");
+                SQLQuery.Append("         JV.CLASSIFICACAOJOVEM,                ");
+                SQLQuery.Append("         ED.SIGLAESTADO,                       ");
+                /**/
                 SQLQuery.Append("         ED.NOMEESTADO,                        ");
                 SQLQuery.Append("         BL.NOMEBLOCO,                         ");
                 SQLQuery.Append("         REG.NOMEREGIAO,                       ");
@@ -70,6 +77,23 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                     SQLWhere.Append(" AND IGJ.ID_IGREJA = " + parametrosBuscaAvancada.IdIgreja);
                 }
 
+                if (parametrosBuscaAvancada.SofreuDepressao == 'S')                {
+                    SQLWhere.Append(" AND TES.SofreuComDepressao = '" + parametrosBuscaAvancada.SofreuDepressao + "' ");
+                }
+
+                if (parametrosBuscaAvancada.SofreuAutomutilacao == 'S')                {
+                    SQLWhere.Append(" AND TES.SofreuAutomutilacao = '" + parametrosBuscaAvancada.SofreuAutomutilacao + "' ");
+                }
+
+                if (parametrosBuscaAvancada.Sexo == 'M' ||
+                    parametrosBuscaAvancada.Sexo == 'F') {
+                    SQLWhere.Append(" AND JV.Sexo = '" + parametrosBuscaAvancada.Sexo + "' ");
+                }
+
+                if (parametrosBuscaAvancada.SofreuVicio == 'S')                {
+                    SQLWhere.Append(" AND TES.SofreuVicio = '" + parametrosBuscaAvancada.SofreuVicio + "' ");
+                }
+
                 SQL_FULL_TEXT.Append(" AND MATCH ( TES.TEXTOTESTEMUNHO )");
                 SQL_FULL_TEXT.Append($"  AGAINST ('{parametrosBuscaAvancada.PalavrasChaveConcatenadasPesquisa}') ");
 
@@ -77,15 +101,31 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                     conexao.Open();
                     using (resultadoReader = _DAO.ExecuteQuery(SQLQuery.ToString() + SQLWhere.ToString() + SQL_FULL_TEXT.ToString() + SQLOrderBy, ref conexao)) {                        
                         while (resultadoReader.Read()) {
+                            var TELEFONE_FORMATADO = FormataTelefone(resultadoReader["WHATSAPP"].ToString());
+
                             retorno.Add(new RetornoBuscaAvancadaDTO {
                                 IdX = EncryptionHelper.Encrypt(resultadoReader["ID_JOVEM"].ToString()),
+                                IdJovem = int.Parse(resultadoReader["ID_JOVEM"].ToString()),
                                 Nome = tinfo.ToTitleCase(resultadoReader["Nome"].ToString()),
                                 NomeEstado = tinfo.ToTitleCase(resultadoReader["NOMEESTADO"].ToString()),
                                 NomeBloco = tinfo.ToTitleCase(resultadoReader["NOMEBLOCO"].ToString()),
                                 NomeRegiao = tinfo.ToTitleCase(resultadoReader["NOMEREGIAO"].ToString()),
                                 NomeIgreja = tinfo.ToTitleCase(resultadoReader["NOMEIGREJA"].ToString()),
                                 IdTestemunho = int.Parse(resultadoReader["ID_TESTEMUNHO"].ToString()),
-                                TextoTestemunho = resultadoReader["TEXTOTESTEMUNHO"].ToString()
+                                TextoTestemunho = resultadoReader["TEXTOTESTEMUNHO"].ToString(),
+
+                                Whatsapp = TELEFONE_FORMATADO,   //string.Format("{0:(##) #####-####}", resultadoReader["WHATSAPP"].ToString().Replace('-', ' ').Trim()),
+                                WhatsappSemFormatacao = resultadoReader["WHATSAPP"].ToString(),
+                                NomeArquivoFoto = resultadoReader["NOMEARQUIVOFOTO"].ToString(),
+                                DataNascimento = DateTime.Parse(resultadoReader["DATANASCIMENTO"].ToString()).ToString("dd/MM/yyyy"),
+                                ClassificacaoJovem = (!resultadoReader.IsDBNull(resultadoReader.GetOrdinal("CLASSIFICACAOJOVEM"))) ?
+                                                         resultadoReader["CLASSIFICACAOJOVEM"].ToString() :
+                                                         (string.IsNullOrEmpty(resultadoReader["CLASSIFICACAOJOVEM"].ToString())) ?
+                                                            "O" : "",
+                                SiglaEstado = resultadoReader["SIGLAESTADO"].ToString(),
+                                NomeArquivoFotoFormatado = (!resultadoReader.IsDBNull(resultadoReader.GetOrdinal("NOMEARQUIVOFOTO"))) ?
+                                                              ConfigurationManager.AppSettings["HOST_PROD"] + resultadoReader["NOMEARQUIVOFOTO"].ToString() :
+                                                              ConfigurationManager.AppSettings["HOST_PROD"] + "UsuarioNaoSelecionado.png",
                             });
                         }
                     }
@@ -96,6 +136,28 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
 			catch (Exception dataException) {
                 var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
                 throw new DomainException(mensagemTratada, dataException);
+            }
+        }
+        public string FormataTelefone(string telefone)
+        {
+            var telefoneformatado = string.Empty;
+
+            if (string.IsNullOrWhiteSpace(telefone))
+            {
+                return "(00) 0000-0000";
+            }
+            else
+            {
+
+                if (telefone.Length == 10)
+                {
+                    telefone = telefone.Substring(0, 2) + "9" + telefone.Substring(2, telefone.Length - 2);
+                }
+
+                var match = Regex.Replace(telefone, @"(\d{2})(\d{5})(\d{4})", "($1) $2-$3");
+                telefoneformatado = match;
+                //telefoneformatado = $"({match.Groups[1]}) {match.Groups[2]}-{match.Groups[3]}";
+                return telefoneformatado;
             }
         }
     }

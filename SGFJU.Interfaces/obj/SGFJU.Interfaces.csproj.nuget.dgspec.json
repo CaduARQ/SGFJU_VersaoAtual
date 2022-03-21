@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {}
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
+    "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj",
         "projectName": "SGFJU.Interfaces",
-        "projectPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\SGFJU.Interfaces.csproj",
         "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\source\\repos\\SGFJU\\SGFJU.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\SGFJU\\SGFJU.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -60,7 +60,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.118\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.120\\RuntimeIdentifierGraph.json"
         }
       }
     }

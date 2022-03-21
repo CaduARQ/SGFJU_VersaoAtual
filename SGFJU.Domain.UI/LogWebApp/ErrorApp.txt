@@ -8747,3 +8747,718 @@ Nome do parâmetro: source
  -------------------------------------- 
 
  --------------------------------------
+2021-10-21 16:36:38.0850|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '21/10/2021 16:36:38' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.BuscaAvancadaTestemunhoFacadeImpl.BuscaAvancadaTestemunhoPorParametro(BuscaAvancadaParametroDTO parametrosBuscaAvancada) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\BuscaAvancadaTestemunhoFacadeImpl.cs:linha 20
+   em SGFJU.Domain.UI.Controllers.BuscaAvancadaTestemunhoController.BuscaAvancadaTestemunhoPorParametro(BuscaAvancadaParametroDTO parametrosBuscaAvancada) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\BuscaAvancadaTestemunhoController.cs:linha 21: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.BuscaAvancadaTestemunhoRepositoryImpl.BuscaAvancadaTestemunhoPorParametro(BuscaAvancadaParametroDTO parametrosBuscaAvancada) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\BuscaAvancadaTestemunhoRepositoryImpl.cs:linha 90: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: Unknown column 'S' in 'where clause' 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2021-10-21 16:49:30.6912|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '21/10/2021 16:49:30' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.BuscaAvancadaTestemunhoFacadeImpl.BuscaAvancadaTestemunhoPorParametro(BuscaAvancadaParametroDTO parametrosBuscaAvancada) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\BuscaAvancadaTestemunhoFacadeImpl.cs:linha 20
+   em SGFJU.Domain.UI.Controllers.BuscaAvancadaTestemunhoController.BuscaAvancadaTestemunhoPorParametro(BuscaAvancadaParametroDTO parametrosBuscaAvancada) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\BuscaAvancadaTestemunhoController.cs:linha 21: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.BuscaAvancadaTestemunhoRepositoryImpl.BuscaAvancadaTestemunhoPorParametro(BuscaAvancadaParametroDTO parametrosBuscaAvancada) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\BuscaAvancadaTestemunhoRepositoryImpl.cs:linha 90: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: Unknown column 'S' in 'where clause' 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2021-10-24 14:43:26.8808|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/10/2021 14:43:26' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeJovemImpl.ObterJovensPorParametro(ParametroPesquisaTodosJovensDTO parametrosPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeJovemImpl.cs:linha 209
+   em SGFJU.Domain.UI.Controllers.JovensController.PesquisarPorParametro(ParametroPesquisaTodosJovensDTO parametroPesquisaTodosJovens) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 110: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.ObterJovensPorParametro(ParametroPesquisaTodosJovensDTO parametrosPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 598: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '( TIMESTAMPDIFF(month, NOW(), DATAULTIMAATUALIZACAO) >= 6 OR DATAULTIMAATUALIZAC' at line 1 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2021-10-24 18:16:06.7081|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/10/2021 18:16:06' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.JovensController.PesquisarPorParametro(ParametroPesquisaTodosJovensDTO parametroPesquisaTodosJovens) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 108: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-10-26 15:35:06.3179|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/10/2021 15:35:06' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.JovensController.ConsultaGeral(ConsultaGeralDTO parametrosConsultaGeral) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 377: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-10-26 15:35:21.9435|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/10/2021 15:35:21' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.JovensController.ConsultaGeral(ConsultaGeralDTO parametrosConsultaGeral) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 377: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-10-29 20:23:12.7721|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/10/2021 20:23:12' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-10-29 20:23:12.2888|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/10/2021 20:23:12' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-10-29 20:25:55.8941|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/10/2021 20:25:55' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-10-29 20:25:55.9180|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/10/2021 20:25:55' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-10-31 16:33:25.8820|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/10/2021 16:33:25' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-01 10:16:21.9632|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/11/2021 10:16:21' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-01 10:16:21.8023|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/11/2021 10:16:21' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-01 16:58:00.5633|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/11/2021 16:58:00' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-01 16:58:00.6052|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/11/2021 16:58:00' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-01 17:40:33.7676|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/11/2021 17:40:33' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-01 17:40:34.1376|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/11/2021 17:40:34' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-02 13:57:35.1842|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '02/11/2021 13:57:35' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-02 13:57:36.3935|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '02/11/2021 13:57:36' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-02 14:10:17.2861|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '02/11/2021 14:10:17' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-02 14:10:17.2951|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '02/11/2021 14:10:17' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-08 10:38:38.7837|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/11/2021 10:38:38' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-08 10:38:39.0159|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/11/2021 10:38:39' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-08 11:28:05.2629|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/11/2021 11:28:05' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-08 11:28:08.3665|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/11/2021 11:28:08' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-08 12:09:07.4077|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/11/2021 12:09:07' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.JovensController.ConsultaGeral(ConsultaGeralDTO parametrosConsultaGeral) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 377: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-08 16:38:48.8581|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/11/2021 16:38:48' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-11-08 16:38:49.0983|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/11/2021 16:38:49' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-06 17:24:43.6490|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/12/2021 17:24:43' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-06 17:25:18.4273|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/12/2021 17:25:18' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-06 17:25:39.2667|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/12/2021 17:25:39' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 11:34:13.7261|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 11:34:13' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 16:39:48.7146|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 16:39:48' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 17:11:02.7029|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 17:11:02' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 17:22:20.6638|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 17:22:20' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 17:23:50.2626|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 17:23:50' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 17:23:50.3734|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 17:23:50' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 17:30:37.6127|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 17:30:37' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 17:55:02.8942|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 17:55:02' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 17:55:02.8862|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 17:55:02' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-07 17:55:03.1007|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/12/2021 17:55:03' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-09 19:44:01.2530|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/12/2021 19:44:01' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-09 19:44:01.4819|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/12/2021 19:44:01' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-09 19:44:01.4819|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/12/2021 19:44:01' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-10 22:16:39.6052|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/12/2021 22:16:39' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-10 22:16:40.5078|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/12/2021 22:16:40' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-10 22:16:40.6175|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/12/2021 22:16:40' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-10 22:16:40.9716|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/12/2021 22:16:40' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-11 13:54:42.6804|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/12/2021 13:54:42' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-11 13:54:44.4600|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/12/2021 13:54:44' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-11 13:54:44.4600|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/12/2021 13:54:44' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-11 13:54:44.4600|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/12/2021 13:54:44' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2021-12-26 18:56:45.6882|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/12/2021 18:56:45' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeJovemImpl.SolicitarAutorizacaoCompraCamisa(IList`1 pSolicitacoesAutorizacaoCompra) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeJovemImpl.cs:linha 299
+   em SGFJU.Domain.UI.Controllers.JovensController.SolicitarAutorizacaoCompraCamisa(IList`1 pSolicitacoesCompraCamisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 654: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.SolicitarAutorizacaoCompraCamisa(IList`1 pSolicitacoesAutorizacaoCompra) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 2239: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSql, ISessionImplementor session, IBinder binder)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   em NHibernate.Action.EntityIdentityInsertAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.Save(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.SolicitarAutorizacaoCompraCamisa(IList`1 pSolicitacoesAutorizacaoCompra) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 2222: 
+
+ Source: NHibernate  
+
+ Exception Message: could not insert: [SGFJU.Domain.Model.Entities.JovemAutorizacaoHistorico][SQL: INSERT INTO SGFJU_TBL_HISTORICO_AUTORIZACAO_CAMISA (NomeAutorizadorCompraCamisa, DataAutorizacaoCompraCamisa, CodigoAutorizacaoCompraCamisa, NomeCamisaAutorizada, OrigemCompraCamisa, ID_JOVEM) VALUES (?, ?, ?, ?, ?, ?)] 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2022-01-03 12:21:54.5070|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2022 12:21:54' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeJovemImpl.RetornaHistoricoSolicitacoesCamisa(JovemDTO pJovem) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeJovemImpl.cs:linha 386
+   em SGFJU.Domain.UI.Controllers.AutorizacoesCamisaController.RetornaHistoricoSolicitacoesCamisa(JovemDTO pJovem) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\AutorizacoesCamisaController.cs:linha 37: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.MySqlClient.ResultSet.get_Item(Int32 index)
+   em MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(Int32 index, Boolean checkNull)
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.get_Item(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.RetornaHistoricoSolicitacoesCamisa(JovemDTO pJovem) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 2557: 
+
+ Source: MySql.Data  
+
+ Exception Message: Invalid attempt to access a field before calling Read() 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2022-01-09 19:16:16.2195|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2022 19:16:16' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-01-09 19:16:20.6030|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2022 19:16:20' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-01-09 19:16:21.2692|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2022 19:16:21' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-01-09 19:16:21.8427|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2022 19:16:21' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-02-28 16:03:13.2658|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/02/2022 16:03:13' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-02-28 16:03:13.5566|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/02/2022 16:03:13' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-02-28 16:03:13.5636|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/02/2022 16:03:13' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-02-28 16:03:14.1470|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '28/02/2022 16:03:14' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-03-08 16:28:09.2652|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/03/2022 16:28:09' - Descrição do Erro: TelaLogin.Camada de negócios:FluentSessionFactory.CreateFactory - An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 62
+   em SGFJU.Domain.UI.formLogin.logar() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\formLogin.aspx.cs:linha 46
+2022-03-08 16:28:51.1901|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/03/2022 16:28:51' - Descrição do Erro: TelaLogin.Camada de negócios:FluentSessionFactory.CreateFactory - An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 62
+   em SGFJU.Domain.UI.formLogin.logar() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\formLogin.aspx.cs:linha 46
+2022-03-08 16:28:58.2759|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/03/2022 16:28:58' - Descrição do Erro: TelaLogin.Camada de negócios:FluentSessionFactory.CreateFactory - An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 62
+   em SGFJU.Domain.UI.formLogin.logar() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\formLogin.aspx.cs:linha 46
+2022-03-08 16:29:42.8558|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/03/2022 16:29:42' - Descrição do Erro: TelaLogin.Camada de negócios:FluentSessionFactory.CreateFactory - An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 62
+   em SGFJU.Domain.UI.formLogin.logar() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\formLogin.aspx.cs:linha 46
+2022-03-08 16:30:00.8006|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/03/2022 16:30:00' - Descrição do Erro: TelaLogin.Camada de negócios:FluentSessionFactory.CreateFactory - An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 62
+   em SGFJU.Domain.UI.formLogin.logar() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\formLogin.aspx.cs:linha 46
+2022-03-08 17:00:29.8231|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/03/2022 17:00:29' - Descrição do Erro: TelaLogin.Camada de negócios:FluentSessionFactory.CreateFactory - An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 62
+   em SGFJU.Domain.UI.formLogin.logar() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\formLogin.aspx.cs:linha 46

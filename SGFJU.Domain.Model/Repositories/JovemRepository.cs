@@ -43,6 +43,8 @@ namespace SGFJU.Domain.Model.Repositories
         bool JaExistemSolicitacoesCadastradas(int pIdJovem);
         RespostaAprovacaoCompraCamisa VerificaCodigoArcacenter(AutorizacaoCompraCamisaDTO codigoArcaCenter);
         RespostaAprovacaoCompraCamisa DarBaixaCamisa(AutorizacaoCompraCamisaDTO codigoAutorizacaASerDadoBaixa);
+        void ExcluirAutorizacaoCamisa(AutorizacaoCompraCamisaDTO autorizacaoParaExcluir);
+        IList<AutorizacaoCompraCamisaDTO> RetornaHistoricoSolicitacoesCamisa(JovemDTO pJovem);
         bool AindaPodeSolicitarCamisa(int pIdJovem);
         void AlteraClassificacaoJovem(JovemDTO jovemParametro);
     }

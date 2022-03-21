@@ -9,3 +9,14 @@ C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Deb
 C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.csproj.CopyComplete
 C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.dll
 C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\bin\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.deps.json
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\bin\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\bin\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\bin\Debug\netstandard2.0\SGFJU.Interfaces.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\bin\Debug\netstandard2.0\SGFJU.Interfaces.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.csprojAssemblyReference.cache
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.AssemblyInfoInputs.cache
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.AssemblyInfo.cs
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.csproj.CopyComplete
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Serialization\obj\Debug\netstandard2.0\SGFJU.Domain.Model.Infra.Serialization.pdb

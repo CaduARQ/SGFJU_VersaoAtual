@@ -1,5 +1,6 @@
 ﻿using SGFJU.Domain.Model.Entities;
 using SGFJU.Domain.Model.Infra.Logging.Implementation;
+using SGFJU.Domain.Model.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -29,6 +30,16 @@ namespace SGFJU.Domain.UI.Helpers
                         ConfigurationManager.AppSettings["LoggerUserFileName"]
                     );
             return new UserLoggerImpl(pathArquivoUserActions);
+        }
+
+        public static Estado RetornaEstadoUsuarioLogado() {
+            var sessaoAtual = (System.Web.HttpContext.Current.Session);
+            return (sessaoAtual["UsuarioLogado"] as Usuario).EstadoUsuario;
+        }
+        public static PerfilUsuario RetornaPerfilUsuarioLogado()
+        {
+            var sessaoAtual = (System.Web.HttpContext.Current.Session);
+            return (sessaoAtual["UsuarioLogado"] as Usuario).PerfilUsuario;
         }
     }
 }
