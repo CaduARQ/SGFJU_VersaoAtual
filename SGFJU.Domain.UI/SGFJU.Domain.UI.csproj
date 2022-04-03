@@ -200,6 +200,7 @@
     <Content Include="ListaJovensLevantadosAltar.html" />
     <Content Include="PainelControle.html" />
     <Content Include="RegistrarPatrimonio.aspx" />
+    <Content Include="RelatorioAltarJovem.html" />
     <Content Include="Serializeds\menuPastorEstadual.txt" />
     <Content Include="Serializeds\menuSecretariaBR.txt" />
     <Content Include="Serializeds\menuSecretariaEstadual.txt" />

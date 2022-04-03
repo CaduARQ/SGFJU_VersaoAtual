@@ -1,0 +1,1129 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <!--abaixo css que permite seleção-->
+    <link href="css/plugins/dataTables/Select-1.3.1/select.dataTables.min.css" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .spinner {
+	        height: 60px;
+	        width: 60px;
+	        margin: auto;
+	        display: flex;
+	        position: absolute;
+	        -webkit-animation: rotation .6s infinite linear;
+	        -moz-animation: rotation .6s infinite linear;
+	        -o-animation: rotation .6s infinite linear;
+	        animation: rotation .6s infinite linear;
+	        border-left: 6px solid rgba(0, 174, 239, .15);
+	        border-right: 6px solid rgba(0, 174, 239, .15);
+	        border-bottom: 6px solid rgba(0, 174, 239, .15);
+	        border-top: 6px solid rgba(0, 174, 239, .8);
+	        border-radius: 100%;
+        }
+
+        @-webkit-keyframes rotation {
+	        from {
+		        -webkit-transform: rotate(0deg);
+	        }
+
+	        to {
+		        -webkit-transform: rotate(359deg);
+	        }
+        }
+
+        @-moz-keyframes rotation {
+	        from {
+		        -moz-transform: rotate(0deg);
+	        }
+
+	        to {
+		        -moz-transform: rotate(359deg);
+	        }
+        }
+
+        @-o-keyframes rotation {
+	        from {
+		        -o-transform: rotate(0deg);
+	        }
+
+	        to {
+		        -o-transform: rotate(359deg);
+	        }
+        }
+
+        @keyframes rotation {
+	        from {
+		        transform: rotate(0deg);
+	        }
+
+	        to {
+		        transform: rotate(359deg);
+	        }
+        }
+
+        #overlay {
+	        position: absolute;
+	        display: none;
+	        top: 0;
+	        left: 0;
+	        right: 0;
+	        bottom: 0;
+	        background-color: rgba(0,0,0,0.5);
+	        z-index: 2;
+	        cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+                        <li>
+                            <a onclick="ExecutarActionX072433()">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div id="overlay" onclick="spinnerOff()">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <h2 class="text-success font-bold">
+                        Central de solicitação de camisas da FJU
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </h2>
+
+                    <div class="row m-b-lg m-t-lg">
+                        <div class="col-md-1">
+                            <canvas id="canvas" width=160 height="116"></canvas>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="profile-info">
+                                <div class="">
+                                    <div>
+                                        <h2 class="no-margins font-bold text-success" id="nomeDoJovem">
+                                        </h2>
+                                        <h4 id="nomeDoPerfilUsuario"></h4>
+                                        <h4>Acompanhado desde <i class="glyphicon glyphicon-calendar"></i></h4>
+                                        <h5 id="lblInicioAcompanhamento" class="text-success font-bold" style="font-family: Helvetica"></h5>
+                                        <hr class="hr-line-solid" />
+                                        <h4>Sendo acompanhado pelo obreiro <i class="glyphicon glyphicon-user"></i></h4>
+                                        <h5 id="lblNomeObreiro" class="text-success font-bold" style="font-family: Helvetica"></h5>
+                                        <hr class="hr-line-solid" />                                        
+                                        <button class="btn btn-success btn-outline" onclick="direcionarParaFicha()" type="button" style="width: 300px;">
+                                            <i class="fa fa-user"></i> Direcionar para ficha
+                                        </button>
+                                        <hr class="hr-line-solid" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <!---->
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+
+                                </div>
+                                <div class="panel-body" align="left">
+                                    <div class="row">
+
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <h3>Estado</h3>
+                                                <h3 class="text-success" style="font-family: Helvetica" id="lblNomeEstado"></h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-7">
+                                            <div class="form-group">
+                                                <h3>Bloco</h3>
+                                                <h3 class="text-success" style="font-family: Helvetica" id="lblNomeBloco"></h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <h3>Região</h3>
+                                                <h3 class="text-success" style="font-family: Helvetica" id="lblNomeRegiao"></h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-7">
+                                            <div class="form-group">
+                                                <h3>Igreja</h3>
+                                                <h3 class="text-success" style="font-family: Helvetica" id="lblNomeIgreja"></h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <!---->
+                                <div class="panel panel-success" id="pnlPesquisa">
+                                    <div class="panel-heading">
+                                        Adicionar autorização de camisa
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <!---->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="text-success font-bold" style="font-family: Tahoma;" for="form_name">Quem autorizou a compra? </label>
+                                                    <input id="txtNomeAutorizadorCompraCamisa" type="text" name="txtNomeAutorizadorCompraCamisa" class="form-control">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="text-success font-bold" style="font-family: Tahoma;" class="font-normal">Data da Autorização</label>
+                                                    <div class="input-group date">
+                                                        <input type="date" id="txtDataAutorizacaoCompraCamisa" name="txtDataAutorizacaoCompraCamisa" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-sm-8">
+                                                <div class="form-group">
+                                                    <label class="text-success font-bold" style="font-family: Tahoma;" for="form_name">Local onde compra da camisa será realizada? </label>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="radio radio-danger radio-inline">
+                                                                <input type="radio" id="rbOrigemCompraCamisa_S" value="S" name="rbOrigemCompraCamisa">
+                                                                <label class="text-dark font-bold" for="rbOrigemCompraCamisa_S"> Souvenir do Tempo </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="radio radio-danger radio-inline">
+                                                                <input type="radio" id="rbOrigemCompraCamisa_A" value="A" name="rbOrigemCompraCamisa">
+                                                                <label class="text-dark font-bold" for="rbOrigemCompraCamisa_A"> Arcacenter </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="text-success font-bold" style="font-family: Tahoma;" for="form_name">Camisa</label>
+                                                    <select id="cboProjetosFJU" name="cboProjetosFJU" class="select2_demo_3 form-control">
+                                                        <option></option>
+                                                        <option value="19">Coordenador(a)</option>
+                                                        <option value="20">Obreiro(a)</option>
+                                                        <option value="10">Help</option>
+                                                        <option value="11">Arcanjos</option>
+                                                        <option value="12">Esporte</option>
+                                                        <option value="13">Uniforça</option>
+                                                        <option value="14">Atalaia</option>
+                                                        <option value="15">Universitários</option>
+                                                        <option value="16">Mídia</option>
+                                                        <option value="17">Secretárias</option>
+                                                        <option value="18">Cultura</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="font-bold text-danger" style="font-family: Helvetica;">Código da Autorização</label>
+                                                    <div class="input-group date">
+                                                        <input type="text" id="txtCodigoAutorizacaoCompraCamisa" name="txtCodigoAutorizacaoCompraCamisa" class="form-control" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <hr class="hr-line-dashed" />
+
+                                        <div class="row">
+
+                                            <div class="col-sm-2">
+                                                <div class="form-group">
+                                                    <button class="btn btn-success dim btn-outline" onclick="AdicionarAutorizacaoCamisa()" type="button" style="width: 350px;">
+                                                        <i class="fa fa-edit"></i><i class="fa fa-user"></i> Adicionar autorização camisa
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+
+                            <div class="col-lg-5">
+                                <!---->
+                                <div class="panel panel-success" id="pnlPesquisa">
+                                    <div class="panel-heading">                                        
+                                        <button class="btn btn-white dim btn-outline" onclick="efetivarAutorizacoesCamisa()" type="button" style="width: 350px;">
+                                            <i class="fa fa-edit"></i><i class="fa fa-user"></i> Efetivar autorizações solicitadas
+                                        </button>
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <!---->
+                                        <div class="row">
+
+                                            <!-- Tab para autorizações das camisas. Já efetivadas, e a efetivar -->
+                                            <ul id="tabAutorizacoes" class="nav nav-tabs">
+                                                <li id="autorizacoesEfetivadas"><a id="tabAutorizacoesEfetivadas" class="nav-link active" data-toggle="tab" href="#tabAEfetivadas"><i class="fa fa-briefcase"></i> Efetivadas</a></li>
+                                                <li id="autorizacoesAEfetivar"><a id="tabAutorizacoesAEfetivar" class="nav-link" data-toggle="tab" href="#tabAPEfetivacao"><i class="fa fa-briefcase"></i> Pendentes de efetivação</a></li>
+                                                <li id="historicoAutorizacoes"><a id="tabHistoricoAutorizacoes" class="nav-link" data-toggle="tab" href="#tabHistAut"><i class="fa fa-history"></i> Historico</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div id="tabAEfetivadas" class="tab-pane  active">
+                                                    <table class="table table-bordered" id="tblAutorizacoesEfetivadas">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>IdAutorizacao</th>
+                                                                <th>Autorizado Por</th>
+                                                                <th>Camisa</th>
+                                                                <th>Data</th>
+                                                                <th>Ações</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div id="tabAPEfetivacao" class="tab-pane">
+                                                    <!---->
+                                                    <table class="table table-bordered" id="tblSolicitacoesAdicionadas">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Autorizado Por</th>
+                                                                <th>Camisa</th>
+                                                                <th>Data</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                    <!---->
+                                                </div>
+                                                <div id="tabHistAut" class="tab-pane">
+
+                                                    <table class="table table-bordered" id="tblHistoricoSolicitacoes">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>IdAutorizacao</th>
+                                                                <th>Autorizador</th>
+                                                                <th>Camisa</th>
+                                                                <th>Data</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div>
+                                            <!---->
+                                            <!---->
+                                        </div>
+                                        <!---->
+                                        <div class="row">
+                                            <!---->
+                                            
+                                            <!---->
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                            <!-- modal para visualizar texto do histórico -->
+                            <div class="modal inmodal" id="autorizacoesConcedidas" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content modal-xl animated bounceInRight">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                            <i class="fa fa-user modal-icon"></i><i class="fa fa-history modal-icon"></i>
+
+                                            <h4 class="text-success modal-title">Autorização Solicitada com sucesso !</h4>
+                                            <h3 class="text-black-50 font-bold" style="font-family:Tahoma;">Foram concedidas para o Jovem</h3> <h3 class="text-success font-bold" id="lblNomeJOvem"></h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-bordered" id="tblAutorizacoesConcedidas">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Código de Autorização</th>
+                                                        <th>Modelo de Camisa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="float-right">
+                    <strong></strong>
+                </div>
+                <div>
+                    <strong>Copyright</strong> FJU Oficial &copy; 2020
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Steps -->
+    <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+    <!-- Jquery Validate -->
+    <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="js/plugins/select2/select2.full.min.js"></script>
+
+    <!-- Input Mask-->
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- Nestable List -->
+    <script src="js/plugins/nestable/jquery.nestable.js"></script>
+
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+
+    <!--abaixo biblioteca que permite multipla seleção de registros-->
+    <script src="js/plugins/dataTables/Select-1.3.1/dataTables.select.min.js"></script>
+
+    <!-- Toastr script -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+    <!-- SGFJU Scripts -->
+    <script src="js/SGFJU.Domain.UI.Client.js"></script>
+    <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+    <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+
+    <script>
+        var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+        var __solicitacoesAdicionadas = [];
+        var __JOVEM_SELECIONADO = undefined;
+        var __codigoSGFJU = undefined;
+        var __autorizacoesConcedidas;
+        var __retornoFuncaoAjax;
+        var __autorizacoesAdquiridas = undefined;
+        var __tblAutorizacoesConcedidas = undefined;
+
+        $(document).ready(function () {
+            facadeUser.ConfigurarPaginaX072470();
+
+            spinnerOn();
+
+            $.ajax({
+                type: "GET",
+                url: "api/Usuarios/X072470/",
+                contentType: "application/json"
+            }).done(function (retorno) {
+                if (retorno.NomePerfil != 'Secretárias Estadual') {
+                    swal({
+                            title: "Permissão de Acesso - Negado",
+                            text: 'Seu usuário não possui permissão para acessar este módulo !',
+                            type: "warning"
+                    }, function () {
+                            location.href = 'RegistraJovem.aspx';
+                    });
+                }
+            });
+
+            carregaDadosJovem();
+
+            $("input[name=rbOrigemCompraCamisa]").change(function (e) {
+                if (this.value == 'A') {
+                    $('#txtCodigoAutorizacaoCompraCamisa').prop('disabled', false);
+                    $('#txtCodigoAutorizacaoCompraCamisa').val('');
+                }
+                else {
+                    $('#txtCodigoAutorizacaoCompraCamisa').val('');
+                    $('#txtCodigoAutorizacaoCompraCamisa').prop('disabled', true);
+                }
+            });
+
+            $('#autorizacoesConcedidas').on('show.bs.modal', function (e) {
+
+
+                $('#lblNomeJOvem').text(__JOVEM_SELECIONADO.Nome);
+
+                /**/
+                $('#tblAutorizacoesConcedidas').DataTable({
+                    data: __autorizacoesConcedidas,
+                    pageLength: 12,
+                    destroy: true,
+                    dom: 'Bfrtip',
+                    buttons: [
+                    ],
+                    columns: [ { data: 'CodigoAutorizacaoCompraCamisa' }, { data: 'NomeCamisaAutorizada' } ]
+                });
+                /**/
+            });
+
+            $('#tblAutorizacoesEfetivadas tbody').on('click', 'button', function () {
+                var classeDoBotao = $(this).prop('class');
+
+                var indiceDaLinha = __tblAutorizacoesConcedidas.row($(this).parents('tr')).index();
+                var idAutorizacao = __autorizacoesAdquiridas[indiceDaLinha].IdAutorizacao;
+
+                console.log('::id da autorização -> ' + idAutorizacao);
+          
+                if (classeDoBotao == 'btn btn-danger btn-xs dt-delete')
+                    excluirAutorizacao(idAutorizacao);
+                
+            });
+
+            $('#autorizacoesConcedidas').on('hide.bs.modal', function (e) {
+
+                carregaDadosJovem();
+
+                $('#tabAutorizacoes li:eq(0) a').tab('show');
+
+            });
+            //#autorizacoesConcedidas
+
+            spinnerOff();
+        });
+
+        function excluirAutorizacao(pIdAutorizacao) {
+            spinnerOn();
+
+            var objAutorizacaoDTO = {
+                IdAutorizacao: pIdAutorizacao
+            };
+
+            swal({
+                title: "Deseja realmente excluir esta solicitação de compra de camisa ? ",
+                text: "Exclusão de Solicitação de compra de camisa",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Sim, Desejo excluir!",
+                closeOnConfirm: false
+            }, function () {
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify(objAutorizacaoDTO),
+                        url: "api/AutorizacoesCamisa/ExcluirAutorizacaoCamisa",
+                        contentType: "application/json"
+                    }).done(function (resultSetExclusaoAutorizacao) {
+
+                        if (resultSetExclusaoAutorizacao.RequisicaoBemSucedida)
+                            swal({
+                                title: "Confirmação",
+                                text: 'Autorização excluida com sucesso!!!',
+                                type: "success"
+                            }, function () {
+                                    carregaDadosJovem();
+                                    __solicitacoesAdicionadas = [];
+                                    $('#tabAutorizacoes li:eq(2) a').tab('show');
+                                    spinnerOff();
+                            });
+                        else                            
+                            swal({
+                                title: "Solicitação",
+                                text: respostaSolicitacaoAutorizacao.RespostaSoliciticao,
+                                type: "error"
+                            });
+
+                    });
+            })
+
+            
+        }
+
+        function carregaDadosJovem() {
+            var url_ = new URL(location.href);
+            var vIdJovem = url_.searchParams.get("idJovem");
+            var jovemDTO = {
+                IdJovem: vIdJovem
+            };
+
+            if (vIdJovem != undefined) {
+                $.ajax({
+                    type: "POST",
+                    data: JSON.stringify(jovemDTO),
+                    url: "api/Jovens/ObterJovemAtualizacao",
+                    contentType: "application/json"
+                }).done(function (resultSetJovem) {
+                    __JOVEM_SELECIONADO = resultSetJovem;
+
+                    $('#nomeDoJovem').html(ToTitleCase(resultSetJovem.Nome));
+                    //$('#lblNomeObreiro').html(ToTitleCase(resultSetJovem.NomeObreiro));
+                    //$('#lblInicioAcompanhamento').html(resultSetJovem.DataInicioAcompanhamento);
+
+                    $('#lblNomeBloco').html(resultSetJovem.IgrejaAQualJovemPertence.NomeBlocoJovem);
+                    $('#lblNomeEstado').html(resultSetJovem.IgrejaAQualJovemPertence.NomeEstado);
+                    $('#lblNomeRegiao').html(resultSetJovem.IgrejaAQualJovemPertence.NomeRegiaoJovem);
+                    $('#lblNomeIgreja').html(resultSetJovem.IgrejaAQualJovemPertence.NomeIgreja);
+
+                    if (resultSetJovem.ArvoreVidaAcompanhamento != undefined) {
+                        $('#lblNomeObreiro').html(ToTitleCase( resultSetJovem.ArvoreVidaAcompanhamento.NomeObreiro ));
+                        $('#lblInicioAcompanhamento').html(resultSetJovem.ArvoreVidaAcompanhamento.DataInicioAcompanhamento);
+                    }
+                    else {
+                        $('#lblNomeObreiro').html('Não é acompanhado por nenhum obreiro');
+                        $('#lblInicioAcompanhamento').html('Ainda não possui data de inicio do acompanhamento');
+                    }
+
+                    console.log(' obj resultSetJovem.AutorizacoesCompraCamisa ' + resultSetJovem.AutorizacoesCompraCamisa.length);
+                    __autorizacoesAdquiridas = resultSetJovem.AutorizacoesCompraCamisa;
+
+                    console.log(JSON.stringify( __autorizacoesAdquiridas ));
+
+                    __tblAutorizacoesConcedidas = $('#tblAutorizacoesEfetivadas').DataTable({
+                        data: __autorizacoesAdquiridas,
+                        pageLength: 12,
+                        destroy: true,
+                        dom: 'Bfrtip',
+                        buttons: [
+                        ],
+                        columns: [
+                            { data: 'IdAutorizacao'},
+                            { data: 'NomeAutorizadorCompraCamisa' },
+                            { data: 'NomeCamisaAutorizada' },
+                            { data: 'DataAutorizacaoCompraCamisa' },
+                            {
+                                data: null,
+                                defaultContent: '<div class="btn-group"> <button type="button" class="btn btn-danger btn-xs dt-delete"><span class="glyphicon glyphicon-remove glyphicon-trash" aria-hidden="true"></span></button> </div>'
+                            }
+                        ],
+                        columnDefs: [
+                            {
+                                targets: [0],
+                                visible: false,
+                                searchable: false
+                            }]
+                    });
+
+                    //trataImagemFotoPerfil('http://fjuoficial.org/SGFJU2.0/FotosJovens/' + resultSetJovem.NomeArquivoFoto);
+                    trataImagemFotoPerfil('https://localhost:44388//FotosJovens/SP_ID_128953_2021-04-0712_SP_ID_USUARIO_258_2021-01-1112WhatsApp Image 2020-11-02 at 11.57.09.jpeg');
+
+                    //carregaJovensAcompanhadosObreiro(resultSetJovem.JovensQueObreiroAcompanha);
+                    carregarHistoricoAutorizacoesJovem(resultSetJovem.Id);
+                });
+            }
+        }
+
+        function trataImagemFotoPerfil(urlFoto) {
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            var img = new Image();
+            img.onload = function () {
+
+                // set size proportional to image
+                canvas.height = 165;//canvas.width * (img.height / img.width);
+                //190 old value of with of canvas
+
+                // step 1 - resize to 50%
+                var oc = document.createElement('canvas'),
+                    octx = oc.getContext('2d');
+
+                oc.width = img.width * 0.5;
+                oc.height = img.height * 0.5;
+                octx.drawImage(img, 0, 0, oc.width, oc.height);
+
+                // step 2
+                octx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5);
+
+                // step 3, resize to final size
+                ctx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5,
+                    0, 0, canvas.width, canvas.height);
+            }
+            img.src = urlFoto;
+        }
+
+        function AdicionarAutorizacaoCamisa() {
+            var solicitacaoAutorizacaoDTO = {
+                IdJovem: __JOVEM_SELECIONADO.Id,
+                NomeAutorizadorCompraCamisa: $('#txtNomeAutorizadorCompraCamisa').val(),
+                DataAutorizacaoCompraCamisa: $('#txtDataAutorizacaoCompraCamisa').val(),
+                OrigemCompraCamisa: $("input[name=rbOrigemCompraCamisa]:checked").val(),
+                CodigoAutorizacaoCompraCamisa: $('#txtCodigoAutorizacaoCompraCamisa').val(),
+                NomeCamisaAutorizada: $('#cboProjetosFJU  option:selected').text(),
+                CodigoCamisaAutorizada: $('#cboProjetosFJU').val(),
+                QuemEstaSolicitando: retornaTipoDeSolicitante()
+            };
+            var codigoProjetoCamisa = $('#cboProjetosFJU').val();
+
+            if (
+                solicitacaoAutorizacaoDTO.NomeAutorizadorCompraCamisa == '' ||
+                solicitacaoAutorizacaoDTO.DataAutorizacaoCompraCamisa == '' ||
+                ( solicitacaoAutorizacaoDTO.OrigemCompraCamisa            == 'A' && 
+                    solicitacaoAutorizacaoDTO.CodigoAutorizacaoCompraCamisa == '')
+                ) {
+                swal({
+                    title: "Validação",
+                    text: 'Nenhum dos campos pode ficar em branco',
+                    type: "error"
+                });
+                return;
+            }
+
+            if (!ehCoordenador()) {
+
+                //console.log('::ehObreiro ->' + ehObreiroOuColaborador() + '::Cód camisa ->' + codigoProjetoCamisa);
+                //if (ehObreiroOuColaborador() && codigoProjetoCamisa != 20) {
+                if (ehObreiroOuColaborador()) {
+                    if (obreiroAindaPodeSolicitarCamisa()) {
+                        if (codigoProjetoCamisa != 20) {
+                            if (!jovemPertenceAoProjeto(__JOVEM_SELECIONADO.ProjetosAosQuaisJovemEstaLigado, codigoProjetoCamisa)) {
+                                swal({
+                                    title: "Validação",
+                                    text: 'Solicitação não pode ser realizada pois jovem não pertence ao projeto!',
+                                    type: "error"
+                                });
+                                return;
+                            }
+                        }
+                        else if (codigoProjetoCamisa == 20) {
+                            console.log('obj __autorizacoesAdquiridas'+__autorizacoesAdquiridas.length);
+
+                            if (__autorizacoesAdquiridas.length > 0) {
+                                if (__autorizacoesAdquiridas[0].NomeCamisaAutorizada == "Obreiro(a)") {
+                                    swal({
+                                        title: "Validação",
+                                        text: 'Solicitação não pode ser realizada pois já foi solicitada uma camisa de obreiro!',
+                                        type: "error"
+                                    });
+                                    return;
+                                }
+                            }
+                        }
+                    }
+                    else {
+                        swal({
+                                title: "Validação",
+                                text: 'Solicitação não pode ser realizada pois se esgotaram quantidade de solicitações autorizadas!',
+                                type: "warning"
+                        });
+                        return;
+                    }
+
+                    /*
+                    if (!jovemPertenceAoProjeto(__JOVEM_SELECIONADO.ProjetosAosQuaisJovemEstaLigado, codigoProjetoCamisa)) {
+                        swal({
+                            title: "Validação",
+                            text: 'Solicitação não pode ser realizada pois jovem não pertence ao projeto!',
+                            type: "error"
+                        });
+                        return;
+                    }
+                    */
+                }
+                else if(!ehObreiroOuColaborador()) {
+                    if (!jovemPertenceAoProjeto(__JOVEM_SELECIONADO.ProjetosAosQuaisJovemEstaLigado, codigoProjetoCamisa)) {
+                        swal({
+                            title: "Validação",
+                            text: 'Solicitação não pode ser realizada pois jovem não pertence ao projeto!',
+                            type: "error"
+                        });
+                        return;
+                    }
+                }
+
+                /*
+                if (!jovemPertenceAoProjeto(__JOVEM_SELECIONADO.ProjetosAosQuaisJovemEstaLigado, codigoProjetoCamisa)) {
+                    swal({
+                        title: "Validação",
+                        text: 'Solicitação não pode ser realizada pois jovem não pertence ao projeto!',
+                        type: "error"
+                    });
+                    return;
+                }*/
+            }
+
+            /*
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(solicitacaoAutorizacaoDTO),
+                url: "api/Jovens/VerificaCodigoArcacenter/",
+                contentType: "application/json"
+            }).done(function (retorno) {
+
+                if (!retorno.SolicitacaoBemSucedida) {
+                    console.log( ':: jovem parâmetro id' +__JOVEM_SELECIONADO.Id );
+                    swal({
+                            title: "Código já utilizado !",
+                            text: retorno.RespostaSoliciticao,
+                            type: "warning"
+                    }, function () {                            
+                            location.href = 'CentralAutorizacaoCamisa.html?idJovem=' + solicitacaoAutorizacaoDTO.IdJovem;
+                    });
+                }
+            });*/
+
+            if (modeloCamisaJaSolicitado(codigoProjetoCamisa)) {
+                swal({
+                        title: "Validação",
+                        text: 'Camisa já foi solicitada!',
+                        type: "warning"
+                });
+                return;
+            }
+
+            __solicitacoesAdicionadas.push(solicitacaoAutorizacaoDTO);
+
+            preencheTabelaSolicitadoesAdicionadas();
+
+            limpaControles();
+
+            $('#tabAutorizacoes li:eq(1) a').tab('show');
+
+            swal({
+                    title: "Confirmação",
+                    text: 'Camisa adicionad com sucesso!',
+                    type: "success"
+            });
+        }
+
+        function ehObreiroOuColaborador() {
+            var ehObreiro = __JOVEM_SELECIONADO.SituacaoJovemIURDFJU.EhObreiro;
+            var ehColaborador = __JOVEM_SELECIONADO.SituacaoJovemIURDFJU.EhColaborador;
+
+            if ( ( ehObreiro     == 'S' || ehObreiro     == 's' ) ||
+                 ( ehColaborador == 'S' || ehColaborador == 's' ) )
+                return true;
+
+            return false;
+        }
+
+        function ehCoordenador() {
+            var ehCoordenador = __JOVEM_SELECIONADO.SituacaoJovemIURDFJU.EhCoordenadorFJU;
+
+            if ( ehCoordenador == 'S' || ehCoordenador == 's' ) 
+                return true;
+
+            return false;
+        }
+
+        function jovemPertenceAoProjeto(projetosQueOJovemPertence, codigoProjetoCamisaAutorizacao) {
+            for (var i = 0; i < projetosQueOJovemPertence.length; i++) {
+                if (projetosQueOJovemPertence[i].idProjeto == codigoProjetoCamisaAutorizacao)
+                    return true;
+            }
+            return false;
+        }
+
+        function preencheTabelaSolicitadoesAdicionadas() {
+            $('#tblSolicitacoesAdicionadas').DataTable({
+                data: __solicitacoesAdicionadas,
+                pageLength: 12,
+                destroy: true,
+                dom: 'Bfrtip',
+                buttons: [
+                ],
+                columns: [
+                    { data: 'NomeAutorizadorCompraCamisa' },
+                    { data: 'NomeCamisaAutorizada' },
+                    { data: 'DataAutorizacaoCompraCamisa' }
+                ]
+            });
+        }
+
+        function obterCodigoAutorizacaoSGFJU(pIdJovem) {
+            console.log('::id passado para método que gera autorização ' + pIdJovem);
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify({Id: pIdJovem}),
+                url: "api/Jovens/RetornaCodigoAutorizacaoCamisaSGFJU",
+                contentType: "application/json"
+            }).done(function (resultSetCode_SGFJU) {
+                console.log('__codigoSGFJU antes de atribuir ' + __codigoSGFJU);
+                __codigoSGFJU = resultSetCode_SGFJU;
+                console.log(':: __codigoSGFJU após atribuir' + __codigoSGFJU);
+            });
+        }
+
+        function efetivarAutorizacoesCamisa() {
+            if (!existemSolicitacoes()) {
+                swal({
+                    title: "Validação",
+                    text: 'Não existem solicitações a serem efeitvadas!',
+                    type: "warning"
+                });
+                return;
+            }
+
+            spinnerOn();
+
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(__solicitacoesAdicionadas),
+                url: "api/Jovens/SolicitarAutorizacaoCompraCamisa",
+                contentType: "application/json"
+            }).done(function (resultSetSolicitacao) {
+
+                if (resultSetSolicitacao.SolicitacaoBemSucedida) {
+                    spinnerOff();
+
+                    __autorizacoesConcedidas = resultSetSolicitacao.AutorizacoesConcedidas;                    
+                    
+                    $('#autorizacoesConcedidas').modal('show');
+
+                    /*
+                    swal({
+                        title: "Confirmação",
+                        text: resultSetSolicitacao.RespostaSoliciticao,
+                        type: "success"
+                    });*/
+
+                    var objTable = $('#tblSolicitacoesAdicionadas').DataTable();
+                    objTable.clear().draw();
+                }
+                else {
+                    spinnerOff();
+                    swal({
+                        title: "Solicitação não efetuada",
+                        text: resultSetSolicitacao.RespostaSoliciticao,
+                        type: "warning"
+                    });
+                    var objTable = $('#tblSolicitacoesAdicionadas').DataTable();
+                    objTable.clear().draw();
+                }
+            });
+        }
+
+        function existemSolicitacoes() {
+            if (__solicitacoesAdicionadas.length > 0)
+                return true;
+            return false;
+        }
+
+        function modeloCamisaJaSolicitado(idCamisaProjeto) {
+            for (var i = 0; i < __solicitacoesAdicionadas.length; i++) {
+                if (__solicitacoesAdicionadas[i].CodigoCamisaAutorizada == idCamisaProjeto)
+                    return true;
+            }
+            return false;
+        }
+
+        function limpaControles() {
+            $('#txtNomeAutorizadorCompraCamisa').val('');
+            $('#txtDataAutorizacaoCompraCamisa').empty();
+            $("input[name=rbOrigemCompraCamisa]").prop('checked', false);
+            $('#txtCodigoAutorizacaoCompraCamisa').val('');
+            $('#cboProjetosFJU').val($('#cboProjetosFJU option:first-child').val()).trigger('change');
+        }
+
+        function spinnerOn() {
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function spinnerOff() {
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        function direcionarParaFicha() {
+            window.open(
+                'VisualizaJovemE.html?idJovem=' + __JOVEM_SELECIONADO.Id,
+                '_blank'
+            );
+        }
+
+        function retornaTipoDeSolicitante() {
+            if (!ehCoordenador()) {
+                if (ehObreiroOuColaborador())
+                    return "Obreiro";
+            }
+            return "Jovem";
+        }
+
+        function obreiroAindaPodeSolicitarCamisa() {
+            if (__autorizacoesAdquiridas.length == 2)
+                return false;
+
+            return true;
+        }
+
+        function carregarHistoricoAutorizacoesJovem(pIdJovem) {
+            var jovemDTO = {
+                Id: pIdJovem
+            };
+
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(jovemDTO),
+                url: "api/AutorizacoesCamisa/RetornaHistoricoSolicitacoesCamisa",
+                contentType: "application/json"
+            }).done(function (resultSetHistoricoSolicitacoesJovem) {
+
+                $('#tblHistoricoSolicitacoes').DataTable({
+                    data: resultSetHistoricoSolicitacoesJovem,
+                    pageLength: 12,
+                    destroy: true,
+                    dom: 'Bfrtip',
+                    buttons: [
+                    ],
+                    columns: [
+                        { data: 'IdAutorizacao'},
+                        { data: 'NomeAutorizadorCompraCamisa' },
+                        { data: 'NomeCamisaAutorizada' },
+                        { data: 'DataAutorizacaoCompraCamisa' }
+                    ],
+                    columnDefs: [
+                        {
+                            targets: [0],
+                            visible: false,
+                            searchable: false
+                        }]
+                });
+                
+            });
+        }
+    </script>
+
+</body>
+</html>

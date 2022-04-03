@@ -1,0 +1,1351 @@
+﻿Gerência Árvore da Vida
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet"
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <!--abaixo css que permite seleção-->
+    <link href="css/plugins/dataTables/Select-1.3.1/select.dataTables.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <link href="css/SGFJU.UI.Utils.css" rel="stylesheet">
+
+    <style type="text/css">
+
+        .nav-tabs {
+            background-color: #fff;
+            border-bottom: 1px solid #3071a9;
+        }
+
+        .nav-pills {
+            border-bottom: 1px solid #3071a9;
+        }
+
+        a.nav-link {
+            color: white;
+        }
+
+        .tab-content {
+            color: #3071a9;
+            border-bottom: 1px solid #3071a9;
+            border-left: 1px solid #3071a9;
+            border-right: 1px solid #3071a9;
+            border-bottom-width: 1px solid #3071a9;
+        }
+
+        .nav-item {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-decoration-color: black;
+        }
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: #1C84C6;
+            border-color: #dee2e6 #dee2e6 #fff;
+            font-family: Helvetica;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: #fff;
+            background-color: #1C84C6;
+            font-family: Helvetica;
+        }
+
+        td.details-control {
+            background: url('img/details_open.png') no-repeat center center;
+            cursor: pointer;
+        }
+
+        tr.shown td.details-control {
+            background: url('img/details_close.png') no-repeat center center;
+        }
+
+        /*
+        .dataTables_wrapper .dataTables_filter {
+            float: right;
+            text-align: right;
+            visibility: hidden;
+        }*/
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquise por palavra-chave..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+
+                        <li>
+                            <a onclick="ExecutarActionX072433()">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!--Box abaixo doa parâmetros-->
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2 class="text-success font-bold">
+                        Gerência Árvore da Vida - <span id="lblIdentificadorEstado_Bloco" class="text-success font-bold"></span>
+                        <span class="fa fa-tasks" aria-hidden="true"></span><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </h2>
+
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <!--<a href="index.html">Home</a>-->
+                            <select id="cboEstado" class="select2_demo_9 form-control">
+                                <option value="0">Todos Estados</option>
+                                <option value="28">São Paulo</option>
+                                <option value="29">Acre</option>
+                                <option value="30">Alagoas</option>
+                                <option value="31">Amapá</option>
+                                <option value="32">Amazonas</option>
+                                <option value="33">Bahia</option>
+                                <option value="34">Ceará</option>
+                                <option value="35">Distrito Federal</option>
+                                <option value="36">Espírito Santo</option>
+                                <option value="37">Goiás</option>
+                                <option value="38">Maranhão</option>
+                                <option value="39">Mato Grosso</option>
+                                <option value="40">Mato Grosso Dos Sul</option>
+                                <option value="41">Minas Gerais</option>
+                                <option value="42">Pará</option>
+                                <option value="43">Paraíba</option>
+                                <option value="44">Paraná</option>
+                                <option value="45">Pernambuco</option>
+                                <option value="46">Piauí</option>
+                                <option value="47">Rio de Janeiro</option>
+                                <option value="48">Rio Grande do Norte</option>
+                                <option value="49">Rio Grande do Sul</option>
+                                <option value="50">Rondônia</option>
+                                <option value="51">Roraima</option>
+                                <option value="52">Santa Catarina</option>
+                                <option value="53">Sergipe</option>
+                                <option value="54">Tocantins</option>
+                                <option value="55">Campos</option>
+                                <option value="56">[BLOCO DE TESTE]</option>
+                            </select>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <select id="cboBloco" class="select2_demo_3 form-control">
+                                <option></option>
+                            </select>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <select id="cboRegiao" class="select2_demo_4 form-control">
+                                <option></option>
+                            </select>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <select id="cboIgreja" class="select2_demo_5 form-control">
+                                <option></option>
+                            </select>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <button id="btnPesquisa" onclick="ListarObreirosPorParametro()" class="btn btn-outline-dark " type="button"><i class="fa fa-search"></i><i class="fa fa-user"></i>&nbsp;Listar</button>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                <div id="overlay" onclick="spinnerOff()">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <!---->
+                        <div class="ibox" id="boxTodosObreiros">
+                            <div class="ibox-content">
+                                <span class="text-muted small float-right">Os jovens eletivos, são da mesma igreja do obreiro selecionado <i class="fa fa-user"></i> </span>
+                                <h2 class="font-bold">
+                                    Obreiros do <span id="lblIdentificadorEstado_Bloco2" class="text-info font-bold"></span>
+                                </h2>
+                                <p class="text-danger">
+                                    Ao clicar no nome do Obreiro, serão carregados os jovens de sua respectiva igreja que estão sem acompanhamento
+                                </p>
+                                <div class="input-group">
+                                    <input id="txtNomeObreiroPesquisa" type="text" placeholder="Pesquise pelo nome " class="input form-control">
+                                    <span class="input-group-append">
+                                        <button onclick="PesquisaObreirosPeloNome()" type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Pesquisar</button>
+                                    </span>
+                                </div>
+                                <div class="clients-list">
+                                    <span id="QtdObreirosRetornados" class="float-right small text-muted text-danger"></span>
+                                    <ul id="tabObreiros" class="nav nav-tabs">
+                                        <li><a class="nav-link active" data-toggle="tab" href="#tab-1"><i class="fa fa-user"></i> Obreiros Selecionados</a></li>
+                                        <li id="JovensEletivos"><a id="tabJovensEletivosAcompanhamento" class="nav-link" data-toggle="tab" href="#tab-2"><i class="fa fa-briefcase"></i> Jovens eletivos a acompanhamento</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="tab-1" class="tab-pane active">
+                                            <div class="full-height-scroll">
+                                                <div class="table-responsive">
+                                                    <table id="tblObreiros" class="table table-striped table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>IdObreiro</th>
+                                                                <th>IdIgreja</th>
+                                                                <th>ArquivoFoto</th>
+                                                                <th>Foto</th>
+                                                                <th>Nome do Obreiro</th>
+                                                                <th>Região</th>
+                                                                <th>Igreja</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tab-2" class="tab-pane">
+                                            <div class="full-height-scroll">
+                                                <div class="table-responsive">
+                                                    <table id="tblJovensIgrejaObreiro" class="table table-striped table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>IdJovem</th>
+                                                                <th>Nome</th>
+                                                                <th>Região</th>
+                                                                <th>Igreja</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                    <div class="col-sm-4">
+                        <div id="boxObreiroSelecionado" class="ibox selected">
+
+                            <div class="ibox-content">
+                                <div class="tab-content">
+                                    <div id="contact-1" class="tab-pane active">
+                                        <div class="row m-b-lg">
+                                            <div class="col-lg-4 text-center">
+
+                                                <div class="m-b-sm">
+                                                    <img id="imgObreiroSelecionado" alt="image" class="rounded-circle" src="img/UsuarioNaoSelecionado.png"
+                                                         style="width: 62px">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <strong id="lblNomeObreiroSelecionado">
+                                                </strong>
+
+                                                <button type="button" class="btn btn-primary btn-sm btn-block" onclick="AssociarJovensSelecionadosAObreiro()">
+                                                    <i class="fa fa-envelope"></i> Associar Jovens selecionados
+                                                </button>
+                                                <button type="button" class="btn btn-danger btn-sm btn-block" onclick="CancelarAssociacao()">
+                                                    <i class="fa fa-user-times"></i> Cancelar
+                                                </button>
+                                                <button type="button" class="btn btn-info btn-sm btn-block" onclick="VisualizarJovensJaAcompanhadosObreiro()">
+                                                    <i class="fa fa-search-plus"></i> Visualizar já acompanhados
+                                                </button>
+                                                <button type="button" class="btn btn-outline-info btn-sm btn-block" onclick="VisualizarPerfilObreiro()">
+                                                    <i class="fa fa-user-circle"></i> Visualizar Perfil
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="client-detail">
+                                            <div class="full-height-scroll">
+
+                                                <strong class="label label-success center-orientation">Jovens Acompanhados por este obreiro</strong>
+                                                <hr class="hr-line-solid" />
+
+                                                <div id="feedJovensAcompanhadosObreiroSelecionado" class="feed-activity-list">
+
+                                                </div>
+
+                                                <!--<br />
+                                    <strong>Notes</strong>
+                                    <p>
+
+                                    </p>
+                                    <hr />
+                                    <strong>Timeline activity</strong>-->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="modal inmodal" id="preencheDataInicioAcompanhamento" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content animated bounceInRight">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                    <i class="fa fa-calendar-check-o modal-icon"></i>
+                                    <h4 class="modal-title">Preencher Data do Inicio do acompanhamento</h4>
+                                    <small class="font-bold">Digite abaixo a Data em que atendimento do jovem se iniciou</small>
+                                </div>
+                                <div class="modal-body">
+                                    <!---->
+
+                                    <div class="form-group"><h3>Jovem</h3> <h4 id="lblNomeJovemPreenchimentoData" class="bg-success"></h4></div>
+                                    <div class="form-group"><label>Data de Inicio do acompanhamento</label> <input id="txtDataInicioAcompanhamento" type="date" class="form-control"></div>
+                                    <div>
+                                        <button class="btn btn-sm btn-outline-success float-right m-t-n-xs" type="button" onclick="setaDataInicioAcompanhamentoJovem()"><strong>Salvar Data</strong></button>
+                                    </div>
+
+                                    <!---->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- abaixo modal que altera data de cadastro do fomulário -->
+                    <!---->
+                    <div class="modal inmodal" id="modalJovensJaAcompanhadosObreiro" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content animated bounceInRight">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                    <i class="fa fa-calendar-check-o modal-icon"></i>
+                                    <h4 class="modal-title">Jovens em acompanhamento</h4>
+                                    <div class="form-group"><h3>Obreiro</h3> <h4 id="lblObreiroSelecionadoAcompanhaJovens" class="bg-success"></h4></div>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- aqui entra tabela com jovens já acompanhados pelo obreiro -->
+                                    <table id="tblJovensJaAcompanhadosObreiroSelecionado" class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>IdJovem</th>
+                                                <th>Foto</th>
+                                                <th>Nome</th>
+                                                <th>Região</th>
+                                                <th>Igreja</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    <!---->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- abaixo modal que altera data de cadastro do fomulário ||||||||||modalJovensJaAcompanhadosObreiro -->
+                </div>
+            </div>
+            <!-- Mainly scripts -->
+            <script src="js/jquery-3.1.1.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+            <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+            <!-- Custom and plugin javascript -->
+            <script src="js/inspinia.js"></script>
+            <script src="js/plugins/pace/pace.min.js"></script>
+
+            <!-- Steps -->
+            <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+            <!-- Jquery Validate -->
+            <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+            <!-- Select2 -->
+            <script src="js/plugins/select2/select2.full.min.js"></script>
+
+            <!-- Input Mask-->
+            <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+            <!-- Data picker -->
+            <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+            <!-- iCheck -->
+            <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+            <script src="js/plugins/dataTables/datatables.min.js"></script>
+            <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+
+            <!--abaixo biblioteca que permite multipla seleção de registros-->
+            <script src="js/plugins/dataTables/Select-1.3.1/dataTables.select.min.js"></script>
+
+            <!-- Toastr script -->
+            <script src="js/plugins/toastr/toastr.min.js"></script>
+
+            <!-- Sweet alert -->
+            <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+            <script src="js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+            <script src="js/SGFJU.Domain.UI.Client.js"></script>
+            <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+            <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+            <script src="js/SGFJU.Domain.UI.Bind.Specialized.js"></script>
+
+            <script>
+
+                var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+                var hostUrl = "http://" + document.location.hostname;
+                var __HOST_LOCAL = 'https://' + window.location.hostname + ':' + window.location.port + '/FotosJovens/';
+                var __HOST_IMG = 'https://' + window.location.hostname + ':' + window.location.port + '/img/';
+                var primeiraPesquisa = false;
+                var vExisteUltimoPesquisaRetorno = false;
+                var _PERFILLOGADO = '';
+                var __resultSetTodosObreiros = undefined;
+                var __resultSetTodosObreirosBloco = undefined;
+                var __resultSetResultadoPesquisa = undefined;
+                var __resultSetJovensRetornados = undefined;
+                var __OBREIRO_SELECIONADO = undefined;
+                var objAssociacaoJovensObreiro = [];
+                var __indiceJovemPreenchiendoDataInicio = -1;
+                var __XBRO = "";
+                var __EH_INICIO_ASSOCIACAO = false;
+                var idJaNoPainel = [];
+                var __TEMPLATE_NODE_FEED_JOVEM = '<div class="feed-element"> ' +
+                    '       <a class="float-left" href="#"> ' +
+                    '           <img alt="image" class="rounded-circle" src="img/user_default_icon.png">' +
+                    '       </a> ' +
+                    '       <div class="media-body "> ' +
+                    '           <small id="#ID_DATA#" class="float-right text-navy"></small>' +
+                    '           <strong>#NOME_JOVEM#</strong> <br> ' +
+                    '           <div class="actions">' +
+                    //'               <a href="" class="btn btn-xs btn-reddit"><i class="fa fa-thumbs-up"></i> Preencher Data do inicio do acompanhamento</a>'+ data-toggle="modal" data-target="#preencheDataInicioAcompanhamento"
+                    '                 <button id="#ID_BOTAO#" data-tt="tooltip" title="Preencher data de inicio do acompanhamento"  onclick="setaIndiceJovemEmPreenchimentoDataInicio(#INDICE#)" class="btn btn-danger" type="button" > ' +
+                    '                     <i class="fa fa-calendar"></i> ' +
+                    '                 </button>' +
+                    '           </div>' +
+                    '       </div>' +
+                    '   </div>';
+
+                $(document).ready(function () {
+
+                    $("#cboEstado").select2();
+                    $("#cboBloco").select2();
+                    $("#cboRegiao").select2();
+                    $("#cboIgreja").select2();
+
+                    facadeUser.ConfigurarPaginaX072470();
+
+                    $('#cboEstado').on('select2:select', function (e) {
+                        $('#ibox1').children('.ibox-content').toggleClass('sk-loading');
+                        var data = e.params.data;
+                        preencherComboBlocos(data.id);
+                    });
+
+                    $('.select2_demo_3').on('select2:select', function (e) {
+                        $('#cboRegiao').empty().trigger("change");
+                        $('#cboIgreja').empty().trigger("change");
+                        var data = e.params.data;
+                        preencherComboRegioes(data.id);
+                    });
+
+                    $('.select2_demo_4').on('select2:select', function (e) {
+                        $('#cboIgreja').empty().trigger("change");
+                        var data = e.params.data;
+                        preencherComboIgrejas(data.id);
+                    });
+
+                    //$('#boxTodosObreiros').children('.ibox-content').toggleClass('sk-loading');
+                    //$('#boxObreiroSelecionado').children('.ibox-content').toggleClass('sk-loading');
+
+                    ConfiguraPerfilUsuarioLogado();
+
+                    $('#tblObreiros tbody').on('click', 'tr', function () {
+                        var tblTodosObr = $('#tblObreiros').DataTable();
+
+                        var obreiroSelecionado = tblTodosObr.row(this).data();
+                        __OBREIRO_SELECIONADO = tblTodosObr.row(this).data();
+
+                        carregaJovensEletivosIgrejaObreiroSelecionado(obreiroSelecionado.IdIgreja);
+
+                        carregaPainelDadosObreiroSelecionado(obreiroSelecionado);
+
+                        $('#tabObreiros li:eq(1) a').tab('show')
+                    });
+
+                    $('#preencheDataInicioAcompanhamento').on('shown.bs.modal', function () {
+                        $('#lblNomeJovemPreenchimentoData').text(objAssociacaoJovensObreiro[__indiceJovemPreenchiendoDataInicio].NomeJovem);
+                    });
+
+                    $('#modalJovensJaAcompanhadosObreiro').on('shown.bs.modal', function myfunction() {
+                        carregaJovensJaAcompanhadosObreiro(__OBREIRO_SELECIONADO.IdObreiro);
+                    });
+
+                });
+
+                /*
+                function configComboEstado() {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/Usuarios/X072470/",
+                        contentType: "application/json"
+                    }).done(function (retorno) {
+                        $("#cboEstado").val(retorno.IdEstadoUsuarioLogado).trigger('change.select2');
+                        $('#cboEstado').prop("disabled", true);
+                        preencherComboBlocos(retorno.IdEstadoUsuarioLogado);
+                    });
+                }
+
+                function configComboPerfilBloco() {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/Usuarios/X072470/",
+                        contentType: "application/json"
+                    }).done(function (retorno) {
+
+                        $("#cboEstado").val(retorno.IdEstadoUsuarioLogado).trigger('change.select2');
+                        $('#cboEstado').prop("disabled", true);
+
+                        preencherComboBlocosToBlocos(retorno.IdEstadoUsuarioLogado, retorno.IdBloco);
+
+                        preencherComboRegioes(retorno.IdBloco);
+                    });
+                }
+
+                function preencherComboBlocos(idEstado) {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/blocos/ObterPorEstado/" + idEstado,
+                        contentType: "application/json"
+                    }).done(function (retorno) {
+                        __blocosEstadoLogado = retorno;
+
+                        $.each(retorno, function () {
+                            $("#cboBloco").append($("<option     />").val(this.Id).text(this.NomeBloco));
+                        });
+                        $("#cboBloco").prepend('<option selected class="placeholdered" value="">Selecione o bloco</option>');
+                        $('#cboBloco').select2().trigger('change');
+                        $('#cboBloco').removeAttr('selected');
+                    });
+                }
+
+                function preencherComboBlocosToBlocos(idEstado, idBloco) {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/blocos/ObterPorEstado/" + idEstado,
+                        contentType: "application/json"
+                    }).done(function (retorno) {
+                        __blocosEstadoLogado = retorno;
+
+                        $.each(retorno, function () {
+                            $("#cboBloco").append($("<option     />").val(this.Id).text(this.NomeBloco));
+                        });
+
+                        $("#cboBloco").val(idBloco).attr('selected', true);
+                        $('#cboBloco').select2().trigger('change');
+                        $('#cboBloco').prop("disabled", true);
+                    });
+                }
+
+                function configComboPerfilRegiao() {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/Usuarios/X072470/",
+                        contentType: "application/json"
+                    }).done(function (retorno) {
+
+                        $("#cboEstado").val(retorno.IdEstadoUsuarioLogado).trigger('change.select2');
+                        $('#cboEstado').prop("disabled", true);
+
+                        preencherComboBlocosToBlocos(retorno.IdEstadoUsuarioLogado, retorno.IdBloco);
+
+                        preencherComboRegioesToRegioes(retorno.IdBloco, retorno.IdRegiao);
+                        console.log(retorno.IdRegiao);
+                        preencherComboIgrejas(retorno.IdRegiao);
+                    });
+                }
+
+                function preencherComboRegioes(idBloco) {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/Regioes/ObterPorBloco/" + idBloco,
+                        contentType: "application/json"
+                    }).done(function (retorno) {
+                        $.each(retorno, function () {
+                            $("#cboRegiao").append($("<option     />").val(this.IdRegiao).text(this.NomeRegiao));
+                        });
+                        $("#cboRegiao").prepend('<option selected class="placeholdered" value="">Selecione a região</option>');
+                        $('#cboRegiao').select2().trigger('change');
+                        $('#cboRegiao').removeAttr('selected');
+                    });
+                }
+
+                function preencherComboRegioesToRegioes(idBloco, idRegiao) {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/Regioes/ObterPorBloco/" + idBloco,
+                        contentType: "application/json"
+                    }).done(function (retorno) {
+                        $.each(retorno, function () {
+                            $("#cboRegiao").append($("<option     />").val(this.IdRegiao).text(this.NomeRegiao));
+                        });
+
+                        $("#cboRegiao").val(idRegiao).attr('selected', true);
+                        $('#cboRegiao').select2().trigger('change');
+                        $('#cboRegiao').prop("disabled", true);
+                    });
+                }
+
+                function preencherComboIgrejas(idRegiao) {
+                    $.ajax({
+                        type: "get",
+                        url: "api/Igrejas/ObterPorRegiao/" + idRegiao,
+                        contentType: "application/json"
+                    }).done(function (retorno) {
+                        $.each(retorno, function () {
+                            $("#cboIgreja").append($("<option     />").val(this.IdIgreja).text(this.NomeIgreja));
+                        });
+                        $("#cboIgreja").prepend('<option selected class="placeholdered" value="">Selecione a igreja</option>');
+                        $('#cboIgreja').select2().trigger('change');
+                        $('#cboIgreja').removeAttr('selected');
+                    });
+                }
+                */
+
+                function ObterTodosObreirosEstadoLogado() {
+                    $.ajax({
+                        type: "GET",
+                        url: 'api/ArvoreVida/ListaTodosObreirosPorEstadoLogado',
+                        contentType: "application/json"
+                    }).done(function (resultSetTodosObreirosEstado) {
+                        __resultSetTodosObreiros = resultSetTodosObreirosEstado;
+
+                        $('#tblObreiros').DataTable({
+                            data: resultSetTodosObreirosEstado,
+                            pageLength: 50,
+                            destroy: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                            ],
+                            columns: [
+                                { data: 'IdObreiro' },
+                                { data: 'IdIgreja' },
+                                { data: 'NomeArquivoFoto' },
+                                { data: 'NomeObreiro' },
+                                { data: 'NomeRegiao' },
+                                { data: 'NomeIgreja' }
+                            ],
+                            columnDefs: [
+                                {
+                                    targets: [0, 1, 2],
+                                    visible: false,
+                                    searchable: false
+                                }
+                            ]
+                        });
+                        $('#boxTodosObreiros').children('.ibox-content').toggleClass('sk-loading');
+                        $('#boxObreiroSelecionado').children('.ibox-content').toggleClass('sk-loading');
+                    });
+                }
+
+                function ObterTodosObreirosBlocoLogado() {
+                    $.ajax({
+                        type: "GET",
+                        url: 'api/ArvoreVida/ListaTodosObreirosPorBlocoLogado',
+                        contentType: "application/json"
+                    }).done(function (resultSetTodosObreirosBloco) {
+                        __resultSetTodosObreiros = resultSetTodosObreirosBloco;
+
+                        $('#tblObreiros').DataTable({
+                            data: resultSetTodosObreirosBloco,
+                            pageLength: 50,
+                            destroy: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                            ],
+                            columns: [
+                                { data: 'IdObreiro' },
+                                { data: 'IdIgreja' },
+                                { data: 'NomeArquivoFoto' },
+                                { data: 'NomeObreiro' },
+                                { data: 'NomeRegiao' },
+                                { data: 'NomeIgreja' }
+                            ],
+                            columnDefs: [
+                                {
+                                    targets: [0, 1, 2],
+                                    visible: false,
+                                    searchable: false
+                                }
+                            ]
+                        });
+
+                        $('#boxTodosObreiros').children('.ibox-content').toggleClass('sk-loading');
+                        $('#boxObreiroSelecionado').children('.ibox-content').toggleClass('sk-loading');
+                    });
+                }
+
+                /*
+                function ConfiguraPerfilUsuarioLogado() {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/Usuarios/X072470/",
+                        contentType: "application/json"
+                    }).done(function (retorno) {
+
+                        if (retorno.NomePerfil == 'Secretárias Estadual') {
+                            _PERFILLOGADO = 'Secretárias Estadual'
+                            $('#lblIdentificadorEstado_Bloco').text('Estado ' + retorno.NomeEstadoUsuarioLogado);
+                            $('#lblIdentificadorEstado_Bloco2').text('Estado ' + retorno.NomeEstadoUsuarioLogado);
+
+                            configComboEstado();
+                        }
+                        else if (retorno.NomePerfil == 'Secretária de Bloco') {
+                            _PERFILLOGADO = 'Secretária de Bloco'
+                            $('#lblIdentificadorEstado_Bloco').text('Bloco ' + retorno.NomeBlocoUsuario);
+                            $('#lblIdentificadorEstado_Bloco2').text('Bloco ' + retorno.NomeBlocoUsuario);
+
+                            configComboPerfilBloco();
+                        }
+                        else if (retorno.NomePerfil == 'Secretária de Região') {
+                            _PERFILLOGADO = 'Secretária de Região'
+                            $('#lblIdentificadorEstado_Bloco').text('Região ' + retorno.NomeRegiaoUsuario);
+                            $('#lblIdentificadorEstado_Bloco2').text('Região ' + retorno.NomeRegiaoUsuario);
+
+                            configComboPerfilRegiao();
+                        }
+                        else if (retorno.NomePerfil == 'Secretária de Igreja') {
+                            _PERFILLOGADO = 'Secretária de Igreja'
+                        }
+                    });
+                }
+                */
+
+                function PesquisaObreirosPeloNome() {
+                    $('#boxTodosObreiros').children('.ibox-content').toggleClass('sk-loading');
+                    $('#boxObreiroSelecionado').children('.ibox-content').toggleClass('sk-loading');
+
+                    var vPesquisarPorEstadoOuBloco = '';
+
+                    console.log('__PERFIL ' + _PERFILLOGADO);
+
+                    if (_PERFILLOGADO == 'Secretárias Estadual') {
+                        vPesquisarPorEstadoOuBloco = 'Estado';
+                    }
+                    else if (_PERFILLOGADO == 'Secretária de Bloco') {
+                        vPesquisarPorEstadoOuBloco = 'Bloco';
+                    }
+
+                    var obreiroDTO = {
+                        NomeObreiro: $('#txtNomeObreiroPesquisa').val(),
+                        PesquisarPorEstadoOuBloco: vPesquisarPorEstadoOuBloco
+                    };
+
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify(obreiroDTO),
+                        url: 'api/ArvoreVida/PesquisaObreiroPorNome',
+                        contentType: "application/json"
+                    }).done(function (resultSetResultadoPesquisa) {
+
+                        __resultSetTodosObreiros = resultSetResultadoPesquisa;
+
+                        console.log(__resultSetTodosObreiros.length);
+
+                        $('#QtdObreirosRetornados').text('Obreiros retornados' + __resultSetTodosObreiros.length);
+
+                        if (primeiraPesquisa == false &&
+                            vExisteUltimoPesquisaRetorno == false) {
+                            primeiraPesquisa = true;
+
+                            $('#tblObreiros').DataTable({
+                                data: resultSetResultadoPesquisa,
+                                pageLength: 30,
+                                destroy: true,
+                                dom: 'Bfrtip',
+                                buttons: [
+                                ],
+                                columns: [
+                                    { data: 'IdObreiro' },
+                                    { data: 'IdIgreja' },
+                                    { data: 'NomeObreiro' },
+                                    { data: 'NomeRegiao' },
+                                    { data: 'NomeIgreja' }
+                                ],
+                                columnDefs: [
+                                    {
+                                        targets: [0, 1, 2],
+                                        visible: false,
+                                        searchable: false
+                                    }
+                                ]
+                            });
+
+                        }
+                        else {
+
+                            var table = $('#tblObreiros').DataTable();
+                            table.clear();
+                            table.rows.add(__resultSetTodosObreiros).draw();
+                        }
+
+                        $('#boxTodosObreiros').children('.ibox-content').toggleClass('sk-loading');
+                        $('#boxObreiroSelecionado').children('.ibox-content').toggleClass('sk-loading');
+                    });
+                }
+
+                function carregaJovensEletivosIgrejaObreiroSelecionado(pIdIgreja) {
+
+                    $('#boxTodosObreiros').children('.ibox-content').toggleClass('sk-loading');
+                    $('#boxObreiroSelecionado').children('.ibox-content').toggleClass('sk-loading');
+
+                    var obreiroParametroDTO = {
+                        IdIgreja: pIdIgreja
+                    };
+
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify(obreiroParametroDTO),
+                        url: 'api/ArvoreVida/ListaJovensIgrejaObreiroSemAcompanhamento',
+                        contentType: "application/json"
+                    }).done(function (resultSetJovensRetornados) {
+
+                        __resultSetTodosObreiros = resultSetJovensRetornados;
+
+                        //console.log('quantidade jovens retornados por igreja'+__resultSetTodosObreiros.length);
+                        //vou remover vExisteUltimoPesquisaRetorno == false´para verificar
+                        $('#tblJovensIgrejaObreiro').DataTable({
+                            data: resultSetJovensRetornados,
+                            pageLength: 30,
+                            destroy: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                                {
+                                    text: 'Associar jovens selecionados à obreiro',
+                                    action: function () {
+                                        var table = $('#tblJovensIgrejaObreiro').DataTable();
+                                        var qtdLinhasSelecionadas = table.rows({ selected: true }).count();
+                                        var linhasSelecionadas = table.rows({ selected: true }).data();
+
+                                        if (qtdLinhasSelecionadas == 0) {
+                                            swal({
+                                                title: "Validação",
+                                                text: 'Selecione jovens para associar ao obreiro para companhamento!',
+                                                type: "warning"
+                                            });
+                                        }
+                                        else {
+                                            var nomeObreiroAAssociar = $('#lblNomeObreiroSelecionado').text();
+
+                                            for (var i = 0; i < linhasSelecionadas.length; i++) {
+                                                if (!jovemJaEstaLaListaDeAssociacao(linhasSelecionadas[i].IdJovem)) {
+                                                    objAssociacaoJovensObreiro.push({
+                                                        IdJovem: linhasSelecionadas[i].IdJovem,
+                                                        NomeJovem: linhasSelecionadas[i].NomeJovem
+                                                    });
+                                                }
+                                                /*
+                                                objAssociacaoJovensObreiro.push({
+                                                    IdJovem: linhasSelecionadas[i].IdJovem,
+                                                    NomeJovem: linhasSelecionadas[i].NomeJovem
+                                                });*/
+                                            }
+
+                                            swal({
+                                                title: "Deseja realmente confirmar associação? ",
+                                                text: 'Para efetivar a operação, clique associar no painel ao lado, após prrencher a data de inicio de acompanhamento de cada jovem!',
+                                                type: "warning",
+                                                showCancelButton: true,
+                                                confirmButtonColor: "#DD6B55",
+                                                confirmButtonText: "Sim, Desejo confirmar!",
+                                                closeOnConfirm: false
+                                            }, function () {
+                                                limpaSelecao();
+                                                PreencheFeedListJovensAssociados(objAssociacaoJovensObreiro);
+                                                swal({
+                                                    title: "Confirmação",
+                                                    text: 'Associação realizada com sucesso!',
+                                                    type: "success"
+                                                });
+                                            });
+
+                                        }
+                                    }
+                                }
+                            ],
+                            columns: [
+                                { data: 'IdJovem' },
+                                //{ data: 'NomeJovem' },
+                                {
+                                    data: 'NomeJovem',
+                                    render: function (data, type, row) {
+                                        return '<a href="VisualizaJovemE.html?idJovem=' + row.IdJovem + '" target="_blank" class="text-success font-bold">' + data + '</a>';
+                                    }
+                                },
+                                { data: 'NomeRegiaoJovem' },
+                                { data: 'NomeIgrejaJovem' }
+                            ],
+                            select: {
+                                style: 'multi'
+                            },
+                            columnDefs: [
+                                {
+                                    targets: [0],
+                                    visible: false,
+                                    searchable: false
+                                }
+                            ]
+                        });
+
+                        $('#boxTodosObreiros').children('.ibox-content').toggleClass('sk-loading');
+                        $('#boxObreiroSelecionado').children('.ibox-content').toggleClass('sk-loading');
+                    });
+                }
+
+                function carregaPainelDadosObreiroSelecionado(pObjObreiroSelecionado) {
+                    $('#feedJovensAcompanhadosObreiroSelecionado').empty();
+
+                    objAssociacaoJovensObreiro = [];
+
+                    $('#lblNomeObreiroSelecionado').text(pObjObreiroSelecionado.NomeObreiro);
+
+                    if (__AMBIENTE == 'Local') {
+                        $('#imgObreiroSelecionado').attr('src', __HOST_CONFIGURADO + '/FotosJovens/' + pObjObreiroSelecionado.NomeArquivoFoto);
+                    }
+                    else {
+                        $('#imgObreiroSelecionado').attr('src', __HOST_CONFIGURADO + 'FotosJovens/' + pObjObreiroSelecionado.NomeArquivoFoto);
+                    }
+
+
+
+                    $('#lblObreiroSelecionadoAcompanhaJovens').text(pObjObreiroSelecionado.NomeObreiro);
+                    //$('#imgObreiroSelecionado').attr('src', __HOST_LOCAL + 'SP_ID_COORDENADOR_92788_2020-12-01165258_4584c891-d4a6-4556-a158-dece3aa5ecad.jpg');
+                }
+
+                function ListarObreirosPorParametro() {
+                    spinnerOn();
+                    $('#boxTodosObreiros').children('.ibox-content').toggleClass('sk-loading');
+                    $('#boxObreiroSelecionado').children('.ibox-content').toggleClass('sk-loading');
+
+                    var vIdEstado = $('#cboEstado').val();
+                    var vIdBloco = $('#cboBloco').val();
+                    var vIdRegiao = $('#cboRegiao').val();
+                    var vIdIgreja = $('#cboIgreja').val();
+
+                    var parametroPesquisaObreiroDTO = {
+                        IdEstado: vIdEstado,
+                        IdBloco: vIdBloco,
+                        IdRegiao: vIdRegiao,
+                        IdIgreja: vIdIgreja
+                    };
+
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify(parametroPesquisaObreiroDTO),
+                        url: 'api/ArvoreVida/PesquisaObreiroPorParametro',
+                        contentType: "application/json"
+                    }).done(function (resultSetResultadoPesquisa) {
+
+                        __resultSetTodosObreiros = resultSetResultadoPesquisa;
+
+                        console.log(__resultSetTodosObreiros.length);
+
+                        $('#QtdObreirosRetornados').text('Obreiros retornados' + __resultSetTodosObreiros.length);
+
+                        if (primeiraPesquisa == false &&
+                            vExisteUltimoPesquisaRetorno == false) {
+                            primeiraPesquisa = true;
+
+                            $('#tblObreiros').DataTable({
+                                data: resultSetResultadoPesquisa,
+                                pageLength: 30,
+                                destroy: true,
+                                dom: 'Bfrtip',
+                                buttons: [
+                                ],
+                                columns: [
+                                    { data: 'IdObreiro' },
+                                    { data: 'IdIgreja' },
+                                    { data: 'NomeArquivoFoto' },
+                                    {
+                                        data: 'FotoEstaNoDiretorio',
+                                        render: function (data, type, row) {
+                                            if (data == "S") {
+                                                var urlImgEncoded = encodeURI(__HOST_CONFIGURADO + '/FotosJovens/' + row.NomeArquivoFoto);
+                                                return "<img src=" + urlImgEncoded + " class='rounded-circle img-sm'  />";
+                                            }
+                                            else {
+                                                return "<img src=" + __HOST_CONFIGURADO + '/img/jovemsemfoto.jpg' + " class='rounded-circle img-sm' />"
+                                            }
+                                        }
+                                    },
+                                    { data: 'NomeObreiro' },
+                                    { data: 'NomeRegiao' },
+                                    { data: 'NomeIgreja' }
+                                ],
+                                columnDefs: [
+                                    {
+                                        targets: [0, 1, 2],
+                                        visible: false,
+                                        searchable: false
+                                    }
+                                ]
+                            });
+
+                            spinnerOff();
+                        }
+                        else {
+                            var table = $('#tblObreiros').DataTable();
+                            table.clear();
+                            table.rows.add(__resultSetTodosObreiros).draw();
+                        }
+
+                        $('#tabObreiros li:eq(0) a').tab('show');
+
+                        $('#boxTodosObreiros').children('.ibox-content').toggleClass('sk-loading');
+                        $('#boxObreiroSelecionado').children('.ibox-content').toggleClass('sk-loading');
+                    });
+                }
+
+                function PreencheFeedListJovensAssociados(listaJovensAssociacaoObreiro) {
+                    for (var i = 0; i < listaJovensAssociacaoObreiro.length; i++) {
+
+                        if (idJaNoPainel.length == 0) {
+                            $('#feedJovensAcompanhadosObreiroSelecionado').append(
+                                __TEMPLATE_NODE_FEED_JOVEM.replace('#NOME_JOVEM#', listaJovensAssociacaoObreiro[i].NomeJovem)
+                                    .replace('#INDICE#', i)
+                                    .replace('#ID_BOTAO#', 'btnPreencherDtInicioAcompanhamento' + i)
+                                    .replace('#ID_DATA#', 'lblDataInicioAcompanhamento' + i)
+                            );
+                            idJaNoPainel.push(listaJovensAssociacaoObreiro[i].IdJovem);
+                        }
+                        else if (!idJaNoPainel.includes(listaJovensAssociacaoObreiro[i].IdJovem)) {
+                            $('#feedJovensAcompanhadosObreiroSelecionado').append(
+                                __TEMPLATE_NODE_FEED_JOVEM.replace('#NOME_JOVEM#', listaJovensAssociacaoObreiro[i].NomeJovem)
+                                    .replace('#INDICE#', i)
+                                    .replace('#ID_BOTAO#', 'btnPreencherDtInicioAcompanhamento' + i)
+                                    .replace('#ID_DATA#', 'lblDataInicioAcompanhamento' + i)
+                            );
+                            idJaNoPainel.push(listaJovensAssociacaoObreiro[i].IdJovem);
+                        }
+
+                        /*
+                        $('#feedJovensAcompanhadosObreiroSelecionado').append(
+                            __TEMPLATE_NODE_FEED_JOVEM.replace('#NOME_JOVEM#', listaJovensAssociacaoObreiro[i].NomeJovem)
+                                .replace('#INDICE#', i)
+                                .replace('#ID_BOTAO#', 'btnPreencherDtInicioAcompanhamento' + i)
+                                .replace('#ID_DATA#', 'lblDataInicioAcompanhamento' + i)
+                        );*/
+                    }
+                }
+
+                function AssociarJovensSelecionadosAObreiro() {
+                    var associacaoJovensObreiro = {
+                        JovensAcompanhados: objAssociacaoJovensObreiro,
+                        ObreiroQueAcompanha: {
+                            IdObreiro: __OBREIRO_SELECIONADO.IdObreiro
+                        }
+                    };
+                    if (todosPreenchidosDataInicio()) {
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify(associacaoJovensObreiro),
+                            url: "api/ArvoreVida/AssociaJovensAObreiro",
+                            contentType: "application/json"
+                        }).done(function (respostaAssociacao) {
+                            if (respostaAssociacao.RequisicaoBemSucedida) {
+
+                                swal({
+                                    title: "Confirmação",
+                                    text: 'Associação realizada com sucesso! Deseja imprimir ficha dos jovens em acompanhamento?',
+                                    type: "success",
+                                    showCancelButton: true,
+                                    confirmButtonColor: "#DD6B55",
+                                    confirmButtonText: "Sim, Desejo Imprimir!",
+                                    closeOnConfirm: true
+                                }, function () {
+                                    var __XDTO = {
+                                        XBRO: __OBREIRO_SELECIONADO.IdObreiro
+                                    };
+                                    $.ajax({
+                                        type: "POST",
+                                        data: JSON.stringify(__XDTO),
+                                        url: "api/X/XBRO",
+                                        contentType: "application/json"
+                                    }).done(function (respostaXBRO) {
+                                        __XBRO = respostaXBRO;
+                                        window.open(
+                                            __HOST_CONFIGURADO + '/RelatoriosJovensAcompanhadosObreiro.html?xbro=' + respostaXBRO + '&nomeObreiro=' + encodeURI(__OBREIRO_SELECIONADO.NomeObreiro),
+                                            '_blank'
+                                        );
+                                    });
+                                    //getXBRO();
+                                    console.log(__XBRO);
+                                    limpaPainelObreiroSelecionado();
+                                }, function () {
+                                    console.log('limpar');
+                                    limpaPainelObreiroSelecionado();
+                                });
+                            }
+                        });
+                    }
+                    else
+                        swal({
+                            title: "Validação",
+                            text: "Associação requer que todos os jovens tenham a data do inicio do acompanhamento preenchida!",
+                            type: "error"
+                        });
+                }
+
+                function setaDataInicioAcompanhamentoJovem() {
+                    objAssociacaoJovensObreiro[__indiceJovemPreenchiendoDataInicio].DataInicioAcompanhamento = $('#txtDataInicioAcompanhamento').val();
+
+                    var dataInicioAcompanhamento = new Date($('#txtDataInicioAcompanhamento').val());
+                    var dataInicioAcompanhamentoFormatada = dataInicioAcompanhamento.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+
+                    $('#lblDataInicioAcompanhamento' + __indiceJovemPreenchiendoDataInicio).text('Acompanhado desde ' + dataInicioAcompanhamentoFormatada);
+
+                    $('#btnPreencherDtInicioAcompanhamento' + __indiceJovemPreenchiendoDataInicio).removeClass("btn-danger").addClass("btn-success");
+
+                    swal({
+                        title: "Confirmação",
+                        text: "Data salva com sucesso!",
+                        type: "success"
+                    });
+                    $('#txtDataInicioAcompanhamento').val('');
+                    $('#preencheDataInicioAcompanhamento').modal('hide');
+                }
+
+                function setaIndiceJovemEmPreenchimentoDataInicio(indiceJovem) {
+                    __indiceJovemPreenchiendoDataInicio = indiceJovem
+                    $('#preencheDataInicioAcompanhamento').modal('show');
+                }
+
+                function CancelarAssociacao() {
+                    swal({
+                        title: "Cancelar Associação",
+                        text: 'Deseja realmente cancelar associação?',
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "Sim, Desejo cancelar!",
+                        closeOnConfirm: false
+                    }, function () {
+                        $('#feedJovensAcompanhadosObreiroSelecionado').empty();
+                        objAssociacaoJovensObreiro = [];
+
+                        var tableJovensSelecionados = $('#tblJovensIgrejaObreiro').DataTable();
+                        tableJovensSelecionados.rows({ selected: true }).deselect();
+
+                        $('#imgObreiroSelecionado').attr('src', __HOST_LOCAL + 'UsuarioNaoSelecionado.png');
+
+                        $('#tabObreiros li:eq(0) a').tab('show');
+
+                        swal({
+                            title: "Confirmação",
+                            text: "Cancelamento realizado!",
+                            type: "success"
+                        });
+                    });
+                }
+
+                function todosPreenchidosDataInicio() {
+                    for (var i = 0; i < objAssociacaoJovensObreiro.length; i++) {
+                        //console.log('O jovem de ID ' + objAssociacaoJovensObreiro[i].IdJovem + ' olha a data de acomp ' + objAssociacaoJovensObreiro[i].DataInicioAcompanhamento);
+                        if (objAssociacaoJovensObreiro[i].DataInicioAcompanhamento == undefined)
+                            return false;
+                    }
+                    return true;
+                }
+
+                function limpaPainelObreiroSelecionado() {
+                    $('#feedJovensAcompanhadosObreiroSelecionado').empty();
+                    objAssociacaoJovensObreiro = [];
+
+                    var tableJovensSelecionados = $('#tblJovensIgrejaObreiro').DataTable();
+                    tableJovensSelecionados.clear().draw();
+
+                    $('#lblNomeObreiroSelecionado').text('Selecione um obreiro');
+                    $('#imgObreiroSelecionado').attr('src', __HOST_CONFIGURADO + '/img/UsuarioNaoSelecionado.png');
+                }
+
+                function carregaJovensJaAcompanhadosObreiro(pIdObreiro) {
+                    var obreiroDTO = {
+                        IdObreiro: pIdObreiro
+                    };
+
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify(obreiroDTO),
+                        url: 'api/ArvoreVida/ListaJovensAcompanhadosPorObreiro',
+                        contentType: "application/json"
+                    }).done(function (resultSetJovensJaAcompanhadosObreiro) {
+                        $('#tblJovensJaAcompanhadosObreiroSelecionado').DataTable({
+                            data: resultSetJovensJaAcompanhadosObreiro,
+                            pageLength: 3,
+                            destroy: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                            ],
+                            columns: [
+                                { data: 'IdJovem' },
+                                {
+                                    data: 'NomeArquivoFotoFormatado',
+                                    render: function (data, type, row) {
+                                        return "<img src=" + row.NomeArquivoFotoFormatado + " class='rounded-circle img-sm'  />";
+                                    }
+                                },
+                                { data: 'NomeJovem' },
+                                { data: 'NomeRegiaoJovem' },
+                                { data: 'NomeIgrejaJovem' },
+                                {
+                                    data: null,
+                                    defaultContent: '<div class="btn-group"> <button type="button" alt="Visualizar" class="btn btn-info btn-xs dt-view" style="margin-right:16px;"><span class="fa fa-history" aria-hidden="true"></span></button></div>'
+                                }
+                            ],
+                            columnDefs: [
+                                {
+                                    targets: [0],
+                                    visible: false,
+                                    searchable: false
+                                }
+                            ]
+                        });
+                    });
+                }
+
+                function VisualizarJovensJaAcompanhadosObreiro() {
+                    $('#modalJovensJaAcompanhadosObreiro').modal('show');
+                }
+
+                function getXBRO() {
+                    var __XDTO = {
+                        XBRO: __OBREIRO_SELECIONADO.IdObreiro
+                    };
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify(__XDTO),
+                        url: "api/X/XBRO",
+                        contentType: "application/json"
+                    }).done(function (respostaXBRO) {
+                        console.log(respostaXBRO);
+                        __XBRO = respostaXBRO;
+                    });
+                }
+
+                function VisualizarPerfilObreiro() {
+                    if (__OBREIRO_SELECIONADO == undefined) {
+                        swal({
+                            title: "Validação",
+                            text: "Selecione o obreiro para visualizar o perfil!",
+                            type: "warning"
+                        });
+                        return;
+                    }
+                    else {
+                        window.open(
+                            __HOST_CONFIGURADO + '/VisualizaJovemE_Prototipo.html?idJovem=' + __OBREIRO_SELECIONADO.IdObreiro,
+                            '_blank'
+                        );
+                    }
+                }
+
+                function jovemJaEstaLaListaDeAssociacao(pIdJovem) {
+                    return idJaNoPainel.includes(pIdJovem);
+                }
+
+                function limpaSelecao() {
+                    var tableJovensSelecionados = $('#tblJovensIgrejaObreiro').DataTable();
+                    tableJovensSelecionados.rows().deselect();
+                }
+
+            </script>
+</body>
+</html>

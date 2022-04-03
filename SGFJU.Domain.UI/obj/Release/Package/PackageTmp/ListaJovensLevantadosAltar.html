@@ -1,0 +1,811 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet"
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <style type="text/css">
+
+        .nav-tabs {
+            background-color: #fff;
+            border-bottom: 1px solid #3071a9;
+        }
+
+        .nav-pills {
+            border-bottom: 1px solid #3071a9;
+        }
+
+        a.nav-link {
+            color: white;
+        }
+
+        .tab-content {
+            color: #3071a9;
+            border-bottom: 1px solid #3071a9;
+            border-left: 1px solid #3071a9;
+            border-right: 1px solid #3071a9;
+            border-bottom-width: 1px solid #3071a9;
+        }
+
+        .nav-item {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-decoration-color: black;
+        }
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: #1C84C6;
+            border-color: #dee2e6 #dee2e6 #fff;
+            font-family: Helvetica;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: #fff;
+            background-color: #1C84C6;
+            font-family: Helvetica;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active"><a href="DashboardNacional.html">Nacional</a></li>
+                            <li><a href="DashboardArvoreVidaNacional.html"><i class="glyphicon glyphicon-tree-conifer"></i>Árvore da Vida</a></li>
+                            <li><a href="DashboardNacionalCamisasFJU.html"><i class="fa fa-address-book"></i>Camisas FJU</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="ConsultaGeral.html">Geral</a></li>
+                            <li><a href="GerenciaNacionalAltarJovem.html">Altar Jovem</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquise por palavra-chave..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+
+                        <li>
+                            <a onclick="ExecutarActionX072433()">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!--Box abaixo doa parâmetros-->
+
+            <div class="wrapper wrapper-content">
+                <div id="overlay" onclick="spinnerOff()">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox" id="iBoxParametrosPesquisa">
+                            <div class="ibox-title">
+                                <h5>Parâmetros de pesquisa</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li><a class="nav-link active" data-toggle="tab" href="#tabGeral">Parâmetros Altar Jovem</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" id="tabGeral" class="tab-pane active">
+                                        <div class="panel-body">
+                                            <hr class="hr-line-solid" />
+                                            <div class="container-fluid">
+                                                <ul class="nav-pills nav">
+                                                    <li class="nav-item">
+                                                        <a href="#Localidade" data-toggle="tab" class="active nav-link">Estado/Bloco/Região/Igreja</a>
+                                                    </li>                                                    
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div id="Localidade" class="tab-pane active container">
+                                                        <br />
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+
+                                                                <p class="font-bold">
+                                                                    Estado
+                                                                </p>
+                                                                <select id="cboEstado" class="select2_demo_9 form-control">
+                                                                    <option value="0">Todos</option>
+                                                                    <option value="28">São Paulo</option>
+                                                                    <option value="29">Acre</option>
+                                                                    <option value="30">Alagoas</option>
+                                                                    <option value="31">Amapá</option>
+                                                                    <option value="32">Amazonas</option>
+                                                                    <option value="33">Bahia</option>
+                                                                    <option value="34">Ceará</option>
+                                                                    <option value="35">Distrito Federal</option>
+                                                                    <option value="36">Espírito Santo</option>
+                                                                    <option value="37">Goiás</option>
+                                                                    <option value="38">Maranhão</option>
+                                                                    <option value="39">Mato Grosso</option>
+                                                                    <option value="40">Mato Grosso Dos Sul</option>
+                                                                    <option value="41">Minas Gerais</option>
+                                                                    <option value="42">Pará</option>
+                                                                    <option value="43">Paraíba</option>
+                                                                    <option value="44">Paraná</option>
+                                                                    <option value="45">Pernambuco</option>
+                                                                    <option value="46">Piauí</option>
+                                                                    <option value="47">Rio de Janeiro</option>
+                                                                    <option value="48">Rio Grande do Norte</option>
+                                                                    <option value="49">Rio Grande do Sul</option>
+                                                                    <option value="50">Rondônia</option>
+                                                                    <option value="51">Roraima</option>
+                                                                    <option value="52">Santa Catarina</option>
+                                                                    <option value="53">Sergipe</option>
+                                                                    <option value="54">Tocantins</option>
+                                                                    <option value="55">Campos</option>
+                                                                    <option value="56">[BLOCO DE TESTE]</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-3">
+
+                                                                <p class="font-bold">
+                                                                    Bloco
+                                                                </p>
+                                                                <select id="cboBloco" class="select2_demo_4 form-control">
+                                                                    <option></option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p class="font-bold">
+                                                                    Região
+                                                                </p>
+                                                                <select id="cboRegiao" class="select2_demo_5 form-control">
+                                                                    <option></option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-3">
+
+                                                                <p class="font-bold">
+                                                                    Igreja
+                                                                </p>
+                                                                <select id="cboIgreja" name="cboIgreja" class="form-control">
+                                                                    <option></option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                        <br />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="panel panel-success">
+                                    <div class="panel-heading">
+                                        Ações
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <button id="btnPesquisa" onclick="PesquisaAltarJovemPorParametro()" class="btn btn-outline-dark " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
+                                        <button id="btnRefresh" onclick="resetaPesquisa()" class="btn btn-outline-dark " type="button"><i class="fa fa-recycle"></i>&nbsp;Resetar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        Número de Jovens retornados pela consulta
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <h1 class="no-margins" id="lblQuantidadeResgistrosRetornados"></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="rowResultado">
+                            <div class="col-lg-12">
+                                <div class="ibox" id="iBoxResultadoPesquisa">
+                                    <div class="ibox-title">
+                                        <h5>Resultado da pesquisa</h5>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <div class="panel panel-success" id="pnlPesquisa">
+                                            <div class="panel-heading">
+                                                Dados Retornados
+                                            </div>
+                                            <div class="panel-body" align="center">
+                                                <!-- DataTable-->
+                                                <div class="table-responsive">
+                                                    <table id="tblTodosJovens"
+                                                           class="table table-striped table-bordered table-hover dataTables-example">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>IdJovem</th>
+                                                                <th>Estado</th>
+                                                                <th>Bloco</th>
+                                                                <th>Região</th>
+                                                                <th>Igreja</th>
+                                                                <th>Nome</th>
+                                                                <th>Foto</th>
+                                                                <th>Whatsapp</th>
+                                                                <th>Ações</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- End DataTable -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+                    <div class="modal inmodal" id="visualizaJovemModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content animated bounceInRight">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                    <%--<i class="fa fa-laptop modal-icon"></i>--%>
+                                    <i class="glyphicon glyphicon-transfer modal-icon"></i>
+                                    <h4 class="modal-title">Visualização de dados</h4>
+                                    <small class="font-bold">Dados do Jovem</small>
+                                </div>
+                                <div class="modal-body">
+                                    <!---->
+                                    <div class="contact-box center-version">
+
+
+
+                                        <img alt="image" class="rounded-circle" src="" id="imgFotoJovem">
+
+
+                                        <h3 class="m-b-xs" id="lblNomeJovem"><strong></strong></h3>
+
+                                        <div class="font-bold">Informações</div>
+                                        <address class="m-t-md">
+                                            <strong><span id="lblEstado"></span></strong><br>
+                                            <span id="lblBloco"></span><br>
+                                            <span id="lblRegiao"></span><br>
+                                            <span id="lblIgreja"></span><br>
+                                            <abbr title="Phone" id="lblWhats">Whatsapp</abbr>
+                                        </address>
+
+
+                                        <div class="contact-box-footer">
+                                            <div class="m-t-xs btn-group">
+                                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
+                                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!---->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <!-- box abaixo da grid -->
+
+                        <div class="wrapper wrapper-content">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+
+                                        <div class="col-lg-4">
+
+
+                                        </div>
+                                        <div class="col-lg-4">
+
+
+                                        </div>
+                                        <div class="col-lg-4">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="float-right">
+                                <strong></strong>
+                            </div>
+                            <div>
+                                <strong>Copyright</strong> FJU Oficial &copy; 2020
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Mainly scripts -->
+                <script src="js/jquery-3.1.1.min.js"></script>
+                <script src="js/popper.min.js"></script>
+                <script src="js/bootstrap.js"></script>
+                <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+                <!-- Custom and plugin javascript -->
+                <script src="js/inspinia.js"></script>
+                <script src="js/plugins/pace/pace.min.js"></script>
+
+                <!-- Steps -->
+                <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+                <!-- Jquery Validate -->
+                <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+                <!-- Select2 -->
+                <script src="js/plugins/select2/select2.full.min.js"></script>
+
+                <!-- Input Mask-->
+                <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+                <!-- Data picker -->
+                <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+                <!-- iCheck -->
+                <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+                <script src="js/plugins/dataTables/datatables.min.js"></script>
+                <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+
+                <!-- Toastr script -->
+                <script src="js/plugins/toastr/toastr.min.js"></script>
+
+                <!-- Sweet alert -->
+                <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+                <script src="js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+                <script src="js/SGFJU.Domain.UI.Client.js"></script>
+                <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+                <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+
+                <script>
+
+                    var __resultSetTodosJovens = null;
+                    var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+                    var tblTodosJovens;
+                    var dadoJovemSelecionado = undefined;
+                    var hostUrl = "http://" + document.location.hostname;
+                    var primeiraPesquisa = false;
+                    var vExisteUltimoPesquisaRetorno = false;
+
+                    $(document).ready(function () {
+
+                        $('.tagsinput').tagsinput({
+                            tagClass: 'label label-primary'
+                        });
+
+                        $("#cboEstado").select2();
+                        $("#cboBloco").select2();
+                        $("#cboRegiao").select2();
+                        $("#cboIgreja").select2();
+
+                        facadeUser.ConfigurarPaginaX072470();
+
+                        /**/
+                        ListarTodosJovensLevantadosObra();
+                        /**/
+
+                        $('#cboEstado').on('select2:select', function (e) {
+                            $('#ibox1').children('.ibox-content').toggleClass('sk-loading');//sk-loading
+                            var data = e.params.data;
+                            preencherComboBlocos(data.id);
+                        });
+
+                        $('.select2_demo_4').on('select2:select', function (e) {
+                            $('#cboRegiao').empty().trigger("change");
+                            $('#cboIgreja').empty().trigger("change");
+                            var data = e.params.data;
+                            preencherComboRegioes(data.id);
+                        });
+
+                        $('.select2_demo_5').on('select2:select', function (e) {
+                            $('#cboIgreja').empty().trigger("change");
+                            var data = e.params.data;
+                            preencherComboIgrejas(data.id);
+                        });
+
+                        $('.select2_demo_3').on('select2:select', function (e) {
+                            $('#cboHabilidades').empty().trigger("change");
+                            var data = e.params.data;
+                            preencheComboHabilidades(data.id);
+                        });
+
+                        
+
+
+                        /*
+                        $('#tblTodosJovens tbody').on('click', 'button', function () {
+                            var tblTodosJ = $('#tblTodosJovens').DataTable();
+                            var classeDoBotao = $(this).prop('class');
+                            var indiceDaLinha = tblTodosJ.row($(this).parents('tr')).index();
+                            var idJovem = __resultSetTodosJovens[indiceDaLinha].IdJovem;
+                            var nomeJovem = __resultSetTodosJovens[indiceDaLinha].NomeJovem;
+                            var numeroWhatsapp = __resultSetTodosJovens[indiceDaLinha].WhatsappSemFormatacao;
+                            dadoJovemSelecionado = __resultSetTodosJovens[indiceDaLinha];
+
+                            //location.href = 'VisualizaJovemE.html?idJovem=' + idJovem + '&SPG=CG';
+
+                            if (classeDoBotao == 'btn btn-primary btn-xs dt-edit')
+                                location.href = 'https://api.whatsapp.com/send?phone=' + numeroWhatsapp;
+                            else if (classeDoBotao == 'btn btn-info btn-xs dt-view')
+                                location.href = 'VisualizaJovem.html?idJovem=' + idJovem + '&SPG=GAJ';
+                        });*/
+
+                    });
+
+                    function preencherComboBlocos(idEstado) {
+                        $.ajax({
+                            type: "GET",
+                            url: "api/blocos/ObterPorEstado/" + idEstado,
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            $.each(retorno, function () {
+                                $("#cboBloco").append($("<option     />").val(this.Id).text(this.NomeBloco));
+                            });
+                            $("#cboBloco").prepend('<option selected class="placeholdered" value="">Selecione o bloco</option>');
+                            $('#cboBloco').select2().trigger('change');
+                            $('#cboBloco').removeAttr('selected');
+                            //$('#ibox1').children('.ibox-content').toggleClass('sk-loading');//#spinner
+                        });
+                    }
+
+                    function preencherComboRegioes(idBloco) {
+                        $.ajax({
+                            type: "GET",
+                            url: "api/Regioes/ObterPorBloco/" + idBloco,
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            $.each(retorno, function () {
+                                $("#cboRegiao").append($("<option     />").val(this.IdRegiao).text(this.NomeRegiao));
+                            });
+                            $("#cboRegiao").prepend('<option selected class="placeholdered" value="">Selecione a região</option>');
+                            $('#cboRegiao').select2().trigger('change');
+                            $('#cboRegiao').removeAttr('selected');
+                        });
+                    }
+
+                    function preencherComboIgrejas(idRegiao) {
+                        $.ajax({
+                            type: "get",
+                            url: "api/Igrejas/ObterPorRegiao/" + idRegiao,
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            $.each(retorno, function () {
+                                $("#cboIgreja").append($("<option     />").val(this.IdIgreja).text(this.NomeIgreja));
+                            });
+                            $("#cboIgreja").prepend('<option selected class="placeholdered" value="">Selecione a igreja</option>');
+                            $('#cboIgreja').select2().trigger('change');
+                            $('#cboIgreja').removeAttr('selected');
+                        });
+                    }
+
+                    function ListarTodosJovensLevantadosObra() {
+                        spinnerOn();
+                        var parametros = {};
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify(parametros),
+                            url: 'api/AltarJovem/ListaJovensLevantadosParaOAltarPorParametro/',                            
+                            contentType: "application/json"
+                        }).done(function (resultSetPesquisa) {
+                            spinnerOff();
+                            __resultSetTodosJovens = resultSetPesquisa;
+
+                            if (primeiraPesquisa == false &&
+                                vExisteUltimoPesquisaRetorno == false) {
+                                primeiraPesquisa = true;
+
+                                tblTodosJovens = $('#tblTodosJovens').DataTable({
+                                    data: resultSetPesquisa,
+                                    pageLength: 50,
+                                    destroy: true,
+                                    dom: 'Bfrtip',
+                                    buttons: [
+                                        'csv', 'excel', 'pdf', 'print'
+                                    ],
+                                    columns: [
+                                        { data: 'IdJovem' },
+                                        { data: 'NomeEstado' },
+                                        { data: 'NomeBlocoJovem' },
+                                        { data: 'NomeRegiaoJovem' },
+                                        { data: 'NomeIgrejaJovem' },
+                                        { data: 'NomeJovem' },
+                                        {
+                                            data: 'NomeArquivoFoto',
+                                            render: function (data, type, row) {
+
+                                                var urlImgEncoded = encodeURI(__HOST_CONFIGURADO + '/FotosJovens/' + row.NomeArquivoFoto);
+                                                console.log(urlImgEncoded);
+                                                return "<img src=" + urlImgEncoded + " class='rounded-circle img-sm'  />";
+                                            }
+                                        },
+                                        { data: 'Whatsapp' },
+                                        {
+                                            data: null,
+                                            defaultContent: '<div class="btn-group"> <button type="button" alt="Visualizar" class="btn btn-info btn-xs dt-view" style="margin-right:16px;"><span class="glyphicon glyphicon-search " aria-hidden="true"></span></button> <button type="button" class="btn btn-primary btn-xs dt-edit"><i class="fa fa-whatsapp" aria-hidden="true"></i></button> </div>'
+                                        }
+                                    ],
+                                    columnDefs: [
+                                        {
+                                            targets: [0],
+                                            visible: false,
+                                            searchable: false
+                                        }]
+                                });
+
+                                $('#lblQuantidadeResgistrosRetornados').html(tblTodosJovens.data().count());
+                            }
+                            else {
+                                var table = $('#tblTodosJovens').DataTable();
+                                table.clear();
+                                table.rows.add(resultSetPesquisa).draw();
+
+                                $('#lblQuantidadeResgistrosRetornados').html(table.data().count());
+                            }
+
+                        });
+                    }
+
+                    function ObterUltimaPesquisa() {
+                        $.ajax({
+                            type: "GET",
+                            url: 'api/Jovens/ObterUltimaPesquisa/',
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+
+                            if (retorno.ExisteUltimaPesquisa) {
+
+                                var resultSetRetorno = retorno.ResultSetUltimaPesquisa;
+                                __resultSetTodosJovens = resultSetRetorno;
+
+                                tblTodosJovens = $('#tblTodosJovens').DataTable({
+                                    data: resultSetRetorno,
+                                    pageLength: 50,
+                                    dom: 'Bfrtip',
+                                    buttons: [
+                                        'csv', 'excel', 'pdf', 'print'
+                                    ],
+                                    columns: [
+                                        { data: 'IdJovem' },
+                                        { data: 'NomeEstado' },
+                                        { data: 'NomeBlocoJovem' },
+                                        { data: 'NomeRegiaoJovem' },
+                                        { data: 'NomeIgrejaJovem' },
+                                        { data: 'NomeJovem' },
+                                        {
+                                            data: 'NomeArquivoFoto',
+                                            render: function (data, type, row) {
+                                                var urlImgEncoded = encodeURI(__HOST_CONFIGURADO + '/FotosJovens/' + row.NomeArquivoFoto);
+                                                return "<img src=" + urlImgEncoded + " class='rounded-circle img-sm'  />";
+                                            }
+                                        },
+                                        { data: 'Whatsapp' },
+                                        {
+                                            data: null,
+                                            defaultContent: '<div class="btn-group"> <button type="button" alt="Visualizar" class="btn btn-info btn-xs dt-view" style="margin-right:16px;"><span class="glyphicon glyphicon-search " aria-hidden="true"></span></button></div>'
+                                        }
+                                    ],
+                                    columnDefs: [
+                                        {
+                                            targets: [0],
+                                            visible: false,
+                                            searchable: false
+                                        }]
+                                });
+
+                                $('#lblQuantidadeResgistrosRetornados').html(tblTodosJovens.data().count());
+                            }
+                        });
+                    }
+
+                    function resetaPesquisa() {
+                        $('#cboEstado').val($('#cboEstado option:first-child').val()).trigger('change');
+                        $('#cboBloco').empty().trigger("change");
+                        $('#cboRegiao').empty().trigger("change");
+                        $('#cboIgreja').empty().trigger("change");
+                        //$('#cboSexo').val($('#cboSexo option:first-child').val()).trigger('change');
+
+                        swal({
+                            title: "Mensagem de notificação",
+                            text: "Limpeza de parâmetros realizada com sucesso !",
+                            type: "success"
+                        });
+                    }
+
+                    function PesquisaAltarJovemPorParametro() {
+                        var vIdEstado = $("#cboEstado").val();
+                        var vIdBlocoJovem = $("#cboBloco").val();
+                        var vIdRegiao = $('#cboRegiao').val();
+                        var vIdIgreja = $('#cboIgreja').val();
+                        var pSexo = $('#cboSexo').val();
+
+                        var altarJovemParametroDTO = {
+                            IdEstado: vIdEstado,
+                            IdBlocoJovem: vIdBlocoJovem,
+                            IdRegiao: vIdRegiao,
+                            IdIgreja: vIdIgreja
+                        };
+
+                        $('#iBoxResultadoPesquisa').children('.ibox-content').toggleClass('sk-loading');//#spinner
+
+                        $.ajax({
+                            type: "post",
+                            data: JSON.stringify(altarJovemParametroDTO),
+                            url: "api/AltarJovem/ListaJovensLevantadosParaOAltarPorParametro",
+                            contentType: "application/json",
+                            error: function (request, status, error) {
+                                swal({
+                                    title: "Instabilidade no Sistema",
+                                    text: 'O sistema se comportou de forma inadequada!',
+                                    type: "error"
+                                });
+                            }
+                        }).done(function (resultSetPesquisa) {
+                            __resultSetTodosJovens = resultSetPesquisa;
+                            $('#iBoxResultadoPesquisa').children('.ibox-content').toggleClass('sk-loading');//#spinner
+
+                            tblTodosJovens = $('#tblTodosJovens').DataTable({
+                                    data: resultSetPesquisa,
+                                    pageLength: 50,
+                                    destroy: true,
+                                    dom: 'Bfrtip',
+                                    buttons: [
+                                        'csv', 'excel', 'pdf', 'print'
+                                    ],
+                                    columns: [
+                                        { data: 'IdJovem' },
+                                        { data: 'NomeEstado' },
+                                        { data: 'NomeBlocoJovem' },
+                                        { data: 'NomeRegiaoJovem' },
+                                        { data: 'NomeIgrejaJovem' },
+                                        { data: 'NomeJovem' },
+                                        {
+                                            data: 'NomeArquivoFoto',
+                                            render: function (data, type, row) {
+
+                                                var urlImgEncoded = encodeURI(__HOST_CONFIGURADO + '/FotosJovens/' + row.NomeArquivoFoto);
+                                                console.log(urlImgEncoded);
+                                                return "<img src=" + urlImgEncoded + " class='rounded-circle img-sm'  />";
+                                            }
+                                        },
+                                        { data: 'Whatsapp' },
+                                        {
+                                            data: null,
+                                            defaultContent: '<div class="btn-group"> <button type="button" alt="Visualizar" class="btn btn-info btn-xs dt-view" style="margin-right:16px;"><span class="glyphicon glyphicon-search " aria-hidden="true"></span></button> <button type="button" class="btn btn-primary btn-xs dt-edit"><i class="fa fa-whatsapp" aria-hidden="true"></i></button> </div>'
+                                        }
+                                    ],
+                                    columnDefs: [
+                                        {
+                                            targets: [0],
+                                            visible: false,
+                                            searchable: false
+                                        }]
+                                });
+
+                            /*
+                            if (primeiraPesquisa == false &&
+                                vExisteUltimoPesquisaRetorno == false) {
+                                primeiraPesquisa = true;
+
+
+
+                                $('#lblQuantidadeResgistrosRetornados').html(tblTodosJovens.data().count());
+                            }
+                            else {
+                                var table = $('#tblTodosJovens').DataTable();
+                                table.clear();
+                                table.rows.add(resultSetPesquisa).draw();
+
+                                $('#lblQuantidadeResgistrosRetornados').html(table.data().count());
+                            }*/
+
+                        });
+
+                    }
+
+                </script>
+</body>
+</html>

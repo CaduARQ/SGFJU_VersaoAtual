@@ -349,8 +349,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
             }
             catch (Exception dataException) {
                 var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
-                var erroMessage = string.Format("{0}.{1} - {2}", this.GetType().Name, "obterIgrejasDaRegiao", dataException.Message);
-                throw new DomainException(erroMessage, dataException);
+                throw new DomainException(mensagemTratada, dataException);
             }
         }
 
@@ -398,8 +397,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
             }
             catch (Exception dataException) {
                 var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
-                var erroMessage = string.Format("{0}.{1} - {2}", this.GetType().Name, "obterIgrejasDaRegiao", dataException.Message);
-                throw new DomainException(erroMessage, dataException);
+                throw new DomainException(mensagemTratada, dataException);
             }
         }
         public IList<HistoricoTransferenciaDTO> ObterHistoricoTransferenciasRealizadasPorParametro(ParametroPesquisaHistoricoTransferenciaDTO parametroPesquisa) {
@@ -844,22 +842,47 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                                jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesObreiro > 0) {
                                 EXPRESSAO_ANOS = (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosObreiro == 1) ? "ano" : "anos";
                                 EXPRESSAO_MESES = (jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesObreiro == 1) ? "mês" : "meses";
-                                jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosObreiro + " anos e " + jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesObreiro + " meses";
+                                jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosObreiro + $" {EXPRESSAO_ANOS} e " + jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesObreiro + $" {EXPRESSAO_MESES}";
                             }
                             else if (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosObreiro > 0 &&
                                      jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesObreiro <= 0) {
                                 EXPRESSAO_ANOS = (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosObreiro == 1) ? "ano" : "anos";
-                                jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosObreiro + " anos";
+                                //jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosObreiro + " anos";
+                                jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosObreiro + $" {EXPRESSAO_ANOS}";
                             }
                             else if (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosObreiro <= 0 &&
                                      jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesObreiro > 0) {
                                 EXPRESSAO_MESES = (jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesObreiro == 1) ? "mês" : " meses";
-                                jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesObreiro + " meses";
+                                jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesObreiro + $" {EXPRESSAO_MESES}";
                             }
                         }
                         else if (jovemRetornadoBanco.SituacaoJovemIURDFJU.EhColaborador == 'S') {
+
                             jovemRetorno.NomePerfilCadastro = "Colaborador";
 
+                            var EXPRESSAO_ANOS = "";
+                            var EXPRESSAO_MESES = "";
+
+                            if (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosColaborador > 0 &&
+                               jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesColaborador > 0)
+                            {
+                                EXPRESSAO_ANOS = (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosColaborador == 1) ? "ano" : "anos";
+                                EXPRESSAO_MESES = (jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesColaborador == 1) ? "mês" : "meses";
+                                jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosColaborador + " anos e " + jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesColaborador + " meses";
+                            }
+                            else if (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosColaborador > 0 &&
+                                     jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesColaborador <= 0)
+                            {
+                                EXPRESSAO_ANOS = (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosColaborador == 1) ? "ano" : "anos";
+                                jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosColaborador + " anos";
+                            }
+                            else if (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosColaborador <= 0 &&
+                                     jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesColaborador > 0)
+                            {
+                                EXPRESSAO_MESES = (jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesColaborador == 1) ? "mês" : " meses";
+                                jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesColaborador + " meses";
+                            }
+                            /*
                             var temAnos = (jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosColaborador > 0) ? true : false;
                             var temMeses = (jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesColaborador > 0) ? true : false;
 
@@ -869,34 +892,37 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                                 jovemRetorno.PeriodoPerfilFJU = "00/" + jovemRetornadoBanco.SituacaoJovemIURDFJU.AnosColaborador.ToString();
                             else if (!temAnos && temMeses)
                                 jovemRetorno.PeriodoPerfilFJU = jovemRetornadoBanco.SituacaoJovemIURDFJU.MesesColaborador + "/0000";
+                            */
                         }
                         else if (jovemRetornadoBanco.SituacaoJovemIURDFJU.EstaCursandoCPO == 'S') {
                             var EXPRESSAO_ANOS = "";
                             var EXPRESSAO_MESES = "";
-                            var TemPeriodicidade = (jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO.Length == 1 && jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO.IndexOf('#') != -1) ? false : true;                            
-                            var TemAnosCPO = (Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"[1-9]#").Success) ? true : false;
-                            var TemMesesCPO = (Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"#[1-9]").Success) ? true : false;
+                            var TemPeriodicidade = (jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO.Length == 1 && jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO.IndexOf('#') != -1) ? false : true;
+                            //var TemAnosCPO = (Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"[1-9]#").Success) ? true : false;
+                            //var TemMesesCPO = (Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"#[1-9]").Success) ? true : false;
+                            var TemMesesCPO = (Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"[1-9]#").Success) ? true : false;
+                            var TemAnosCPO = (Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"#[1-9]").Success) ? true : false;
                             var periodoCPO = jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO;
                             var anosCPO = "";
                             var mesesCPO = "";
 
                             if (TemPeriodicidade) {
                                 if (TemAnosCPO && TemMesesCPO) {
-                                    anosCPO = jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO.Split('#')[0];
-                                    mesesCPO = jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO.Split('#')[1];
+                                    anosCPO = jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO.Split('#')[1];
+                                    mesesCPO = jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO.Split('#')[0];
 
                                     EXPRESSAO_ANOS = (int.Parse(anosCPO) == 1) ? "ano" : "anos";
                                     EXPRESSAO_MESES = (int.Parse(mesesCPO) == 1) ? "mês" : "meses";
                                     periodoCPO = $"{anosCPO} {EXPRESSAO_ANOS} e {mesesCPO} {EXPRESSAO_MESES}";
                                 }
                                 else if (TemAnosCPO && !TemMesesCPO) {
-                                    anosCPO = Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"[1-9]#").Value.Replace("#", "");
+                                    anosCPO = Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"#[1-9]").Value.Replace("#", "");
 
                                     EXPRESSAO_ANOS = (int.Parse(anosCPO) == 1) ? "ano" : "anos";
                                     periodoCPO = $"{anosCPO} {EXPRESSAO_ANOS}";
                                 }
                                 else if (!TemAnosCPO && TemMesesCPO) {
-                                    mesesCPO = Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"#[1-9]").Value.Replace("#", "");
+                                    mesesCPO = Regex.Match(jovemRetornadoBanco.SituacaoJovemIURDFJU.MesAnoInicioCPO, @"[1-9]#").Value.Replace("#", "");
 
                                     EXPRESSAO_MESES = (int.Parse(mesesCPO) == 1) ? "mês" : "meses";
                                     periodoCPO = $"{mesesCPO} {EXPRESSAO_MESES}";
@@ -1158,10 +1184,15 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
 
                 return jovemRetorno;
             }
-            catch (Exception dataException) {
-                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
-                var erroMessage = string.Format("{0}.{1} - {2}", this.GetType().Name, "ObterJovemInformacoesDetalhadas", dataException.Message);
-                throw new DomainException(mensagemTratada, dataException);
+            catch (MySqlException excSpecificMySqlDB)
+            {
+                var mensagemErroformatada = ExceptionManager.ExceptionManager.FormatExceptionMessage(excSpecificMySqlDB, "ExecuteQuery", "CAMADA_ORM.DAO");
+                throw new DomainException(mensagemErroformatada);
+            }
+            catch (Exception exc)
+            {
+                var mensagemErroformatada = ExceptionManager.ExceptionManager.FormatExceptionMessage(exc, "ExecuteQuery", "CAMADA_ORM.DAO");
+                throw new DomainException(mensagemErroformatada);
             }
         }
         public string retornaTipoJovem(Jovem jovemParametro) { 

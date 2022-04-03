@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using NodaTime;
 using SGFJU.Bussiness.Facade;
+using SGFJU.Bussiness.Facade.Exceptions;
 using SGFJU.Domain.Model.Entities;
 using SGFJU.Domain.Model.Infra.ExceptionManager;
 using SGFJU.Domain.Model.Infra.Logging.Implementation;
@@ -247,7 +248,10 @@ namespace SGFJU.Domain.UI.Controllers
         [HttpPost]
         [Route("api/Jovens/ObterJovemAtualizacao")]
         public JovemDTO ObterJovemAtualizacao([FromBody] TodosJovensDTO jovemParaAtualizar) {
+            LoggerHelper.WriteLogError("--Rastreando entrou no método -> ObterJovemAtualizacao();");
             try {
+                LoggerHelper.WriteLogError("--Rastreando erro chamou -> ObterJovemAtualizacao();");
+
                 var facade = (new FacadeJovemImpl());
                 var jovemRetorno = facade.ObterJovemInformacoesDetalhadas(new Jovem { Id = jovemParaAtualizar.IdJovem });
 
@@ -281,6 +285,7 @@ namespace SGFJU.Domain.UI.Controllers
                                                           }
                                                   }).ToList());
                     
+                    /*
                     var dataCadastro = DateTime.Parse(jovemRetorno.DataCadastro);
                     var dataUltimaAtualizacao = (!string.IsNullOrEmpty(jovemRetorno.DataUltimaAtualizacao)) ?
                                                    DateTime.Parse(jovemRetorno.DataUltimaAtualizacao) : new Nullable<DateTime>(); 
@@ -296,14 +301,14 @@ namespace SGFJU.Domain.UI.Controllers
 
                     if (dataUltimaAtualizacao.HasValue) { 
                     }
-                    /*
+                    
                         dataUltimaAtualizacaoDate = new LocalDate(dataUltimaAtualizacao.Value.Year,
                                                                   dataUltimaAtualizacao.Value.Month,
                                                                   dataUltimaAtualizacao.Value.Day);*/
                     
 
 
-
+                    /*
                     Period periodDataCadastro = Period.Between(start, end);
                     int mesesDesdeCadastro = periodDataCadastro.Months;
 
@@ -319,12 +324,73 @@ namespace SGFJU.Domain.UI.Controllers
                         jovemRetorno.FichaEstaExpirada = false;
                         jovemRetorno.PeriodicidadeFichaJovem = $"A ficha expira em {periodDataCadastro.Days}";
                     }
+
+                    */
                 }
 
                 return jovemRetorno;
             }
             catch (Exception controllerExc) {
                 var mensagemTratada = ExceptionManager.FormatExceptionMessage(controllerExc, "CAMADA_UI.Controller");
+                LoggerHelper.WriteLogError(mensagemTratada);
+                throw new Exception(mensagemTratada);
+            }
+        }
+
+        [HttpPost]
+        [Route("api/Jovens/ObterJovemAtualizacao2")]
+        public JovemDTO ObterJovemAtualizacao2([FromBody] TodosJovensDTO jovemParaAtualizar) {
+            try {
+
+                var facade = (new FacadeJovemImpl());
+                var jovemRetorno = facade.ObterJovemInformacoesDetalhadas(new Jovem { Id = jovemParaAtualizar.IdJovem });
+                //throw new Exception("erro provocado ");
+
+                if (jovemRetorno != null) {
+
+                    SessionHelper.RetornaSessaoAtual().Add("JovemParaAtualizar", jovemRetorno);
+                    if (jovemRetorno.ProjetosAosQuaisJovemEstaLigado.Count > 0)
+                    {
+                        SessionHelper.RetornaSessaoAtual()
+                        .Add("ProjetoAnterior", new JovemProjeto
+                        {
+                            Projeto = new Projeto { Code = jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].idProjeto },
+                            ProjetoAnterior = (jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].idProjetoAnterior != 0) ? new Projeto { Code = jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].idProjetoAnterior } : null,
+                            AnosProjeto = jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].AnosProjeto,
+                            MesesProjeto = jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].MesesProjeto,
+                            PertenceuOutroProjeto = jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].PertenceuOutroProjeto,
+                            TempoProjeto = jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].TempoProjeto
+                        });
+
+                        SessionHelper.RetornaSessaoAtual().Add("Atualizacao_HabilidadesAdicionadas", jovemRetorno.HabilidadesJovemPossui);
+                        SessionHelper.RetornaSessaoAtual().Add("Atualizacao_IdiomasAdicionados", jovemRetorno.IdiomasQueOJovemFala);
+                        SessionHelper.RetornaSessaoAtual()
+                                     .Add("Atualizacao_cursosAdicionados",
+                                          jovemRetorno.CursosRelacionados
+                                                      .Select(c => new CursoRelacionadoProjeto
+                                                      {
+                                                          Code = c.Code,
+                                                          NomeCurso = c.NomeCurso,
+                                                          ProjetoRelacionado = new Projeto
+                                                          {
+                                                              Code = c.IdProjetoRelacionado,
+                                                              NomeProjeto = c.NomeProjeto
+                                                          }
+                                                      }).ToList());
+                    }
+
+                }
+
+                return jovemRetorno;
+            }
+            catch (FacadeException excFacade)
+            {
+                var mensagemTratada = ExceptionManager.FormatExceptionMessage(excFacade, "CAMADA_UI.Controller");
+                LoggerHelper.WriteLogError(mensagemTratada);
+                throw new Exception(mensagemTratada);
+            }
+            catch (Exception excObterJovem) {
+                var mensagemTratada = ExceptionManager.FormatExceptionMessage(excObterJovem, "CAMADA_UI.Controller");
                 LoggerHelper.WriteLogError(mensagemTratada);
                 throw new Exception(mensagemTratada);
             }

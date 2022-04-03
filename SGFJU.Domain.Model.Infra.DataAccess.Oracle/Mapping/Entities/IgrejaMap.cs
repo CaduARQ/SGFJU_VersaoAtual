@@ -1,5 +1,6 @@
 ﻿using FluentNHibernate.Mapping;
 using SGFJU.Domain.Model.Entities;
+using SGFJU.Domain.Model.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,7 +21,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Mapping.Entities
                 .Not
                 .LazyLoad();
 
-            this.References<Bloco>(t => t.TipoIgreja)
+            this.References<TipoIgreja>(t => t.TipoIgreja)
                 .Column("ID_TIPOIGREJA")
                 .Cascade
                 .None()

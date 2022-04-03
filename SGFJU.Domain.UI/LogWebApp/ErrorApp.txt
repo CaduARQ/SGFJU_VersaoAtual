@@ -9462,3 +9462,726 @@ Nome do parâmetro: source
 
  Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 62
    em SGFJU.Domain.UI.formLogin.logar() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\formLogin.aspx.cs:linha 46
+2022-03-24 21:11:52.1882|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2022 21:11:52' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-03-24 21:12:19.9262|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2022 21:12:19' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-03-24 21:12:22.1748|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/03/2022 21:12:22' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-03-25 13:18:09.9538|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2022 13:18:09' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-25 13:18:52.3672|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2022 13:18:52' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-25 13:19:05.8548|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2022 13:19:05' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-25 13:19:13.3850|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2022 13:19:13' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-25 17:45:21.4957|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2022 17:45:21' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-25 17:45:35.6045|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2022 17:45:35' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-25 17:45:40.3664|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2022 17:45:40' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-25 17:45:48.8368|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '25/03/2022 17:45:48' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-26 11:39:36.7190|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2022 11:39:36' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-26 11:39:36.8147|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '26/03/2022 11:39:36' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:36:57.2093|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:36:57' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:36:57.3454|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:36:57' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:37:16.5697|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:37:16' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:37:16.5697|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:37:16' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:37:30.8085|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:37:30' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:37:30.8085|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:37:30' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:38:04.3044|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:38:04' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:38:04.3044|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:38:04' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:38:13.2963|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:38:13' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:38:13.2963|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:38:13' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:38:32.0145|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:38:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:38:32.0145|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:38:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:38:48.0482|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:38:48' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:38:48.0482|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:38:48' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:44:25.3379|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:44:25' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:44:25.3379|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:44:25' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:44:35.5351|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:44:35' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:44:35.5381|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:44:35' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:44:51.6589|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:44:51' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:44:51.6589|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:44:51' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:45:13.0966|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:45:13' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:45:13.0966|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:45:13' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:45:42.8727|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:45:42' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:45:42.8727|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:45:42' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:45:58.1927|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:45:58' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:45:58.1927|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:45:58' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:47:04.3067|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:47:04' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:47:04.3067|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:47:04' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:47:11.7371|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:47:11' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:47:11.7371|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:47:11' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:48:47.6826|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:48:47' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:48:47.6826|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:48:47' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:49:00.5125|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:49:00' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:49:00.5125|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:49:00' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:49:27.9529|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:49:27' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:49:27.9529|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:49:27' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:54:46.1148|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:54:46' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:54:46.1467|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:54:46' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:55:00.9347|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:55:00' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:55:00.9347|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:55:00' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:57:50.8036|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:57:50' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:57:50.8036|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:57:50' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 21:58:10.8976|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:58:10' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 21:58:10.8976|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 21:58:10' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:01:26.7070|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:01:26' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:01:26.7070|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:01:26' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:01:43.5343|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:01:43' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:01:43.5343|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:01:43' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:02:04.1487|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:04' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:02:04.1487|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:04' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:02:24.1008|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:24' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:02:24.1008|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:24' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:02:36.0771|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:36' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:02:36.0771|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:36' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:02:50.7458|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:50' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:02:50.7458|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:50' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:02:56.7277|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:56' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:02:56.7277|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:02:56' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:03:05.6519|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:03:05' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:03:05.6519|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:03:05' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:03:33.5668|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:03:33' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:03:33.5668|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:03:33' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:04:57.0092|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:04:57' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:04:57.0092|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:04:57' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-27 22:05:18.9300|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:05:18' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-27 22:05:18.9300|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/03/2022 22:05:18' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-30 22:31:24.2095|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2022 22:31:24' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-30 22:31:24.2624|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2022 22:31:24' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-30 22:33:01.7513|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2022 22:33:01' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-30 22:33:01.7513|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2022 22:33:01' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-30 22:33:14.3742|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2022 22:33:14' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-30 22:33:14.3742|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2022 22:33:14' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-03-30 22:37:45.7921|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2022 22:37:45' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-03-30 22:37:46.1021|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '30/03/2022 22:37:46' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 18:20:03.8293|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 18:20:03' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 18:20:03.9550|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 18:20:03' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 18:21:01.4937|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 18:21:01' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 18:21:01.4937|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 18:21:01' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:01:32.6318|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:01:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:01:32.6537|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:01:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:01:39.2699|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:01:39' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-01 19:01:49.3180|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:01:49' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-01 19:01:49.3250|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:01:49' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:01:49.3250|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:01:49' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:01:51.3980|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:01:51' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-01 19:01:51.3980|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:01:51' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-01 19:02:00.5405|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:02:00' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:02:00.5405|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:02:00' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:03:20.4251|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:03:20' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:03:20.4251|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:03:20' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:05:04.7347|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:05:04' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:05:04.7347|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:05:04' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:13:51.0367|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:13:51' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:13:51.0367|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:13:51' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:17:47.5012|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:17:47' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:17:47.5012|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:17:47' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:17:49.2059|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:17:49' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:17:49.2059|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:17:49' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:19:14.5727|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:19:14' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:19:14.5727|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:19:14' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:20:54.8114|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:20:54' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:20:54.8114|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:20:54' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:24:24.8191|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:24:24' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:24:24.8191|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:24:24' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:24:45.8751|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:24:45' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:24:45.8751|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:24:45' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:27:42.2175|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:27:42' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:27:42.2175|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:27:42' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:31:07.9073|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:31:07' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:31:07.9073|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:31:07' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:41:01.8977|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:41:01' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:41:01.8977|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:41:01' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:41:30.2770|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:41:30' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:41:30.2785|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:41:30' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:52:34.2705|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:52:34' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:52:34.2705|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:52:34' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:54:07.1494|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:54:07' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:54:07.1573|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:54:07' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:54:19.2229|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:54:19' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:54:19.2229|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:54:19' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:54:26.7326|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:54:26' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:54:26.7326|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:54:26' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:56:58.0544|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:56:58' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:56:58.0544|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:56:58' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:57:56.7682|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:57:56' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:57:56.7682|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:57:56' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:58:07.3572|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:58:07' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:58:07.3572|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:58:07' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:59:12.8355|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:59:12' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:59:12.8455|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:59:12' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 19:59:51.2307|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:59:51' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 19:59:51.2437|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 19:59:51' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:00:35.2542|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:00:35' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:00:35.2542|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:00:35' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:01:11.6061|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:01:11' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:01:11.6220|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:01:11' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:01:29.3526|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:01:29' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:01:29.3526|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:01:29' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:01:52.6732|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:01:52' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:01:52.6732|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:01:52' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:02:28.8356|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:02:28' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:02:28.8356|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:02:28' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:03:17.5099|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:03:17' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:03:17.5099|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:03:17' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:04:16.5967|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:04:16' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:04:16.5967|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:04:16' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:04:32.6014|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:04:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:04:32.6014|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:04:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:04:48.2096|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:04:48' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:04:48.2096|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:04:48' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:05:06.2970|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:05:06' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:05:06.2970|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:05:06' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:05:37.3199|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:05:37' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:05:37.3259|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:05:37' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:06:22.1907|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:06:22' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:06:22.1907|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:06:22' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:06:34.6135|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:06:34' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:06:34.6135|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:06:34' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:08:52.4043|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:08:52' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:08:52.4043|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:08:52' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:08:58.1976|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:08:58' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:08:58.1976|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:08:58' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:10:08.8386|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:10:08' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:10:08.8426|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:10:08' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:11:16.9803|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:11:16' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:11:16.9813|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:11:16' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:11:40.8342|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:11:40' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:11:40.8342|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:11:40' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:12:28.7645|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:12:28' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:12:28.7645|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:12:28' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:15:30.5784|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:15:30' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:15:30.5784|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:15:30' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:15:41.7944|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:15:41' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:15:41.7944|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:15:41' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:16:24.5792|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:16:24' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:16:24.5792|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:16:24' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:16:36.0891|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:16:36' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:16:36.0891|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:16:36' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:17:01.2594|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:01' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:17:01.2594|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:01' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:17:18.0419|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:18' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:17:18.0439|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:18' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:17:43.2372|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:43' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:17:43.2372|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:43' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:17:53.3568|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:53' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:17:53.3568|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:53' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:17:53.6650|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:53' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:17:53.6650|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:53' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:17:54.8009|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:54' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:17:54.8009|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:17:54' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:18:56.5928|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:18:56' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:18:56.5928|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:18:56' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:24:38.7526|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:24:38' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:24:38.7526|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:24:38' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:24:49.4843|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:24:49' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:24:49.4843|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:24:49' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:24:54.8944|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:24:54' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:24:54.8944|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:24:54' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:25:19.2817|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:25:19' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:25:19.3037|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:25:19' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:25:30.9818|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:25:30' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:25:30.9818|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:25:30' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:25:40.0062|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:25:40' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:25:40.0062|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:25:40' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:25:47.9834|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:25:47' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:25:47.9834|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:25:47' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:27:36.7737|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:27:36' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:27:36.7877|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:27:36' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:27:54.5086|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:27:54' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:27:54.5086|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:27:54' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:28:04.9369|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:28:04' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:28:04.9369|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:28:04' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:28:16.5421|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:28:16' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:28:16.5421|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:28:16' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:28:46.9866|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:28:46' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:28:46.9866|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:28:46' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:29:09.1865|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:29:09' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:29:09.1865|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:29:09' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:29:30.5367|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:29:30' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:29:30.5367|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:29:30' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:29:44.8118|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:29:44' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:29:44.8118|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:29:44' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:29:52.6377|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:29:52' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:29:52.6377|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:29:52' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:38:38.1281|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:38:38' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:38:38.1281|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:38:38' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:40:06.0382|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:40:06' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:40:06.0382|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:40:06' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:42:26.4716|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:42:26' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:42:26.4716|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:42:26' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:43:49.6767|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:43:49' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:43:49.6767|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:43:49' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:44:10.2131|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:44:10' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:44:10.2191|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:44:10' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:44:15.3000|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:44:15' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:44:15.3000|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:44:15' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:44:43.9032|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:44:43' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:44:43.9032|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:44:43' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:45:09.4526|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:45:09' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:45:09.4526|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:45:09' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:45:27.4080|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:45:27' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:45:27.4080|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:45:27' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:46:34.5188|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:46:34' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:46:34.5188|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:46:34' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:46:42.8250|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:46:42' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:46:42.8250|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:46:42' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:46:51.9888|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:46:51' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:46:51.9888|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:46:51' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:48:11.1104|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:48:11' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:48:11.1104|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:48:11' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:51:54.6246|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:51:54' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:51:54.6595|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:51:54' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:53:46.4707|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:53:46' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:53:46.4707|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:53:46' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:55:02.3467|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:55:02' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:55:02.3467|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:55:02' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:56:46.6348|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:56:46' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:56:46.6348|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:56:46' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:57:29.3634|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:57:29' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:57:29.3634|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:57:29' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:57:37.2887|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:57:37' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:57:37.2887|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:57:37' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:58:16.6118|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:58:16' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:58:16.6118|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:58:16' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:58:28.5590|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:58:28' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:58:28.5620|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:58:28' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 20:58:37.7415|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:58:37' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 20:58:37.7415|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 20:58:37' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:01:46.6991|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:01:46' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:01:46.7100|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:01:46' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:03:05.6067|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:03:05' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:03:05.6067|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:03:05' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:03:10.1575|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:03:10' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:03:10.1575|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:03:10' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:04:13.7893|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:04:13' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:04:13.7893|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:04:13' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:07:17.7393|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:07:17' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:07:17.7393|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:07:17' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:08:26.1487|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:08:26' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:08:26.1487|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:08:26' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:10:13.9945|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:10:13' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:10:13.9945|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:10:13' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:10:24.9888|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:10:24' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:10:24.9888|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:10:24' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:14:34.1441|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:14:34' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:14:34.1441|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:14:34' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:17:05.6375|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:17:05' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:17:05.6375|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:17:05' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:17:41.0794|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:17:41' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:17:41.0794|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:17:41' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:18:15.8119|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:18:15' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:18:15.8119|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:18:15' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:18:59.7251|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:18:59' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:18:59.7321|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:18:59' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:20:14.5561|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:20:14' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:20:14.5561|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:20:14' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:20:37.9448|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:20:37' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:20:37.9497|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:20:37' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:21:16.4879|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:21:16' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:21:16.4879|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:21:16' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:22:48.2297|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:22:48' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:22:48.2327|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:22:48' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:23:59.9226|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:23:59' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:23:59.9226|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:23:59' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:24:18.9730|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:24:18' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:24:18.9730|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:24:18' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:26:38.2141|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:26:38' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:26:38.2141|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:26:38' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:26:56.1734|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:26:56' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:26:56.1734|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:26:56' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:27:01.5869|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:27:01' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:27:01.5909|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:27:01' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:30:25.6546|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:30:25' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:30:25.6546|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:30:25' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:31:21.4079|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:31:21' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:31:21.4079|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:31:21' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:31:42.7899|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:31:42' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:31:42.7899|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:31:42' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:31:54.7149|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:31:54' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:31:54.7169|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:31:54' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:33:20.6356|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:33:20' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:33:20.6356|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:33:20' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:33:33.7711|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:33:33' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:33:33.7711|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:33:33' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:33:47.2415|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:33:47' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:33:47.2415|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:33:47' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:35:12.3187|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:35:12' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:35:12.3187|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:35:12' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:36:34.7893|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:36:34' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:36:34.7893|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:36:34' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:37:46.5698|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:37:46' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:37:46.5748|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:37:46' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:38:22.1783|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:38:22' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:38:22.1783|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:38:22' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:39:20.1222|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:39:20' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:39:20.1222|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:39:20' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:40:09.1734|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:09' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:40:09.1734|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:09' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:40:14.4954|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:14' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:40:14.5024|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:14' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:40:22.1600|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:22' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:40:22.1600|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:22' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:40:40.9872|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:40' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:40:40.9872|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:40' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:40:59.3190|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:59' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:40:59.3190|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:40:59' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:41:13.3678|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:41:13' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:41:13.3678|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:41:13' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:41:26.9390|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:41:26' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:41:26.9390|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:41:26' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:41:35.3346|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:41:35' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:41:35.3346|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:41:35' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:41:42.5682|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:41:42' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:41:42.5682|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:41:42' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:43:11.5445|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:43:11' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:43:11.5445|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:43:11' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:43:32.0039|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:43:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:43:32.0039|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:43:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:45:09.3391|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:45:09' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:45:09.3420|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:45:09' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:45:37.3190|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:45:37' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:45:37.3190|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:45:37' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:46:23.2902|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:46:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:46:23.2902|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:46:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:46:33.1544|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:46:33' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:46:33.1544|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:46:33' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:46:51.5638|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:46:51' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:46:51.5638|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:46:51' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:46:57.0266|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:46:57' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:46:57.0296|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:46:57' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:47:50.0149|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:47:50' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:47:50.0149|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:47:50' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:48:03.2775|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:03' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:48:03.2795|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:03' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:48:23.5800|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:48:23.5999|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:48:27.8786|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:27' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:48:27.8786|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:27' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:48:36.2942|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:36' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:48:36.2942|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:36' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:48:43.7326|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:43' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:48:43.7326|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:48:43' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:49:48.2307|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:49:48' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:49:48.2327|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:49:48' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:53:32.7809|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:53:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:53:32.7809|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:53:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:56:01.8678|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:56:01' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:56:01.8678|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:56:01' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 21:56:57.1044|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:56:57' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 21:56:57.1044|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 21:56:57' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:00:25.5382|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:00:25' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:00:25.5382|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:00:25' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:00:44.7282|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:00:44' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:00:44.7282|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:00:44' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:01:04.1314|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:01:04' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:01:04.1314|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:01:04' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:01:22.2675|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:01:22' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:01:22.2675|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:01:22' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:01:44.3767|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:01:44' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:01:44.3767|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:01:44' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:02:09.6376|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:02:09' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:02:09.6376|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:02:09' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:03:04.0048|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:04' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:03:04.0048|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:04' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:03:22.3931|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:22' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:03:22.3931|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:22' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:03:38.3884|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:38' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:03:38.3884|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:38' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:03:51.9415|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:51' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:03:51.9415|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:51' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:03:57.4904|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:57' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:03:57.4904|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:03:57' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:04:09.8094|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:04:09' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:04:09.8094|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:04:09' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:04:15.6692|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:04:15' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:04:15.6692|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:04:15' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:05:05.4145|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:05:05' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:05:05.4145|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:05:05' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:05:19.6265|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:05:19' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:05:19.6265|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:05:19' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:05:26.2801|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:05:26' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:05:26.2801|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:05:26' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:05:37.5184|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:05:37' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:05:37.5184|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:05:37' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:07:40.5731|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:07:40' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:07:40.5751|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:07:40' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:08:15.6782|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:08:15' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:08:15.6782|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:08:15' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:08:52.6640|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:08:52' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:08:52.6640|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:08:52' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:09:31.1613|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:09:31' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:09:31.1613|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:09:31' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:10:15.5471|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:10:15' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:10:15.5471|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:10:15' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:10:54.0142|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:10:54' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:10:54.0142|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:10:54' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:11:10.5371|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:11:10' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:11:10.5371|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:11:10' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:11:57.4884|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:11:57' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:11:57.4884|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:11:57' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:14:46.5424|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:14:46' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:14:46.5464|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:14:46' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:16:10.9949|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:10' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:16:10.9949|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:10' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:16:21.3041|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:21' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:16:21.3041|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:21' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:16:23.2444|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:16:23.2474|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:16:23.3900|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:16:23.3900|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:16:23.5665|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:16:23.5665|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:16:23.7560|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:16:23.7560|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:16:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:19:01.8324|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:19:01' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:19:01.8324|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:19:01' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:19:18.0273|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:19:18' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:19:18.0283|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:19:18' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:19:42.1549|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:19:42' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:19:42.1549|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:19:42' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:21:31.2991|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:21:31' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:21:31.2991|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:21:31' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:21:45.6968|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:21:45' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:21:45.6968|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:21:45' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:21:56.2768|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:21:56' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:21:56.2788|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:21:56' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:22:08.5179|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:22:08' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:22:08.5179|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:22:08' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:23:31.7253|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:23:31' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:23:31.7253|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:23:31' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:24:00.0807|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:00' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:24:00.0807|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:00' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:24:08.3293|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:08' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:24:08.3293|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:08' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:24:17.0091|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:17' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:24:17.0091|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:17' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:24:23.5408|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:24:23.5448|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:24:32.5645|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:24:32.5775|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:24:43.8630|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:43' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:24:43.8630|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:24:43' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:25:39.4797|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:25:39' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:25:39.4797|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:25:39' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:25:48.7364|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:25:48' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:25:48.7364|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:25:48' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:26:32.6563|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:26:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:26:32.6563|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:26:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:26:43.0002|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:26:43' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:26:43.0002|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:26:43' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:29:09.1668|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:29:09' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:29:09.1698|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:29:09' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:34:05.8191|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:34:05' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:34:05.8191|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:34:05' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:34:09.3367|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:34:09' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:34:09.3367|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:34:09' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:54:56.7961|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:54:56' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:54:56.7961|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:54:56' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:54:57.9819|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:54:57' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-01 22:54:58.3250|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:54:58' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-01 22:54:58.3250|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:54:58' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-01 22:55:16.1532|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:55:16' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:55:16.1532|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:55:16' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:55:29.9038|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:55:29' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:55:29.9038|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:55:29' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:55:34.0748|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:55:34' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:55:34.0748|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:55:34' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:57:24.7918|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:57:24' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:57:24.7918|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:57:24' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:58:46.3947|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:58:46' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:58:46.3947|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:58:46' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:59:17.8242|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:59:17' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:59:17.8312|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:59:17' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:59:19.8227|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:59:19' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:59:19.8227|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:59:19' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 22:59:20.5853|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:59:20' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 22:59:20.5853|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 22:59:20' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:00:50.0883|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:00:50' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:00:50.0883|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:00:50' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:11:08.1672|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:11:08' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:11:08.2734|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:11:08' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:12:52.4984|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:12:52' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:12:52.4984|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:12:52' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:14:12.8222|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:14:12' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:14:12.8222|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:14:12' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:14:33.3211|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:14:33' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:14:33.3211|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:14:33' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:18:39.0732|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:18:39' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:18:39.0732|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:18:39' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:23:40.8834|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:23:40' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:23:41.1342|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:23:41' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:24:19.1866|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:24:19' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:24:19.1866|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:24:19' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:24:53.4669|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:24:53' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:24:53.4669|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:24:53' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:25:07.6959|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:25:07' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:25:07.6959|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:25:07' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:27:05.0195|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:27:05' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:27:05.0195|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:27:05' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:27:57.6329|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:27:57' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:27:57.6329|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:27:57' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:31:27.2481|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:31:27' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:31:27.2741|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:31:27' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:31:32.3566|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:31:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:31:32.3566|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:31:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:31:50.0185|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:31:50' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:31:50.0185|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:31:50' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:31:55.8176|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:31:55' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:31:55.8176|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:31:55' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:33:02.8370|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:33:02' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:33:02.8370|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:33:02' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:33:44.0021|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:33:44' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:33:44.0021|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:33:44' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:35:25.4247|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:35:25' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:35:25.4247|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:35:25' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:35:34.1873|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:35:34' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:35:34.1873|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:35:34' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:35:45.9300|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:35:45' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:35:45.9300|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:35:45' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:38:10.4058|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:38:10' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:38:10.4207|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:38:10' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:41:44.2309|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:41:44' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:41:44.2319|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:41:44' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:45:37.1149|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:45:37' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:45:37.1728|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:45:37' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:46:21.9603|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:46:21' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeJovemImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeJovemImpl.cs:linha 238
+   em SGFJU.Domain.UI.Controllers.JovensController.ObterJovemAtualizacao(TodosJovensDTO jovemParaAtualizar) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 256: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Erro  
+
+  StackTrace:    em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 927: 
+
+ Source: mscorlib  
+
+ Inner Exception Message: A cadeia de caracteres de entrada não estava em um formato correto. 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2022-04-01 23:49:28.2958|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:49:28' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:49:28.3767|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:49:28' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:50:14.8735|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:50:14' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:50:14.8735|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:50:14' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:53:23.2067|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:53:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:53:23.2236|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:53:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:53:42.0794|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:53:42' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:53:42.0794|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:53:42' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:54:04.4351|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:54:04' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:54:04.4351|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:54:04' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:54:23.6406|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:54:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:54:23.6406|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:54:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:54:32.3861|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:54:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:54:32.3891|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:54:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:55:55.5848|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:55:55' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:55:55.5987|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:55:55' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:55:59.5653|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:55:59' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:55:59.5653|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:55:59' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:56:15.0933|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:56:15' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:56:15.0933|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:56:15' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:56:23.7148|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:56:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:56:23.7168|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:56:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:56:49.5334|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:56:49' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:56:49.5334|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:56:49' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:56:56.2237|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:56:56' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:56:56.2317|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:56:56' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:57:18.1300|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:57:18' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:57:18.1300|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:57:18' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:58:06.1629|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:58:06' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:58:06.1629|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:58:06' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:58:23.0748|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:58:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:58:23.0748|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:58:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:59:22.3240|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:22' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:59:22.3329|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:22' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:59:30.9905|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:30' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:59:31.0015|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:31' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:59:44.9851|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:44' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:59:44.9851|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:44' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-01 23:59:53.7378|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:53' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-01 23:59:53.7378|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:53' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();

@@ -1,0 +1,1271 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet"
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <style type="text/css">
+
+        .nav-tabs {
+            background-color: #fff;
+            border-bottom: 1px solid #3071a9;
+        }
+
+        .nav-pills {
+            border-bottom: 1px solid #3071a9;
+        }
+
+        a.nav-link {
+            color: white;
+        }
+
+        .tab-content {
+            color: #3071a9;
+            border-bottom: 1px solid #3071a9;
+            border-left: 1px solid #3071a9;
+            border-right: 1px solid #3071a9;
+            border-bottom-width: 1px solid #3071a9;
+        }
+
+        .nav-item {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-decoration-color: black;
+        }
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: #1C84C6;
+            border-color: #dee2e6 #dee2e6 #fff;
+            font-family: Helvetica;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: #fff;
+            background-color: #1C84C6;
+            font-family: Helvetica;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquise por palavra-chave..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+                        
+                        <li>
+                            <a onclick="ExecutarActionX072433()">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!--Box abaixo doa parâmetros-->
+
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox" id="iBoxParametrosPesquisa">
+                            <div class="ibox-title">
+                                <h2 class="text-success font-bold">
+                                    Gerência de Igrejas do estado
+                                    <span class="fa fa-tasks" aria-hidden="true"></span><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                </h2>
+
+                            </div>
+                            <div class="ibox-content">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li><a class="nav-link active" data-toggle="tab" href="#tabGeral">Estado/Bloco/Região/Igreja</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" id="tabGeral" class="tab-pane active">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-3">
+
+                                                    <p class="font-bold">
+                                                        Estado
+                                                    </p>
+                                                    <select id="cboEstado" class="select2_demo_9 form-control">
+                                                        <option value="0">Todos</option>
+                                                        <option value="28">São Paulo</option>
+                                                        <option value="29">Acre</option>
+                                                        <option value="30">Alagoas</option>
+                                                        <option value="31">Amapá</option>
+                                                        <option value="32">Amazonas</option>
+                                                        <option value="33">Bahia</option>
+                                                        <option value="34">Ceará</option>
+                                                        <option value="35">Distrito Federal</option>
+                                                        <option value="36">Espírito Santo</option>
+                                                        <option value="37">Goiás</option>
+                                                        <option value="38">Maranhão</option>
+                                                        <option value="39">Mato Grosso</option>
+                                                        <option value="40">Mato Grosso Dos Sul</option>
+                                                        <option value="41">Minas Gerais</option>
+                                                        <option value="42">Pará</option>
+                                                        <option value="43">Paraíba</option>
+                                                        <option value="44">Paraná</option>
+                                                        <option value="45">Pernambuco</option>
+                                                        <option value="46">Piauí</option>
+                                                        <option value="47">Rio de Janeiro</option>
+                                                        <option value="48">Rio Grande do Norte</option>
+                                                        <option value="49">Rio Grande do Sul</option>
+                                                        <option value="50">Rondônia</option>
+                                                        <option value="51">Roraima</option>
+                                                        <option value="52">Santa Catarina</option>
+                                                        <option value="53">Sergipe</option>
+                                                        <option value="54">Tocantins</option>
+                                                        <option value="55">Campos</option>
+                                                        <option value="56">[BLOCO DE TESTE]</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3">
+
+                                                    <p class="font-bold">
+                                                        Bloco
+                                                    </p>
+                                                    <select id="cboBloco" class="select2_demo_4 form-control">
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p class="font-bold">
+                                                        Região
+                                                    </p>
+                                                    <select id="cboRegiao" class="select2_demo_5 form-control">
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+                        <div class="modal inmodal" id="registraBlocosModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                        <i class="fa feed-activity-list modal-icon"></i>
+                                        <h4 class="modal-title">Cadastro de Novo Bloco</h4>
+                                        <small class="font-bold">Novo Bloco</small>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!---->
+                                        <form role="form">
+                                            <div class="form-group"><label>Nome do Bloco</label> <input id="txtNomeNovoBloco" type="text" class="form-control"></div>
+                                            <div>
+                                                <button class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="registraNovoBloco()"><strong>Cadastrar</strong></button>
+                                            </div>
+                                        </form>
+                                        <!---->
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="panel panel-success">
+                                    <div class="panel-heading">
+                                        Ações
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <button id="btnPesquisa" onclick="pesquisarIgrejaPorParametro()" class="btn btn-outline-dark " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
+                                        <button id="btnRefresh" onclick="resetaPesquisa()" class="btn btn-outline-dark " type="button"><i class="fa fa-recycle"></i>&nbsp;Resetar</button>
+                                        <button id="btnAdicionarIgreja" onclick="cadastrarIgreja()" class="btn btn-outline-dark " type="button"><i class="fa fa-plus"></i>&nbsp;Cadastrar</button>
+                                        <button id="btnAdicionarRegiao" onclick="cadastrarRegiao()" class="btn btn-outline-dark " type="button"><i class="fa fa-plus"></i>&nbsp;Cadastrar Região</button>
+                                        <button id="btnAdicionarBloco" data-toggle="modal" data-target="#registraBlocosModal" class="btn btn-outline-dark " type="button"><i class="fa fa-plus"></i>&nbsp;Cadastrar Bloco</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <!---->
+                        </div>
+
+                        <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+                        <div class="modal inmodal" id="atualizaIgrejaModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                        <i class="fa fa-recycle modal-icon"></i>
+                                        <h4 class="modal-title">Atualização de Igreja</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form">
+                                            <div class="form-group"><label>Nome Anterior</label> <input id="txtNomeAnterior" type="text" class="form-control"></div>
+                                            <div class="form-group"><label>Novo Nome</label> <input id="txtNomeNovoIgreja" type="text" placeholder="Digite o novo nome da igreja" class="form-control"></div>
+                                            <div>
+                                                <button class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="atualizaIgreja()"><strong>Atualizar</strong></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+                        <div class="modal inmodal" id="atualizaBlocoModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                        <i class="fa fa-recycle modal-icon"></i>
+                                        <h4 class="modal-title">Atualização de Bloco</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form">
+                                            <div class="form-group"><label>Nome Anterior</label> <input id="txtNomeBlocoAnterior" type="text" class="form-control"></div>
+                                            <div class="form-group"><label>Novo Nome</label> <input id="txtNomeBlocoAtualizar" type="text" placeholder="Digite o novo nome do Bloco" class="form-control"></div>
+                                            <div>
+                                                <button class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="atualizaBloco()"><strong>Atualizar Bloco</strong></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+                        <div class="modal inmodal" id="atualizaRegiaoModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                        <i class="fa fa-recycle modal-icon"></i>
+                                        <h4 class="modal-title">Atualização de Região</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form">
+                                            <div class="form-group"><label>Nome Anterior</label> <input id="txtNomeRegiaoAnterior" type="text" class="form-control"></div>
+                                            <div class="form-group"><label>Novo Nome</label> <input id="txtNomeRegiaoAtualizar" type="text" placeholder="Digite o novo nome da Região" class="form-control"></div>
+                                            <div>
+                                                <button class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="atualizaRegiao()"><strong>Atualizar Região</strong></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="modal inmodal" id="cadastraIgrejaModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                        <i class="fa fa-plus modal-icon"></i>
+                                        <h4 class="modal-title">Cadastro de Igreja</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form">
+                                            <div class="form-group">
+                                                <h4 class="text-success">Bloco</h4>
+                                                <select id="cboBlocoCadastroIgreja" class="select2_demo_4 form-control">
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <h4 class="text-success">Região</h4>
+                                                <select id="cboRegiaoCadastroIgreja" class="select2_demo_5 form-control">
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <h4 class="text-success">Nome da igreja</h4>
+                                                <input id="txtNomeNovoIgrejaCadastro" type="text" placeholder="Digite o novo nome da igreja" class="form-control">
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="cadastrarIgreja()"><strong>Atualizar</strong></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+
+                        <div class="row" id="rowResultado">
+                            <div class="col-lg-12">
+                                <div class="ibox" id="iBoxResultadoPesquisa">
+                                    <div class="ibox-title">
+                                        <h5>Panorama Geral Blocos/Regiões/Igrejas</h5>
+                                    </div>
+                                    <div class="ibox-content">
+
+                                        <ul id="tabPanoramaGeralIgrejasEstado" class="nav nav-tabs">
+                                            <li id="JovensEletivos"><a id="tabBlocosEstado" class="nav-link active" data-toggle="tab" href="#tabBlocos"><i class="fa fa-briefcase"></i> Blocos</a></li>
+                                            <li id="JovensEletivos"><a id="tabBlocosEstado" class="nav-link" data-toggle="tab" href="#tabRegioes"><i class="fa fa-briefcase"></i> Regiões</a></li>
+                                            <li><a class="nav-link" data-toggle="tab" href="#tabIgrejas"><i class="fa fa-user"></i> Igrejas</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="tabIgrejas" class="tab-pane">
+                                                <div class="panel panel-success" id="pnlPesquisa">
+                                                    <div class="panel-heading">
+                                                        Igrejas do estado
+                                                    </div>
+                                                    <div class="panel-body" align="center">
+                                                        <!-- DataTable-->
+                                                        <div class="table-responsive">
+                                                            <table id="tblTodasIgrejas"
+                                                                   class="table table-striped table-bordered table-hover dataTables-example">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>IdIgreja</th>
+                                                                        <th>Estado</th>
+                                                                        <th>Bloco</th>
+                                                                        <th>Região</th>
+                                                                        <th>Igreja</th>
+                                                                        <th>Ações</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>IdIgreja</th>
+                                                                        <th>Estado</th>
+                                                                        <th>Bloco</th>
+                                                                        <th>Região</th>
+                                                                        <th>Igreja</th>
+                                                                        <th>Ações</th>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                        <!-- End DataTable -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tabBlocos" class="tab-pane  active">
+                                                <!---->
+                                                <div class="panel panel-success" id="pnlPesquisa">
+                                                    <div class="panel-heading">
+                                                        Blocos do estado
+                                                        <button id="btnPesquisa" onclick="carregarBlocosEstadoLogado()" class="btn btn-outline-danger" type="button"><i class="fa fa-search"></i>&nbsp;Carregar</button>&nbsp;
+                                                    </div>
+                                                    <div class="panel-body" align="center">
+                                                        <!-- DataTable-->
+                                                        <div class="table-responsive">
+                                                            <table id="tblTodosBlocos"
+                                                                   class="table table-striped table-bordered table-hover dataTables-example">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>IdBloco</th>
+                                                                        <th>Estado</th>
+                                                                        <th>Bloco</th>
+                                                                        <th>Ações</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>IdBloco</th>
+                                                                        <th>Estado</th>
+                                                                        <th>Bloco</th>
+                                                                        <th>Ações</th>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                        <!-- End DataTable -->
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                            <div id="tabRegioes" class="tab-pane">
+                                                <!---->
+                                                <div class="panel panel-success" id="pnlPesquisa">
+                                                    <div class="panel-heading">
+                                                        Regiões do estado&nbsp;
+                                                        <button id="btnPesquisa" onclick="carregarRegioesEstadoLogado()" class="btn btn-outline-info" type="button"><i class="fa fa-search"></i>&nbsp;Carregar</button>&nbsp;
+                                                    </div>
+                                                    <div class="panel-body" align="center">
+                                                        <!-- DataTable-->
+                                                        <div class="table-responsive">
+                                                            <table id="tblTodasRegioes"
+                                                                   class="table table-striped table-bordered table-hover dataTables-example">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>IdRegiao</th>
+                                                                        <th>IdBloco</th>
+                                                                        <th>Estado</th>
+                                                                        <th>Bloco</th>
+                                                                        <th>Região</th>
+                                                                        <th>Ações</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>IdRegiao</th>
+                                                                        <th>IdBloco</th>
+                                                                        <th>Estado</th>
+                                                                        <th>Bloco</th>
+                                                                        <th>Região</th>
+                                                                        <th>Ações</th>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                        <!-- End DataTable -->
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+                    <div class="modal inmodal" id="visualizaJovemModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content animated bounceInRight">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                    <%--<i class="fa fa-laptop modal-icon"></i>--%>
+                                    <i class="glyphicon glyphicon-transfer modal-icon"></i>
+                                    <h4 class="modal-title">Visualização de dados</h4>
+                                    <small class="font-bold">Dados do Jovem</small>
+                                </div>
+                                <div class="modal-body">
+                                    <!---->
+                                    <div class="contact-box center-version">
+
+
+
+                                        <img alt="image" class="rounded-circle" src="" id="imgFotoJovem">
+
+
+                                        <h3 class="m-b-xs" id="lblNomeJovem"><strong></strong></h3>
+
+                                        <div class="font-bold">Informações</div>
+                                        <address class="m-t-md">
+                                            <strong><span id="lblEstado"></span></strong><br>
+                                            <span id="lblBloco"></span><br>
+                                            <span id="lblRegiao"></span><br>
+                                            <span id="lblIgreja"></span><br>
+                                            <abbr title="Phone" id="lblWhats">Whatsapp</abbr>
+                                        </address>
+
+
+                                        <div class="contact-box-footer">
+                                            <div class="m-t-xs btn-group">
+                                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
+                                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                                                <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!---->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <!-- box abaixo da grid -->
+
+                        <div class="wrapper wrapper-content">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+
+                                        <div class="col-lg-4">
+
+
+                                        </div>
+                                        <div class="col-lg-4">
+
+
+                                        </div>
+                                        <div class="col-lg-4">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="float-right">
+                                <strong></strong>
+                            </div>
+                            <div>
+                                <strong>Copyright</strong> FJU Oficial &copy; 2020
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Mainly scripts -->
+                <script src="js/jquery-3.1.1.min.js"></script>
+                <script src="js/popper.min.js"></script>
+                <script src="js/bootstrap.js"></script>
+                <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+                <!-- Custom and plugin javascript -->
+                <script src="js/inspinia.js"></script>
+                <script src="js/plugins/pace/pace.min.js"></script>
+
+                <!-- Steps -->
+                <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+                <!-- Jquery Validate -->
+                <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+                <!-- Select2 -->
+                <script src="js/plugins/select2/select2.full.min.js"></script>
+
+                <!-- Input Mask-->
+                <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+                <!-- Data picker -->
+                <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+                <!-- iCheck -->
+                <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+                <script src="js/plugins/dataTables/datatables.min.js"></script>
+                <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+
+                <!-- Toastr script -->
+                <script src="js/plugins/toastr/toastr.min.js"></script>
+
+                <!-- Sweet alert -->
+                <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+                <script src="js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+                <script src="js/SGFJU.Domain.UI.Client.js"></script>
+                <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+                <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+
+                <script>
+
+                    var __resultSetTodasIgrejas = null;
+                    var __resultSetTodosBlocos = null;
+                    var __resultSetTodasRegioes = null;
+                    var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+                    var tblTodosJovens;
+                    var dadoJovemSelecionado = undefined;
+                    var __idIgrejaParaAtualizacao = 0;
+                    var __idBlocoParaAtualizacao = 0;
+                    var __idRegiaoParaAtualizacao = 0;
+                    var __idBlocoRegiaoAtualizacao = 0;
+                    var hostUrl = "http://" + document.location.hostname;
+                    var primeiraPesquisa = false;
+                    var vExisteUltimoPesquisaRetorno = false;
+                    var __blocosEstadoLogado = undefined;
+
+                    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+
+                    $(document).ready(function () {
+
+                        $("#cboEstado").select2();
+                        $("#cboBloco").select2();
+                        $("#cboRegiao").select2();
+
+                        facadeUser.ConfigurarPaginaX072470();
+
+                        /**/
+                        ObterTodasIgrejasEstadoLogado();
+                        /**/
+
+                        $('#cboEstado').on('select2:select', function (e) {
+                            $('#ibox1').children('.ibox-content').toggleClass('sk-loading');//sk-loading
+                            var data = e.params.data;
+                            preencherComboBlocos(data.id);
+                        });
+
+                        $('.select2_demo_4').on('select2:select', function (e) {
+                            $('#cboRegiao').empty().trigger("change");
+                            $('#cboIgreja').empty().trigger("change");
+                            var data = e.params.data;
+                            preencherComboRegioes(data.id);
+                        });
+                        
+
+                        $('.select2_demo_5').on('select2:select', function (e) {
+                            $('#cboIgreja').empty().trigger("change");
+                            var data = e.params.data;
+                            preencherComboIgrejas(data.id);
+                        });
+
+                        configComboEstado();
+                        
+                        $('#tblTodasIgrejas tbody').on('click', 'button', function () {
+                            var tblTodasI = $('#tblTodasIgrejas').DataTable();
+                            var classeDoBotao = $(this).prop('class');
+                            var indiceDaLinha = tblTodasI.row($(this).parents('tr')).index();
+
+                            console.log('olha :: ' + __resultSetTodasIgrejas.length);
+
+                            __idIgrejaParaAtualizacao = __resultSetTodasIgrejas[indiceDaLinha].IdIgreja;
+                            var nomeIgreja = __resultSetTodasIgrejas[indiceDaLinha].NomeIgreja;
+                            dadoJovemSelecionado = __resultSetTodasIgrejas[indiceDaLinha];
+
+                            if (classeDoBotao == 'btn btn-primary btn-xs dt-edit') {
+                                $('#atualizaIgrejaModal').modal('show');
+                                $('#txtNomeAnterior').val(nomeIgreja);
+                                $('#txtNomeAnterior').prop('disabled', true);
+                            }
+                            else if (classeDoBotao == 'btn btn-danger btn-xs dt-delete')
+                                excluirIgreja(__idIgrejaParaAtualizacao, nomeIgreja, indiceDaLinha);
+                        });
+
+                        /*Todos blocos*/
+                        $('#tblTodosBlocos tbody').on('click', 'button', function () {
+                            var tblTodosBlocos = $('#tblTodosBlocos').DataTable();
+                            var classeDoBotao = $(this).prop('class');
+                            var indiceDaLinha = tblTodosBlocos.row($(this).parents('tr')).index();
+                            var idBlocoParaOperacao = null;
+
+                            idBlocoParaOperacao = __resultSetTodosBlocos[indiceDaLinha].idBloco;
+                            __idBlocoParaAtualizacao = idBlocoParaOperacao;
+                            var nomeBloco = __resultSetTodosBlocos[indiceDaLinha].NomeBloco;
+                            dadoBlocoSelecionado = __resultSetTodosBlocos[indiceDaLinha];
+
+                            if (classeDoBotao == 'btn btn-primary btn-xs dt-edit') {
+                                $('#atualizaBlocoModal').modal('show');
+                                $('#txtNomeBlocoAnterior').val(nomeBloco);
+                                $('#txtNomeBlocoAnterior').prop('disabled', true);
+                            }
+                            else if (classeDoBotao == 'btn btn-danger btn-xs dt-delete')
+                                excluirBloco(idBlocoParaOperacao, nomeBloco, indiceDaLinha);
+                        });
+
+                        /*Todas Regiões   */
+                        $('#tblTodasRegioes tbody').on('click', 'button', function () {
+                            var tblTodasRegioes = $('#tblTodasRegioes').DataTable();
+                            var classeDoBotao = $(this).prop('class');
+                            var indiceDaLinha = tblTodasRegioes.row($(this).parents('tr')).index();
+                            var idRegiaoParaOperacao = null;
+
+                            idRegiaoParaOperacao = __resultSetTodasRegioes[indiceDaLinha].IdRegiao;
+                            __idRegiaoParaAtualizacao = idRegiaoParaOperacao;
+
+                            __idBlocoRegiaoAtualizacao = __resultSetTodasRegioes[indiceDaLinha].idBloco;
+
+                            var nomeRegiao = __resultSetTodasRegioes[indiceDaLinha].NomeRegiao;                            
+
+                            if (classeDoBotao == 'btn btn-primary btn-xs dt-edit') {
+                                $('#atualizaRegiaoModal').modal('show');
+                                $('#txtNomeRegiaoAnterior').val(nomeRegiao);
+                                $('#txtNomeRegiaoAnterior').prop('disabled', true);
+                            }
+                            else if (classeDoBotao == 'btn btn-danger btn-xs dt-delete')
+                                excluirRegiao(idRegiaoParaOperacao, nomeRegiao);
+                        });
+                    });
+
+                    function preencherComboBlocos(idEstado) {
+                        $.ajax({
+                            type: "GET",
+                            url: "api/blocos/ObterPorEstado/" + idEstado,
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            __blocosEstadoLogado = retorno;
+                            
+                            $.each(retorno, function () {
+                                $("#cboBloco").append($("<option     />").val(this.Id).text(this.NomeBloco));
+                            });
+                            $("#cboBloco").prepend('<option selected class="placeholdered" value="">Selecione o bloco</option>');
+                            $('#cboBloco').select2().trigger('change');
+                            $('#cboBloco').removeAttr('selected');
+                            //$('#ibox1').children('.ibox-content').toggleClass('sk-loading');//#spinner                            
+                        });
+                    }
+
+                    function preencherComboRegioes(idBloco) {
+                        $.ajax({
+                            type: "GET",
+                            url: "api/Regioes/ObterPorBloco/" + idBloco,
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            $.each(retorno, function () {
+                                $("#cboRegiao").append($("<option     />").val(this.IdRegiao).text(this.NomeRegiao));
+                            });
+                            $("#cboRegiao").prepend('<option selected class="placeholdered" value="">Selecione a região</option>');
+                            $('#cboRegiao').select2().trigger('change');
+                            $('#cboRegiao').removeAttr('selected');
+                        });
+                    }
+
+                    function preencherComboIgrejas(idRegiao) {
+                        $.ajax({
+                            type: "get",
+                            url: "api/Igrejas/ObterPorRegiao/" + idRegiao,
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            $.each(retorno, function () {
+                                $("#cboIgreja").append($("<option     />").val(this.IdIgreja).text(this.NomeIgreja));
+                            });
+                            $("#cboIgreja").prepend('<option selected class="placeholdered" value="">Selecione a igreja</option>');
+                            $('#cboIgreja').select2().trigger('change');
+                            $('#cboIgreja').removeAttr('selected');
+                        });
+                    }
+
+                    function ObterTodasIgrejasEstadoLogado() {
+                        $.ajax({
+                            type: "GET",
+                            url: 'api/Estados/ObterIgrejasPorEstadoLogado/',
+                            contentType: "application/json"
+                        }).done(function (resultSetTodasIgrejasEstado) {
+                            if (primeiraPesquisa == false &&
+                                vExisteUltimoPesquisaRetorno == false) {
+                                primeiraPesquisa = true;
+
+                                __resultSetTodasIgrejas = resultSetTodasIgrejasEstado;
+
+                                $('#tblTodasIgrejas').DataTable({
+                                        data: resultSetTodasIgrejasEstado,
+                                        pageLength: 50,
+                                        destroy: true,
+                                        dom: 'Bfrtip',
+                                        buttons: [
+                                            'csv', 'excel', 'pdf', 'print'
+                                        ],
+                                        columns: [
+                                            { data: 'IdIgreja' },
+                                            { data: 'NomeEstado' },
+                                            { data: 'NomeBlocoJovem' },
+                                            { data: 'NomeRegiaoJovem' },
+                                            { data: 'NomeIgreja' },
+                                            {
+                                                data: null,
+                                                defaultContent: '<div class="btn-group"> <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button> <button type="button" class="btn btn-danger btn-xs dt-delete"><span class="glyphicon glyphicon-remove glyphicon-trash" aria-hidden="true"></span></button> </div>'
+                                            }
+                                        ],
+                                        columnDefs: [
+                                            {
+                                                targets: [0],
+                                                visible: false,
+                                                searchable: false
+                                            }]
+                                    });
+                            }
+                            else {
+                                var table = $('#tblTodasIgrejas').DataTable();
+                                table.clear();
+                                table.rows.add(resultSetTodasIgrejasEstado).draw();
+
+                                $('#lblQuantidadeResgistrosRetornados').html(table.data().count());
+                            }
+                        });
+                    }
+
+                    function configComboEstado() {
+                        $.ajax({
+                            type: "GET",
+                            url: "api/Usuarios/X072470/",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            
+                            if (retorno.NomePerfil != 'SecretariaBR') {
+                                console.log(retorno.IdEstadoUsuarioLogado);
+                                $("#cboEstado").val(retorno.IdEstadoUsuarioLogado).trigger('change.select2');
+                                $('#cboEstado').prop("disabled", true);
+                                preencherComboBlocos(retorno.IdEstadoUsuarioLogado);
+                            }
+                            /*
+                            console.log(retorno.IdEstadoUsuarioLogado);
+                            $("#cboEstado").val(retorno.IdEstadoUsuarioLogado).trigger('change.select2');
+                            $('#cboEstado').prop("disabled", true);
+                            preencherComboBlocos(retorno.IdEstadoUsuarioLogado);*/
+
+                        });
+                    }
+
+                    function atualizaIgreja() {
+                        var igrejaDTO = {
+                            IdIgreja: __idIgrejaParaAtualizacao,
+                            NomeIgreja: $('#txtNomeNovoIgreja').val()
+                        }
+
+                        console.log('ID da igreja a ser atualizada: ' + __idIgrejaParaAtualizacao);
+
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify(igrejaDTO),
+                            url: "api/Igrejas/AtualizarIgreja",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            swal({
+                                title: "Igreja atualizada com sucesso !",
+                                text: retorno.MensagemRespostaRequisicao,
+                                type: "success"
+                            });
+
+                            $('#atualizaIgrejaModal').modal('hide');
+                        });
+                    }
+
+                    function excluirIgreja(pIdIgreja, nomeIgreja, indiceDaLinhaNoDataTable) {
+                        var igrejaDTO = {
+                            IdIgreja: pIdIgreja
+                        };
+                        //RequisicaoBemSucedida
+                        swal({
+                            title: "Deseja realmente excluir a igreja? " +  nomeIgreja,
+                            text: "Esta ação NÃO poderá ser revertida",
+                            type: "warning",
+                            showCancelButton: true,
+                            confirmButtonColor: "#DD6B55",
+                            confirmButtonText: "Sim, Desejo Excluir!",
+                            closeOnConfirm: false
+                        }, function () {
+                                //
+                                $.ajax({
+                                    type: "POST",
+                                    data: JSON.stringify(igrejaDTO),
+                                    url: "api/Estados/ExcluirIgreja",
+                                    contentType: "application/json"
+                                }).done(function (retorno) {
+                                    if (retorno.RequisicaoBemSucedida) {
+                                        swal({
+                                            title: "Exclusão de igreja",
+                                            text: retorno.MensagemRespostaRequisicao,
+                                            type: "success"
+                                        });
+                                    }
+                                    else {
+                                        swal({
+                                            title: "Exclusão de Igreja - Notificação !",
+                                            text: retorno.MensagemRespostaRequisicao,
+                                            type: "warning"
+                                        });
+                                    }
+                                });
+                                //
+                        });
+                    }
+
+                    function excluirBloco(pIdBloco, nomeBloco) {
+                        var blocoDTO = {
+                            idBloco: pIdBloco
+                        };
+                        
+                        swal({
+                            title: "Deseja realmente excluir o Bloco? " +  nomeBloco,
+                            text: "Esta ação NÃO poderá ser revertida",
+                            type: "warning",
+                            showCancelButton: true,
+                            confirmButtonColor: "#DD6B55",
+                            confirmButtonText: "Sim, Desejo Excluir!",
+                            closeOnConfirm: false
+                        }, function () {
+                                //
+                                $.ajax({
+                                    type: "POST",
+                                    data: JSON.stringify(blocoDTO),
+                                    url: "api/estados/ExcluirBloco",
+                                    contentType: "application/json"
+                                }).done(function (retorno) {
+                                    if (retorno.RequisicaoBemSucedida) {
+                                        swal({
+                                            title: "Exclusão de Bloco",
+                                            text: retorno.MensagemRespostaRequisicao,
+                                            type: "success"
+                                        }, function () {
+                                                carregarBlocosEstadoLogado();
+                                        });
+                                    }
+                                    else {
+                                        swal({
+                                            title: "Exclusão de Bloco - Notificação !",
+                                            text: retorno.MensagemRespostaRequisicao,
+                                            type: "warning"
+                                        });
+                                    }
+                                });
+                                //
+                        });
+                    }
+
+                    function excluirRegiao(pIdRegiao, nomeRegiao) {
+                        var regiaoDTO = {
+                            IdRegiao: pIdRegiao
+                        };
+
+                        console.log(':: ID da Região -> ' + pIdRegiao);
+                        
+                        swal({
+                            title: "Deseja realmente excluir o Regiao? " +  nomeRegiao,
+                            text: "Esta ação NÃO poderá ser revertida",
+                            type: "warning",
+                            showCancelButton: true,
+                            confirmButtonColor: "#DD6B55",
+                            confirmButtonText: "Sim, Desejo Excluir!",
+                            closeOnConfirm: false
+                        }, function () {
+                                //
+                                $.ajax({
+                                    type: "POST",
+                                    data: JSON.stringify(regiaoDTO),
+                                    url: "api/estados/ExcluirRegiao",
+                                    contentType: "application/json"
+                                }).done(function (retorno) {
+                                    if (retorno.RequisicaoBemSucedida) {
+                                        swal({
+                                            title: "Exclusão de Região",
+                                            text: retorno.MensagemRespostaRequisicao,
+                                            type: "success"
+                                        }, function () {
+                                                carregarRegioesEstadoLogado();
+                                        });
+                                    }
+                                    else {
+                                        swal({
+                                            title: "Exclusão de Região - Notificação !",
+                                            text: retorno.MensagemRespostaRequisicao,
+                                            type: "warning"
+                                        });
+                                    }
+                                });
+                                //
+                        });
+                    }
+
+                    function cadastrarIgreja() {
+                        location.href = 'RegistraIgreja.html';
+                    }
+
+                    function pesquisarIgrejaPorParametro() {
+                        var parametro = {
+                            IdEstado: $('#cboEstado').val(),
+                            IdBlocoJovem: $('#cboBloco').val(),
+                            IdRegiao: $('#cboRegiao').val()
+                        };
+
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify(parametro),
+                            url: "api/Estados/PesquisarIgrejasPorParametro",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            __resultSetTodasIgrejas = retorno;
+                            if (primeiraPesquisa == false) {
+                                primeiraPesquisa = true;
+
+                                console.log('::: Resultado da pesquisa'+retorno.length);
+
+                                $('#tblTodasIgrejas').DataTable({
+                                    data: retorno,
+                                    pageLength: 50,
+                                    destroy: true,
+                                    dom: 'Bfrtip',
+                                    buttons: [
+                                        'csv', 'excel', 'pdf', 'print'
+                                    ],
+                                    columns: [
+                                        { data: 'IdIgreja' },
+                                        { data: 'NomeEstado' },
+                                        { data: 'NomeBlocoJovem' },
+                                        { data: 'NomeRegiaoJovem' },
+                                        { data: 'NomeIgreja' },
+                                        {
+                                            data: null,
+                                            defaultContent: '<div class="btn-group"> <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button> <button type="button" class="btn btn-danger btn-xs dt-delete"><span class="glyphicon glyphicon-remove glyphicon-trash" aria-hidden="true"></span></button> </div>'
+                                        }
+                                    ],
+                                    columnDefs: [
+                                        {
+                                            targets: [0],
+                                            visible: false,
+                                            searchable: false
+                                        }]
+                                });
+                            }
+                            else {
+                                var table = $('#tblTodasIgrejas').DataTable();
+                                table.clear();
+                                table.rows.add(retorno).draw();
+                            }
+                        });
+                    }
+
+                    function resetaPesquisa() {
+                        $('#cboBloco').val($('#cboBloco option:first-child').val()).trigger('change');
+                        $('#cboRegiao').empty().trigger("change");
+                        var table = $('#tblTodasIgrejas').DataTable();
+                        table.clear();
+                        table.rows.add(__resultSetTodasIgrejas).draw();
+                    }
+
+                    function cadastrarRegiao() {
+                        location.href = 'RegistraRegiao.html';
+                    }
+
+                    function registraNovoBloco() {
+                        var nomeNovoBloco = $('#txtNomeNovoBloco').val();
+                        console.log(':: nome do bloco'+nomeNovoBloco);
+                        if (nomeNovoBloco = '') {
+                            swal({
+                                title: "Nome do novo bloco não pode ficar em branco!",
+                                text: "Preencha nome do novo bloco",
+                                type: "error"
+                            });
+                            return;
+                        }
+
+                        var blocoDTO = {
+                            NomeBloco: $('#txtNomeNovoBloco').val()
+                        };
+
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify(blocoDTO),
+                            url: "api/blocos/RegistraNovoBloco",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            swal({
+                                title: "Confirmação de cadastro!",
+                                text: retorno.MensagemRespostaRequisicao,
+                                type: "success"
+                            }, function () {
+                                    $('#registraBlocosModal').modal('hide');
+                            });
+                        });
+                    }
+
+                    function carregarBlocosEstadoLogado() {
+                        $.ajax({
+                            type: "GET",
+                            url: "api/blocos/ObterPorEstadoLogado",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            __resultSetTodosBlocos = retorno;
+                            $('#tblTodosBlocos').DataTable({
+                                    data: retorno,
+                                    pageLength: 50,
+                                    destroy: true,
+                                    dom: 'Bfrtip',
+                                    buttons: [
+                                        'csv', 'excel', 'pdf', 'print'
+                                    ],
+                                    columns: [
+                                        { data: 'idBloco' },
+                                        { data: 'EstadoBloco' },
+                                        { data: 'NomeBloco' },
+                                        {
+                                            data: null,
+                                            defaultContent: '<div class="btn-group"> <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button> <button type="button" class="btn btn-danger btn-xs dt-delete"><span class="glyphicon glyphicon-remove glyphicon-trash" aria-hidden="true"></span></button> </div>'
+                                        }
+                                    ],
+                                    columnDefs: [
+                                        {
+                                            targets: [0],
+                                            visible: false,
+                                            searchable: false
+                                        }]
+                                });
+                        });
+                    }
+
+                    function carregarRegioesEstadoLogado() {
+                        $.ajax({
+                            type: "GET",
+                            url: "api/regioes/ObterPorEstadoLogado",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            __resultSetTodasRegioes = retorno;
+                            $('#tblTodasRegioes').DataTable({
+                                    data: retorno,
+                                    pageLength: 50,
+                                    destroy: true,
+                                    dom: 'Bfrtip',
+                                    buttons: [
+                                        'csv', 'excel', 'pdf', 'print'
+                                    ],
+                                    columns: [
+                                        { data: 'IdRegiao' },
+                                        { data: 'idBloco'},
+                                        { data: 'NomeEstado' },
+                                        { data: 'NomeBloco' },
+                                        { data: 'NomeRegiao' },
+                                        {
+                                            data: null,
+                                            defaultContent: '<div class="btn-group"> <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button> <button type="button" class="btn btn-danger btn-xs dt-delete"><span class="glyphicon glyphicon-remove glyphicon-trash" aria-hidden="true"></span></button> </div>'
+                                        }
+                                    ],
+                                    columnDefs: [
+                                        {
+                                            targets: [0,1],
+                                            visible: false,
+                                            searchable: false
+                                        }]
+                                });
+                        });
+                    }
+
+                    function atualizaBloco() {
+                        var blocoDTO = {
+                            idBloco: __idBlocoParaAtualizacao,
+                            NomeBloco: $('#txtNomeBlocoAtualizar').val()
+                        }
+
+                        console.log('ID da bloco a ser atualizado: ' + __idBlocoParaAtualizacao);
+                        console.log('nome da bloco a ser atualizado: ' + blocoDTO.NomeBloco);
+
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify(blocoDTO),
+                            url: "api/Bloco/AtualizarBloco",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            swal({
+                                title: "Bloco atualizado com sucesso !",
+                                text: retorno.MensagemRespostaRequisicao,
+                                type: "success"
+                            });
+
+                            $('#atualizaBlocoModal').modal('hide');
+                        });
+                    }
+
+                    function atualizaRegiao() {
+                        var regiaoDTO = {
+                            IdRegiao: __idRegiaoParaAtualizacao,
+                            idBloco: __idBlocoRegiaoAtualizacao,
+                            NomeRegiao: $('#txtNomeRegiaoAtualizar').val()
+                        }
+
+                        console.log('ID da bloco a ser atualizado: ' + __idRegiaoParaAtualizacao);
+                        
+
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify(regiaoDTO),
+                            url: "api/Estados/AtualizarRegiao",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            swal({
+                                title: "Regiao atualizada com sucesso !",
+                                text: retorno.MensagemRespostaRequisicao,
+                                type: "success"
+                            });
+
+                            $('#atualizaRegiaoModal').modal('hide');
+                        });
+                    }
+
+                </script>
+</body>
+</html>

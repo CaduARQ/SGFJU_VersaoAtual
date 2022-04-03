@@ -1,0 +1,1285 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet"
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+                    <li>
+                        <a href="RegistraJovem.aspx"><i class="fa fa-th-large"></i> <span class="nav-label">Voluntários</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="RegistraJovem.aspx">Novo Jovem</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="ConsultaGeralParametros.html">Geral Parâmetros</a></li>
+                            <li><a href="TodosJovens.aspx">Todos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquise por palavra-chave..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+
+                        <li>
+                            <a onclick="ExecutarActionX072433()">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- Aqui entra a tab-->
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2 id="lblTituloComNomeJomve"></h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="TodosJovensNacional.html" id="lnkLinkRetorno">Todos Jovens</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <strong>Perfil</strong>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="#" id="lnkLinkAlteracao" class="text-danger font-bold">
+                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar ficha
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="#" id="lnkLinkVisualizaPDF_Ficha" onclick="configuraLinkVisualizacaoPDFFicha()" class="text-danger font-bold">
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Visualizar Ficha em PDF
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <!---->
+                <div class="col-lg-1">
+                    <h2 id="lblTituloComNomeJomve"></h2>
+                    <ol class="breadcrumb">
+
+                        <li class="breadcrumb-item active">
+                            <img src="img/FJU(LOGO) AZUL.png" height="70px" width="120px" />
+                        </li>
+                    </ol>
+                    <!--<img src="img/FJU(LOGO) AZUL.png" height="70px" width="120px" />-->
+                </div>
+                <!---->
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+
+
+                <!--Novo topo-->
+                <div class="row wrapper border-bottom white-bg page-heading">
+                    <div class="col-lg-10">
+                        <h2 class="text-success font-bold">
+                            <span id="lblNomeJovemHeader" class="text-success font-bold"></span>
+                            <!--<span class="glyphicon glyphicon-user" aria-hidden="true"></span>-->
+
+                        </h2>
+
+                        <div class="row m-b-lg m-t-lg">
+                            <div class="col-md-1">
+                                <canvas id="canvas" width=160 height="116"></canvas>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="profile-info">
+                                    <div class="">
+                                        <div>
+                                            <h2 class="no-margins font-bold text-success" id="nomeDoJovem">
+                                            </h2>
+                                            <h4 id="nomeDoPerfilUsuario"></h4>
+                                            <h4>Acompanhado desde <i class="glyphicon glyphicon-calendar"></i></h4>
+                                            <h5 id="lblInicioAcompanhamento" class="text-success font-bold" style="font-family: Helvetica"></h5>
+                                            <hr class="hr-line-solid" />
+                                            <h4>Sendo acompanhado pelo obreiro <i class="glyphicon glyphicon-user"></i></h4>
+                                            <h5 id="lblNomeObreiro" class="text-success font-bold" style="font-family: Helvetica"></h5>
+                                            <hr class="hr-line-solid" />
+                                            <h4>Data de Nascimento <i class="glyphicon glyphicon-calendar"></i></h4>
+                                            <h5 id="lblDataNascimento" class="text-success font-bold" style="font-family: Helvetica"></h5>
+                                            <hr class="hr-line-solid" />
+                                            <h4>Data de Cadastro <i class="glyphicon glyphicon-calendar"></i></h4>
+                                            <h5 id="lblDataCadastro" class="text-success font-bold" style="font-family: Helvetica"></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <!---->
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+
+                                    </div>
+                                    <div class="panel-body" align="left">
+                                        <div class="row">
+
+                                            <div class="col-sm-5">
+                                                <div class="form-group">
+                                                    <h3>Estado</h3>
+                                                    <h3 class="text-success" style="font-family: Helvetica" id="lblNomeEstado"></h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-7">
+                                                <div class="form-group">
+                                                    <h3>Bloco</h3>
+                                                    <h3 class="text-success" style="font-family: Helvetica" id="lblNomeBloco"></h3>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-sm-5">
+                                                <div class="form-group">
+                                                    <h3>Região</h3>
+                                                    <h3 class="text-success" style="font-family: Helvetica" id="lblNomeRegiao"></h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-7">
+                                                <div class="form-group">
+                                                    <h3>Igreja</h3>
+                                                    <h3 class="text-success" style="font-family: Helvetica" id="lblNomeIgreja"></h3>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                            <div class="col-md-1">
+                                <img src="img/ehaltarjovem.png" id="imgAltarJovem" height="26px" width="56px" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <hr class="hr-line-solid" />
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading" style="font-family: Helvetica">
+                                Logradouro
+                            </div>
+                            <div class="panel-body" align="left">
+
+                                <!--<div class="row">
+
+                                    <div class="col-md-4">
+                                        <h3>Nome completo:</h3>
+                                        <h4 class="text-success" id="lblNomeJovem"></h4>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3>Data de Nascimento:</h3>
+                                        <h4 class="text-success"  id="lblDataNascimento"></h4>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3>Data de Cadastramento:</h3>
+                                        <h4 class="text-success"  id="lblDataCadastro"></h4>
+
+                                    </div>
+
+                                </div>-->
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Endereço: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblEndereco"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Bairro: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblBairro"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Cidade: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblCidade"></h3>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Mora com quem: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblTipoMoradia"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Estado civil: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblEstadocivil"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Sexo: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblSexo"></h3>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                Dados Espirituais
+                            </div>
+                            <div class="panel-body" align="left">
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Chegou na igreja: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblMesAnoChegouIURD"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Já se afastou? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblJaSeAfastou"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Esta firme desde quando ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblFirmeDesdeQuando"></h3>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Batizado nas águas: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblEhBatizadoAguas"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Batizado nas Espírito Santo: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblEhBatizadoEspiritoSanto"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Chegada na FJU: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblMesAnoschegadaFJU"></h3>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Data Batismo nas águas: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblDataBatismoAguas"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Data Batismo com Espírito Santo: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblDataBatismoEspiritoSanto"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Como conheceu FJU? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblComoConheceuFJU"></h3>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                Situação na IURD/FJU
+                            </div>
+                            <div class="panel-body" align="left">
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Perfil: </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblNomePerfilFJU"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Tempo de <span id="lblDescricaoPerfilFJU"></span> </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblMesAnoPerfil"></h3>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Tem desejo de ser obreiro ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblDesejaSerObreiro"></h4>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Deseja fazer a obra no altar ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblDesejaObraAltar"></h4>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Esta no Altar Jovem ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblEstaNoAltarJovem"></h3>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Possui coordenação na FJU? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblPossuiCoordenacao"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Coordenação </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblNomeCoordenacao"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Ha quanto tempo? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblPeriodoCoordenacao"></h3>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                Testemunho
+                            </div>
+                            <div class="panel-body" align="left">
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Já sofreu com depressão ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblJaSofreuDepressao"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Por quanto tempo ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblTempoSofreuDepressao"></h4>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Está livre desde? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblTempoLivreDepressao"></h3>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Já sofreu com Automutilação ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblJaSofreuAutomutilacao"></h4>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Por quanto tempo ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblTempoSofreuAutomutilacao"></h4>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Está livre desde? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblTempoLivreAutomutilacao"></h4>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Já teve algum vício ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblJaTeveVicio"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Qual vício? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblNomeVicio"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Tempo nos vícios ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblTempoPermaneceuViciado"></h4>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Está livre dos vícios há quanto tempo ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblTempoLivreVicios"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Já tentou suicídio alguma vez ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblJaTentouSuicidio"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Quantas vezes ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblNumeroTentativasSuicidio"></h3>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+
+                                        <h3> Quando foi a tentativa ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblQuandoTentativaSuicidio"></h3>
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <h3> Como foi a tentativa ? </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblDescricaoTentativaSuicidio"></h3>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-12">
+
+                                        <h3>
+                                            Testemunho </h4>
+                                            <h3 class="text-success" style="font-family: Helvetica" id="lblTestemunho"></h3>
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-line-solid" />
+
+                                <div class="row">
+
+                                    <div class="col-md-12">
+
+                                        <h3> Sugestão </h3>
+                                        <h3 class="text-success" style="font-family: Helvetica" id="lblSugestao"></h3>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---->
+                    <div class="col-lg-4 m-b-lg">
+
+                        <div id="vertical-timeline" class="vertical-container light-timeline no-margins">
+
+                            <div class="vertical-timeline-block">
+                                <div class="vertical-timeline-icon blue-bg">
+                                    <i class="fa fa-file-text"></i>
+                                </div>
+
+                                <div class="vertical-timeline-content">
+                                    <h2>Dados Profissionais</h2>
+                                    <p>
+                                        Trabalha atualmente: <b><span class="text-success" style="font-family: Helvetica" id="lblTrabalhaAtualmente"></span></b> <br />
+                                        Empresa: <b><span class="text-success" style="font-family: Helvetica" id="lblEmpresa"></span></b><br />
+                                        Profissão: <b><span class="text-success" style="font-family: Helvetica" id="lblProfissao"></span></b><br />
+                                        Estuda Atualmente? <b><span class="text-success" style="font-family: Helvetica" id="lblEstudaAtualmente"></span></b><br />
+                                        Grau de instrução: <b><span class="text-success" style="font-family: Helvetica" id="lblGrauInstrucao"></span></b><br />
+                                        Instituição de Ensino: <b><span class="text-success" style="font-family: Helvetica" id="lblInstituicaoensino"></span></b><br />
+                                        Possui Titulo de eleitor? <b><span class="text-success" style="font-family: Helvetica" id="lblPossuitituloeleitor"></span></b><br />
+                                    </p>
+                                    <!--<a href="#" class="btn btn-sm btn-success">  </a>-->
+                                    <span class="vertical-date">
+                                        <br>
+                                        <small></small>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="vertical-timeline-block">
+                                <div class="vertical-timeline-icon yellow-bg">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+
+                                <div class="vertical-timeline-content">
+                                    <h2>Contatos</h2>
+                                    <p>
+                                        <span class="glyphicon glyphicon-phone glyphicon-info-sign" aria-hidden="true"></span>Whatsapp: <b><span class="text-success" style="font-family: Helvetica" id="lblWhatsapp"></span></b><br />
+                                        <span class="glyphicon glyphicon-phone glyphicon-info-sign" aria-hidden="true"></span>Telefone Fixo: <b><span class="text-success" style="font-family: Helvetica" id="lblTelFixo"></span></b><br />
+                                        <span class="glyphicon glyphicon-phone glyphicon-info-sign" aria-hidden="true"></span>Telefone de Mergência: <b><span class="text-success" style="font-family: Helvetica" id="lblTelemergencia"></span></b><br />
+                                        Contato: <b><span class="text-success" style="font-family: Helvetica" id="lblContato"></span></b><br />
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <div class="vertical-timeline-block">
+                                <div class="vertical-timeline-icon navy-bg">
+                                    <i class="fa fa-comments"></i>
+                                </div>
+
+                                <div class="vertical-timeline-content">
+                                    <h2>Redes Sociais</h2>
+                                    <p>
+                                        <i class="fa fa-instagram"></i> Instagram: <b><span class="text-success" style="font-family: Helvetica" id="lblInstagram"></span></b><br />
+                                        <i class="fa fa-facebook-square"></i> Facebook: <b><span class="text-success" style="font-family: Helvetica" id="lblFacebook"></span></b><br />
+                                        <i class="fa fa-envelope" aria-hidden="true"></i> E-mail: <b><span class="text-success" style="font-family: Helvetica" id="lblEmail"></span></b><br />
+                                        <i class="fa fa-twitter"></i> Twitter: <b><span class="text-success" style="font-family: Helvetica" id="lblTwitter"></span></b><br />
+                                    </p>
+                                    <!--<span class="vertical-date">Yesterday <br><small>Dec 23</small></span>-->
+                                </div>
+                            </div>
+
+                            <div class="vertical-timeline-block">
+                                <div class="vertical-timeline-icon red-bg">
+                                    <i class="fa fa-circle"></i>
+                                </div>
+
+                                <div class="vertical-timeline-content">
+                                    <h2>Projeto</h2>
+                                    <p>
+                                        Pertence a algum projeto: <b><span class="text-success" style="font-family: Helvetica" id="lblProjetoParticipa"></span></b><br />
+                                        Tempo no Projeto: <b><span class="text-success" style="font-family: Helvetica" id="lblTempoProjeto"></span></b><br />
+                                        Esteve em outro Projeto? <b><span class="text-success" style="font-family: Helvetica" id="lblEsteveOutroProjeto"></span></b><br />
+                                        Nome Projeto Anterior? <b><span class="text-success" style="font-family: Helvetica" id="lblNomeProjetoAnterior"></span></b><br />
+                                    </p>
+                                    <!--<span class="vertical-date">Yesterday <br><small>Dec 23</small></span>-->
+                                </div>
+                            </div>
+
+                            <div class="vertical-timeline-block">
+                                <div class="vertical-timeline-icon yellow-bg">
+                                    <i class="fa fa-mixcloud"></i>
+                                </div>
+
+                                <div class="vertical-timeline-content">
+                                    <h2>Habilidades</h2>
+                                    <br />
+                                    <table class="table table-bordered" id="tblHabilidades">
+                                        <thead>
+                                            <tr>
+                                                <th>Habilidade</th>
+                                                <th>Projeto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="vertical-timeline-block">
+                                <div class="vertical-timeline-icon yellow-bg">
+                                    <i class="fa fa-mixcloud"></i>
+                                </div>
+
+                                <div class="vertical-timeline-content">
+                                    <h2>Idiomas</h2>
+                                    <br />
+                                    <table class="table table-bordered" id="tblIdiomas">
+                                        <thead>
+                                            <tr>
+                                                <th>Idioma</th>
+                                                <th>Nível</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="vertical-timeline-block">
+                                <div class="vertical-timeline-icon yellow-bg">
+                                    <i class="fa fa-anchor"></i>
+                                </div>
+
+                                <div class="vertical-timeline-content">
+                                    <h2>Cursos</h2>
+                                    <br />
+                                    <table class="table table-bordered" id="tblCursos">
+                                        <thead>
+                                            <tr>
+                                                <th>Nome do Curso</th>
+                                                <th>Projeto Relacionado</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!---->
+                </div>
+
+            </div>
+            <!-- Aqui entra a tab-->
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4">
+
+
+                            </div>
+                            <div class="col-lg-4">
+
+
+                            </div>
+                            <div class="col-lg-4">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="float-right">
+                    <strong></strong>
+                </div>
+                <div>
+                    <strong>Copyright</strong> FJU Oficial &copy; 2020
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Steps -->
+    <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+    <!-- Jquery Validate -->
+    <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="js/plugins/select2/select2.full.min.js"></script>
+
+    <!-- Input Mask-->
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+    <!-- Data picker -->
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- SUMMERNOTE -->
+    <script src="js/plugins/summernote/summernote-bs4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+
+    <!-- Nestable List -->
+    <script src="js/plugins/nestable/jquery.nestable.js"></script>
+
+    <!-- Toastr script -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+    <script src="js/SGFJU.Domain.UI.Client.js"></script>
+    <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+    <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+
+    <script>
+
+        var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+        var HOST_NAME_APP = document.location.hostname;
+        var urlFotoUser = "https://" + document.location.hostname + ":" + window.location.port + "/FotosUsuarios/";//local
+        var urlFotoJovens = "https://" + document.location.hostname + ":" + window.location.port + "/FotosJovens/";//local
+        var urlFotoUserProducao = "http://" + document.location.hostname + "/SGFJU2.0/FotosUsuarios/";//produção descomentar
+        var urlFotoJovensProducao = "http://" + document.location.hostname + "/SGFJU2.0/FotosJovens/";//produção descomentar
+        var urlFotoJovemLocal = "https://" + document.location.hostname + "/SGFJU2.0/FotosUsuarios/" //"http://" + document.location.hostname + "/FotosJovens/"
+        var __x = undefined;
+
+        $(document).ready(function () {
+
+            facadeUser.ConfigurarPaginaX072470();
+            //ConfigurarInformacoesPerfil();
+            PreencherFormularioJovem();
+
+        });
+
+        function PreencherFormularioJovem() {
+            var url_ = new URL(location.href);
+            var vIdJovem = url_.searchParams.get("idJovem");
+            __x = vIdJovem;
+            var jovemDTO = {
+                IdJovem: vIdJovem
+            };
+
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(jovemDTO),
+                url: "api/Jovens/ObterJovemAtualizacao",
+                contentType: "application/json"
+            }).done(function (jovemRetorno) {
+
+                configuraLinkRetorno();
+
+                $('#lnkLinkAlteracao').prop('href', 'AlteraJovem.aspx?idJovem=' + vIdJovem);
+
+                $("#nomeDoUsuario").html(ToTitleCase(jovemRetorno.Nome));
+
+                $('#lblNomeJovemHeader').text(ToTitleCase(jovemRetorno.Nome));
+                $('#nomeJovem').html(ToTitleCase(jovemRetorno.Nome));
+                $('#lblNomeJovem').text(ToTitleCase(jovemRetorno.Nome));
+
+                $('#lblTituloComNomeJomve').html('Ficha Cadastral');
+
+                $('#lblDataNascimento').text(jovemRetorno.DataNascimento);
+                $('#lblDataCadastro').text(jovemRetorno.DataCadastro);
+
+                if (jovemRetorno.ArvoreVidaAcompanhamento != undefined) {
+                    $('#lblNomeObreiro').html(ToTitleCase( jovemRetorno.ArvoreVidaAcompanhamento.NomeObreiro ));
+                    $('#lblInicioAcompanhamento').html(jovemRetorno.ArvoreVidaAcompanhamento.DataInicioAcompanhamento);
+                }
+                else {
+                    $('#lblNomeObreiro').html('Não é acompanhado por nenhum obreiro');
+                    $('#lblInicioAcompanhamento').html('Ainda não possui data de inicio do acompanhamento');
+                }
+
+                //console.log(HOST_NAME_APP);
+                if (HOST_NAME_APP.indexOf('localhost') !== -1) {
+                    console.log(HOST_NAME_APP);
+                    //trataImagemFotoPerfil(urlFotoJovens + 'SP_ID_COORDENADOR_92789_2020-12-011700_Rhayssa Alves .jpg');
+
+
+                    console.log('::Local foto - ' + jovemRetorno.NomeArquivoFoto);
+
+                    if (jovemRetorno.NomeArquivoFoto == '')
+                        trataImagemFotoPerfil(urlFotoJovens + 'jovemsemfoto.jpg');
+                    else
+                        trataImagemFotoPerfil(urlFotoJovens + jovemRetorno.NomeArquivoFoto);
+
+                }
+                else {
+                    if (jovemRetorno.NomeArquivoFoto == '')
+                        trataImagemFotoPerfil(urlFotoJovens + 'jovemsemfoto.jpg');
+                    else
+                        trataImagemFotoPerfil(urlFotoJovens + jovemRetorno.NomeArquivoFoto);
+                }
+
+                $('#lblNomeEstado').html(jovemRetorno.IgrejaAQualJovemPertence.NomeEstado);
+                $('#lblNomeBloco').html(ToTitleCase(jovemRetorno.IgrejaAQualJovemPertence.NomeBlocoJovem));
+                $('#lblNomeRegiao').html(ToTitleCase(jovemRetorno.IgrejaAQualJovemPertence.NomeRegiaoJovem));
+                $('#lblNomeIgreja').html(ToTitleCase(jovemRetorno.IgrejaAQualJovemPertence.NomeIgreja));
+
+                $('#txtTestemunho').text(jovemRetorno.TestemunhoJovem.TextoTestemunho);
+
+
+                $('#lblEndereco').text(ToTitleCase(jovemRetorno.EnderecoJovem.DescricaoEndereco));
+                $('#lblBairro').text(ToTitleCase(jovemRetorno.EnderecoJovem.Bairro));
+                $('#lblCidade').text(ToTitleCase(jovemRetorno.EnderecoJovem.Cidade));
+                $('#lblTipoMoradia').text(jovemRetorno.EnderecoJovem.DescricaoTipoDeMoradia);
+                $('#lblEstadocivil').text(jovemRetorno.DescricaoEstadoCivilJovem);
+                var sexo = (jovemRetorno.Sexo == 'M') ? 'Masculino' : 'Feminino';
+                $('#lblSexo').text(sexo);
+
+                var expTelefone = "^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$";
+                var WhatsFormatado = jovemRetorno.ContatoJovem.Whatsapp;
+                WhatsFormatado = WhatsFormatado.replace(/\D/g, "");             //Remove tudo o que não é dígito
+                WhatsFormatado = WhatsFormatado.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+                WhatsFormatado = WhatsFormatado.replace(/(\d)(\d{4})$/, "$1-$2");    //Coloca hífen entre o quarto e o quinto dígitos
+
+                $('#lblWhatsapp').text(WhatsFormatado);
+
+                var telFixoFormatado = jovemRetorno.ContatoJovem.TelefoneFixo;
+                telFixoFormatado = telFixoFormatado.replace(/\D/g, "");
+                telFixoFormatado = telFixoFormatado.replace(/^(\d{2})(\d)/g, "($1) $2");
+                telFixoFormatado = telFixoFormatado.replace(/(\d)(\d{4})$/, "$1-$2");
+                $('#lblTelFixo').text(telFixoFormatado);
+
+                var telEmergenciaFormatado = jovemRetorno.ContatoJovem.TelefoneEmergencia;
+                telEmergenciaFormatado = telEmergenciaFormatado.replace(/\D/g, "");
+                telEmergenciaFormatado = telEmergenciaFormatado.replace(/^(\d{2})(\d)/g, "($1) $2");
+                telEmergenciaFormatado = telEmergenciaFormatado.replace(/(\d)(\d{4})$/, "$1-$2");
+                $('#lblTelemergencia').text(telEmergenciaFormatado);
+
+                $('#lblContato').text(ToTitleCase(jovemRetorno.ContatoJovem.NomeContatoEmergencia));
+
+                $('#lblInstagram').text(jovemRetorno.RedeSocialJovem.Instagram);
+                $('#lblFacebook').text(jovemRetorno.RedeSocialJovem.Facebook);
+                $('#lblEmail').text(jovemRetorno.RedeSocialJovem.Email);
+                $('#lblTwitter').text(jovemRetorno.RedeSocialJovem.Twitter);
+
+                $('#lblEhBatizadoAguas').text(formataRespostaCondicional(jovemRetorno.DadosEspirituaisJovem.EhBatizadoAguas));
+                $('#lblEhBatizadoEspiritoSanto').text(formataRespostaCondicional(jovemRetorno.DadosEspirituaisJovem.EhBatizadoEspiritoSanto));
+
+                $('#lblComoConheceuFJU').text(ToTitleCase(jovemRetorno.DadosEspirituaisJovem.DescricaoModoChegouFJU));
+
+                $('#lblDataBatismoEspiritoSanto').text(jovemRetorno.DadosEspirituaisJovem.MesAnoBatismoEspiritoSanto);
+
+                $('#lblDataBatismoAguas').text(jovemRetorno.DadosEspirituaisJovem.MesAnoBatismoAguas);
+
+                $('#lblFirmeDesdeQuando').text(jovemRetorno.DadosEspirituaisJovem.TempoEstaFirme);
+
+                $('#lblMesAnoschegadaFJU').text(jovemRetorno.DadosEspirituaisJovem.MesAnoEntradaFJU);
+
+                $('#lblMesAnoChegouIURD').text(jovemRetorno.DadosEspirituaisJovem.MesAnoChegadaIURD);
+
+                $('#lblJaSeAfastou').text(formataRespostaCondicional(jovemRetorno.DadosEspirituaisJovem.JaSeAfastou));
+
+                $('#lblTrabalhaAtualmente').text(formataRespostaCondicional(jovemRetorno.DadosProfissionaisJovem.TrabalhaAtualmente));
+                $('#lblEmpresa').text(ToTitleCase(jovemRetorno.DadosProfissionaisJovem.NomeEmpresa));
+                $('#lblProfissao').text(ToTitleCase(jovemRetorno.DadosProfissionaisJovem.Profissao));
+                $('#lblEstudaAtualmente').text(formataRespostaCondicional(jovemRetorno.DadosEducacionaisJovem.EstudaAtualmente));
+                $('#lblGrauInstrucao').text(ToTitleCase(jovemRetorno.DadosEducacionaisJovem.GrauEscolaridade));
+                $('#lblInstituicaoensino').text(ToTitleCase(jovemRetorno.DadosEducacionaisJovem.NomeInstituicaoEnsino));
+                $('#lblPossuitituloeleitor').text(formataRespostaCondicional(jovemRetorno.PossuiTituloEleitor));
+
+                if (jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0] != null ||
+                    jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0] != undefined) {
+                    $('#lblProjetoParticipa').text(jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].NomeProjeto);
+                    $('#lblTempoProjeto').text(jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].TempoProjeto);
+                    $('#lblEsteveOutroProjeto').text(formataRespostaCondicional(jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].PertenceuOutroProjeto));
+                    $('#lblNomeProjetoAnterior').text(jovemRetorno.ProjetosAosQuaisJovemEstaLigado[0].NomeProjetoAnterior);
+                }
+
+                $('#lblNomePerfilFJU').text(jovemRetorno.NomePerfilCadastro);
+                $('#lblDescricaoPerfilFJU').text(jovemRetorno.NomePerfilCadastro);
+                $('#lblMesAnoPerfil').text(jovemRetorno.PeriodoPerfilFJU);
+
+                $('#lblDesejaSerObreiro').text(formataRespostaCondicional(jovemRetorno.SituacaoJovemIURDFJU.DesejaSerObreiro));
+                $('#lblEstaNoAltarJovem').text(formataRespostaCondicional(jovemRetorno.SituacaoJovemIURDFJU.PertenceAltarJovem));
+                $('#lblDesejaObraAltar').text(formataRespostaCondicional(jovemRetorno.SituacaoJovemIURDFJU.DesejaFazerObraNoAltar));
+
+                
+
+                $('#lblPossuiCoordenacao').text(jovemRetorno.PossuiCoordenacaoFJU);
+                $('#lblNomeCoordenacao').text(jovemRetorno.NomeCoordenacao);
+                $('#lblPeriodoCoordenacao').text(jovemRetorno.PeriodoCoordenacao);
+
+                $('#lblJaSofreuDepressao').text(formataRespostaCondicional(jovemRetorno.TestemunhoJovem.SofreuComDepressao));
+                $('#lblTempoSofreuDepressao').text(jovemRetorno.TestemunhoJovem.TempoSofreuDepressao);
+                $('#lblTempoLivreDepressao').text(jovemRetorno.TestemunhoJovem.TempoLivreDepressao);
+
+                $('#lblJaSofreuAutomutilacao').text(formataRespostaCondicional(jovemRetorno.TestemunhoJovem.SofreuAutomutilacao));
+                $('#lblTempoSofreuAutomutilacao').text(jovemRetorno.TestemunhoJovem.TempoSofreuAutomutilacao);
+                $('#lblTempoLivreAutomutilacao').text(jovemRetorno.TestemunhoJovem.TempoLivreAutomutilacao);
+
+                $('#lblJaTeveVicio').text(formataRespostaCondicional(jovemRetorno.TestemunhoJovem.SofreuVicio));
+                $('#lblNomeVicio').text(jovemRetorno.TestemunhoJovem.DescricaoVicio);
+                $('#lblTempoPermaneceuViciado').text(jovemRetorno.TestemunhoJovem.TempoVicio);
+                $('#lblTempoLivreVicios').text(jovemRetorno.TestemunhoJovem.TempoLivreVicios);
+
+                $('#lblJaTentouSuicidio').text(formataRespostaCondicional(jovemRetorno.TestemunhoJovem.TentouSuicidio));
+
+                $('#lblQuandoTentativaSuicidio').text(ToTitleCase(jovemRetorno.TestemunhoJovem.MesAnoTentativaSuicidio));
+                $('#lblDescricaoTentativaSuicidio').text(ToTitleCase(jovemRetorno.TestemunhoJovem.DescricaoTentativaSuicidio));
+
+                $('#lblTestemunho').text(jovemRetorno.TestemunhoJovem.TextoTestemunho);
+                $('#lblSugestao').text(jovemRetorno.TextoSugestao);
+
+
+                //tblHabilidades
+                $.each(jovemRetorno.HabilidadesJovemPossui, function () {
+                    var index = $("table tbody tr:last-child").index() + 1;
+                    console.log(this.NomeHabilidade + " - " + this.NomeProjeto);
+                    var row = '<tr>' +
+                        '<td>' + this.NomeHabilidade + '</td>' +
+                        '<td>' + this.NomeProjeto + '</td>' +
+                        '</tr>';
+                    $("#tblHabilidades").append(row);
+                });
+
+                //tblIdiomas
+                $.each(jovemRetorno.IdiomasQueOJovemFala, function () {
+                    var index = $("#tblIdiomas tbody tr:last-child").index();
+                    var row = '<tr>' +
+                        '<td>' + this.DescricaoIdioma + '</td>' +
+                        '<td>' + this.DescricaoNivel + '</td>' +
+                        '</tr>';
+                    $("#tblIdiomas").append(row);
+                });
+
+                //tblCursos
+                $.each(jovemRetorno.CursosRelacionados, function () {
+                    var index = $("#TodosCursosJaAdicionados tbody tr:last-child").index();
+                    var row = '<tr>' +
+                        '<td>' + ToTitleCase(this.NomeCurso) + '</td>' +
+                        '<td>' + this.NomeProjeto + '</td>' +
+                        '</tr>';
+                    $("#tblCursos").append(row);
+                });
+
+
+            });
+
+        }
+
+        function ConfigurarInformacoesPerfil() {
+            $.ajax({
+                type: "GET",
+                url: "api/Usuarios/X072470/",
+                contentType: "application/json",
+                error: function (request, status, error) {
+                    swal({
+                        title: "Instabilidade no Sistema",
+                        text: 'O sistema se comportou de forma inadequada!',
+                        type: "error"
+                    });
+                }
+            }).done(function (retorno) {
+                $("#nomeDoUsuario").html(retorno.NomeUsuario);
+                $('#nomeDoPerfilUsuario').html(retorno.NomePerfil);
+                $('#lblNomeEstado').html(retorno.NomeEstadoUsuarioLogado);
+                $('#lblEstadoAssociado').html(retorno.NomeEstadoUsuarioLogado);
+                $('#lblLogin').html(retorno.Login);
+
+                if (HOST_NAME_APP.indexOf('localhost') !== -1)
+                    $('#imgUsuarioPerfil').attr('src', urlFotoUser + retorno.PathImagemUsuario);
+                else
+                    $('#imgUsuarioPerfil').attr('src', urlFotoUserProducao + retorno.PathImagemUsuario);
+            });
+        }
+
+        function formataRespostaCondicional(respostaBooleana) {
+            if (respostaBooleana == 'S')
+                return 'Sim';
+            else
+                return 'Não';
+        }
+
+        function formataMesAno(mesAnoNaoFormatado) {
+            var mes = '';
+            var ano = '';
+
+            if (mesAnoNaoFormatado == '' || mesAnoNaoFormatado == null)
+                return '';
+
+            if (mesAnoNaoFormatado.length == 6) {
+                mes = mesAnoNaoFormatado.substring(0, 2);
+                ano = mesAnoNaoFormatado.substring(2, 6);
+            }
+
+            if (mesAnoNaoFormatado.length == 7 &&
+                mesAnoNaoFormatado.indexOf('/') !== -1 &&
+                !ehDataInvertida(mesAnoNaoFormatado)) {
+                return mesAnoNaoFormatado;
+            }
+            console.log(':: valor ano dentro funao formata data ' + ano);
+            console.log(':: valor ano dentro funao formata data ' + mes);
+            return mes + '/' + ano;
+        }
+
+
+
+        function ehDataInvertida(pMesAno) {
+            var regEx = new RegExp("[0-9]{4}/");
+            var ehInvertida = regEx.test(pMesAno);
+            return ehInvertida;
+        }
+
+        function formataPeriodicidade(pAnos, pMeses) {
+            var temAnos = undefined;
+            var temMeses = undefined;
+
+            if (pAnos != 0 &&
+                pAnos != undefined)
+                temAnos = true;
+
+            if (pMeses != 0 &&
+                pMeses != undefined)
+                temMeses = true;
+
+            if (temAnos && temMeses)
+                return pAnos + ' anos e ' + pMeses + ' meses';
+
+            if (temAnos && !temMeses)
+                return pAnos + ' anos';
+
+            if (!pAnos && temMeses)
+                return pMeses + ' meses';
+
+            return '';
+        }
+
+        function formataPeriodicidadeMesAno(pAnos, pMeses) {
+            var temAnos = undefined;
+            var temMeses = undefined;
+
+            if (pAnos != 0 &&
+                pAnos != undefined)
+                temAnos = true;
+
+            if (pMeses != 0 &&
+                pMeses != undefined)
+                temMeses = true;
+
+            if (temAnos && temMeses)
+                return pAnos + '/' + pMeses;
+
+            if (temAnos && !temMeses)
+                return '00/'; + pAnos;
+
+            if (!pAnos && temMeses)
+                return pMeses + '/0000';
+
+            return '';
+        }
+
+        function configuraLinkRetorno() {
+            var url_ = new URL(location.href);
+            var vOrgm = url_.searchParams.get("SPG");
+
+            console.log(vOrgm);
+
+            if (vOrgm == 'CG') {
+                $('#lnkLinkRetorno').prop('href', 'ConsultaGeral.html');
+                $('#lnkLinkRetorno').text('Consulta Geral');
+            }
+            else if (vOrgm == 'TJ') {
+                $('#lnkLinkRetorno').prop('href', 'TodosJovens.aspx');
+                $('#lnkLinkRetorno').text('Todos Jovens');
+            }
+            else if (vOrgm == 'CGP') {
+                $('#lnkLinkRetorno').prop('href', 'ConsultaGeralParametros.html');
+                $('#lnkLinkRetorno').text('Consulta Geral Por Parâmetro');
+            }
+            else if (vOrgm == 'GAJ') {
+                $('#lnkLinkRetorno').prop('href', 'GerenciaNacionalAltarJovem.html');
+                $('#lnkLinkRetorno').text('Gerência Altar Jovem');
+            }
+        }
+
+        function trataImagemFotoPerfil(urlFoto) {
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            var img = new Image();
+            img.onload = function () {
+
+                // set size proportional to image
+                canvas.height = 165;//canvas.width * (img.height / img.width);
+                //190 old value of with of canvas
+
+                // step 1 - resize to 50%
+                var oc = document.createElement('canvas'),
+                    octx = oc.getContext('2d');
+
+                oc.width = img.width * 0.5;
+                oc.height = img.height * 0.5;
+                octx.drawImage(img, 0, 0, oc.width, oc.height);
+
+                // step 2
+                octx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5);
+
+                // step 3, resize to final size
+                ctx.drawImage(oc, 0, 0, oc.width * 0.5, oc.height * 0.5,
+                    0, 0, canvas.width, canvas.height);
+            }
+            img.src = urlFoto;
+        }
+
+        function configuraLinkVisualizacaoPDFFicha() {
+            $('#lnkLinkVisualizaPDF_Ficha').prop('target', '_blank');
+            $('#lnkLinkVisualizaPDF_Ficha').prop('href', __HOST_CONFIGURADO + '/VisualizaFichaJovemImpressao.aspx?idJovem=' + __x);
+        }
+
+
+    </script>
+</body>
+</html>

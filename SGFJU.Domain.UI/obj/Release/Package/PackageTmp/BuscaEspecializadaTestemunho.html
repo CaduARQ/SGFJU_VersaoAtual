@@ -1,0 +1,657 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet"
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <style type="text/css">
+
+        .nav-tabs {
+            background-color: #fff;
+            border-bottom: 1px solid #3071a9;
+        }
+
+        .nav-pills {
+            border-bottom: 1px solid #3071a9;
+        }
+
+        a.nav-link {
+            color: white;
+        }
+
+        .tab-content {
+            color: #3071a9;
+            border-bottom: 1px solid #3071a9;
+            border-left: 1px solid #3071a9;
+            border-right: 1px solid #3071a9;
+            border-bottom-width: 1px solid #3071a9;
+        }
+
+        .nav-item {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-decoration-color: black;
+        }
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: #1C84C6;
+            border-color: #dee2e6 #dee2e6 #fff;
+            font-family: Helvetica;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: #fff;
+            background-color: #1C84C6;
+            font-family: Helvetica;
+        }
+
+        td.details-control {
+            background: url('img/details_open.png') no-repeat center center;
+            cursor: pointer;
+        }
+
+        tr.shown td.details-control {
+            background: url('img/details_close.png') no-repeat center center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+                    
+                    
+                
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquise por palavra-chave..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+
+                        <li>
+                            <a onclick="ExecutarActionX072433()">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!--Box abaixo doa parâmetros-->
+
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox" id="iBoxParametrosPesquisa">
+                            <div class="ibox-title">
+                                <h2 class="text-success font-bold">
+                                    Busca especializada de testemunhos
+                                    <span class="fa fa-search" aria-hidden="true"></span> <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                </h2>
+                            </div>
+                            <div class="ibox-content">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li><a class="nav-link active" data-toggle="tab" href="#tabGeral">Parâmetros de pesquisa</a></li>
+                                    <li><a class="nav-link" data-toggle="tab" href="#tabKeywords">Chaves de pesquisa</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" id="tabGeral" class="tab-pane active">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-md-3">
+
+                                                    <p class="font-bold">
+                                                        Estado
+                                                    </p>
+                                                    <select id="cboEstado" class="select2_demo_9 form-control">
+                                                        <option value="0">Todos</option>
+                                                        <option value="28">São Paulo</option>
+                                                        <option value="29">Acre</option>
+                                                        <option value="30">Alagoas</option>
+                                                        <option value="31">Amapá</option>
+                                                        <option value="32">Amazonas</option>
+                                                        <option value="33">Bahia</option>
+                                                        <option value="34">Ceará</option>
+                                                        <option value="35">Distrito Federal</option>
+                                                        <option value="36">Espírito Santo</option>
+                                                        <option value="37">Goiás</option>
+                                                        <option value="38">Maranhão</option>
+                                                        <option value="39">Mato Grosso</option>
+                                                        <option value="40">Mato Grosso Dos Sul</option>
+                                                        <option value="41">Minas Gerais</option>
+                                                        <option value="42">Pará</option>
+                                                        <option value="43">Paraíba</option>
+                                                        <option value="44">Paraná</option>
+                                                        <option value="45">Pernambuco</option>
+                                                        <option value="46">Piauí</option>
+                                                        <option value="47">Rio de Janeiro</option>
+                                                        <option value="48">Rio Grande do Norte</option>
+                                                        <option value="49">Rio Grande do Sul</option>
+                                                        <option value="50">Rondônia</option>
+                                                        <option value="51">Roraima</option>
+                                                        <option value="52">Santa Catarina</option>
+                                                        <option value="53">Sergipe</option>
+                                                        <option value="54">Tocantins</option>
+                                                        <option value="55">Campos</option>
+                                                        <option value="56">[BLOCO DE TESTE]</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3">
+
+                                                    <p class="font-bold">
+                                                        Bloco
+                                                    </p>
+                                                    <select id="cboBloco" class="select2_demo_4 form-control">
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p class="font-bold">
+                                                        Região
+                                                    </p>
+                                                    <select id="cboRegiao" class="select2_demo_5 form-control">
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" id="tabKeywords" class="tab-pane">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+
+                                                    <p class="font-bold">
+                                                        Palavras chave
+                                                    </p>
+                                                    <!--<input class="tagsinput form-control" type="text" value="depressão,automutilação" />-->
+                                                    <input id="hotKeysPesquisa" class="tagsinput form-control" type="text" value="" />
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="form_name">Sexo *</label>
+                                                        <select required id="cboSexo" name="cboSexo" class="select2_demo_3 form-control">
+                                                            <option></option>
+                                                            <option value="M">Masculino</option>
+                                                            <option value="F">Feminino</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+                        <!---->
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="panel panel-success">
+                                    <div class="panel-heading">
+                                        Ações
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <button id="btnPesquisa" onclick="realizaBuscaAvancadaDeTestemunho()" class="btn btn-outline-success " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar testemunhos</button>
+                                        <button id="btnRefresh" onclick="resetaPesquisa()" class="btn btn-outline-info " type="button"><i class="fa fa-recycle"></i>&nbsp;Resetar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-2">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        Retorno da consulta
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <h1 class="no-margins" id="lblQuantidadeResgistrosRetornados"></h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+
+                        <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+                        <div class="modal inmodal" id="modalTextoTestemunho" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                        <i class="fa fa-book modal-icon"></i>
+                                        <h4 class="modal-title">Testemunho</h4>
+                                        <h3 class="text-success font-bold" id="lblNomeJovemTestemunho"></h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form">
+
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">História de superação</label>
+                                                <textarea id="txtTextoTestemunhoSelecionado" required class="lg-textarea form-control" cols="8" rows="8"></textarea>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+
+                        <div class="row" id="rowResultado">
+                            <div class="col-lg-12">
+                                <div class="ibox" id="iBoxResultadoPesquisa">
+                                    <div class="ibox-title">
+                                        <h5>Resultado da pesquisa</h5>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <div class="panel panel-success" id="pnlPesquisa">
+                                            <div class="panel-heading">
+                                                Dados Retornados
+                                            </div>
+                                            <div class="panel-body" align="center">
+                                                <!-- DataTable-->
+                                                <div class="table-responsive">
+                                                    <table id="tblResultadoBuscaAvancadaTestemunho"
+                                                           class="table table-striped table-bordered table-hover dataTables-example">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>IdJovem</th>
+                                                                <th>IdX</th>
+                                                                <th>TextoTestemunho</th>
+                                                                <th>Estado</th>
+                                                                <th>Bloco</th>
+                                                                <th>Região</th>
+                                                                <th>Igreja</th>
+                                                                <th>Nome</th>
+                                                                <th>Foto</th>
+                                                                <th>Whatsapp</th>
+                                                                <th>Status</th>
+                                                                <th>Ações</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th>IdJovem</th>
+                                                                <th>IdX</th>
+                                                                <th>TextoTestemunho</th>
+                                                                <th>Estado</th>
+                                                                <th>Bloco</th>
+                                                                <th>Região</th>
+                                                                <th>Igreja</th>
+                                                                <th>Nome</th>
+                                                                <th>Foto</th>
+                                                                <th>Whatsapp</th>
+                                                                <th>Status</th>
+                                                                <th>Ações</th>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                                <!-- End DataTable -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!---->
+                    </div>
+
+                    <!-- -->
+
+                </div>
+
+                <!-- Mainly scripts -->
+                <script src="js/jquery-3.1.1.min.js"></script>
+                <script src="js/popper.min.js"></script>
+                <script src="js/bootstrap.js"></script>
+                <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+                <!-- Custom and plugin javascript -->
+                <script src="js/inspinia.js"></script>
+                <script src="js/plugins/pace/pace.min.js"></script>
+
+                <!-- Steps -->
+                <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+                <!-- Jquery Validate -->
+                <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+                <!-- Select2 -->
+                <script src="js/plugins/select2/select2.full.min.js"></script>
+
+                <!-- Input Mask-->
+                <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+                <!-- Data picker -->
+                <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+                <!-- iCheck -->
+                <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+                <script src="js/plugins/dataTables/datatables.min.js"></script>
+                <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+
+                <!-- Toastr script -->
+                <script src="js/plugins/toastr/toastr.min.js"></script>
+
+                <!-- Sweet alert -->
+                <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+                <script src="js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+                <script src="js/plugins/mark/jquery.mark.min.js"></script>
+                <script src="js/plugins/mark/mark.min.js"></script>
+
+                <!-- Tags Input -->
+                <script src="js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+                <script src="js/SGFJU.Domain.UI.Client.js"></script>
+                <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+                <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+                <script src="js/SGFJU.Domain.UI.Bind.Specialized.js"></script>
+
+                <script>
+                    var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+                    var __testemunhosRetornados = undefined;
+                    var __keywordsUsed = undefined;
+                    var __resultSetTodosJovens = null;
+                    var tblTodosJovens;
+
+                    $(document).ready(function () {
+
+                        $("#cboEstado").select2();
+                        $("#cboBloco").select2();
+                        $("#cboRegiao").select2();
+                        $("#cboIgreja").select2();
+
+                        facadeUser.ConfigurarPaginaX072470();
+
+                        ConfiguraPerfilUsuarioLogado();
+
+                        $('.tagsinput').tagsinput({
+                            tagClass: 'label label-primary'
+                        });
+
+                        $('#tblResultadoBuscaAvancadaTestemunho tbody').on('click', 'button', function () {
+                            var classeDoBotao = $(this).prop('class');
+                            var indiceDaLinha = tblTodosJovens.row($(this).parents('tr')).index();
+                            var idJovem = __resultSetTodosJovens[indiceDaLinha].IdJovem;
+                            var pIdX = __resultSetTodosJovens[indiceDaLinha].IdX;
+                            var nomeJovem = __resultSetTodosJovens[indiceDaLinha].Nome;
+                            var textoSelecionado = __resultSetTodosJovens[indiceDaLinha].TextoTestemunho;
+                            var numeroWhatsapp = __resultSetTodosJovens[indiceDaLinha].WhatsappSemFormatacao;
+                            dadoJovemSelecionado = __resultSetTodosJovens[indiceDaLinha];
+
+                            if (classeDoBotao == 'btn btn-primary btn-xs dt-edit')
+                                location.href = 'VisualizaJovemE.html?idJovem=' + idJovem + '&SPG=BAT'
+                            else if (classeDoBotao == 'btn btn-info btn-xs dt-edit')
+                                location.href = 'https://api.whatsapp.com/send?phone=+55' + numeroWhatsapp;
+                            else if (classeDoBotao == 'btn btn-success btn-xs dt-view') {
+
+                                $('#lblNomeJovemTestemunho').text(nomeJovem);
+
+                                $('#txtTextoTestemunhoSelecionado').val(textoSelecionado);
+
+                                $('#modalTextoTestemunho').modal('show');
+                            }
+
+                        });
+
+                    });
+
+
+
+                    function realizaBuscaAvancadaDeTestemunho() {
+                        $('#iBoxParametrosPesquisa').children('.ibox-content').toggleClass('sk-loading');//#spinner
+
+                        var vIdEstado = $('#cboEstado').val();
+                        var vIdBloco = $('#cboBloco').val();
+                        var vIdRegiao = $('#cboRegiao').val();
+                        var vIdIgreja = $('#cboIgreja').val();
+                        var hotKeysSearch = $('#hotKeysPesquisa').tagsinput('items');
+                        var vSofreuVicio = undefined;
+                        var vSofreuAutomutilacao = undefined;
+                        var vSofreuDepressao = undefined;
+                        var vSexo = $('#cboSexo').val();
+
+                        console.log('está checado será? ' + $('#chkDepressao').is(':checked'));
+
+                        if ($('#chkDepressao').is(':checked'))
+                            vSofreuDepressao = 'S';
+
+                        if ($('#chkAutomutilacao').is(':checked'))
+                            vSofreuAutomutilacao = 'S';
+
+                        if ($('#chkVicio').is(':checked'))
+                            vSofreuVicio = 'S';
+
+                        var items = $('#hotKeysPesquisa').tagsinput("items");
+                        var tags = '';
+                        for (i = 0; i < items.length; i++) {
+                            if (JSON.stringify(items[i]).indexOf('{') >= 0) {
+                                tags += items[i].TagValue;
+                                tags += ' ';
+                            } else {
+                                tags += items[i];
+                                tags += ' ';
+                            }
+                        }
+
+                        __keywordsUsed = tags;
+
+                        var parametroBuscaAvancadaTestemunho = {
+                            IdEstado: vIdEstado,
+                            IdBloco: vIdBloco,
+                            IdRegiao: vIdRegiao,
+                            IdIgreja: vIdIgreja,
+                            PalavrasChavePesquisa: hotKeysSearch.join(' '),
+                            PalavrasChaveConcatenadasPesquisa: tags,
+                            SofreuVicio: vSofreuVicio,
+                            SofreuAutomutilacao: vSofreuAutomutilacao,
+                            SofreuDepressao: vSofreuDepressao,
+                            Sexo: vSexo
+                        };
+
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify(parametroBuscaAvancadaTestemunho),
+                            url: 'api/BuscaAvancadaTestemunho/BuscaAvancadaTestemunhoPorParametro',
+                            contentType: "application/json"
+                        }).done(function (resultSetBuscaAvancadaTestemunho) {
+
+                            __testemunhosRetornados = resultSetBuscaAvancadaTestemunho;
+                            __resultSetTodosJovens = resultSetBuscaAvancadaTestemunho;
+
+
+                            tblTodosJovens = $('#tblResultadoBuscaAvancadaTestemunho').DataTable({
+                                data: resultSetBuscaAvancadaTestemunho,
+                                pageLength: 50,
+                                destroy: true,
+                                dom: 'Bfrtip',
+                                buttons: [
+                                ],
+                                columns: [
+                                    { data: 'IdJovem' },
+                                    { data: 'IdX' },
+                                    { data: 'TextoTestemunho' },
+                                    { data: 'NomeEstado' },
+                                    { data: 'NomeBloco' },
+                                    { data: 'NomeRegiao' },
+                                    { data: 'NomeIgreja' },
+                                    { data: 'Nome' },
+                                    {
+                                        data: 'FotoEstaNoDiretorio',
+                                        render: function (data, type, row) {
+                                            console.log(row.NomeArquivoFoto);
+                                            if (data == "S") {
+                                                var urlImgEncoded = encodeURI(__HOST_CONFIGURADO + '/FotosJovens/' + row.NomeArquivoFoto);
+                                                return "<img src=" + urlImgEncoded + " class='rounded-circle img-sm'  />";
+                                            }
+                                            else {
+                                                return "<img src=" + __HOST_CONFIGURADO + '/img/jovemsemfoto.jpg' + " class='rounded-circle img-sm' />"
+                                            }
+                                        }
+                                    },
+                                    { data: 'Whatsapp' },
+                                    {
+                                        data: 'ClassificacaoJovem',
+                                        render: function (data, type, row) {
+                                            if (row.ClassificacaoJovem == 'I')
+                                                return "<span class='label'>Inativo</span>"
+                                            else if (row.ClassificacaoJovem == 'F')
+                                                return "<span class='label'>Afastado</span>"
+                                            else if (row.ClassificacaoJovem == 'A')
+                                                return "<span class='label label-info'>Ativo</span>"
+                                            else if (row.ClassificacaoJovem == 'N')
+                                                return "<span class='label label-success'>Iniciante</span>"
+                                            else if (row.ClassificacaoJovem == 'L')
+                                                return "<span class='label label-warning'>Altar</span>"
+                                            else if (row.ClassificacaoJovem == 'O' || row.ClassificacaoJovem == '' || row.ClassificacaoJovem == undefined)
+                                                return "<span class='label label-danger'>Não Definido</span>"
+                                        }
+                                    },
+                                    {
+                                        data: null,
+                                        defaultContent: '<div class="btn-group"> | <button type="button" alt="Visualizar" class="btn btn-success btn-xs dt-view" style="margin-right:16px;"><span class="glyphicon glyphicon-search " aria-hidden="true"></span><span class="fa fa-id-badge " aria-hidden="true"></span></button> | <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button> | <button type="button" class="btn btn-info btn-xs dt-edit"><i class="fa fa-whatsapp" aria-hidden="true"></i></button> | </div>'
+                                    }
+                                ],
+                                columnDefs: [
+                                    {
+                                        targets: [0, 1, 2],
+                                        visible: false,
+                                        searchable: false
+                                    }
+                                ]
+                            });
+
+                            $('#lblQuantidadeResgistrosRetornados').html(tblTodosJovens.data().count());
+
+                            $('#iBoxParametrosPesquisa').children('.ibox-content').toggleClass('sk-loading');//#spinner
+                        });
+                    }
+
+                    function resetaPesquisa() {
+                        $('#cboBloco').val($('#cboBloco option:first-child').val()).trigger('change');
+                        $('#cboRegiao').empty().trigger("change");
+                        $('#cboIgreja').empty().trigger("change");
+                        $('#cboSexo').val($('#cboSexo option:first-child').val()).trigger('change');
+                        $('#lblQuantidadeResgistrosRetornados').html('');
+                        $('#hotKeysPesquisa').tagsinput('removeAll');
+
+                        var objTable = $('#tblResultadoBuscaAvancadaTestemunho').DataTable();
+                        objTable.clear().draw();
+                        swal({
+                            title: "Mensagem de notificação",
+                            text: 'Pesquisa resetada com sucesso!',
+                            type: "success"
+                        });
+                    }
+
+                    function obterTestemunhoSelecionado(pIdX) {
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify({ IdX: pIdX }),
+                            url: 'api/BuscaAvancadaTestemunho/ObterTxtoTestemunhoSessao',
+                            contentType: "application/json"
+                        }).done(function (resultSetTestemunhoSelecionado) {
+
+                            $('#txtTestemunho').text(resultSetTestemunhoSelecionado.TextoTestemunho);
+
+                        });
+                    }
+                </script>
+
+</body>
+</html>

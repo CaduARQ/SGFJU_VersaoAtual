@@ -23,13 +23,13 @@ namespace SGFJU.Bussiness.Facade
             {
                 return this.__diContainer.GetServiceImplementationToType<EstadoRepository>().obterBlocosDoEstado(estadoParametro);
             }
-            catch (DomainException exceptionFacade)
-            {
-                throw new FacadeException(exceptionFacade.MensagemExcecaoDetalhada, exceptionFacade);
+            catch (DomainException exceptionFacade) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(exceptionFacade);
+                throw new FacadeException(mensagemErroExcecao, exceptionFacade);
             }
-            catch (Exception excGeneral)
-            {
-                throw new FacadeException(excGeneral.Message, excGeneral);
+            catch (Exception excGeneral) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excGeneral);
+                throw new FacadeException(mensagemErroExcecao, excGeneral);
             }
         }
         public IList<RegiaoDTO> ObterRegioesPorEstado(Estado estadoParametro) {
@@ -37,13 +37,13 @@ namespace SGFJU.Bussiness.Facade
             {
                 return this.__diContainer.GetServiceImplementationToType<EstadoRepository>().ObterRegioesPorEstado(estadoParametro);
             }
-            catch (DomainException exceptionFacade)
-            {
-                throw new FacadeException(exceptionFacade.MensagemExcecaoDetalhada, exceptionFacade);
+            catch (DomainException exceptionFacade) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(exceptionFacade);
+                throw new FacadeException(mensagemErroExcecao, exceptionFacade);
             }
-            catch (Exception excGeneral)
-            {
-                throw new FacadeException(excGeneral.Message, excGeneral);
+            catch (Exception excGeneral) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excGeneral);
+                throw new FacadeException(mensagemErroExcecao, excGeneral);
             }
         }
         public IList<Igreja> obterIgrejasDaRegiao(Regiao regiaoParametro)
@@ -52,13 +52,13 @@ namespace SGFJU.Bussiness.Facade
             {
                 return this.__diContainer.GetServiceImplementationToType<EstadoRepository>().obterIgrejasDaRegiao(regiaoParametro);
             }
-            catch (DomainException exceptionFacade)
-            {
-                throw new FacadeException(exceptionFacade.MensagemExcecaoDetalhada, exceptionFacade);
+            catch (DomainException exceptionFacade) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(exceptionFacade);
+                throw new FacadeException(mensagemErroExcecao, exceptionFacade);
             }
-            catch (Exception excGeneral)
-            {
-                throw new FacadeException(excGeneral.Message, excGeneral);
+            catch (Exception excGeneral) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excGeneral);
+                throw new FacadeException(mensagemErroExcecao, excGeneral);
             }
         }
         public IList<Regiao> obterRegioesDoBloco(Bloco blocoParametro)
@@ -67,13 +67,13 @@ namespace SGFJU.Bussiness.Facade
             {
                 return this.__diContainer.GetServiceImplementationToType<EstadoRepository>().obterRegioesDoBloco(blocoParametro);
             }
-            catch (DomainException exceptionFacade)
-            {
-                throw new FacadeException(exceptionFacade.MensagemExcecaoDetalhada, exceptionFacade);
+            catch (DomainException exceptionFacade) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(exceptionFacade);
+                throw new FacadeException(mensagemErroExcecao, exceptionFacade);
             }
-            catch (Exception excGeneral)
-            {
-                throw new FacadeException(excGeneral.Message, excGeneral);
+            catch (Exception excGeneral) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excGeneral);
+                throw new FacadeException(mensagemErroExcecao, excGeneral);
             }
         }
         public IList<Regiao> obterTodasRegioesDoEstado(Estado estadoParametro) {

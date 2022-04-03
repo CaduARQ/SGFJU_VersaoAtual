@@ -2141,6 +2141,7 @@
                                                     <option value="Jovem Feminina">Jovem Feminina</option>
                                                     <option value="Atalaia">Atalaia</option>
                                                     <option value="Help">Help</option>
+                                                    <option value="Esporte">Esporte</option>
                                                     <option value="Universitários">Universitários</option>
                                                     <option value="Mídia">Mídia</option>
                                                     <option value="Secretárias">Secretárias</option>

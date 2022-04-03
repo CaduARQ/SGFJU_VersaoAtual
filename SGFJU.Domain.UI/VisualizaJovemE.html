@@ -261,7 +261,12 @@
                         </li>
                         <li class="breadcrumb-item active">
                             <a href="#" id="lnkLinkVisualizaPDF_Ficha" class="text-danger font-bold">
-                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Visualizar Ficha em PDF
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Ficha completa
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="#" id="lnkLinkVisualizaPDF_FichaAJ" class="text-danger font-bold">
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Ficha Altar Jovem
                             </a>
                         </li>
                         <li class="breadcrumb-item active">
@@ -1141,7 +1146,11 @@
 				$('#lnkLinkAlteracao').prop('href', 'AlteraJovem.aspx?idJovem=' + vIdJovem);
 				
 				$('#lnkLinkVisualizaPDF_Ficha').prop('href', 'VisualizaFichaJovemImpressao.aspx?idJovem=' + vIdJovem);
-				$('#lnkLinkVisualizaPDF_Ficha').prop('target', '_blank');
+                $('#lnkLinkVisualizaPDF_Ficha').prop('target', '_blank');
+
+                $('#lnkLinkVisualizaPDF_FichaAJ').prop('href', 'RelatorioAltarJovem.html?idJovem=' + vIdJovem);
+                $('#lnkLinkVisualizaPDF_FichaAJ').prop('target', '_blank');
+                
 				//configuraLinkVisualizacaoPDFFicha(vIdJovem);                
                 verificaExpiracaoFicha(jovemRetorno.FichaEstaExpirada);
 

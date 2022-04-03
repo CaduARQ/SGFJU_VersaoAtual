@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+
+    <!--<script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>-->
+
+
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+    <script src="js/SGFJU.Domain.UI.Client.js"></script>
+    <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+    <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+
+    <style>
+        .auto-style2 {
+            width: 515px;
+        }
+
+        .auto-style3 {
+            width: 534px;
+        }
+
+        .auto-style4 {
+            width: 158px;
+        }
+
+        .auto-style5 {
+            width: 71%;
+        }
+
+        .auto-style6 {
+            width: 356px;
+        }
+
+        .auto-style7 {
+            width: 351px;
+        }
+
+        .auto-style8 {
+            width: 234px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: Helvetica
+        }
+
+        thHeader {
+            border: none
+        }
+
+        .auto-style10 {
+            width: 78px;
+        }
+
+        .auto-style11 {
+            width: 205px;
+        }
+
+        .auto-style12 {
+            width: 1309px;
+        }
+
+        .auto-style13 {
+            width: 103px;
+        }
+
+        .auto-style14 {
+            width: 108px;
+        }
+
+        .auto-style15 {
+            width: 110px;
+        }
+
+        .auto-style16 {
+            height: 27px;
+        }
+
+        .auto-style17 {
+            height: 23px;
+        }
+
+        .auto-style19 {
+            width: 455px;
+        }
+
+        .auto-style20 {
+            width: 533px;
+        }
+
+        .auto-style21 {
+            width: 323px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var __TEMPLATE_HEADER_OBREIRO_ACOMPANHAMENTO = '<h2 class="text-success font-bold">Jovens Acompanhados pelo obreiro <span class="label text-info">#NOME_OBREIRO#</span></h2> <br /><br /><br />';
+        var __TEMPLATE_TABLE_FICHA_ACOMPANHAMENTO =
+            '<table class="auto-style5"> ' +
+            '    <tr style="background-color: #428bca; color: white; font-family: Helvetica; font-weight: bold"> ' +
+            '        <td colspan="5" class="auto-style17">&nbsp;<img alt="" src="img/FJU(LOGO) CINZA (1).png" width="80px" class="auto-style16" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Árvore da vida FJU - SGFJU&nbsp; ' +
+            '        <br /> ' +
+            '        </td> ' +
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td class="auto-style12" style="background-color: darkslateblue; color: white">Nome</td> ' +
+            '        <td class="auto-style3"> ' +
+            '            <input id="Text20" value="#NOME#" class="auto-style2" type="text" /></td> ' +
+            //'            <span id="Text20" class="auto-style2">#NOME#</span></td> ' +
+            '        <td class="auto-style4" style="background-color: #dcdcdc">Data de Nascimento</td> ' +
+            '        <td colspan="2"> ' +
+            '            <input id="Text21" type="text" value="#DATANASCIMENTO#" class="auto-style8" /> </td> ' +
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td class="auto-style12" style="background-color: #dcdcdc">Estado</td> ' +
+            '        <td class="auto-style3"> ' +
+            '            <input id="Text22" value="#ESTADO#" class="auto-style6" type="text" /></td> ' +
+            '        <td class="auto-style4" style="background-color: #dcdcdc">Bloco</td> ' +
+            '        <td> ' +
+            '            <input id="Text23" value="#BLOCO#" type="text" /></td> ' +
+            '        <td rowspan="5"> ' +
+            '            <img alt="" src="#FOTO_JOVEM#" height="125px" width="110px" style="border: 1px solid #000000" /></td> ' +
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td class="auto-style12" style="background-color: #dcdcdc">Região</td> ' +
+            '        <td class="auto-style3"> ' +
+            '            <input id="Text24" value="#REGIAO#" class="auto-style7" type="text" /></td> ' +
+            '        <td class="auto-style4" style="background-color: #dcdcdc">Igreja</td> ' +
+            '        <td> ' +
+            '            <input id="Text25" value="#IGREJA#" type="text" /></td> ' +
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td class="auto-style12" style="background-color: #dcdcdc">Whatsapp</td> ' +
+            '        <td class="auto-style3"> ' +
+            '            <input id="Text26" value="#WHATSAPP#" type="text" /></td> ' +
+            '        <td class="auto-style4" style="background-color: #dcdcdc">Estado Civil</td> ' +
+            '        <td> ' +
+            '            <input id="Text27" value="#ECIVIL#" type="text" /></td> ' +
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td class="auto-style12" style="background-color: #dcdcdc">Endereço</td> ' +
+            '        <td colspan="3"> ' +
+            '            <input id="Text28" value="#ENDERECO#" class="auto-style2" type="text" /></td> ' +
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td style="background-color: #dcdcdc" colspan="4">Quando entrou na FJU? |&nbsp; ' +
+            '        <input id="Text29" value="#DATAINGRESSOUFJU#" type="text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Projeto&nbsp; ' +
+            '        <input id="Text30" value="#PROJETOJOVEM#" type="text" /></td> ' +
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td style="background-color: #dcdcdc" colspan="5">Como conheceu a FJU&nbsp;&nbsp; |&nbsp; ' +
+            '        <input id="Text31" value="#DESCCONHECEUFJU#" class="auto-style21" type="text" /></td> ' +
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td style="background-color: #dcdcdc; text-align:center" colspan="5">Informações relacionadas ao batismo</td> ' +
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td colspan="5"> ' +
+            '            Batizado nas águas:&nbsp; ' +
+            '        <input value="Sim" title="Sim" id="Checkbox7" #Eh_btzA_s# type="checkbox" /> Sim ' +
+            '        <input value="Não" title="Não" id="Checkbox8" #Eh_btzA_n# type="checkbox" /> ' +
+            '            Não&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; Data: ' +
+            '        <input id="Text32" value="#DATABTZAGUAS#" type="text" class="auto-style13" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; Foi na IURD: ' +
+            '        <input value="Sim" title="Sim" id="Checkbox9" #f_na_IURD_s# type="checkbox" /> Sim ' +
+            '        <input value="Não" title="Não" id="Checkbox10" #f_na_IURD_n# type="checkbox" /> ' +
+            '            Não ' +
+            '    </td> ' + //#Eh_btzA_s#|#Eh_btzA_n#|||#f_na_IURD_s#|#f_na_IURD_n#||#Eh_btzES_s#|#Eh_btzES_n#
+            '    </tr> ' +
+            '    <tr> ' +
+            '        <td colspan="5"> ' +
+            '            Batizado com o Espírito Santo:&nbsp; ' +
+            '        <input value="Sim" title="Sim" id="Checkbox11" #Eh_btzES_s# type="checkbox" /> Sim ' +
+            '        <input value="Não" title="Não" id="Checkbox12" #Eh_btzES_n# type="checkbox" /> Não&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Data: ' +
+            '        <input id="Text33" value="#dtaBatismoEspiritoSanto#" type="text" class="auto-style13" /> ' +
+            '        </td> ' +
+            '    </tr> ' +
+            '</table>  ' +
+            '<br /><br /><br /><br />';
+
+        $(document).ready(function () {
+            /*
+            for (var i = 0; i < 5; i++) {
+                var idform = 'frmJovemEmAcompanhamento' + i;
+                console.log(idform);
+                $(document.body).append(
+                    __TEMPLATE_FORM_ACOMPANHAMENTO.replace('ID_FORM_ID_JOVEM', idform)
+                        .replace('#NOME#', 'vitória' + i)
+                        .replace('#DATANASCIMENTO#', '')
+                        .replace('#ESTADO#', '')
+                        .replace('#BLOCO#', '')
+                        .replace('#REGIAO#', '')
+                        .replace('#IGREJA#', '')
+                        .replace('#WHATSAPP#', '')
+                        .replace('#ECIVIL#', '')
+                        .replace('#ENDERECO#', '')
+                        .replace('#DATAINGRESSOUFJU#', '')
+                        .replace('#PROJETOJOVEM#', '')
+                        .replace('#DESCCONHECEUFJU#', '')
+                        .replace('#EHBTZAGUAS#', '')
+                        .replace('#DATABTZAGUAS#', '')
+                        .replace('#FOIIURD#', '')
+                        .replace('#EhBatizadoEspiritoSanto#', '')
+                        .replace('#dtaBatismoEspiritoSanto#', '')
+
+                );
+            }*/
+
+            carregaJovensJaAcompanhadosObreiro();
+        });
+
+        function carregaJovensJaAcompanhadosObreiro() {
+            var url_ = new URL(location.href);
+            var vIdObreiro = url_.searchParams.get("xbro");
+            var vNomeObreiro = url_.searchParams.get("nomeObreiro");
+
+            console.log(vIdObreiro);
+            var obreiroDTO = {
+                IdObreiroX: vIdObreiro
+            };
+
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(obreiroDTO),
+                url: 'api/ArvoreVida/ListaJovensAcompanhadosPorObreiroSafe',
+                contentType: "application/json"
+            }).done(function (resultSetJovensJaAcompanhadosObreiro) {
+                var idform = 'frmJovemEmAcompanhamento';
+
+                if (resultSetJovensJaAcompanhadosObreiro.length == 0) {
+                    swal({
+                            title: "Notificação",
+                            text: 'Ainda não existem jovens sendo acompanhados por este obreiro!',
+                            type: "warning"
+                    }, function () {
+                            window.close();
+                    });
+                    //alert('ainda não existem jovens sendo acompanhados por este obreiro!');
+                }
+                else {
+                    $(document.body).append(__TEMPLATE_HEADER_OBREIRO_ACOMPANHAMENTO.replace('#NOME_OBREIRO#', vNomeObreiro));
+                    $(document.body).append('<br />');
+                    for (var i = 0; i < resultSetJovensJaAcompanhadosObreiro.length; i++) {
+                        idform += i;
+
+                        var vEhBtzAguas_s = '';
+                        var vEhBtzAguas_n = '';
+                        var vEhBtzES_s = '';
+                        var vEhBtzES_n = '';
+                        var vF_IURD_s = '';
+                        var vF_IURD_n = '';
+
+                        if (resultSetJovensJaAcompanhadosObreiro[i].EhBatizadoAguas == 'S') {
+                            vEhBtzAguas_s = 'checked';
+                            vEhBtzAguas_n = '';
+                        }
+                        else {
+                            vEhBtzAguas_s = '';
+                            vEhBtzAguas_n = 'checked';
+                        }
+
+                        if (resultSetJovensJaAcompanhadosObreiro[i].EhBatizadoEspiritoSanto == 'S') {
+                            vEhBtzES_s = 'checked';
+                            vEhBtzES_n = '';
+                        }
+                        else {
+                            vEhBtzES_s = '';
+                            vEhBtzES_n = 'checked';
+                        }
+
+                        if (resultSetJovensJaAcompanhadosObreiro[i].FoiNaIurd == 'S') {
+                            vF_IURD_s = 'checked';
+                            vF_IURD_n = '';
+                        }
+                        else {
+                            vF_IURD_s = '';
+                            vF_IURD_n = 'checked';
+                        }
+
+                        $(document.body).append(
+                            __TEMPLATE_TABLE_FICHA_ACOMPANHAMENTO
+                                .replace('#NOME#', resultSetJovensJaAcompanhadosObreiro[i].NomeJovem)
+                                .replace('#DATANASCIMENTO#', resultSetJovensJaAcompanhadosObreiro[i].DataNascimento)
+                                .replace('#FOTO_JOVEM#', __HOST_CONFIGURADO + 'FotosJovens/' + resultSetJovensJaAcompanhadosObreiro[i].NomeArquivoFoto)
+                                .replace('#ESTADO#', resultSetJovensJaAcompanhadosObreiro[i].NomeEstado)
+                                .replace('#BLOCO#', resultSetJovensJaAcompanhadosObreiro[i].NomeBlocoJovem)
+                                .replace('#REGIAO#', resultSetJovensJaAcompanhadosObreiro[i].NomeRegiaoJovem)
+                                .replace('#IGREJA#', resultSetJovensJaAcompanhadosObreiro[i].NomeIgrejaJovem)
+                                .replace('#WHATSAPP#', resultSetJovensJaAcompanhadosObreiro[i].Whatsapp)
+                                .replace('#ECIVIL#', resultSetJovensJaAcompanhadosObreiro[i].EstadoCivil)
+                                .replace('#ENDERECO#', resultSetJovensJaAcompanhadosObreiro[i].Endereco)
+                                .replace('#DATAINGRESSOUFJU#', resultSetJovensJaAcompanhadosObreiro[i].DataIngressouFJU)
+                                .replace('#PROJETOJOVEM#', resultSetJovensJaAcompanhadosObreiro[i].ProjetoJovemPertence)
+                                .replace('#DESCCONHECEUFJU#', resultSetJovensJaAcompanhadosObreiro[i].ComoConheceuFJU)
+                                .replace('#DATABTZAGUAS#', resultSetJovensJaAcompanhadosObreiro[i].DataBatismoAguas)   
+                                .replace('#Eh_btzA_s#', vEhBtzAguas_s)
+                                .replace('#Eh_btzA_n#', vEhBtzAguas_n)
+                                .replace('#Eh_btzES_s#', vEhBtzES_s)
+                                .replace('#Eh_btzES_n#', vEhBtzES_n)
+                                .replace('#f_na_IURD_s#', vF_IURD_s)
+                                .replace('#f_na_IURD_n#', vF_IURD_n)
+                                .replace('#dtaBatismoEspiritoSanto#', resultSetJovensJaAcompanhadosObreiro[i].DataBatismoEspiritoSanto)
+                        );
+                    }
+                }
+
+                
+            });
+        }
+
+    </script>
+</body>
+</html>

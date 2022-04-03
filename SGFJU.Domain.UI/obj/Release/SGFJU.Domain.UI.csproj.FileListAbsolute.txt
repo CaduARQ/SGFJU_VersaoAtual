@@ -204,6 +204,7 @@ C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\MySql.Data.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\Newtonsoft.Json.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NHibernate.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NLog.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NodaTime.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\Remotion.Linq.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\Remotion.Linq.EagerFetching.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\Renci.SshNet.dll
@@ -252,6 +253,8 @@ C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\K4os.Hash.xxHash.xml
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\MySql.Data.xml
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NHibernate.xml
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NLog.xml
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NodaTime.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NodaTime.xml
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\Remotion.Linq.xml
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\Remotion.Linq.EagerFetching.xml
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\Renci.SshNet.xml
@@ -280,6 +283,3 @@ C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\obj\Release\SGFJU.Domain.U
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\obj\Release\SGFJU.Domain.UI.csproj.CopyComplete
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\obj\Release\SGFJU.Domain.UI.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\obj\Release\SGFJU.Domain.UI.pdb
-C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NodaTime.dll
-C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NodaTime.pdb
-C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\bin\NodaTime.xml

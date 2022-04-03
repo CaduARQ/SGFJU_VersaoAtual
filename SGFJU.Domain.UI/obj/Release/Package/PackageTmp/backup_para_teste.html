@@ -1,0 +1,2554 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet"
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active"><a href="DashboardNacional.html">Nacional</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="TodosJovensNacional.html">Jovens</a></li>
+                            <li><a href="ConsultaGeral.html">Geral</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquise por palavra-chave..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="float-right">46h ago</small>
+                                            <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                            <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="float-right text-navy">5h ago</small>
+                                            <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                            <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="float-right">23h ago</small>
+                                            <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                            <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html" class="dropdown-item">
+                                            <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                            <span class="float-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="profile.html" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                            <span class="float-right text-muted small">12 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="grid_options.html" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                            <span class="float-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html" class="dropdown-item">
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!--Box abaixo doa parâmetros-->
+
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox" id="iBoxParametrosPesquisa">
+                            <div class="ibox-title">
+                                <h5>Parâmetros de pesquisa</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li><a class="nav-link active" data-toggle="tab" href="#tab-1"> Estado/Bloco/Região/Igreja</a></li>
+                                    <li><a class="nav-link" data-toggle="tab" href="#tab-2">Dados Espirituais</a></li>
+                                    <li><a class="nav-link" data-toggle="tab" href="#tab-3">Parâmetros FJU</a></li>
+                                    <li><a class="nav-link" data-toggle="tab" href="#tab-4">Projeto</a></li>
+                                    <li><a class="nav-link" data-toggle="tab" href="#tab-5">Outros</a></li>
+                                    <li><a class="nav-link" data-toggle="tab" href="#tab-6">Testemunho</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" id="tab-1" class="tab-pane active">
+                                        <div class="panel-body ">
+
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="panel panel-warning">
+                                                        <div class="panel-heading">
+                                                            Estado
+                                                        </div>
+                                                        <div class="panel-body" align="center">
+                                                            <select id="cboEstado" class="select2_demo_9 form-control">
+                                                                <option value="0">Todos</option>
+                                                                <option value="28">São Paulo</option>
+                                                                <option value="29">Acre</option>
+                                                                <option value="30">Alagoas</option>
+                                                                <option value="31">Amapá</option>
+                                                                <option value="32">Amazonas</option>
+                                                                <option value="33">Bahia</option>
+                                                                <option value="34">Ceará</option>
+                                                                <option value="35">Distrito Federal</option>
+                                                                <option value="36">Espírito Santo</option>
+                                                                <option value="37">Goiás</option>
+                                                                <option value="38">Maranhão</option>
+                                                                <option value="39">Mato Grosso</option>
+                                                                <option value="40">Mato Grosso Dos Sul</option>
+                                                                <option value="41">Minas Gerais</option>
+                                                                <option value="42">Pará</option>
+                                                                <option value="43">Paraíba</option>
+                                                                <option value="44">Paraná</option>
+                                                                <option value="45">Pernambuco</option>
+                                                                <option value="46">Piauí</option>
+                                                                <option value="47">Rio de Janeiro</option>
+                                                                <option value="48">Rio Grande do Norte</option>
+                                                                <option value="49">Rio Grande do Sul</option>
+                                                                <option value="50">Rondônia</option>
+                                                                <option value="51">Roraima</option>
+                                                                <option value="52">Santa Catarina</option>
+                                                                <option value="53">Sergipe</option>
+                                                                <option value="54">Tocantins</option>
+                                                                <option value="55">Campos</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="panel panel-success">
+                                                        <div class="panel-heading">
+                                                            Bloco
+                                                        </div>
+                                                        <div class="panel-body" align="center">
+                                                            <select id="cboBloco" class="select2_demo_4 form-control">
+                                                                <option></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="panel panel-danger">
+                                                        <div class="panel-heading">
+                                                            Região
+                                                        </div>
+                                                        <div class="panel-body" align="center">
+                                                            <select id="cboRegiao" class="select2_demo_5 form-control">
+                                                                <option></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="panel panel-info">
+                                                        <div class="panel-heading">
+                                                            Igreja
+                                                        </div>
+                                                        <div class="panel-body" align="center">
+                                                            <select required id="cboIgreja" name="cboIgreja" class="form-control">
+                                                                <option></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_bairro">Mora com quem?</label>-->
+                                                        <h4>Mora com quem?</h4>
+                                                        <select id="cboTipoMoradia" name="cboTipoMoradia" class="select2_demo_3 form-control">
+                                                            <option></option>
+                                                            <option value="2">Sozinho</option>
+                                                            <option value="3">Família</option>
+                                                            <option value="4">Amigo</option>
+                                                            <option value="5">Hostel/Albergue</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Estado civil</label>-->
+                                                        <h4>Estado civil</h4>
+                                                        <select required id="cboTipoEstadoCivil" name="cboTipoEstadoCivil" class="select2_demo_3 form-control">
+                                                            <option></option>
+                                                            <option value="6">Casado(a)</option>
+                                                            <option value="7">Solteiro(a)</option>
+                                                            <option value="8">Divorciado(a)</option>
+                                                            <option value="9">Viúvo(a)</option>
+                                                            <option value="10">Morando Junto</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Cônjuge é da Universal ?</label>-->
+                                                        <h4>Cônjuge é da Universal ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbConjugeEhIURD_S" value="S" name="rbConjugeEhIURD">
+                                                                    <label for="rbConjugeEhIURD_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbConjugeEhIURD_N" value="N" name="rbConjugeEhIURD">
+                                                                    <label for="rbConjugeEhIURD_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Trabalha ? </label>-->
+                                                        <h4>Trabalha ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTrabalha_S" value="S" name="rbTrabalha">
+                                                                    <label for="rbTrabalha_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTrabalha_N" value="S" name="rbTrabalha">
+                                                                    <label for="rbTrabalha_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!--divisor-->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Estuda ? </label>-->
+                                                        <h4>Estuda ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbEstuda_S" value="s" name="rbEstuda">
+                                                                    <label for="rbEstuda_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbEstuda_N" value="n" name="rbEstuda">
+                                                                    <label for="rbEstuda_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_phone">Grau de Instrução</label>-->
+                                                        <h4>Grau de Instrução</h4>
+                                                        <select id="cboEscolaridade" name="cboEscolaridade" class="form-control">
+                                                            <option value=""></option>
+                                                            <option value="Analfabeto">Analfabeto</option>
+                                                            <option value="Fundamental Incompleto">Fundamental Incompleto</option>
+                                                            <option value="Fundamental Cursando">Fundamental Cursando</option>
+                                                            <option value="Fundamental Completo">Fundamental Completo</option>
+                                                            <option value="Médio Incompleto">Médio Incompleto</option>
+                                                            <option value="Médio Cursando">Médio Cursando</option>
+                                                            <option value="Médio Completo">Médio Completo</option>
+                                                            <option value="Superior Incompleto">Superior Incompleto</option>
+                                                            <option value="Superior Cursando">Superior Cursando</option>
+                                                            <option value="Superior Completo">Superior Completo</option>
+                                                        </select>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Possui Titulo de Eleitor ? </label>-->
+                                                        <h4>Possui Titulo de Eleitor ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbPossuiTituloeleitor_S" value="S" name="rbPossuiTituloeleitor">
+                                                                    <label for="rbPossuiTituloeleitor_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbPossuiTituloeleitor_N" value="N" name="rbPossuiTituloeleitor">
+                                                                    <label for="rbPossuiTituloeleitor_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_phone">Profissão</label>-->
+                                                        <h4>Possui Titulo de Eleitor ?</h4>
+                                                        <input id="txtProfissao" type="text" name="txtProfissao" class="form-control">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--divisor-->
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" id="tab-2" class="tab-pane">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_email">Batizado nas águas ?</label>-->
+                                                        <h4>Batizado nas águas ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbBatizadoAguas_S" value="S" name="rbBatizadoAguas">
+                                                                    <label for="rbBatizadoAguas_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbBatizadoAguas_N" value="N" name="rbBatizadoAguas">
+                                                                    <label for="rbBatizadoAguas_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_email">Batizado com Espírito Santo ? </label>-->
+                                                        <h4>Batizado com Espírito Santo ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbBatizadoEspiritoSanto_S" value="S" name="rbBatizadoEspiritoSanto">
+                                                                    <label for="rbBatizadoEspiritoSanto_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbBatizadoEspiritoSanto_N" value="N" name="rbBatizadoEspiritoSanto">
+                                                                    <label for="rbBatizadoEspiritoSanto_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Esta no Altar Jovem ? </label>-->
+                                                        <h4>Esta no Altar Jovem ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbEstaNoAltarJovem_S" value="S" name="rbEstaNoAltarJovem">
+                                                                    <label for="rbEstaNoAltarJovem_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbEstaNoAltarJovem_N" value="N" name="rbEstaNoAltarJovem">
+                                                                    <label for="rbEstaNoAltarJovem_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Deseja fazer a obra no altar ? </label>-->
+                                                        <h4>Deseja fazer a obra no altar ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbDesejaFazerObraAltar_S" value="S" name="rbDesejaFazerObraAltar">
+                                                                    <label for="rbDesejaFazerObraAltar_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbDesejaFazerObraAltar_N" value="N" name="rbDesejaFazerObraAltar">
+                                                                    <label for="rbDesejaFazerObraAltar_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Obreiro ?</label>-->
+                                                        <h4>Obreiro ?</h4>
+                                                        <div class="checkbox checkbox-primary">
+                                                            <input id="chkEhObreiro" name="chkEhObreiro" type="checkbox" value="S">
+                                                            <label for="chkEhObreiro">
+                                                                Sim
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Colaborador ?</label>-->
+                                                        <h4>Colaborador ?</h4>
+                                                        <div class="checkbox checkbox-primary">
+                                                            <input id="chkEhColaborador" name="chkEhColaborador" type="checkbox" value="S">
+                                                            <label for="chkEhColaborador">
+                                                                Sim
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">CPO (Curso Preparatório de Obreiros) ?</label>-->
+                                                        <h4>CPO (Curso Preparatório de Obreiros) ?</h4>
+                                                        <div class="checkbox checkbox-primary">
+                                                            <input id="chkCursandoCPO" name="chkCursandoCPO" type="checkbox" value="S">
+                                                            <label for="chkCursandoCPO">
+                                                                Sim
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">É membro da Universal ?</label>-->
+                                                        <h4>É membro da Universal ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbEhMembroIURD_S" value="S" name="rbEhMembroIURD">
+                                                                    <label for="rbEhMembroIURD_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbEhMembroIURD_N" value="N" name="rbEhMembroIURD">
+                                                                    <label for="rbEhMembroIURD_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!---->
+                                            </div>
+                                            <!---->
+                                            <div class="row">
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Já se afastou alguma vez ?</label>-->
+                                                        <h4>Já se afastou alguma vez ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaSeAfastou_S" value="S" name="rbJaSeAfastou">
+                                                                    <label for="rbJaSeAfastou_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaSeAfastou_N" value="N" name="rbJaSeAfastou">
+                                                                    <label for="rbJaSeAfastou_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_phone">Tem familiares na Universal ?</label>-->
+                                                        <h4>Tem familiares na Universal ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTemFamiliaresIURD_S" value="S" name="rbTemFamiliaresIURD">
+                                                                    <label for="rbTemFamiliaresIURD_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTemFamiliaresIURD_N" value="N" name="rbTemFamiliaresIURD">
+                                                                    <label for="rbTemFamiliaresIURD_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Já foi obreiro antes ? </label>-->
+                                                        <h4>Já foi obreiro antes ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaFoiObreiroAntes_S" value="S" name="rbJaFoiObreiroAntes">
+                                                                    <label for="rbJaFoiObreiroAntes_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaFoiObreiroAntes_N" value="N" name="rbJaFoiObreiroAntes">
+                                                                    <label for="rbJaFoiObreiroAntes_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Já foi Pastor/Esposa antes ? </label>-->
+                                                        <h4>Já foi Pastor/Esposa antes ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaFoiPastoEsposaAntes_S" value="S" name="rbJaFoiPastorEsposaAntes">
+                                                                    <label for="rbJaFoiPastoEsposaAntes_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaFoiPastoEsposaAntes_N" value="N" name="rbJaFoiPastorEsposaAntes">
+                                                                    <label for="rbJaFoiPastoEsposaAntes_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Tem desejo de ser obreiro ? </label>-->
+                                                        <h4>Tem desejo de ser obreiro ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbDesejaSerObreiro_S" value="S" name="rbDesejaSerObreiro">
+                                                                    <label for="rbDesejaSerObreiro_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbDesejaSerObreiro_N" value="N" name="rbDesejaSerObreiro">
+                                                                    <label for="rbDesejaSerObreiro_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Você tem Bíblia ? </label>-->
+                                                        <h4>Você tem Bíblia ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTemBiblia_S" value="S" name="rbTemBiblia">
+                                                                    <label for="rbTemBiblia_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTemBiblia_N" value="N" name="rbTemBiblia">
+                                                                    <label for="rbTemBiblia_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Tem Bíblia no celular ? </label>-->
+                                                        <h4>Tem Bíblia no celular ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTemBibliaNoCelular_S" value="S" name="rbTemBibliaNoCelular">
+                                                                    <label for="rbTemBibliaNoCelular_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTemBibliaNoCelular_N" value="N" name="rbTemBibliaNoCelular">
+                                                                    <label for="rbTemBibliaNoCelular_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Já leu a Bíblia toda ? </label>-->
+                                                        <h4>Já leu a Bíblia toda ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaLeuBibliaToda_S" value="S" name="rbJaLeuBibliaToda">
+                                                                    <label for="rbJaLeuBibliaToda_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaLeuBibliaToda_N" value="N" name="rbJaLeuBibliaToda">
+                                                                    <label for="rbJaLeuBibliaToda_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <!---->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" id="tab-3" class="tab-pane">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Membro da Força Jovem Universal ?</label>-->
+                                                        <h4>Membro da Força Jovem Universal ?</h4>
+                                                        <div class="checkbox checkbox-primary">
+                                                            <input id="chkMembroFJU" name="chkMembroFJU" type="checkbox" value="s">
+                                                            <label for="chkMembroFJU">
+                                                                Sim
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Coordenador da Força Jovem ?</label>-->
+                                                        <h4>Coordenador da Força Jovem ?</h4>
+                                                        <div class="checkbox checkbox-primary">
+                                                            <input id="chkEhCoordenadorFJU" name="chkEhCoordenadorFJU" type="checkbox" value="s">
+                                                            <label for="chkEhCoordenadorFJU">
+                                                                Sim
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Líder de Tribo ?</label>-->
+                                                        <h4>Líder de Tribo ?</h4>
+                                                        <div class="checkbox checkbox-primary">
+                                                            <input id="chkLiderTribo" name="chkLiderTribo" type="checkbox" value="s">
+                                                            <label for="chkLiderTribo">
+                                                                Sim
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Líder de Projeto ?</label>-->
+                                                        <h4>Líder de Projeto ?</h4>
+                                                        <div class="checkbox checkbox-primary">
+                                                            <input id="chkLiderProjeto" name="chkLiderProjeto" type="checkbox" value="s">
+                                                            <label for="chkLiderProjeto">
+                                                                Sim
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                            <!---->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Faz parte do intellimen ? </label>-->
+                                                        <h4>Faz parte do intellimen ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbFazParteIntellimen_S" value="s" name="rbFazParteIntellimen">
+                                                                    <label for="rbFazParteIntellimen_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbFazParteIntellimen_N" value="n" name="rbFazParteIntellimen">
+                                                                    <label for="rbFazParteIntellimen_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Completou os desáfios ? </label>-->
+                                                        <h4>Completou os desáfios ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbCompletouDesafios_S" value="s" name="rbCompletouDesafios">
+                                                                    <label for="rbCompletouDesafios_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbCompletouDesafios_N" value="n" name="rbCompletouDesafios">
+                                                                    <label for="rbCompletouDesafios_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" id="tab-4" class="tab-pane">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Projeto</label>-->
+                                                        <h4>Projeto</h4>
+                                                        <br />
+                                                        <select id="cboProjetoFJU" name="cboProjetoFJU" class="select2_demo_3 form-control">
+                                                            <option></option>
+                                                            <option value="10">Help</option>
+                                                            <option value="11">Arcanjos</option>
+                                                            <option value="12">Esporte</option>
+                                                            <option value="13">Uniforça</option>
+                                                            <option value="14">Atalaia</option>
+                                                            <option value="15">Universitários</option>
+                                                            <option value="16">Mídia</option>
+                                                            <option value="17">Secretárias</option>
+                                                            <option value="18">Cultura</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Habilidades</label>-->
+                                                        <h4>Habilidades</h4>
+                                                        <br />
+                                                        <select id="cboHabilidades" class="select2_demo_1 form-control">
+                                                            <option value=""></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Nível</label>-->
+                                                        <h4>Nível</h4>
+                                                        <br />
+                                                        <select required id="cboNivel" class="select2_demo_11 form-control">
+                                                            <option></option>
+                                                            <option value="5">1 (Regular)</option>
+                                                            <option value="4">2 (Bom)</option>
+                                                            <option value="6">3 (Excelente)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Ligado ao departamento</label>-->
+                                                        <h4>Ligado ao departamento</h4>
+                                                        <br />
+                                                        <select required id="cboDepartamentoProjeto" class="select2_demo_11 form-control">
+                                                            <option></option>
+                                                            <option value="9">DANÇA</option>
+                                                            <option value="8">BANDA</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                            <!---->
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Já se formou ? </label>-->
+                                                        <h4>Já se formou ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaSeFormou_S" value="S" name="rbJaSeFormou">
+                                                                    <label for="rbJaSeFormou_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaSeFormou_N" value="N" name="rbJaSeFormou">
+                                                                    <label for="rbJaSeFormou_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Qual modalidade está cursando ? </label>-->
+                                                        <h4>Qual modalidade está cursando ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbModalidadeNivelSuperior_S" value="3" name="rbModalidadeNivelSuperior">
+                                                                    <label for="rbModalidadeNivelSuperior_S"> Presencial </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbModalidadeNivelSuperior_N" value="4" name="rbModalidadeNivelSuperior">
+                                                                    <label for="rbModalidadeNivelSuperior_N"> Semi-Presencial </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Tem vontade de Cursar Nível superior? </label>-->
+                                                        <h4>Tem vontade de Cursar Nível superior?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbDesejaCursarNivelSuperior_S" value="S" name="rbDesejaCursarNivelSuperior">
+                                                                    <label for="rbDesejaCursarNivelSuperior_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbDesejaCursarNivelSuperior_N" value="N" name="rbDesejaCursarNivelSuperior">
+                                                                    <label for="rbDesejaCursarNivelSuperior_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                            <!---->
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <h4>Idiomas</h4>
+                                                    <select required id="cboIdiomas" class="select2_demo_1 form-control">
+                                                        <option value="0"></option>
+                                                        <option value="6">Português</option>
+                                                        <option value="7">Inglês</option>
+                                                        <option value="9">Espanhol</option>
+                                                        <option value="17">Frânces</option>
+                                                        <option value="8">Italiano</option>
+                                                        <option value="11">Japonês</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <p>
+                                                        Nível
+                                                    </p>
+                                                    <select required id="cboNivelIdioma" class="select2_demo_3 form-control">
+                                                        <option></option>
+                                                        <option value="5">1 (Regular)</option>
+                                                        <option value="4">2 (Bom)</option>
+                                                        <option value="6">3 (Excelente)</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" id="tab-5" class="tab-pane">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Quais reuniões da FJU frequenta</label>-->
+                                                        <h4>Quais reuniões da FJU frequenta</h4>
+                                                        <br />
+                                                        <select id="cboReunioesFJU" name="cboReunioesFJU" class="select2_demo_11 form-control">
+                                                            <option></option>
+                                                            <option value="10">Encontro Jovem</option>
+                                                            <option value="11">Algo a mais</option>
+                                                            <option value="12">Altar Jovem</option>
+                                                            <option value="13">Projeto</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Pertence a algum grupo de mulheres? </label>-->
+                                                        <h4>Pertence a algum grupo de mulheres?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbFazParteGrupoMulheresUniversal_S" value="S" name="rbFazParteGrupoMulheresUniversal">
+                                                                    <label for="rbFazParteGrupoMulheresUniversal_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbFazParteGrupoMulheresUniversal_N" value="N" name="rbFazParteGrupoMulheresUniversal">
+                                                                    <label for="rbFazParteGrupoMulheresUniversal_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">É seguidor do @OficialFJU?</label>-->
+                                                        <h4>É seguidor do @OficialFJU?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger  radio-inline">
+                                                                    <input type="radio" name="rbEhSeguidorOFICIALFJU" id="radio3" value="s">
+                                                                    <label for="radio3">
+                                                                        Sim
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger  radio-inline">
+                                                                    <input type="radio" name="rbEhSeguidorOFICIALFJU" id="radio4" value="n">
+                                                                    <label for="radio4">
+                                                                        Não
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Segue FJU no Youtube?</label>-->
+                                                        <h4>Segue FJU no Youtube?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger  radio-inline">
+                                                                    <input type="radio" name="rbEhSeguidorFJUYouTube" id="rbEhSeguidorFJUYouTube_S" value="S">
+                                                                    <label for="rbEhSeguidorFJUYouTube_S">
+                                                                        Sim
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger  radio-inline">
+                                                                    <input type="radio" name="rbEhSeguidorFJUYouTube" id="rbEhSeguidorFJUYouTube_N" value="N">
+                                                                    <label for="rbEhSeguidorFJUYouTube_N">
+                                                                        Não
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                            <!-- -->
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Segue canal da FJU no TELEGRAM?</label>-->
+                                                        <h4>Segue canal da FJU no TELEGRAM?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger  radio-inline">
+                                                                    <input type="radio" name="rbSegueFJUTelegram" id="rbSegueFJUTelegram_S" value="S">
+                                                                    <label for="rbSegueFJUTelegram_S">
+                                                                        Sim
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" name="rbSegueFJUTelegram" id="rbSegueFJUTelegram_N" value="N">
+                                                                    <label for="rbSegueFJUTelegram_N">
+                                                                        Não
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">É assinante do UNIVERVIDEO?</label>-->
+                                                        <h4>É assinante do UNIVERVIDEO?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger  radio-inline">
+                                                                    <input type="radio" name="rbAssinanteUNIVERVIDEO" id="rbAssinanteUNIVERVIDEO_S" value="s">
+                                                                    <label for="rbAssinanteUNIVERVIDEO_S">
+                                                                        Sim
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" name="rbAssinanteUNIVERVIDEO" id="rbAssinanteUNIVERVIDEO_N" value="n">
+                                                                    <label for="rbAssinanteUNIVERVIDEO_N">
+                                                                        Não
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Lê diariamente o Blog do Bispo Macedo?</label>-->
+                                                        <h4>Lê diariamente o Blog do Bispo Macedo?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger  radio-inline">
+                                                                    <input type="radio" name="rbLeDiariamenteBlogBM" id="rbLeDiariamenteBlogBM_S" value="s">
+                                                                    <label for="rbLeDiariamenteBlogBM_S">
+                                                                        Sim
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" name="rbLeDiariamenteBlogBM" id="rbLeDiariamenteBlogBM_N" value="n">
+                                                                    <label for="rbLeDiariamenteBlogBM_N">
+                                                                        Não
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Acessa diariamente o universal.org?</label>-->
+                                                        <h4>Acessa diariamente o universal.org?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger  radio-inline">
+                                                                    <input type="radio" name="rbLeitorSiteUniversalOrg" id="rbLeitorSiteUniversalOrg_S" value="s">
+                                                                    <label for="rbLeitorSiteUniversalOrg_S">
+                                                                        Sim
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" name="rbLeitorSiteUniversalOrg" id="rbLeitorSiteUniversalOrg_N" value="n">
+                                                                    <label for="rbLeitorSiteUniversalOrg_N">
+                                                                        Não
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!---->
+                                            </div>
+                                            <!---->
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Você tem celular com acesso à internet?</label>-->
+                                                        <h4>Você tem celular com acesso à internet?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger  radio-inline">
+                                                                    <input type="radio" name="rbTemCelularComInternet" id="rbTemCelularComInternet_S" value="s">
+                                                                    <label for="rbTemCelularComInternet_S">
+                                                                        Sim
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" name="rbTemCelularComInternet" id="rbTemCelularComInternet_N" value="n">
+                                                                    <label for="rbTemCelularComInternet_N">
+                                                                        Não
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group inline">
+                                                        <!--<label for="form_name">Você tem computador em casa?</label>-->
+                                                        <h4>Você tem computador em casa?</h4>
+                                                        <div class="row">
+                                                            <div class="col-3">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTemComputadorEmCasa_S" value="s" name="rbTemComputadorEmCasa">
+                                                                    <label for="rbTemComputadorEmCasa_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbTemComputadorEmCasa_N" value="n" name="rbTemComputadorEmCasa">
+                                                                    <label for="rbTemComputadorEmCasa_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <!---->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" id="tab-6" class="tab-pane">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Já sofreu com depressão ? </label>-->
+                                                        <h4>Já sofreu com depressão ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaSofreuDepressao_S" value="S" name="rbJaSofreuDepressao">
+                                                                    <label for="rbJaSofreuDepressao_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaSofreuDepressao_N" value="N" name="rbJaSofreuDepressao">
+                                                                    <label for="rbJaSofreuDepressao_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Já sofreu com Automutilação ? </label>-->
+                                                        <h4>Já sofreu com Automutilação ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaSofreuAutomutilacao_S" value="S" name="rbJaSofreuAutomutilacao">
+                                                                    <label for="rbJaSofreuAutomutilacao_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaSofreuAutomutilacao_N" value="N" name="rbJaSofreuAutomutilacao">
+                                                                    <label for="rbJaSofreuAutomutilacao_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Já teve algum vício ? </label>-->
+                                                        <h4>Já teve algum vício ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaTeveVicio_S" value="S" name="rbJaTeveVicio">
+                                                                    <label for="rbJaTeveVicio_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaTeveVicio_N" value="N" name="rbJaTeveVicio">
+                                                                    <label for="rbJaTeveVicio_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <!--<label for="form_name">Já tentou suicídio alguma vez ? </label>-->
+                                                        <h4>Já tentou suicídio alguma vez ?</h4>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaTentouSuicidio_S" value="S" name="rbJaTentouSuicidio">
+                                                                    <label for="rbJaTentouSuicidio_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaTentouSuicidio_N" value="N" name="rbJaTentouSuicidio">
+                                                                    <label for="rbJaTentouSuicidio_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                Ações
+                            </div>
+                            <div class="panel-body" align="center">
+                                <button id="btnPesquisa" onclick="PesquisarPorParametro()" class="btn btn-success " type="button"><i class="fa fa-search"></i>&nbsp;Pesquisar</button>
+                                <button id="btnRefresh" onclick="resetaPesquisa()" class="btn btn-info " type="button"><i class="fa fa-recycle"></i>&nbsp;Resetar Pesquisa</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                Número de Jovens retornados pela consulta
+                            </div>
+                            <div class="panel-body" align="center">
+                                <h1 class="no-margins" id="lblQuantidadeResgistrosRetornados"></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="rowResultado">
+                    <div class="col-lg-12">
+                        <div class="ibox" id="iBoxResultadoPesquisa">
+                            <div class="ibox-title">
+                                <h5>Resultado da pesquisa</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="panel panel-success" id="pnlPesquisa">
+                                    <div class="panel-heading">
+                                        Dados Retornados
+                                    </div>
+                                    <div class="panel-body" align="center">
+                                        <!-- DataTable-->
+                                        <div class="table-responsive">
+                                            <table id="tblTodosJovens"
+                                                   class="table table-striped table-bordered table-hover dataTables-example">
+                                                <thead>
+                                                    <tr>
+                                                        <th>IdJovem</th>
+                                                        <th>Estado</th>
+                                                        <th>Bloco</th>
+                                                        <th>Região</th>
+                                                        <th>Igreja</th>
+                                                        <th>Nome</th>
+                                                        <th>Data de Nascimento</th>
+                                                        <th>Editar</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>IdJovem</th>
+                                                        <th>Estado</th>
+                                                        <th>Bloco</th>
+                                                        <th>Região</th>
+                                                        <th>Igreja</th>
+                                                        <th>Nome</th>
+                                                        <th>Data de Nascimento</th>
+                                                        <th>Editar</th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- End DataTable -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal fora da tab para testar se é enxergada gglobalmente -->
+            <div class="modal inmodal" id="visualizaJovemModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content animated bounceInRight">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                            <%--<i class="fa fa-laptop modal-icon"></i>--%>
+                            <i class="glyphicon glyphicon-transfer modal-icon"></i>
+                            <h4 class="modal-title">Visualização de dados</h4>
+                            <small class="font-bold">Dados do Jovem</small>
+                        </div>
+                        <div class="modal-body">
+                            <!---->
+                            <div class="contact-box center-version">
+
+
+
+                                <img alt="image" class="rounded-circle" src="" id="imgFotoJovem">
+
+
+                                <h3 class="m-b-xs" id="lblNomeJovem"><strong></strong></h3>
+
+                                <div class="font-bold">Informações</div>
+                                <address class="m-t-md">
+                                    <strong><span id="lblEstado"></span></strong><br>
+                                    <span id="lblBloco"></span><br>
+                                    <span id="lblRegiao"></span><br>
+                                    <span id="lblIgreja"></span><br>
+                                    <abbr title="Phone" id="lblWhats">Whatsapp</abbr>
+                                </address>
+
+
+                                <div class="contact-box-footer">
+                                    <div class="m-t-xs btn-group">
+                                        <a href="" class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
+                                        <a href="" class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                                        <a href="" class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!---->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <!-- box abaixo da grid -->
+
+                <div class="wrapper wrapper-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+
+                                <div class="col-lg-4">
+
+
+                                </div>
+                                <div class="col-lg-4">
+
+
+                                </div>
+                                <div class="col-lg-4">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="float-right">
+                        <strong></strong>
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> FJU Oficial &copy; 2020
+                    </div>
+                </div>
+            </div>
+            <div class="small-chat-box fadeInRight animated">
+
+                <div class="heading" draggable="true">
+                    <small class="chat-date float-right">
+                        02.19.2015
+                    </small>
+                    Small chat
+                </div>
+
+                <div class="content">
+
+                    <div class="left">
+                        <div class="author-name">
+                            Monica Jackson <small class="chat-date">
+                                10:02 am
+                            </small>
+                        </div>
+                        <div class="chat-message active">
+                            Lorem Ipsum is simply dummy text input.
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="author-name">
+                            Mick Smith
+                            <small class="chat-date">
+                                11:24 am
+                            </small>
+                        </div>
+                        <div class="chat-message">
+                            Lorem Ipsum is simpl.
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="author-name">
+                            Alice Novak
+                            <small class="chat-date">
+                                08:45 pm
+                            </small>
+                        </div>
+                        <div class="chat-message active">
+                            Check this stock char.
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="author-name">
+                            Anna Lamson
+                            <small class="chat-date">
+                                11:24 am
+                            </small>
+                        </div>
+                        <div class="chat-message">
+                            The standard chunk of Lorem Ipsum
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="author-name">
+                            Mick Lane
+                            <small class="chat-date">
+                                08:45 pm
+                            </small>
+                        </div>
+                        <div class="chat-message active">
+                            I belive that. Lorem Ipsum is simply dummy text.
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="form-chat">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">
+                                Send
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div id="small-chat">
+
+                <span class="badge badge-warning float-right">5</span>
+                <a class="open-small-chat" href="">
+                    <i class="fa fa-comments"></i>
+
+                </a>
+            </div>
+            <div id="right-sidebar" class="animated">
+                <div class="sidebar-container">
+
+                    <ul class="nav nav-tabs navs-3">
+                        <li>
+                            <a class="nav-link active" data-toggle="tab" href="#tab-1"> Notes </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-toggle="tab" href="#tab-2"> Projects </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" data-toggle="tab" href="#tab-3"> <i class="fa fa-gear"></i> </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+
+
+                        <div id="tab-1" class="tab-pane active">
+
+                            <div class="sidebar-title">
+                                <h3> <i class="fa fa-comments-o"></i> Latest Notes</h3>
+                                <small><i class="fa fa-tim"></i> You have 10 new message.</small>
+                            </div>
+
+                            <div>
+
+                                <div class="sidebar-message">
+                                    <a href="#">
+                                        <div class="float-left text-center">
+                                            <img alt="image" class="rounded-circle message-avatar" src="img/a1.jpg">
+
+                                            <div class="m-t-xs">
+                                                <i class="fa fa-star text-warning"></i>
+                                                <i class="fa fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+
+                                            There are many variations of passages of Lorem Ipsum available.
+                                            <br>
+                                            <small class="text-muted">Today 4:21 pm</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar-message">
+                                    <a href="#">
+                                        <div class="float-left text-center">
+                                            <img alt="image" class="rounded-circle message-avatar" src="img/a2.jpg">
+                                        </div>
+                                        <div class="media-body">
+                                            The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                            <br>
+                                            <small class="text-muted">Yesterday 2:45 pm</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar-message">
+                                    <a href="#">
+                                        <div class="float-left text-center">
+                                            <img alt="image" class="rounded-circle message-avatar" src="img/a3.jpg">
+
+                                            <div class="m-t-xs">
+                                                <i class="fa fa-star text-warning"></i>
+                                                <i class="fa fa-star text-warning"></i>
+                                                <i class="fa fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            Mevolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                            <br>
+                                            <small class="text-muted">Yesterday 1:10 pm</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar-message">
+                                    <a href="#">
+                                        <div class="float-left text-center">
+                                            <img alt="image" class="rounded-circle message-avatar" src="img/a4.jpg">
+                                        </div>
+
+                                        <div class="media-body">
+                                            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                                            <br>
+                                            <small class="text-muted">Monday 8:37 pm</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar-message">
+                                    <a href="#">
+                                        <div class="float-left text-center">
+                                            <img alt="image" class="rounded-circle message-avatar" src="img/a8.jpg">
+                                        </div>
+                                        <div class="media-body">
+
+                                            All the Lorem Ipsum generators on the Internet tend to repeat.
+                                            <br>
+                                            <small class="text-muted">Today 4:21 pm</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar-message">
+                                    <a href="#">
+                                        <div class="float-left text-center">
+                                            <img alt="image" class="rounded-circle message-avatar" src="img/a7.jpg">
+                                        </div>
+                                        <div class="media-body">
+                                            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                            <br>
+                                            <small class="text-muted">Yesterday 2:45 pm</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar-message">
+                                    <a href="#">
+                                        <div class="float-left text-center">
+                                            <img alt="image" class="rounded-circle message-avatar" src="img/a3.jpg">
+
+                                            <div class="m-t-xs">
+                                                <i class="fa fa-star text-warning"></i>
+                                                <i class="fa fa-star text-warning"></i>
+                                                <i class="fa fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below.
+                                            <br>
+                                            <small class="text-muted">Yesterday 1:10 pm</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="sidebar-message">
+                                    <a href="#">
+                                        <div class="float-left text-center">
+                                            <img alt="image" class="rounded-circle message-avatar" src="img/a4.jpg">
+                                        </div>
+                                        <div class="media-body">
+                                            Uncover many web sites still in their infancy. Various versions have.
+                                            <br>
+                                            <small class="text-muted">Monday 8:37 pm</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="tab-2" class="tab-pane">
+
+                            <div class="sidebar-title">
+                                <h3> <i class="fa fa-cube"></i> Latest projects</h3>
+                                <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                            </div>
+
+                            <ul class="sidebar-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="small float-right m-t-xs">9 hours ago</div>
+                                        <h4>Business valuation</h4>
+                                        It is a long established fact that a reader will be distracted.
+
+                                        <div class="small">Completion with: 22%</div>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                        </div>
+                                        <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="small float-right m-t-xs">9 hours ago</div>
+                                        <h4>Contract with Company </h4>
+                                        Many desktop publishing packages and web page editors.
+
+                                        <div class="small">Completion with: 48%</div>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 48%;" class="progress-bar"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="small float-right m-t-xs">9 hours ago</div>
+                                        <h4>Meeting</h4>
+                                        By the readable content of a page when looking at its layout.
+
+                                        <div class="small">Completion with: 14%</div>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="label label-primary float-right">NEW</span>
+                                        <h4>The generated</h4>
+                                        There are many variations of passages of Lorem Ipsum available.
+                                        <div class="small">Completion with: 22%</div>
+                                        <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="small float-right m-t-xs">9 hours ago</div>
+                                        <h4>Business valuation</h4>
+                                        It is a long established fact that a reader will be distracted.
+
+                                        <div class="small">Completion with: 22%</div>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                        </div>
+                                        <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="small float-right m-t-xs">9 hours ago</div>
+                                        <h4>Contract with Company </h4>
+                                        Many desktop publishing packages and web page editors.
+
+                                        <div class="small">Completion with: 48%</div>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 48%;" class="progress-bar"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="small float-right m-t-xs">9 hours ago</div>
+                                        <h4>Meeting</h4>
+                                        By the readable content of a page when looking at its layout.
+
+                                        <div class="small">Completion with: 14%</div>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="label label-primary float-right">NEW</span>
+                                        <h4>The generated</h4>
+                                        <!--<div class="small float-right m-t-xs">9 hours ago</div>-->
+                                        There are many variations of passages of Lorem Ipsum available.
+                                        <div class="small">Completion with: 22%</div>
+                                        <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div id="tab-3" class="tab-pane">
+
+                            <div class="sidebar-title">
+                                <h3><i class="fa fa-gears"></i> Settings</h3>
+                                <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                            </div>
+
+                            <div class="setings-item">
+                                <span>
+                                    Show notifications
+                                </span>
+                                <div class="switch">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                                        <label class="onoffswitch-label" for="example">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setings-item">
+                                <span>
+                                    Disable Chat
+                                </span>
+                                <div class="switch">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
+                                        <label class="onoffswitch-label" for="example2">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setings-item">
+                                <span>
+                                    Enable history
+                                </span>
+                                <div class="switch">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                                        <label class="onoffswitch-label" for="example3">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setings-item">
+                                <span>
+                                    Show charts
+                                </span>
+                                <div class="switch">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                                        <label class="onoffswitch-label" for="example4">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setings-item">
+                                <span>
+                                    Offline users
+                                </span>
+                                <div class="switch">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                                        <label class="onoffswitch-label" for="example5">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setings-item">
+                                <span>
+                                    Global search
+                                </span>
+                                <div class="switch">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                                        <label class="onoffswitch-label" for="example6">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setings-item">
+                                <span>
+                                    Update everyday
+                                </span>
+                                <div class="switch">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                                        <label class="onoffswitch-label" for="example7">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-content">
+                                <h4>Settings</h4>
+                                <div class="small">
+                                    I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    And typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                    Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mainly scripts -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
+
+        <!-- Steps -->
+        <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+        <!-- Jquery Validate -->
+        <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+        <!-- Select2 -->
+        <script src="js/plugins/select2/select2.full.min.js"></script>
+
+        <!-- Input Mask-->
+        <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+        <!-- Data picker -->
+        <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+        <!-- iCheck -->
+        <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+        <script src="js/plugins/dataTables/datatables.min.js"></script>
+        <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+
+        <!-- Toastr script -->
+        <script src="js/plugins/toastr/toastr.min.js"></script>
+
+        <!-- Sweet alert -->
+        <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+        <script src="js/SGFJU.Domain.UI.Client.js"></script>
+        <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+        <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+
+        <script>
+
+            var __resultSetTodosJovens = null;
+            var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+            var tblTodosJovens;
+            var dadoJovemSelecionado = undefined;
+            var hostUrl = "http://" + document.location.hostname;
+            var primeiraPesquisa = false;
+            var vExisteUltimoPesquisaRetorno = false;
+
+            $(document).ready(function () {
+
+                $("#cboEstado").select2();
+                $("#cboBloco").select2();
+                $("#cboRegiao").select2();
+                $("#cboIgreja").select2();
+                $("#cboProjetoFJU").select2();
+                //$("#cboHabilidades").select2();
+                //$("#cboReunioesFJU").select2();
+                //$('#cboNivel').select2();
+
+                facadeUser.ConfigurarPaginaX072470();
+
+                /**/
+                $.ajax({
+                    type: "GET",
+                    url: 'api/Jovens/ObterUltimaPesquisa/',
+                    contentType: "application/json"
+                }).done(function (retorno) {
+
+                    if (retorno.ExisteUltimaPesquisa) {
+
+                        var resultSetRetorno = retorno.ResultSetUltimaPesquisa;
+                        __resultSetTodosJovens = resultSetRetorno;
+
+                        tblTodosJovens = $('#tblTodosJovens').DataTable({
+                            data: resultSetRetorno,
+                            dom: 'Bfrtip',
+                            buttons: [
+                                'csv', 'excel', 'pdf', 'print'
+                            ],
+                            columns: [
+                                { data: 'IdJovem' },
+                                { data: 'NomeEstado' },
+                                { data: 'NomeBlocoJovem' },
+                                { data: 'NomeRegiaoJovem' },
+                                { data: 'NomeIgrejaJovem' },
+                                { data: 'NomeJovem' },
+                                { data: 'Whatsapp' },
+                                {
+                                    data: null,
+                                    defaultContent: '<div class="btn-group"> <button type="button" alt="Visualizar" class="btn btn-info btn-xs dt-view" style="margin-right:16px;"><span class="glyphicon glyphicon-search " aria-hidden="true"></span></button></div>'
+                                }
+                            ],
+                            columnDefs: [
+                                {
+                                    targets: [0],
+                                    visible: false,
+                                    searchable: false
+                                }]
+                        });
+
+                        $('#lblQuantidadeResgistrosRetornados').html(tblTodosJovens.data().count());
+                    }
+                });
+                /**/
+
+
+                $('#cboEstado').on('select2:select', function (e) {
+                    console.log('clicou');
+                    $('#cboBloco').empty().trigger("change");
+                    $('#cboRegiao').empty().trigger("change");
+                    $('#cboIgreja').empty().trigger("change");
+                    var data = e.params.data;
+
+                    preencherComboBlocos(data.id);
+                });
+                //configComboEstado();
+
+                $('.select2_demo_4').on('select2:select', function (e) {
+                    $('#cboRegiao').empty().trigger("change");
+                    $('#cboIgreja').empty().trigger("change");
+                    var data = e.params.data;
+                    preencherComboRegioes(data.id);
+                });
+
+                $('.select2_demo_5').on('select2:select', function (e) {
+                    $('#cboIgreja').empty().trigger("change");
+                    var data = e.params.data;
+                    preencherComboIgrejas(data.id);
+                });
+
+                $('#cboProjetoFJU').on('select2:select', function (e) {
+                    $('#cboHabilidades').empty().trigger("change");
+                    var data = e.params.data;
+                    preencheComboHabilidades(data.id);
+                });
+
+                $('#tblTodosJovens tbody').on('click', 'button', function () {
+                    var tblTodosJ = $('#tblTodosJovens').DataTable();
+                    var classeDoBotao = $(this).prop('class');
+                    var indiceDaLinha = tblTodosJ.row($(this).parents('tr')).index();
+                    var idJovem = __resultSetTodosJovens[indiceDaLinha].IdJovem;
+                    var nomeJovem = __resultSetTodosJovens[indiceDaLinha].NomeJovem;
+                    dadoJovemSelecionado = __resultSetTodosJovens[indiceDaLinha];
+
+                    location.href = 'VisualizaJovemE.html?idJovem=' + idJovem + '&SPG=CG';
+
+                });
+
+            });
+
+            function preencherComboBlocos(idEstado) {
+                $.ajax({
+                    type: "GET",
+                    url: "api/blocos/ObterPorEstado/"+idEstado,
+                    contentType: "application/json"
+                }).done(function (retorno) {
+                    $.each(retorno, function () {
+                        $("#cboBloco").append($("<option     />").val(this.Id).text(this.NomeBloco));
+                    });
+                    $("#cboBloco").prepend('<option selected class="placeholdered" value="">Selecione o bloco</option>');
+                    $('#cboBloco').select2().trigger('change');
+                    $('#cboBloco').removeAttr('selected');
+                    //$('#ibox1').children('.ibox-content').toggleClass('sk-loading');//#spinner
+                });
+            }
+
+            function preencherComboRegioes(idBloco) {
+                $.ajax({
+                    type: "GET",
+                    url: "api/Regioes/ObterPorBloco/" + idBloco,
+                    contentType: "application/json"
+                }).done(function (retorno) {
+                    $.each(retorno, function () {
+                        $("#cboRegiao").append($("<option     />").val(this.IdRegiao).text(this.NomeRegiao));
+                    });
+                    $("#cboRegiao").prepend('<option selected class="placeholdered" value="">Selecione a região</option>');
+                    $('#cboRegiao').select2().trigger('change');
+                    $('#cboRegiao').removeAttr('selected');
+                });
+            }
+
+            function preencherComboIgrejas(idRegiao) {
+                $.ajax({
+                    type: "get",
+                    url: "api/Igrejas/ObterPorRegiao/" + idRegiao,
+                    contentType: "application/json"
+                }).done(function (retorno) {
+                    $.each(retorno, function () {
+                        $("#cboIgreja").append($("<option     />").val(this.IdIgreja).text(this.NomeIgreja));
+                    });
+                    $("#cboIgreja").prepend('<option selected class="placeholdered" value="">Selecione a igreja</option>');
+                    $('#cboIgreja').select2().trigger('change');
+                    $('#cboIgreja').removeAttr('selected');
+                });
+            }
+
+            function preencheComboHabilidades(vIdProjeto) {
+                var projetoParametroDTO = {
+                    IdProjeto: vIdProjeto
+                };
+                $.ajax({
+                    type: "POST",
+                    data: JSON.stringify(projetoParametroDTO),
+                    url: "api/Habilidades/ListarHabilidadesPorProjeto/",
+                    contentType: "application/json"
+                }).done(function (retorno) {
+                    $.each(retorno, function () {
+                        $("#cboHabilidades").append($("<option     />").val(this.IdHabilidade).text(this.NomeHabilidade));
+                    });
+                    $("#cboHabilidades").prepend('<option selected class="placeholdered" value="">Selecione a habilidade</option>');
+                    $('#cboHabilidades').select2().trigger('change');
+                    $('#cboHabilidades').removeAttr('selected');
+                });
+            }
+
+            function PesquisarPorParametro() {
+                $('#iBoxResultadoPesquisa').children('.ibox-content').toggleClass('sk-loading');
+
+                var vIdEstado = $("#cboEstado").val();
+                var vIdBlocoJovem = $("#cboBloco").val();
+                var vIdRegiao = $('#cboRegiao').val();
+                var vIdIgreja = $('#cboIgreja').val();
+                var vIdProjeto = $("#cboProjetoFJU").val();
+                var vIdDepartamento = $('#cboDepartamentoProjeto').val();
+                var vIdHabilidade = $("#cboHabilidades").val();
+                var vIdNivel = $('#cboNivel').val();
+                //
+
+                var vIdTipoEstadoCivil = $('#cboTipoEstadoCivil').val();
+                var vIdIdTipoMoradia = $('#cboTipoMoradia').val();
+                var vConjugeEhIURD = $('input[name=rbConjugeEhIURD]:checked').val();
+                var vTrabalhaAtualmente = $('input[name=rbTrabalha]:checked').val();
+                var vEstudaAtualmente = $('input[name=rbEstuda]:checked').val();
+                var vPossuiTituloEleitor = $('input[name=rbPossuiTituloeleitor]:checked').val();
+                //|
+
+                //
+                var vEhObreiro = ($('#chkEhObreiro').prop('checked'))? 'S':'';
+                var vEhColaborador = ($('#chkEhColaborador').prop('checked'))? 'S':'';
+                var vEhCPO = ($('#chkCursandoCPO').prop('checked'))? 'S':'';
+                var vEhMembroFJU = ($('#chkMembroFJU').prop('checked'))? 'S':'';
+                var vEhCoordenadorFJU = ($('#chkEhCoordenadorFJU').prop('checked'))? 'S':'';
+                var vEhLiderTribo = ($('#chkLiderTribo').prop('checked'))? 'S':'';
+                var vEhLiderProjeto = ($('#chkLiderProjeto').prop('checked'))? 'S':'';
+                var vEhBatizadoAguas = $('input[name=rbBatizadoAguas]:checked').val();
+                var vEhBatizadoEspiritoSanto = $('input[name=rbBatizadoEspiritoSanto]:checked').val();
+                var vEhAltarJovem = $('input[name=rbEstaNoAltarJovem]:checked').val();
+                var vDesejaFazerObraAltar = $('input[name=rbDesejaFazerObraAltar]:checked').val();
+                var vProfissao = $('#txtProfissao').val();
+                var vEscolaridade = $('#cboEscolaridade').val();
+                var vEhMembroIURD = $('input[name=rbEhMembroIURD]:checked').val();
+                var vJaSeAfastou = $('input[name=rbJaSeAfastou]:checked').val();
+                var vFoiObreiro = $('input[name=rbJaFoiObreiroAntes]:checked').val();
+                var vFoiPastor = $('input[name=rbJaFoiPastorEsposaAntes]:checked').val();
+                var vDesejaSerObreiro = $('input[name=rbDesejaSerObreiro]:checked').val();
+                var vTemFamiliaresIURD = $('input[name=rbTemFamiliaresIURD]:checked').val();
+                var vPertenceIntellimen = $('input[name=rbFazParteIntellimen]:checked').val();
+                var vDesafiosConcluidos = $('input[name=rbCompletouDesafios]:checked').val();
+                var vIdReuniaoFJU = $('#cboReunioesFJU').val();
+                var vPertenceGrupoMulheresIURD = $('input[name=rbFazParteGrupoMulheresUniversal]:checked').val();
+                var vEhSeguidorOficialFJU = $('input[name=rbEhSeguidorOFICIALFJU]:checked').val();
+                var vEhSeguidorYoutube = $('input[name=rbEhSeguidorFJUYouTube]:checked').val();
+                var vEhSeguidorTelegram = $('input[name=rbSegueFJUTelegram]:checked').val();
+                var vEhAssinanteUNIVER = $('input[name=rbAssinanteUNIVERVIDEO]:checked').val();
+                var vEhLeitorBlogBM = $('input[name=rbLeDiariamenteBlogBM]:checked').val();
+                var vEhLeitorUniversalorg = $('input[name=rbLeitorSiteUniversalOrg]:checked').val();
+                var vPossuiBiblia = $('input[name=rbTemBiblia]:checked').val();
+                var vPossuiBibliaNoCelular = $('input[name=rbTemBibliaNoCelular]:checked').val();
+                var vLeuTodaBiblia = $('input[name=rbJaLeuBibliaToda]:checked').val();
+                var vPossuiCelularComInternet = $('input[name=rbTemCelularComInternet]:checked').val();
+                var vPossuiComputador = $('input[name=rbTemComputadorEmCasa]:checked').val();
+                var vPossuiNivelSuperior = $('input[name=rbJaSeFormou]:checked').val();
+                var vIdModalidadeCursadaEnsinoSuperior = $('input[name=rbModalidadeNivelSuperior]:checked').val();
+                var vDesejaCursarNivelSuperior = $('input[name=rbDesejaCursarNivelSuperior]:checked').val();
+                var vSofreuComDepressao = $('input[name=rbJaSofreuDepressao]:checked').val();
+                var vSofreuAutomutilacao = $('input[name=rbJaSofreuAutomutilacao]:checked').val();
+                var vSofreuVicio = $('input[name=rbJaTeveVicio]:checked').val();
+                var vTentouSuicidio = $('input[name=rbJaTentouSuicidio]:checked').val();
+                //var vIdIdiomaFalado = $('#cboIdiomas').val($('#cboIdiomas option:first-child').val()).trigger('change');
+                //var vIdNivelIdiomaFalado = $('#cboNivelIdioma').val($('#cboNivelIdioma option:first-child').val()).trigger('change');
+
+                var parametroConsultaGeralDTO = {
+                     IdEstado: vIdEstado,
+                     IdBlocoJovem: vIdBlocoJovem,
+                     IdRegiao: vIdRegiao,
+                     IdIgreja: vIdIgreja,
+                     IdProjeto: vIdProjeto,
+                     IdDepartamento: vIdDepartamento,
+                     IdHabilidade: vIdHabilidade,
+                     IdNivel: vIdNivel,
+                     //
+                     IdTipoEstadoCivil: vIdTipoEstadoCivil,
+                     IdIdTipoMoradia: vIdIdTipoMoradia,
+                     ConjugeEhIURD: vConjugeEhIURD,
+                     TrabalhaAtualmente: vTrabalhaAtualmente,
+                     EstudaAtualmente: vEstudaAtualmente,
+                     PossuiTituloEleitor: vPossuiTituloEleitor,
+                     Profissao: vProfissao,
+                     Escolaridade: vEscolaridade,
+                     EhMembroIURD: vEhMembroIURD,
+                     JaSeAfastou: vJaSeAfastou,
+                     TemFamiliaresIURD: vTemFamiliaresIURD,
+                     FoiObreiro: vFoiObreiro,
+                     FoiPastor: vFoiPastor,
+                     DesejaSerObreiro: vDesejaSerObreiro,
+                     PertenceIntellimen: vPertenceIntellimen,
+                     DesafiosConcluidos: vDesafiosConcluidos,
+                     IdReuniaoFJU: vIdReuniaoFJU,
+                     PertenceGrupoMulheresIURD: vPertenceGrupoMulheresIURD,
+                     EhSeguidorOficialFJU: vEhSeguidorOficialFJU,
+                     EhSeguidorYoutube: vEhSeguidorYoutube,
+                     EhSeguidorTelegram: vEhSeguidorTelegram,
+                     EhAssinanteUNIVER : vEhAssinanteUNIVER,
+                     EhLeitorBlogBM: vEhLeitorBlogBM,
+                     EhLeitorUniversalorg: vEhLeitorUniversalorg,
+                     PossuiBiblia: vPossuiBiblia,
+                     PossuiBibliaNoCelular: vPossuiBibliaNoCelular,
+                     LeuTodaBiblia: vLeuTodaBiblia,
+                     PossuiCelularComInternet: vPossuiCelularComInternet,
+                     PossuiComputador: vPossuiComputador,
+                     PossuiNivelSuperior: vPossuiNivelSuperior,
+                     IdModalidadeCursadaEnsinoSuperior: vIdModalidadeCursadaEnsinoSuperior,
+                     DesejaCursarNivelSuperior: vDesejaCursarNivelSuperior,
+                     SofreuComDepressao: vSofreuComDepressao,
+                     SofreuAutomutilacao: vSofreuAutomutilacao,
+                     SofreuVicio: vSofreuVicio,
+                     TentouSuicidio: vTentouSuicidio,
+                     //IdIdiomaFalado: vIdIdiomaFalado,
+                     //IdNivelIdiomaFalado: vIdNivelIdiomaFalado,
+                    //
+                     EhObreiro: vEhObreiro,
+                     EhColaborador: vEhColaborador,
+                     EhCPO: vEhCPO,
+                     EhMembroFJU: vEhMembroFJU,
+                     EhCoordenadorFJU: vEhCoordenadorFJU,
+                     EhLiderTribo: vEhLiderTribo,
+                     EhLiderProjeto: vEhLiderProjeto,
+                     EhBatizadoAguas: vEhBatizadoAguas,
+                     EhBatizadoEspiritoSanto: vEhBatizadoEspiritoSanto,
+                     EhAltarJovem: vEhAltarJovem,
+                     DesejaFazerObraAltar: vDesejaFazerObraAltar,
+                };
+                console.log(parametroConsultaGeralDTO.IdBlocoJovem);
+                $.ajax({
+                    type: "post",
+                    data: JSON.stringify(parametroConsultaGeralDTO),
+                    url: "api/Jovens/ConsultaGeral",
+                    contentType: "application/json",
+                    error: function (request, status, error) {
+                        swal({
+                            title: "Instabilidade no Sistema",
+                            text: 'O sistema se comportou de forma inadequada!',
+                            type: "error"
+                        });
+                    }
+                }).done(function (resultSetPesquisa) {
+                    __resultSetTodosJovens = resultSetPesquisa;
+                    $('#iBoxResultadoPesquisa').children('.ibox-content').toggleClass('sk-loading');//#spinner
+
+                    if (primeiraPesquisa             == false &&
+                        vExisteUltimoPesquisaRetorno == false) {
+                        primeiraPesquisa = true;
+
+                        tblTodosJovens = $('#tblTodosJovens').DataTable({
+                            data: resultSetPesquisa,
+                            destroy: true,
+                            dom: 'Bfrtip',
+                            buttons: [
+                                'csv', 'excel', 'pdf', 'print'
+                            ],
+                            columns: [
+                                { data: 'IdJovem' },
+                                { data: 'NomeEstado' },
+                                { data: 'NomeBlocoJovem' },
+                                { data: 'NomeRegiaoJovem' },
+                                { data: 'NomeIgrejaJovem' },
+                                { data: 'NomeJovem' },
+                                { data: 'Whatsapp' },
+                                {
+                                    data: null,
+                                    defaultContent: '<div class="btn-group"> <button type="button" alt="Visualizar" class="btn btn-info btn-xs dt-view" style="margin-right:16px;"><span class="glyphicon glyphicon-search " aria-hidden="true"></span></button></div>'
+                                }
+                            ],
+                            columnDefs: [
+                                {
+                                    targets: [0],
+                                    visible: false,
+                                    searchable: false
+                                }]
+                        });
+
+                        $('#lblQuantidadeResgistrosRetornados').html(tblTodosJovens.data().count());
+                    }
+                    else {
+                        var table = $('#tblTodosJovens').DataTable();
+                        table.clear();
+                        table.rows.add(resultSetPesquisa).draw();
+
+                        $('#lblQuantidadeResgistrosRetornados').html(table.data().count());
+                    }
+
+                });
+            }
+
+            function resetaPesquisa() {
+                $('#cboBloco').val($('#cboBloco option:first-child').val()).trigger('change');
+                $('#cboRegiao').empty().trigger("change");
+                $('#cboIgreja').empty().trigger("change");
+                $('#cboHabilidades').empty().trigger("change");
+                $('#cboNivel').empty().trigger("change");
+                $('#chkEhObreiro').prop('checked', false);
+                $('#chkEhColaborador').prop('checked', false);
+                $('#chkCursandoCPO').prop('checked', false);
+                $('#chkMembroFJU').prop('checked', false);
+                $('#chkEhCoordenadorFJU').prop('checked', false);
+                $('#chkLiderTribo').prop('checked', false);
+                $('#chkLiderProjeto').prop('checked', false);
+                $('input[name=rbBatizadoAguas]').prop('checked', false);
+                $('input[name=rbBatizadoEspiritoSanto]').prop('checked', false);
+                $('input[name=rbEstaNoAltarJovem]').prop('checked', false);
+                $('input[name=rbDesejaFazerObraAltar]').prop('checked', false);
+                $('#lblQuantidadeResgistrosRetornados').html('');
+                //
+                $('#cboTipoEstadoCivil option:first-child').val();
+                $('#cboTipoMoradia option:first-child').val();
+                $('input[name=rbConjugeEhIURD]').prop('checked', false);
+                $('input[name=rbTrabalha]').prop('checked', false);
+                $('input[name=rbEstuda]').prop('checked', false);
+                $('input[name=rbPossuiTituloeleitor]').prop('checked', false);
+                $('#txtProfissao').val('');
+                $('#cboEscolaridade').val($('#cboEscolaridade option:first-child').val()).trigger('change');
+                $('input[name=rbEhMembroIURD]').prop('checked', false);
+                $('input[name=rbJaSeAfastou]').prop('checked', false);
+                $('input[name=rbTemFamiliaresIURD]').prop('checked', false);
+                $('input[name=rbJaFoiObreiroAntes]').prop('checked', false);
+                $('input[name=rbJaFoiPastorEsposaAntes]').prop('checked', false);
+                $('input[name=rbDesejaSerObreiro]').prop('checked', false);
+                $('input[name=rbFazParteIntellimen]').prop('checked', false);
+                $('input[name=rbCompletouDesafios]').prop('checked', false);
+                $('#cboReunioesFJU').val($('#cboReunioesFJU option:first-child').val()).trigger('change');
+                $('input[name=rbFazParteGrupoMulheresUniversal]').prop('checked', false);
+                $('input[name=rbEhSeguidorOFICIALFJU]').prop('checked', false);
+                $('input[name=rbEhSeguidorFJUYouTube]').prop('checked', false);
+                $('input[name=rbSegueFJUTelegram]').prop('checked', false);
+                $('input[name=rbAssinanteUNIVERVIDEO]').prop('checked', false);
+                $('input[name=rbLeDiariamenteBlogBM]').prop('checked', false);
+                $('input[name=rbLeitorSiteUniversalOrg]').prop('checked', false);
+                $('input[name=rbTemBiblia]').prop('checked', false);
+                $('input[name=rbTemBibliaNoCelular]').prop('checked', false);
+                $('input[name=rbJaLeuBibliaToda]').prop('checked', false);
+                $('input[name=rbTemCelularComInternet]').prop('checked', false);
+                $('input[name=rbTemComputadorEmCasa]').prop('checked', false);
+                $('input[name=rbJaSeFormou]').prop('checked', false);
+                $('input[name=rbModalidadeNivelSuperior]').prop('checked', false);
+                $('input[name=rbDesejaCursarNivelSuperior]').prop('checked', false);
+                $('input[name=rbJaSofreuDepressao]').prop('checked', false);
+                $('input[name=rbJaSofreuAutomutilacao]').prop('checked', false);
+                $('input[name=rbJaTeveVicio]').prop('checked', false);
+                $('input[name=rbJaTentouSuicidio]').prop('checked', false);
+                $('#cboDepartamentoProjeto').val($('#cboDepartamentoProjeto option:first-child').val()).trigger('change');
+                //$('#cboIdiomas').val($('#cboIdiomas option:first-child').val()).trigger('change');
+                //$('#cboNivelIdioma').val($('#cboNivelIdioma option:first-child').val()).trigger('change');
+                //
+
+                $.ajax({
+                    type: "GET",
+                    url: "api/Jovens/LimpaPesquisaGC/",
+                    contentType: "application/json"
+                }).done(function (retorno) {
+                    var objTable = $('#tblTodosJovens').DataTable();
+                    objTable.clear().draw();
+                    swal({
+                        title: "Mensagem de notificação",
+                        text: retorno.MensagemRespostaRequisicao,
+                        type: "success"
+                    });
+                });
+            }
+
+            /*
+            function configComboEstado() {
+                $.ajax({
+                    type: "GET",
+                    url: "api/Usuarios/X072470/",
+                    contentType: "application/json"
+                }).done(function (retorno) {
+                    if (!retorno.EhADM) {
+                        console.log('não é ADM');
+                        $("#cboEstado").val(retorno.IdEstadoUsuarioLogado).trigger('change.select2');
+                        $('#cboEstado').prop("disabled", true);
+                        preencherComboBlocos(retorno.IdEstadoUsuarioLogado);
+                    }
+                    else {
+                        console.log('É ADM');
+                        $('#cboEstado').on('select2:select', function (e) {
+                            console.log('clicou');
+                            $('#cboBloco').empty().trigger("change");
+                            $('#cboRegiao').empty().trigger("change");
+                            $('#cboIgreja').empty().trigger("change");
+                            var data = e.params.data;
+
+                            preencherComboBlocos(data.id);
+                        });
+                    }
+                });
+            }*/
+
+        </script>
+</body>
+</html>

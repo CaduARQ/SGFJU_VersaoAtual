@@ -667,6 +667,7 @@
                                 type: "success"
                             }, function () {
                                     carregaDadosJovem();
+                                    __solicitacoesAdicionadas = [];
                                     $('#tabAutorizacoes li:eq(2) a').tab('show');
                                     spinnerOff();
                             });
@@ -1023,6 +1024,7 @@
                     objTable.clear().draw();
                 }
                 else {
+                    spinnerOff();
                     swal({
                         title: "Solicitação não efetuada",
                         text: resultSetSolicitacao.RespostaSoliciticao,
