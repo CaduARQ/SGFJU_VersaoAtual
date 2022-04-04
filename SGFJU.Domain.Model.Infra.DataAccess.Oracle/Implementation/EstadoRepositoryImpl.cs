@@ -381,7 +381,22 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
 
             return podeExcluirDTO;
         }
+        public void AtualizarBlocoDoEstado(BlocoDTO blocoParaAtualizacao)
+        {
+            try
+            {
+                var dao = new DAO();
+                var sqlQuery = new StringBuilder();
+                sqlQuery.Append($"UPDATE SGFJU_DEV.SGFJU_TBL_BLOCO SET NOMEBLOCO = '{blocoParaAtualizacao.NomeBloco}'  WHERE ID_BLOCO = {blocoParaAtualizacao.idBloco}");
 
+                dao.ExecuteNonQuery(sqlQuery.ToString());
+            }
+            catch (Exception dataException)
+            {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
+                throw new DomainException(mensagemTratada, dataException);
+            }
+        }
         public void ExcluirBlocoDoEstado(Bloco blocoParaExclusao) { 
             try {
                 var dao = new DAO();
@@ -391,6 +406,20 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 dao.ExecuteNonQuery(sqlQuery.ToString());
             }
             catch (Exception dataException) {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
+                throw new DomainException(mensagemTratada, dataException);
+            }
+        }
+        public void AtualizarRegiaoDoEstado(RegiaoDTO regiaoParaAtualizacao) {
+            try {
+                var dao = new DAO();
+                var sqlQuery = new StringBuilder();
+                sqlQuery.Append($"UPDATE SGFJU_DEV.SGFJU_TBL_REGIAO SET NOMEREGIAO = '{regiaoParaAtualizacao.NomeRegiao}'  WHERE ID_REGIAO = {regiaoParaAtualizacao.IdRegiao} ;");
+
+                dao.ExecuteNonQuery(sqlQuery.ToString());
+            }
+            catch (Exception dataException)
+            {
                 var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
                 throw new DomainException(mensagemTratada, dataException);
             }
@@ -407,7 +436,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
                 throw new DomainException(mensagemTratada, dataException);
             }
-        }
+        }        
         public void ExcluirIgrejaDoEstado(Igreja igrejaParaExclusao) {
             try {
                 var dao = new DAO();

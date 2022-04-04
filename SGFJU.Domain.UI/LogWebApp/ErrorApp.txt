@@ -10185,3 +10185,5 @@ Nome do parâmetro: source
 2022-04-01 23:59:44.9851|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:44' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
 2022-04-01 23:59:53.7378|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:53' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
 2022-04-01 23:59:53.7378|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:53' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-04 16:46:07.5869|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '04/04/2022 16:46:07' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-04 16:46:07.7323|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '04/04/2022 16:46:07' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();

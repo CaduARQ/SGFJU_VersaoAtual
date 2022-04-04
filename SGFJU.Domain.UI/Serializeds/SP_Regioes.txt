@@ -4,16 +4,8 @@
     "NomeEstado": null,
     "idBloco": 15,
     "NomeBloco": null,
-    "IdRegiao": 4,
-    "NomeRegiao": "Brás"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
     "IdRegiao": 6,
-    "NomeRegiao": "lapa"
+    "NomeRegiao": "Lapa"
   },
   {
     "IdEstado": 0,
@@ -30,22 +22,6 @@
     "NomeBloco": null,
     "IdRegiao": 24,
     "NomeRegiao": "Santa Cecília"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 25,
-    "NomeRegiao": "Itaim Bibi"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 26,
-    "NomeRegiao": "Vila Carrão "
   },
   {
     "IdEstado": 0,
@@ -78,14 +54,6 @@
     "NomeBloco": null,
     "IdRegiao": 30,
     "NomeRegiao": "Penha"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 31,
-    "NomeRegiao": "Santa Cecília"
   },
   {
     "IdEstado": 0,
@@ -166,118 +134,6 @@
     "NomeBloco": null,
     "IdRegiao": 840,
     "NomeRegiao": "Ae Carvalho"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 1752,
-    "NomeRegiao": "CATEDRAL"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 1808,
-    "NomeRegiao": "Perus"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2010,
-    "NomeRegiao": "Alphaville"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2054,
-    "NomeRegiao": "jaçana"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2129,
-    "NomeRegiao": "MOGI MIRIM"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2130,
-    "NomeRegiao": "MOGI MIRIM"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2146,
-    "NomeRegiao": "cidade ademar"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2163,
-    "NomeRegiao": "ocian"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2170,
-    "NomeRegiao": "bela vist"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2176,
-    "NomeRegiao": "Araras "
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2196,
-    "NomeRegiao": "BARRETOS"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2198,
-    "NomeRegiao": "assis"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2244,
-    "NomeRegiao": "BLUCO SUL"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 15,
-    "NomeBloco": null,
-    "IdRegiao": 2247,
-    "NomeRegiao": "itapecerica da serra"
   },
   {
     "IdEstado": 0,
@@ -492,6 +348,14 @@
     "NomeEstado": null,
     "idBloco": 16,
     "NomeBloco": null,
+    "IdRegiao": 2115,
+    "NomeRegiao": "-"
+  },
+  {
+    "IdEstado": 0,
+    "NomeEstado": null,
+    "idBloco": 16,
+    "NomeBloco": null,
     "IdRegiao": 2123,
     "NomeRegiao": "-"
   },
@@ -572,6 +436,14 @@
     "NomeEstado": null,
     "idBloco": 16,
     "NomeBloco": null,
+    "IdRegiao": 2245,
+    "NomeRegiao": "-"
+  },
+  {
+    "IdEstado": 0,
+    "NomeEstado": null,
+    "idBloco": 16,
+    "NomeBloco": null,
     "IdRegiao": 2254,
     "NomeRegiao": "Grajá"
   },
@@ -582,6 +454,14 @@
     "NomeBloco": null,
     "IdRegiao": 2255,
     "NomeRegiao": "Grajaú"
+  },
+  {
+    "IdEstado": 0,
+    "NomeEstado": null,
+    "idBloco": 16,
+    "NomeBloco": null,
+    "IdRegiao": 2340,
+    "NomeRegiao": "Trianon"
   },
   {
     "IdEstado": 0,
@@ -1070,14 +950,6 @@
     "NomeBloco": null,
     "IdRegiao": 1921,
     "NomeRegiao": "Suzano"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 19,
-    "NomeBloco": null,
-    "IdRegiao": 1922,
-    "NomeRegiao": "Dona Benta "
   },
   {
     "IdEstado": 0,
@@ -1589,7 +1461,7 @@
     "idBloco": 25,
     "NomeBloco": null,
     "IdRegiao": 10,
-    "NomeRegiao": "Arujá"
+    "NomeRegiao": "Arujá sofreu atualização"
   },
   {
     "IdEstado": 0,
@@ -2061,7 +1933,7 @@
     "idBloco": 29,
     "NomeBloco": null,
     "IdRegiao": 5,
-    "NomeRegiao": "Cachoeirinha"
+    "NomeRegiao": "Cachoeirinha alteração"
   },
   {
     "IdEstado": 0,
@@ -2426,14 +2298,6 @@
   {
     "IdEstado": 0,
     "NomeEstado": null,
-    "idBloco": 32,
-    "NomeBloco": null,
-    "IdRegiao": 2157,
-    "NomeRegiao": "Retiro"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
     "idBloco": 33,
     "NomeBloco": null,
     "IdRegiao": 55,
@@ -2718,21 +2582,5 @@
     "NomeBloco": null,
     "IdRegiao": 2155,
     "NomeRegiao": "MOGU GUAÇU"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 333,
-    "NomeBloco": null,
-    "IdRegiao": 2197,
-    "NomeRegiao": "presidente Venceslau"
-  },
-  {
-    "IdEstado": 0,
-    "NomeEstado": null,
-    "idBloco": 333,
-    "NomeBloco": null,
-    "IdRegiao": 2201,
-    "NomeRegiao": "Tupã"
   }
 ]

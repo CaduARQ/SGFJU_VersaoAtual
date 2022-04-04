@@ -142,11 +142,5 @@
     "NomeBloco": "Presidente Prudente ",
     "IdEstadoBloco": 28,
     "EstadoBloco": null
-  },
-  {
-    "idBloco": 361,
-    "NomeBloco": "Bloco Teste Exclusão",
-    "IdEstadoBloco": 28,
-    "EstadoBloco": null
   }
 ]

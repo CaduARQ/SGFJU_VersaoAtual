@@ -122,12 +122,8 @@ namespace SGFJU.Domain.UI.Controllers
         public RespostaRequisicaoDTO AtualizarBloco([FromBody] BlocoDTO blocoAtualizacao) { 
             try {
                 var idEstadoLogado = SessionHelper.RetornaUsuarioLogado().EstadoUsuario.Id;
-                var facade = new FacadeBaseImpl<Bloco>();
-                facade.Save(new Bloco { 
-                    Id = blocoAtualizacao.idBloco,
-                    NomeBloco = blocoAtualizacao.NomeBloco,
-                    EstadoBloco = new Estado { Id = idEstadoLogado }
-                });
+                var facade = new FacadeEstadoImpl();
+                facade.AtualizarBlocoDoEstado(blocoAtualizacao);
                 AtualizaJSONBlocos();
                 return new RespostaRequisicaoDTO { RequisicaoBemSucedida = true, MensagemRespostaRequisicao = "Bloco atualizado com sucesso!" };
             }

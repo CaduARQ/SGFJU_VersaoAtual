@@ -156,10 +156,35 @@ namespace SGFJU.Bussiness.Facade
                 throw new FacadeException(mensagemErroExcecao, excGeneral);
             }
         }
-        
+        public void AtualizarBlocoDoEstado(BlocoDTO blocoParaAtualizacao) { 
+            try {
+                this.__diContainer.GetServiceImplementationToType<EstadoRepository>().AtualizarBlocoDoEstado(blocoParaAtualizacao);
+            }
+            catch (DomainException exceptionFacade) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(exceptionFacade);
+                throw new FacadeException(mensagemErroExcecao, exceptionFacade);
+            }
+            catch (Exception excGeneral) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excGeneral);
+                throw new FacadeException(mensagemErroExcecao, excGeneral);
+            }
+        }
         public void ExcluirBlocoDoEstado(Bloco blocoParaExclusao) {
             try {
                 this.__diContainer.GetServiceImplementationToType<EstadoRepository>().ExcluirBlocoDoEstado(blocoParaExclusao);
+            }
+            catch (DomainException exceptionFacade) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(exceptionFacade);
+                throw new FacadeException(mensagemErroExcecao, exceptionFacade);
+            }
+            catch (Exception excGeneral) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excGeneral);
+                throw new FacadeException(mensagemErroExcecao, excGeneral);
+            }
+        }
+        public void AtualizarRegiaoDoEstado(RegiaoDTO regiaoParaAtualizacao) { 
+            try {
+                this.__diContainer.GetServiceImplementationToType<EstadoRepository>().AtualizarRegiaoDoEstado(regiaoParaAtualizacao);
             }
             catch (DomainException exceptionFacade) {
                 var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(exceptionFacade);

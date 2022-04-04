@@ -628,3 +628,19 @@
 {"IdLogUsuario":997,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"01/04/2022","HorarioAcaoUsuario":" 23 horas e 49 minutos","SiglaEstadoUsuario":"SP"}|
 {"IdLogUsuario":410,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"01/04/2022","HorarioAcaoUsuario":" 23 horas e 52 minutos","SiglaEstadoUsuario":"SP"}|
 {"IdLogUsuario":519,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"01/04/2022","HorarioAcaoUsuario":" 23 horas e 55 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":696,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 16 horas e 44 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":803,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 17 horas e 25 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":0,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP atualizou a Região de ID 10 ","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 17 horas e 29 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":367,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 19 horas e 24 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":117,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 19 horas e 43 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":0,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP atualizou a Região de ID 5 ","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 19 horas e 48 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":610,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 6 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":0,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP atualizou a Região de ID 24 ","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 7 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":0,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP atualizou a Região de ID 24 ","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 7 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":226,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 14 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":1005,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 24 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":0,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP atualizou a Região de ID 14 ","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 26 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":0,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP atualizou a Região de ID 14 ","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 26 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":0,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP atualizou a Região de ID 27 ","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 27 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":0,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP atualizou a Região de ID 27 ","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 27 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":941,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"04/04/2022","HorarioAcaoUsuario":" 20 horas e 29 minutos","SiglaEstadoUsuario":"SP"}|

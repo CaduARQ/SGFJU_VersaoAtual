@@ -1236,6 +1236,10 @@
                                 type: "success"
                             });
 
+                            $('#txtNomeBlocoAtualizar').val('');
+
+                            carregarBlocosEstadoLogado();
+
                             $('#atualizaBlocoModal').modal('hide');
                         });
                     }
@@ -1261,6 +1265,10 @@
                                 text: retorno.MensagemRespostaRequisicao,
                                 type: "success"
                             });
+
+                            $('#txtNomeRegiaoAtualizar').val('');
+
+                            carregarRegioesEstadoLogado();
 
                             $('#atualizaRegiaoModal').modal('hide');
                         });

@@ -252,13 +252,8 @@ namespace SGFJU.Domain.UI.Controllers
             try
             {
                 var idEstadoLogado = SessionHelper.RetornaUsuarioLogado().EstadoUsuario.Id;
-                var facade = new FacadeBaseImpl<Regiao>();
-                facade.Save(new Regiao
-                {
-                    Id = regiaoAtualizacao.IdRegiao,
-                    NomeRegiao = regiaoAtualizacao.NomeRegiao,
-                    BlocoRegiao = new Bloco { Id = regiaoAtualizacao.idBloco }
-                });
+                var facade = new FacadeEstadoImpl();
+                facade.AtualizarRegiaoDoEstado(regiaoAtualizacao);
 
                 var usuarioLogado = SessionHelper.RetornaUsuarioLogado();
                 SessionHelper.ObterLoogerParaController().WriteUserAction(new LogUsuarioDTO

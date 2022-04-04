@@ -18,8 +18,10 @@ namespace SGFJU.Domain.Model.Repositories
         ResultadoExclusaoBlocoDTO PodeExcluirBloco(Bloco blogo);
         ResultadoExclusaoRegiaoDTO PodeExcluirRegiao(Regiao regiao);
         ResultadoExclusaoIgrejaDTO PodeExcluirIgreja(Igreja igreja);
+        void AtualizarBlocoDoEstado(BlocoDTO blocoParaAtualizacao);
         void ExcluirBlocoDoEstado(Bloco blocoParaExclusao);
-        void ExcluirRegiaoDoEstado(Regiao regiaoParaExclusao);
+        void AtualizarRegiaoDoEstado(RegiaoDTO regiaoParaAtualizacao);
+        void ExcluirRegiaoDoEstado(Regiao regiaoParaExclusao);        
         void ExcluirIgrejaDoEstado(Igreja igrejaParaExclusao);
         bool JaExisteIgrejaNaRegiao(IgrejaDTO igrejaAVerificar);
         bool IgrejaPossuiCoordenador(IgrejaCoordenador igrejaCoordenadorParametro);
