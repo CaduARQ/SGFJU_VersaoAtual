@@ -133,96 +133,100 @@
     </style>
 </head>
 <body>
+    <script src="js/SGFJU.Domain.UI.Client.js"></script>
+    <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+    <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+    <script src="js/SGFJU.Domain.UI.Bind.Specialized.js"></script>
     <script>
         var __TEMPLATE_FORM_ACOMPANHAMENTO =
-            '<form id="#ID_FORM_ID_JOVEM#" class="form-horizontal">'+
-            '    <fieldset>'+
-            '        <div class="panel panel-primary">'+
-            '            <div class="panel-heading">Ficha de Acompanhamento do jovem <img src="img/FJU(LOGO) CINZA (1).png" height="20px" width="120px" /></div>'+
-            '            <div class="panel-body">                    '+
-            '                <div class="form-group">'+
-            '                    <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>'+
-            '                    <div class="col-md-5">'+
-            '                        <input id="Nome" name="Nome" value="#NOME#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                    <label class="col-md-2 control-label" for="Nome">Data de Nascimento </label>'+
-            '                    <div class="col-md-3">'+
-            '                        <input id="txtNascto" name="txtNascto" value="#DATANASCIMENTO#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                </div>'+ 
-            '                <div class="form-group">'+
-            '                    <label class="col-md-2 control-label" for="Nome">Estado <h11>*</h11></label>'+
-            '                    <div class="col-md-2">'+
-            '                        <input id="estado" name="estado" value="#ESTADO#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                    <label class="col-md-1 control-label" for="Nome">Bloco<h11>*</h11></label>'+
-            '                    <div class="col-md-2">'+
-            '                        <input id="bloco" name="bloco" value="#BLOCO#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                </div>'+
-            '                <div class="form-group">'+
-            '                    <label class="col-md-2 control-label" for="Nome">Região <h11>*</h11></label>'+
-            '                    <div class="col-md-2">'+
-            '                        <input id="regiao" name="regiao" value="#REGIAO#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                    <label class="col-md-1 control-label" for="Nome">Igreja<h11>*</h11></label>'+
-            '                    <div class="col-md-2">'+
-            '                        <input id="igreja" name="igreja" value=#IGREJA# placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                </div>'+ 
-            '                <div class="form-group">'+
-            '                    <label class="col-md-2 control-label" for="Nome">Whatsapp </label>'+
-            '                    <div class="col-md-2">'+
-            '                        <input id="whats" name="whats" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                    <label class="col-md-1 control-label" for="Nome">Estado Cívil</label>'+
-            '                    <div class="col-md-2">'+
-            '                        <input id="estadocivil" name="estadocivil" value="#ECIVIL#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                </div>'+
-            '                <div class="form-group">'+
-            '                    <label class="col-md-2 control-label" for="Nome">Endereço </label>'+
-            '                    <div class="col-md-5">'+
-            '                        <input id="endereco" name="endereco" value=#ENDERECO# placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                </div>'+
-            '                <div class="form-group">'+
-            '                    <label class="col-md-2 control-label" for="Nome">Quando entrou na FJU </label>'+
-            '                    <div class="col-md-1">'+
-            '                        <input id="IngressouFJU" name="IngressouFJU" value="#DATAINGRESSOUFJU#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                    <label class="col-md-2 control-label" for="Nome">Projeto</label>'+
-            '                    <div class="col-md-2">'+
-            '                        <input id="projetoJovem" name="projetoJovem" value="#PROJETOJOVEM#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                </div>'+ 
-            '                <div class="form-group">'+
-            '                    <label class="col-md-2 control-label" for="Nome">Conheceu a FJU? </label>'+
-            '                    <div class="col-md-5">'+
-            '                        <input id="descricaoConheceuFJU" name="descricaoConheceuFJU" value="#DESCCONHECEUFJU#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                </div>'+ 
-            '                <div class="form-group">'+
-            '                    <label class="col-md-2 control-label" for="Nome">Batizado nas Àguas </label>'+
-            '                    <div class="col-md-1">'+
-            '                        <input id="EhBatizadoAguas" name="EhBatizadoAguas" value="#EHBTZAGUAS#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                    <label class="col-md-2 control-label" for="Nome">Quando</label>'+
-            '                    <div class="col-md-2">'+
-            '                        <input id="DataBtzAguas" name="DataBtzAguas" value="#DATABTZAGUAS#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                    <label class="col-md-2 control-label" for="Nome">Foi na IURD</label>'+
-            '                    <div class="col-md-2">'+
-            '                        <input id="FoiIURD" name="FoiIURD" value="#FoiIURD#" placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                </div>'+ 
-            '                <div class="form-group">'+
-            '                    <label class="col-md-2 control-label" for="Nome">Batizado com o Espírito Santo </label>'+
-            '                    <div class="col-md-3">'+
-            '                        <input id="BatizadoEspiritoSanto" name="BatizadoEspiritoSanto" value=#EhBatizadoEspiritoSanto# placeholder="" class="form-control input-sm" required="" type="text">'+
-            '                    </div>'+
-            '                    <label class="col-md-2 control-label" for="Nome">Quando </label>'+
-            '                    <div class="col-md-5"> '+
+            '<form id="#ID_FORM_ID_JOVEM#" class="form-horizontal">' +
+            '    <fieldset>' +
+            '        <div class="panel panel-primary">' +
+            '            <div class="panel-heading">Ficha de Acompanhamento do jovem <img src="img/FJU(LOGO) CINZA (1).png" height="20px" width="120px" /></div>' +
+            '            <div class="panel-body">                    ' +
+            '                <div class="form-group">' +
+            '                    <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>' +
+            '                    <div class="col-md-5">' +
+            '                        <input id="Nome" name="Nome" value="#NOME#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                    <label class="col-md-2 control-label" for="Nome">Data de Nascimento </label>' +
+            '                    <div class="col-md-3">' +
+            '                        <input id="txtNascto" name="txtNascto" value="#DATANASCIMENTO#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                </div>' +
+            '                <div class="form-group">' +
+            '                    <label class="col-md-2 control-label" for="Nome">Estado <h11>*</h11></label>' +
+            '                    <div class="col-md-2">' +
+            '                        <input id="estado" name="estado" value="#ESTADO#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                    <label class="col-md-1 control-label" for="Nome">Bloco<h11>*</h11></label>' +
+            '                    <div class="col-md-2">' +
+            '                        <input id="bloco" name="bloco" value="#BLOCO#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                </div>' +
+            '                <div class="form-group">' +
+            '                    <label class="col-md-2 control-label" for="Nome">Região <h11>*</h11></label>' +
+            '                    <div class="col-md-2">' +
+            '                        <input id="regiao" name="regiao" value="#REGIAO#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                    <label class="col-md-1 control-label" for="Nome">Igreja<h11>*</h11></label>' +
+            '                    <div class="col-md-2">' +
+            '                        <input id="igreja" name="igreja" value=#IGREJA# placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                </div>' +
+            '                <div class="form-group">' +
+            '                    <label class="col-md-2 control-label" for="Nome">Whatsapp </label>' +
+            '                    <div class="col-md-2">' +
+            '                        <input id="whats" name="whats" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                    <label class="col-md-1 control-label" for="Nome">Estado Cívil</label>' +
+            '                    <div class="col-md-2">' +
+            '                        <input id="estadocivil" name="estadocivil" value="#ECIVIL#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                </div>' +
+            '                <div class="form-group">' +
+            '                    <label class="col-md-2 control-label" for="Nome">Endereço </label>' +
+            '                    <div class="col-md-5">' +
+            '                        <input id="endereco" name="endereco" value=#ENDERECO# placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                </div>' +
+            '                <div class="form-group">' +
+            '                    <label class="col-md-2 control-label" for="Nome">Quando entrou na FJU </label>' +
+            '                    <div class="col-md-1">' +
+            '                        <input id="IngressouFJU" name="IngressouFJU" value="#DATAINGRESSOUFJU#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                    <label class="col-md-2 control-label" for="Nome">Projeto</label>' +
+            '                    <div class="col-md-2">' +
+            '                        <input id="projetoJovem" name="projetoJovem" value="#PROJETOJOVEM#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                </div>' +
+            '                <div class="form-group">' +
+            '                    <label class="col-md-2 control-label" for="Nome">Conheceu a FJU? </label>' +
+            '                    <div class="col-md-5">' +
+            '                        <input id="descricaoConheceuFJU" name="descricaoConheceuFJU" value="#DESCCONHECEUFJU#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                </div>' +
+            '                <div class="form-group">' +
+            '                    <label class="col-md-2 control-label" for="Nome">Batizado nas Àguas </label>' +
+            '                    <div class="col-md-1">' +
+            '                        <input id="EhBatizadoAguas" name="EhBatizadoAguas" value="#EHBTZAGUAS#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                    <label class="col-md-2 control-label" for="Nome">Quando</label>' +
+            '                    <div class="col-md-2">' +
+            '                        <input id="DataBtzAguas" name="DataBtzAguas" value="#DATABTZAGUAS#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                    <label class="col-md-2 control-label" for="Nome">Foi na IURD</label>' +
+            '                    <div class="col-md-2">' +
+            '                        <input id="FoiIURD" name="FoiIURD" value="#FoiIURD#" placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                </div>' +
+            '                <div class="form-group">' +
+            '                    <label class="col-md-2 control-label" for="Nome">Batizado com o Espírito Santo </label>' +
+            '                    <div class="col-md-3">' +
+            '                        <input id="BatizadoEspiritoSanto" name="BatizadoEspiritoSanto" value=#EhBatizadoEspiritoSanto# placeholder="" class="form-control input-sm" required="" type="text">' +
+            '                    </div>' +
+            '                    <label class="col-md-2 control-label" for="Nome">Quando </label>' +
+            '                    <div class="col-md-5"> ' +
             '                        <input id="dtaBatismoEspiritoSanto" name="dtaBatismoEspiritoSanto" value="#dtaBatismoEspiritoSanto#" placeholder="" class="form-control input-sm" required="" type="text">' +
             '                    </div>' +
             '                </div>' +
@@ -340,12 +344,41 @@
                 );
             }*/
 
-            carregaJovensJaAcompanhadosObreiro();
+            //carregaJovensJaAcompanhadosObreiro();
 
             //frmJovemEmAcompanhamento
             //$('#frmJovemEmAcompanhamento').append(__TEMPLATE_FORM_JOVEM_EM_ACOMPANHAMENTO.replace('#NOME#', 'vitória'));
             //$(document.body).append(__TEMPLATE_FORM_JOVEM_EM_ACOMPANHAMENTO.replace('#NOME#', 'vitória'));
+            /*
+            foo(function (data) {
+                console.log('::Data returned from response function -> ' + JSON.stringify(data));
+            });*/
+
+            //foo(callbackFoo);
+
+            var altarJovemFacade = new SGFJU.Domain.Model.UI.Client.Facade.AltarJovemFacade();
+            altarJovemFacade.RetornaJovensLevantadosAltarCallback({ IdEstado: 28 }, callbackFoo);
         });
+
+        function callbackFoo(dataParam) {
+            console.log('::Data returned from response function -> ' + JSON.stringify(dataParam));
+        }
+
+        function foo(callback) {
+            var objectParameter = {
+                IdEstado: 28
+            };
+
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(objectParameter),
+                url: "api/AltarJovem/ListaJovensLevantadosParaOAltarPorParametro",
+                success: function (response) {
+                    callback(response);
+                },
+                contentType: "application/json"
+            });
+        }
 
         function carregaJovensJaAcompanhadosObreiro() {
             var url_ = new URL(location.href);

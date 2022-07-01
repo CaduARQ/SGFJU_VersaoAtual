@@ -73,6 +73,7 @@ C:\Users\Intel\source\repos\SGFJU\ConsoleTester\obj\Release\ConsoleTester.csproj
 C:\Users\Intel\source\repos\SGFJU\ConsoleTester\obj\Release\ConsoleTester.csproj.CopyComplete
 C:\Users\Intel\source\repos\SGFJU\ConsoleTester\obj\Release\ConsoleTester.exe
 C:\Users\Intel\source\repos\SGFJU\ConsoleTester\obj\Release\ConsoleTester.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\obj\Release\ConsoleTester.csprojAssemblyReference.cache
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Release\ConsoleTester.exe.config
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Release\ConsoleTester.exe
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Release\ConsoleTester.pdb
@@ -144,7 +145,6 @@ C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Release\SGFJU.Domain.Mod
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Release\SGFJU.Domain.Model.Infra.ExceptionManager.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Release\SGFJU.Domain.Model.Infra.Util.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Release\SGFJU.Domain.Model.Infra.Logging.pdb
-C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\obj\Release\ConsoleTester.csprojAssemblyReference.cache
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\obj\Release\ConsoleTester.csproj.CopyComplete
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\obj\Release\ConsoleTester.exe
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\obj\Release\ConsoleTester.pdb

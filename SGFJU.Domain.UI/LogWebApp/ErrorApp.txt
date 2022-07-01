@@ -10187,3 +10187,169 @@ Nome do parâmetro: source
 2022-04-01 23:59:53.7378|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/04/2022 23:59:53' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
 2022-04-04 16:46:07.5869|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '04/04/2022 16:46:07' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
 2022-04-04 16:46:07.7323|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '04/04/2022 16:46:07' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-04 21:01:15.1621|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '04/04/2022 21:01:15' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-04 21:01:15.4055|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '04/04/2022 21:01:15' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-18 18:06:00.5125|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2022 18:06:00' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-18 18:06:01.0516|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2022 18:06:01' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-18 18:06:01.0516|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2022 18:06:01' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-18 18:06:01.0516|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/04/2022 18:06:01' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-04-19 11:26:21.8830|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 11:26:21' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-19 11:26:21.9850|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 11:26:21' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-19 11:35:25.6090|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 11:35:25' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-19 11:35:25.6140|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 11:35:25' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-19 11:35:40.0119|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 11:35:40' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-19 11:35:40.0119|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 11:35:40' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-19 16:19:18.4536|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 16:19:18' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-19 16:19:18.4900|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 16:19:18' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-19 16:19:25.2188|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 16:19:25' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-19 16:19:25.2198|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 16:19:25' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-19 16:24:30.5225|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 16:24:30' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-04-19 16:24:30.5225|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 16:24:30' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-04-19 17:38:03.5159|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/04/2022 17:38:03' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-05-13 18:16:05.8962|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/05/2022 18:16:05' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2022-05-13 18:16:05.9354|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '13/05/2022 18:16:05' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2022-05-20 11:06:54.3764|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '20/05/2022 11:06:54' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 52: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-05-20 11:06:55.2241|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '20/05/2022 11:06:55' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-05-20 11:06:55.2241|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '20/05/2022 11:06:55' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-05-20 11:06:55.2361|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '20/05/2022 11:06:55' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-05-20 14:07:51.1720|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '20/05/2022 14:07:51' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-05-20 14:07:51.2791|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '20/05/2022 14:07:51' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-05-20 14:07:51.6272|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '20/05/2022 14:07:51' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2022-05-20 17:06:59.0419|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '20/05/2022 17:06:59' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.GerenciamentoDespesasController.RegistraAcaoComDespesas(AcaoComDespesasDTO acaoComSuasDespesas) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\GerenciamentoDespesasController.cs:linha 53: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: Error dehydrating property value for SGFJU.Domain.Model.Entities.Acao.EstadoAcao 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2022-05-29 16:02:10.2272|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/05/2022 16:02:10' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Helpers.SessionHelper.RetornaEstadoUsuarioLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Helpers\SessionHelper.cs:linha 37
+   em SGFJU.Domain.UI.Controllers.GerenciamentoDespesasController.ObterDespesasDataAtualEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\GerenciamentoDespesasController.cs:linha 23: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------

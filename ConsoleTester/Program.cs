@@ -222,6 +222,7 @@ namespace ConsoleTester
 
             */
 
+            /*
             var patrimonioRepository = new PatrimonioRepositoryImpl();
             patrimonioRepository.Save(new ItemPatrimonio {
                 CategoriaItem = new CategoriaItemPatrimonio { Code = 6 },
@@ -236,6 +237,38 @@ namespace ConsoleTester
                 NomeItemPatrimonio = "Microfone Shure",
                 NomeArquivoImagemItem1 = "ShureMicrofone.png"
             });
+            */
+
+            /*
+            var repository = new RepositoryImpl<Acao>();
+            var repositoryDespesa = new RepositoryImpl<Despesa>();
+
+            var paradaDesabafo = new Acao();
+            paradaDesabafo.EstadoAcao = new Estado { Id = 28 };
+            paradaDesabafo.NomeAcao = "Parada do Desabafo - Roseira SP";
+            paradaDesabafo.DataAcao = DateTime.Now;
+            paradaDesabafo.HoraInicio = "10:00";
+            paradaDesabafo.HoraFim = "15:00";
+
+            var despesas = new List<Despesa> {
+                    new Despesa{ Valor = decimal.Parse("80.45"), Data = DateTime.Now, Descricao = "Café da manhã", EstadoDespesa = new Estado{ Id = 28 }, NumeroDoCupom = "48598459549888454", NomeArquivoNota = "PDS_DESP_CAFE.png" },
+                    new Despesa{ Valor = decimal.Parse("400.89"), Data = DateTime.Now, Descricao = "Almoço", EstadoDespesa = new Estado{ Id = 28 }, NumeroDoCupom = "48598459549888477", NomeArquivoNota = "PDS_DESP_ALMOCO.png" },
+                    new Despesa{ Valor = decimal.Parse("77.89"), Data = DateTime.Now, Descricao = "Lanche Tarde", EstadoDespesa = new Estado{ Id = 28 }, NumeroDoCupom = "48598459549888884", NomeArquivoNota = "PDS_DESP_LANCHE_TARDE.png" },
+                };
+
+            repositoryDespesa.SaveBatch(despesas);
+
+            paradaDesabafo.addDespesasDaAcao(
+                despesas
+            );
+
+            repository.Save(paradaDesabafo); */
+
+            var despRepository = new GerenciamentoDespesasRepositoryImpl();
+            var res = despRepository.ListaDespesasPorParametro(new ParametroDespesasDTO{
+                Data = "2022-05-20"
+            });
+            //var resultado = despRepository.ListarDespesasRegistradasHojePorEstado(new EstadoDTO { IdEstado = 28 });
 
             /*
             var repo = new RelatorioReuniaoFJUIgrejaRepositoryImpl();
