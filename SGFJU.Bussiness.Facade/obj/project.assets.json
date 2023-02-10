@@ -1873,6 +1873,7 @@
           "NHibernate": "5.2.7",
           "SGFJU.Domain.Model": "1.0.0",
           "SGFJU.Domain.Model.Infra.ExceptionManager": "1.0.0",
+          "SGFJU.Domain.Model.Infra.Logging": "1.0.0",
           "SGFJU.Domain.Model.Infra.Security": "1.0.0",
           "SGFJU.Domain.Model.Infra.Util": "1.0.0",
           "System.Configuration.ConfigurationManager": "4.7.0"

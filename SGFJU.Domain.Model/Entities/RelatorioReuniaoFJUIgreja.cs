@@ -11,7 +11,16 @@ namespace SGFJU.Domain.Model.Entities
         public virtual int QuantidadeBatizadosAguas { get; set; }
         public virtual int QuantidadeBatizadosEspiritoSanto { get; set; }
         public virtual int QuantidadeAlgoAMais { get; set; }
-        public virtual DateTime DataRelatorio { get; set; }
+
+        public virtual int QuantidadeJovensLevantadosObra { get; set; }
+        public virtual int QuantidadeObreirasCasaramPastor { get; set; }
+        public virtual int QuantidadeJovensIndicadosCPO { get; set; }
+        public virtual int QuantidadeObreiros { get; set; }
+        public virtual int QuantidadeSaidaObreirosFJU { get; set; }
+        public virtual int QuantidadeJovensCadastradosNovos { get; set; }
+        public virtual DateTime DataRegistroRelatorio { get; set; }
+        public virtual DateTime DataInicialPeriodoRelatorio { get; set; }
+        public virtual DateTime DataFinalPeriodoRelatorio { get; set; }
         public virtual string HorarioRelatorio { get; set; }
         public virtual string NomeCoordenadorPreencheuRelatorio { get; set; }
         public virtual Igreja IgrejaRelatorio { get; set; }

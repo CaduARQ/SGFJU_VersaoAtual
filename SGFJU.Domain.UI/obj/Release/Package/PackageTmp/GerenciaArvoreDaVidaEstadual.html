@@ -1279,6 +1279,10 @@
                                 {
                                     data: 'NomeArquivoFotoFormatado',
                                     render: function (data, type, row) {
+                                        switch (row.IdTipoDespesa) {
+
+                                            default:
+                                        }
                                         return "<img src=" + row.NomeArquivoFotoFormatado + " class='rounded-circle img-sm'  />";
                                     }
                                 },

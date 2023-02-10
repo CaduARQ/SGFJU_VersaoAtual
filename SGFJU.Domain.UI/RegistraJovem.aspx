@@ -51,7 +51,7 @@
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element">
-                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <img id="imgUserConn" src="./img/UsuarioNaoSelecionado.png" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
                                 <span id="lblPerfilUsuario" class="text-muted text-xs block"><b class="caret"></b></span>

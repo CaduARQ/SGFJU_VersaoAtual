@@ -41,6 +41,9 @@ function configComboEstado() {
     }).done(function (retorno) {
         $("#cboEstado").val(retorno.IdEstadoUsuarioLogado).trigger('change.select2');
         $('#cboEstado').prop("disabled", true);
+        $('#cboBloco').empty().trigger("change");
+        $('#cboRegiao').empty().trigger("change");
+        $('#cboIgreja').empty().trigger("change");
         preencherComboBlocos(retorno.IdEstadoUsuarioLogado);
     });
 }

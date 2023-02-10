@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SGFJU.ServicesLayer.DTO
 {
-    public class FechamentoRelatorioDTO
+    public class FechamentoRelatorioEstadoDTO
     {
         public int IdEstadoFechamentoRelatorio { get; set; }
         public int IdReuniaoFechamentoRelatorio { get; set; }

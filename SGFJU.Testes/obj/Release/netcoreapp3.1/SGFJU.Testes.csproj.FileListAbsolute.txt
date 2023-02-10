@@ -150,6 +150,7 @@ C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\Ies
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\K4os.Compression.LZ4.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\log4net.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
@@ -166,6 +167,7 @@ C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\Ubi
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\Zstandard.Net.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\NHibernate.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\NLog.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\nunit.framework.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\Remotion.Linq.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\Remotion.Linq.EagerFetching.dll
@@ -250,15 +252,21 @@ C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\run
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.DataAccess.MySql.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.ExceptionManager.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.Logging.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.Security.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.Serialization.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.Util.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Interfaces.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.ServicesLayer.DTO.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.DataAccess.MySql.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.DataAccess.MySql.dll.config
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.ExceptionManager.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.Logging.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.Security.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.Serialization.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Domain.Model.Infra.Util.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.Interfaces.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\bin\Release\netcoreapp3.1\SGFJU.ServicesLayer.DTO.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\obj\Release\netcoreapp3.1\SGFJU.Testes.csprojAssemblyReference.cache
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Testes\obj\Release\netcoreapp3.1\SGFJU.Testes.AssemblyInfoInputs.cache

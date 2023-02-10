@@ -30,6 +30,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql
             this.Map(t => t.DataCadastro);
             this.Map(t => t.DataPreenchimentoFormulario);
             this.Map(t => t.DataUltimaAtualizacao);
+            this.Map(t => t.DataIngressoObra);
             this.Map(t => t.TextoSugestao);
             this.Map(t => t.Sexo);
             this.Map(t => t.ClassificacaoJovem);

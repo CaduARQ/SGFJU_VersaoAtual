@@ -463,6 +463,8 @@
                                                                     <option value="I">Inativo</option>
                                                                     <option value="F">Afastado</option>
                                                                     <option value="N">Iniciante</option>
+                                                                    <option value="C">Candidata ao Altar</option>
+                                                                    <option value="D">Namorada</option>
                                                                     <option value="L">Ingressou na Obra</option>
                                                                     <option class="font-bold" style="color: red;" value="O">Sem classificação</option>
                                                                 </select>
@@ -2870,6 +2872,10 @@
                                                     return "<span class='label label-info'>Ativo</span>"
                                                 else if(row.ClassificacaoJovem == 'N') 
                                                     return "<span class='label label-success'>Iniciante</span>"
+                                                else if(row.ClassificacaoJovem == 'C') 
+                                                    return "<span class='label label-success'>Candidata ao altar</span>"
+                                                else if(row.ClassificacaoJovem == 'D') 
+                                                    return "<span class='label label-success'>Namorada</span>"
                                                 else if(row.ClassificacaoJovem == 'L') 
                                                     return "<span class='label label-warning'>Altar</span>"
                                                 else if(row.ClassificacaoJovem == 'O' || row.ClassificacaoJovem == '' || row.ClassificacaoJovem == undefined) 
@@ -3147,6 +3153,10 @@
                                                     return "<span class='label label-info'>Ativo</span>"
                                                 else if(row.ClassificacaoJovem == 'N') 
                                                     return "<span class='label label-success'>Iniciante</span>"
+                                                else if(row.ClassificacaoJovem == 'C') 
+                                                    return "<span class='label label-success'>Candidata ao altar</span>"
+                                                else if(row.ClassificacaoJovem == 'D') 
+                                                    return "<span class='label label-success'>Namorada</span>"
                                                 else if(row.ClassificacaoJovem == 'L') 
                                                     return "<span class='label label-warning'>Altar</span>"
                                                 else if(row.ClassificacaoJovem == 'O' || row.ClassificacaoJovem == '' || row.ClassificacaoJovem == undefined) 

@@ -10,7 +10,9 @@ namespace SGFJU.ServicesLayer.DTO.Relatorios
         public int SomatorioRelatoriosJaLancadosAM { get; set; }
         public int QuantidadeIgrejasSemRelatorio { get; set; }
         public IList<RelatorioReuniaoFJUIgrejaDTO> RelatorioIgrejasNoPeriodo { get; set; }
+        public IList<RelatorioReuniaoFJUIgrejaDTO> RelatorioIgrejasJaPreenchidoNoPeriodo { get; set; }
         public string PercentualRelatorioPreenchido { get; set; }
         public string PercentualRelatorioNaoPreenchido { get; set; }
+        public bool EhParaFecharRelatorio { get; set; }
     }
 }

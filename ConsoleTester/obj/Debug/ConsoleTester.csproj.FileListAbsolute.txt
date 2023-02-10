@@ -110,8 +110,8 @@ C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\SGFJU.Interfaces.d
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\SGFJU.Domain.Model.Infra.Serialization.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\SGFJU.Domain.Model.Infra.ExceptionManager.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\SGFJU.Domain.Model.Infra.Util.dll
-C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\SGFJU.Domain.Model.Infra.Logging.dll
+C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\SGFJU.Bussiness.Facade.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\SGFJU.Domain.Model.Infra.DataAccess.MySql.pdb
 C:\Users\Intel\Documents\GitHub\SGFJU\ConsoleTester\bin\Debug\SGFJU.Domain.Model.Infra.DataAccess.MySql.dll.config

@@ -130,7 +130,7 @@
 
                                 <h1>Finish</h1>
                                 <fieldset>
-                                    <h2>Informações de Credenciais</h2>
+                                    <h2>Informações da despesa</h2>
 
                                     <hr class="hr-line-solid" />
                                     
@@ -421,6 +421,19 @@
             configComboEstado();
 
             /*
+            $("#txtValor").inputmask('currency', {
+                "autoUnmask": true,
+                radixPoint: ",",
+                groupSeparator: ".",
+                allowMinus: false,
+                prefix: 'R$ ',
+                digits: 2,
+                digitsOptional: false,
+                rightAlign: true,
+                unmaskAsNumber: true
+            });*/
+
+            /*
             $('#fotoNotaModal').on('hide.bs.modal', function () {
                 var arquivoFotoJovem = $('#FileUpload1').val()
                 var file = $('#FileUpload1');
@@ -463,7 +476,7 @@
                 //console.log(retorno.IdEstadoUsuarioLogado);
                 $("#cboEstado").val(retorno.IdEstadoUsuarioLogado).trigger('change.select2');
                 $('#cboEstado').prop("disabled", true);
-                preencherComboBlocos(retorno.IdEstadoUsuarioLogado);
+                
             });
         }
 
@@ -473,6 +486,11 @@
                 title: "Usuário Cadastrado com sucesso !",
                 text: msgConfirmacaoCadastro,
                 type: "success"
+            }, function () {
+                    txtValor
+                    $('#txtValor').val('');
+                    $('#txtDescricao').val('');
+                    $('#txtNumeroCupom').val('');
             });
         }
 

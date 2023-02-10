@@ -20,11 +20,18 @@ namespace SGFJU.ServicesLayer.DTO
         public int QuantidadeBatizadosAguas { get; set; }
         public int QuantidadeBatizadosEspiritoSanto { get; set; }
         public int QuantidadeAlgoAMais { get; set; }
-
-        public string DataRelatorio { get; set; }
+        public int QuantidadeJovensLevantadosObra { get; set; }
+        public int QuantidadeObreirasCasaramPastor { get; set; }
+        public int QuantidadeJovensIndicadosCPO { get; set; }
+        public int QuantidadeObreiros { get; set; }
+        public int QuantidadeSaidaObreirosFJU { get; set; }
+        public int QuantidadeJovensCadastradosNovos { get; set; }
+        public string DataRegistroRelatorio { get; set; }
+        public string DataInicialPeriodoRelatorio { get; set; }
+        public string DataFinalPeriodoRelatorio { get; set; }
         public string HorarioRelatorio { get; set; }
         public string NomeCoordenadorPreencheuRelatorio { get; set; }
         public string NomeReuniaoFJURelatorio { get; set; }
-        public string RelatorioJaLancado { get; set; }
+        public string RelatorioJaProcessado { get; set; }
     }
 }

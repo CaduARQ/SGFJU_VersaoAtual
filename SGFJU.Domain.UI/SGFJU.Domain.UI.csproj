@@ -184,6 +184,8 @@
     <Content Include="DashboardArvoreVidaNacional.html" />
     <Content Include="DashboardAVEstados.html" />
     <Content Include="DashboardNacionalCamisasFJU.html" />
+    <Content Include="DashboardRelatorioFJUEstadual.html" />
+    <Content Include="DashboardRelatorioFJUNacional.html" />
     <Content Include="FichaAltarJovem318.html" />
     <Content Include="FichaCoordenador.html" />
     <Content Include="FichaObreiro.html" />
@@ -207,6 +209,7 @@
     <Content Include="Serializeds\menuSecretariaBR.txt" />
     <Content Include="Serializeds\menuSecretariaEstadual.txt" />
     <Content Include="Serializeds\menuADMGeral.txt" />
+    <Content Include="Serializeds\ParametroRelatorioFJU.txt" />
     <Content Include="TranferIgreja.html" />
     <Content Include="VisualizaFichaJovemImpressao.aspx" />
     <Content Include="AlteraCoordenador.aspx" />

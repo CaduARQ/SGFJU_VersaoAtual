@@ -804,6 +804,17 @@
 
                             </div>
                         </div>
+
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                Alterações de classificação
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!---->
@@ -820,7 +831,7 @@
                                         <div class="form-group">
                                             <label class="text-success font-bold">Nova Classificação</label>
                                             <div class="input-group">
-                                                <select id="cboClassificacaoJovem" name="cboClassificacaoJovem" class="select2_demo_3 form-control">
+                                                <select id="cboClassificacaoJovem" name="cboClassificacaoJovem" class="select2_demo_11 form-control">
                                                     <option value="A">Ativo</option>
                                                     <option value="I">Inativo</option>
                                                     <option value="N">Iniciante</option>
@@ -836,6 +847,10 @@
                                         <div class="form-group">
                                             <label class="text-success font-bold">Autorizador da troca de classificacao</label>
                                             <input id="txtNomeAutorizadorClassificacaoJovem" type="text" required class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="text-success font-bold">Data Ingresso Obra</label>
+                                            <input id="txtDataIngressoObra" type="date" class="form-control">
                                         </div>
                                         <div>
                                             <button class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="alterarClassificacaoJovem()"><strong>Trocar Classificação</strong></button>
@@ -1114,15 +1129,27 @@
 
         $(document).ready(function () {
 
+            $.fn.modal.Constructor.prototype._enforceFocus = function () { };
+
             facadeUser.ConfigurarPaginaX072470();
             //ConfigurarInformacoesPerfil();
             PreencherFormularioJovem();
 
-            
-            
-
             $('#modalAlteraClassificacaoJovem').on('shown.bs.modal', function (e) {
+                $('#txtDataIngressoObra').prop("disabled", true);
+
                 $('#cboClassificacaoJovem').val(__ClassificacaoAtual).trigger('change.select2');
+            });
+
+            $('.select2_demo_11').on('select2:select', function (e) {
+                alert("clicou!");
+                var data = e.params.data;
+
+                console.log('::Opção escolhida'+data.id);
+                
+                if (data.val == "L") {
+                    $('#txtDataIngressoObra').prop("disabled", false);    
+                }
             });
         });
 

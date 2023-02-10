@@ -45,6 +45,7 @@ namespace SGFJU.ServicesLayer.DTO
         public string DataCadastro { get; set; }
         public string DataUltimaAtualizacao { get; set; }
         public string DataPreenchimentoFormulario { get; set; }
+        public string DataIngressoObra { get; set; }
         public string TextoSugestao { get; set; }
         public char Sexo { get; set; }
         public char ClassificacaoJovem { get; set; }

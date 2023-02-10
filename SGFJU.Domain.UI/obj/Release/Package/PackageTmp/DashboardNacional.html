@@ -482,6 +482,24 @@
 
                 facadeUser.ConfigurarPaginaX072470();
 
+                /*ActivePaseProfile.ExecuteStrategyStoredCS0x04859(new Object(Kernel.Instructions(_exec)).aboutInstanceCurrent();*/
+                $.ajax({
+                    type: "GET",
+                    url: "api/Usuarios/X072470/",
+                    contentType: "application/json"
+                }).done(function (retorno) {
+                    if (retorno.NomePerfil != 'Administrador') {
+                        swal({
+                                title: "Permissão de Acesso - Negado",
+                                text: 'Seu usuário não possui permissão para acessar este módulo !',
+                                type: "warning"
+                        }, function () {
+                                location.href = 'RegistraJovem.aspx';
+                        });
+                    }
+                });
+                /**/
+
                 preencheDashboardNacional(false);
 
                 $("#cboEstado").select2();

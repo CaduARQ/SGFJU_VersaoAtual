@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SGfju.Domain.Model.Infra.ExceptionManager\SGFJU.Domain.Model.Infra.ExceptionManager.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Logging\SGFJU.Domain.Model.Infra.Logging.csproj" />
     <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Security\SGFJU.Domain.Model.Infra.Security.csproj" />
     <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Util\SGFJU.Domain.Model.Infra.Util.csproj" />
     <ProjectReference Include="..\SGFJU.Domain.Model\SGFJU.Domain.Model.csproj" />

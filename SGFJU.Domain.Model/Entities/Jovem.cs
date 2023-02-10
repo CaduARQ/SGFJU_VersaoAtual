@@ -39,6 +39,7 @@ namespace SGFJU.Domain.Model.Entities
         public virtual DateTime DataCadastro { get; set; }
         public virtual DateTime DataPreenchimentoFormulario { get; set; }
         public virtual DateTime? DataUltimaAtualizacao { get; set; }
+        public virtual DateTime? DataIngressoObra { get; set; }
         public virtual string TextoSugestao { get; set; }
         public virtual char Sexo { get; set; }
         public virtual char ClassificacaoJovem { get; set; }

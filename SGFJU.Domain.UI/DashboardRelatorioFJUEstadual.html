@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet"
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+
+    <!-- c3 Charts -->
+    <link href="css/plugins/c3/c3.min.css" rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style type="text/css">
+
+        /*
+        .ibox-title {
+            border-color: #3071a9;
+            border-bottom-color: #3071a9;
+            border-left-color: #3071a9;
+        }
+
+        .ibox-content {
+            border-color: #3071a9;
+            border-bottom-color: #3071a9;
+            border-left-color: #3071a9;
+        }
+
+        .ibox {
+            border-color: #3071a9;
+            border-bottom-color: #3071a9;
+            border-style: outset;
+        }
+
+        */
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquise por palavra-chave..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+
+                        <li>
+                            <a onclick="ExecutarActionX072433()">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- BEGIN BODY -->
+            <div class="wrapper wrapper-content">
+
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="widget style1 bg-success">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="fa fa-cloud fa-5x"></i>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <span> Encontro Jovem </span>
+                                    <h2 class="font-bold">26'C</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget style1 success-element">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="fa fa-cloud fa-5x"></i>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <span> Encontro Jovem Sede </span>
+                                    <h2 class="font-bold">26'C</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget style1 navy-bg">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="fa fa-cloud fa-5x"></i>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <span> Encontro Jovem igrejas </span>
+                                    <h2 class="font-bold">26'C</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget style1 red-bg">
+                            <div class="row">
+                                <div class="col-4">
+                                    <!--<i class="fa fa-person-circle-minus fa-5x"></i>-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M208 48c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM152 352V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152zm424 16c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zm-64 0c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c8.8 0 16-7.2 16-16z" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <span> Igrejas Zeradas EJ </span>
+                                    <h2 class="font-bold">26'C</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="widget style1 bg-success">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="fa fa-cloud fa-5x"></i>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <span> A+ </span>
+                                    <h2 class="font-bold">26'C</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget style1 success-element">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="fa fa-cloud fa-5x"></i>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <span> A+ Sede </span>
+                                    <h2 class="font-bold">26'C</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget style1 navy-bg">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="fa fa-cloud fa-5x"></i>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <span> A+ igrejas </span>
+                                    <h2 class="font-bold">26'C</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget style1 red-bg">
+                            <div class="row">
+                                <div class="col-4">
+                                    <!--<i class="fa fa-cloud fa-5x"></i>-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M208 48c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM152 352V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l44.9 74.7c-16.1 17.6-28.6 38.5-36.6 61.5c-1.9-1.8-3.5-3.9-4.9-6.3L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152zm424 16c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zm-64 0c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c8.8 0 16-7.2 16-16z" />
+                                    </svg>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <span> Igrejas Zeradas A+ </span>
+                                    <h2 class="font-bold">26'C</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="widget style1 bg-success">
+                            <div class="row">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- END BODY -->
+                <div class="wrapper wrapper-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4">
+
+
+                                </div>
+                                <div class="col-lg-4">
+
+
+                                </div>
+                                <div class="col-lg-4">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="float-right">
+                        <strong></strong>
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> FJU Oficial &copy; 2020
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mainly scripts -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
+
+        <!-- Steps -->
+        <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+        <!-- Jquery Validate -->
+        <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+        <!-- Select2 -->
+        <script src="js/plugins/select2/select2.full.min.js"></script>
+
+        <!-- Input Mask-->
+        <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+        <!-- Data picker -->
+        <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+        <!-- iCheck -->
+        <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+
+        <!-- Nestable List -->
+        <script src="js/plugins/nestable/jquery.nestable.js"></script>
+
+        <!-- Toastr script -->
+        <script src="js/plugins/toastr/toastr.min.js"></script>
+
+        <!-- Sweet alert -->
+        <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+        <!-- ChartJS-->
+        <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+        <script src="js/plugins/d3/d3.min.js"></script>
+        <script src="js/plugins/c3/c3.min.js"></script>
+
+        <script src="js/plugins/dataTables/datatables.min.js"></script>
+        <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+
+        <!-- Sweet alert -->
+        <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+        <script src="js/SGFJU.Domain.UI.Client.js"></script>
+        <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+        <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+
+        <script>
+
+            var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+            var _objRelatorioFacade = new SGFJU.Domain.Model.UI.Client.Facade.RelatorioFacade();
+
+            $(document).ready(function () {
+
+                facadeUser.ConfigurarPaginaX072470();
+
+                _objRelatorioFacade.RetornaRelatorioConsolidadoEstadoLogadoPorPeriodo(null, preencheDashboardRelatorioConsolidado);
+
+            });
+
+            function preencheDashboardRelatorioConsolidado(resultSetRelatorioConsolidado) {
+                JSON.stringify(resultSetRelatorioConsolidado);
+            }
+
+        </script>
+</body>
+</html>

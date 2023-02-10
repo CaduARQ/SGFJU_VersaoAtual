@@ -9,5 +9,6 @@ namespace SGFJU.ServicesLayer.DTO.Relatorios
         public string DataInicial { get; set; }
         public string DataFinal { get; set; }
         public bool PeriodoEletivoLancamento { get; set; }
+        public bool EhPeriodoParametrizado { get; set; }
     }
 }

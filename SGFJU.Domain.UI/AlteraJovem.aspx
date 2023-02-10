@@ -383,8 +383,11 @@
                                                     <select id="cboClassificacaoJovem" name="cboClassificacaoJovem" class="select2_demo_3 form-control">
                                                     <option value="A">Ativo</option>
                                                     <option value="I">Inativo</option>
-                                                        <option value="F">Afastado</option>
+                                                    <option value="F">Afastado</option>
                                                     <option value="N">Iniciante</option>
+                                                    <option value="C">Candidata ao Altar</option>
+                                                    <option value="D">Namorada</option>
+                                                    <option value="L">Ingressou na Obra</option>
                                                 </select>
                                                 </div>
                                             </div>

@@ -114,19 +114,7 @@
                             FJU
                         </div>
                     </li>
-                    <li class="active">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li class="active"><a href="DashboardNacional.html">Nacional</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ConsultaGeral.html">Geral</a></li>
-                            <li><a href="GerenciaNacionalAltarJovem.html">Altar Jovem</a></li>
-                        </ul>
-                    </li>
+                    
                 </ul>
 
             </div>
@@ -478,6 +466,9 @@
                                                                     <option value="I">Inativo</option>
                                                                     <option value="I">Afastado</option>
                                                                     <option value="N">Iniciante</option>
+                                                                    <option value="C">Candidata ao Altar</option>
+                                                                    <option value="D">Namorada</option>
+                                                                    <option value="L">Ingressou na Obra</option>
                                                                     <option value="O">Sem classificação</option>
                                                                 </select>
                                                             </div>
@@ -3280,6 +3271,10 @@
                                                     return "<span class='label label-info'>Ativo</span>"
                                                 else if(row.ClassificacaoJovem == 'N') 
                                                     return "<span class='label label-success'>Iniciante</span>"
+                                                else if(row.ClassificacaoJovem == 'C') 
+                                                    return "<span class='label label-success'>Candidata ao altar</span>"
+                                                else if(row.ClassificacaoJovem == 'D') 
+                                                    return "<span class='label label-success'>Namorada</span>"
                                                 else if(row.ClassificacaoJovem == 'L') 
                                                     return "<span class='label label-warning'>Altar</span>"
                                                 else if(row.ClassificacaoJovem == 'O' || row.ClassificacaoJovem == '' || row.ClassificacaoJovem == undefined) 

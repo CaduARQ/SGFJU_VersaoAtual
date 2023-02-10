@@ -167,6 +167,10 @@
             z-index: 2;
             cursor: pointer;
         }
+
+        .progress-bar-orange {
+              background-color: orange !important;
+        }
     </style>
 
 </head>
@@ -233,7 +237,7 @@
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
                     <h2 class="text-success font-bold">
-                        Gerenciamento de Relatório FJU - Estado ( <span id="lblIdentificadorEstado_Bloco" class="text-success font-bold"></span> )
+                        Gerenciamento de Relatório FJU - <span id="lblIdentificadorEstado_Bloco" class="text-success font-bold"></span>
                         <span class="fa fa-tree" aria-hidden="true"></span><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                     </h2>
 
@@ -310,7 +314,7 @@
 
                     <div class="col-lg-3">
                         <div class="ibox ">
-                            <div class="ibox-title">                                
+                            <div class="ibox-title">
                                 <h5>Encontro Jovem</h5>
                             </div>
                             <div class="ibox-content">
@@ -323,8 +327,8 @@
 
                     <div class="col-lg-3">
                         <div class="ibox ">
-                            <div class="ibox-title">                                
-                                <h5>Algo a mais</h5>
+                            <div class="ibox-title">
+                                <h5>Algo A+</h5>
                             </div>
                             <div class="ibox-content">
                                 <h1 class="no-margins" id="lblQuantidadeParcialAlgoAMais"></h1>
@@ -336,7 +340,7 @@
 
                     <div class="col-lg-3">
                         <div class="ibox ">
-                            <div class="ibox-title">                                
+                            <div class="ibox-title">
                                 <h5 class="text-success">Período do Relatório</h5> <i class="fa fa-calendar"></i>
                             </div>
                             <div class="ibox-content">
@@ -349,7 +353,7 @@
                                         Data Final<h4 class="text-success" id="lblDataFinalPeriodoRelatorio"></h4>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -357,12 +361,10 @@
                     <div class="col-lg-3">
                         <div class="ibox ">
                             <div class="ibox-title">
-                                <!--<span class="label label-primary float-right">Atual</span>-->
                                 <h5>Igrejas sem relatório</h5>
                             </div>
                             <div class="ibox-content">
                                 <h1 class="no-margins text-danger font-bold" id="lblTotalIgrejasSemRelatorio"></h1>
-                                <!--<div class="stat-percent font-bold text-navy" id="dvPercentBEspiritoSanto"> <i class="fa fa-level-up"></i></div>-->
                             </div>
                         </div>
                     </div>
@@ -375,9 +377,15 @@
                         <!---->
                         <div class="ibox" id="boxTodosObreiros">
                             <div class="ibox-content">
-                                <div id="pgbarPercentualPreenchimentoRelatorio" class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Preenchido relatório 40% </div>   
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Relatório não preenchido 60% </div>
+                                <div id="pgbarPercentualPreenchimentoRelatorio" class="progress bg-info progress-bar-striped">
+                                    <div id="pgbarPreenchimentoRelatorio" 
+                                         class="progress-bar progress-bar-striped progress-bar-animated progress-bar-success" 
+                                         role="progressbar" 
+                                         style="width: 15%" 
+                                         aria-valuenow="20" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">Relatório preenchido 0% </div>
+                                    <!--<div id="pgbarNPreenchido" class="progress-bar progress-bar-striped progress-bar-animated progress-bar-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Relatório não preenchido 60% </div>-->
                                 </div>
                                 <br />
                                 <!---->
@@ -439,8 +447,10 @@
 
                                 <div class="clients-list">
 
-                                    <ul id="tabIgrejas" class="nav nav-tabs">
+                                    <ul id="tabRelatorio" class="nav nav-tabs">
                                         <li><a class="nav-link active" data-toggle="tab" href="#tab-1"><i class="fa fa-user"></i> Igrejas para lançar relatório </a></li>
+                                        <li><a class="nav-link" data-toggle="tab" href="#tabIgrejasRelatorioJaPreenchido"><i class="fa fa-user"></i> Igrejas com relatório já lançado</a></li>
+                                        <!---->
                                     </ul>
                                     <div class="tab-content">
                                         <div id="tab-1" class="tab-pane active">
@@ -455,7 +465,7 @@
                                                                 <th>Região</th>
                                                                 <th>Igreja</th>
                                                                 <th>Encontro</th>
-                                                                <th>Algo A mais</th>
+                                                                <th>Algo A+</th>
                                                                 <th>Ações</th>
                                                             </tr>
                                                         </thead>
@@ -466,7 +476,30 @@
                                             </div>
                                         </div>
 
-
+                                        <!-- Igrejas com relatório já preenchido -->
+                                        <div id="tabIgrejasRelatorioJaPreenchido" class="tab-pane">
+                                            <div class="full-height-scroll">
+                                                <div class="table-responsive">
+                                                    <table id="tblIgrejasRelatorioJaPreenchido" class="table table-striped table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>IdRelatorioReuniaoFJUIgreja</th>
+                                                                <th>IdIgreja</th>
+                                                                <th>Bloco</th>
+                                                                <th>Região</th>
+                                                                <th>Igreja</th>
+                                                                <th>Encontro</th>
+                                                                <th>Algo A+</th>
+                                                                <th>Ações</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!---->
                                     </div>
 
                                 </div>
@@ -478,42 +511,110 @@
 
                 <!-- modal fora da tab para testar se é enxergada gglobalmente -->
                 <div class="modal inmodal" id="lancarRelatorioModal" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog  modal-lg">
                         <div class="modal-content animated bounceInRight">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
                                 <i class="fa fa-line-chart modal-icon"></i>
                                 <h4 class="modal-title">Lançar relatório da igreja</h4>
-                                <span id="lblNomeIgrejaRelatorio" class="label label-success"></span> 
+                                <span id="lblNomeIgrejaRelatorio" class="label label-success"></span>
                             </div>
                             <div class="modal-body">
                                 <!---->
                                 <form role="form">
+                                    <div class="row">
 
-                                    <div class="form-group">
-                                        <label class="text-success font-bold">Quantidade de Jovens</label>
-                                        <input type="number" min="1" id="txtQuantidadeJovensRelatorio" required class="form-control" />
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade no Encontro Jovem</label>
+                                                <input type="number" min="1" id="txtQuantidadeJovensRelatorio" required class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade de Jovens Batizados Nas Águas</label>
+                                                <input type="number" min="1" id="txtQuantidadeBatizadosAguas" required class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade de Jovens Batizados com o Espírito Santo</label>
+                                                <input type="number" min="1" id="txtQuantidadeBatizadosEspiritoSanto" required class="form-control" />
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="form-group">
-                                        <label class="text-success font-bold">Quantidade de Jovens Batizados Nas Águas</label>
-                                        <input type="number" min="1" id="txtQuantidadeBatizadosAguas" required class="form-control" />
+
+                                    <div class="row">
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade de Jovens no Algo a Mais</label>
+                                                <input type="number" min="1" id="txtQuantidadeAlgoAMais" required class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade de Jovens Levantados Obra</label>
+                                                <input type="number" min="1" id="txtQuantidadeJovensLevantadosObra" required class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade de Obreiras Casaram com Pastor</label>
+                                                <input type="number" min="1" id="txtQuantidadeObreirasCasaramPastor" required class="form-control" />
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="form-group">
-                                        <label class="text-success font-bold">Quantidade de Jovens Batizados com o Espírito Santo</label>
-                                        <input type="number" min="1" id="txtQuantidadeBatizadosEspiritoSanto" required class="form-control" />
+
+                                    <div class="row">
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade de Jovens indicados ao CPO</label>
+                                                <input type="number" min="1" id="txtQuantidadeJovensIndicadosCPO" required class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade de Obreiros</label>
+                                                <input type="number" min="1" id="txtQuantidadeObreiros" required class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade de Obreiras que sairam da FJU</label>
+                                                <input type="number" min="1" id="txtQuantidadeSaidaObreirosFJU" required class="form-control" />
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="form-group">
-                                        <label class="text-success font-bold">Quantidade de Jovens no Algo a Mais</label>
-                                        <input type="number" min="1" id="txtQuantidadeAlgoAMais" required class="form-control" />
+
+                                    <div class="row">
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="text-success font-bold">Quantidade de Jovens cadastrados novos</label>
+                                                <input type="number" min="1" id="txtQuantidadeJovensCadastradosNovos" required class="form-control" />
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div>
-                                        <button class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="lancarRelatorioIgreja()"><strong>Lançar Relatório</strong></button>
-                                    </div>
+
                                 </form>
 
                                 <!---->
                             </div>
                             <div class="modal-footer">
+
+                                <button id="btnProcessaRelatorio" class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="lancarRelatorioIgreja()"><strong>Lançar Relatório</strong></button>
                                 <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
                             </div>
                         </div>
@@ -573,13 +674,16 @@
             <script>
 
                 var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+                var _objRelatorioFacade = new SGFJU.Domain.Model.UI.Client.Facade.RelatorioFacade();
                 var hostUrl = "http://" + document.location.hostname;
                 var __HOST_LOCAL = 'https://' + window.location.hostname + ':' + window.location.port + '/FotosJovens/';
                 var __HOST_IMG = 'https://' + window.location.hostname + ':' + window.location.port + '/img/';
                 var primeiraPesquisa = false;
                 var vExisteUltimoPesquisaRetorno = false;
+                var __REPORT_SELECIONADO = undefined;
                 var __IGREJA_SELECIONADA = undefined;
                 var __resultSetIgrejasEstadoLogado = undefined;
+                var __resultSetIgrejasReportJaLancado = undefined;
                 var __tabelaIgrejasRelatorio = undefined;
 
                 $(document).ready(function () {
@@ -613,79 +717,209 @@
                         preencherComboIgrejas(data.id);
                     });
 
-
                     retornaPeriodoRelatorio();
                     
-                    configComboEstado_Local();
+                    ConfiguraPerfilUsuarioLogado();
+
+                    /**/
+                    _objRelatorioFacade.RetornaRelatorioPerfilLogado(null, listarRelatorioIgrejasPorPerfilLogado);
+                    /**/
 
                     $('#tblIgrejasRelatorio tbody').on('click', 'a', function () {
                         var tblIgrejaRelatorio = $('#tblIgrejasRelatorio').DataTable();
                         var classeDoBotao = $(this).prop('class');
                         var indiceDaLinha = tblIgrejaRelatorio.row($(this).parents('tr')).index();
-                        //var vidObreiro = __resultSetIgrejasEstadoLogado[indiceDaLinha].IdObreiro;
                         var vNomeIgreja = __resultSetIgrejasEstadoLogado[indiceDaLinha].NomeIgreja;
                         __IGREJA_SELECIONADA = __resultSetIgrejasEstadoLogado[indiceDaLinha];
-                        console.log(JSON.stringify(__IGREJA_SELECIONADA));
-
+                        
                         if (classeDoBotao == 'btn btn-white btn-sm') {
+                            $('#btnProcessaRelatorio').html("Processar relatório");
                             $('#lancarRelatorioModal').modal('show');
                             $('#lblNomeIgrejaRelatorio').html(vNomeIgreja);
-                            /*
-                            var __XDTO = {
-                                XBRO: vidObreiro
-                            };
-                            $.ajax({
-                                type: "POST",
-                                data: JSON.stringify(__XDTO),
-                                url: "api/X/XBRO",
-                                contentType: "application/json"
-                            }).done(function (respostaXBRO) {
-
-                                window.open(
-                                        __HOST_CONFIGURADO + '/RelatoriosJovensAcompanhadosObreiro.html?xbro=' + respostaXBRO + '&nomeObreiro=' + vNomeObreiro,
-                                        '_blank'
-                                    );
-                            });*/
                         }
+                    });
 
+                    $('#tblIgrejasRelatorioJaPreenchido tbody').on('click', 'a', function () {
+                        var tblIgrejaRelatorio = $('#tblIgrejasRelatorioJaPreenchido').DataTable();
+                        var classeDoBotao = $(this).prop('class');
+                        var indiceDaLinha = tblIgrejaRelatorio.row($(this).parents('tr')).index();
+                        var vNomeIgreja = __resultSetIgrejasReportJaLancado[indiceDaLinha].NomeIgreja;
+                        __REPORT_SELECIONADO = __resultSetIgrejasReportJaLancado[indiceDaLinha];
+                        __IGREJA_SELECIONADA = __resultSetIgrejasReportJaLancado[indiceDaLinha];
+
+                        if (classeDoBotao == 'btn btn-success btn-sm') {
+                            preencheFormularioParaAtualizacao(__REPORT_SELECIONADO);
+
+                            if (__REPORT_SELECIONADO.RelatorioJaProcessado == "Sim") {
+                                $('#btnProcessaRelatorio').html("Relatório já lançado");
+                                $('#btnProcessaRelatorio').attr('disabled', 'disabled');
+                            }
+                            else 
+                                $('#btnProcessaRelatorio').html("Atualizar relatório");
+                            
+                            $('#lancarRelatorioModal').modal('show');
+                            $('#lblNomeIgrejaRelatorio').html(vNomeIgreja);
+                        }
                     });
 
                     $('#lancarRelatorioModal').on('hide.bs.modal', function (e) {
 
-                        spinnerOn();                        
+                        spinnerOn();
 
-                        listarTodasIgrejasEstado();
+                        limpaControles();
+
+                        _objRelatorioFacade.RetornaRelatorioPerfilLogado(null, listarRelatorioIgrejasPorPerfilLogado);
 
                         spinnerOff();
-
-                        console.log(':::fechou modal');
                     });
 
                     spinnerOff();
                 });
 
-                function configComboEstado_Local() {
-                    $.ajax({
-                        type: "GET",
-                        url: "api/Usuarios/X072470/",
-                        contentType: "application/json"
-                    }).done(function (retorno) {
-                        $("#cboEstado").val(retorno.IdEstadoUsuarioLogado).trigger('change.select2');
-                        $('#cboEstado').prop("disabled", true);
-                        preencherComboBlocos(retorno.IdEstadoUsuarioLogado);
+                function preencheFormularioParaAtualizacao(pobjREPORT_SELECIONADO) {
+                    $('#txtQuantidadeJovensRelatorio').val(pobjREPORT_SELECIONADO.QuantidadeJovens);
+                    $('#txtQuantidadeBatizadosAguas').val(pobjREPORT_SELECIONADO.QuantidadeBatizadosAguas);
+                    $('#txtQuantidadeBatizadosEspiritoSanto').val(pobjREPORT_SELECIONADO.QuantidadeBatizadosEspiritoSanto);
+                    $('#txtQuantidadeAlgoAMais').val(pobjREPORT_SELECIONADO.QuantidadeAlgoAMais);
+                    $('#txtQuantidadeJovensLevantadosObra').val(pobjREPORT_SELECIONADO.QuantidadeJovensLevantadosObra);
+                    $('#txtQuantidadeObreirasCasaramPastor').val(pobjREPORT_SELECIONADO.QuantidadeObreirasCasaramPastor);
+                    $('#txtQuantidadeJovensIndicadosCPO').val(pobjREPORT_SELECIONADO.QuantidadeJovensIndicadosCPO);
+                    $('#txtQuantidadeObreiros').val(pobjREPORT_SELECIONADO.QuantidadeObreiros);
+                    $('#txtQuantidadeSaidaObreirosFJU').val(pobjREPORT_SELECIONADO.QuantidadeSaidaObreirosFJU);
+                    $('#txtQuantidadeJovensCadastradosNovos').val(pobjREPORT_SELECIONADO.QuantidadeJovensCadastradosNovos);
+                }
 
-                        listarTodasIgrejasEstado();
+                function listarRelatorioIgrejasPorPerfilLogado(resultSetRelatorioPerfilLogado) {
 
-                        $('#lblIdentificadorEstado_Bloco').text(retorno.NomeEstadoUsuarioLogado);
+                    if (resultSetRelatorioPerfilLogado.EhParaFecharRelatorio) {
+                        swal({
+                            title: "O relatório de todas as igrejas já foi lançado, deseja processar fechamento do relatório? ",
+                            text: "Fechar Relatório",
+                            type: "warning",
+                            showCancelButton: true,
+                            confirmButtonColor: "#DD6B55",
+                            confirmButtonText: "Sim, Desejo fechar relatório!",
+                            closeOnConfirm: false
+                        }, function (isConfirm) {
+                                if (isConfirm) {
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "api/RelatoriosReuniaoFJU/ProcessarFechamentoRelatorioBloco",
+                                        contentType: "application/json"
+                                    }).done(function (respostaFechamentoRelatorio) {
+                                        if (respostaFechamentoRelatorio.SolicitacaoBemSucedida) {
+                                            swal({
+                                                    title: "Confirmação",
+                                                    text: "Relatório processado com sucesso !!!",
+                                                    type: "success"
+                                                });
+                                        }
+                                        else
+                                            swal({
+                                                title: "Fechamento de relatório",
+                                                text: "Ocorreu algum erro na tentativa de fechar relatório",
+                                                type: "error"
+                                            });
+                                    });
+                                    return;
+                                }
+                        });
+                        
+                    }
+
+                    $('#pgbarPreenchimentoRelatorio').attr('width', resultSetRelatorioPerfilLogado.PercentualRelatorioPreenchido);
+                    $('#pgbarPreenchimentoRelatorio').html('Relatório ' + resultSetRelatorioPerfilLogado.PercentualRelatorioPreenchido + '% Preenchido');
+
+                    __resultSetIgrejasEstadoLogado = resultSetRelatorioPerfilLogado.RelatorioIgrejasNoPeriodo;
+                    __resultSetIgrejasReportJaLancado = resultSetRelatorioPerfilLogado.RelatorioIgrejasJaPreenchidoNoPeriodo;
+
+                    $('#lblNumeroJovenstotalEstado').html(resultSetRelatorioPerfilLogado.SomatorioRelatoriosJaLancados);
+                    $('#lblQuantidadeParcialAlgoAMais').html(resultSetRelatorioPerfilLogado.SomatorioRelatoriosJaLancadosAM);
+                    $('#lblTotalIgrejasSemRelatorio').html(resultSetRelatorioPerfilLogado.QuantidadeIgrejasSemRelatorio);
+                         
+
+                    __tabelaIgrejasRelatorio = $('#tblIgrejasRelatorio').DataTable({
+                        data: __resultSetIgrejasEstadoLogado,
+                        pageLength: 50,
+                        destroy: true,
+                        dom: 'Bfrtip',
+                        buttons: [],
+                        columns: [
+                            { data: 'IdRelatorioReuniaoFJUIgreja' },
+                            { data: 'IdIgrejaRelatorio' },
+                            { data: 'NomeBloco' },
+                            { data: 'NomeRegiao' },
+                            { data: 'NomeIgreja' },
+                            { data: 'QuantidadeJovens' },
+                            { data: 'QuantidadeAlgoAMais'},
+                            {
+                                data: null,
+                                render: function (data, type, row) {
+                                    if(row.IdRelatorioReuniaoFJUIgreja > 0)
+                                        return '<a href="#" class="btn btn-success btn-sm"><i class="fa fa-bar-chart-o"></i><i class="fa fa-plus-circle"></i> Atualizar </a>';
+                                    return '<a href="#" class="btn btn-white btn-sm"><i class="fa fa-bar-chart-o"></i><i class="fa fa-plus-circle"></i> Lançar </a>';
+                                }
+                            }
+                        ],
+                        columnDefs: [
+                            {
+                                targets: [0, 1],
+                                visible: false,
+                                searchable: false
+                            }
+                        ]
                     });
+
+
+                    /* Preenchendo tabela com igrejas já lançadas */
+                    $('#tblIgrejasRelatorioJaPreenchido').DataTable({
+                        data: resultSetRelatorioPerfilLogado.RelatorioIgrejasJaPreenchidoNoPeriodo,
+                        pageLength: 50,
+                        destroy: true,
+                        dom: 'Bfrtip',
+                        buttons: [],
+                        columns: [
+                            { data: 'IdRelatorioReuniaoFJUIgreja' },
+                            { data: 'IdIgrejaRelatorio' },
+                            { data: 'NomeBloco' },
+                            { data: 'NomeRegiao' },
+                            { data: 'NomeIgreja' },
+                            { data: 'QuantidadeJovens' },
+                            { data: 'QuantidadeAlgoAMais'},
+                            {
+                                data: null,
+                                render: function (data, type, row) {
+                                    console.log('::.. IdRelatorioReuniaoFJUIgreja -> ' + row.IdRelatorioReuniaoFJUIgreja + ' ReportJaProcessado ->' + row.RelatorioJaProcessado);
+                                    if(row.IdRelatorioReuniaoFJUIgreja > 0 && row.RelatorioJaProcessado == "")
+                                        return '<a href="#" class="btn btn-success btn-sm"><i class="fa fa-bar-chart-o"></i><i class="fa fa-plus-circle"></i> Atualizar </a>';
+                                    else (row.IdRelatorioReuniaoFJUIgreja > 0 && row.RelatorioJaProcessado == "Sim")
+                                        return '<a href="#" class="btn btn-success btn-sm"><i class="fa fa-search"></i> Vizualizar </a>';
+                                    return '<a href="#" class="btn btn-white btn-sm"><i class="fa fa-bar-chart-o"></i><i class="fa fa-plus-circle"></i> Lançar </a>';
+                                }
+                            }
+                        ],
+                        columnDefs: [
+                            {
+                                targets: [0, 1],
+                                visible: false,
+                                searchable: false
+                            }
+                        ]
+                    });
+                    /* ############################################################################################################################# */
+
                 }
 
                 function listarTodasIgrejasEstado() {
+                    /* ############################################################################################################################# */
                     $.ajax({
                         type: "GET",
                         url: "api/RelatoriosReuniaoFJU/ListaRelatorioIgrejasEstadoLogadoPorPeriodo",
                         contentType: "application/json"
                     }).done(function (retornoIgrejasEstadoLogado) {
+
+                        $('#pgbarPreenchido').html(parseFloat(retornoIgrejasEstadoLogado.PercentualRelatorioPreenchido).toFixed(2) + ' %');
+
                         __resultSetIgrejasEstadoLogado = retornoIgrejasEstadoLogado.RelatorioIgrejasNoPeriodo;
 
                         $('#lblNumeroJovenstotalEstado').html(retornoIgrejasEstadoLogado.SomatorioRelatoriosJaLancados);
@@ -725,6 +959,43 @@
                             ]
                         });
 
+
+                    /* Preenchendo tabela com igrejas já lançadas */
+                        $('#tblIgrejasRelatorioJaPreenchido').DataTable({
+                            data: retornoIgrejasEstadoLogado.RelatorioIgrejasJaPreenchidoNoPeriodo,
+                            pageLength: 50,
+                            destroy: true,
+                            dom: 'Bfrtip',
+                            buttons: [],
+                            columns: [
+                                { data: 'IdRelatorioReuniaoFJUIgreja' },
+                                { data: 'IdIgrejaRelatorio' },
+                                { data: 'NomeBloco' },
+                                { data: 'NomeRegiao' },
+                                { data: 'NomeIgreja' },
+                                { data: 'QuantidadeJovens' },
+                                { data: 'QuantidadeAlgoAMais'},
+                                {
+                                    data: null,
+                                    render: function (data, type, row) {
+                                        console.log('::.. IdRelatorioReuniaoFJUIgreja -> ' + row.IdRelatorioReuniaoFJUIgreja + ' ReportJaProcessado ->' + row.RelatorioJaProcessado);
+                                        if(row.IdRelatorioReuniaoFJUIgreja > 0 && row.RelatorioJaProcessado == "")
+                                            return '<a href="#" class="btn btn-success btn-sm"><i class="fa fa-bar-chart-o"></i><i class="fa fa-plus-circle"></i> Atualizar </a>';
+                                        else (row.IdRelatorioReuniaoFJUIgreja > 0 && row.RelatorioJaProcessado == "Sim")
+                                            return '<a href="#" class="btn btn-success btn-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg> Vizualizar </a>';
+                                        return '<a href="#" class="btn btn-white btn-sm"><i class="fa fa-bar-chart-o"></i><i class="fa fa-plus-circle"></i> Lançar </a>';
+                                    }
+                                }
+                            ],
+                            columnDefs: [
+                                {
+                                    targets: [0, 1],
+                                    visible: false,
+                                    searchable: false
+                                }
+                            ]
+                        });
+                        /* ############################################################################################################################# */
                     });
                 }
 
@@ -735,15 +1006,12 @@
                         contentType: "application/json"
                     }).done(function (resultPeriodoRetornado) {
 
-                        console.log('::Data inicial periodo ' + resultPeriodoRetornado.DataInicial);
-                        console.log('::Data final periodo ' + resultPeriodoRetornado.DataFinal);
-
                         $('#lblDataInicialPeriodoRelatorio').html(resultPeriodoRetornado.DataInicial);
                         $('#lblDataFinalPeriodoRelatorio').html(resultPeriodoRetornado.DataFinal);
 
-                        //$('#lblTotalJovensAcompanhados').html(resultSetDashBoard.QuantidadeJovensAcompanhados);
 
-                        if (!resultPeriodoRetornado.PeriodoEletivoLancamento) {
+                        if (!resultPeriodoRetornado.PeriodoEletivoLancamento &&
+                            !resultPeriodoRetornado.EhPeriodoParametrizado   ) {
                             swal({
                                     title: "Validação",
                                     text: "Periodo atual não permite ser gerado relatório. Somente no final de semana é autorizado este tipo de lançamento.!",
@@ -758,13 +1026,28 @@
                 }
 
                 function lancarRelatorioIgreja() {
+
+                    spinnerOn();
+
+                    $('#btnProcessaRelatorio').attr('disabled', 'disabled');
+
                     var relatorioIgrejaDTO = {
                         IdIgrejaRelatorio: __IGREJA_SELECIONADA.IdIgrejaRelatorio,
+                        IdRelatorioReuniaoFJUIgreja: __IGREJA_SELECIONADA.IdRelatorioReuniaoFJUIgreja,
                         QuantidadeJovens: $('#txtQuantidadeJovensRelatorio').val(),
                         QuantidadeBatizadosAguas: $('#txtQuantidadeBatizadosAguas').val(),
                         QuantidadeBatizadosEspiritoSanto: $('#txtQuantidadeBatizadosEspiritoSanto').val(),
                         QuantidadeAlgoAMais: $('#txtQuantidadeAlgoAMais').val(),
+                        QuantidadeJovensLevantadosObra: $('#txtQuantidadeJovensLevantadosObra').val(),
+                        QuantidadeObreirasCasaramPastor: $('#txtQuantidadeObreirasCasaramPastor').val(),
+                        QuantidadeJovensIndicadosCPO: $('#txtQuantidadeJovensIndicadosCPO').val(),
+                        QuantidadeObreiros: $('#txtQuantidadeObreiros').val(),
+                        QuantidadeSaidaObreirosFJU: $('#txtQuantidadeSaidaObreirosFJU').val(),
+                        QuantidadeJovensCadastradosNovos: $('#txtQuantidadeJovensCadastradosNovos').val(),
+                        DataInicialPeriodoRelatorio: $('#lblDataInicialPeriodoRelatorio').html(),
+                        DataFinalPeriodoRelatorio: $('#lblDataFinalPeriodoRelatorio').html()
                     }
+
                     //
                     $.ajax({
                         type: "POST",
@@ -777,8 +1060,9 @@
                                 title: "Confirmação",
                                 text: "Relatório processado com sucesso!!!",
                                 type: "success"
-                            }, function () {                                    
-                                    $('#txtQuantidadeJovensRelatorio').val('');
+                            }, function () {
+                                    $('#btnProcessaRelatorio').prop('disabled', false);
+                                    limpaControles();
                                     $('#lancarRelatorioModal').modal('hide');
                             });
                         else
@@ -788,6 +1072,22 @@
                                 type: "error"
                             });
                     });
+
+                    spinnerOff();
+                }
+
+                function limpaControles() {
+                    $('#txtQuantidadeJovensRelatorio').val('');
+                    $('#txtQuantidadeJovensRelatorio').val('');
+                    $('#txtQuantidadeBatizadosAguas').val('');
+                    $('#txtQuantidadeBatizadosEspiritoSanto').val('');
+                    $('#txtQuantidadeAlgoAMais').val('');
+                    $('#txtQuantidadeJovensLevantadosObra').val('');
+                    $('#txtQuantidadeObreirasCasaramPastor').val('');
+                    $('#txtQuantidadeJovensIndicadosCPO').val('');
+                    $('#txtQuantidadeObreiros').val('');
+                    $('#txtQuantidadeSaidaObreirosFJU').val('');
+                    $('#txtQuantidadeJovensCadastradosNovos').val('');
                 }
 
                 function ListaRelatorioPorParametro() {
@@ -795,12 +1095,10 @@
                     spinnerOn();
                     
                     var objParametros = {
-                        IdEstado: $('EcboEstado').val(),
+                        IdEstado: $('#cboEstado').val(),
                         IdBloco: $('#cboBloco').val(),
                         IdRegiao: $('#cboRegiao').val()
                     };
-
-                    console.log(JSON.stringify(objParametros));
 
                     $.ajax({
                         type: "POST",
@@ -808,9 +1106,8 @@
                         url: "api/RelatoriosReuniaoFJU/ListaRelatorioIgrejasEstadoLogadoPorParametro",
                         contentType: "application/json"
                     }).done(function (retornoSetPesquisa) {
-                        __resultSetIgrejasEstadoLogado = retornoSetPesquisa.retornoSetPesquisa;
 
-                        $('#lblQuantidadeParcialRelatorioEstadoLogado').html(retornoSetPesquisa.SomatorioRelatoriosJaLancados);
+                        __resultSetIgrejasEstadoLogado = retornoSetPesquisa.RelatorioIgrejasNoPeriodo;
 
                         __tabelaIgrejasRelatorio = $('#tblIgrejasRelatorio').DataTable({
                             data: __resultSetIgrejasEstadoLogado,
@@ -837,49 +1134,51 @@
                             ],
                             columnDefs: [
                                 {
-                                    targets: [0,1],
+                                    targets: [0, 1],
                                     visible: false,
                                     searchable: false
                                 }
                             ]
                         });
 
+
+                    /* Preenchendo tabela com igrejas já lançadas */
+                        $('#tblIgrejasRelatorioJaPreenchido').DataTable({
+                            data: retornoSetPesquisa.RelatorioIgrejasJaPreenchidoNoPeriodo,
+                            pageLength: 50,
+                            destroy: true,
+                            dom: 'Bfrtip',
+                            buttons: [],
+                            columns: [
+                                { data: 'IdRelatorioReuniaoFJUIgreja' },
+                                { data: 'IdIgrejaRelatorio' },
+                                { data: 'NomeBloco' },
+                                { data: 'NomeRegiao' },
+                                { data: 'NomeIgreja' },
+                                { data: 'QuantidadeJovens' },
+                                { data: 'QuantidadeAlgoAMais'},
+                                {
+                                    data: null,
+                                    render: function (data, type, row) {
+                                        if(row.IdRelatorioReuniaoFJUIgreja > 0)
+                                            return '<a href="#" class="btn btn-success btn-sm"><i class="fa fa-bar-chart-o"></i><i class="fa fa-plus-circle"></i> Atualizar </a>';
+                                        return '<a href="#" class="btn btn-white btn-sm"><i class="fa fa-bar-chart-o"></i><i class="fa fa-plus-circle"></i> Lançar </a>';
+                                    }
+                                }
+                            ],
+                            columnDefs: [
+                                {
+                                    targets: [0, 1],
+                                    visible: false,
+                                    searchable: false
+                                }
+                            ]
+                        });
+                        /* ############################################################################################################################# */
+
                         spinnerOff();
                     });
                 }
-
-                /*
-                function carregaTotaisAVEstadoLogado() {
-
-                    var estadoDTO = {
-                        IdEstado: 28
-                    };
-
-                    $.ajax({
-                        type: "POST",
-                        data: JSON.stringify(estadoDTO),
-                        url: "api/ArvoreVidaDashboard/ListaTotaisArvoreVidaPorEstado",
-                        contentType: "application/json"
-                    }).done(function (resultSetDashBoard) {
-
-                        console.log( '::Quantidade de jovens' + resultSetDashBoard.QuantidadeJovens );
-                        $("#lblNumeroJovenstotalEstado").html(resultSetDashBoard.QuantidadeJovens);
-                        $('#lblNumeroObreirosEstado').html(resultSetDashBoard.QuantidadeObreiros);
-                        $('#lblTotalJovensAcompanhados').html(resultSetDashBoard.QuantidadeJovensAcompanhados);
-                        $('#lblTotalJovensSemAcompanhamento').html(resultSetDashBoard.QuantidadeJovensSemAcompanhamento);
-
-                    });
-                }*/
-
-                /*
-                function spinnerOn_() {
-                    document.getElementById("overlay").style.display = "flex";
-                }
-
-                function spinnerOff_() {
-                    document.getElementById("overlay").style.display = "none";
-                }
-                */
 
             </script>
 </body>

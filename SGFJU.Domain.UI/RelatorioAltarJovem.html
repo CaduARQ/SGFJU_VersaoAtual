@@ -167,7 +167,7 @@
     <div style="position:absolute;top:9.56in;left:0.30in;width:4.40in;line-height:0.36in;">
         <span style="font-style:normal;font-weight:bold;font-size:18pt;font-family:Helvetica;color:#000000">Testemunho</span><span style="font-style:normal;font-weight:bold;font-size:20pt;font-family:Helvetica;color:#000000"> </span><br /></SPAN>
     </div>
-    
+
     <div style="position:absolute;top:9.93in;left:0.30in;width:8.40in;line-height:0.18in;">
         <span id="lblTestemunho" style="font-style:normal;font-weight:normal;font-size:10pt;font-family:Helvetica;color:#666666"></span><span style="font-style:normal;font-weight:normal;font-size:10pt;font-family:Helvetica;color:#666666"> </span><br /></SPAN>
     </div>
@@ -209,6 +209,14 @@
         <span id="lblGrauEscolaridade" style="font-style:normal;font-weight:normal;font-size:10pt;font-family:Helvetica;color:#666666"></span><span style="font-style:normal;font-weight:normal;font-size:10pt;font-family:Helvetica;color:#666666"> </span><br /></SPAN>
     </div>
 
+    <!-- nome do curso 
+    <div style="position:absolute;top:6.82in;left:0.30in;width:1.64in;line-height:0.22in;">
+        <span style="font-style:normal;font-weight:bold;font-size:12pt;font-family:Helvetica;color:#000000">Cursando</span><span style="font-style:normal;font-weight:bold;font-size:12pt;font-family:Helvetica;color:#000000"> </span><br /></SPAN>
+    </div>
+    <div style="position:absolute;top:7.18in;left:0.30in;width:2.64in;line-height:0.18in;">
+        <span id="lblNomeCursoSuperior" style="font-style:normal;font-weight:normal;font-size:10pt;font-family:Helvetica;color:#666666"></span><span style="font-style:normal;font-weight:normal;font-size:10pt;font-family:Helvetica;color:#666666"> </span><br /></SPAN>
+    </div>
+    -->
 
     <!---->
     <img style="position:absolute;top:7.38in;left:0.30in;width:8.41in;height:0.38in" src="img/vi_9.png" />
@@ -331,24 +339,24 @@
 
                 console.log('::perfil do jovem ->' + jovemRetorno.NomePerfilCadastro);
 
-                var urlEncoded = encodeURI( urlFotoJovens + jovemRetorno.NomeArquivoFoto );
+                var urlEncoded = encodeURI(urlFotoJovens + jovemRetorno.NomeArquivoFoto);
                 if (HOST_NAME_APP.indexOf('localhost') !== -1) {
 
-                    console.log('foto '+ urlEncoded);
+                    console.log('foto ' + urlEncoded);
                     if (jovemRetorno.NomeArquivoFoto == '')
                         $('#imgFotoJovem').prop('src', urlFotoJovens + 'jovemsemfoto.jpg');
-                        //trataImagemFotoPerfil(urlFotoJovens + 'jovemsemfoto.jpg');
+                    //trataImagemFotoPerfil(urlFotoJovens + 'jovemsemfoto.jpg');
                     else
                         $('#imgFotoJovem').prop('src', urlEncoded);
-                        //trataImagemFotoPerfil(urlFotoJovens + jovemRetorno.NomeArquivoFoto);
+                    //trataImagemFotoPerfil(urlFotoJovens + jovemRetorno.NomeArquivoFoto);
                 }
                 else {
                     if (jovemRetorno.NomeArquivoFoto == '')
                         $('#imgFotoJovem').prop('src', urlFotoJovens + 'jovemsemfoto.jpg');
-                        //trataImagemFotoPerfil(urlFotoJovens + 'jovemsemfoto.jpg');
+                    //trataImagemFotoPerfil(urlFotoJovens + 'jovemsemfoto.jpg');
                     else
                         $('#imgFotoJovem').prop('src', urlFotoJovens + jovemRetorno.NomeArquivoFoto);
-                        //trataImagemFotoPerfil(urlFotoJovens + jovemRetorno.NomeArquivoFoto);
+                    //trataImagemFotoPerfil(urlFotoJovens + jovemRetorno.NomeArquivoFoto);
                 }
 
 
@@ -431,7 +439,7 @@
                     jovemRetorno.SituacaoJovemIURDFJU.MotivoSaidaPastor
                 );
 
-                $('#lblTestemunho').text( jovemRetorno.TestemunhoJovem.TextoTestemunho );
+                $('#lblTestemunho').text(jovemRetorno.TestemunhoJovem.TextoTestemunho);
 
             });
 

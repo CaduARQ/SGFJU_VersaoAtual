@@ -1408,11 +1408,13 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                     SQLWhere.Append(" AND JV.Sexo = '" + parametrosConsultaGeral.Sexo + "' ");
                 }
 
-                if (parametrosConsultaGeral.ClassificacaoJovem == 'A' ||
-                    parametrosConsultaGeral.ClassificacaoJovem == 'I' ||
-                    parametrosConsultaGeral.ClassificacaoJovem == 'N' ||
-                    parametrosConsultaGeral.ClassificacaoJovem == 'F' ||
-                    parametrosConsultaGeral.ClassificacaoJovem == 'L' )
+                if ( parametrosConsultaGeral.ClassificacaoJovem == 'A' ||
+                     parametrosConsultaGeral.ClassificacaoJovem == 'I' ||
+                     parametrosConsultaGeral.ClassificacaoJovem == 'N' ||
+                     parametrosConsultaGeral.ClassificacaoJovem == 'F' ||
+                     parametrosConsultaGeral.ClassificacaoJovem == 'L' ||
+                     parametrosConsultaGeral.ClassificacaoJovem == 'C' ||
+                     parametrosConsultaGeral.ClassificacaoJovem == 'D' )
                 {
                     SQLWhere.Append(" AND JV.ClassificacaoJovem = '" + parametrosConsultaGeral.ClassificacaoJovem + "' ");
                 }
@@ -2616,11 +2618,15 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 var tinfo = CultureInfo.CurrentCulture.TextInfo;
                 MySqlConnection conexao = null;
                 MySqlDataReader resultadoReader = null;
+                string vDataIngressoObraFormatado = (!string.IsNullOrEmpty(jovemParametro.DataIngressoObra)) ?
+                                                       $"'{DateTime.Parse(jovemParametro.DataIngressoObra).ToString("yyyy-MM-dd")}'"  :
+                                                       "null";
                 var SQLQuery = $"UPDATE SGFJU_DEV.SGFJU_TBL_JOVEM " +
                                $" SET ClassificacaoJovem = '{jovemParametro.ClassificacaoJovem}', " +
                                $"     DataMudancaClassificacaoJovem = '{DateTime.Now.ToString("yyyy-MM-dd")}', " +
                                $"     DescricaoMudancaClassificacaoJovem = '{jovemParametro.DescricaoMudancaClassificacaoJovem}', " +
-                               $"     AutorizadorMudancaClassificacaoJovem = '{jovemParametro.AutorizadorMudancaClassificacaoJovem}' " +
+                               $"     AutorizadorMudancaClassificacaoJovem = '{jovemParametro.AutorizadorMudancaClassificacaoJovem}', " +
+                               $"     DataIngressoObra = {vDataIngressoObraFormatado} " +
                                $" WHERE ID_JOVEM = {jovemParametro.Id} ";
 
                 using (conexao = _DAO.GetConnection()) {

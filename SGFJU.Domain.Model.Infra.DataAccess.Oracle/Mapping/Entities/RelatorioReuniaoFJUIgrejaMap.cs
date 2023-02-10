@@ -16,7 +16,15 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Mapping.Entities
             this.Map(x => x.QuantidadeBatizadosAguas);
             this.Map(x => x.QuantidadeBatizadosEspiritoSanto);
             this.Map(x => x.QuantidadeAlgoAMais);
-            this.Map(x => x.DataRelatorio);
+            this.Map(x => x.QuantidadeJovensLevantadosObra);
+            this.Map(x => x.QuantidadeObreirasCasaramPastor);
+            this.Map(x => x.QuantidadeJovensIndicadosCPO);
+            this.Map(x => x.QuantidadeObreiros);
+            this.Map(x => x.QuantidadeSaidaObreirosFJU);
+            this.Map(x => x.QuantidadeJovensCadastradosNovos);
+            this.Map(x => x.DataRegistroRelatorio);
+            this.Map(x => x.DataInicialPeriodoRelatorio);
+            this.Map(x => x.DataFinalPeriodoRelatorio);
             this.Map(x => x.HorarioRelatorio);
             this.Map(x => x.NomeCoordenadorPreencheuRelatorio);
             this.References<Igreja>(t => t.IgrejaRelatorio)

@@ -16,16 +16,15 @@ namespace SGFJU.Domain.UI.Controllers
     {
         [HttpPost]
         [Route("api/AltarJovem/ObterJovensAltarJovemPorParametro")]
-        public IList<AltarJovemDTO> ObterJovensAltarJovemPorParametro([FromBody] AltarJovemParametroPesquisaDTO parametro)
-        {
-            try
-            {
+        public IList<AltarJovemDTO> ObterJovensAltarJovemPorParametro([FromBody] AltarJovemParametroPesquisaDTO parametro) {
+            try {
                 var facade = new AltarJovemFacadeImpl();
+
+                
 
                 return facade.ObterJovensAltarJovemPorParametro(parametro);
             }
-            catch (Exception controllerExc)
-            {
+            catch (Exception controllerExc) {
                 var mensagemTratada = ExceptionManager.FormatExceptionMessage(controllerExc, "CAMADA_UI.Controller");
                 LoggerHelper.WriteLogError(mensagemTratada);
                 throw new Exception(mensagemTratada);
@@ -168,6 +167,14 @@ namespace SGFJU.Domain.UI.Controllers
         public IList<TodosJovensDTO> ListaJovensLevantadosParaOAltarPorParametro([FromBody] AltarJovemParametroPesquisaDTO parametrosPesquisa) {
             try {
                 var facade = new AltarJovemFacadeImpl();
+                var nomePerfilUsuarioLogado = SessionHelper.RetornaPerfilUsuarioLogado().Descricao;
+
+                if (nomePerfilUsuarioLogado != "Administrador") {
+                    if (parametrosPesquisa != null) {
+                        if (parametrosPesquisa.IdEstado == 0)
+                            parametrosPesquisa.IdEstado = SessionHelper.RetornaEstadoUsuarioLogado().Id;
+                    }
+                }
 
                 return facade.ListaJovensLevantadosParaOAltarPorParametro(parametrosPesquisa);
             }

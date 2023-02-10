@@ -9,10 +9,14 @@ namespace SGFJU.Domain.Model.Repositories
 {
     public interface RelatorioReuniaoFJUIgrejaRepository : Repository<RelatorioReuniaoFJUIgreja>
     {
-        RespostaProcessamentoRelatorioDTO ProcessarRelatorioIgreja(RelatorioReuniaoFJUIgrejaDTO relatorio);
+        RespostaProcessamentoRelatorioDTO ProcessarRelatorioIgreja(RelatorioReuniaoFJUIgrejaDTO relatorio);        
         RespostaProcessamentoRelatorioDTO ProcessarRelatorioIgrejas(IList<RelatorioReuniaoFJUIgrejaDTO> relatorios);
-        RespostaProcessamentoFechamentoRelatorioDTO ProcessarFechamentoRelatorioDTO(FechamentoRelatorioDTO parametroFechamentoRelatorio);
+        RespostaProcessamentoFechamentoRelatorioEstadoDTO ProcessarFechamentoRelatorioEstado(FechamentoRelatorioEstadoDTO parametroFechamentoRelatorio);
+        RespostaProcessamentoFechamentoRelatorioBlocoDTO ProcessarFechamentoRelatorioBloco(ProcessaFechamentoRelatorioBlocoDTO parametroFechamentoRelatorioBloco);
         IList<RelatorioReuniaoFJUIgrejaDTO> ListaRelatorioIgrejasEstadoPorPeriodo(ParametroPesquisaRelatorioIgrejasPeriodo parametrosPesquisa);
         bool RelatorioDaIgrejaJaLancadoNoPeriodo(ParametroPesquisaRelatorioIgrejasPeriodo periodoEmQuestao);
+        RespostaProcessamentoRelatorioDTO AtualizaRelatorioPeriodo(RelatorioReuniaoFJUIgrejaDTO relatorioASerAtualizado);
+        bool RelatorioNoPeriodoJaEstaProcessado(ParametroPesquisaRelatorioIgrejasPeriodo parametrosVerificacao);
+        RelatorioConsolidadoEstadualSemanal RetornaRelatorioConsolidadoEstadoPorPeriodo(ParametroPesquisaRelatorioIgrejasPeriodo parametros);
     }
 }

@@ -278,7 +278,6 @@
                                                                     <option value="53">Sergipe</option>
                                                                     <option value="54">Tocantins</option>
                                                                     <option value="55">Campos</option>
-                                                                    <option value="56">[BLOCO DE TESTE]</option>
                                                                 </select>
                                                             </div>
                                                             <div class="col-md-3">
@@ -462,7 +461,17 @@
                         
                         facadeUser.ConfigurarPaginaX072470();
 
-                        configComboEstado();
+                        /**/
+                        $.ajax({
+                            type: "GET",
+                            url: "api/Usuarios/X072470/",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+                            if (retorno.NomePerfil != 'Administrador') {
+                                configComboEstado();
+                            }
+                        });                       
+                        /**/
 
                         spinnerOn();
 
@@ -471,6 +480,11 @@
                         $('#cboEstado').on('select2:select', function (e) {
                             $('#ibox1').children('.ibox-content').toggleClass('sk-loading');//sk-loading
                             var data = e.params.data;
+
+                            $('#cboBloco').empty().trigger("change");
+                            $('#cboRegiao').empty().trigger("change");
+                            $('#cboIgreja').empty().trigger("change");
+
                             preencherComboBlocos(data.id);
                         });
 
@@ -543,8 +557,6 @@
 
                     function listarTodosJovensLevantadosAltarEstado() {
 
-                        console.log('::Id Estado -> () ' + $('#cboEstado').val());
-
                         var parametrosJovensLevantadosAltar = {
                             IdEstado: $('#cboEstado').val(),
                             IdBlocoJovem: $('#cboBloco').val(),
@@ -552,7 +564,65 @@
                             IdIgreja: $('#cboIgreja').val(),
                         };
 
-                        altarJovemFacade.RetornaJovensLevantadosAltar('linhaJovens', parametrosJovensLevantadosAltar);
+                        //altarJovemFacade.RetornaJovensLevantadosAltar('linhaJovens', parametrosJovensLevantadosAltar, 'lblQuantidadeResgistrosRetornados');
+
+                        //console.log('::...Número de itens'+$('#linhaJovens').children().length);
+
+                        /**/
+                        $.ajax({
+                            type: "POST",
+                            data: JSON.stringify(parametrosJovensLevantadosAltar),
+                            url: "api/AltarJovem/ListaJovensLevantadosParaOAltarPorParametro",
+                            contentType: "application/json"
+                        }).done(function (resultSetJovensLevantadosAltar) {
+
+                            console.log('::resultSetJovensLevantadosAltar.length -> '+resultSetJovensLevantadosAltar.length);
+
+                            for (var i = 0; i < resultSetJovensLevantadosAltar.length; i++) {
+                                var urlFotoJovem = '';
+                                var urlProfile = '';
+
+                                //console.log('nome: ' + resultSetJovensLevantadosAltar[i].NomeJovem + ' | ID:: ' + resultSetJovensLevantadosAltar[i].IdJovem );
+
+                                if (HOST_NAME_APP.indexOf('localhost') !== -1) {
+                                    urlProfile = "https://" + document.location.hostname + ":" + document.location.port + "/";
+
+                                    if (resultSetJovensLevantadosAltar[i].NomeArquivoFoto == '')
+                                        urlFotoJovem = encodeURI(hostUrl + ':44388/FotosJovens/' + 'jovemsemfoto.jpg');
+                                    else
+                                        urlFotoJovem = encodeURI(hostUrl + ':44388/FotosJovens/' + resultSetJovensLevantadosAltar[i].NomeArquivoFoto);
+                                }
+                                else {
+                                    urlProfile = "http://" + document.location.hostname + "/SGFJU2.0/"
+
+                                    if (resultSetJovensLevantadosAltar[i].NomeArquivoFoto == '')
+                                        urlFotoJovem = encodeURI(hostUrl + '/SGFJU2.0/FotosJovens/' + 'jovemsemfoto.jpg');
+                                    else
+                                        urlFotoJovem = encodeURI(hostUrl + '/SGFJU2.0/FotosJovens/' + resultSetJovensLevantadosAltar[i].NomeArquivoFoto);
+                                }
+
+                                //console.log('::Host -> ' + HOST_NAME_APP);
+
+                                $('#linhaJovens').append(
+                                    __boxLevantadoAltar
+                                        .replace('#LINK_FOTO_JOVEM#', urlFotoJovem)
+                                        .replace('#NOME_JOVEM#', resultSetJovensLevantadosAltar[i].NomeJovem)
+                                        .replace('#LINK_PERFIL_JOVEM#', urlProfile + 'VisualizaJovemE.html?idJovem=' + resultSetJovensLevantadosAltar[i].IdJovem)
+                                        .replace('#ESTADO#', resultSetJovensLevantadosAltar[i].NomeEstado)
+                                        .replace('#BLOCO#', resultSetJovensLevantadosAltar[i].NomeBlocoJovem)
+                                        .replace('#REGIAO#', resultSetJovensLevantadosAltar[i].NomeRegiaoJovem)
+                                        .replace('#IGREJA#', resultSetJovensLevantadosAltar[i].NomeIgrejaJovem)
+                                        .replace('#WHATSAPP#', resultSetJovensLevantadosAltar[i].Whatsapp)
+                                );
+
+                            }
+
+                            $('#lblQuantidadeResgistrosRetornados').html(resultSetJovensLevantadosAltar.length);
+
+                            spinnerOff();
+
+                        });
+                        /**/
                     }
 
                     function pesquisaJovensLevantadosAltarEstado() {
@@ -568,7 +638,7 @@
                             IdIgreja: $('#cboIgreja').val(),
                         };
 
-                        altarJovemFacade.RetornaJovensLevantadosAltar('linhaJovens', parametrosJovensLevantadosAltar);
+                        altarJovemFacade.RetornaJovensLevantadosAltarComTotalizador('linhaJovens', parametrosJovensLevantadosAltar, 'lblQuantidadeResgistrosRetornados');
                     }
 
                     function resetaPesquisa() {
