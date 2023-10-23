@@ -851,3 +851,22 @@
 {"IdLogUsuario":482,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"06/02/2023","HorarioAcaoUsuario":" 13 horas e 57 minutos","SiglaEstadoUsuario":"SP"}|
 {"IdLogUsuario":124,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"06/02/2023","HorarioAcaoUsuario":" 17 horas e 14 minutos","SiglaEstadoUsuario":"SP"}|
 {"IdLogUsuario":995,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"06/02/2023","HorarioAcaoUsuario":" 21 horas e 27 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":897,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"24/02/2023","HorarioAcaoUsuario":" 18 horas e 15 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":412,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"04/07/2023","HorarioAcaoUsuario":" 16 horas e 2 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":347,"IdUsuario":4,"DescricaoAcaoUsuario":"O usuário bpcelso acessou o sistema","DataAcaoUsuario":"04/07/2023","HorarioAcaoUsuario":" 16 horas e 17 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":872,"IdUsuario":281,"DescricaoAcaoUsuario":"O usuário EstadualSP acessou o sistema","DataAcaoUsuario":"06/07/2023","HorarioAcaoUsuario":" 19 horas e 1 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":0,"IdUsuario":281,"DescricaoAcaoUsuario":"Atualização do Usuário 281 e Login EstadualSP  - Realizada pelo usuário de ID: 281 e Login: EstadualSP ","DataAcaoUsuario":"06/07/2023","HorarioAcaoUsuario":" 19 horas e 17 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":503,"IdUsuario":281,"DescricaoAcaoUsuario":"O usuário EstadualSP acessou o sistema","DataAcaoUsuario":"06/07/2023","HorarioAcaoUsuario":" 19 horas e 17 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":326,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"06/07/2023","HorarioAcaoUsuario":" 21 horas e 5 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":508,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"06/07/2023","HorarioAcaoUsuario":" 21 horas e 47 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":453,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"06/07/2023","HorarioAcaoUsuario":" 21 horas e 52 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":70,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"07/07/2023","HorarioAcaoUsuario":" 16 horas e 16 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":766,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"10/07/2023","HorarioAcaoUsuario":" 16 horas e 27 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":351,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"10/07/2023","HorarioAcaoUsuario":" 16 horas e 59 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":812,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"11/07/2023","HorarioAcaoUsuario":" 16 horas e 19 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":157,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"13/07/2023","HorarioAcaoUsuario":" 15 horas e 58 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":980,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"25/07/2023","HorarioAcaoUsuario":" 17 horas e 53 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":920,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"27/07/2023","HorarioAcaoUsuario":" 16 horas e 10 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":880,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"27/07/2023","HorarioAcaoUsuario":" 16 horas e 39 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":554,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"27/07/2023","HorarioAcaoUsuario":" 17 horas e 45 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":329,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"01/08/2023","HorarioAcaoUsuario":" 19 horas e 3 minutos","SiglaEstadoUsuario":"SP"}|

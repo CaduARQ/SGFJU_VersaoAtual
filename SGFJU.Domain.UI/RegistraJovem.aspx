@@ -165,7 +165,6 @@
                                                     <option value="53">Sergipe</option>
                                                     <option value="54">Tocantins</option>
                                                     <option value="55">Campos</option>
-                                                    <option value="56">[BLOCO DE TESTE]</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -218,7 +217,7 @@
                                                 <label class="font-normal">Data de Nascimento</label>
                                                 <div class="input-group date">
                                                     <%--<span class="input-group-addon"><i class="fa fa-calendar"></i></span>--%>
-                                                    <input type="date" name="txtDataNascimento" class="form-control" required >
+                                                    <input type="date" name="txtDataNascimento" id="txtDataNascimento" class="form-control" required >
                                                 </div>
                                             </div>
                                         </div>
@@ -2971,6 +2970,7 @@
                                             <li><a class="nav-link active" data-toggle="tab" href="#tabDetalhes"> Detalhes</a></li>
                                             <li><a class="nav-link" data-toggle="tab" href="#tabTestemunho">Resumo</a></li>
                                             <li><a class="nav-link" data-toggle="tab" href="#tabSugestao">Sugestões para o trabalho da FJU</a></li>
+                                            <li><a class="nav-link" data-toggle="tab" href="#tabTermoEAceite">Termos e aceite FJU</a></li>
                                         </ul>
                                         <div class="tab-content">
                                             <div role="tabpanel" id="tabDetalhes" class="tab-pane active">
@@ -3164,10 +3164,7 @@
                                                 </div>
                                             </div>
                                             <div role="tabpanel" id="tabTestemunho" class="tab-pane">
-                                                <div class="panel-body">                                                                                                                                                              
-                                                        <%--<div id="txtTestemunho" class="summernote">                                                                    
-                                                        </div>
-                                                        <textarea id="txtTestemunho" visible="false" runat="server"></textarea> --%>
+                                                <div class="panel-body">
                                                     <i class="fas fa-pencil-alt prefix"></i>
                                                     <textarea id="txtTestemunho" runat="server" class="md-textarea form-control" cols="4" rows="3"></textarea>
                                                     <label for="txtTestemunho">Escreva testemunho do Jovem</label>
@@ -3180,63 +3177,17 @@
                                                     <label for="txtSugestao">Escreva a sugestão do Jovem</label>
                                                 </div>
                                             </div>
+                                            <div role="tabpanel" id="tabTermoEAceite" runat="server" class="tab-pane">
+                                                <div class="panel-body">
+                                                    <i class="fas fa-pencil-alt prefix"></i>
+                                                    <textarea id="txtTermo" runat="server" class="md-textarea form-control" rows="3"></textarea>
+                                                    <label for="txtTextoAceite">Leia e assine</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </fieldset>
 
-                                <%--<h1>Finish</h1>
-                                <fieldset>
-
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label for="form_name">Quem autorizou a compra? </label>
-                                                <input id="txtNomeAutorizadorCompraCamisa" type="text" name="txtNomeAutorizadorCompraCamisa" class="form-control" >
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-2">
-                                            <div class="form-group">
-                                                <label class="font-normal">Data da Autorização</label>
-                                                <div class="input-group date">
-                                                    <input type="date" name="txtDataAutorizacaoCompraCamisa" class="form-control" >
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="form_name">Local onde compra da camisa será realizada? </label>
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="radio radio-danger radio-inline">
-                                                            <input type="radio" id="rbOrigemCompraCamisa_S" value="S" name="rbOrigemCompraCamisa" >
-                                                            <label for="rbOrigemCompraCamisa_S"> Souvenir do Tempo </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="radio radio-danger radio-inline">
-                                                            <input type="radio" id="rbOrigemCompraCamisa_A" value="A" name="rbOrigemCompraCamisa">
-                                                            <label for="rbOrigemCompraCamisa_A"> Arcacenter </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label class="font-normal">Código da Autorização</label>
-                                                <div class="input-group date">
-                                                    <input type="text" id="txtCodigoAutorizacaoCompraCamisa" name="txtCodigoAutorizacaoCompraCamisa" class="form-control" disabled >
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>                                                                       
-
-                                </fieldset>--%>
                             </form>
                         </div>
                     </div>
@@ -3331,6 +3282,11 @@
         //--------
         var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
         var __FOTO_EH_VALIDA = false;
+        var __TEXTO_MENOR_IDADE =
+            "Ao preencher esse formulário, você confirma que foi informado e que está ciente que o mesmo se destina ao cadastro de voluntários do grupo Força Jovem Universal (FJU) da Igreja Universal do Reino de Deus. Este documento e os respectivos dados pertencem ao sistema de gestão da Universal. Eu responsável legal do menor declaro que estou ciente de que o tratamento dos dados pessoais para finalidade descrita é realizado pela base legal do consentimento contido no artigo 7º, I e 14§1º da LGPD, Assim sendo, como REPRESENTANTE DO MENOR, na condição de pai e/ou responsável legal, forneço o meu consentimento específico e em destaque para o tratamento dos dados pessoais do menor, estando ciente de que o tratamento será realizado em seu melhor interesse e declaro ter recebido todas as informações sobre os tipos de dados coletados, a forma de sua utilização. Assim sendo, o titular declara que foi informado que a Universal é a responsável pelo tratamento dos dados pessoais recolhidos, os quais são armazenados por um período de 10 anos, exceto em caso de disposição legal contrária ou quando você (titular) no exercício dos seus direitos revogue o consentimento fornecido para o tratamento dos dados pessoais recolhidos. Nesse sentido, você titular está ciente de que, nos termos dos artigos 8º, §5º e 18, VI e IX da LGPD, o seu consentimento poderá ser revogado por meio de manifestação expressa, por procedimento gratuito ou facilitado. Caso durante esse tempo você constate alterações consideráveis aos dados descritos neste documento, pedimos que informe por e-mail para a devida alteração e retificação., O tratamento de seus dados serão sempre antecedidas do seu consentimento prévio. Os seus dados não serão utilizados para definição de perfis ou de decisões automatizadas. A Universal utiliza medidas técnicas e organizacionais para manter os seus dados seguros e assegurar que serão acessados apenas por pessoas expressamente autorizadas podendo, realizar a transferência de seus dados, para outro país. Asseguramos que os dados pessoais só serão compartilhados com países que possuem o mesmo nível de segurança ou similar exigido pela LGPD. A Universal declara que tomou as garantias apropriadas e adequadas para que a transferência dos seus dados pessoais nos termos ora descritos, ocorra de forma de forma segura. Saiba que você (titular) tem o direito de retificar, alterar, solicitar o acesso, a exclusão, a limitação do tratamento, a portabilidade dos seus dados e também, o direito de retirar o seu consentimento a qualquer momento, através do envio de um e-mail para: privacidade@universal.org, ou acessando nossa Política de Privacidade através do link https://www.universal.org/politica-de-privacidade/, e preenchendo o formulário de “Pedido de Tratamento de Dados”. A Universal designou um encarregado de proteção de dados, que poderá ser contactado através do e-mail indicado. No caso de violação dos seus direitos, você (titular) tem sempre a opção de apresentar uma reclamação a ANPD.";
+        var __TEXTO_MAIOR_IDADE =
+            "Ao preencher esse formulário, você confirma que foi informado e que está ciente que o mesmo se destina ao cadastro de membros voluntários do grupo Força Jovem Universal (FJU) da Igreja Universal do Reino de Deus. Este documento e os respectivos dados pertencem ao sistema de gestão da Universal. Você declara que esta ciente de que o tratamento dos seus dados pessoais para finalidade descrita é realizado pela base legal do consentimento contido no artigo 7º, I da LGPD, e que representa a sua manifestação livre, informada e inequívoca pela qual você concorda com o tratamento dos seus dados pessoais. Assim sendo, o titular declara que foi informado que a Universal é a responsável pelo tratamento dos dados pessoais recolhidos, os quais são armazenados por um período de 10 anos, exceto em caso de disposição legal contrária ou quando você (titular) no exercício dos seus direitos revogue o consentimento fornecido para o tratamento dos dados pessoais recolhidos. Nesse sentido, você titular está ciente de que, nos termos dos artigos 8º, §5º e 18, VI e IX da LGPD, o seu consentimento poderá ser revogado por meio de manifestação expressa, por procedimento gratuito ou facilitado. Caso durante esse tempo você constate alterações consideráveis aos dados descritos neste documento, pedimos que informe por e-mail para a devida alteração e retificação., O tratamento de seus dados serão sempre antecedidas do seu consentimento prévio. Os seus dados não serão utilizados para definição de perfis ou de decisões automatizadas. A Universal utiliza medidas técnicas e organizacionais para manter os seus dados seguros e assegurar que serão acessados apenas por pessoas expressamente autorizadas podendo, realizar a transferência de seus dados, para outro país. Asseguramos que os dados pessoais só serão compartilhados com países que possuem o mesmo nível de segurança ou similar exigido pela LGPD. A Universal declara que tomou as garantias apropriadas e adequadas para que a transferência dos seus dados pessoais nos termos ora descritos, ocorra de forma de forma segura. Saiba que você (titular) tem o direito de retificar, alterar, solicitar o acesso, a exclusão, a limitação do tratamento, a portabilidade dos seus dados e também, o direito de retirar o seu consentimento a qualquer momento, através do envio de um e-mail para: privacidade@universal.org, ou acessando nossa Política de Privacidade através do link https://www.universal.org/politica-de-privacidade/, e preenchendo o formulário de “Pedido de Tratamento de Dados”. A Universal designou um encarregado de proteção de dados, que poderá ser contactado através do e-mail indicado. No caso de violação dos seus direitos, você (titular) tem sempre a opção de apresentar uma reclamação a ANPD.";
+
         $(document).ready(function () {            
             
 
@@ -3369,7 +3325,27 @@
                         return false;
                     }
 
-                    // Start validation; Prevent going forward if false
+                    if (currentIndex == 6) {
+                        var dataAtual = new Date($('#txtDataNascimento').val());
+                        var dia = dataAtual.getDate();
+                        var mes = dataAtual.getMonth();
+                        var ano = dataAtual.getFullYear();
+
+                        const today = new Date();
+                        const birthDate = new Date(dataAtual);
+                        let idade = today.getFullYear() - birthDate.getFullYear();
+                        const m = today.getMonth() - birthDate.getMonth();
+
+                        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                            idade--;
+                        }
+
+                        if (idade <= 18) 
+                            $('#txtTermo').val(__TEXTO_MENOR_IDADE);
+                        else 
+                            $('#txtTermo').val(__TEXTO_MAIOR_IDADE);
+                    }
+                    
                     return form.valid();
                 },
                 onStepChanged: function (event, currentIndex, priorIndex) {
@@ -3423,10 +3399,6 @@
                 format: "dd/mm/yyyy",
                 language: "pt-BR"
             });
-            //$('#').datepicker({
-            //    format: "dd/mm/yyyy",
-            //    language: "pt-BR"            
-            //});
 
             var yearsAgo = new Date();
             yearsAgo.setFullYear(yearsAgo.getFullYear() - 20);
@@ -3442,7 +3414,6 @@
             $("#cboBloco").select2();
             $("#cboRegiao").select2();
             $("#cboIgreja").select2();
-
 
             $('.select2_demo_3').on('select2:select', function (e) {
                 $('#ibox1').children('.ibox-content').toggleClass('sk-loading');//sk-loading
@@ -3464,7 +3435,6 @@
                 var data = e.params.data;
                 preencherComboIgrejas(data.id);
             });
-
             
             $("input[name=rbOrigemCompraCamisa]").change(function (e) {
                 // Do something interesting here
@@ -3481,9 +3451,7 @@
 
             facadeUser.ConfigurarPaginaX072470();
 
-            //configComboEstado();
             ConfiguraPerfilUsuarioLogadoRJ();
-
             
             $('#habilidadesModal').on('shown.bs.modal', function (e) {
                 
@@ -3613,20 +3581,6 @@
                         });
                     }
                 }
-                /*
-                var arquivoFotoJovem = $('#FileUpload1').val()
-                if(arquivoFotoJovem != '')
-                    swal({
-                        title: "Foto Do Jovem",
-                        text: "Foto Adicionada com sucesso!",
-                        imageUrl: 'img/ok.png'
-                    });
-                else
-                    swal({
-                        title: "Validação Foto",
-                        text: "É necessário adicionar uma foto!",
-                        imageUrl: 'img/delete.jpg'
-                    });*/
             });
 
             ExecutaActionX072477();
@@ -3800,7 +3754,7 @@
                     alert('Para adicionar uma Habilidade extra, os Campos: Nome, Projero e Nível precisam ser preenchidos !');
                     return false;
                 }
-            }            
+            }
 
             var habilidadeNivelDTO = {
                 IdProjeto: idProjetoParametro,//em produção é 18
@@ -3818,8 +3772,7 @@
                 data: JSON.stringify(habilidadeNivelDTO),
                 url: "api/Habilidades/AdicionarHabilidade",
                 contentType: "application/json"
-            }).done(function (res) {
-                //alert( res.MensagemRespostaRequisicao );
+            }).done(function (res) {                
                 if (res.HabilidadeJaAdicionada == true)
                     exibeMensagem(res.MensagemRespostaRequisicao, 'Mensagem informativa', 'erro');
                 else

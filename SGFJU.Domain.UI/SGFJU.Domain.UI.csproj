@@ -197,6 +197,7 @@
     <Content Include="GerenciaCoordPanoramaEstado.html" />
     <Content Include="GerenciaPanoramaObreirosArvoreVida.html" />
     <Content Include="GerenciaRelatoriosFJU.html" />
+    <Content Include="img\SGFJU.png" />
     <Content Include="js\plugins\mark\jquery.mark.min.js" />
     <Content Include="js\plugins\mark\mark.min.js" />
     <Content Include="ListaJovensLevantadosAltar.html" />
@@ -1882,6 +1883,7 @@
     <Content Include="js\SGFJU.Domain.UI.Client.js" />
     <Content Include="js\SGFJU.Domain.UI.Bind.Specialized.js" />
     <Content Include="css\SGFJU.UI.Utils.css" />
+    <Content Include="appsettings.json" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">

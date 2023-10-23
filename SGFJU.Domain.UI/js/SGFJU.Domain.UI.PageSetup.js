@@ -114,7 +114,11 @@ function ConfiguraPerfilLogado() {
         contentType: "application/json"
     }).done(function (retorno) {
 
-        if (retorno.NomePerfil == 'Secretárias Estadual') {
+        if (retorno.NomePerfil == 'Coordenador FJU Estadual') {
+            configuraPerfilMenuSecretariaEstadual();
+            retornoFuncao = 'Secretárias Estadual';
+        }
+        else if (retorno.NomePerfil == 'Secretárias Estadual') {
             configuraPerfilMenuSecretariaEstadual();
             retornoFuncao = 'Secretárias Estadual';
         }

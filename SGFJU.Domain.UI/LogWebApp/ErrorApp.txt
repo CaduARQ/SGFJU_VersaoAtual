@@ -458,3 +458,158 @@
  --------------------------------------
 2023-02-05 22:38:15.2596|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2023 22:38:15' - Descrição do Erro: ÓH as data I 2023-1-30 DATAF 2023-2-5 e report D 2023-2-5
 2023-02-05 22:38:28.3394|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2023 22:38:28' - Descrição do Erro: ÓH as data I 2023-1-30 DATAF 2023-2-5 e report D 2023-2-5
+2023-07-06 19:01:59.9254|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 19:01:59' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.ObterTodasAcoesSGFJU(String arquivoJSONLogUsuario) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 133
+   em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaAcoesSGFJUPorParametro(ParametroPesquisaUsuarioDTO parametrosPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 253: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Unterminated string. Expected delimiter: ". Path 'DescricaoAcaoUsuario', line 2, position 105. 
+
+ --------------------------------------
+2023-07-06 19:02:00.0828|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 19:02:00' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaAcoesSGFJUPorParametro(ParametroPesquisaUsuarioDTO parametrosPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 339
+   em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaAcoesSGFJUPorEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 232: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.ObterTodasAcoesSGFJU(String arquivoJSONLogUsuario) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 133
+   em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaAcoesSGFJUPorParametro(ParametroPesquisaUsuarioDTO parametrosPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 253: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Unterminated string. Expected delimiter: ". Path 'DescricaoAcaoUsuario', line 2, position 105. 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2023-07-06 19:02:35.4887|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 19:02:35' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.ObterTodasAcoesSGFJU(String arquivoJSONLogUsuario) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 133
+   em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaAcoesSGFJUPorParametro(ParametroPesquisaUsuarioDTO parametrosPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 253: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Unterminated string. Expected delimiter: ". Path 'DescricaoAcaoUsuario', line 2, position 105. 
+
+ --------------------------------------
+2023-07-06 19:02:35.4887|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 19:02:35' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaAcoesSGFJUPorParametro(ParametroPesquisaUsuarioDTO parametrosPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 339
+   em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaAcoesSGFJUPorEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 232: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.ObterTodasAcoesSGFJU(String arquivoJSONLogUsuario) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 133
+   em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaAcoesSGFJUPorParametro(ParametroPesquisaUsuarioDTO parametrosPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 253: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Unterminated string. Expected delimiter: ". Path 'DescricaoAcaoUsuario', line 2, position 105. 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2023-07-06 19:17:18.4090|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 19:17:18' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.RetornaUsuario(UsuarioDTO usuarioParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 27
+   em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaUsuario(UsuarioDTO usuarioParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 168: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2023-07-06 21:06:25.4524|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 21:06:25' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2023-07-06 21:06:25.4978|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 21:06:25' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2023-07-06 21:56:07.0608|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 21:56:07' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2023-07-06 21:56:07.1156|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 21:56:07' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2023-07-06 21:56:32.3729|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 21:56:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2023-07-06 21:56:32.3729|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/07/2023 21:56:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2023-07-10 16:59:41.5196|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/07/2023 16:59:41' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2023-07-10 16:59:42.2103|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/07/2023 16:59:42' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2023-07-10 16:59:42.2153|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/07/2023 16:59:42' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2023-07-10 16:59:43.4658|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/07/2023 16:59:43' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2023-07-10 19:02:55.8594|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '10/07/2023 19:02:55' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.RetornaUsuarioEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 120: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2023-07-27 17:41:22.7805|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/07/2023 17:41:22' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2023-07-27 17:41:22.7695|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/07/2023 17:41:22' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2023-07-27 17:41:22.7805|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/07/2023 17:41:22' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2023-07-27 17:41:22.7805|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/07/2023 17:41:22' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072477() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 72: 
+
+ Source: SGFJU.Domain.UI  
+
+ Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
