@@ -361,6 +361,7 @@ namespace SGFJU.Domain.UI
                 (base.UserLogger as UserLoggerImpl).WriteUserAction(UsuarioLogado.Id, UsuarioLogado.EstadoUsuario.SiglaEstado, $"O usuário {UsuarioLogado.Login} cadastrou o jovem de ID {novoJovem.Id} ");
 
                 uploadFotoJovem(novoJovem.Id, siglaEstado);
+                uploadDocumentoAutorizacaoJovem(novoJovem.Id, siglaEstado);
 
                 ClientScript.RegisterStartupScript(GetType(), "hwa", "mensagemConfirmacaoCadastro();", true);
 
@@ -407,6 +408,30 @@ namespace SGFJU.Domain.UI
                 }
             }
             catch (Exception excUploadFoto) {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excUploadFoto, "CAMADA_APP");
+                throw new Exception(mensagemErroExcecao);
+            }
+        }
+        private void uploadDocumentoAutorizacaoJovem(int idJovem, string psiglaEstado)
+        {
+            try
+            {
+                if ((FileUploadDocumentoJovem.PostedFile != null) && (FileUploadDocumentoJovem.PostedFile.ContentLength > 0))
+                {
+                    string SaveLocation = Server.MapPath("DocumentosAutorizacao") + "\\" + FileUploadDocumentoJovem.PostedFile.FileName;
+                    FileUploadDocumentoJovem.PostedFile.SaveAs(SaveLocation);
+
+                    if (File.Exists(SaveLocation))
+                    {
+                        var nomeArquivoFormatado = RetornaArquivoDocumentoAutorizacaoJovemFormatado(idJovem, psiglaEstado, SaveLocation);
+
+                        File.Move(SaveLocation, nomeArquivoFormatado);
+                        File.Delete(SaveLocation);
+                    }
+                }
+            }
+            catch (Exception excUploadFoto)
+            {
                 var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excUploadFoto, "CAMADA_APP");
                 throw new Exception(mensagemErroExcecao);
             }
@@ -501,6 +526,18 @@ namespace SGFJU.Domain.UI
             var hora = DateTime.Now.Hour.ToString();
             var siglaEstado = pSiglaEstado;
             string suffix = $"{siglaEstado}_ID_{idJovem}_{data}{hora}_";
+            string renamedFilePath = Path.Combine(fDir, String.Concat(suffix, fName, fExt));
+            return renamedFilePath;
+        }
+        protected string RetornaArquivoDocumentoAutorizacaoJovemFormatado(int idJovem, string pSiglaEstado, string filename)
+        {
+            string fDir = Path.GetDirectoryName(filename);
+            string fName = Path.GetFileNameWithoutExtension(filename);
+            string fExt = Path.GetExtension(filename);
+            var data = DateTime.Now.ToString("yyyy-MM-dd");
+            var hora = DateTime.Now.Hour.ToString();
+            var siglaEstado = pSiglaEstado;
+            string suffix = $"DocAutorizacao_{siglaEstado}_ID_{idJovem}_{data}{hora}_";
             string renamedFilePath = Path.Combine(fDir, String.Concat(suffix, fName, fExt));
             return renamedFilePath;
         }

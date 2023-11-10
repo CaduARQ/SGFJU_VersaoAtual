@@ -1896,6 +1896,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controls\" />
+    <Folder Include="DocumentosAutorizacao\" />
     <Folder Include="FotosJovens\" />
     <Folder Include="FotosNotasDespesas\" />
     <Folder Include="FotosPatrimonioFJU\" />

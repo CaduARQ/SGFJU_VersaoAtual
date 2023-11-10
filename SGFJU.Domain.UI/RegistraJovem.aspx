@@ -387,6 +387,7 @@
                                         </div>
                                     </div>
                                     <!---->
+                                    
                                     <!-- end -->
                                 </fieldset>
 
@@ -3179,14 +3180,54 @@
                                             </div>
                                             <div role="tabpanel" id="tabTermoEAceite" runat="server" class="tab-pane">
                                                 <div class="panel-body">
-                                                    <i class="fas fa-pencil-alt prefix"></i>
-                                                    <textarea id="txtTermo" runat="server" class="md-textarea form-control" rows="3"></textarea>
-                                                    <label for="txtTextoAceite">Leia e assine</label>
+                                                    <div class="row">
+                                                        <div class="col-sm-8">
+                                                            <div class="form-group">
+                                                                <i class="fas fa-pencil-alt prefix"></i>
+                                                                <textarea id="txtTermo" runat="server" class="md-textarea form-control" rows="3"></textarea>
+                                                                <label for="txtTextoAceite">Leia e assine</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <%--<button class="btn btn-success dim btn-outline" onclick="AdicionarAutorizacaoJovem()" type="button" style="width: 350px;">
+                                                                <i class="fa fa-edit"></i><i class="fa fa-user"></i> Adicionar autorização jovem
+                                                            </button>--%>
+                                                            <div class="form-group">
+                                                                <button id="btnAdicionarDocumento" 
+                                                                        data-toggle="modal" 
+                                                                        data-target="#documentoAceiteJovemModal" 
+                                                                        class="btn btn-danger" 
+                                                                        type="button"><i class="fa fa-search"></i>&nbsp;Adicionar documento</button>   
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </fieldset>
+                                <!---->
+                                <div class="modal inmodal" id="documentoAceiteJovemModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content animated bounceInRight">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                                <i class="fa fa-laptop modal-icon"></i>
+                                                <h4 class="modal-title">Selecione o documento com autorização do Jovem</h4>
+                                                <small class="font-bold">Documento de autorização do jovem</small>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!---->
+                                                <asp:FileUpload ID="FileUploadDocumentoJovem" runat="server" />
+                                                <!---->
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
 
                             </form>
                         </div>
@@ -3197,7 +3238,7 @@
 
                         </div>
                     </div>
-
+                    
             </div>
             <div class="wrapper wrapper-content">
         <div class="row">
@@ -3580,6 +3621,27 @@
                             imageUrl: 'img/delete.jpg'
                         });
                     }
+                }
+            });
+
+            $('#documentoAceiteJovemModal').on('hide.bs.modal', function () {
+                var arquivoDocumento = $('#FileUploadDocumentoJovem');
+                var tipoArquivo = arquivoDocumento[0].files[0].type;
+
+                if (tipoArquivo != 'application/pdf') {
+                    swal({
+                        title: "Validação documento autorização",
+                        text: "Documento precisa estar em PDF!",
+                        imageUrl: 'img/delete.jpg'
+                    });
+                    var arquivoFotoJovem = $('#FileUploadDocumentoJovem').val('');
+                }
+                else {
+                    swal({
+                        title: "Documento de autorização",
+                        text: "Documento Adicionado com sucesso!",
+                        imageUrl: 'img/ok.png'
+                    });
                 }
             });
 
