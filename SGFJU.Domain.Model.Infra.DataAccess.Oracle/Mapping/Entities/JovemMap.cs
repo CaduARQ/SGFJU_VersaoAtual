@@ -14,6 +14,8 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql
             this.Id(t => t.Id, "ID_JOVEM").GeneratedBy.Identity();
             this.Map(t => t.Nome);
             this.Map(t => t.NomeArquivoFoto);
+            this.Map(t => t.NomeArquivoAutorizacao);
+            this.Map(t => t.ArquivoAutorizacaoOk);
             this.Map(t => t.NomeConjuge);
             this.Map(t => t.DataCasamento);
             this.Map(t => t.PossuiFilhos);

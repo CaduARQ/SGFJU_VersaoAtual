@@ -873,3 +873,4 @@
 {"IdLogUsuario":138,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"09/11/2023","HorarioAcaoUsuario":" 20 horas e 7 minutos","SiglaEstadoUsuario":"SP"}|
 {"IdLogUsuario":583,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"09/11/2023","HorarioAcaoUsuario":" 21 horas e 8 minutos","SiglaEstadoUsuario":"SP"}|
 {"IdLogUsuario":723,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP cadastrou o jovem de ID 183589 ","DataAcaoUsuario":"09/11/2023","HorarioAcaoUsuario":" 21 horas e 10 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":23,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"10/11/2023","HorarioAcaoUsuario":" 19 horas e 15 minutos","SiglaEstadoUsuario":"SP"}|

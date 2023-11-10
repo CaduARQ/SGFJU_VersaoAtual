@@ -35,6 +35,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                         var siglaEstado = aggregateRoot.SiglaEstadoJovem;
                         var idJovem = 0;
                         string arquivoFormatadoJovem = "";
+                        string arquivoDocumentoAutorizacaoJovem = "";
                         string CODIGO_SGFJU_AUTORIZACAO_COMPRA_CAMISA = $"CASGFJU{idJovem}{DateTime.Now.Year}{DateTime.Now.Month}{DateTime.Now.Day}{DateTime.Now.Millisecond}";
 
                         session.SaveOrUpdate(aggregateRoot.ContatoJovem);
@@ -50,8 +51,10 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                         idJovem = aggregateRoot.Id;
 
                         arquivoFormatadoJovem = $"{siglaEstado}_ID_{idJovem}_{data}{hora}_";
+                        arquivoDocumentoAutorizacaoJovem = $"DocAutorizacao_{siglaEstado}_ID_{idJovem}_{data}{hora}_";
 
                         aggregateRoot.NomeArquivoFoto = arquivoFormatadoJovem + aggregateRoot.NomeArquivoFoto;
+                        aggregateRoot.NomeArquivoAutorizacao = arquivoDocumentoAutorizacaoJovem + "";
 
                         if (idiomasFaladosJovem != null) { 
                             foreach (var idioma in idiomasFaladosJovem) {

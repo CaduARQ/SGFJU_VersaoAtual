@@ -255,6 +255,8 @@ namespace SGFJU.Domain.UI
                     PossuiFilhos = (string.IsNullOrEmpty(Request.Form["rbPossuiFilhos"])) ? 'N' : char.Parse(Request.Form["rbPossuiFilhos"]),
                     QuantidadeFilhos = (!string.IsNullOrEmpty(Request.Form["txtQtdFilhos"])) ? int.Parse(Request.Form["txtQtdFilhos"]) : 0,
                     NomeArquivoFoto = FileUpload1.FileName,
+                    NomeArquivoAutorizacao = FileUploadDocumentoJovem.FileName,
+                    ArquivoAutorizacaoOk = (FileUploadDocumentoJovem.HasFiles)?'S':'N',
                     SiglaEstadoJovem = siglaEstado,
                     TextoSugestao = Request.Form["txtSugestao"],
                     Sexo = (string.IsNullOrEmpty(Request.Form["cboSexo"])) ? 'N' : char.Parse(Request.Form["cboSexo"]),

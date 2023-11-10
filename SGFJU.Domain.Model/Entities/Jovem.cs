@@ -21,6 +21,8 @@ namespace SGFJU.Domain.Model.Entities
         }
         public virtual string Nome { get; set; }
         public virtual string NomeArquivoFoto { get; set; }
+        public virtual string NomeArquivoAutorizacao { get; set; }
+        public virtual char ArquivoAutorizacaoOk { get; set; }
         public virtual string NomeConjuge { get; set; }
         public virtual DateTime? DataCasamento { get; set; }
         public virtual char PossuiFilhos { get; set; }
