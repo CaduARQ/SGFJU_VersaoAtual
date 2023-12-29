@@ -652,7 +652,13 @@
                 confirmButtonColor: "#DD6B55",
                 confirmButtonText: "Sim, Desejo excluir!",
                 closeOnConfirm: false
-            }, function () {
+            }, function (isConfirm) {
+                    //alert('resposta -> ' + isConfirm);
+                    if (!isConfirm) {
+                        spinnerOff();
+                        return;
+                    }
+
                     $.ajax({
                         type: "POST",
                         data: JSON.stringify(objAutorizacaoDTO),
@@ -812,10 +818,9 @@
                 return;
             }
 
+            /*
             if (!ehCoordenador()) {
 
-                //console.log('::ehObreiro ->' + ehObreiroOuColaborador() + '::Cód camisa ->' + codigoProjetoCamisa);
-                //if (ehObreiroOuColaborador() && codigoProjetoCamisa != 20) {
                 if (ehObreiroOuColaborador()) {
                     if (obreiroAindaPodeSolicitarCamisa()) {
                         if (codigoProjetoCamisa != 20) {
@@ -851,17 +856,6 @@
                         });
                         return;
                     }
-
-                    /*
-                    if (!jovemPertenceAoProjeto(__JOVEM_SELECIONADO.ProjetosAosQuaisJovemEstaLigado, codigoProjetoCamisa)) {
-                        swal({
-                            title: "Validação",
-                            text: 'Solicitação não pode ser realizada pois jovem não pertence ao projeto!',
-                            type: "error"
-                        });
-                        return;
-                    }
-                    */
                 }
                 else if(!ehObreiroOuColaborador()) {
                     if (!jovemPertenceAoProjeto(__JOVEM_SELECIONADO.ProjetosAosQuaisJovemEstaLigado, codigoProjetoCamisa)) {
@@ -873,37 +867,7 @@
                         return;
                     }
                 }
-
-                /*
-                if (!jovemPertenceAoProjeto(__JOVEM_SELECIONADO.ProjetosAosQuaisJovemEstaLigado, codigoProjetoCamisa)) {
-                    swal({
-                        title: "Validação",
-                        text: 'Solicitação não pode ser realizada pois jovem não pertence ao projeto!',
-                        type: "error"
-                    });
-                    return;
-                }*/
-            }
-
-            /*
-            $.ajax({
-                type: "POST",
-                data: JSON.stringify(solicitacaoAutorizacaoDTO),
-                url: "api/Jovens/VerificaCodigoArcacenter/",
-                contentType: "application/json"
-            }).done(function (retorno) {
-
-                if (!retorno.SolicitacaoBemSucedida) {
-                    console.log( ':: jovem parâmetro id' +__JOVEM_SELECIONADO.Id );
-                    swal({
-                            title: "Código já utilizado !",
-                            text: retorno.RespostaSoliciticao,
-                            type: "warning"
-                    }, function () {                            
-                            location.href = 'CentralAutorizacaoCamisa.html?idJovem=' + solicitacaoAutorizacaoDTO.IdJovem;
-                    });
-                }
-            });*/
+            }*/
 
             if (modeloCamisaJaSolicitado(codigoProjetoCamisa)) {
                 swal({
@@ -1013,15 +977,11 @@
                     
                     $('#autorizacoesConcedidas').modal('show');
 
-                    /*
-                    swal({
-                        title: "Confirmação",
-                        text: resultSetSolicitacao.RespostaSoliciticao,
-                        type: "success"
-                    });*/
-
                     var objTable = $('#tblSolicitacoesAdicionadas').DataTable();
                     objTable.clear().draw();
+
+                    /*teste!#*/
+                    __solicitacoesAdicionadas = [];
                 }
                 else {
                     spinnerOff();

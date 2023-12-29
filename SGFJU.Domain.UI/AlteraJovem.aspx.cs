@@ -497,7 +497,31 @@ namespace SGFJU.Domain.UI
                 throw new Exception(mensagemErroExcecao);
             }
         }
-        
+        /*
+        private void uploadDocumentoAutorizacaoJovem(int idJovem, string psiglaEstado)
+        {
+            try
+            {
+                if ((FileUploadDocumentoJovem.PostedFile != null) && (FileUploadDocumentoJovem.PostedFile.ContentLength > 0))
+                {
+                    string SaveLocation = Server.MapPath("DocumentosAutorizacao") + "\\" + FileUploadDocumentoJovem.PostedFile.FileName;
+                    FileUploadDocumentoJovem.PostedFile.SaveAs(SaveLocation);
+
+                    if (File.Exists(SaveLocation))
+                    {
+                        var nomeArquivoFormatado = RetornaArquivoDocumentoAutorizacaoJovemFormatado(idJovem, psiglaEstado, SaveLocation);
+
+                        File.Move(SaveLocation, nomeArquivoFormatado);
+                        File.Delete(SaveLocation);
+                    }
+                }
+            }
+            catch (Exception excUploadFoto)
+            {
+                var mensagemErroExcecao = ExceptionManager.FormatExceptionMessage(excUploadFoto, "CAMADA_APP");
+                throw new Exception(mensagemErroExcecao);
+            }
+        }*/
         private IList<ReuniaoFJU> RetornaReunioesQueOJovemAssiste()
         {
             var reunioesAssistidasPeloJovem = new List<ReuniaoFJU>();

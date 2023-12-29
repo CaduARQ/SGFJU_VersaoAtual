@@ -609,3 +609,7 @@
  Inner Exception Message:  
 
  --------------------------------------
+2023-12-27 10:10:17.5262|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/12/2023 10:10:17' - Descrição do Erro: Referência de objeto não definida para uma instância de um objeto.
+2023-12-27 10:10:17.5352|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/12/2023 10:10:17' - Descrição do Erro: Referência de objeto não definida para uma instância de um objeto.
+2023-12-27 10:11:32.7121|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/12/2023 10:11:32' - Descrição do Erro: Referência de objeto não definida para uma instância de um objeto.
+2023-12-27 10:15:07.2414|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '27/12/2023 10:15:07' - Descrição do Erro: Referência de objeto não definida para uma instância de um objeto.

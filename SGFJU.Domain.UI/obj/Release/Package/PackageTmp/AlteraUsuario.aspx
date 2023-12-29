@@ -208,6 +208,7 @@
                                                 <label class="text-success font-bold" for="form_name">Tipo de Usuário</label>
                                                 <select required id="cboTipoUsuario" name="cboTipoUsuario" class="select2_demo_11 form-control">
                                                     <option></option>
+                                                    <option value="5">Coordenador FJU Estadual</option>
                                                     <option value="6">Secretária Estadual</option>
                                                     <option value="7">Secretária Bloco</option>
                                                     <option value="9">Secretária Região</option>

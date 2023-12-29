@@ -626,6 +626,10 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
 
                 return retornoConsultaGeral;
             }
+            catch(HibernateException hibernateExc) {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(hibernateExc, "CAMADA_ORM");
+                throw new DomainException(mensagemTratada, hibernateExc);
+            }
             catch (Exception dataException) {
                 var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
                 throw new DomainException(mensagemTratada, dataException);
@@ -1187,13 +1191,15 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
 
                 return jovemRetorno;
             }
-            catch (MySqlException excSpecificMySqlDB)
-            {
+            catch(HibernateException hibernateExc) {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(hibernateExc, "CAMADA_ORM");
+                throw new DomainException(mensagemTratada, hibernateExc);
+            }
+            catch (MySqlException excSpecificMySqlDB) {
                 var mensagemErroformatada = ExceptionManager.ExceptionManager.FormatExceptionMessage(excSpecificMySqlDB, "ExecuteQuery", "CAMADA_ORM.DAO");
                 throw new DomainException(mensagemErroformatada);
             }
-            catch (Exception exc)
-            {
+            catch (Exception exc) {
                 var mensagemErroformatada = ExceptionManager.ExceptionManager.FormatExceptionMessage(exc, "ExecuteQuery", "CAMADA_ORM.DAO");
                 throw new DomainException(mensagemErroformatada);
             }
@@ -1250,6 +1256,10 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
 
                     return jovensRetorno;
                 }
+            }
+            catch(HibernateException hibernateExc) {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(hibernateExc, "CAMADA_ORM");
+                throw new DomainException(mensagemTratada, hibernateExc);
             }
             catch (Exception dataException)
             {
@@ -1320,6 +1330,10 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                                                 });
                     return obreirosIgreja.ToList();
                 }
+            }
+            catch(HibernateException hibernateExc) {
+                var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(hibernateExc, "CAMADA_ORM");
+                throw new DomainException(mensagemTratada, hibernateExc);
             }
             catch (Exception dataException) {
                 var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");

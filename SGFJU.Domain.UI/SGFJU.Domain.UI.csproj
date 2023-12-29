@@ -204,6 +204,7 @@
     <Content Include="PainelControle.html" />
     <Content Include="RegistraAcao.html" />
     <Content Include="RegistraDespesa.aspx" />
+    <Content Include="RegistraInstituicaoEnsino.html" />
     <Content Include="RegistrarPatrimonio.aspx" />
     <Content Include="RelatorioAltarJovem.html" />
     <Content Include="Serializeds\menuPastorEstadual.txt" />
@@ -212,6 +213,7 @@
     <Content Include="Serializeds\menuADMGeral.txt" />
     <Content Include="Serializeds\ParametroRelatorioFJU.txt" />
     <Content Include="TranferIgreja.html" />
+    <Content Include="VisualizaAutorizacaoJovem.aspx" />
     <Content Include="VisualizaFichaJovemImpressao.aspx" />
     <Content Include="AlteraCoordenador.aspx" />
     <Content Include="AlteraUsuario.aspx" />
@@ -1660,6 +1662,13 @@
     </Compile>
     <Compile Include="RegistrarPatrimonio.aspx.designer.cs">
       <DependentUpon>RegistrarPatrimonio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizaAutorizacaoJovem.aspx.cs">
+      <DependentUpon>VisualizaAutorizacaoJovem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualizaAutorizacaoJovem.aspx.designer.cs">
+      <DependentUpon>VisualizaAutorizacaoJovem.aspx</DependentUpon>
     </Compile>
     <Compile Include="VisualizaFichaJovemImpressao.aspx.cs">
       <DependentUpon>VisualizaFichaJovemImpressao.aspx</DependentUpon>

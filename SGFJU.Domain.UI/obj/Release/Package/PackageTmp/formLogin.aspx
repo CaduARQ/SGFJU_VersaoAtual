@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>SGFJU | Login</title>
@@ -37,8 +37,9 @@
         <div class="row">
 
             <div class="col-md-6">
-                <h2 class="label label-success font-bold text-white">Seja Bem-Vindo ao SGFJU</h2>
-                
+
+                <h2 class="label label-success font-bold text-white">Seja Bem-Vindo</h2>
+                <img id="imgLogo" src="img/SGFJU.png" height="200px" width="320px" alt="image"  />
 
             </div>
             <div class="col-md-6">

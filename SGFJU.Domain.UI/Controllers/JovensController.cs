@@ -705,14 +705,19 @@ namespace SGFJU.Domain.UI.Controllers
                         return new RespostaAprovacaoCompraCamisa { SolicitacaoBemSucedida = false, RespostaSoliciticao = "Já foi solicitado autorização de camisa para este jovem!" };
                 }*/
 
+                /*
+                ************************************************************************
+                * **********************************************************************
+
                 if (pSolicitacoesCompraCamisa[0].QuemEstaSolicitando == "Jovem") {
                     if (facade.JaExistemSolicitacoesCadastradas(pSolicitacoesCompraCamisa[0].IdJovem))
                         return new RespostaAprovacaoCompraCamisa { SolicitacaoBemSucedida = false, RespostaSoliciticao = "Já foi solicitado autorização de camisa para este jovem!" };
-                }
+                }*/
 
                 foreach (var solicitacao in pSolicitacoesCompraCamisa) {
                     if (solicitacao.OrigemCompraCamisa == "S") {
-                        solicitacao.CodigoAutorizacaoCompraCamisa = $"CASGFJU{solicitacao.IdJovem}{DateTime.Now.Year}{DateTime.Now.Month}{DateTime.Now.Day}{DateTime.Now.Millisecond}";                        
+                        var hashCodigoCamisa = Guid.NewGuid().ToByteArray()[0];
+                        solicitacao.CodigoAutorizacaoCompraCamisa = $"CASGFJU{solicitacao.IdJovem}{DateTime.Now.Year}{DateTime.Now.Month}{DateTime.Now.Day}{DateTime.Now.Millisecond}{hashCodigoCamisa}";
                     }
                     autorizacoesCondedidas.Add(new AutorizacaoCompraCamisaDTO { CodigoAutorizacaoCompraCamisa = solicitacao.CodigoAutorizacaoCompraCamisa, NomeCamisaAutorizada = solicitacao.NomeCamisaAutorizada });
                 }

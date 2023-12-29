@@ -398,3 +398,4 @@
 2020-06-03 17:05:11.7233|INFO|SGFJU.Domain.Model.Infra.Logging.Implementation.UserLoggerImpl|O usuário Cadu - executour a seguinte ação: Acesso, com a seguinte descrição: Acessou o sistema - a data 03/06/2020 17:05:11
 2020-06-07 14:52:56.7040|INFO|SGFJU.Domain.Model.Infra.Logging.Implementation.UserLoggerImpl|O usuário Cadu - executour a seguinte ação: Acesso, com a seguinte descrição: Acessou o sistema - a data 07/06/2020 14:52:56
 2020-06-07 15:17:16.1512|INFO|SGFJU.Domain.Model.Infra.Logging.Implementation.UserLoggerImpl|O usuário Cadu - executour a seguinte ação: Acesso, com a seguinte descrição: Acessou o sistema - a data 07/06/2020 15:17:16
+O usuário EsposaSP - executour a seguinte ação: Acesso, com a seguinte descrição: Acessou o sistema - a data 27/12/2023 10:18:12|
