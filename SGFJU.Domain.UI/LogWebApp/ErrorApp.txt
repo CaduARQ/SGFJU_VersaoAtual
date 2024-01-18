@@ -739,3 +739,1242 @@
 2023-12-29 16:41:40.0836|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/12/2023 16:41:40' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
 2023-12-29 16:42:00.4228|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/12/2023 16:42:00' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
 2023-12-29 16:42:00.4228|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/12/2023 16:42:00' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-01 16:04:26.9227|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:04:26' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-01 16:04:26.9743|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:04:26' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-01 16:04:28.0084|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:04:28' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeJovemImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeJovemImpl.cs:linha 238
+   em SGFJU.Domain.UI.Controllers.JovensController.ObterJovemAtualizacao(TodosJovensDTO jovemParaAtualizar) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 256: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(ISessionImplementor session, Object id, Object optionalObject, Object optionalId)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(Object id, Object optionalObject, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Load(Object id, Object optionalObject, LockMode lockMode, ISessionImplementor session)
+   em NHibernate.Event.Default.DefaultLoadEventListener.LoadFromDatasource(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.Get(String entityName, Object id)
+   em NHibernate.Impl.SessionImpl.Get[T](Object id)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 664: 
+
+ Source: NHibernate  
+
+ Exception Message: could not load an entity: [SGFJU.Domain.Model.Entities.Jovem#2166][SQL: SELECT jovem0_.ID_JOVEM as id1_0_0_, jovem0_.Nome as nome2_0_0_, jovem0_.NomeArquivoFoto as nomearquiv3_0_0_, jovem0_.NomeArquivoAutorizacao as nomearquiv4_0_0_, jovem0_.ArquivoAutorizacaoOk as arquivoaut5_0_0_, jovem0_.NomeConjuge as nomeconjug6_0_0_, jovem0_.DataCasamento as datacasame7_0_0_, jovem0_.PossuiFilhos as possuifilh8_0_0_, jovem0_.QuantidadeFilhos as quantidade9_0_0_, jovem0_.ConjugeEhIURD as conjugeeh10_0_0_, jovem0_.ConjugeEhObreiro as conjugeeh11_0_0_, jovem0_.NamoraAtualmente as namoraatu12_0_0_, jovem0_.GostaDeAlguem as gostadeal13_0_0_, jovem0_.NomePretendente as nomeprete14_0_0_, jovem0_.PossuiTituloEleitor as possuitit15_0_0_, jovem0_.PertenceGrupoMulheresIURD as pertenceg16_0_0_, jovem0_.NomeGrupoMulheresIURD as nomegrupo17_0_0_, jovem0_.DataNascimento as datanasci18_0_0_, jovem0_.DataCadastro as datacadas19_0_0_, jovem0_.DataPreenchimentoFormulario as datapreen20_0_0_, jovem0_.DataUltimaAtualizacao as dataultim21_0_0_, jovem0_.DataIngressoObra as dataingre22_0_0_, jovem0_.TextoSugestao as textosuge23_0_0_, jovem0_.Sexo as sexo24_0_0_, jovem0_.ClassificacaoJovem as classific25_0_0_, jovem0_.DataMudancaClassificacaoJovem as datamudan26_0_0_, jovem0_.DescricaoMudancaClassificacaoJovem as descricao27_0_0_, jovem0_.AutorizadorMudancaClassificacaoJovem as autorizad28_0_0_, jovem0_.EhPastor as ehpastor29_0_0_, jovem0_.EhAltarJovem318 as ehaltarjo30_0_0_, jovem0_.CodigoAltarJovem318 as codigoalt31_0_0_, jovem0_.EhAtendenteWhatsappHelp as ehatenden32_0_0_, jovem0_.ID_CONTATO as id33_0_0_, jovem0_.ID_REDESOCIAL as id34_0_0_, jovem0_.ID_ENDERECO as id35_0_0_, jovem0_.ID_DADOS_PROFISSIONAIS as id36_0_0_, jovem0_.ID_TIPOESTADOCIVIL as id37_0_0_, jovem0_.ID_DADOSESCOLARES as id38_0_0_, jovem0_.ID_DADOSESPIRITUAIS as id39_0_0_, jovem0_.ID_SITUACAO_IURD_FJU as id40_0_0_, jovem0_.ID_IGREJA as id41_0_0_ FROM SGFJU_TBL_JOVEM jovem0_ WHERE jovem0_.ID_JOVEM=?] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-01 16:07:13.8925|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:07:13' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-01 16:07:13.9144|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:07:13' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-01 16:41:49.1264|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:41:49' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-01 16:41:49.4055|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:41:49' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-01 16:41:50.2323|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:41:50' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeJovemImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeJovemImpl.cs:linha 238
+   em SGFJU.Domain.UI.Controllers.JovensController.ObterJovemAtualizacao(TodosJovensDTO jovemParaAtualizar) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 256: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(ISessionImplementor session, Object id, Object optionalObject, Object optionalId)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(Object id, Object optionalObject, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Load(Object id, Object optionalObject, LockMode lockMode, ISessionImplementor session)
+   em NHibernate.Event.Default.DefaultLoadEventListener.LoadFromDatasource(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.Get(String entityName, Object id)
+   em NHibernate.Impl.SessionImpl.Get[T](Object id)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 664: 
+
+ Source: NHibernate  
+
+ Inner Exception: Unknown column 'jovem0_.NomeArquivoAutorizacao' in 'field list' 
+
+  Exception Message: could not load an entity: [SGFJU.Domain.Model.Entities.Jovem#12581][SQL: SELECT jovem0_.ID_JOVEM as id1_0_0_, jovem0_.Nome as nome2_0_0_, jovem0_.NomeArquivoFoto as nomearquiv3_0_0_, jovem0_.NomeArquivoAutorizacao as nomearquiv4_0_0_, jovem0_.ArquivoAutorizacaoOk as arquivoaut5_0_0_, jovem0_.NomeConjuge as nomeconjug6_0_0_, jovem0_.DataCasamento as datacasame7_0_0_, jovem0_.PossuiFilhos as possuifilh8_0_0_, jovem0_.QuantidadeFilhos as quantidade9_0_0_, jovem0_.ConjugeEhIURD as conjugeeh10_0_0_, jovem0_.ConjugeEhObreiro as conjugeeh11_0_0_, jovem0_.NamoraAtualmente as namoraatu12_0_0_, jovem0_.GostaDeAlguem as gostadeal13_0_0_, jovem0_.NomePretendente as nomeprete14_0_0_, jovem0_.PossuiTituloEleitor as possuitit15_0_0_, jovem0_.PertenceGrupoMulheresIURD as pertenceg16_0_0_, jovem0_.NomeGrupoMulheresIURD as nomegrupo17_0_0_, jovem0_.DataNascimento as datanasci18_0_0_, jovem0_.DataCadastro as datacadas19_0_0_, jovem0_.DataPreenchimentoFormulario as datapreen20_0_0_, jovem0_.DataUltimaAtualizacao as dataultim21_0_0_, jovem0_.DataIngressoObra as dataingre22_0_0_, jovem0_.TextoSugestao as textosuge23_0_0_, jovem0_.Sexo as sexo24_0_0_, jovem0_.ClassificacaoJovem as classific25_0_0_, jovem0_.DataMudancaClassificacaoJovem as datamudan26_0_0_, jovem0_.DescricaoMudancaClassificacaoJovem as descricao27_0_0_, jovem0_.AutorizadorMudancaClassificacaoJovem as autorizad28_0_0_, jovem0_.EhPastor as ehpastor29_0_0_, jovem0_.EhAltarJovem318 as ehaltarjo30_0_0_, jovem0_.CodigoAltarJovem318 as codigoalt31_0_0_, jovem0_.EhAtendenteWhatsappHelp as ehatenden32_0_0_, jovem0_.ID_CONTATO as id33_0_0_, jovem0_.ID_REDESOCIAL as id34_0_0_, jovem0_.ID_ENDERECO as id35_0_0_, jovem0_.ID_DADOS_PROFISSIONAIS as id36_0_0_, jovem0_.ID_TIPOESTADOCIVIL as id37_0_0_, jovem0_.ID_DADOSESCOLARES as id38_0_0_, jovem0_.ID_DADOSESPIRITUAIS as id39_0_0_, jovem0_.ID_SITUACAO_IURD_FJU as id40_0_0_, jovem0_.ID_IGREJA as id41_0_0_ FROM SGFJU_TBL_JOVEM jovem0_ WHERE jovem0_.ID_JOVEM=?] 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(ISessionImplementor session, Object id, Object optionalObject, Object optionalId)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(Object id, Object optionalObject, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Load(Object id, Object optionalObject, LockMode lockMode, ISessionImplementor session)
+   em NHibernate.Event.Default.DefaultLoadEventListener.LoadFromDatasource(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.Get(String entityName, Object id)
+   em NHibernate.Impl.SessionImpl.Get[T](Object id)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 664: 
+
+ Source: NHibernate  
+
+ Inner Exception: Unknown column 'jovem0_.NomeArquivoAutorizacao' in 'field list' 
+
+  Exception Message: could not load an entity: [SGFJU.Domain.Model.Entities.Jovem#12581][SQL: SELECT jovem0_.ID_JOVEM as id1_0_0_, jovem0_.Nome as nome2_0_0_, jovem0_.NomeArquivoFoto as nomearquiv3_0_0_, jovem0_.NomeArquivoAutorizacao as nomearquiv4_0_0_, jovem0_.ArquivoAutorizacaoOk as arquivoaut5_0_0_, jovem0_.NomeConjuge as nomeconjug6_0_0_, jovem0_.DataCasamento as datacasame7_0_0_, jovem0_.PossuiFilhos as possuifilh8_0_0_, jovem0_.QuantidadeFilhos as quantidade9_0_0_, jovem0_.ConjugeEhIURD as conjugeeh10_0_0_, jovem0_.ConjugeEhObreiro as conjugeeh11_0_0_, jovem0_.NamoraAtualmente as namoraatu12_0_0_, jovem0_.GostaDeAlguem as gostadeal13_0_0_, jovem0_.NomePretendente as nomeprete14_0_0_, jovem0_.PossuiTituloEleitor as possuitit15_0_0_, jovem0_.PertenceGrupoMulheresIURD as pertenceg16_0_0_, jovem0_.NomeGrupoMulheresIURD as nomegrupo17_0_0_, jovem0_.DataNascimento as datanasci18_0_0_, jovem0_.DataCadastro as datacadas19_0_0_, jovem0_.DataPreenchimentoFormulario as datapreen20_0_0_, jovem0_.DataUltimaAtualizacao as dataultim21_0_0_, jovem0_.DataIngressoObra as dataingre22_0_0_, jovem0_.TextoSugestao as textosuge23_0_0_, jovem0_.Sexo as sexo24_0_0_, jovem0_.ClassificacaoJovem as classific25_0_0_, jovem0_.DataMudancaClassificacaoJovem as datamudan26_0_0_, jovem0_.DescricaoMudancaClassificacaoJovem as descricao27_0_0_, jovem0_.AutorizadorMudancaClassificacaoJovem as autorizad28_0_0_, jovem0_.EhPastor as ehpastor29_0_0_, jovem0_.EhAltarJovem318 as ehaltarjo30_0_0_, jovem0_.CodigoAltarJovem318 as codigoalt31_0_0_, jovem0_.EhAtendenteWhatsappHelp as ehatenden32_0_0_, jovem0_.ID_CONTATO as id33_0_0_, jovem0_.ID_REDESOCIAL as id34_0_0_, jovem0_.ID_ENDERECO as id35_0_0_, jovem0_.ID_DADOS_PROFISSIONAIS as id36_0_0_, jovem0_.ID_TIPOESTADOCIVIL as id37_0_0_, jovem0_.ID_DADOSESCOLARES as id38_0_0_, jovem0_.ID_DADOSESPIRITUAIS as id39_0_0_, jovem0_.ID_SITUACAO_IURD_FJU as id40_0_0_, jovem0_.ID_IGREJA as id41_0_0_ FROM SGFJU_TBL_JOVEM jovem0_ WHERE jovem0_.ID_JOVEM=?] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-01 16:58:28.0311|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:58:28' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-01 16:58:28.0626|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:58:28' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-01 16:58:28.3271|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 16:58:28' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeJovemImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeJovemImpl.cs:linha 238
+   em SGFJU.Domain.UI.Controllers.JovensController.ObterJovemAtualizacao(TodosJovensDTO jovemParaAtualizar) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\JovensController.cs:linha 256: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(ISessionImplementor session, Object id, Object optionalObject, Object optionalId)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(Object id, Object optionalObject, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Load(Object id, Object optionalObject, LockMode lockMode, ISessionImplementor session)
+   em NHibernate.Event.Default.DefaultLoadEventListener.LoadFromDatasource(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.Get(String entityName, Object id)
+   em NHibernate.Impl.SessionImpl.Get[T](Object id)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 664: 
+
+ Source: NHibernate  
+
+ Inner Exception: Unknown column 'jovem0_.ArquivoAutorizacaoOk' in 'field list' 
+
+  Exception Message: could not load an entity: [SGFJU.Domain.Model.Entities.Jovem#12581][SQL: SELECT jovem0_.ID_JOVEM as id1_0_0_, jovem0_.Nome as nome2_0_0_, jovem0_.NomeArquivoFoto as nomearquiv3_0_0_, jovem0_.NomeArquivoAutorizacao as nomearquiv4_0_0_, jovem0_.ArquivoAutorizacaoOk as arquivoaut5_0_0_, jovem0_.NomeConjuge as nomeconjug6_0_0_, jovem0_.DataCasamento as datacasame7_0_0_, jovem0_.PossuiFilhos as possuifilh8_0_0_, jovem0_.QuantidadeFilhos as quantidade9_0_0_, jovem0_.ConjugeEhIURD as conjugeeh10_0_0_, jovem0_.ConjugeEhObreiro as conjugeeh11_0_0_, jovem0_.NamoraAtualmente as namoraatu12_0_0_, jovem0_.GostaDeAlguem as gostadeal13_0_0_, jovem0_.NomePretendente as nomeprete14_0_0_, jovem0_.PossuiTituloEleitor as possuitit15_0_0_, jovem0_.PertenceGrupoMulheresIURD as pertenceg16_0_0_, jovem0_.NomeGrupoMulheresIURD as nomegrupo17_0_0_, jovem0_.DataNascimento as datanasci18_0_0_, jovem0_.DataCadastro as datacadas19_0_0_, jovem0_.DataPreenchimentoFormulario as datapreen20_0_0_, jovem0_.DataUltimaAtualizacao as dataultim21_0_0_, jovem0_.DataIngressoObra as dataingre22_0_0_, jovem0_.TextoSugestao as textosuge23_0_0_, jovem0_.Sexo as sexo24_0_0_, jovem0_.ClassificacaoJovem as classific25_0_0_, jovem0_.DataMudancaClassificacaoJovem as datamudan26_0_0_, jovem0_.DescricaoMudancaClassificacaoJovem as descricao27_0_0_, jovem0_.AutorizadorMudancaClassificacaoJovem as autorizad28_0_0_, jovem0_.EhPastor as ehpastor29_0_0_, jovem0_.EhAltarJovem318 as ehaltarjo30_0_0_, jovem0_.CodigoAltarJovem318 as codigoalt31_0_0_, jovem0_.EhAtendenteWhatsappHelp as ehatenden32_0_0_, jovem0_.ID_CONTATO as id33_0_0_, jovem0_.ID_REDESOCIAL as id34_0_0_, jovem0_.ID_ENDERECO as id35_0_0_, jovem0_.ID_DADOS_PROFISSIONAIS as id36_0_0_, jovem0_.ID_TIPOESTADOCIVIL as id37_0_0_, jovem0_.ID_DADOSESCOLARES as id38_0_0_, jovem0_.ID_DADOSESPIRITUAIS as id39_0_0_, jovem0_.ID_SITUACAO_IURD_FJU as id40_0_0_, jovem0_.ID_IGREJA as id41_0_0_ FROM SGFJU_TBL_JOVEM jovem0_ WHERE jovem0_.ID_JOVEM=?] 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(ISessionImplementor session, Object id, Object optionalObject, Object optionalId)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(Object id, Object optionalObject, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Load(Object id, Object optionalObject, LockMode lockMode, ISessionImplementor session)
+   em NHibernate.Event.Default.DefaultLoadEventListener.LoadFromDatasource(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.Get(String entityName, Object id)
+   em NHibernate.Impl.SessionImpl.Get[T](Object id)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.JovemRepositoryImpl.ObterJovemInformacoesDetalhadas(Jovem jovemParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\JovemRepositoryImpl.cs:linha 664: 
+
+ Source: NHibernate  
+
+ Inner Exception: Unknown column 'jovem0_.ArquivoAutorizacaoOk' in 'field list' 
+
+  Exception Message: could not load an entity: [SGFJU.Domain.Model.Entities.Jovem#12581][SQL: SELECT jovem0_.ID_JOVEM as id1_0_0_, jovem0_.Nome as nome2_0_0_, jovem0_.NomeArquivoFoto as nomearquiv3_0_0_, jovem0_.NomeArquivoAutorizacao as nomearquiv4_0_0_, jovem0_.ArquivoAutorizacaoOk as arquivoaut5_0_0_, jovem0_.NomeConjuge as nomeconjug6_0_0_, jovem0_.DataCasamento as datacasame7_0_0_, jovem0_.PossuiFilhos as possuifilh8_0_0_, jovem0_.QuantidadeFilhos as quantidade9_0_0_, jovem0_.ConjugeEhIURD as conjugeeh10_0_0_, jovem0_.ConjugeEhObreiro as conjugeeh11_0_0_, jovem0_.NamoraAtualmente as namoraatu12_0_0_, jovem0_.GostaDeAlguem as gostadeal13_0_0_, jovem0_.NomePretendente as nomeprete14_0_0_, jovem0_.PossuiTituloEleitor as possuitit15_0_0_, jovem0_.PertenceGrupoMulheresIURD as pertenceg16_0_0_, jovem0_.NomeGrupoMulheresIURD as nomegrupo17_0_0_, jovem0_.DataNascimento as datanasci18_0_0_, jovem0_.DataCadastro as datacadas19_0_0_, jovem0_.DataPreenchimentoFormulario as datapreen20_0_0_, jovem0_.DataUltimaAtualizacao as dataultim21_0_0_, jovem0_.DataIngressoObra as dataingre22_0_0_, jovem0_.TextoSugestao as textosuge23_0_0_, jovem0_.Sexo as sexo24_0_0_, jovem0_.ClassificacaoJovem as classific25_0_0_, jovem0_.DataMudancaClassificacaoJovem as datamudan26_0_0_, jovem0_.DescricaoMudancaClassificacaoJovem as descricao27_0_0_, jovem0_.AutorizadorMudancaClassificacaoJovem as autorizad28_0_0_, jovem0_.EhPastor as ehpastor29_0_0_, jovem0_.EhAltarJovem318 as ehaltarjo30_0_0_, jovem0_.CodigoAltarJovem318 as codigoalt31_0_0_, jovem0_.EhAtendenteWhatsappHelp as ehatenden32_0_0_, jovem0_.ID_CONTATO as id33_0_0_, jovem0_.ID_REDESOCIAL as id34_0_0_, jovem0_.ID_ENDERECO as id35_0_0_, jovem0_.ID_DADOS_PROFISSIONAIS as id36_0_0_, jovem0_.ID_TIPOESTADOCIVIL as id37_0_0_, jovem0_.ID_DADOSESCOLARES as id38_0_0_, jovem0_.ID_DADOSESPIRITUAIS as id39_0_0_, jovem0_.ID_SITUACAO_IURD_FJU as id40_0_0_, jovem0_.ID_IGREJA as id41_0_0_ FROM SGFJU_TBL_JOVEM jovem0_ WHERE jovem0_.ID_JOVEM=?] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-01 17:03:18.4926|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 17:03:18' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-01 17:03:18.4926|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 17:03:18' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-01 17:03:35.6674|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 17:03:35' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-01 17:03:35.6674|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '01/01/2024 17:03:35' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-03 10:48:07.1474|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:48:07' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-03 10:48:07.3390|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:48:07' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-03 10:52:28.2075|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:52:28' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-03 10:52:28.2075|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:52:28' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-03 10:54:02.9016|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:54:02' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-03 10:54:02.9036|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:54:02' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-03 10:54:17.8712|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:54:17' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-03 10:54:17.8941|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:54:17' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-03 10:54:47.9517|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:54:47' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-03 10:54:47.9517|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 10:54:47' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-03 11:22:09.6751|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 11:22:09' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.GetByID(Int32 id) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 79
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.RegistrarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 25: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(ISessionImplementor session, Object id, Object optionalObject, Object optionalId)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(Object id, Object optionalObject, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Load(Object id, Object optionalObject, LockMode lockMode, ISessionImplementor session)
+   em NHibernate.Event.Default.DefaultLoadEventListener.LoadFromDatasource(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.Get(String entityName, Object id)
+   em NHibernate.Impl.SessionImpl.Get[T](Object id)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.GetByID(Int32 id) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 92: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not load an entity: [SGFJU.Domain.Model.Entities.InstituicaoEnsino#0][SQL: SELECT instituica0_.ID_INSTITUICAOENSINO as id1_14_0_, instituica0_.NomeInstituicaoEnsino as nomeinsti2_14_0_, instituica0_.Endereco as endereco3_14_0_, instituica0_.Contato as contato4_14_0_, instituica0_.NomeContato as nomeconta5_14_0_, instituica0_.ID_IGREJA as id6_14_0_, instituica0_.ID_PERFIL_INSTITUICAO_ENSINO as id7_14_0_, instituica0_.ID_TIPO_INSTITUICAO_ENSINO as id8_14_0_ FROM `InstituicaoEnsino` instituica0_ WHERE instituica0_.ID_INSTITUICAOENSINO=?] 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Loader.Loader.LoadEntity(ISessionImplementor session, Object id, IType identifierType, Object optionalObject, String optionalEntityName, Object optionalIdentifier, IEntityPersister persister)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(ISessionImplementor session, Object id, Object optionalObject, Object optionalId)
+   em NHibernate.Loader.Entity.AbstractEntityLoader.Load(Object id, Object optionalObject, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Load(Object id, Object optionalObject, LockMode lockMode, ISessionImplementor session)
+   em NHibernate.Event.Default.DefaultLoadEventListener.LoadFromDatasource(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.DoLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   em NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   em NHibernate.Impl.SessionImpl.Get(String entityName, Object id)
+   em NHibernate.Impl.SessionImpl.Get[T](Object id)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.GetByID(Int32 id) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 92: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not load an entity: [SGFJU.Domain.Model.Entities.InstituicaoEnsino#0][SQL: SELECT instituica0_.ID_INSTITUICAOENSINO as id1_14_0_, instituica0_.NomeInstituicaoEnsino as nomeinsti2_14_0_, instituica0_.Endereco as endereco3_14_0_, instituica0_.Contato as contato4_14_0_, instituica0_.NomeContato as nomeconta5_14_0_, instituica0_.ID_IGREJA as id6_14_0_, instituica0_.ID_PERFIL_INSTITUICAO_ENSINO as id7_14_0_, instituica0_.ID_TIPO_INSTITUICAO_ENSINO as id8_14_0_ FROM `InstituicaoEnsino` instituica0_ WHERE instituica0_.ID_INSTITUICAOENSINO=?] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-03 11:40:23.5417|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 11:40:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-03 11:40:23.7265|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 11:40:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-03 11:41:02.7945|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 11:41:02' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-03 11:41:02.7945|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 11:41:02' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-03 11:42:34.1223|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 11:42:34' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.RegistrarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 35: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not update: [SGFJU.Domain.Model.Entities.InstituicaoEnsino#1009][SQL: UPDATE SGFJU_TBL_INSTITUICAOENSINO SET NomeInstituicaoEnsino = ?, Endereco = ?, Contato = ?, NomeContato = ?, ID_IGREJA = ?, ID_PERFIL_INSTITUICAO_ENSINO = ?, ID_TIPO_INSTITUICAO_ENSINO = ? WHERE ID_INSTITUICAOENSINO = ?] 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not update: [SGFJU.Domain.Model.Entities.InstituicaoEnsino#1009][SQL: UPDATE SGFJU_TBL_INSTITUICAOENSINO SET NomeInstituicaoEnsino = ?, Endereco = ?, Contato = ?, NomeContato = ?, ID_IGREJA = ?, ID_PERFIL_INSTITUICAO_ENSINO = ?, ID_TIPO_INSTITUICAO_ENSINO = ? WHERE ID_INSTITUICAOENSINO = ?] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-03 16:28:00.1614|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '03/01/2024 16:28:00' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 28
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 51: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Resolution failed with error: No public constructor is available for type SGFJU.Domain.Model.Repositories.InstituicaoEnsinoRepository.
+
+For more detailed information run Unity in debug mode: new UnityContainer(ModeFlags.Diagnostic) 
+
+  Exception Message: Resolution failed with error: No public constructor is available for type SGFJU.Domain.Model.Repositories.InstituicaoEnsinoRepository.
+
+For more detailed information run Unity in debug mode: new UnityContainer(ModeFlags.Diagnostic) 
+
+ --------------------------------------
+2024-01-04 14:30:37.0932|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '04/01/2024 14:30:37' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 111: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.MySqlClient.ResultSet.GetOrdinal(String name)
+   em MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(String name)
+   em MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 86: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Could not find specified column in results: NOMEIGREJA 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.MySqlClient.ResultSet.GetOrdinal(String name)
+   em MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(String name)
+   em MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 86: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Could not find specified column in results: NOMEIGREJA 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-04 15:01:44.8677|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '04/01/2024 15:01:44' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-04 15:01:44.9615|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '04/01/2024 15:01:44' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-08 09:48:42.2302|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 09:48:42' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-08 09:48:42.2920|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 09:48:42' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-08 10:04:55.9954|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 10:04:55' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-08 10:04:55.9974|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 10:04:55' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-08 10:16:30.1709|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 10:16:30' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-08 10:16:30.1709|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 10:16:30' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-08 11:09:43.5819|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 11:09:43' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.AtualizarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 79: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: Error dehydrating property value for SGFJU.Domain.Model.Entities.InstituicaoEnsino.IgrejaInstituicao 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: Error dehydrating property value for SGFJU.Domain.Model.Entities.InstituicaoEnsino.IgrejaInstituicao 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-08 11:45:07.7755|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 11:45:07' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.AtualizarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 79: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: Error dehydrating property value for SGFJU.Domain.Model.Entities.InstituicaoEnsino.IgrejaInstituicao 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: Error dehydrating property value for SGFJU.Domain.Model.Entities.InstituicaoEnsino.IgrejaInstituicao 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-08 11:54:07.0560|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 11:54:07' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.AtualizarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 79: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: Error dehydrating property value for SGFJU.Domain.Model.Entities.InstituicaoEnsino.IgrejaInstituicao 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Dehydrate(Object id, Object[] fields, Object rowId, Boolean[] includeProperty, Boolean[][] includeColumns, Int32 table, DbCommand statement, ISessionImplementor session, Int32 index)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: Error dehydrating property value for SGFJU.Domain.Model.Entities.InstituicaoEnsino.IgrejaInstituicao 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-08 15:15:54.0295|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 15:15:54' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-08 16:45:00.4423|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '08/01/2024 16:45:00' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 115: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 85: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.ID_CLASSIFICACAO_INSTITUICAO_ENSINO,       CIE.DescricaoClassificacaoInstituica' at line 1 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 85: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.ID_CLASSIFICACAO_INSTITUICAO_ENSINO,       CIE.DescricaoClassificacaoInstituica' at line 1 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-09 16:53:54.3624|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2024 16:53:54' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.RegistrarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 36: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.GetDatabaseSnapshot(Object id, ISessionImplementor session)
+   em NHibernate.Engine.StatefulPersistenceContext.GetDatabaseSnapshot(Object id, IEntityPersister persister)
+   em NHibernate.Engine.ForeignKeys.HasDbSnapshot(String entityName, Object entity, ISessionImplementor session)
+   em NHibernate.Engine.ForeignKeys.IsTransientSlow(String entityName, Object entity, ISessionImplementor session)
+   em NHibernate.Engine.ForeignKeys.Nullifier.IsNullifiable(String entityName, Object obj)
+   em NHibernate.Engine.ForeignKeys.Nullifier.NullifyTransientReferences(Object value, IType type)
+   em NHibernate.Engine.ForeignKeys.Nullifier.NullifyTransientReferences(Object[] values, IType[] types)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 27: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not retrieve snapshot: [SGFJU.Domain.Model.ValueObjects.ClassificacaoInstituicaoEnsino#1][SQL: SELECT classifica_.ID_CLASSIFICACAO_INSTITUICAO_ENSINO, classifica_.DescricaoTipoInstituicaoensino as descricao2_29_ FROM SGFJU_TBL_CLASSIFICACAOINSTITUICAOENSINO classifica_ WHERE classifica_.ID_CLASSIFICACAO_INSTITUICAO_ENSINO=?] 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.GetDatabaseSnapshot(Object id, ISessionImplementor session)
+   em NHibernate.Engine.StatefulPersistenceContext.GetDatabaseSnapshot(Object id, IEntityPersister persister)
+   em NHibernate.Engine.ForeignKeys.HasDbSnapshot(String entityName, Object entity, ISessionImplementor session)
+   em NHibernate.Engine.ForeignKeys.IsTransientSlow(String entityName, Object entity, ISessionImplementor session)
+   em NHibernate.Engine.ForeignKeys.Nullifier.IsNullifiable(String entityName, Object obj)
+   em NHibernate.Engine.ForeignKeys.Nullifier.NullifyTransientReferences(Object value, IType type)
+   em NHibernate.Engine.ForeignKeys.Nullifier.NullifyTransientReferences(Object[] values, IType[] types)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 27: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not retrieve snapshot: [SGFJU.Domain.Model.ValueObjects.ClassificacaoInstituicaoEnsino#1][SQL: SELECT classifica_.ID_CLASSIFICACAO_INSTITUICAO_ENSINO, classifica_.DescricaoTipoInstituicaoensino as descricao2_29_ FROM SGFJU_TBL_CLASSIFICACAOINSTITUICAOENSINO classifica_ WHERE classifica_.ID_CLASSIFICACAO_INSTITUICAO_ENSINO=?] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-09 17:18:59.4704|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2024 17:18:59' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.RegistrarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 37: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSql, ISessionImplementor session, IBinder binder)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   em NHibernate.Action.EntityIdentityInsertAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 27: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not insert: [SGFJU.Domain.Model.Entities.InstituicaoEnsino][SQL: INSERT INTO SGFJU_TBL_INSTITUICAOENSINO (NomeInstituicaoEnsino, Endereco, Contato, NomeContato, FuncaoContatoInstituicaoEnsino, ID_IGREJA, ID_PERFIL_INSTITUICAO_ENSINO, ID_TIPO_INSTITUICAO_ENSINO, ID_CLASSIFICACAO_INSTITUICAO_ENSINO) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)] 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSql, ISessionImplementor session, IBinder binder)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   em NHibernate.Action.EntityIdentityInsertAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 27: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not insert: [SGFJU.Domain.Model.Entities.InstituicaoEnsino][SQL: INSERT INTO SGFJU_TBL_INSTITUICAOENSINO (NomeInstituicaoEnsino, Endereco, Contato, NomeContato, FuncaoContatoInstituicaoEnsino, ID_IGREJA, ID_PERFIL_INSTITUICAO_ENSINO, ID_TIPO_INSTITUICAO_ENSINO, ID_CLASSIFICACAO_INSTITUICAO_ENSINO) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-09 17:23:18.6354|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2024 17:23:18' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.RegistrarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 37: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSql, ISessionImplementor session, IBinder binder)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   em NHibernate.Action.EntityIdentityInsertAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 27: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not insert: [SGFJU.Domain.Model.Entities.InstituicaoEnsino][SQL: INSERT INTO SGFJU_TBL_INSTITUICAOENSINO (NomeInstituicaoEnsino, Endereco, Contato, NomeContato, FuncaoContatoInstituicaoEnsino, ID_IGREJA, ID_PERFIL_INSTITUICAO_ENSINO, ID_TIPO_INSTITUICAO_ENSINO, ID_CLASSIFICACAO_INSTITUICAO_ENSINO) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)] 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSql, ISessionImplementor session, IBinder binder)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   em NHibernate.Action.EntityIdentityInsertAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 27: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not insert: [SGFJU.Domain.Model.Entities.InstituicaoEnsino][SQL: INSERT INTO SGFJU_TBL_INSTITUICAOENSINO (NomeInstituicaoEnsino, Endereco, Contato, NomeContato, FuncaoContatoInstituicaoEnsino, ID_IGREJA, ID_PERFIL_INSTITUICAO_ENSINO, ID_TIPO_INSTITUICAO_ENSINO, ID_CLASSIFICACAO_INSTITUICAO_ENSINO) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-09 17:24:19.8810|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2024 17:24:19' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-09 17:24:19.8910|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2024 17:24:19' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-09 17:24:19.8910|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2024 17:24:19' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-09 17:24:19.8910|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2024 17:24:19' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-09 17:24:19.8910|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '09/01/2024 17:24:19' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Helpers.SessionHelper.RetornaEstadoUsuarioLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Helpers\SessionHelper.cs:linha 37
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 115: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-11 16:41:08.8933|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '11/01/2024 16:41:08' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.AtualizarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 84: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not update: [SGFJU.Domain.Model.Entities.InstituicaoEnsino#1019][SQL: UPDATE SGFJU_TBL_INSTITUICAOENSINO SET NomeInstituicaoEnsino = ?, Endereco = ?, Contato = ?, NomeContato = ?, FuncaoContatoInstituicaoEnsino = ?, ID_IGREJA = ?, ID_PERFIL_INSTITUICAO_ENSINO = ?, ID_TIPO_INSTITUICAO_ENSINO = ?, ID_CLASSIFICACAO_INSTITUICAO_ENSINO = ? WHERE ID_INSTITUICAOENSINO = ?] 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   em NHibernate.Action.EntityUpdateAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   em NHibernate.Engine.ActionQueue.ExecuteActions()
+   em NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   em NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   em NHibernate.Impl.SessionImpl.Flush()
+   em NHibernate.Impl.SessionImpl.FlushBeforeTransactionCompletion()
+   em NHibernate.Impl.SessionImpl.BeforeTransactionCompletion(ITransaction tx)
+   em NHibernate.Transaction.AdoTransaction.Commit()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 28: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not update: [SGFJU.Domain.Model.Entities.InstituicaoEnsino#1019][SQL: UPDATE SGFJU_TBL_INSTITUICAOENSINO SET NomeInstituicaoEnsino = ?, Endereco = ?, Contato = ?, NomeContato = ?, FuncaoContatoInstituicaoEnsino = ?, ID_IGREJA = ?, ID_PERFIL_INSTITUICAO_ENSINO = ?, ID_TIPO_INSTITUICAO_ENSINO = ?, ID_CLASSIFICACAO_INSTITUICAO_ENSINO = ? WHERE ID_INSTITUICAOENSINO = ?] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-14 15:46:56.7000|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/01/2024 15:46:56' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.FacadeBaseImpl`1.Save(TEntity entity) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeBaseImpl.cs:linha 40
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.RegistrarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 37: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSql, ISessionImplementor session, IBinder binder)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   em NHibernate.Action.EntityIdentityInsertAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 27: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not insert: [SGFJU.Domain.Model.Entities.InstituicaoEnsino][SQL: INSERT INTO SGFJU_TBL_INSTITUICAOENSINO (NomeInstituicaoEnsino, Endereco, Contato, NomeContato, FuncaoContatoInstituicaoEnsino, ID_IGREJA, ID_PERFIL_INSTITUICAO_ENSINO, ID_TIPO_INSTITUICAO_ENSINO, ID_CLASSIFICACAO_INSTITUICAO_ENSINO) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)] 
+
+ -------------------------------------- 
+
+  Exception Message: Camada ORM Erro ocorrido 
+
+  StackTrace:    em NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSql, ISessionImplementor session, IBinder binder)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   em NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session)
+   em NHibernate.Action.EntityIdentityInsertAction.Execute()
+   em NHibernate.Engine.ActionQueue.InnerExecute(IExecutable executable)
+   em NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   em NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.RepositoryImpl`1.Save(TEntity aggregateRoot) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\RepositoryImpl.cs:linha 27: 
+
+ Source: NHibernate  
+
+ Inner Exception: could not insert: [SGFJU.Domain.Model.Entities.InstituicaoEnsino][SQL: INSERT INTO SGFJU_TBL_INSTITUICAOENSINO (NomeInstituicaoEnsino, Endereco, Contato, NomeContato, FuncaoContatoInstituicaoEnsino, ID_IGREJA, ID_PERFIL_INSTITUICAO_ENSINO, ID_TIPO_INSTITUICAO_ENSINO, ID_CLASSIFICACAO_INSTITUICAO_ENSINO) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)] 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-14 15:56:51.0409|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/01/2024 15:56:51' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 133: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 92: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: Unknown column 'PE.ID_CLASSIFICACAO_INSTITUICAO_ENSINO' in 'where clause' 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 92: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: Unknown column 'PE.ID_CLASSIFICACAO_INSTITUICAO_ENSINO' in 'where clause' 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-14 15:57:20.6991|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/01/2024 15:57:20' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 133: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 92: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: Unknown column 'PE.ID_CLASSIFICACAO_INSTITUICAO_ENSINO' in 'where clause' 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 92: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: Unknown column 'PE.ID_CLASSIFICACAO_INSTITUICAO_ENSINO' in 'where clause' 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-14 15:57:24.1998|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '14/01/2024 15:57:24' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 133: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 92: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: Unknown column 'PE.ID_CLASSIFICACAO_INSTITUICAO_ENSINO' in 'where clause' 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 92: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: Unknown column 'PE.ID_CLASSIFICACAO_INSTITUICAO_ENSINO' in 'where clause' 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-17 16:45:53.1207|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:45:53' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:45:53.4065|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:45:53' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:49:01.8089|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:49:01' - Descrição do Erro: Erro ocorrido CAMADA_APP 
+
+  StackTrace:    em SGFJU.Domain.UI.AlteraJovem.SalvarAlteracoes() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\AlteraJovem.aspx.cs:linha 33: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-17 16:49:02.1907|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:49:02' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-17 16:49:02.1907|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:49:02' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-17 16:49:02.3842|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:49:02' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:49:02.3952|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:49:02' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:52:38.3870|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:52:38' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:52:38.4959|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:52:38' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:52:53.4657|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:52:53' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:52:53.4717|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:52:53' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:53:00.0215|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:53:00' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:53:00.0215|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:53:00' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:54:32.5429|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:54:32' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:54:32.5468|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:54:32' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:56:08.9145|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:56:08' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:56:08.9145|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:56:08' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:58:06.6347|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:58:06' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:58:06.7235|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:58:06' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:58:23.1032|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:58:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:58:23.1032|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:58:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:58:27.9949|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:58:27' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:58:27.9949|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:58:27' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:58:43.1311|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:58:43' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:58:43.1311|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:58:43' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-17 16:59:23.0774|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:59:23' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-17 16:59:23.0774|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '17/01/2024 16:59:23' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-18 17:19:34.7534|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/01/2024 17:19:34' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-18 17:19:34.7663|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/01/2024 17:19:34' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-01-18 17:19:34.7663|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/01/2024 17:19:34' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 52: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-18 17:19:34.8920|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/01/2024 17:19:34' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 27: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-18 17:19:34.8920|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/01/2024 17:19:34' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();

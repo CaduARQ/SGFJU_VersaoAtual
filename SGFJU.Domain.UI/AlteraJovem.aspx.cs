@@ -278,6 +278,12 @@ namespace SGFJU.Domain.UI
                                                                               'N' :
                                                                               'S';
                 jovemEmAtualizacao.CodigoAltarJovem318 = Request.Form["txtCodigoAltarJovem318"];
+                jovemEmAtualizacao.EhPalestranteHelp = (string.IsNullOrEmpty(Request.Form["chkEhPalestranteHelp"])) ?
+                                          'N' :
+                                          char.Parse(Request.Form["chkEhPalestranteHelp"]);
+                jovemEmAtualizacao.EhAtendenteWhatsappHelp = (string.IsNullOrEmpty(Request.Form["chkEhAtendenteWhatsappHelp"])) ?
+                                          'N' :
+                                          char.Parse(Request.Form["chkEhAtendenteWhatsappHelp"]);
 
                 /* Testemunho */
                 var testemunhoJovem = new Testemunho

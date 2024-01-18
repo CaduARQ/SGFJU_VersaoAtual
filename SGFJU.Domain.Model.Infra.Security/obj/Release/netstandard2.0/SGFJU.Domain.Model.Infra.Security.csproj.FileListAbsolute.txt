@@ -9,8 +9,8 @@ C:\Users\Intel\source\repos\SGFJU\SGFJU.Domain.Model.Infra.Security\obj\Release\
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Security\bin\Release\netstandard2.0\SGFJU.Domain.Model.Infra.Security.deps.json
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Security\bin\Release\netstandard2.0\SGFJU.Domain.Model.Infra.Security.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Security\bin\Release\netstandard2.0\SGFJU.Domain.Model.Infra.Security.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Security\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.Security.csprojAssemblyReference.cache
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Security\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.Security.AssemblyInfoInputs.cache
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Security\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.Security.AssemblyInfo.cs
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Security\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.Security.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Security\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.Security.pdb
-C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.Security\obj\Release\netstandard2.0\SGFJU.Domain.Model.Infra.Security.csprojAssemblyReference.cache

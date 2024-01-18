@@ -76,6 +76,7 @@ namespace SGFJU.ServicesLayer.DTO
         public IgrejaDTO IgrejaAQualJovemPertence { get; set; }
         public AcompanhamentoJovemDTO ArvoreVidaAcompanhamento { get; set; }
         public bool EhPastor { get; set; }
+        public char EhPalestranteHelp { get; set; }
         public IList<CursoDTO> CursosRelacionados
         { get; set; }
         public IList<JovemProjetoDTO> ProjetosAosQuaisJovemEstaLigado

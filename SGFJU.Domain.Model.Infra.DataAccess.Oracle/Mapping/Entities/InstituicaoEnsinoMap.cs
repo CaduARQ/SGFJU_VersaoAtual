@@ -11,11 +11,13 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Mapping.Entities
     {
         public InstituicaoEnsinoMap()
         {
+            this.Table("SGFJU_TBL_INSTITUICAOENSINO");
             this.Id(t => t.Id, "ID_INSTITUICAOENSINO").GeneratedBy.Identity();
             this.Map(t => t.NomeInstituicaoEnsino);
             this.Map(t => t.Endereco);
             this.Map(t => t.Contato);
             this.Map(t => t.NomeContato);
+            this.Map(t => t.FuncaoContatoInstituicaoEnsino);
             this.References<Igreja>(t => t.IgrejaInstituicao)
                 .Column("ID_IGREJA")
                 .Cascade
@@ -30,6 +32,12 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Mapping.Entities
                 .LazyLoad();
             this.References<TipoInstituicaoEnsino>(t => t.TipoInstituicao)
                 .Column("ID_TIPO_INSTITUICAO_ENSINO")
+                .Cascade
+                .None()
+                .Not
+                .LazyLoad();
+            this.References<ClassificacaoInstituicaoEnsino>(t => t.ClassificacaoInstituicao)
+                .Column("ID_CLASSIFICACAO_INSTITUICAO_ENSINO")
                 .Cascade
                 .None()
                 .Not

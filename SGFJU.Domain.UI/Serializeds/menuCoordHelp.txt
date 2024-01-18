@@ -1,0 +1,9 @@
+﻿<li>
+    <a href="#"><i class="fa fa-university"></i> <span class="nav-label">Help</span> <span class="fa arrow"></span></a>
+    <ul class="nav nav-second-level">
+        <li><a href="RegistraInstituicaoEnsino.html">Registrar Instituições</a></li>
+    </ul>
+    <ul class="nav nav-second-level">
+        <li><a href="GerenciarInstituicaoEnsino.html">Pesquisar Instituições</a></li>
+    </ul>
+</li>

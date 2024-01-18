@@ -84,6 +84,11 @@ namespace SGFJU.Domain.UI.Controllers
                             System.Web.Hosting.HostingEnvironment.MapPath(vDiretorioBase + "menuSecretariaBR.txt");
                     vHTMLMenuPerfil = File.ReadAllText(path: vCaminhoArquivoHTMLCompleto);
                 }
+                else if (vCodigoPerfil == 14) {
+                    vCaminhoArquivoHTMLCompleto =
+                            System.Web.Hosting.HostingEnvironment.MapPath(vDiretorioBase + "menuCoordHelp.txt");
+                    vHTMLMenuPerfil = File.ReadAllText(path: vCaminhoArquivoHTMLCompleto);
+                }
 
                 return vHTMLMenuPerfil;
             }

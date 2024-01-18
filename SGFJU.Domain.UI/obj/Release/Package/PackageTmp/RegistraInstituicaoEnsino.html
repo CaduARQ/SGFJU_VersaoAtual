@@ -61,41 +61,6 @@
                             FJU
                         </div>
                     </li>
-                    <li>
-                        <a href="RegistraJovem.aspx"><i class="fa fa-th-large"></i> <span class="nav-label">Voluntários</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="RegistraJovem.aspx">Novo Jovem</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Consultas</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="ConsultaGeralParametros.html">Geral Parâmetros</a></li>
-                            <li><a href="TodosJovens.aspx">Todos</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Gerenciar</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="GerenciaIgrejasEstado.html">Igrejas</a></li>
-                            <li><a href="GerenciaCoordenadoresEstado.html">Coordenadores</a></li>
-                            <li><a href="GerenciaEstadualAltarJovem.html">Altar Jovem</a></li>
-                            <li>
-                                <a href="#"><i class="fa fa-tree"></i>Árvore da Vida <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="GerenciaArvoreDaVidaEstadual.html">Associar Jovens</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaObreiros.html">Obreiros</a>
-                                    </li>
-                                    <li>
-                                        <a href="GerenciaArvoreVidaAcompanhamento.html">Acompanhamento</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
 
             </div>
@@ -144,14 +109,14 @@
                             <!-- Aqui entra a tab-->
                             <div class="ibox" id="ibox1">
                                 <div class="ibox-title">
-                                    <a href="GerenciaUsuariosEstado.aspx" id="lnkLinkAlteracao" class="text-danger font-bold">
+                                    <a href="GerenciarInstituicaoEnsino.html" id="lnkLinkAlteracao" class="text-danger font-bold">
                                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                                        Todos Usuários
+                                        Todas as instituições de ensino
                                     </a>
                                 </div>
                                 <div class="ibox-content">
                                     <h2 class="text-success font-bold">
-                                        Cadastro de Instituições de ensino
+                                        Cadastro de Instituição de ensino
                                         <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                                     </h2>
                                     <p>
@@ -271,7 +236,7 @@
                                                             <option value="3">Ensino Médio</option>
                                                             <option value="4">Ensino Fundamental</option>
                                                             <option value="5">Ensino Superior</option>
-                                                            <option value="6">Curso Profissionalizante/option>
+                                                            <option value="6">Curso Profissionalizante</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -290,32 +255,51 @@
 
                                                 <div class="col-sm-4">
                                                     <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_name">Classficação da Instituição *</label><br />
+                                                        <select id="cboClassificacaoInstituicaoEnsino" name="cboClassificacaoInstituicaoEnsino" class="select2_demo_3 form-control">
+                                                            <option value="1">Pública</option>
+                                                            <option value="2">Privada</option>
+                                                            <option value="3">Federal</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold">Nome do contato</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"> <i class="fa fa-location-arrow"></i> </span>
+                                                            </div>
+                                                            <input id="txtNomeContato" name="txtNomeContato" class="form-control" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
                                                         <label class="text-success font-bold" for="form_name">Contato</label>
                                                         <input type="text" id="txtContato" name="txtContato" class="form-control" data-mask="(99) 99999-9999" placeholder="" required>
                                                         <span class="form-text">(DDD) 99999-9999</span>
                                                     </div>
                                                 </div>
 
-
-                                            </div>
-
-                                            <div class="modal inmodal" id="fotoJovemModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content animated bounceInRight">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
-                                                            <i class="fa fa-laptop modal-icon"></i>
-                                                            <h4 class="modal-title">Selecione a foto do Coordenador</h4>
-                                                            <small class="font-bold">foto do perfil do Coordenador</small>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <asp:FileUpload ID="FileUpload1" runat="server" />
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
-                                                        </div>
+                                                <!-- FuncaoContatoInstituicaoEnsino --->
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_name">Função do contato</label><br />
+                                                        <select id="cboFuncaoContatoInstituicaoEnsino" name="cboFuncaoContatoInstituicaoEnsino" class="select2_demo_3 form-control">
+                                                            <option value="D">Diretora</option>
+                                                            <option value="P">Professora</option>
+                                                            <option value="C">Coordenadora</option>
+                                                        </select>
                                                     </div>
                                                 </div>
+
                                             </div>
 
                                         </fieldset>
@@ -388,7 +372,7 @@
     <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
 
     <!-- Data picker -->
-    <%--
+    
     <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>--%>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/locales/bootstrap-datepicker.pt-BR.min.js"></script>
@@ -415,7 +399,15 @@
     <script>
         //--------
         var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
-        var ID_SOLTEIRO = 7;
+        var template_msg_confirmacao = 'function mensagemConfirmacaoCadastro() { ' +
+                                        'var msgConfirmacaoCadastro = "Realizado com sucesso cadastro do atendente "; ' +
+                                        'swal({ ' +
+                                        '    title: "Atendente Cadastrado com sucesso !", ' +
+                                        '    text: msgConfirmacaoCadastro, ' +
+                                        '    type: "success" ' +
+                                        '}); ' +
+                                        '}';
+
         $(document).ready(function () {
 
 
@@ -473,9 +465,9 @@
                     var form = $(this);
 
                     // Submit form input
-                    form.submit();
-                    $('#ibox1').children('.ibox-content').toggleClass('sk-loading');
-                    __doPostBack(this, 'SalvarJovem');
+                    //form.submit();
+                    //$('#ibox1').children('.ibox-content').toggleClass('sk-loading');
+                    RegistrarNovaInstituicaoEnsino();
                 }
             }).validate({
                 errorPlacement: function (error, element) {
@@ -531,6 +523,95 @@
                 $('#cboEstado').prop("disabled", true);
                 preencherComboBlocos(retorno.IdEstadoUsuarioLogado);
             });
+        }
+
+        function RegistrarNovaInstituicaoEnsino() {
+            var msgValidacao = "";
+            $('#ibox1').children('.ibox-content').toggleClass('sk-loading');
+            
+            if ($('#cboEstado').val() == '')
+                msgValidacao += "O Estado não pode ficar em branco! \n";
+
+            if ($('#txtNomeInstituicaoEnsino').val() == '') {
+                msgValidacao += "O Nome da instituição não pode ficar em banco! \n";
+            }
+
+            if ($('#txtEndereco').val() == '') {
+                msgValidacao += 'O endereço não pode ficar em branco! \n';
+            }
+
+            if (msgValidacao != '') {
+                swal({
+                    title: "Validação",
+                    text: msgValidacao,
+                    type: "error"
+                }, function () {
+                        return false;
+                });
+            }
+
+            var novaInstituicaoEnsinoDTO = {
+                NomeInstituicaoEnsino: $('#txtNomeInstituicaoEnsino').val(),
+                Endereco: $('#txtEndereco').val(),
+                Contato: $('#txtContato').val(),
+                NomeContato: $('#txtNomeContato').val(),
+                FuncaoContatoInstituicaoEnsino: $('#cboFuncaoContatoInstituicaoEnsino').val(),
+                IdIgrejaInstituicao: $('#cboIgreja').val(),
+                IdPerfilInstituicao: $('#cboPerfilInstituicaoEnsino').val(),
+                IdTipoInstituicao: $('#cboTipoInstituicaoEnsino').val(),
+                IdClassificacaoInstituicao: $('#cboClassificacaoInstituicaoEnsino').val()
+            };
+
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(novaInstituicaoEnsinoDTO),
+                url: "api/InsitituicaoEnsino/RegistrarInstituicaoEnsino",
+                contentType: "application/json"
+            }).done(function (retornoRegistroInstituicaoEnsino) {
+                if (retornoRegistroInstituicaoEnsino.RequisicaoBemSucedida) {
+                    swal({
+                        title: "Confirmação",
+                        text: retornoRegistroInstituicaoEnsino.MensagemRespostaRequisicao,
+                        type: "success"
+                    });
+                    limpaControles();
+                }
+                else
+                    swal({
+                        title: "Aviso",
+                        text: retornoRegistroInstituicaoEnsino.MensagemRespostaRequisicao,
+                        type: "error"
+                    });
+            });
+        }
+
+        function mensagemConfirmacaoCadastro() {
+            var msgConfirmacaoCadastro = "Realizado com sucesso cadastro do atendente ";
+            swal({
+                title: "Atendente Cadastrado com sucesso !",
+                text: msgConfirmacaoCadastro,
+                type: "success"
+            });
+        }
+
+        function habilitaCadastroNovoAtendente() {
+            $('#btnNovo').prop('disabled', 'disabled');
+            $('#btnSalvar').removeProp('disabled');
+        }
+
+        function limpaControles() {
+            $('#txtNomeInstituicaoEnsino').val('');
+            $('#txtEndereco').val('');
+            $('#txtContato').val('');
+            $('#txtNomeContato').val('');
+            $('#cboBloco').val($('#cboBloco option:first-child').val()).trigger('change');
+            $('#cboRegiao').empty().trigger('change');
+            $('#cboIgreja').empty().trigger('change');
+            $('#cboPerfilInstituicaoEnsino').val($('#cboPerfilInstituicaoEnsino option:first-child').val()).trigger('change');
+            $('#cboTipoInstituicaoEnsino').val($('#cboTipoInstituicaoEnsino option:first-child').val()).trigger('change');
+            $('#cboFuncaoContatoInstituicaoEnsino').val($('#cboFuncaoContatoInstituicaoEnsino option:first-child').val()).trigger('change');
+
+            $('#ibox1').children('.ibox-content').toggleClass('sk-loading');
         }
 
     </script>

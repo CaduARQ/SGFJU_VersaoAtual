@@ -168,7 +168,6 @@
                                                     <option value="53">Sergipe</option>
                                                     <option value="54">Tocantins</option>
                                                     <option value="55">Campos</option>
-                                                    <option value="56">[BLOCO DE TESTE]</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -2442,6 +2441,30 @@
                                             </div>
                                         </div>
 
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="form_name">É palestrante do Help ?</label>   
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="chkEhPalestranteHelp" name="chkEhPalestranteHelp" type="checkbox" value="S">
+                                                    <label for="chkEhPalestranteHelp">
+                                                        Sim
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="form_name">É atendente do whatsapp do Help ?</label>   
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="chkEhAtendenteWhatsappHelp" name="chkEhAtendenteWhatsappHelp" type="checkbox" value="S">
+                                                    <label for="chkEhAtendenteWhatsappHelp">
+                                                        Sim
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
 
                                 </fieldset>
@@ -4348,6 +4371,14 @@
 
                 $('#cboCamisasFJU').val(jovemRetorno.SituacaoJovemIURDFJU.NomeCamisaFJU).trigger('change.select2');
                 $('#cboTamanhoCamisaFJU').val(jovemRetorno.SituacaoJovemIURDFJU.TamanhoCamisa).trigger('change.select2');
+                
+                if (jovemRetorno.EhPalestranteHelp != '' &&
+                    jovemRetorno.EhPalestranteHelp == 'S')
+                    $('#chkEhPalestranteHelp').prop('checked', true);
+                
+                if (jovemRetorno.EhAtendenteWhatsappHelp != '' &&
+                    jovemRetorno.EhAtendenteWhatsappHelp == 'S')
+                    $('#chkEhAtendenteWhatsappHelp').prop('checked', true);
 
                 if (jovemRetorno.SituacaoJovemIURDFJU.PossuiCamisaProjeto != '') {
                     if (jovemRetorno.SituacaoJovemIURDFJU.PossuiCamisaProjeto != 'S')

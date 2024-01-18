@@ -822,6 +822,8 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                             EhAltarJovem318           = jovemRetornadoBanco.EhAltarJovem318,
                             CodigoAltarJovem318       = jovemRetornadoBanco.CodigoAltarJovem318,
                             TipoJovem                 = retornaTipoJovem(jovemRetornadoBanco),
+                            EhPalestranteHelp         = jovemRetornadoBanco.EhPalestranteHelp,
+                            EhAtendenteWhatsappHelp   = jovemRetornadoBanco.EhAtendenteWhatsappHelp,
                             //NomeAutorizadorCompraCamisa = jovemRetornadoBanco.NomeAutorizadorCompraCamisa,
                             //DataAutorizacaoCompraCamisa = (jovemRetornadoBanco.DataAutorizacaoCompraCamisa.HasValue)?jovemRetornadoBanco.DataAutorizacaoCompraCamisa.Value.ToString("dd/MM/yyyy"):"",
                             //CodigoAutorizacaoCompraCamisa = jovemRetornadoBanco.CodigoAutorizacaoCompraCamisa,

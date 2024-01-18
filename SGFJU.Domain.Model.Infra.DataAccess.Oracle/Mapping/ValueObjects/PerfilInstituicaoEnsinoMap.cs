@@ -10,6 +10,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Mapping.ValueObjects
     {
         public PerfilInstituicaoEnsinoMap()
         {
+            this.Table("SGFJU_TBL_PERFILINSTITUICAOENSINO");
             this.Id(t => t.Codigo, "ID_PERFIL_INSTITUICAO_ENSINO").GeneratedBy.Assigned();
             this.Map(t => t.Descricao, "DescricaoPerfilInstituicaoEnsino");
         }

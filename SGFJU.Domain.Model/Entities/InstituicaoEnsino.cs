@@ -11,8 +11,10 @@ namespace SGFJU.Domain.Model.Entities
         public virtual string Endereco { get; set; }
         public virtual string Contato { get; set; }
         public virtual string NomeContato { get; set; }
+        public virtual string FuncaoContatoInstituicaoEnsino { get; set; }
         public virtual Igreja IgrejaInstituicao { get; set; }
         public virtual PerfilInstituicaoEnsino PerfilInstituicao { get; set; }
         public virtual TipoInstituicaoEnsino TipoInstituicao { get; set; }
+        public virtual ClassificacaoInstituicaoEnsino ClassificacaoInstituicao { get; set; }
     }
 }

@@ -326,6 +326,8 @@
                                                         <option></option>
                                                         <option value="19">Coordenador(a)</option>
                                                         <option value="20">Obreiro(a)</option>
+                                                        <option value="21">Camisa FJU Masculina</option>
+                                                        <option value="22">Camisa FJU Feminina</option>
                                                         <option value="10">Help</option>
                                                         <option value="11">Arcanjos</option>
                                                         <option value="12">Esporte</option>
@@ -570,7 +572,8 @@
                 url: "api/Usuarios/X072470/",
                 contentType: "application/json"
             }).done(function (retorno) {
-                if (retorno.NomePerfil != 'Secretárias Estadual') {
+                if (retorno.NomePerfil != 'Secretárias Estadual' &&
+                    retorno.NomePerfil != 'Secretária de Bloco') {
                     swal({
                             title: "Permissão de Acesso - Negado",
                             text: 'Seu usuário não possui permissão para acessar este módulo !',

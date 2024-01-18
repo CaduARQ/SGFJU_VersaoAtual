@@ -62,6 +62,7 @@ namespace SGFJU.Domain.Model.Entities
         public virtual Igreja IgrejaAQualJovemPertence { get; set; }
         public virtual string SiglaEstadoJovem { get; set; }
         public virtual char EhAtendenteWhatsappHelp { get; set; }
+        public virtual char EhPalestranteHelp { get; set; }
 
         //Curso Relacionado Projeto HasMany ----------------------------------------------------------
         private IList<CursoRelacionadoProjeto> _cursosRelacionados;

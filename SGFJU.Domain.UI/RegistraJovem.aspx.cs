@@ -272,6 +272,12 @@ namespace SGFJU.Domain.UI
                     NomeGrupoMulheresIURD = Request.Form["txtNomeGrupoMulheresUniversal"],
                     EstadoCivilJovem = (!string.IsNullOrEmpty(Request.Form["cboTipoEstadoCivil"])) ? new TipoEstadoCivil { Code = int.Parse(Request.Form["cboTipoEstadoCivil"]) } : null,
                     IgrejaAQualJovemPertence = igrejaJovem,
+                    EhPalestranteHelp = (string.IsNullOrEmpty(Request.Form["chkEhPalestranteHelp"])) ?
+                                          'N' :
+                                          char.Parse(Request.Form["chkEhPalestranteHelp"]),
+                    EhAtendenteWhatsappHelp = (string.IsNullOrEmpty(Request.Form["chkEhAtendenteWhatsappHelp"])) ?
+                                          'N' :
+                                          char.Parse(Request.Form["chkEhAtendenteWhatsappHelp"]),
                     //DataAutorizacaoCompraCamisa = (!string.IsNullOrEmpty(Request.Form["txtDataAutorizacaoCompraCamisa"])) ? DateTime.Parse(Request.Form["txtDataAutorizacaoCompraCamisa"]) : new Nullable<DateTime>(),
                     //NomeAutorizadorCompraCamisa = Request.Form["txtNomeAutorizadorCompraCamisa"],
                     //CodigoAutorizacaoCompraCamisa = (!string.IsNullOrEmpty(Request.Form["rbOrigemCompraCamisa"]) && Request.Form["rbOrigemCompraCamisa"] == "A")? 

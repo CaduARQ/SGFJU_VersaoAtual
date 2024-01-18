@@ -62,6 +62,8 @@ namespace SGFJU.Domain.UI
                         Response.Redirect("GerenciaCamisasFJU.html");
                     else if (usuarioRetornado.PerfilUsuario.Descricao == "SecretariaBR")
                         Response.Redirect("PainelControle.html");
+                    else if (usuarioRetornado.PerfilUsuario.Descricao == "Coordenador Projeto Help")
+                        Response.Redirect("GerenciarInstituicaoEnsino.html");
                     else
                         Response.Redirect("RegistraJovem.aspx");
                 }

@@ -43,6 +43,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql
             this.Map(x => x.EhAltarJovem318);
             this.Map(x => x.CodigoAltarJovem318);
             this.Map(x => x.EhAtendenteWhatsappHelp);
+            this.Map(x => x.EhPalestranteHelp);
 
 
             this.References<Contato>(t => t.ContatoJovem)

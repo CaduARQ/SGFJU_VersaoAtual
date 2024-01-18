@@ -2172,6 +2172,30 @@
                                             </div>
                                         </div>
 
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="form_name">É palestrante do Help ?</label>   
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="chkEhPalestranteHelp" name="chkEhPalestranteHelp" type="checkbox" value="s">
+                                                    <label for="chkEhPalestranteHelp">
+                                                        Sim
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="form_name">É atendente do whatsapp do Help ?</label>   
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="chkEhAtendenteWhatsappHelp" name="chkEhAtendenteWhatsappHelp" type="checkbox" value="s">
+                                                    <label for="chkEhAtendenteWhatsappHelp">
+                                                        Sim
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
 
                                 </fieldset>

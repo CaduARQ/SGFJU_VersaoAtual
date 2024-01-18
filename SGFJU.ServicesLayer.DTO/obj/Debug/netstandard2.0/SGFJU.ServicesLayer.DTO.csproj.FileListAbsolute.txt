@@ -9,6 +9,7 @@ C:\Users\Intel\source\repos\SGFJU\SGFJU.ServicesLayer.DTO\obj\Debug\netstandard2
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.ServicesLayer.DTO\bin\Debug\netstandard2.0\SGFJU.ServicesLayer.DTO.deps.json
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.ServicesLayer.DTO\bin\Debug\netstandard2.0\SGFJU.ServicesLayer.DTO.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.ServicesLayer.DTO\bin\Debug\netstandard2.0\SGFJU.ServicesLayer.DTO.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.ServicesLayer.DTO\obj\Debug\netstandard2.0\SGFJU.ServicesLayer.DTO.csprojAssemblyReference.cache
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.ServicesLayer.DTO\obj\Debug\netstandard2.0\SGFJU.ServicesLayer.DTO.AssemblyInfoInputs.cache
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.ServicesLayer.DTO\obj\Debug\netstandard2.0\SGFJU.ServicesLayer.DTO.AssemblyInfo.cs
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.ServicesLayer.DTO\obj\Debug\netstandard2.0\SGFJU.ServicesLayer.DTO.dll
