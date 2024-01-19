@@ -114,13 +114,23 @@ namespace SGFJU.Domain.UI.Controllers
             try {
                 var _facade = new InsituicaoEnsinoFacadeImpl();
                 var idEstado = SessionHelper.RetornaEstadoUsuarioLogado().Id;
-                var IdPerfilUsuario = SessionHelper.RetornaPerfilUsuarioLogado().Code;
-                List <InstituicaoEnsinoDTO> retorno = null;
-                
-                if(IdPerfilUsuario == 4)
-                    retorno = _facade.ListarPorParametro(new ParametroPesquisaInstituicaoEnsinoDTO()).ToList();
-                else
-                    retorno = _facade.ListarPorParametro(new ParametroPesquisaInstituicaoEnsinoDTO { IdEstado = idEstado }).ToList();
+                var retorno = _facade.ListarPorParametro(new ParametroPesquisaInstituicaoEnsinoDTO { IdEstado = idEstado }).ToList();
+
+                return retorno;
+            }
+            catch (Exception controllerExc) {
+                var mensagemTratada = ExceptionManager.FormatExceptionMessage(controllerExc, "CAMADA_UI.Controller");
+                LoggerHelper.WriteLogError(mensagemTratada);
+                throw new Exception(mensagemTratada);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/InsitituicaoEnsino/ListaTodasInstituicoesEnsino")]
+        public IList<InstituicaoEnsinoDTO> ListaTodasInstituicoesEnsino() {
+            try {
+                var _facade = new InsituicaoEnsinoFacadeImpl();
+                var retorno = _facade.ListarPorParametro(new ParametroPesquisaInstituicaoEnsinoDTO {}).ToList();
 
                 return retorno;
             }

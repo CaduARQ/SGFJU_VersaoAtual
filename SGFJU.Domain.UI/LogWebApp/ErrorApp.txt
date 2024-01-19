@@ -1978,3 +1978,91 @@ For more detailed information run Unity in debug mode: new UnityContainer(ModeFl
 
  --------------------------------------
 2024-01-18 17:19:34.8920|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '18/01/2024 17:19:34' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-01-19 17:37:36.1811|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/01/2024 17:37:36' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-19 17:37:36.4055|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/01/2024 17:37:36' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 52: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-19 17:37:36.9274|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/01/2024 17:37:36' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-19 17:37:36.9274|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/01/2024 17:37:36' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-19 20:04:48.4036|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/01/2024 20:04:48' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 52: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-19 20:04:48.9129|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/01/2024 20:04:48' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-19 20:04:48.9129|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/01/2024 20:04:48' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-01-19 20:04:48.9218|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '19/01/2024 20:04:48' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------

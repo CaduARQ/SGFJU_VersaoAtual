@@ -15,5 +15,11 @@
     </ul>
 </li>
 <li>
+    <a href="#"><i class="fa fa-university"></i> <span class="nav-label">Help</span> <span class="fa arrow"></span></a>    
+    <ul class="nav nav-second-level">
+        <li><a href="GerenciarInstituicaoEnsinoNacional.html">Pesquisar Instituições</a></li>
+    </ul>
+</li>
+<li>
     <a href="http://fjuoficial.org/eventos"><i class="fa fa-calendar"></i> <span class="nav-label">Eventos</span></a>
 </li>

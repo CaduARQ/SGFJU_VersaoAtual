@@ -439,11 +439,11 @@
                                                                 <tr>
                                                                     <th>IdInstituicaoEnsino</th>
                                                                     <th>Bloco</th>
-                                                                    <th>NomeInstituicaoEnsino</th>
+                                                                    <th>Nome</th>
+                                                                    <th>Número</th>
                                                                     <th>Contato</th>
-                                                                    <th>NomeContato</th>
-                                                                    <th>DescricaoTipoInstituicao</th>
-                                                                    <th>DescricaoPerfilInstituicao</th>
+                                                                    <th>Tipo</th>
+                                                                    <th>Perfil</th>
                                                                     <th>Ações</th>
                                                                 </tr>
                                                             </thead>
@@ -557,6 +557,20 @@
                             preencherComboIgrejas(data.id);
                         });
 
+                        /*
+                        
+                        $.ajax({
+                            type: "GET",
+                            url: "api/Usuarios/X072470/",
+                            contentType: "application/json"
+                        }).done(function (retorno) {
+
+                            if (retorno.NomePerfil != 'Administrador') {
+
+                                
+                            }
+                        });
+                    */
                         configComboEstado();
 
                         /**/

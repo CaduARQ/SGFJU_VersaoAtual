@@ -198,6 +198,7 @@
     <Content Include="GerenciaCoordPanoramaEstado.html" />
     <Content Include="GerenciaPanoramaObreirosArvoreVida.html" />
     <Content Include="GerenciaRelatoriosFJU.html" />
+    <Content Include="GerenciarInstituicaoEnsinoNacional.html" />
     <Content Include="GerenciarInstituicaoEnsino.html" />
     <Content Include="img\SGFJU.png" />
     <Content Include="js\plugins\mark\jquery.mark.min.js" />

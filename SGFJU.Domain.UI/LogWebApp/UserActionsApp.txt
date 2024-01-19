@@ -962,3 +962,7 @@
 {"IdLogUsuario":329,"IdUsuario":4,"DescricaoAcaoUsuario":"O usuário bpcelso acessou o sistema","DataAcaoUsuario":"18/01/2024","HorarioAcaoUsuario":" 19 horas e 12 minutos","SiglaEstadoUsuario":"SP"}|
 {"IdLogUsuario":745,"IdUsuario":4,"DescricaoAcaoUsuario":"O usuário bpcelso acessou o sistema","DataAcaoUsuario":"18/01/2024","HorarioAcaoUsuario":" 19 horas e 18 minutos","SiglaEstadoUsuario":"SP"}|
 {"IdLogUsuario":744,"IdUsuario":4,"DescricaoAcaoUsuario":"O usuário bpcelso acessou o sistema","DataAcaoUsuario":"18/01/2024","HorarioAcaoUsuario":" 19 horas e 21 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":68,"IdUsuario":4,"DescricaoAcaoUsuario":"O usuário bpcelso acessou o sistema","DataAcaoUsuario":"19/01/2024","HorarioAcaoUsuario":" 15 horas e 59 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":256,"IdUsuario":4,"DescricaoAcaoUsuario":"O usuário bpcelso acessou o sistema","DataAcaoUsuario":"19/01/2024","HorarioAcaoUsuario":" 16 horas e 46 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":807,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"19/01/2024","HorarioAcaoUsuario":" 17 horas e 45 minutos","SiglaEstadoUsuario":"SP"}|
+{"IdLogUsuario":839,"IdUsuario":9,"DescricaoAcaoUsuario":"O usuário EsposaSP acessou o sistema","DataAcaoUsuario":"19/01/2024","HorarioAcaoUsuario":" 20 horas e 4 minutos","SiglaEstadoUsuario":"SP"}|

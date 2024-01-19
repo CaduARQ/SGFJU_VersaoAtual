@@ -30,6 +30,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 SQLQuery.Append("       IE.NomeContato,");
                 SQLQuery.Append("       IE.FuncaoContatoInstituicaoEnsino,");
                 SQLQuery.Append("       ED.ID_ESTADO,");
+                SQLQuery.Append("       ED.NOMEESTADO,");
                 SQLQuery.Append("       BL.ID_BLOCO,");
                 SQLQuery.Append("       BL.NOMEBLOCO,");
                 SQLQuery.Append("       REG.ID_REGIAO,");
@@ -103,6 +104,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                                     NomeContato = resultadoReader["NomeContato"].ToString(),
                                     FuncaoContatoInstituicaoEnsino = resultadoReader["FuncaoContatoInstituicaoEnsino"].ToString(),
                                     IdEstadoInstituicao = int.Parse(resultadoReader["ID_ESTADO"].ToString()),
+                                    NomeEstadoInstituicao = resultadoReader["NOMEESTADO"].ToString(),
                                     IdBlocoInstituicao = int.Parse(resultadoReader["ID_BLOCO"].ToString()),
                                     NomeBlocoInstituicao = resultadoReader["NOMEBLOCO"].ToString(),
                                     IdRegiaoInstituicao = int.Parse(resultadoReader["ID_REGIAO"].ToString()),

@@ -557,8 +557,8 @@
                             preencherComboIgrejas(data.id);
                         });
 
-                        /**/
-                        configComboEstado();
+                        /*
+                        
                         $.ajax({
                             type: "GET",
                             url: "api/Usuarios/X072470/",
@@ -567,10 +567,11 @@
 
                             if (retorno.NomePerfil != 'Administrador') {
 
-                                configComboEstado();
+                                
                             }
                         });
-                        /**/
+                    */
+                        configComboEstado();
 
                         /**/
                         $('#tblTodasInstituicoesEnsino tbody').on('click', 'button', function () {

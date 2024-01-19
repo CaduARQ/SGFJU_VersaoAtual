@@ -12,3 +12,4 @@ C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Release\netstandard2.
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Release\netstandard2.0\SGFJU.Interfaces.AssemblyInfo.cs
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Release\netstandard2.0\SGFJU.Interfaces.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Release\netstandard2.0\SGFJU.Interfaces.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Release\netstandard2.0\SGFJU.Interfaces.csprojAssemblyReference.cache

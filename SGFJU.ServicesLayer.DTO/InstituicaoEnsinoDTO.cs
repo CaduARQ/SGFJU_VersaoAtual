@@ -13,6 +13,7 @@ namespace SGFJU.ServicesLayer.DTO
         public string NomeContato { get; set; }
         public string FuncaoContatoInstituicaoEnsino { get; set; }
         public int IdEstadoInstituicao { get; set; }
+        public string NomeEstadoInstituicao { get; set; }
         public int IdBlocoInstituicao { get; set; }
         public string NomeBlocoInstituicao { get; set; }
         public int IdRegiaoInstituicao { get; set; }

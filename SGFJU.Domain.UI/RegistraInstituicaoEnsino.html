@@ -125,7 +125,7 @@
 
                                     <form id="form" class="wizard-big">
 
-                                        <h1>Finish</h1>
+                                        <h1>Informações sobre a instituição de ensino</h1>
                                         <fieldset>
                                             <h2>Informações da Instituição de ensino</h2>
 
@@ -284,7 +284,7 @@
                                                 <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label class="text-success font-bold" for="form_name">Contato</label>
-                                                        <input type="text" id="txtContato" name="txtContato" class="form-control" data-mask="(99) 99999-9999" placeholder="" required>
+                                                        <input type="text" id="txtContato" name="txtContato" class="form-control" data-mask="(99) 99999-9999" placeholder="" >
                                                         <span class="form-text">(DDD) 99999-9999</span>
                                                     </div>
                                                 </div>
@@ -302,6 +302,159 @@
                                                 </div>
 
                                             </div>
+
+                                        </fieldset>
+
+                                        <h1>Finish</h1>
+                                        <fieldset>
+                                            <h2>Informações complementares</h2>
+
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_name">Projeto Help já esteve na instituição de ensino? </label>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaEsteveNaInstituicao_S" value="S" name="rbJaEsteveNaInstituicao">
+                                                                    <label for="rbJaEsteveNaInstituicao_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaEsteveNaInstituicao_N" value="N" name="rbJaFoiObreiroAntes">
+                                                                    <label for="rbJaEsteveNaInstituicao_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group" id="data_1">
+                                                        <label class="text-success font-bold">Data de Inicio das atividades</label>
+                                                        <div class="input-group date">
+                                                            <input type="date" name="txtDataInicioAtividades" id="txtDataInicioAtividades" class="form-control" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group" id="data_1">
+                                                        <label class="text-success font-bold">Data da última atividade realizada</label>
+                                                        <div class="input-group date">
+                                                            <input type="date" name="txtDataUltimaAtividade" id="txtDataUltimaAtividade" class="form-control" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <!---->
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_phone">Quantidade de alunos na escola</label>
+                                                        <input class="form-control" name="txtQtdAlunosEscola" type="number" value="0" id="example-number-input" min="0">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_phone">Quantos alunos alcançados?</label>
+                                                        <input class="form-control" name="txtQtdAlunosAlcancados" type="number" value="0" id="example-number-input" min="0">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_name">Houve algum incidente na instituição(problema)? </label>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaHouveIncidenteNaInstituicao_S" value="S" name="rbJaHouveIncidenteNaInstituicao">
+                                                                    <label for="rbJaHouveIncidenteNaInstituicao_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaHouveIncidenteNaInstituicao_N" value="N" name="rbJaHouveIncidenteNaInstituicao">
+                                                                    <label for="rbJaHouveIncidenteNaInstituicao_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_name">Marque os livros que o jovem já leu</label>
+                                                        <div class="row">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkDecidaLutarPorVoce" name="chkDecidaLutarPorVoce" type="checkbox" value="1">
+                                                                <label for="chkDecidaLutarPorVoce">
+                                                                    Decida lutar por você
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkCyberbullying" name="chkCyberbullying" type="checkbox" value="2">
+                                                                <label for="chkCyberbullying">
+                                                                    Cyberbullying
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkSemFiltro" name="chkSemFiltro" type="checkbox" value="3">
+                                                                <label for="chkSemFiltro">
+                                                                    Sem filtro sem farsa
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkSalaAdoecida" name="chkSalaAdoecida" type="checkbox" value="4">
+                                                                <label for="chkSalaAdoecida">
+                                                                    Sala adoecida - professores
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkBatalhaPensamentos" name="chkBatalhaPensamentos" type="checkbox" value="5">
+                                                                <label for="chkBatalhaPensamentos">
+                                                                    Batalha dos pensamentos
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkLivroNB" name="chkLivroNB" type="checkbox" value="6">
+                                                                <label for="chkLivroNB">
+                                                                    Amor é questão de educação
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkLivroMelhorSapatos" name="chkLivroMelhorSapatos" type="checkbox" value="7">
+                                                                <label for="chkLivroMelhorSapatos">
+                                                                    Stop bullying
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+                                                        <!---->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
 
                                         </fieldset>
 

@@ -16,7 +16,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/17/2021 01:03:46</publishTime>
     </File>
     <File Include="AlteraInstituicaoEnsino.html">
-      <publishTime>01/11/2024 16:41:34</publishTime>
+      <publishTime>01/18/2024 18:38:31</publishTime>
     </File>
     <File Include="AlteraJovem.aspx">
       <publishTime>01/17/2024 16:57:56</publishTime>
@@ -241,79 +241,79 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>08/08/2018 12:18:16</publishTime>
     </File>
     <File Include="bin/SGFJU.Bussiness.Facade.dll">
-      <publishTime>01/17/2024 17:04:03</publishTime>
+      <publishTime>01/19/2024 17:27:18</publishTime>
     </File>
     <File Include="bin/SGFJU.Bussiness.Facade.pdb">
-      <publishTime>01/17/2024 17:04:03</publishTime>
+      <publishTime>01/19/2024 17:27:18</publishTime>
     </File>
     <File Include="bin/SGFJU.Common.UnityContainer.dll">
-      <publishTime>01/17/2024 17:04:02</publishTime>
+      <publishTime>01/19/2024 17:27:17</publishTime>
     </File>
     <File Include="bin/SGFJU.Common.UnityContainer.pdb">
-      <publishTime>01/17/2024 17:04:02</publishTime>
+      <publishTime>01/19/2024 17:27:17</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.dll">
-      <publishTime>01/17/2024 17:03:47</publishTime>
+      <publishTime>01/19/2024 17:27:11</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.DataAccess.MySql.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/19/2024 17:27:16</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.DataAccess.MySql.dll.config">
       <publishTime>12/11/2019 16:53:11</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.DataAccess.MySql.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/19/2024 17:27:16</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.ExceptionManager.dll">
-      <publishTime>01/17/2024 17:03:45</publishTime>
+      <publishTime>01/19/2024 17:27:09</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.ExceptionManager.pdb">
-      <publishTime>01/17/2024 17:03:45</publishTime>
+      <publishTime>01/19/2024 17:27:09</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.Logging.dll">
-      <publishTime>01/17/2024 17:03:55</publishTime>
+      <publishTime>01/19/2024 17:27:12</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.Logging.pdb">
-      <publishTime>01/17/2024 17:03:55</publishTime>
+      <publishTime>01/19/2024 17:27:12</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.Security.dll">
-      <publishTime>01/17/2024 17:03:45</publishTime>
+      <publishTime>01/19/2024 17:27:09</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.Security.pdb">
-      <publishTime>01/17/2024 17:03:45</publishTime>
+      <publishTime>01/19/2024 17:27:09</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.Serialization.dll">
-      <publishTime>01/17/2024 17:03:48</publishTime>
+      <publishTime>01/19/2024 17:27:11</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.Serialization.pdb">
-      <publishTime>01/17/2024 17:03:48</publishTime>
+      <publishTime>01/19/2024 17:27:11</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.Util.dll">
-      <publishTime>01/17/2024 17:03:46</publishTime>
+      <publishTime>01/19/2024 17:27:10</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.Infra.Util.pdb">
-      <publishTime>01/17/2024 17:03:46</publishTime>
+      <publishTime>01/19/2024 17:27:10</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.Model.pdb">
-      <publishTime>01/17/2024 17:03:47</publishTime>
+      <publishTime>01/19/2024 17:27:11</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.UI.dll">
-      <publishTime>01/17/2024 17:04:43</publishTime>
+      <publishTime>01/19/2024 17:27:32</publishTime>
     </File>
     <File Include="bin/SGFJU.Domain.UI.pdb">
-      <publishTime>01/17/2024 17:04:43</publishTime>
+      <publishTime>01/19/2024 17:27:32</publishTime>
     </File>
     <File Include="bin/SGFJU.Interfaces.dll">
-      <publishTime>01/17/2024 17:03:45</publishTime>
+      <publishTime>01/19/2024 17:27:09</publishTime>
     </File>
     <File Include="bin/SGFJU.Interfaces.pdb">
-      <publishTime>01/17/2024 17:03:45</publishTime>
+      <publishTime>01/19/2024 17:27:09</publishTime>
     </File>
     <File Include="bin/SGFJU.ServicesLayer.DTO.dll">
-      <publishTime>01/17/2024 17:03:45</publishTime>
+      <publishTime>01/19/2024 17:27:09</publishTime>
     </File>
     <File Include="bin/SGFJU.ServicesLayer.DTO.pdb">
-      <publishTime>01/17/2024 17:03:45</publishTime>
+      <publishTime>01/19/2024 17:27:09</publishTime>
     </File>
     <File Include="bin/System.Buffers.dll">
       <publishTime>05/15/2018 13:29:34</publishTime>
@@ -1210,7 +1210,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>02/03/2023 12:06:58</publishTime>
     </File>
     <File Include="GerenciarInstituicaoEnsino.html">
-      <publishTime>01/17/2024 15:45:19</publishTime>
+      <publishTime>01/19/2024 15:54:13</publishTime>
+    </File>
+    <File Include="GerenciarInstituicaoEnsinoNacional.html">
+      <publishTime>01/19/2024 16:45:43</publishTime>
     </File>
     <File Include="GerenciaUsuariosEstado.aspx">
       <publishTime>03/05/2021 11:27:44</publishTime>
@@ -5008,7 +5011,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>07/27/2020 15:56:46</publishTime>
     </File>
     <File Include="RegistraInstituicaoEnsino.html">
-      <publishTime>01/17/2024 11:13:30</publishTime>
+      <publishTime>01/18/2024 18:29:32</publishTime>
     </File>
     <File Include="RegistraJovem.aspx">
       <publishTime>01/17/2024 16:39:28</publishTime>
@@ -5035,7 +5038,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>02/16/2021 15:44:22</publishTime>
     </File>
     <File Include="Serializeds/menuADMGeral.txt">
-      <publishTime>12/09/2021 19:40:20</publishTime>
+      <publishTime>01/19/2024 16:04:59</publishTime>
     </File>
     <File Include="Serializeds/menuCoordHelp.txt">
       <publishTime>01/17/2024 11:03:16</publishTime>
@@ -5095,7 +5098,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>02/16/2021 16:34:52</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/17/2024 17:05:29</publishTime>
+      <publishTime>01/19/2024 17:28:18</publishTime>
     </File>
   </ItemGroup>
 </Project>
