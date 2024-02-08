@@ -294,9 +294,9 @@
                                                     <div class="form-group">
                                                         <label class="text-success font-bold" for="form_name">Função do contato</label><br />
                                                         <select id="cboFuncaoContatoInstituicaoEnsino" name="cboFuncaoContatoInstituicaoEnsino" class="select2_demo_3 form-control">
-                                                            <option value="D">Diretora</option>
-                                                            <option value="P">Professora</option>
-                                                            <option value="C">Coordenadora</option>
+                                                            <option value="D">Diretor(a)</option>
+                                                            <option value="P">Professor(a)</option>
+                                                            <option value="C">Coordenador(a)</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -336,7 +336,7 @@
                                                     <div class="form-group" id="data_1">
                                                         <label class="text-success font-bold">Data de Inicio das atividades</label>
                                                         <div class="input-group date">
-                                                            <input type="date" name="txtDataInicioAtividades" id="txtDataInicioAtividades" class="form-control" required>
+                                                            <input type="date" name="txtDataInicioAtividades" id="txtDataInicioAtividades" class="form-control">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -345,7 +345,7 @@
                                                     <div class="form-group" id="data_1">
                                                         <label class="text-success font-bold">Data da última atividade realizada</label>
                                                         <div class="input-group date">
-                                                            <input type="date" name="txtDataUltimaAtividade" id="txtDataUltimaAtividade" class="form-control" required>
+                                                            <input type="date" name="txtDataUltimaAtividade" id="txtDataUltimaAtividade" class="form-control">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -360,7 +360,7 @@
                                                 <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label class="text-success font-bold" for="form_phone">Quantidade de alunos na escola</label>
-                                                        <input class="form-control" name="txtQtdAlunosEscola" type="number" value="0" id="example-number-input" min="0">
+                                                        <input class="form-control" name="txtQtdAlunosEscola" type="number" value="0" id="txtQtdAlunosEscola" min="0">
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
@@ -368,11 +368,11 @@
                                                 <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label class="text-success font-bold" for="form_phone">Quantos alunos alcançados?</label>
-                                                        <input class="form-control" name="txtQtdAlunosAlcancados" type="number" value="0" id="example-number-input" min="0">
+                                                        <input class="form-control" name="txtQtdAlunosAlcancados" type="number" value="0" id="txtQtdAlunosAlcancados" min="0">
                                                         <div class="help-block with-errors"></div>
                                                     </div>
                                                 </div>
-
+                                                
                                                 <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label class="text-success font-bold" for="form_name">Houve algum incidente na instituição(problema)? </label>
@@ -441,12 +441,12 @@
                                                                 </label>
                                                             </div>
                                                             <div class="checkbox checkbox-primary">
-                                                                <input id="chkLivroMelhorSapatos" name="chkLivroMelhorSapatos" type="checkbox" value="7">
-                                                                <label for="chkLivroMelhorSapatos">
+                                                                <input id="chkStopBullying" name="chkStopBullying" type="checkbox" value="7">
+                                                                <label for="chkStopBullying">
                                                                     Stop bullying
                                                                 </label>
                                                             </div>
-
+                                                            
                                                         </div>
                                                         <!---->
 
@@ -454,7 +454,20 @@
                                                 </div>
                                             </div>
 
+                                            <div class="row">
 
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+
+                                                        <i class="fas fa-pencil-alt prefix"></i>
+                                                        <textarea id="txtObservacoesInstituicaoEnsino" runat="server" class="md-textarea form-control" rows="3"></textarea>
+                                                        <label for="txtTestemunho">Escreva testemunho do Jovem</label>
+
+                                                    </div>
+                                                </div>
+
+                                                
+                                            </div>
 
                                         </fieldset>
 
@@ -703,12 +716,20 @@
                         return false;
                 });
             }
-
+        
+            var _palestrasRealizadasInstituicaoEnsino = [];
             var novaInstituicaoEnsinoDTO = {
                 NomeInstituicaoEnsino: $('#txtNomeInstituicaoEnsino').val(),
                 Endereco: $('#txtEndereco').val(),
                 Contato: $('#txtContato').val(),
                 NomeContato: $('#txtNomeContato').val(),
+                HelpJaEsteveNaInstituicao: $('input[name="rbJaEsteveNaInstituicao"]:checked').val(),
+                DataInicioAtividades: $('#txtDataInicioAtividades').val(),
+                DataUltimaAtividadeRealizada: $('#txtDataUltimaAtividade').val(),
+                QuantidadeAlunos: $('#txtQtdAlunosEscola').val(),
+                QuantidadeAlunosAtendidosCantinho: $('#txtQtdAlunosAlcancados').val(),
+                OcorreuAlgumIncidente: $('input[name="rbJaHouveIncidenteNaInstituicao"]:checked').val(),
+                ObservacoesInstituicaoEnsino: $('#txtObservacoesInstituicaoEnsino').val(),
                 FuncaoContatoInstituicaoEnsino: $('#cboFuncaoContatoInstituicaoEnsino').val(),
                 IdIgrejaInstituicao: $('#cboIgreja').val(),
                 IdPerfilInstituicao: $('#cboPerfilInstituicaoEnsino').val(),
@@ -716,6 +737,34 @@
                 IdClassificacaoInstituicao: $('#cboClassificacaoInstituicaoEnsino').val()
             };
 
+            
+            if ($('#chkDecidaLutarPorVoce').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkDecidaLutarPorVoce').val() });
+
+            if ($('#chkCyberbullying').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkCyberbullying').val() });
+
+            if ($('#chkSemFiltro').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkSemFiltro').val() });
+
+            if ($('#chkSalaAdoecida').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkSalaAdoecida').val() });
+
+            if ($('#chkBatalhaPensamentos').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkBatalhaPensamentos').val() });
+
+            if ($('#chkLivroNB').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkLivroNB').val() });
+
+            if ($('#chkStopBullying').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({IdPalestra: $('#chkStopBullying').val()});
+
+            if (_palestrasRealizadasInstituicaoEnsino.length > 0)
+                novaInstituicaoEnsinoDTO.PalestrasRealizadasInstituicaoEnsino = _palestrasRealizadasInstituicaoEnsino;
+
+            console.log('serializado -> ' + JSON.stringify(novaInstituicaoEnsinoDTO));
+            console.log('s ou n ja´teve help? -> ' + $('input[name="rbJaEsteveNaInstituicao"]:checked').val());
+            
             $.ajax({
                 type: "POST",
                 data: JSON.stringify(novaInstituicaoEnsinoDTO),

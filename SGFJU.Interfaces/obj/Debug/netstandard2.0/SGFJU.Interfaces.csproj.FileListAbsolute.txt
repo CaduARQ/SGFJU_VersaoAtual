@@ -9,8 +9,8 @@ C:\Users\Intel\source\repos\SGFJU\SGFJU.Interfaces\obj\Debug\netstandard2.0\SGFJ
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\bin\Debug\netstandard2.0\SGFJU.Interfaces.deps.json
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\bin\Debug\netstandard2.0\SGFJU.Interfaces.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\bin\Debug\netstandard2.0\SGFJU.Interfaces.pdb
-C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Debug\netstandard2.0\SGFJU.Interfaces.csprojAssemblyReference.cache
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Debug\netstandard2.0\SGFJU.Interfaces.AssemblyInfoInputs.cache
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Debug\netstandard2.0\SGFJU.Interfaces.AssemblyInfo.cs
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Debug\netstandard2.0\SGFJU.Interfaces.dll
 C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Debug\netstandard2.0\SGFJU.Interfaces.pdb
+C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Interfaces\obj\Debug\netstandard2.0\SGFJU.Interfaces.csprojAssemblyReference.cache

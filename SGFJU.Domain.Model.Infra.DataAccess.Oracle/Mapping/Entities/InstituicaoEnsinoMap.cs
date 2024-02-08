@@ -18,6 +18,13 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Mapping.Entities
             this.Map(t => t.Contato);
             this.Map(t => t.NomeContato);
             this.Map(t => t.FuncaoContatoInstituicaoEnsino);
+            this.Map(t => t.HelpJaEsteveNaInstituicao);
+            this.Map(t => t.DataInicioAtividades);
+            this.Map(t => t.DataUltimaAtividadeRealizada);
+            this.Map(t => t.QuantidadeAlunos);
+            this.Map(t => t.QuantidadeAlunosAtendidosCantinho);
+            this.Map(t => t.OcorreuAlgumIncidente);
+            this.Map(t => t.ObservacoesInstituicaoEnsino);
             this.References<Igreja>(t => t.IgrejaInstituicao)
                 .Column("ID_IGREJA")
                 .Cascade
@@ -42,6 +49,11 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Mapping.Entities
                 .None()
                 .Not
                 .LazyLoad();
+
+            HasManyToMany(x => x.PalestrasRealizadasInstituicaoEnsino)
+                .Cascade.None()
+                .Table("SGFJU_TBL_INSTITUICAOENSINO_PALESTRA")
+                .Not.LazyLoad();
         }
     }
 }

@@ -6,12 +6,23 @@ namespace SGFJU.ServicesLayer.DTO
 {
     public class InstituicaoEnsinoDTO
     {
+        public InstituicaoEnsinoDTO()
+        {
+            this.PalestrasRealizadasInstituicaoEnsino = new List<PalestraDTO>();
+        }
         public int IdInstituicaoEnsino { get; set; }
         public string NomeInstituicaoEnsino { get; set; }
         public string Endereco { get; set; }
         public string Contato { get; set; }
         public string NomeContato { get; set; }
         public string FuncaoContatoInstituicaoEnsino { get; set; }
+        public string HelpJaEsteveNaInstituicao { get; set; }
+        public string DataInicioAtividades { get; set; }
+        public string DataUltimaAtividadeRealizada { get; set; }
+        public int QuantidadeAlunos { get; set; }
+        public int QuantidadeAlunosAtendidosCantinho { get; set; }
+        public string OcorreuAlgumIncidente { get; set; }
+        public string ObservacoesInstituicaoEnsino { get; set; }
         public int IdEstadoInstituicao { get; set; }
         public string NomeEstadoInstituicao { get; set; }
         public int IdBlocoInstituicao { get; set; }
@@ -26,5 +37,6 @@ namespace SGFJU.ServicesLayer.DTO
         public string DescricaoTipoInstituicao { get; set; }
         public int IdClassificacaoInstituicao { get; set; }
         public string DescricaoClassificacaoInstituicao { get; set; }
+        public List<PalestraDTO> PalestrasRealizadasInstituicaoEnsino { get; set; }
     }
 }

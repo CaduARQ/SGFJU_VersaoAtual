@@ -184,6 +184,7 @@
     <Content Include="DashboardArvoreVidaEstadual.html" />
     <Content Include="DashboardArvoreVidaNacional.html" />
     <Content Include="DashboardAVEstados.html" />
+    <Content Include="DashboardBloco.html" />
     <Content Include="DashboardNacionalCamisasFJU.html" />
     <Content Include="DashboardRelatorioFJUEstadual.html" />
     <Content Include="DashboardRelatorioFJUNacional.html" />
@@ -1653,6 +1654,7 @@
     <Compile Include="Controllers\GerenciamentoDespesasController.cs" />
     <Compile Include="Controllers\GerenciaPatrimonioController.cs" />
     <Compile Include="Controllers\InsitituicaoEnsinoController.cs" />
+    <Compile Include="Controllers\RelatorioBlocosController.cs" />
     <Compile Include="Controllers\RelatoriosReuniaoFJUController.cs" />
     <Compile Include="RegistraDespesa.aspx.cs">
       <DependentUpon>RegistraDespesa.aspx</DependentUpon>

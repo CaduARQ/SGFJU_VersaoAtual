@@ -1,0 +1,747 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SGFJU | Sistema de Informações da FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet"
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/Select-1.3.1/select.dataTables.min.css" rel="stylesheet">
+
+    <!-- c3 Charts -->
+    <link href="css/plugins/c3/c3.min.css" rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style type="text/css">
+        td.details-control {
+            background: url('img/details_open.png') no-repeat center center;
+            cursor: pointer;
+        }
+
+        tr.shown td.details-control {
+            background: url('img/details_close.png') no-repeat center center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img id="imgUserConn" alt="image" class="rounded-circle" /><!-- se não der certo colocar novamente o arquivo anterior  -->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span id="lblNomeUsuario" class="block m-t-xs font-bold"></span>
+                                <span id="lblPerfilUsuario" class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="PerfilUsuario.html">Perfil</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" onclick="ExecutarActionX072433()"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            FJU
+                        </div>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquise por palavra-chave..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px">
+                            <span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span>
+                        </li>
+
+                        <li>
+                            <a onclick="ExecutarActionX072433()">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- BEGIN BODY -->
+            <div class="wrapper wrapper-content">
+
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <span class="label label-success float-right">Atualizado</span>
+                                <h5>Jovens no Estado</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins" id="lblNumeroJovenstotalEstado"></h1>
+                                <div class="stat-percent font-bold text-success"> <i class="fa fa-bolt"></i></div>
+                                <small>Total de Jovens no Estado</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <span class="label label-info float-right">Atualizado</span>
+                                <h5>Águas</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins" id="lblTotalJovensBatizadosAguas"></h1>
+                                <div class="stat-percent font-bold text-info" id="dvPercentBAguas"> <i class="fa fa-level-up"></i></div>
+                                <small>Total de Batizados</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <span class="label label-primary float-right">Atualizado</span>
+                                <h5>Espírito Santo</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins" id="lblTotalJovensBatizadosEspiritoSanto"></h1>
+                                <div class="stat-percent font-bold text-navy" id="dvPercentBEspiritoSanto"> <i class="fa fa-level-up"></i></div>
+                                <small>Total de Batizados</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <span class="label label-danger float-right">Desejam o Altar</span>
+                                <h5>Altar Jovem</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins" id="lblTotalJovensAltarJovem"></h1>
+                                <div class="stat-percent font-bold text-danger" id="dvPercentAltarJovem"> <i class="fa fa-level-up"></i></div>
+                                <small>Total de Jovens no Altar Jovem</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <span class="label label-success float-right">Atualizado</span>
+                                <h5>Obreiros</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins" id="lblNumeroObreirosEstado"></h1>
+                                <div class="stat-percent font-bold text-success"> <i class="fa fa-bolt"></i></div>
+                                <small>Total de Obreiros no Estado</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <span class="label label-primary float-right">Atualizado</span>
+                                <h5>Colaboradores</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins" id="lblTotalColaboradoresEstado"></h1>
+                                <div class="stat-percent font-bold text-navy"> <i class="fa fa-level-up"></i></div>
+                                <small>Total de Colaboradores</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <span class="label label-primary float-right">Atualizado</span>
+                                <h5>CPO</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins" id="lblTotalCPOEstado"></h1>
+                                <div class="stat-percent font-bold text-navy"> <i class="fa fa-level-up"></i></div>
+                                <small>Total de CPO</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                Ações
+                            </div>
+                            <div class="panel-body" align="center">
+                                <a class="btn btn-success btn-rounded" href="#" onclick="AtualizarDashboard()">Atualizar Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5>Percentual de Homens/Mulheres</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <div id="pie"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5>Percentual de Jovens por Status</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <div id="pieJovensStatus"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5>Percentual Árvore da Vida</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <div id="pieAV"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5>Percentual </h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div>
+                                    <!---->
+                                    <ul class="list-group clear-list m-t">
+                                        <li class="list-group-item fist-item">
+                                            <span class="float-right" id="lblQtdJovensHelp">
+
+                                            </span>
+                                            <span class="label label-success">1</span> Help
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="float-right" id="lblQtdJovensArcanjos">
+
+                                            </span>
+                                            <span class="label label-info">2</span> Arcanjos
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="float-right" id="lblQtdJovensAtalaia">
+                                            </span>
+                                            <span class="label label-primary">3</span> Atalaia
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="float-right" id="lblQtdJovensEsporte">
+                                            </span>
+                                            <span class="label label-default">4</span> Esportes
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="float-right" id="lblQtdJovensMidia">
+                                            </span>
+                                            <span class="label label-warning">5</span> Mídia
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="float-right" id="lblQtdJovensUniversitarios">
+                                            </span>
+                                            <span class="label label-danger">6</span> Universitários
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="float-right" id="lblQtdJovensUniforca">
+                                            </span>
+                                            <span class="label label-inverse">7</span> Uniforça
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="float-right" id="lblQtdJovensCultura">
+                                            </span>
+                                            <span class="label label-success">8</span> Cultura
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="float-right" id="lblQtdJovensSecretarias">
+                                            </span>
+                                            <span class="label label-primary">9</span> Secretárias
+                                        </li>
+                                    </ul>
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5 class="font-bold text-success" style="font-family: Helvetica;">Totais por bloco</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <!---->
+                                <div class="table-responsive">
+                                    <table id="tblTotaisBlocos"
+                                           class="table table-striped table-bordered table-hover dataTables-example">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>IdBloco</th>
+                                                <th>Bloco</th>
+                                                <th>Jovens no Bloco</th>
+                                                <th>Batizados Águas</th>
+                                                <th>Batizados Espírito Santo</th>
+                                                <th>Homens</th>
+                                                <th>Mulheres</th>
+                                                <th>AJ</th>
+                                                <th>CPO</th>
+                                                <th>Obreiros</th>
+                                                <th>Colaboradores</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th></th>
+                                                <th>IdBloco</th>
+                                                <th>Bloco</th>
+                                                <th>Total de Jovens</th>
+                                                <th>Batizados Águas</th>
+                                                <th>Batizados Espírito Santo</th>
+                                                <th>Homens</th>
+                                                <th>Mulheres</th>
+                                                <th>AJ</th>
+                                                <th>CPO</th>
+                                                <th>Obreiros</th>
+                                                <th>Colaboradores</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END BODY -->
+                <div class="wrapper wrapper-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4">
+
+
+                                </div>
+                                <div class="col-lg-4">
+
+
+                                </div>
+                                <div class="col-lg-4">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="float-right">
+                        <strong></strong>
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> FJU Oficial &copy; 2020
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mainly scripts -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
+
+        <!-- Steps -->
+        <script src="js/plugins/steps/jquery.steps.min.js"></script>
+
+        <!-- Jquery Validate -->
+        <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+        <!-- Select2 -->
+        <script src="js/plugins/select2/select2.full.min.js"></script>
+
+        <!-- Input Mask-->
+        <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+        <!-- Data picker -->
+        <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+        <!-- iCheck -->
+        <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+
+        <!-- Nestable List -->
+        <script src="js/plugins/nestable/jquery.nestable.js"></script>
+
+        <!-- Toastr script -->
+        <script src="js/plugins/toastr/toastr.min.js"></script>
+
+        <!-- Sweet alert -->
+        <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+        <!-- ChartJS-->
+        <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+        <script src="js/plugins/d3/d3.min.js"></script>
+        <script src="js/plugins/c3/c3.min.js"></script>
+
+        <script src="js/plugins/dataTables/datatables.min.js"></script>
+        <script src="js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+        <!--abaixo biblioteca que permite multipla seleção de registros-->
+        <script src="js/plugins/dataTables/Select-1.3.1/dataTables.select.min.js"></script>
+
+        <!-- Sweet alert -->
+        <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+        <script src="js/SGFJU.Domain.UI.Client.js"></script>
+        <script src="js/SGFJU.Domain.UI.Client.Facade.js"></script>
+        <script src="js/SGFJU.Domain.UI.PageSetup.js"></script>
+
+        <script>
+
+            var facadeUser = new SGFJU.Domain.Model.UI.Client.Facade.UsuarioFacade();
+            $(document).ready(function () {
+
+                //ConfigurarPaginaX072470();
+                facadeUser.ConfigurarPaginaX072470();
+
+                preencheDashboardEstadual();
+
+                $('#tblTotaisBlocos tbody').on('click', 'td.details-control', function () {
+                    var table = $('#tblTotaisBlocos').DataTable();
+                    var tr = $(this).closest('tr');
+                    var row = table.row( tr );
+ 
+                    if ( row.child.isShown() ) {
+                        // This row is already open - close it
+                        row.child.hide();
+                        tr.removeClass('shown');
+                    }
+                    else {
+                        // Open this row
+                        row.child( formataRow(row.data()) ).show();
+                        tr.addClass('shown');
+                    } 
+                });
+
+            });
+
+            function preencheDashboardEstadual() {
+                $.ajax({
+                    type: "GET",
+                    url: "api/Relatorios/TotaisDashBoardEstadoLogado",
+                    contentType: "application/json"
+                }).done(function (resultSetDashBoard) {
+
+                    var totalDeJovensNoEstado = resultSetDashBoard.QuantidadeTotalJovens;
+                    var vQtdHomens = resultSetDashBoard.QuantidadeTotalHomens;
+                    var vQtdMulheres = resultSetDashBoard.QuantidadeTotalMulheres;
+                    var porcentagemDeHomens = vQtdHomens / totalDeJovensNoEstado * 100;
+                    var porcentagemDeMulheres = vQtdMulheres / totalDeJovensNoEstado * 100;
+                    var porcentagemBatizadosAguas = resultSetDashBoard.QuantidadeTotalBatizadosAguas / totalDeJovensNoEstado * 100;
+                    var porcentagemBatizadosEspiritoSanto = resultSetDashBoard.QuantidadeTotalEspiritoSanto / totalDeJovensNoEstado * 100;
+                    var porcentagemAltarJovem = resultSetDashBoard.QuantidadeJovensAltarJovem / totalDeJovensNoEstado * 100;
+
+                    /**/
+                    var porcentagemJovensAtivos = resultSetDashBoard.QuantidadeTotalJovensAtivos / totalDeJovensNoEstado * 100;
+                    var porcentagemJovensInativos = resultSetDashBoard.QuantidadeTotalJovensInativos / totalDeJovensNoEstado * 100;
+                    var porcentagemJovensIniciantes = resultSetDashBoard.QuantidadeTotalJovensIniciantes / totalDeJovensNoEstado * 100;
+                    var porcentagemJovensAcompanhados = resultSetDashBoard.QuantidadeTotalAVJovensAcompanhados / totalDeJovensNoEstado * 100;
+                    var porcentagemJovensSemAcompanhamento = resultSetDashBoard.QuantidadeTotalAVJovensSemAcompanhamento / totalDeJovensNoEstado * 100;
+
+
+                    console.log('::Percentual Ativos ->' + porcentagemJovensAtivos.toFixed(2));
+                    console.log('::Percentual Inativos ->' + porcentagemJovensInativos.toFixed(2));
+                    console.log('::Percentual Iniciantes ->' + porcentagemJovensIniciantes.toFixed(2));
+                    console.log('::Percentual Acompanhados -> ' + porcentagemJovensAcompanhados.toFixed(2));
+                    console.log(':: Percentual Sem acompanhamento' + porcentagemJovensSemAcompanhamento.toFixed(2));
+                    //var porcentagemJovensAfastados = resultSetDashBoard.QuantidadeTotalJovensAfastados / totalDeJovensNoEstado * 100;
+                    /**/
+
+                    $("#lblNumeroJovenstotalEstado").html(resultSetDashBoard.QuantidadeTotalJovens);
+
+                    $("#lblTotalJovensBatizadosAguas").html(resultSetDashBoard.QuantidadeTotalBatizadosAguas);
+                    $('#dvPercentBAguas').html(porcentagemBatizadosAguas.toFixed(2) + '<i class="fa fa-level-up">');
+
+                    $("#lblTotalJovensBatizadosEspiritoSanto").html(resultSetDashBoard.QuantidadeTotalEspiritoSanto);
+                    $('#dvPercentBEspiritoSanto').html(porcentagemBatizadosEspiritoSanto.toFixed(2) + '<i class="fa fa-level-up">');
+
+                    $("#lblTotalJovensAltarJovem").html(resultSetDashBoard.QuantidadeJovensAltarJovem);
+                    $('#dvPercentAltarJovem').html(porcentagemAltarJovem.toFixed(2) + '<i class="fa fa-level-up">');
+
+                    c3.generate({
+                        bindto: '#pie',
+                        data: {
+                            columns: [
+                                ['Homens', porcentagemDeHomens + '70'],
+                                ['Mulheres', porcentagemDeMulheres + '100']
+                            ],
+                            colors: {
+                                data1: '#1ab394',
+                                data2: '#BABABA'
+                            },
+                            type: 'pie'
+                        }
+                    });
+
+                    var chartByStatus = c3.generate({
+                        bindto: '#pieJovensStatus',
+                        data: {
+                            columns: [
+                                ['Ativos', porcentagemJovensAtivos],
+                                ['Iniciantes', porcentagemJovensIniciantes],
+                                ['Inativos', porcentagemJovensInativos],
+                                ['Sem classificãção', 10]
+                            ],/*
+                                    colors: {
+                                        data1: '#1C84C6',
+                                        data2: '#1AB394',
+                                        data3: '#000111'
+                                    },*/
+                            type: 'pie',
+                            color: function (color, d) {
+                                // d will be 'id' when called for legends
+                                return d.id && d.id === 'data3' ? d3.rgb(color).darker(d.value / 150) : color;
+                            }
+                        }
+                    });
+
+                    c3.generate({
+                        bindto: '#pieAV',
+                        data: {
+                            columns: [
+                                ['Em Acompanhamento', porcentagemJovensAcompanhados],
+                                ['Sem Acompanhamento', porcentagemJovensSemAcompanhamento],
+                            ],
+                            type: 'pie',
+                            color: function (color, d) {
+                                // d will be 'id' when called for legends
+                                return d.id && d.id === 'data3' ? d3.rgb(color).darker(d.value / 150) : color;
+                            }
+                        }
+                    });
+
+                    /*
+                    chartByStatus.load({
+                        columns: [
+                            ["setosa", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
+                            ["versicolor", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
+                            ["virginica", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8],
+                        ]
+                    });*/
+
+                    $('#lblNumeroObreirosEstado').html(resultSetDashBoard.QuantidadeTotalObreiros);
+                    $('#lblTotalCPOEstado').html(resultSetDashBoard.QuantidadeTotalCPO);
+                    $('#lblTotalColaboradoresEstado').html(resultSetDashBoard.QuantidadeTotalColaboradores);
+
+                    $('#lblQtdJovensHelp').html(resultSetDashBoard.QuantidadeTotalHelp);
+                    $('#lblQtdJovensArcanjos').html(resultSetDashBoard.QuantidadeTotalArcanjos);
+                    $('#lblQtdJovensAtalaia').html(resultSetDashBoard.QuantidadeTotalAtalaia);
+                    $('#lblQtdJovensEsporte').html(resultSetDashBoard.QuantidadeTotalEsporte);
+                    $('#lblQtdJovensUniforca').html(resultSetDashBoard.QuantidadeTotalUniforca);
+                    $('#lblQtdJovensCultura').html(resultSetDashBoard.QuantidadeTotalCultura);
+                    $('#lblQtdJovensSecretarias').html(resultSetDashBoard.QuantidadeTotalSecretarias);
+                    $('#lblQtdJovensMidia').html(resultSetDashBoard.QuantidadeTotalMidia);
+                    $('#lblQtdJovensUniversitarios').html(resultSetDashBoard.QuantidadeTotalUniversitarios);
+
+                });
+
+                $.ajax({
+                    type: "GET",
+                    url: "api/Relatorios/TotaisBlocosEstadoLogado",
+                    contentType: "application/json"
+                }).done(function (resultSetTotaisEstados) {
+                    $('#tblTotaisBlocos').DataTable({
+                        data: resultSetTotaisEstados,
+                        pageLength: 50,
+                        columns: [
+                            {
+                                "className":      'details-control',
+                                "orderable":      false,
+                                "data":           null,
+                                "defaultContent": ''
+                            },
+                            { data: 'IdBloco' },
+                            { data: 'NomeBloco' },
+                            { data: 'QuantidadeTotalJovens' },
+                            { data: 'QuantidadeTotalBatizadosAguas' },
+                            { data: 'QuantidadeTotalEspiritoSanto' },
+                            { data: 'QuantidadeTotalHomens' },
+                            { data: 'QuantidadeTotalMulheres' },
+                            { data: 'QuantidadeJovensAltarJovem' },
+                            { data: 'QuantidadeTotalCPO' },
+                            { data: 'QuantidadeTotalObreiros' },
+                            { data: 'QuantidadeTotalColaboradores' },
+                        ],
+                        columnDefs: [
+                            {
+                                targets: [1],
+                                visible: false,
+                                searchable: false
+                            }]
+                    });
+                });
+
+            }
+
+            function AtualizarDashboard() {
+                swal({
+                    title: "Deseja Atualizar o Dashboard? Esta operação levará alguns minutos!?",
+                    text: "Esta ação vai atualizar todos os valores!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Sim, Desejo atualizar!",
+                    closeOnConfirm: false
+                }, function () {
+                    $.ajax({
+                        type: "POST",
+                        url: "api/Relatorios/AtualizarDashboardEstadoLogado",
+                        contentType: "application/json"
+                    }).done(function (respostaAtualizacao) {
+                        swal({
+                            title: "Confirmação",
+                            text: "Dashboard Atualizado com sucesso!",
+                            type: "success"
+                        });
+                    });
+                });
+            }
+
+            function formataRow(pDadosBlocoEstado) {
+                console.log('::óh o stringfy ->' + JSON.stringify(pDadosBlocoEstado));
+                return '<table class="table"> ' +
+                        '    <tbody> ' +
+                        '        <tr>' +
+                        '            <td>' +
+                        '                <button type="button" class="btn btn-danger m-r-sm">' + pDadosBlocoEstado.QuantidadeTotalUniversitarios + '</button>' +
+                        '                <span class="font-bold text-success">Universitários</span> ' +
+                        '            </td> ' +
+                        '            <td>' +
+                        '                <button type="button" class="btn btn-primary m-r-sm">' + pDadosBlocoEstado.QuantidadeTotalHelp + '</button>' +
+                        '                <span class="font-bold text-success">Help</span>' +
+                        '            </td>' +
+                        '            <td>' +
+                        '                <button type="button" class="btn btn-info m-r-sm">' + pDadosBlocoEstado.QuantidadeTotalArcanjos + '</button>' +
+                        '                <span class="font-bold text-success">Arcanjos</span>' +
+                        '            </td>' +                        
+                        '            <td>' +
+                        '                <button type="button" class="btn btn-info m-r-sm">' + pDadosBlocoEstado.QuantidadeTotalEsporte + '</button>' +
+                        '                <span class="font-bold text-success">Esporte</span>' +
+                        '            </td>' +
+                        '            <td>' +
+                        '                <button type="button" class="btn btn-success m-r-sm">' + pDadosBlocoEstado.QuantidadeTotalCultura + '</button>' +
+                        '                <span class="font-bold text-success">Cultura</span>' +
+                        '            </td>' +
+                        '        </tr>      ' +
+                        '        <tr>' +
+                        '            <td>' +
+                        '                <button type="button" class="btn btn-danger m-r-sm">' + pDadosBlocoEstado.QuantidadeTotalAtalaia + '</button>' +
+                        '                <span class="font-bold text-success">Atalaia</span> ' +
+                        '            </td> ' +
+                        '            <td>' +
+                        '                <button type="button" class="btn btn-primary m-r-sm">' + pDadosBlocoEstado.QuantidadeTotalMidia + '</button>' +
+                        '                <span class="font-bold text-success">Mídia</span>' +
+                        '            </td>' +
+                        '            <td>' +
+                        '                <button type="button" class="btn btn-info m-r-sm">' + pDadosBlocoEstado.QuantidadeTotalSecretarias + '</button>' +
+                        '                <span class="font-bold text-success">Assistentes</span>' +
+                        '            </td>' +
+                        '            <td>' +
+                        '                <button type="button" class="btn btn-warning m-r-sm">' + pDadosBlocoEstado.QuantidadeTotalUniforca + '</button>' +
+                        '                <span class="font-bold text-success">Uniforça</span>' +
+                        '            </td>' +                  
+                        '        </tr>      ' +
+                        '    </tbody>' +
+                        '</table>';
+            }
+        </script>
+</body>
+</html>

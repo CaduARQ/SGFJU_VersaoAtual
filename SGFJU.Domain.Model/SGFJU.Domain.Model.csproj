@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Entities\InstituicaoEnsinoPalestra.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SGFJU.ServicesLayer.DTO\SGFJU.ServicesLayer.DTO.csproj" />
   </ItemGroup>
 

@@ -264,10 +264,29 @@ namespace ConsoleTester
 
             repository.Save(paradaDesabafo); */
 
+            /*
             var despRepository = new GerenciamentoDespesasRepositoryImpl();
             var res = despRepository.ListaDespesasPorParametro(new ParametroDespesasDTO{
                 Data = "2022-05-20"
-            });
+            });*/
+
+            var instituicaoEnsino = new InstituicaoEnsino
+            {
+                NomeInstituicaoEnsino = "E.E Amadeu Amaral",
+                NomeContato = "Doni",
+                Contato = "(11) 94859-4815",
+                FuncaoContatoInstituicaoEnsino = "D",
+                Endereco = "Praça do Belenzinho",
+                IgrejaInstituicao = new Igreja { Id = 64 },
+                ClassificacaoInstituicao = new ClassificacaoInstituicaoEnsino { Codigo = 1 },
+                PerfilInstituicao = new PerfilInstituicaoEnsino { Codigo = 1 },
+                TipoInstituicao = new TipoInstituicaoEnsino { Codigo = 1 }
+            };
+            instituicaoEnsino.addPalestraRealizadasNaInstituicao(new Palestra { Id = 1 });
+
+            var repository = new RepositoryImpl<InstituicaoEnsino>();
+            repository.Save(instituicaoEnsino);
+
             //var resultado = despRepository.ListarDespesasRegistradasHojePorEstado(new EstadoDTO { IdEstado = 28 });
 
             /*
@@ -295,7 +314,7 @@ namespace ConsoleTester
 
             //var repo = new AltarJovemRepositoryImpl();
             //var resultado = repo.ListaJovensLevantadosParaOAltarPorParametro(new AltarJovemParametroPesquisaDTO { IdEstado = 28 });
-                Console.ReadKey();
+            Console.ReadKey();
 
             //var estados = sessaoAberta.CreateCriteria<Jovem>().List<Jovem>();
 

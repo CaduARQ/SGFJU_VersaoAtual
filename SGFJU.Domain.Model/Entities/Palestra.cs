@@ -7,5 +7,11 @@ namespace SGFJU.Domain.Model.Entities
     public class Palestra : Entity<Palestra>
     {
         public virtual string NomePalestra { get; set; }
+        public Palestra()
+        {
+            this.InstituicaoEnsinoOndeAconteceu = new List<InstituicaoEnsino>();
+        }
+        public virtual IList<InstituicaoEnsino> InstituicaoEnsinoOndeAconteceu
+        { get; set; }
     }
 }

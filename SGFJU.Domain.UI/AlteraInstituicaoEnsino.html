@@ -126,7 +126,8 @@
 
                                     <form id="form" class="wizard-big">
 
-                                        <h1>Finish</h1>
+                                        <!---->
+                                        <h1>Informações sobre a instituição de ensino</h1>
                                         <fieldset>
                                             <h2>Informações da Instituição de ensino</h2>
 
@@ -174,7 +175,7 @@
                                                 <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label class="text-success font-bold" for="form_bloco">Bloco *</label><br />
-                                                        <select id="cboBloco" class="select2_demo_4 form-control">
+                                                        <select id="cboBloco" name="cboBloco" class="select2_demo_4 form-control">
                                                             <option></option>
                                                         </select>
                                                     </div>
@@ -183,7 +184,7 @@
                                                 <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label class="text-success font-bold" for="form_phone">Região *</label><br />
-                                                        <select id="cboRegiao" class="select2_demo_5 form-control">
+                                                        <select id="cboRegiao" name="cboRegiao" class="select2_demo_5 form-control">
                                                             <option></option>
                                                         </select>
                                                     </div>
@@ -266,10 +267,10 @@
                                                     </div>
                                                 </div>
 
-
                                             </div>
 
                                             <div class="row">
+
                                                 <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label class="text-success font-bold">Nome do contato</label>
@@ -285,7 +286,7 @@
                                                 <div class="col-sm-4">
                                                     <div class="form-group">
                                                         <label class="text-success font-bold" for="form_name">Contato</label>
-                                                        <input type="text" id="txtContato" name="txtContato" class="form-control" data-mask="(99) 99999-9999" placeholder="" required>
+                                                        <input type="text" id="txtContato" name="txtContato" class="form-control" data-mask="(99) 99999-9999" placeholder="">
                                                         <span class="form-text">(DDD) 99999-9999</span>
                                                     </div>
                                                 </div>
@@ -295,15 +296,251 @@
                                                     <div class="form-group">
                                                         <label class="text-success font-bold" for="form_name">Função do contato</label><br />
                                                         <select id="cboFuncaoContatoInstituicaoEnsino" name="cboFuncaoContatoInstituicaoEnsino" class="select2_demo_3 form-control">
-                                                            <option value="D">Diretora</option>
-                                                            <option value="P">Professora</option>
-                                                            <option value="C">Coordenadora</option>
+                                                            <option value="D">Diretor(a)</option>
+                                                            <option value="P">Professor(a)</option>
+                                                            <option value="C">Coordenador(a)</option>
                                                         </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </fieldset>
+
+                                        <h1>Finish</h1>
+                                        <fieldset>
+                                            <h2>Informações complementares</h2>
+
+                                            <div class="row">
+                                                <!---->
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_name">Projeto Help já esteve na instituição de ensino? </label>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaEsteveNaInstituicao_S" value="S" name="rbJaEsteveNaInstituicao">
+                                                                    <label for="rbJaEsteveNaInstituicao_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaEsteveNaInstituicao_N" value="N" name="rbJaFoiObreiroAntes">
+                                                                    <label for="rbJaEsteveNaInstituicao_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="font-normal">Data de Inicio das atividades</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="txtDataInicioAtividades" name="txtDataInicioAtividades">
+                                                            <input type="hidden" id="txtHiddenDataInicioAtividades" runat="server" />
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#alteraDataInicioAtividades">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="font-normal">Data da última atividade realizada</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="txtDataUltimaAtividade" name="txtDataUltimaAtividade">
+                                                            <input type="hidden" id="txtHiddenDataUltimaAtividade" runat="server" />
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#alteraDataUltimaAtividades">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <!---->
+                                            </div>
+
+                                            <!-- abaixo modal que altera data do início das atividades -->
+                                            <div class="modal inmodal" id="alteraDataInicioAtividades" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content animated bounceInRight">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                                            <i class="fa fa-calendar-check-o modal-icon"></i>
+                                                            <h4 class="modal-title">Alterar Data de inicio das atividades</h4>
+                                                            <small class="font-bold">Digite abaixo a Data de inicio das atividades corrigida</small>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <!---->
+
+                                                            <div class="form-group"><label>Data de inicio das atividades Anterior</label> <input id="txtDataInicioAtividadesAnterior" type="text" class="form-control"></div>
+                                                            <div class="form-group"><label>Nova Data de inicio das atividades</label> <input id="txtNovaDataInicioAtividades" type="date" class="form-control"></div>
+                                                            <div>
+                                                                <button class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="atualizaDataInicioAtividades()"><strong>Atualizar Data</strong></button>
+                                                            </div>
+
+                                                            <!---->
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end -->
+                                            <!-- abaixo modal que altera data da última atividade realizada -->
+                                            <div class="modal inmodal" id="alteraDataUltimaAtividades" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content animated bounceInRight">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                                                            <i class="fa fa-calendar-check-o modal-icon"></i>
+                                                            <h4 class="modal-title">Alterar Data da última atividade realizada</h4>
+                                                            <small class="font-bold">Digite abaixo a Data da última atividade realizada corrigida</small>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <!---->
+
+                                                            <div class="form-group"><label>Data da última atividade realizada Anterior</label> <input id="txtDataUltimaAtividadeAnterior" type="text" class="form-control"></div>
+                                                            <div class="form-group"><label>Nova Data da última atividade realizada</label> <input id="txtNovaDataUltimaAtividade" type="date" class="form-control"></div>
+                                                            <div>
+                                                                <button class="btn btn-sm btn-primary float-right m-t-n-xs" type="button" onclick="atualizaDataUltimaAtividade()"><strong>Atualizar Data</strong></button>
+                                                            </div>
+
+                                                            <!---->
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end -->
+                                            
+                                            <div class="row">
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_phone">Quantidade de alunos na escola</label>
+                                                        <input class="form-control" name="txtQtdAlunosEscola" type="number" value="0" id="txtQtdAlunosEscola" min="0">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_phone">Quantos alunos alcançados?</label>
+                                                        <input class="form-control" name="txtQtdAlunosAlcancados" type="number" value="0" id="txtQtdAlunosAlcancados" min="0">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_name">Houve algum incidente na instituição(problema)? </label>
+                                                        <div class="row">
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaHouveIncidenteNaInstituicao_S" value="S" name="rbJaHouveIncidenteNaInstituicao">
+                                                                    <label for="rbJaHouveIncidenteNaInstituicao_S"> Sim </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <div class="radio radio-danger radio-inline">
+                                                                    <input type="radio" id="rbJaHouveIncidenteNaInstituicao_N" value="N" name="rbJaHouveIncidenteNaInstituicao">
+                                                                    <label for="rbJaHouveIncidenteNaInstituicao_N"> Não </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="text-success font-bold" for="form_name">Marque os livros que o jovem já leu</label>
+                                                        <div class="row">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkDecidaLutarPorVoce" name="chkDecidaLutarPorVoce" type="checkbox" value="1">
+                                                                <label for="chkDecidaLutarPorVoce">
+                                                                    Decida lutar por você
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkCyberbullying" name="chkCyberbullying" type="checkbox" value="2">
+                                                                <label for="chkCyberbullying">
+                                                                    Cyberbullying
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkSemFiltro" name="chkSemFiltro" type="checkbox" value="3">
+                                                                <label for="chkSemFiltro">
+                                                                    Sem filtro sem farsa
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkSalaAdoecida" name="chkSalaAdoecida" type="checkbox" value="4">
+                                                                <label for="chkSalaAdoecida">
+                                                                    Sala adoecida - professores
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkBatalhaPensamentos" name="chkBatalhaPensamentos" type="checkbox" value="5">
+                                                                <label for="chkBatalhaPensamentos">
+                                                                    Batalha dos pensamentos
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkLivroNB" name="chkLivroNB" type="checkbox" value="6">
+                                                                <label for="chkLivroNB">
+                                                                    Amor é questão de educação
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="chkStopBullying" name="chkStopBullying" type="checkbox" value="7">
+                                                                <label for="chkStopBullying">
+                                                                    Stop bullying
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+                                                        <!---->
+
                                                     </div>
                                                 </div>
                                             </div>
 
+                                            <div class="row">
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+
+                                                        <i class="fas fa-pencil-alt prefix"></i>
+                                                        <textarea id="txtObservacoesInstituicaoEnsino" runat="server" class="md-textarea form-control" rows="3"></textarea>
+                                                        <label for="txtTestemunho">Escreva testemunho do Jovem</label>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
                                         </fieldset>
+                                        <!---->
 
                                     </form>
                                 </div>
@@ -586,18 +823,76 @@
 
                 $("#cboTipoInstituicaoEnsino").val(retornoInstituicaoEnsino.IdTipoInstituicao).trigger('change.select2');
                 $('#cboTipoInstituicaoEnsino').prop("disabled", false);
-
-                console.log('::função código ->' + retornoInstituicaoEnsino.FuncaoContatoInstituicaoEnsino);
+                
                 $("#cboClassificacaoInstituicaoEnsino").val(retornoInstituicaoEnsino.IdClassificacaoInstituicao).trigger('change.select2');
                 $('#cboClassificacaoInstituicaoEnsino').prop("disabled", false);
 -
                 $("#cboFuncaoContatoInstituicaoEnsino").val(retornoInstituicaoEnsino.FuncaoContatoInstituicaoEnsino).trigger('change.select2');
                 $('#cboFuncaoContatoInstituicaoEnsino').prop("disabled", false);
 
+            /**/
+                if (retornoInstituicaoEnsino.HelpJaEsteveNaInstituicao == 'S')
+                    $('#rbJaEsteveNaInstituicao_S').prop('checked', true);
+                else
+                    $('#rbJaEsteveNaInstituicao_N').prop('checked', true);
+
+                /**/
+                $('#txtDataInicioAtividades').val(retornoInstituicaoEnsino.DataInicioAtividades);
+                $('#txtDataInicioAtividades').prop('disabled', true);
+
+                $('#txtDataUltimaAtividade').val(retornoInstituicaoEnsino.DataUltimaAtividadeRealizada);
+                $('#txtDataUltimaAtividade').prop('disabled', true);
+
+                $('#txtDataInicioAtividadesAnterior').val(retornoInstituicaoEnsino.DataInicioAtividades);
+                $('#txtDataInicioAtividadesAnterior').prop('disabled', true);
+
+                $('#txtDataUltimaAtividadeAnterior').val(retornoInstituicaoEnsino.DataUltimaAtividadeRealizada);
+                $('#txtDataUltimaAtividadeAnterior').prop('disabled', true);
+                /**/
+
+                $('#txtQtdAlunosEscola').val(retornoInstituicaoEnsino.QuantidadeAlunos);
+                $('#txtQtdAlunosAlcancados').val(retornoInstituicaoEnsino.QuantidadeAlunosAtendidosCantinho);
+
+                if (retornoInstituicaoEnsino.OcorreuAlgumIncidente == 'S')
+                    $('#rbJaHouveIncidenteNaInstituicao_S').prop('checked', true);
+                else
+                    $('#rbJaHouveIncidenteNaInstituicao_N').prop('checked', true);
+                
+                $('#txtObservacoesInstituicaoEnsino').val(retornoInstituicaoEnsino.ObservacoesInstituicaoEnsino);
+                /**/
+
                 $('#txtNomeInstituicaoEnsino').val(retornoInstituicaoEnsino.NomeInstituicaoEnsino);
                 $('#txtEndereco').val(retornoInstituicaoEnsino.Endereco);
                 $('#txtContato').val(retornoInstituicaoEnsino.Contato);
                 $('#txtNomeContato').val(retornoInstituicaoEnsino.NomeContato);
+
+                console.log(':::.. palestras realizadas -> ' + JSON.stringify(retornoInstituicaoEnsino.PalestrasRealizadasInstituicaoEnsino));
+                for (var i = 0; i < retornoInstituicaoEnsino.PalestrasRealizadasInstituicaoEnsino.length; i++) {
+                    switch (retornoInstituicaoEnsino.PalestrasRealizadasInstituicaoEnsino[i].IdPalestra) {
+                        case 1:
+                            $('#chkDecidaLutarPorVoce').prop('checked', true);
+                            break;
+                        case 2:
+                            $('#chkCyberbullying').prop('checked', true);
+                            break;
+                        case 3:
+                            $('#chkSemFiltro').prop('checked', true);
+                            break;
+                        case 4:
+                            $('#chkSalaAdoecida').prop('checked', true);
+                            break;
+                        case 5:
+                            $('#chkBatalhaPensamentos').prop('checked', true);
+                            break;
+                        case 6:
+                            $('#chkLivroNB').prop('checked', true);
+                            break;
+                        case 7:
+                            $('#chkStopBullying').prop('checked', true);
+                            break;
+                    }
+                }
+
             });
         }
 
@@ -627,12 +922,20 @@
                 });
             }
 
+            var _palestrasRealizadasInstituicaoEnsino = [];
             var instituicaoEnsinoAlterarDTO = {
                 IdInstituicaoEnsino: __vidxHELP,
                 NomeInstituicaoEnsino: $('#txtNomeInstituicaoEnsino').val(),
                 Endereco: $('#txtEndereco').val(),
                 Contato: $('#txtContato').val(),
                 NomeContato: $('#txtNomeContato').val(),
+                HelpJaEsteveNaInstituicao: $('input[name="rbJaEsteveNaInstituicao"]:checked').val(),
+                DataInicioAtividades: $('#txtDataInicioAtividades').val(),
+                DataUltimaAtividadeRealizada: $('#txtDataUltimaAtividade').val(),
+                QuantidadeAlunos: $('#txtQtdAlunosEscola').val(),
+                QuantidadeAlunosAtendidosCantinho: $('#txtQtdAlunosAlcancados').val(),
+                OcorreuAlgumIncidente: $('input[name="rbJaHouveIncidenteNaInstituicao"]:checked').val(),
+                ObservacoesInstituicaoEnsino: $('#txtObservacoesInstituicaoEnsino').val(),
                 FuncaoContatoInstituicaoEnsino: $('#cboFuncaoContatoInstituicaoEnsino').val(),
                 IdIgrejaInstituicao: $('#cboIgreja').val(),
                 IdPerfilInstituicao: $('#cboPerfilInstituicaoEnsino').val(),
@@ -640,7 +943,31 @@
                 IdClassificacaoInstituicao: $('#cboClassificacaoInstituicaoEnsino').val()
             };
 
-            console.log(JSON.stringify(instituicaoEnsinoAlterarDTO));
+            if ($('#chkDecidaLutarPorVoce').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkDecidaLutarPorVoce').val() });
+
+            if ($('#chkCyberbullying').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkCyberbullying').val() });
+
+            if ($('#chkSemFiltro').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkSemFiltro').val() });
+
+            if ($('#chkSalaAdoecida').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkSalaAdoecida').val() });
+
+            if ($('#chkBatalhaPensamentos').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkBatalhaPensamentos').val() });
+
+            if ($('#chkLivroNB').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({ IdPalestra: $('#chkLivroNB').val() });
+
+            if ($('#chkStopBullying').is(':checked'))
+                _palestrasRealizadasInstituicaoEnsino.push({IdPalestra: $('#chkStopBullying').val()});
+
+            if (_palestrasRealizadasInstituicaoEnsino.length > 0)
+                instituicaoEnsinoAlterarDTO.PalestrasRealizadasInstituicaoEnsino = _palestrasRealizadasInstituicaoEnsino;
+
+            console.log('quantidade -> ' + _palestrasRealizadasInstituicaoEnsino.length);
             
             $.ajax({
                 type: "POST",
@@ -664,8 +991,63 @@
                         type: "error"
                     });
             }); 
-            /**/
         }
+        /**/
+
+
+        function atualizaDataInicioAtividades() {
+            var novaDataInicioAtividades = new Date($('#txtNovaDataInicioAtividades').val());
+            var dataFormatada = novaDataInicioAtividades.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+            $('#txtDataInicioAtividades').val(dataFormatada);
+            //$('#txtHiddenDataPreenchimentoFormulario').val(dataFormatada);
+            console.log(':: novaDataInicioAtividades - ' + $('#txtDataInicioAtividades').val());
+
+            //-----------------------------------------------------------------------------
+            var instituicaoParametro = { DataInicioAtividades: dataFormatada };
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(instituicaoParametro),
+                url: "api/InsitituicaoEnsino/ArmazenaDataInicioAtividades/",
+                contentType: "application/json"
+            }).done(function (retorno) {
+            });
+            //-----------------------------------------------------------------------------
+
+            swal({
+                title: "Alteração",
+                text: 'Data de inicio das atividades alterada com sucesso !!!',
+                type: "success"
+            });
+            $('#alteraDataInicioAtividades').modal('hide');
+        }
+
+        
+        function atualizaDataUltimaAtividade() {
+            var novaDataUltimaAtividade = new Date($('#txtNovaDataUltimaAtividade').val());
+            var dataFormatada = novaDataUltimaAtividade.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+            $('#txtDataUltimaAtividade').val(dataFormatada);
+            //$('#txtHiddenDataPreenchimentoFormulario').val(dataFormatada);
+            console.log(':: DataUltimaAtividade - ' + dataFormatada);
+
+            //-----------------------------------------------------------------------------
+            var instituicaoParametro = { DataUltimaAtividadeRealizada: dataFormatada };
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify(instituicaoParametro),
+                url: "api/InsitituicaoEnsino/ArmazenaDataUltimaAtividadeRealizada/",
+                contentType: "application/json"
+            }).done(function (retorno) {
+            });
+            //-----------------------------------------------------------------------------
+
+            swal({
+                title: "Alteração",
+                text: 'Data da última atividade alterada com sucesso !!!',
+                type: "success"
+            });
+            $('#alteraDataUltimaAtividades').modal('hide');
+        }
+        /**/
 
     </script>
 </body>

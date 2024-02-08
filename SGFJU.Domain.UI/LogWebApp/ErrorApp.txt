@@ -2066,3 +2066,473 @@ For more detailed information run Unity in debug mode: new UnityContainer(ModeFl
   Exception Message: Referência de objeto não definida para uma instância de um objeto. 
 
  --------------------------------------
+2024-01-24 15:54:47.4334|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '24/01/2024 15:54:47' - Descrição do Erro: TelaLogin.Camada de negócios:FluentSessionFactory.CreateFactory - An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ Gerado por: SGFJU.Domain.Model.Entities.Usuario Loggar(System.String, System.String)pilha   em SGFJU.Bussiness.Facade.FacadeUsuarioImpl.Loggar(String login, String password) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\FacadeUsuarioImpl.cs:linha 62
+   em SGFJU.Domain.UI.formLogin.logar() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\formLogin.aspx.cs:linha 46
+2024-01-29 15:44:52.0293|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '29/01/2024 15:44:52' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 137: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 100: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.DataInicioAtividades       IE.DataUltimaAtividadeRealizada       IE.QuantidadeA' at line 1 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 44
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 100: 
+
+ Source: SGFJU.Domain.Model.Infra.DataAccess.MySql  
+
+ Inner Exception:  
+
+  Exception Message: Erro  
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   em MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   em MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   em MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   em MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Common.DAO.ExecuteQuery(String sqlQuery, MySqlConnection& connectionToBeUsed) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Common\DAO.cs:linha 40: 
+
+ Source: MySql.Data  
+
+ Inner Exception Message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.DataInicioAtividades       IE.DataUltimaAtividadeRealizada       IE.QuantidadeA' at line 1 
+
+  Método: ExecuteQuery 
+
+  Camada: CAMADA_ORM.DAO 
+
+ -------------------------------------- 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-31 11:29:05.5134|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/01/2024 11:29:05' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 137: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-31 11:48:22.7719|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/01/2024 11:48:22' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 137: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-31 11:49:31.3085|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/01/2024 11:49:31' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 137: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-31 11:58:03.6109|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/01/2024 11:58:03' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 137: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-31 16:31:49.3758|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/01/2024 16:31:49' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 137: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   em System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: mscorlib  
+
+ Inner Exception:  
+
+  Exception Message: Cadeia de caracteres não foi reconhecida como DateTime válido. 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   em System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: mscorlib  
+
+ Inner Exception:  
+
+  Exception Message: Cadeia de caracteres não foi reconhecida como DateTime válido. 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-01-31 17:04:32.6830|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '31/01/2024 17:04:32' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 137: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlDataReader.Throw(Exception ex)
+   em MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(String name)
+   em MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: No current query in data reader 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.MySqlClient.MySqlDataReader.Throw(Exception ex)
+   em MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(String name)
+   em MySql.Data.MySqlClient.MySqlDataReader.get_Item(String name)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.Model.Infra.DataAccess.Oracle\Implementation\InstituicaoEnsinoRepositoryImpl.cs:linha 105: 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: No current query in data reader 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-02-05 11:34:11.2790|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2024 11:34:11' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Bussiness.Facade.InsituicaoEnsinoFacadeImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Bussiness.Facade\InsituicaoEnsinoFacadeImpl.cs:linha 24
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 137: 
+
+ Source: SGFJU.Bussiness.Facade  
+
+ Inner Exception: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa): 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+  Exception Message: Erro ocorrido CAMADA_ORM 
+
+  StackTrace:    em MySql.Data.Types.MySqlDateTime.GetDateTime()
+   em MySql.Data.MySqlClient.MySqlDataReader.GetValue(Int32 i)
+   em MySql.Data.MySqlClient.MySqlDataReader.IsDBNull(Int32 i)
+   em SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation.InstituicaoEnsinoRepositoryImpl.ListarPorParametro(ParametroPesquisaInstituicaoEnsinoDTO parametroPesquisa): 
+
+ Source: MySql.Data  
+
+ Inner Exception:  
+
+  Exception Message: Unable to convert MySQL date/time value to System.DateTime 
+
+ -------------------------------------- 
+
+ --------------------------------------
+2024-02-05 11:43:40.4998|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2024 11:43:40' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em System.Char.Parse(String s)
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.AtualizarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 95: 
+
+ Source: mscorlib  
+
+ Inner Exception:  
+
+  Exception Message: Valor não pode ser nulo.
+Nome do parâmetro: s 
+
+ --------------------------------------
+2024-02-05 12:19:32.4816|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2024 12:19:32' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-02-05 12:19:32.4816|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2024 12:19:32' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-02-05 12:25:04.5350|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2024 12:25:04' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-02-05 12:25:04.5350|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2024 12:25:04' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-02-05 12:32:05.7337|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2024 12:32:05' - Descrição do Erro: --Rastreando entrou no método -> ObterJovemAtualizacao();
+2024-02-05 12:32:05.7527|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '05/02/2024 12:32:05' - Descrição do Erro: --Rastreando erro chamou -> ObterJovemAtualizacao();
+2024-02-06 15:30:12.2986|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '06/02/2024 15:30:12' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em System.Char.Parse(String s)
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.RegistrarInstituicaoEnsino(InstituicaoEnsinoDTO instituicaoEnsinoParametro) na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 39: 
+
+ Source: mscorlib  
+
+ Inner Exception:  
+
+  Exception Message: Valor não pode ser nulo.
+Nome do parâmetro: s 
+
+ --------------------------------------
+2024-02-07 16:00:22.8213|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/02/2024 16:00:22' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-02-07 16:05:01.1256|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/02/2024 16:05:01' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-02-07 16:05:06.7937|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/02/2024 16:05:06' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-02-07 16:05:10.0390|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/02/2024 16:05:10' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-02-07 16:05:11.5831|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/02/2024 16:05:11' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Helpers.SessionHelper.RetornaEstadoUsuarioLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Helpers\SessionHelper.cs:linha 37
+   em SGFJU.Domain.UI.Controllers.InsitituicaoEnsinoController.ListaTodasInstituicoesEstadoLogado() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\InsitituicaoEnsinoController.cs:linha 149: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-02-07 16:05:14.5983|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/02/2024 16:05:14' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.UsuariosController.X072470() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\UsuariosController.cs:linha 30: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------
+2024-02-07 16:05:16.5386|ERROR|SGFJU.Domain.Model.Infra.Logging.Implementation.ErrorLoggerImpl|Erro ocorrido '07/02/2024 16:05:16' - Descrição do Erro: Erro ocorrido CAMADA_UI.Controller 
+
+  StackTrace:    em SGFJU.Domain.UI.Controllers.XController.RMM() na C:\Users\Intel\Documents\GitHub\SGFJU\SGFJU.Domain.UI\Controllers\XController.cs:linha 53: 
+
+ Source: SGFJU.Domain.UI  
+
+ Inner Exception:  
+
+  Exception Message: Referência de objeto não definida para uma instância de um objeto. 
+
+ --------------------------------------

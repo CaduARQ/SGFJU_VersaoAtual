@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Mapping\Entities\InstituicaoEnsinoPalestraMap.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentNHibernate" Version="2.1.2" />
     <PackageReference Include="MySql.Data" Version="8.0.20" />
     <PackageReference Include="NHibernate" Version="5.2.7" />
