@@ -40,7 +40,7 @@
             <div class="col-md-6">
 
                 <h2 class="label label-success font-bold text-white">Seja Bem-Vindo</h2>
-                <img id="imgLogo" src="img/SGFJU.png" height="200px" width="320px" alt="image"  />
+                <img id="imgLogo" src="img/fju-logo-marinho.png" width="320" style="max-width: 100%; height: auto; margin-top: 24px;" alt="FJU, Força Jovem Universal" />
 
             </div>
             <div class="col-md-6">
