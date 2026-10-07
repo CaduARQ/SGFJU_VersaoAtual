@@ -202,10 +202,14 @@
     <Content Include="GerenciarInstituicaoEnsinoNacional.html" />
     <Content Include="GerenciarInstituicaoEnsino.html" />
     <Content Include="img\SGFJU.png" />
+    <Content Include="img\fju-logo-claro.png" />
+    <Content Include="img\fju-logo-marinho.png" />
     <Content Include="js\plugins\mark\jquery.mark.min.js" />
     <Content Include="js\plugins\mark\mark.min.js" />
     <Content Include="ListaJovensLevantadosAltar.html" />
     <Content Include="PainelControle.html" />
+    <Content Include="TemaFJU.html" />
+    <None Include="TEMA-FJU.md" />
     <Content Include="RegistraAcao.html" />
     <Content Include="RegistraDespesa.aspx" />
     <Content Include="RegistraInstituicaoEnsino.html" />
@@ -368,6 +372,7 @@
     <Content Include="css\plugins\toastr\toastr.min.css" />
     <Content Include="css\plugins\touchspin\jquery.bootstrap-touchspin.min.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\fju-tema.css" />
     <Content Include="DashboardEstadual.html" />
     <Content Include="DashboardNacional.html" />
     <Content Include="default.aspx" />

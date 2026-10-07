@@ -17,6 +17,7 @@
     <link href="css/plugins/steps/jquery.steps.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">--%>
+    <link href="css/fju-tema.css" rel="stylesheet">
 
     <style type="text/css">
         .auto-style2 {

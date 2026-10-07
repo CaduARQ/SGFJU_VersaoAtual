@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGFJU | Vitrine do Tema FJU</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fju-tema.css" rel="stylesheet">
+</head>
+
+<!--
+    Vitrine do tema FJU: componentes do Inspinia com o tema aplicado.
+    Página estática, sem chamadas à API. Use como referência visual ao
+    criar ou converter telas. Para ver o visual antigo, comente o
+    <link> de css/fju-tema.css acima.
+-->
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="" class="rounded-circle" src="img/a2.jpg" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">Carlos Eduardo</span>
+                                <span class="text-muted text-xs block">Coordenador Estadual <b class="caret"></b></span>
+                            </a>
+                        </div>
+                        <div class="logo-element">FJU</div>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Painel</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users"></i> <span class="nav-label">Jovens</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse in">
+                            <li class="active"><a href="#">Todos os jovens</a></li>
+                            <li><a href="#">Registrar jovem</a></li>
+                            <li><a href="#">Transferir jovem</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-institution"></i> <span class="nav-label">Igrejas e regiões</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-tree"></i> <span class="nav-label">Árvore da Vida</span> <span class="label float-right">3</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-tag"></i> <span class="nav-label">Camisas FJU</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart"></i> <span class="nav-label">Relatórios</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i></a>
+                        <form role="search" class="navbar-form-custom">
+                            <div class="form-group">
+                                <input type="text" placeholder="Buscar jovem pelo nome ou matrícula…" class="form-control" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 20px"><span class="m-r-sm text-muted welcome-message">Seja bem-vindo(a) ao SGFJU.</span></li>
+                        <li><a href="#"><i class="fa fa-sign-out"></i> Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Painel Estadual · Rio de Janeiro</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Início</a></li>
+                        <li class="breadcrumb-item active"><strong>Painel</strong></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                <!-- Widgets de número -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget yellow-bg">
+                            <span>Jovens ativos</span>
+                            <h2 class="font-bold">12.480</h2>
+                            <small>+312 este mês</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget navy-bg">
+                            <span>Em acompanhamento</span>
+                            <h2 class="font-bold">1.926</h2>
+                            <small>Árvore da Vida</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget blue-bg">
+                            <span>Relatórios entregues</span>
+                            <h2 class="font-bold">87%</h2>
+                            <small>3 regiões pendentes</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget lazur-bg">
+                            <span>Camisas autorizadas</span>
+                            <h2 class="font-bold">640</h2>
+                            <small>de 702 pedidos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Tabela -->
+                    <div class="col-lg-8">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5>Jovens cadastrados recentemente</h5>
+                                <div class="ibox-tools">
+                                    <button class="btn btn-white btn-sm" type="button"><i class="fa fa-download"></i> Exportar</button>
+                                    <button class="btn btn-primary btn-sm" type="button"><i class="fa fa-plus"></i> Registrar jovem</button>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr><th>Jovem</th><th>Matrícula</th><th>Igreja</th><th>Status</th><th class="text-right">Idade</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td><strong>Ana Beatriz Souza</strong></td><td><code>FJU-RJ-004812</code></td><td>Sede Del Castilho</td><td><span class="label label-success">Ativo</span></td><td class="text-right">19</td></tr>
+                                        <tr><td><strong>Lucas Martins</strong></td><td><code>FJU-RJ-005107</code></td><td>Icaraí</td><td><span class="label label-info">Em acompanhamento</span></td><td class="text-right">22</td></tr>
+                                        <tr><td><strong>Júlia Pereira</strong></td><td><code>FJU-RJ-003390</code></td><td>Centro de Caxias</td><td><span class="label label-warning">Aguardando autorização</span></td><td class="text-right">16</td></tr>
+                                        <tr><td><strong>Rafael Lima</strong></td><td><code>FJU-RJ-002251</code></td><td>Campo Grande</td><td><span class="label label-danger">Desligado</span></td><td class="text-right">24</td></tr>
+                                    </tbody>
+                                </table>
+                                <ul class="pagination float-right">
+                                    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Painéis -->
+                    <div class="col-lg-4">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">Relatório FJU enviado</div>
+                            <div class="panel-body">Região Centro entregou o relatório de setembro em 02/10/2026.</div>
+                        </div>
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">Autorizações pendentes</div>
+                            <div class="panel-body">3 termos de responsáveis aguardando assinatura.</div>
+                        </div>
+                        <div class="alert alert-danger">O CPF informado já pertence a outro jovem. Confira o número ou busque o cadastro existente.</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Formulário com abas -->
+                    <div class="col-lg-12">
+                        <div class="ibox">
+                            <div class="ibox-title"><h5>Registrar jovem</h5></div>
+                            <div class="ibox-content">
+                                <div class="tabs-container">
+                                    <ul class="nav nav-tabs">
+                                        <li><a class="nav-link active" data-toggle="tab" href="#tab-1">Dados pessoais</a></li>
+                                        <li><a class="nav-link" data-toggle="tab" href="#tab-2">Família</a></li>
+                                        <li><a class="nav-link" data-toggle="tab" href="#tab-3">Histórico FJU</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="tab-1" class="tab-pane active">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="nome">Nome completo</label>
+                                                        <input id="nome" type="text" class="form-control" value="Ana Beatriz Souza">
+                                                    </div>
+                                                    <div class="col-sm-3 form-group">
+                                                        <label for="nasc">Data de nascimento</label>
+                                                        <input id="nasc" type="text" class="form-control" placeholder="dd/mm/aaaa">
+                                                    </div>
+                                                    <div class="col-sm-3 form-group has-error">
+                                                        <label class="control-label" for="cel">Celular</label>
+                                                        <input id="cel" type="text" class="form-control" value="(21) 9876-543">
+                                                        <span class="help-block">Digite os 11 números com DDD.</span>
+                                                    </div>
+                                                    <div class="col-sm-6 form-group">
+                                                        <label for="igreja">Igreja</label>
+                                                        <select id="igreja" class="form-control">
+                                                            <option>Sede Del Castilho</option>
+                                                            <option>Icaraí</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="text-right">
+                                                    <button class="btn btn-white" type="button">Cancelar</button>
+                                                    <button class="btn btn-danger btn-outline" type="button">Desligar jovem</button>
+                                                    <button class="btn btn-primary" type="button">Salvar cadastro</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tab-2" class="tab-pane"><div class="panel-body">Responsáveis e contatos de emergência.</div></div>
+                                        <div id="tab-3" class="tab-pane"><div class="panel-body">Data de entrada, grupos e atividades.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botões e labels -->
+                <div class="ibox">
+                    <div class="ibox-title"><h5>Botões e status</h5></div>
+                    <div class="ibox-content">
+                        <p>
+                            <button class="btn btn-primary" type="button">Primário</button>
+                            <button class="btn btn-white" type="button">Branco</button>
+                            <button class="btn btn-success" type="button">Sucesso</button>
+                            <button class="btn btn-info" type="button">Info</button>
+                            <button class="btn btn-warning" type="button">Destaque</button>
+                            <button class="btn btn-danger" type="button">Perigo</button>
+                        </p>
+                        <p>
+                            <span class="label">Inativo</span>
+                            <span class="label label-primary">Novo</span>
+                            <span class="label label-success">Ativo</span>
+                            <span class="label label-info">Em acompanhamento</span>
+                            <span class="label label-warning">Pendente</span>
+                            <span class="label label-danger">Desligado</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div><strong>SGFJU</strong> · Força Jovem Universal</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/inspinia.js"></script>
+</body>
+</html>

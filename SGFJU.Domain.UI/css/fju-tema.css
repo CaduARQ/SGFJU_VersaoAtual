@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Rubik:wght@600;700;800&display=swap");
+
+/*
+ * Tema FJU para o Inspinia
+ * ------------------------------------------------------------------
+ * Carregar DEPOIS de css/style.css. Não exige mudança no HTML:
+ * sobrescreve as cores, fontes e formas do Inspinia com a identidade
+ * da Força Jovem Universal (azul-marinho do logo + amarelo "chama").
+ * Para voltar ao visual antigo basta remover o <link> deste arquivo.
+ * Guia completo: TEMA-FJU.md
+ */
+
+:root {
+    /* Identidade */
+    --marinho: #1a2135;          /* cor do logo FJU: menu lateral */
+    --marinho-700: #2b3654;      /* hover / item ativo no menu */
+    --marinho-800: #141a2b;      /* submenu */
+    --chama: #ffbf1f;            /* destaque: item ativo, KPI principal */
+    --on-chama: #1a2135;
+
+    /* Superfícies */
+    --fundo: #f5f6fa;
+    --superficie: #ffffff;
+    --superficie-2: #eceff6;
+    --linha: #d9dde8;
+    --linha-forte: #8a93ab;
+
+    /* Texto */
+    --texto: #1a2135;
+    --texto-suave: #535b73;
+    --menu-texto: #c3c9da;
+
+    /* Ação */
+    --primaria: #2350d1;
+    --primaria-hover: #1b40ad;
+    --on-primaria: #ffffff;
+    --primaria-suave: #e5ebfc;
+    --foco: #2350d1;
+
+    /* Status */
+    --sucesso: #1b7346;
+    --sucesso-hover: #155a37;
+    --sucesso-suave: #e1f3e9;
+    --info: #1f6493;
+    --info-hover: #184f75;
+    --info-suave: #e2eff8;
+    --alerta: #9a4f00;
+    --alerta-hover: #7d4000;
+    --alerta-suave: #fcefd9;
+    --perigo: #b42826;
+    --perigo-hover: #93201e;
+    --perigo-suave: #fbe4e2;
+
+    /* Forma */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-pill: 999px;
+    --shadow-card: 0 1px 2px rgba(26, 33, 53, .06), 0 2px 8px rgba(26, 33, 53, .05);
+    --shadow-pop: 0 8px 28px rgba(26, 33, 53, .18);
+
+    /* Tipografia */
+    --font-display: "Rubik", "Trebuchet MS", system-ui, sans-serif;
+    --font-sans: "Figtree", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+
+/* ================================================================
+   Base
+   ================================================================ */
+body {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--texto);
+    background-color: var(--marinho); /* o Inspinia usa o body como fundo do menu */
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: inherit;
+}
+
+a { color: var(--primaria); }
+a:hover, a:focus { color: var(--primaria-hover); }
+
+:focus-visible {
+    outline: 2px solid var(--foco);
+    outline-offset: 2px;
+}
+
+.gray-bg, .bg-muted, #page-wrapper {
+    background-color: var(--fundo);
+}
+
+code, kbd, pre, samp { font-family: var(--font-mono); }
+
+/* ================================================================
+   Menu lateral (navbar-static-side + metisMenu)
+   ================================================================ */
+.navbar-default,
+.navbar-static-side,
+body.canvas-menu nav.navbar-static-side,
+.mini-navbar .nav .nav-second-level {
+    background-color: var(--marinho);
+}
+
+.nav-header {
+    background: var(--marinho) none;
+    padding: 24px 24px 20px;
+    border-bottom: 1px solid var(--marinho-700);
+}
+
+/* Logo FJU no topo do menu */
+.nav-header .profile-element::before {
+    content: "";
+    display: block;
+    height: 44px;
+    margin-bottom: 18px;
+    background: url("../img/fju-logo-claro.png") left center / contain no-repeat;
+}
+
+.nav-header .profile-element img.rounded-circle {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border: 2px solid var(--chama);
+}
+
+.nav-header .profile-element .font-bold { color: #ffffff; }
+.nav-header .text-muted { color: var(--menu-texto) !important; }
+
+.logo-element {
+    font-family: var(--font-display);
+    font-weight: 800;
+    color: var(--chama);
+}
+
+body.mini-navbar .nav-header { background-color: var(--marinho); }
+
+.nav > li > a {
+    color: var(--menu-texto);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 20px 12px 25px;
+}
+
+.nav > li > a i { color: var(--menu-texto); }
+
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus {
+    background-color: var(--marinho-700);
+    color: #ffffff;
+}
+
+.nav > li.active {
+    background-color: var(--marinho-700);
+    border-left: 4px solid var(--chama);
+}
+
+.nav > li.active > a,
+.nav > li.active > a i {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.nav > li.active > a i { color: var(--chama); }
+
+ul.nav-second-level,
+.canvas-menu.mini-navbar .nav-second-level {
+    background-color: var(--marinho-800);
+}
+
+.nav-second-level li a {
+    color: var(--menu-texto);
+    font-size: 13.5px;
+}
+
+.nav-second-level li.active a,
+.nav-second-level li a:hover {
+    color: #ffffff;
+}
+
+.nav-second-level li.active a { font-weight: 700; }
+
+.nav .nav-label { font-weight: 500; }
+
+/* Barra superior */
+.navbar-static-top,
+.navbar-fixed-top {
+    background-color: var(--superficie);
+}
+
+.border-bottom { border-bottom: 1px solid var(--linha) !important; }
+
+.navbar-top-links li a,
+.welcome-message { color: var(--texto-suave); }
+
+.navbar-minimalize.btn-primary,
+.minimalize-styl-2 {
+    background-color: var(--marinho);
+    border-color: var(--marinho);
+    border-radius: var(--radius-md);
+}
+
+.navbar-form-custom .form-control {
+    background: transparent;
+    border: 0;
+}
+
+/* Cabeçalho de página */
+.page-heading {
+    background: var(--superficie);
+    border-bottom: 1px solid var(--linha);
+}
+
+.page-heading h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.breadcrumb { background: transparent; }
+.breadcrumb-item.active { color: var(--texto-suave); }
+
+.footer {
+    background: var(--superficie);
+    border-top: 1px solid var(--linha);
+    color: var(--texto-suave);
+}
+
+/* ================================================================
+   Cards: ibox (Inspinia) e panel
+   ================================================================ */
+.ibox {
+    margin-bottom: 24px;
+    background: var(--superficie);
+    border: 1px solid var(--linha);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+}
+
+.ibox-title {
+    background: var(--superficie);
+    color: var(--texto);
+    border: 0;
+    border-bottom: 1px solid var(--linha);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    padding: 16px 24px;
+    min-height: 56px;
+}
+
+.ibox-title h5 {
+    font-family: var(--font-display);
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ibox-tools a { color: var(--texto-suave); }
+
+/* "html body" vence os <style> de cada página que pintam a borda do ibox */
+html body .ibox-content {
+    background: var(--superficie);
+    color: var(--texto);
+    border: 0;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    padding: 24px;
+}
+
+.ibox-footer {
+    background: var(--superficie-2);
+    border-top: 1px solid var(--linha);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    color: var(--texto-suave);
+}
+
+.ibox.collapsed .ibox-title { border-radius: var(--radius-lg); border-bottom: 0; }
+
+.panel {
+    background: var(--superficie);
+    border: 1px solid var(--linha);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+}
+
+.panel-heading {
+    font-family: var(--font-display);
+    font-weight: 700;
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--linha);
+}
+
+.panel-default > .panel-heading,
+.panel-primary > .panel-heading { background: var(--superficie-2); color: var(--texto); }
+
+.panel-primary, .panel-success, .panel-info, .panel-warning, .panel-danger { border-color: var(--linha); }
+.panel-primary > .panel-heading { background: var(--primaria-suave); color: var(--primaria); border-color: var(--linha); }
+.panel-success > .panel-heading { background: var(--sucesso-suave); color: var(--sucesso); border-color: var(--linha); }
+.panel-info > .panel-heading { background: var(--info-suave); color: var(--info); border-color: var(--linha); }
+.panel-warning > .panel-heading { background: var(--alerta-suave); color: var(--alerta); border-color: var(--linha); }
+.panel-danger > .panel-heading { background: var(--perigo-suave); color: var(--perigo); border-color: var(--linha); }
+
+.panel-body { padding: 20px; }
+
+.card {
+    border: 1px solid var(--linha);
+    border-radius: var(--radius-lg);
+}
+
+/* ================================================================
+   Botões
+   ================================================================ */
+.btn {
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-family: var(--font-sans);
+}
+
+.btn-sm, .btn-xs { border-radius: var(--radius-sm); }
+
+.btn-primary {
+    background-color: var(--primaria);
+    border-color: var(--primaria);
+    color: var(--on-primaria);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: var(--primaria-hover);
+    border-color: var(--primaria-hover);
+    color: var(--on-primaria);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: var(--primaria);
+    border-color: var(--primaria);
+    opacity: .5;
+}
+
+.btn-success { background-color: var(--sucesso); border-color: var(--sucesso); color: #ffffff; }
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active { background-color: var(--sucesso-hover); border-color: var(--sucesso-hover); color: #ffffff; }
+
+.btn-info { background-color: var(--info); border-color: var(--info); color: #ffffff; }
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active { background-color: var(--info-hover); border-color: var(--info-hover); color: #ffffff; }
+
+.btn-warning { background-color: var(--chama); border-color: var(--chama); color: var(--on-chama); }
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active { background-color: #f0ad00; border-color: #f0ad00; color: var(--on-chama); }
+
+.btn-danger { background-color: var(--perigo); border-color: var(--perigo); color: #ffffff; }
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active { background-color: var(--perigo-hover); border-color: var(--perigo-hover); color: #ffffff; }
+
+.btn-white, .btn-default {
+    background: var(--superficie);
+    border: 1px solid var(--linha-forte);
+    color: var(--texto);
+}
+
+.btn-white:hover, .btn-white:focus, .btn-white.active,
+.btn-default:hover, .btn-default:focus, .btn-default.active {
+    background: var(--superficie-2);
+    border-color: var(--linha-forte);
+    color: var(--texto);
+}
+
+.btn-primary.btn-outline { color: var(--primaria); background: transparent; }
+.btn-success.btn-outline { color: var(--sucesso); background: transparent; }
+.btn-info.btn-outline { color: var(--info); background: transparent; }
+.btn-warning.btn-outline { color: var(--alerta); border-color: var(--alerta); background: transparent; }
+.btn-danger.btn-outline { color: var(--perigo); background: transparent; }
+.btn-outline:hover { color: #ffffff; }
+.btn-warning.btn-outline:hover { color: var(--on-chama); background: var(--chama); border-color: var(--chama); }
+
+.btn-link { color: var(--primaria); }
+.btn-link:hover, .btn-link:focus { color: var(--primaria-hover); }
+
+/* ================================================================
+   Labels e badges (status)
+   ================================================================ */
+.label, .badge {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 2px 10px;
+    border-radius: var(--radius-pill);
+    text-shadow: none;
+    background-color: var(--superficie-2);
+    color: var(--texto-suave);
+}
+
+.label-primary, .badge-primary { background-color: var(--primaria-suave); color: var(--primaria); }
+.label-success, .badge-success { background-color: var(--sucesso-suave); color: var(--sucesso); }
+.label-info, .badge-info { background-color: var(--info-suave); color: var(--info); }
+.label-warning, .badge-warning,
+.label-warning-light, .badge-warning-light { background-color: var(--alerta-suave); color: var(--alerta); }
+.label-danger, .badge-danger { background-color: var(--perigo-suave); color: var(--perigo); }
+
+/* Labels marcados com text-white continuam sólidos (ex.: "Seja Bem-Vindo" no login) */
+.label.text-white, .badge.text-white { background-color: var(--primaria); }
+.label-success.text-white, .badge-success.text-white { background-color: var(--sucesso); }
+.label-info.text-white, .badge-info.text-white { background-color: var(--info); }
+.label-warning.text-white, .badge-warning.text-white { background-color: var(--alerta); }
+.label-danger.text-white, .badge-danger.text-white { background-color: var(--perigo); }
+
+/* Contadores dentro do menu continuam sólidos para aparecer sobre o marinho */
+.nav .label, .nav .badge { background-color: var(--chama); color: var(--on-chama); }
+
+/* ================================================================
+   Formulários
+   ================================================================ */
+label, .control-label, .col-form-label {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--texto);
+}
+
+.form-control, .single-line {
+    min-height: 38px;
+    border: 1px solid var(--linha-forte);
+    border-radius: var(--radius-sm);
+    background-color: var(--superficie);
+    color: var(--texto);
+    font-family: var(--font-sans);
+}
+
+.form-control::placeholder { color: var(--texto-suave); }
+
+.form-control:focus, .single-line:focus {
+    border-color: var(--foco);
+    box-shadow: 0 0 0 3px var(--primaria-suave);
+}
+
+.form-control[readonly], .form-control:disabled { background-color: var(--superficie-2); }
+
+.input-group-addon, .input-group-text {
+    background: var(--superficie-2);
+    border-color: var(--linha-forte);
+    color: var(--texto-suave);
+}
+
+.has-success .form-control, .is-valid.form-control { border-color: var(--sucesso); }
+.has-success .control-label { color: var(--sucesso); }
+.has-warning .form-control { border-color: var(--alerta); }
+.has-warning .control-label { color: var(--alerta); }
+.has-error .form-control, .is-invalid.form-control, .form-control.error { border-color: var(--perigo); }
+.has-error .control-label, label.error, .invalid-feedback { color: var(--perigo); font-weight: 600; }
+
+.help-block, .form-text { color: var(--texto-suave); font-size: 13px; }
+
+/* Select2 */
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+    border-color: var(--linha-forte);
+    border-radius: var(--radius-sm);
+    min-height: 38px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered { line-height: 36px; color: var(--texto); }
+.select2-container--default .select2-selection--single .select2-selection__arrow { height: 36px; }
+.select2-container--default.select2-container--focus .select2-selection--single,
+.select2-container--default.select2-container--focus .select2-selection--multiple { border-color: var(--foco); }
+.select2-container--default .select2-results__option--highlighted[aria-selected] { background-color: var(--primaria); }
+.select2-dropdown { border-color: var(--linha); border-radius: var(--radius-sm); }
+
+/* Datepicker */
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.active,
+.datepicker table tr td span.active {
+    background: var(--primaria) !important;
+    color: var(--on-primaria) !important;
+}
+
+/* jquery.steps */
+.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active { background: var(--primaria); }
+.wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active { background: var(--primaria-suave); color: var(--primaria); }
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active { background: var(--primaria); border-radius: var(--radius-md); }
+.wizard > .content { background: var(--superficie-2); border-radius: var(--radius-md); }
+
+/* Switch */
+.onoffswitch-label { border-color: var(--primaria); }
+.onoffswitch-inner:before { background-color: var(--primaria); }
+.onoffswitch-switch { border-color: var(--primaria); }
+
+/* ================================================================
+   Abas
+   ================================================================ */
+.nav-tabs { border-bottom: 1px solid var(--linha); }
+
+.nav-tabs > li > a,
+.nav-tabs .nav-link {
+    color: var(--texto-suave);
+    font-weight: 600;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    background: transparent;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs .nav-link:hover { color: var(--texto); background: transparent; border-color: transparent; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link,
+.tabs-container .nav-tabs > li.active > a,
+.tabs-container .nav-tabs > li > a.active {
+    color: var(--primaria);
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid var(--primaria);
+}
+
+.tabs-container .panel-body {
+    border: 1px solid var(--linha);
+    border-top: 0;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    box-shadow: none;
+}
+
+.tabs-container .panel { box-shadow: none; }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: var(--primaria);
+    color: var(--on-primaria);
+    border-radius: var(--radius-md);
+}
+
+/* ================================================================
+   Tabelas e DataTables
+   ================================================================ */
+.table { color: var(--texto); }
+
+.table > thead > tr > th,
+.table thead th {
+    background: var(--superficie-2);
+    color: var(--texto-suave);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    border-top: 0;
+    border-bottom: 1px solid var(--linha);
+    white-space: nowrap;
+}
+
+.table > tbody > tr > td,
+.table td {
+    border-top: 1px solid var(--linha);
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) { background-color: #f8f9fc; }
+.table-hover tbody tr:hover,
+table.dataTable tbody tr:hover { background-color: var(--primaria-suave); }
+
+.table-bordered,
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > td { border-color: var(--linha); }
+
+table.dataTable tbody tr.selected,
+table.dataTable tbody tr.selected:hover { background-color: var(--primaria-suave); color: var(--texto); }
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid var(--linha-forte);
+    border-radius: var(--radius-sm);
+    padding: 4px 8px;
+}
+
+.dt-buttons .btn, .html5buttons a {
+    background: var(--superficie);
+    border: 1px solid var(--linha-forte);
+    color: var(--texto);
+    border-radius: var(--radius-sm);
+}
+
+/* Paginação */
+.page-link { color: var(--primaria); border-color: var(--linha); }
+.page-link:hover { color: var(--primaria-hover); background: var(--primaria-suave); }
+.page-item.active .page-link,
+.pagination .footable-page.active a {
+    background-color: var(--primaria);
+    border-color: var(--primaria);
+    color: var(--on-primaria);
+}
+.page-item:first-child .page-link { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+.page-item:last-child .page-link { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+
+/* jqGrid */
+.ui-jqgrid .ui-jqgrid-htable th { background: var(--superficie-2); color: var(--texto-suave); }
+.ui-jqgrid-titlebar { background: var(--superficie); color: var(--texto); }
+
+/* ================================================================
+   Cores utilitárias do Inspinia
+   ================================================================ */
+.text-navy { color: var(--primaria) !important; }
+.text-primary { color: var(--primaria) !important; }
+.text-success { color: var(--sucesso) !important; }
+.text-info { color: var(--info) !important; }
+.text-warning { color: var(--alerta) !important; }
+.text-danger { color: var(--perigo) !important; }
+.text-muted { color: var(--texto-suave) !important; }
+
+.navy-bg, .bg-primary { background-color: var(--primaria) !important; color: var(--on-primaria); }
+.blue-bg, .bg-success { background-color: var(--sucesso) !important; color: #ffffff; }
+.lazur-bg, .bg-info { background-color: var(--info) !important; color: #ffffff; }
+.yellow-bg, .bg-warning { background-color: var(--chama) !important; color: var(--on-chama); }
+.red-bg, .bg-danger { background-color: var(--perigo) !important; color: #ffffff; }
+.yellow-bg h1, .yellow-bg h2, .yellow-bg h3, .yellow-bg span, .yellow-bg small { color: var(--on-chama); }
+
+/* Widgets de número do dashboard */
+.widget {
+    border-radius: var(--radius-lg);
+    padding: 16px 20px;
+}
+
+.widget h2, .widget .font-bold {
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+}
+
+.no-margins { font-variant-numeric: tabular-nums; }
+
+.progress { background-color: var(--superficie-2); border-radius: var(--radius-pill); }
+.progress-bar { background-color: var(--primaria); }
+.progress-bar-success { background-color: var(--sucesso); }
+.progress-bar-info { background-color: var(--info); }
+.progress-bar-warning { background-color: var(--chama); }
+.progress-bar-danger { background-color: var(--perigo); }
+
+/* ================================================================
+   Alertas, toasts, dropdowns, modais
+   ================================================================ */
+.alert { border: 0; border-radius: var(--radius-md); color: var(--texto); }
+.alert-success { background: var(--sucesso-suave); }
+.alert-info { background: var(--info-suave); }
+.alert-warning { background: var(--alerta-suave); }
+.alert-danger { background: var(--perigo-suave); }
+.alert-success .alert-link { color: var(--sucesso); }
+.alert-danger .alert-link { color: var(--perigo); }
+
+#toast-container > div { border-radius: var(--radius-md); box-shadow: var(--shadow-pop); opacity: 1; }
+.toast-success { background-color: var(--sucesso); }
+.toast-info { background-color: var(--info); }
+.toast-warning { background-color: var(--alerta); }
+.toast-error { background-color: var(--perigo); }
+
+.dropdown-menu {
+    border: 1px solid var(--linha);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-pop);
+}
+
+.dropdown-item.active, .dropdown-item:active,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus { background-color: var(--primaria); color: var(--on-primaria); }
+
+.modal-content { border: 0; border-radius: var(--radius-lg); box-shadow: var(--shadow-pop); }
+.modal-header { border-bottom: 1px solid var(--linha); }
+.modal-footer { border-top: 1px solid var(--linha); background: var(--superficie-2); border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+.inmodal .modal-header { background: var(--superficie); }
+.modal-title { font-family: var(--font-display); font-weight: 700; }
+
+.tooltip-inner { background-color: var(--marinho); border-radius: var(--radius-sm); }
+
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus { background-color: var(--primaria); border-color: var(--primaria); }
+
+.pace .pace-progress { background: var(--chama); }
+
+@media (prefers-reduced-motion: reduce) {
+    .animated { animation: none !important; }
+}

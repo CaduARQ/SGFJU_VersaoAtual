@@ -38,6 +38,7 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/fju-tema.css" rel="stylesheet">
     
     <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
     <!--abaixo css que permite seleção-->
