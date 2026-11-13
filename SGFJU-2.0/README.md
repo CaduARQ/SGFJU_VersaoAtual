@@ -71,7 +71,7 @@ Build de produção: `npm run build && npm run start`.
 | 5 actions POST sem `[FromBody]` | corrigido |
 
 ### Front (`web/`)
-Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jovens** (filtros encadeados, busca, paginação, exportar CSV, link do WhatsApp), **novo jovem**, **ficha do jovem**, **igrejas/blocos/regiões** e **usuários**.
+Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jovens** (filtros encadeados, busca, paginação, exportar CSV, link do WhatsApp), **novo jovem**, **editar jovem**, **ficha do jovem** (com foto), **igrejas/blocos/regiões** e **usuários**.
 
 ### Cadastro de jovem (`/jovens/novo`)
 - Formulário em **7 etapas**, com os mesmos campos do `RegistraJovem.aspx`. Perguntas que dependem de outra só aparecem quando fazem sentido (ex.: "quando se batizou?" só depois de "Sim").
@@ -80,6 +80,14 @@ Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jove
 - As opções (projetos, tribos, livros, habilidades...) foram extraídas do formulário antigo com os **mesmos ids do banco** (`web/src/lib/opcoes-cadastro.ts`).
 - A etapa **Testemunho** traz um aviso de dados sensíveis (LGPD). Saúde mental, automutilação e vícios são dados pessoais sensíveis; o ideal é restringir quem pode vê-los.
 - Testado ponta a ponta: navegador → Next → API → MySQL, incluindo idioma, habilidade, reunião, projeto, contato, batismo e foto gravados.
+
+### Edição de jovem (`/jovens/{id}/editar`)
+- Usa **o mesmo formulário** do cadastro (pasta `web/src/app/(app)/jovens/_formulario/`), já preenchido. Todas as etapas ficam acessíveis, e "Salvar alterações" aparece em todas.
+- `GET /api/v2/jovens/{id}` devolve o jovem no mesmo formato do cadastro. `PUT /api/v2/jovens/{id}` salva.
+- A tela antiga montava na sessão listas de "adicionar" e "excluir" para idiomas, habilidades e cursos, além de lembrar o projeto anterior. Agora o **servidor compara o que está no banco com o que chegou** e decide sozinho o que incluir, atualizar ou excluir. Isso vale para idiomas, habilidades, tons de voz, cursos, departamentos, reuniões, livros e projeto (inclusive troca e saída de projeto). Os registros relacionados (contato, endereço, testemunho...) são atualizados no lugar, sem duplicar.
+- Campos que só existiam na edição antiga também estão aqui: Altar Jovem 318 (com código), tempo livre de automutilação e qual vício.
+- `GET /api/v2/jovens/{id}/foto` serve a foto a partir da pasta de dados. Ela aparece na ficha e na edição.
+- Testado ponta a ponta: trocar idioma, habilidades, reuniões, livros e projeto; incluir e remover curso; alterar contato, liderança e testemunho; remover tudo. Conferido no banco, sem registros duplicados.
 
 **Diferenças em relação à tela antiga (correções):**
 - Sim/Não sempre gravados como `S`/`N` maiúsculos. A tela antiga gravava `s` minúsculo em alguns campos (coordenador, líder de tribo/projeto...), e o código C# que compara com `'S'` não reconhecia.
@@ -109,7 +117,7 @@ O menu segue os mesmos perfis do sistema antigo (`menu*.txt`). Itens ainda não 
 As rotas da API já existem. Falta só a tela em React.
 
 - [x] Novo jovem (`RegistraJovem.aspx`)
-- [ ] Altera jovem (`AlteraJovem.aspx`): dá para reaproveitar as etapas do cadastro
+- [x] Altera jovem (`AlteraJovem.aspx`)
 - [ ] Consulta geral (`ConsultaGeral*.html`)
 - [ ] Autorizações e dashboard de camisas
 - [ ] Árvore da Vida (dashboards, associar/desassociar, obreiros, acompanhamento)

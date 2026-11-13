@@ -17,6 +17,15 @@ export type EtapaProps = {
 };
 
 const NIVEIS = OPCOES.niveis;
+
+/** Nome legível de uma habilidade: catálogo do formulário, senão o nome que veio do banco. */
+export function rotuloHabilidade(id: number, nome?: string | null) {
+  for (const [grupo, lista] of Object.entries(OPCOES.habilidades)) {
+    const h = (lista as readonly { id: number; nome: string }[]).find((x) => x.id === id);
+    if (h) return `${grupo}: ${h.nome}`;
+  }
+  return nome ? nome : `Habilidade ${id}`;
+}
 const PROJETOS = OPCOES.projetos;
 
 // ---------------------------------------------------------------- 1. Identificação
@@ -165,7 +174,7 @@ export function EtapaEspiritual({ c, set, sub }: EtapaProps) {
 }
 
 // ---------------------------------------------------------------- 4. Na obra
-export function EtapaObra({ c, sub }: EtapaProps) {
+export function EtapaObra({ c, set, sub }: EtapaProps) {
   const o = c.Obra;
   const s = <K extends keyof CadastroJovem["Obra"]>(k: K, v: CadastroJovem["Obra"][K]) => sub("Obra", k, v);
   const anoAtual = new Date().getFullYear();
@@ -186,6 +195,8 @@ export function EtapaObra({ c, sub }: EtapaProps) {
             </div>
           )}
           <SimNao label="Está no Altar Jovem?" valor={o.PertenceAltarJovem} onChange={(v) => s("PertenceAltarJovem", v)} />
+          <SimNao label="Faz parte do Altar Jovem 318?" valor={c.EhAltarJovem318} onChange={(v) => set("EhAltarJovem318", v)} />
+          {c.EhAltarJovem318 === "S" && <Texto label="Código 318" valor={c.CodigoAltarJovem318} onChange={(v) => set("CodigoAltarJovem318", v)} />}
         </Grade>
       </Secao>
 
@@ -469,8 +480,8 @@ export function EtapaEstudoTrabalho({ c, sub }: EtapaProps) {
 }
 
 // ---------------------------------------------------------------- 7. Testemunho (dados sensíveis)
-export function EtapaTestemunho({ c, set, sub, foto, setFoto, documento, setDocumento }: EtapaProps & {
-  foto: File | null; setFoto: (f: File | null) => void; documento: File | null; setDocumento: (f: File | null) => void;
+export function EtapaTestemunho({ c, set, sub, foto, setFoto, documento, setDocumento, fotoAtual }: EtapaProps & {
+  foto: File | null; setFoto: (f: File | null) => void; documento: File | null; setDocumento: (f: File | null) => void; fotoAtual?: string | null;
 }) {
   const t = c.Testemunho;
   const s = <K extends keyof CadastroJovem["Testemunho"]>(k: K, v: CadastroJovem["Testemunho"][K]) => sub("Testemunho", k, v);
@@ -493,10 +504,16 @@ export function EtapaTestemunho({ c, set, sub, foto, setFoto, documento, setDocu
             </div>
           )}
           <SimNao label="Já se automutilou?" valor={t.SofreuAutomutilacao} onChange={(v) => s("SofreuAutomutilacao", v)} />
-          {t.SofreuAutomutilacao === "S" && <Texto label="Por quanto tempo?" valor={t.TempoSofreuAutomutilacao} onChange={(v) => s("TempoSofreuAutomutilacao", v)} />}
+          {t.SofreuAutomutilacao === "S" && (
+            <div className="grid grid-cols-2 gap-2">
+              <Texto label="Por quanto tempo?" valor={t.TempoSofreuAutomutilacao} onChange={(v) => s("TempoSofreuAutomutilacao", v)} />
+              <Texto label="Livre há quanto tempo?" valor={t.TempoLivreAutomutilacao} onChange={(v) => s("TempoLivreAutomutilacao", v)} />
+            </div>
+          )}
           <SimNao label="Já teve algum vício?" valor={t.SofreuVicio} onChange={(v) => s("SofreuVicio", v)} />
           {t.SofreuVicio === "S" && (
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-3 gap-2">
+              <Texto label="Qual?" valor={t.DescricaoVicio} onChange={(v) => s("DescricaoVicio", v)} />
               <Texto label="Por quanto tempo?" valor={t.TempoVicio} onChange={(v) => s("TempoVicio", v)} />
               <Texto label="Livre há quanto tempo?" valor={t.TempoLivreVicios} onChange={(v) => s("TempoLivreVicios", v)} />
             </div>
@@ -515,7 +532,11 @@ export function EtapaTestemunho({ c, set, sub, foto, setFoto, documento, setDocu
 
       <Secao titulo="Arquivos e observações">
         <Grade cols={2}>
-          <Arquivo label="Foto do jovem" aceita="image/jpeg,image/png,image/webp" arquivo={foto} onChange={setFoto} />
+          <div className="flex items-end gap-4">
+            {/* eslint-disable-next-line @next/next/no-img-element -- foto servida pela API, com cookie de sessão */}
+            {fotoAtual && !foto && <img src={fotoAtual} alt="Foto atual" className="size-16 rounded-lg object-cover" />}
+            <Arquivo label={fotoAtual ? "Trocar foto" : "Foto do jovem"} aceita="image/jpeg,image/png,image/webp" arquivo={foto} onChange={setFoto} />
+          </div>
           <Arquivo label="Documento de autorização" aceita="image/*,application/pdf" arquivo={documento} onChange={setDocumento} />
         </Grade>
         <AreaTexto label="Sugestões do jovem para a FJU" valor={c.TextoSugestao} onChange={(v) => set("TextoSugestao", v)} />

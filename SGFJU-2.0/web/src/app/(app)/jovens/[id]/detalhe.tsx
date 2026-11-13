@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { use, type ReactNode } from "react";
-import { ArrowLeft } from "lucide-react";
+import { use, useState, type ReactNode } from "react";
+import { ArrowLeft, Pencil } from "lucide-react";
 import { api } from "@/lib/api";
 import { useApi } from "@/lib/use-api";
 import type { JovemDetalhe } from "@/lib/types";
@@ -18,6 +18,14 @@ function Info({ label, children }: { label: string; children: ReactNode }) {
       <dd className="mt-0.5 text-sm text-slate-900">{children}</dd>
     </div>
   );
+}
+
+function Foto({ id, nome }: { id: string; nome: string }) {
+  const [falhou, setFalhou] = useState(false);
+  const iniciais = nome.split(" ").slice(0, 2).map((p) => p[0]).join("").toUpperCase();
+  if (falhou) return <div className="grid size-16 place-items-center rounded-xl bg-brand text-lg font-semibold text-white">{iniciais}</div>;
+  // eslint-disable-next-line @next/next/no-img-element -- foto servida pela API, com cookie de sessão
+  return <img src={`/api/v2/jovens/${id}/foto`} alt={nome} onError={() => setFalhou(true)} className="size-16 rounded-xl object-cover" />;
 }
 
 export function DetalheJovem({ params }: { params: Promise<{ id: string }> }) {
@@ -37,11 +45,17 @@ export function DetalheJovem({ params }: { params: Promise<{ id: string }> }) {
       <Link href="/jovens" className="mb-4 inline-flex items-center gap-1 text-sm text-slate-500 hover:text-slate-800">
         <ArrowLeft className="size-4" /> Voltar para a lista
       </Link>
+      <div className="mb-4">
+        <Foto id={id} nome={j.Nome} />
+      </div>
       <PageHeader
         title={j.Nome}
         subtitle={[igreja?.NomeIgreja, igreja?.NomeRegiaoJovem, igreja?.NomeBlocoJovem, igreja?.NomeEstado].filter(Boolean).join(" · ")}
         actions={
-          <div className="flex gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <Link href={`/jovens/${id}/editar`} className="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white hover:bg-brand-strong">
+              <Pencil className="size-4" /> Editar
+            </Link>
             {j.FichaEstaExpirada && <Badge tone="red">Ficha expirada</Badge>}
             {j.EhPastor && <Badge tone="amber">Pastor</Badge>}
             {sit?.EhObreiro === "S" && <Badge tone="blue">Obreiro</Badge>}

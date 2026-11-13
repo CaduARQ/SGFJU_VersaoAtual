@@ -1,4 +1,4 @@
-﻿using SGFJU.Domain.Model.ValueObjects;
+using SGFJU.Domain.Model.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,6 +63,34 @@ namespace SGFJU.Domain.Model.Entities
         public virtual string SiglaEstadoJovem { get; set; }
         public virtual char EhAtendenteWhatsappHelp { get; set; }
         public virtual char EhPalestranteHelp { get; set; }
+
+        // ---- SGFJU 2.0: sincronização das coleções na edição (substitui a lógica baseada em sessão da tela antiga)
+        public virtual void SincronizarDepartamentos(IList<int> codigos) {
+            foreach (var d in _departamentosProjetoJovemFazParte.Where(x => !codigos.Contains(x.Code)).ToList())
+                _departamentosProjetoJovemFazParte.Remove(d);
+            foreach (var c in codigos.Where(c => !_departamentosProjetoJovemFazParte.Any(x => x.Code == c)).ToList())
+                addDepartamentoProjetoJovemFazParte(new DepartamentoProjeto { Code = c });
+        }
+        public virtual void SincronizarLivros(IList<int> codigos) {
+            foreach (var l in _livrosLidoPeloJovem.Where(x => !codigos.Contains(x.Code)).ToList())
+                _livrosLidoPeloJovem.Remove(l);
+            foreach (var c in codigos.Where(c => !_livrosLidoPeloJovem.Any(x => x.Code == c)).ToList())
+                addLivroLidoPeloJovem(new Livro { Code = c });
+        }
+        public virtual void SincronizarReunioes(IList<int> codigos) {
+            foreach (var r in _reunioesFJUAssistidasPeloJovem.Where(x => !codigos.Contains(x.Code)).ToList())
+                _reunioesFJUAssistidasPeloJovem.Remove(r);
+            foreach (var c in codigos.Where(c => !_reunioesFJUAssistidasPeloJovem.Any(x => x.Code == c)).ToList())
+                addReuniaoFJUAssistidaPeloJovem(new ReuniaoFJU { Code = c });
+        }
+        /// <summary>Mantém os cursos cujo Code veio na lista; remove os demais; inclui os novos (Code = 0).</summary>
+        public virtual void SincronizarCursos(IList<CursoRelacionadoProjeto> cursos) {
+            var manter = cursos.Where(c => c.Code > 0).Select(c => c.Code).ToList();
+            foreach (var c in _cursosRelacionados.Where(x => !manter.Contains(x.Code)).ToList())
+                _cursosRelacionados.Remove(c);
+            foreach (var novo in cursos.Where(c => c.Code == 0))
+                AddCursoRelacionado(novo);
+        }
 
         //Curso Relacionado Projeto HasMany ----------------------------------------------------------
         private IList<CursoRelacionadoProjeto> _cursosRelacionados;

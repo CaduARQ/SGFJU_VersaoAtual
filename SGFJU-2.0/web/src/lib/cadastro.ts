@@ -57,19 +57,21 @@ export type CadastroJovem = {
   Testemunho: {
     SofreuComDepressao: SN; TempoSofreuDepressao: string; TempoLivreDepressao: string;
     TentouSuicidio: SN; DescricaoTentativaSuicidio: string; MesAnoTentativaSuicidio: string; NumeroTentativasSuicidio: number;
-    SofreuAutomutilacao: SN; TempoSofreuAutomutilacao: string;
-    SofreuVicio: SN; TempoVicio: string; TempoLivreVicios: string;
+    SofreuAutomutilacao: SN; TempoSofreuAutomutilacao: string; TempoLivreAutomutilacao: string;
+    SofreuVicio: SN; DescricaoVicio: string; TempoVicio: string; TempoLivreVicios: string;
     TextoTestemunho: string;
   };
   Idiomas: { Id: number; IdNivel: number; NomeExtra?: string }[];
   Habilidades: { IdHabilidade: number; IdNivel: number; NomeHabilidadeExtra?: string; rotulo: string }[];
-  Cursos: { NomeCurso: string; IdProjeto: number }[];
+  Cursos: { Code?: number; NomeCurso: string; IdProjeto: number }[];
   TonsDeVoz: number[];
   Departamentos: number[];
   Reunioes: number[];
   Livros: number[];
   EhPalestranteHelp: SN;
   EhAtendenteWhatsappHelp: SN;
+  EhAltarJovem318: SN;
+  CodigoAltarJovem318: string;
   TextoSugestao: string;
 };
 
@@ -114,11 +116,11 @@ export function cadastroVazio(): CadastroJovem {
     Projeto: { IdProjeto: 0, Meses: 0, Anos: 0, PertenceuOutroProjeto: "", IdProjetoAnterior: 0 },
     Testemunho: {
       SofreuComDepressao: "", TempoSofreuDepressao: "", TempoLivreDepressao: "", TentouSuicidio: "", DescricaoTentativaSuicidio: "",
-      MesAnoTentativaSuicidio: "", NumeroTentativasSuicidio: 0, SofreuAutomutilacao: "", TempoSofreuAutomutilacao: "",
-      SofreuVicio: "", TempoVicio: "", TempoLivreVicios: "", TextoTestemunho: "",
+      MesAnoTentativaSuicidio: "", NumeroTentativasSuicidio: 0, SofreuAutomutilacao: "", TempoSofreuAutomutilacao: "", TempoLivreAutomutilacao: "",
+      SofreuVicio: "", DescricaoVicio: "", TempoVicio: "", TempoLivreVicios: "", TextoTestemunho: "",
     },
     Idiomas: [], Habilidades: [], Cursos: [], TonsDeVoz: [], Departamentos: [], Reunioes: [], Livros: [],
-    EhPalestranteHelp: "", EhAtendenteWhatsappHelp: "", TextoSugestao: "",
+    EhPalestranteHelp: "", EhAtendenteWhatsappHelp: "", EhAltarJovem318: "", CodigoAltarJovem318: "", TextoSugestao: "",
   };
 }
 
@@ -159,4 +161,30 @@ export function mascaraTelefone(v: string) {
 export function mascaraMesAno(v: string) {
   const d = v.replace(/\D/g, "").slice(0, 6);
   return d.length <= 2 ? d : `${d.slice(0, 2)}/${d.slice(2)}`;
+}
+
+/**
+ * Converte o JSON da API (GET /api/v2/jovens/{id}) no formato do formulário:
+ * null vira "" ou 0, datas ISO viram "aaaa-mm-dd" e cada habilidade ganha um rótulo legível.
+ */
+export function deApi(dados: Record<string, unknown>, rotuloHabilidade: (id: number, nome?: string | null) => string): CadastroJovem {
+  const base = cadastroVazio() as unknown as Record<string, unknown>;
+  const normalizar = (modelo: unknown, valor: unknown): unknown => {
+    if (valor === null || valor === undefined) return modelo;
+    if (typeof modelo === "string") return typeof valor === "string" && /^\d{4}-\d{2}-\d{2}T/.test(valor) ? valor.slice(0, 10) : String(valor);
+    if (typeof modelo === "number") return Number(valor) || 0;
+    if (Array.isArray(modelo)) return Array.isArray(valor) ? valor : modelo;
+    if (modelo && typeof modelo === "object") {
+      const out: Record<string, unknown> = {};
+      for (const k of Object.keys(modelo)) out[k] = normalizar((modelo as Record<string, unknown>)[k], (valor as Record<string, unknown>)[k]);
+      return out;
+    }
+    return valor;
+  };
+  const c = normalizar(base, dados) as CadastroJovem;
+  const habs = (dados.Habilidades as { IdHabilidade: number; IdNivel: number; Nome?: string | null }[] | null) ?? [];
+  c.Habilidades = habs.map((h) => ({ IdHabilidade: h.IdHabilidade, IdNivel: h.IdNivel, rotulo: rotuloHabilidade(h.IdHabilidade, h.Nome) }));
+  const idiomas = (dados.Idiomas as { Id: number; IdNivel: number; NomeExtra?: string | null }[] | null) ?? [];
+  c.Idiomas = idiomas.map((i) => ({ Id: i.Id, IdNivel: i.IdNivel, NomeExtra: i.NomeExtra ?? undefined }));
+  return c;
 }

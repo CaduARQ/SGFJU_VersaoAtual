@@ -10,7 +10,7 @@ export class ApiError extends Error {
   }
 }
 
-async function request<T>(method: "GET" | "POST", path: string, body?: unknown): Promise<T> {
+async function request<T>(method: "GET" | "POST" | "PUT", path: string, body?: unknown): Promise<T> {
   const res = await fetch(`/api/${path.replace(/^\/+/, "")}`, {
     method,
     credentials: "include",
@@ -52,4 +52,5 @@ function safeJson(text: string): unknown {
 export const api = {
   get: <T>(path: string) => request<T>("GET", path),
   post: <T>(path: string, body: unknown = {}) => request<T>("POST", path, body),
+  put: <T>(path: string, body: unknown = {}) => request<T>("PUT", path, body),
 };
