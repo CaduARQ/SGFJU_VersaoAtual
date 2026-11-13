@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Text;
@@ -48,6 +48,42 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Common
                 throw new DomainException(mensagemErroformatada);
             }
         }
+        // ---- SGFJU 2.0: versões com parâmetros (evitam injeção de SQL e erros com apóstrofos)
+        public MySqlDataReader ExecuteQuery(string sqlQuery, IDictionary<string, object> parametros, ref MySqlConnection connectionToBeUsed) {
+            try {
+                var command = connectionToBeUsed.CreateCommand();
+                command.CommandText = sqlQuery;
+                command.CommandTimeout = 99999;
+                if (parametros != null)
+                    foreach (var p in parametros) command.Parameters.AddWithValue(p.Key, p.Value ?? DBNull.Value);
+                return command.ExecuteReader();
+            }
+            catch (Exception exc) {
+                var mensagemErroformatada = ExceptionManager.ExceptionManager.FormatExceptionMessage(exc, "ExecuteQuery", "CAMADA_ORM.DAO");
+                throw new DomainException(mensagemErroformatada);
+            }
+        }
+        public void ExecuteNonQuery(string sqlQuery, IDictionary<string, object> parametros) {
+            try {
+                using (var conexao = new MySqlConnection { ConnectionString = this.__stringConnection }) {
+                    conexao.Open();
+                    using (var transaction = conexao.BeginTransaction())
+                    using (var command = conexao.CreateCommand()) {
+                        command.Transaction = transaction;
+                        command.CommandText = sqlQuery;
+                        if (parametros != null)
+                            foreach (var p in parametros) command.Parameters.AddWithValue(p.Key, p.Value ?? DBNull.Value);
+                        command.ExecuteNonQuery();
+                        transaction.Commit();
+                    }
+                }
+            }
+            catch (Exception exc) {
+                var mensagemErroformatada = ExceptionManager.ExceptionManager.FormatExceptionMessage(exc, "ExecuteNonQuery", "CAMADA_ORM.DAO");
+                throw new DomainException(mensagemErroformatada);
+            }
+        }
+
         public void ExecuteNonQuery(string sqlQuery) {
             try {
                 using (var conexao = new MySqlConnection { ConnectionString = this.__stringConnection }) {

@@ -58,10 +58,10 @@ const gerenciar: MenuGrupo = {
     { label: "Usuários", href: "/usuarios" },
     emMigracao("Coordenadores", "GerenciaCoordenadoresEstado.html"),
     emMigracao("Panorama do estado", "GerenciaCoordPanoramaEstado.html"),
-    emMigracao("Associar jovens (Árvore da Vida)", "GerenciaArvoreDaVidaEstadual.html"),
-    emMigracao("Desassociar jovens", "GerenciaArvoreVidaObreirosAssociacoes.html"),
-    emMigracao("Obreiros", "GerenciaArvoreVidaObreiros.html"),
-    emMigracao("Em acompanhamento", "GerenciaAVJovensEmAcompanhamento.html"),
+    { label: "Árvore da Vida", href: "/arvore-da-vida" },
+    { label: "Obreiros e associações", href: "/arvore-da-vida/obreiros" },
+    { label: "Panorama de obreiros", href: "/arvore-da-vida/obreiros?aba=panorama" },
+    { label: "Em acompanhamento", href: "/arvore-da-vida/acompanhamentos" },
   ],
 };
 
@@ -101,7 +101,7 @@ export function menuDoPerfil(codigoPerfil: number): MenuGrupo[] {
           icon: LayoutDashboard,
           itens: [
             { label: "Nacional", href: "/dashboard/nacional" },
-            emMigracao("Árvore da Vida", "DashboardArvoreVidaNacional.html"),
+            { label: "Árvore da Vida", href: "/arvore-da-vida" },
             emMigracao("Camisas FJU", "DashboardNacionalCamisasFJU.html"),
           ],
         },

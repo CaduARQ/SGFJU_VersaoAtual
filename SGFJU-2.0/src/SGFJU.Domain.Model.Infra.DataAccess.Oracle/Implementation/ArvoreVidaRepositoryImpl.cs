@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using SGFJU.Domain.Model.DomainExceptions;
 using SGFJU.Domain.Model.Entities;
 using SGFJU.Domain.Model.Infra.DataAccess.MySql.Common;
@@ -18,6 +18,8 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
 {
     public class ArvoreVidaRepositoryImpl : RepositoryImpl<Jovem>, ArvoreVidaRepository
     {
+        // SGFJU 2.0: contato, dados espirituais, estado civil e endereço são opcionais no cadastro.
+        // Com INNER JOIN, jovens sem algum desses dados sumiam da lista do obreiro.
         private const string QUERY_BASE = " SELECT JV.NOME,                                               " +
                                           "        JV.ID_JOVEM,                                           " +
                                           "        JV.DATANASCIMENTO,                                     " +
@@ -56,13 +58,13 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                                           "          ON REG.ID_BLOCO = BL.ID_BLOCO                        " +
                                           "  INNER JOIN sgfju_dev.SGFJU_TBL_ESTADO ED                     " +
                                           "          ON BL.ID_ESTADO = ED.ID_ESTADO                       " +
-                                          "  INNER JOIN SGFJU_DEV.SGFJU_TBL_CONTATO CTT                   " +
+                                          "  LEFT  JOIN SGFJU_DEV.SGFJU_TBL_CONTATO CTT                   " +
                                           "          ON JV.ID_CONTATO = CTT.ID_CONTATO                    " +
-                                          "  INNER JOIN SGFJU_DEV.SGFJU_TBL_DADOSESPIRITUAIS DESP         " +
+                                          "  LEFT  JOIN SGFJU_DEV.SGFJU_TBL_DADOSESPIRITUAIS DESP         " +
                                           "          ON JV.ID_DADOSESPIRITUAIS = DESP.ID_DADOSESPIRITUAIS " +
-                                          "  INNER JOIN SGFJU_DEV.SGFJU_TBL_TIPOESTADOCIVIL TCIV          " +
+                                          "  LEFT  JOIN SGFJU_DEV.SGFJU_TBL_TIPOESTADOCIVIL TCIV          " +
                                           "          ON JV.ID_TIPOESTADOCIVIL = TCIV.ID_TIPOESTADOCIVIL   " +
-                                          "  INNER JOIN SGFJU_DEV.SGFJU_TBL_ENDERECO ENDE                 " +
+                                          "  LEFT  JOIN SGFJU_DEV.SGFJU_TBL_ENDERECO ENDE                 " +
                                           "          ON JV.ID_ENDERECO = ENDE.ID_ENDERECO                 " +
                                           "  LEFT OUTER JOIN SGFJU_DEV.SGFJU_TBL_JOVEM_PROJETO JPROJ      " +
                                           "		     ON JPROJ.ID_JOVEM = JV.ID_JOVEM                      " +
@@ -154,12 +156,16 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 var sqlRegistraHistorico = "";
                 MySqlConnection conexao = null;
 
-                using (conexao = _DAO.GetConnection()) {
-                    conexao.Open();
-                    sqlRegistraHistorico = "INSERT INTO `SGFJU_DEV`.`SGFJU_TBL_ARVOREVIDA_HISTORICOACOMPANHAMENTO` (`ID_JOVEM`, `ID_OBREIRO`, `ID_STATUSACOMPANHAMENTO`, `TEXTOOBSERVACAO`, `DATAHISTORICOACOMPANHAMENTO`)"+
-                                          $" VALUES( {historicoDoJovem.Jovem.Id}, {historicoDoJovem.Obreiro.Id}, {historicoDoJovem.StatusJovem.Code}, '{historicoDoJovem.TextoObservacao}', '{historicoDoJovem.DataHistoricoAcompanhamento.ToString("yyyy-MM-dd")}' )";
-                    _DAO.ExecuteNonQuery(sqlRegistraHistorico); 
-                }
+                // SGFJU 2.0: INSERT com parâmetros. Antes o texto ia direto no SQL (injeção, e falhava com apóstrofos).
+                sqlRegistraHistorico = "INSERT INTO `SGFJU_DEV`.`SGFJU_TBL_ARVOREVIDA_HISTORICOACOMPANHAMENTO` (`ID_JOVEM`, `ID_OBREIRO`, `ID_STATUSACOMPANHAMENTO`, `TEXTOOBSERVACAO`, `DATAHISTORICOACOMPANHAMENTO`)" +
+                                       " VALUES (@idJovem, @idObreiro, @idStatus, @texto, @data)";
+                _DAO.ExecuteNonQuery(sqlRegistraHistorico, new Dictionary<string, object> {
+                    ["@idJovem"] = historicoDoJovem.Jovem.Id,
+                    ["@idObreiro"] = historicoDoJovem.Obreiro.Id,
+                    ["@idStatus"] = historicoDoJovem.StatusJovem.Code,
+                    ["@texto"] = historicoDoJovem.TextoObservacao,
+                    ["@data"] = historicoDoJovem.DataHistoricoAcompanhamento.Date
+                });
             }
             catch (Exception dataException) {
                 var mensagemTratada = ExceptionManager.ExceptionManager.FormatExceptionMessage(dataException, "CAMADA_ORM");
@@ -236,13 +242,15 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                     SQLWhere.Append(" AND ID_IGREJA = " + parametroPesquisaObreiro.IdIgreja);
                 }
 
+                var parametrosSql = new Dictionary<string, object>(); // SGFJU 2.0: nome como parâmetro
                 if (!string.IsNullOrEmpty(parametroPesquisaObreiro.NomeObreiro)){
-                    SQLWhere.Append(" AND NOMEOBREIRO LIKE'%" + parametroPesquisaObreiro.NomeObreiro + "%' ");
+                    SQLWhere.Append(" AND NOMEOBREIRO LIKE @nome ");
+                    parametrosSql["@nome"] = "%" + parametroPesquisaObreiro.NomeObreiro + "%";
                 }
 
                 using (conexao = _DAO.GetConnection()){
                     conexao.Open();
-                    using (resultadoReader = _DAO.ExecuteQuery(SQLQuery.ToString() + SQLWhere.ToString() + SQLOrderBy, ref conexao)) {
+                    using (resultadoReader = _DAO.ExecuteQuery(SQLQuery.ToString() + SQLWhere.ToString() + SQLOrderBy, parametrosSql, ref conexao)) {
                         while (resultadoReader.Read()) {
                             retorno.Add(new ObreiroDTO {
                                 IdObreiro = int.Parse(resultadoReader["ID_OBREIRO"].ToString()),
@@ -535,14 +543,16 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                     SQLWhere.Append(" AND ID_IGREJA = " + parametroPesquisa.IdIgreja);
                 }
 
+                var parametrosSql = new Dictionary<string, object>(); // SGFJU 2.0: nome como parâmetro
                 if (!string.IsNullOrEmpty(parametroPesquisa.Nome)) {
-                    SQLWhere.Append(" AND NOME LIKE '%" + parametroPesquisa.Nome + "%' ");
+                    SQLWhere.Append(" AND NOME LIKE @nome ");
+                    parametrosSql["@nome"] = "%" + parametroPesquisa.Nome + "%";
                 }
 
                 using (conexao = _DAO.GetConnection())
                 {
                     conexao.Open();
-                    using (resultadoReader = _DAO.ExecuteQuery(SQLQuery.ToString() + SQLWhere.ToString() + SQLOrderBy, ref conexao)) {
+                    using (resultadoReader = _DAO.ExecuteQuery(SQLQuery.ToString() + SQLWhere.ToString() + SQLOrderBy, parametrosSql, ref conexao)) {
                         while (resultadoReader.Read()) {
                             retorno.Add(new TodosJovensDTO {
                                 IdJovem = int.Parse(resultadoReader["ID_JOVEM"].ToString()),   
@@ -610,7 +620,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                                "       JV.ID_JOVEM, " +
                                "       JV.NOME, " +
                                "       JV.NOMEARQUIVOFOTO AS NOMEARQUIVOFOTO_JOVEM, " +
-                               "   FROM SGFJU_DEV.SGFJU_VW_OBREIROS obr " +
+                               "   FROM SGFJU_DEV.SGFJU_VW_OBREIROS OBR " +
                                "  LEFT JOIN SGFJU_DEV.SGFJU_TBL_ARVOREVIDA_JOVEMOBREIRO JOBR " +
                                "         ON OBR.ID_OBREIRO = JOBR.ID_OBREIRO " +
                                "  LEFT JOIN SGFJU_DEV.SGFJU_TBL_JOVEM JV " +
@@ -672,7 +682,7 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 var SQLQuery = "SELECT OBR.*,  " +
                                "       JOBR.* " +
                                "   FROM SGFJU_DEV.SGFJU_VW_ARVOREVIDA_JOVENS_EM_ACOMPANHAMENTO JOBR " +
-                               "  INNER JOIN SGFJU_DEV.SGFJU_VW_OBREIROS obr " +
+                               "  INNER JOIN SGFJU_DEV.SGFJU_VW_OBREIROS OBR " +
                                "         ON OBR.ID_OBREIRO = JOBR.ID_OBREIRO " +
                                "  WHERE 1=1 ";
                 MySqlConnection conexao = null;

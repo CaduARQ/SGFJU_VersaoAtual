@@ -71,7 +71,7 @@ Build de produção: `npm run build && npm run start`.
 | 5 actions POST sem `[FromBody]` | corrigido |
 
 ### Front (`web/`)
-Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jovens** (filtros encadeados, busca, paginação, exportar CSV, link do WhatsApp), **consulta geral**, **novo jovem**, **editar jovem**, **ficha do jovem** (com foto), **igrejas/blocos/regiões** e **usuários**.
+Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jovens** (filtros encadeados, busca, paginação, exportar CSV, link do WhatsApp), **consulta geral**, **Árvore da Vida**, **novo jovem**, **editar jovem**, **ficha do jovem** (com foto), **igrejas/blocos/regiões** e **usuários**.
 
 ### Cadastro de jovem (`/jovens/novo`)
 - Formulário em **7 etapas**, com os mesmos campos do `RegistraJovem.aspx`. Perguntas que dependem de outra só aparecem quando fazem sentido (ex.: "quando se batizou?" só depois de "Sim").
@@ -95,6 +95,23 @@ Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jove
 - Campos Sim/Não vazios (`""`) eram rejeitados com erro 400. Agora valem como "não informado".
 
 > ⚠️ **Injeção de SQL em outras telas:** o mesmo padrão aparece em cerca de 90 pontos de 9 repositórios (`JovemRepositoryImpl`, `CoordenadorRepositoryImpl`, `EstadoRepositoryImpl`, `BuscaAvancadaTestemunhoRepositoryImpl`...). As rotas migradas até agora estão protegidas. Ao migrar cada tela restante, troque a concatenação por parâmetros (`MySqlCommand.Parameters`) ou passe os filtros pelo `SqlSeguro`. **Isso também afeta o site antigo em produção.**
+
+### Árvore da Vida (`/arvore-da-vida`)
+Substitui 8 telas antigas (dashboards, associar, desassociar, obreiros, panorama, em acompanhamento, histórico e registro):
+- **Painel:** totais do estado (ADM vê o país e cada estado).
+- **Obreiros:** busca por estrutura e nome. Em cada obreiro, os jovens que ele acompanha e os jovens da igreja dele sem acompanhamento, com seleção múltipla para **associar** (com data de início) ou **desassociar**.
+- **Panorama:** obreiros com e sem "ramos" e o percentual dos que acompanham.
+- **Em acompanhamento:** lista com opção de agrupar por obreiro. Cada jovem tem uma linha do tempo do histórico e um formulário para registrar o acompanhamento.
+- Endpoints em `/api/v2/arvore-vida/*`, sem sessão.
+
+**Problemas encontrados e corrigidos:**
+- **Acesso entre estados.** As rotas antigas aceitavam qualquer id de obreiro ou jovem, então um usuário podia associar, desassociar ou registrar histórico fora do próprio estado. Agora tudo é limitado ao escopo do usuário (estado; bloco para secretaria de bloco; região para regional) e conferido antes de qualquer alteração. Também só é possível associar jovens da igreja do obreiro que ainda não têm acompanhamento.
+- **"Jovens sem acompanhamento" do país inteiro.** Com a igreja vazia, a consulta antiga listava todos os jovens sem acompanhamento do Brasil. Agora usa sempre a igreja do obreiro.
+- **Injeção de SQL no histórico.** O texto do acompanhamento ia direto num `INSERT`. Além do risco, qualquer apóstrofo ("copo d'água") fazia o registro falhar. Agora usa parâmetros (`DAO.ExecuteNonQuery(sql, parametros)`), assim como as buscas por nome de obreiro e de jovem.
+- **Jovens sumindo da lista do obreiro.** A consulta exigia estado civil, endereço, contato e dados espirituais (`INNER JOIN`). Quem não tinha algum desses dados opcionais não aparecia como acompanhado. Trocado por `LEFT JOIN`.
+- Apelido de tabela `obr`/`OBR` com maiúsculas diferentes: só funcionava com `lower_case_table_names=1`. Padronizado.
+
+> As views `SGFJU_VW_OBREIROS` e `SGFJU_VW_ARVOREVIDA_JOVENS_EM_ACOMPANHAMENTO` existem só no banco de produção (não estão no repositório). Nos testes, recriei views equivalentes. **Vale exportar a definição real delas para o repositório** (`SHOW CREATE VIEW ...`).
 
 ### Edição de jovem (`/jovens/{id}/editar`)
 - Usa **o mesmo formulário** do cadastro (pasta `web/src/app/(app)/jovens/_formulario/`), já preenchido. Todas as etapas ficam acessíveis, e "Salvar alterações" aparece em todas.
@@ -135,7 +152,7 @@ As rotas da API já existem. Falta só a tela em React.
 - [x] Altera jovem (`AlteraJovem.aspx`)
 - [x] Consulta geral (`ConsultaGeral*.html`)
 - [ ] Autorizações e dashboard de camisas
-- [ ] Árvore da Vida (dashboards, associar/desassociar, obreiros, acompanhamento)
+- [x] Árvore da Vida (dashboards, associar/desassociar, obreiros, acompanhamento)
 - [ ] Altar Jovem (nacional/estadual, levantados, relatório)
 - [ ] Coordenadores e panorama do estado
 - [ ] Relatórios de reunião FJU

@@ -159,3 +159,18 @@ export type Usuario = {
 };
 
 export type RespostaRequisicao = { RequisicaoBemSucedida: boolean; MensagemRespostaRequisicao: string | null };
+
+// ---- Árvore da Vida
+export type ObreiroAV = {
+  IdObreiro: number; NomeObreiro: string; IdEstado: number; NomeEstado: string; IdBloco: number; NomeBloco: string;
+  IdRegiao: number; NomeRegiao: string; IdIgreja: number; NomeIgreja: string; AnosObreiro: number; MesesObreiro: number; FotoUrl: string | null;
+};
+export type TotaisAV = {
+  IdEstado: number; NomeEstado: string; QuantidadeObreiros: number; QuantidadeJovens: number; QuantidadeObreirosQueAcompanham: number;
+  QuantidadeJovensAcompanhados: number; QuantidadeJovensSemAcompanhamento: number; MediaAcompanhamentoJovensPorObreiro: string;
+};
+export type HistoricoAV = {
+  IdJovem: number; Nome: string; FotoUrl: string | null; IdObreiro: number; NomeObreiro: string;
+  DataInicioAcompanhamento: string | null; Igreja: Igreja | null;
+  Historico: { IdHistorico: number; IdStatusAcompanhamento: number; DescricaoStatusAcompanhamento: string; TextoHistorico: string; DataHistorico: string }[];
+};
