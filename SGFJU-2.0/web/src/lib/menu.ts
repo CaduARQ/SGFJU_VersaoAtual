@@ -56,8 +56,8 @@ const gerenciar: MenuGrupo = {
   itens: [
     { label: "Igrejas, blocos e regiões", href: "/estrutura" },
     { label: "Usuários", href: "/usuarios" },
-    emMigracao("Coordenadores", "GerenciaCoordenadoresEstado.html"),
-    emMigracao("Panorama do estado", "GerenciaCoordPanoramaEstado.html"),
+    { label: "Coordenadores", href: "/coordenadores" },
+    { label: "Panorama de coordenadores", href: "/coordenadores/panorama" },
     { label: "Árvore da Vida", href: "/arvore-da-vida" },
     { label: "Obreiros e associações", href: "/arvore-da-vida/obreiros" },
     { label: "Panorama de obreiros", href: "/arvore-da-vida/obreiros?aba=panorama" },
@@ -111,11 +111,11 @@ export function menuDoPerfil(codigoPerfil: number): MenuGrupo[] {
           itens: [
             { label: "Todos os jovens", href: "/jovens" },
             { label: "Consulta geral", href: "/consulta" },
-            emMigracao("Altar Jovem", "GerenciaNacionalAltarJovem.html"),
-            emMigracao("Jovens levantados no altar", "ListaJovensLevantadosAltar.html"),
+            { label: "Altar Jovem", href: "/altar-jovem" },
+            { label: "Levantados para o altar", href: "/altar-jovem?aba=levantados" },
           ],
         },
-        { label: "Gerenciar", icon: Building2, itens: [{ label: "Igrejas, blocos e regiões", href: "/estrutura" }, { label: "Usuários", href: "/usuarios" }] },
+        { label: "Gerenciar", icon: Building2, itens: [{ label: "Igrejas, blocos e regiões", href: "/estrutura" }, { label: "Usuários", href: "/usuarios" }, { label: "Coordenadores", href: "/coordenadores" }, { label: "Panorama de coordenadores", href: "/coordenadores/panorama" }] },
         help(false),
         { label: "Eventos", icon: CalendarDays, itens: [{ label: "Eventos FJU", href: "http://fjuoficial.org/eventos", externo: true }] },
       ];
@@ -129,6 +129,7 @@ export function menuDoPerfil(codigoPerfil: number): MenuGrupo[] {
           itens: [
             { label: "Todos os jovens", href: "/jovens" },
             { label: "Consulta geral", href: "/consulta" },
+            { label: "Altar Jovem", href: "/altar-jovem" },
             emMigracao("Autorizações de camisas", "GerenciaCamisasFJUEstado.html"),
             emMigracao("Testemunho", "BuscaEspecializadaTestemunho.html"),
           ],
@@ -138,7 +139,7 @@ export function menuDoPerfil(codigoPerfil: number): MenuGrupo[] {
     case PERFIS.SECRETARIA_ESTADUAL:
       return [
         voluntarios,
-        { label: "Altar", icon: Users, itens: [emMigracao("Levantados", "ListaJovensLevantadosAltar.html")] },
+        { label: "Altar", icon: Users, itens: [{ label: "Levantados para o altar", href: "/altar-jovem?aba=levantados" }] },
         relatorios,
         help(true),
         consultasSecretaria,

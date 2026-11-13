@@ -25,9 +25,6 @@ namespace SGFJU.Api.Controllers
     [Route("api/v2/arvore-vida")]
     public class ArvoreVidaV2Controller : ControllerBase
     {
-        private const int PERFIL_SECRETARIA_BLOCO = 7;
-        private const int PERFIL_SECRETARIA_REGIONAL = 9;
-
         public static readonly IReadOnlyList<object> STATUS = new[]
         {
             new { Id = 1, Nome = "Iniciando na fé" },
@@ -35,34 +32,11 @@ namespace SGFJU.Api.Controllers
             new { Id = 3, Nome = "Batizado com o Espírito Santo" },
         };
 
-        // ------------------------------------------------------------------ escopo do usuário
-        private sealed class Escopo
-        {
-            public bool EhAdm { get; set; }
-            public int IdEstado { get; set; }
-            public int IdBloco { get; set; }
-            public int IdRegiao { get; set; }
-
-            public bool Permite(int idEstado, int idBloco, int idRegiao) =>
-                EhAdm || (idEstado == IdEstado && (IdBloco == 0 || idBloco == IdBloco) && (IdRegiao == 0 || idRegiao == IdRegiao));
-        }
-
-        private static Escopo ObterEscopo()
-        {
-            var u = SessionHelper.RetornaUsuarioLogado();
-            int.TryParse(SgfjuConfig.Get("CodeADM"), out var codigoAdm);
-            var perfil = u?.PerfilUsuario?.Code ?? 0;
-            return new Escopo
-            {
-                EhAdm = perfil == codigoAdm,
-                IdEstado = u?.EstadoUsuario?.Id ?? -1,
-                IdBloco = perfil == PERFIL_SECRETARIA_BLOCO ? u?.BlocoUsuario?.Id ?? -1 : 0,
-                IdRegiao = perfil == PERFIL_SECRETARIA_REGIONAL ? u?.RegiaoUsuario?.Id ?? -1 : 0,
-            };
-        }
+        // ------------------------------------------------------------------ escopo do usuário (Legado/EscopoUsuario.cs)
+        private static EscopoUsuario ObterEscopo() => EscopoUsuario.Atual();
 
         /// <summary>Aplica o escopo sobre os filtros pedidos (ADM pode escolher o estado).</summary>
-        private static PesquisaGeralDTO Filtro(Escopo e, int idEstado, int idBloco, int idRegiao, int idIgreja, string nome) => new PesquisaGeralDTO
+        private static PesquisaGeralDTO Filtro(EscopoUsuario e, int idEstado, int idBloco, int idRegiao, int idIgreja, string nome) => new PesquisaGeralDTO
         {
             IdEstado = e.EhAdm ? idEstado : e.IdEstado,
             IdBloco = e.IdBloco != 0 ? e.IdBloco : idBloco,
@@ -71,7 +45,7 @@ namespace SGFJU.Api.Controllers
             Nome = string.IsNullOrWhiteSpace(nome) ? null : nome.Trim(),
         };
 
-        private static ObreiroDTO BuscarObreiro(int idObreiro, Escopo e)
+        private static ObreiroDTO BuscarObreiro(int idObreiro, EscopoUsuario e)
         {
             var obreiro = new FacadeArvoreVidaImpl()
                 .PesquisaObreiroPorParametro(new ParametroPesquisaObreiroDTO { IdObreiro = idObreiro })

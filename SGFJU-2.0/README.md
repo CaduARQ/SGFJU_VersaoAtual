@@ -113,6 +113,19 @@ Substitui 8 telas antigas (dashboards, associar, desassociar, obreiros, panorama
 
 > As views `SGFJU_VW_OBREIROS` e `SGFJU_VW_ARVOREVIDA_JOVENS_EM_ACOMPANHAMENTO` existem só no banco de produção (não estão no repositório). Nos testes, recriei views equivalentes. **Vale exportar a definição real delas para o repositório** (`SHOW CREATE VIEW ...`).
 
+### Altar Jovem (`/altar-jovem`) e Coordenadores (`/coordenadores`)
+
+- **Altar Jovem:** filtros de estrutura, nome, sexo, grupos (Água, Óleo, Sal, Luz) e "só Altar Jovem 318". A aba **Levantados para o altar** lista os jovens classificados como levantados, com exportação CSV.
+- **Coordenadores:** lista por igreja, com tempo de FJU e jovens no último encontro. O botão **Troca** registra a saída (data, motivo, quem fez a troca e novo coordenador opcional).
+- **Panorama de coordenadores:** igrejas com/sem coordenador e sem FJU, e a lista de igrejas sem coordenador. O ADM vê o Brasil inteiro e o quadro por estado.
+- Rotas novas em `api/v2/altar-jovem/*` e `api/v2/coordenadores/*`. O escopo do usuário é aplicado no servidor: um pastor estadual não vê nem altera outro estado, mesmo forçando o filtro.
+
+Correções em relação à versão antiga:
+
+- **Troca de coordenador de outro estado:** a página antiga aceitava qualquer `id`. Agora a API confere se o coordenador pertence ao escopo do usuário (senão, 404).
+- **Filtro de sexo concatenado no SQL:** agora só aceita `M` ou `F`. Os grupos também vêm de uma lista fechada, e o nome é filtrado sem ir para o SQL.
+- A tabela `IgrejaCoordenador` precisa da coluna `ID_IGREJA_COORDENADOR` (chave usada pelo mapeamento). Confira no banco real antes de publicar.
+
 ### Edição de jovem (`/jovens/{id}/editar`)
 - Usa **o mesmo formulário** do cadastro (pasta `web/src/app/(app)/jovens/_formulario/`), já preenchido. Todas as etapas ficam acessíveis, e "Salvar alterações" aparece em todas.
 - `GET /api/v2/jovens/{id}` devolve o jovem no mesmo formato do cadastro. `PUT /api/v2/jovens/{id}` salva.
@@ -153,8 +166,9 @@ As rotas da API já existem. Falta só a tela em React.
 - [x] Consulta geral (`ConsultaGeral*.html`)
 - [ ] Autorizações e dashboard de camisas
 - [x] Árvore da Vida (dashboards, associar/desassociar, obreiros, acompanhamento)
-- [ ] Altar Jovem (nacional/estadual, levantados, relatório)
-- [ ] Coordenadores e panorama do estado
+- [x] Altar Jovem (nacional/estadual e levantados). Falta o relatório.
+- [x] Coordenadores (lista e troca) e panorama do estado
+- [ ] Cadastro e alteração de coordenador (`RegistraCoordenadorFJU.aspx` / `AlteraCoordenador.aspx`)
 - [ ] Relatórios de reunião FJU
 - [ ] Instituições de ensino (Help)
 - [ ] Patrimônio e despesas
