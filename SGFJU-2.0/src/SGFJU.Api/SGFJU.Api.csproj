@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>SGFJU.Api</RootNamespace>
+    <UserSecretsId>sgfju-api-2c6f8f0e</UserSecretsId>
+    <!-- Os controllers foram portados do Web API 2 com o mínimo de mudanças; avisos de nulabilidade antigos não bloqueiam o build. -->
+    <NoWarn>$(NoWarn);CS0168;CS0219;CS0162</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SGFJU.Bussiness.Facade\SGFJU.Bussiness.Facade.csproj" />
+    <ProjectReference Include="..\SGFJU.Common.UnityContainer\SGFJU.Common.UnityContainer.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model\SGFJU.Domain.Model.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Logging\SGFJU.Domain.Model.Infra.Logging.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Security\SGFJU.Domain.Model.Infra.Security.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Serialization\SGFJU.Domain.Model.Infra.Serialization.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Util\SGFJU.Domain.Model.Infra.Util.csproj" />
+    <ProjectReference Include="..\SGfju.Domain.Model.Infra.ExceptionManager\SGFJU.Domain.Model.Infra.ExceptionManager.csproj" />
+    <ProjectReference Include="..\SGFJU.Interfaces\SGFJU.Interfaces.csproj" />
+    <ProjectReference Include="..\SGFJU.ServicesLayer.DTO\SGFJU.ServicesLayer.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

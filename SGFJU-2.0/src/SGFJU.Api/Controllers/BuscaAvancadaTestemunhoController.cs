@@ -1,0 +1,48 @@
+using SGFJU.Domain.Model.Infra.Util;
+using SGFJU.Bussiness.Facade;
+using SGFJU.Domain.Model.Infra.ExceptionManager;
+using SGFJU.Api.Legado;
+using SGFJU.ServicesLayer.DTO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using Microsoft.AspNetCore.Mvc;
+namespace SGFJU.Api.Controllers
+{
+    public class BuscaAvancadaTestemunhoController : ControllerBase
+    {
+        [HttpPost]
+        [Route("api/BuscaAvancadaTestemunho/BuscaAvancadaTestemunhoPorParametro")]
+        public IList<RetornoBuscaAvancadaDTO> BuscaAvancadaTestemunhoPorParametro([FromBody] BuscaAvancadaParametroDTO parametrosBuscaAvancada) {
+            try {
+                var facade = new BuscaAvancadaTestemunhoFacadeImpl();
+                var resultadoBuscaAvancada = facade.BuscaAvancadaTestemunhoPorParametro(parametrosBuscaAvancada);
+                SessionHelper.RetornaSessaoAtual().Add("TestemunhosRetornados", resultadoBuscaAvancada);
+                return resultadoBuscaAvancada;
+            }
+            catch (Exception controllerExc) {
+                var mensagemTratada = ExceptionManager.FormatExceptionMessage(controllerExc, "CAMADA_UI.Controller");
+                LoggerHelper.WriteLogError(mensagemTratada);
+                throw new Exception(mensagemTratada);
+            }
+        }
+
+        [HttpPost]
+        [Route("api/BuscaAvancadaTestemunho/ObterTxtoTestemunhoSessao")]
+        public RetornoBuscaAvancadaDTO ObterTxtoTestemunhoSessao([FromBody] IdXDTO parametroIdX ) {
+            try {
+                var sessaoAtual = SessionHelper.RetornaSessaoAtual();
+                var testemunhosSelecionado = (sessaoAtual["TestemunhosRetornados"] as IList<RetornoBuscaAvancadaDTO>).Where(ts => ts.IdX == parametroIdX.IdX).Single();
+
+                return testemunhosSelecionado;
+            }
+            catch (Exception controllerExc) {
+                var mensagemTratada = ExceptionManager.FormatExceptionMessage(controllerExc, "CAMADA_UI.Controller");
+                LoggerHelper.WriteLogError(mensagemTratada);
+                throw new Exception(mensagemTratada);
+            }
+        }
+
+    }
+}

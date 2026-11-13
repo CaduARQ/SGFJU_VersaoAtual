@@ -1,0 +1,13 @@
+[Bb]in/
+[Oo]bj/
+*.user
+.vs/
+TestResults/
+appsettings.*.local.json
+.env
+.env.local
+web/node_modules/
+web/.next/
+# Dados de execução (caches, logs, fotos): ficam fora do Git
+dados/*
+!dados/LEIA-ME.md

@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SGFJU.Api/SGFJU.Api.csproj" />
+    <Project Path="src/SGFJU.Bussiness.Facade/SGFJU.Bussiness.Facade.csproj" />
+    <Project Path="src/SGFJU.Common.UnityContainer/SGFJU.Common.UnityContainer.csproj" />
+    <Project Path="src/SGFJU.Domain.Model.Infra.Logging/SGFJU.Domain.Model.Infra.Logging.csproj" />
+    <Project Path="src/SGFJU.Domain.Model.Infra.Security/SGFJU.Domain.Model.Infra.Security.csproj" />
+    <Project Path="src/SGFJU.Domain.Model.Infra.Serialization/SGFJU.Domain.Model.Infra.Serialization.csproj" />
+    <Project Path="src/SGFJU.Domain.Model.Infra.Util/SGFJU.Domain.Model.Infra.Util.csproj" />
+    <Project Path="src/SGFJU.Domain.Model/SGFJU.Domain.Model.csproj" />
+    <Project Path="src/SGFJU.Interfaces/SGFJU.Interfaces.csproj" />
+    <Project Path="src/SGFJU.ServicesLayer.DTO/SGFJU.ServicesLayer.DTO.csproj" />
+    <Project Path="src/SGFJU.Testes/SGFJU.Testes.csproj" />
+    <Project Path="src/SGFJU.Testes_App/SGFJU.Testes_App.csproj" />
+  </Folder>
+  <Folder Name="/src/SGFJU.Domain.Model.Infra.DataAccess.Oracle/">
+    <Project Path="src/SGFJU.Domain.Model.Infra.DataAccess.Oracle/SGFJU.Domain.Model.Infra.DataAccess.MySql.csproj" />
+  </Folder>
+  <Folder Name="/src/SGfju.Domain.Model.Infra.ExceptionManager/">
+    <Project Path="src/SGfju.Domain.Model.Infra.ExceptionManager/SGFJU.Domain.Model.Infra.ExceptionManager.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,91 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using FluentNHibernate.Cfg;
+using FluentNHibernate.Cfg.Db;
+using confDefault = System.Configuration;
+
+using SGFJU.Domain.Model.Entities;
+
+using NHibernate.Tool.hbm2ddl;
+using System.Reflection;
+using NHibernate;
+using NHibernate.Cfg;
+using SGFJU.Domain.Model.Infra.DataAccess.MySql.Mapping.Entities;
+using SGFJU.Domain.Model.DomainExceptions;
+
+namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Common
+{
+    public static class FluentSessionFactory
+    {
+        private const string NOME_CLASSE = "FluentSessionFactory";
+        public static ISessionFactory CreateFactory(string connectionString)
+        {
+            try
+            {
+                return Fluently.Configure()
+                .Database(MySQLConfiguration.Standard.ConnectionString(connectionString))
+                //.Database(
+                //    OracleClientConfiguration.Oracle10.ConnectionString(connectionString)
+                //                                      .Provider<NHibernate.Connection.DriverConnectionProvider>()
+                // )
+                .Mappings(
+                    m => m.FluentMappings
+                    .AddFromAssembly(Assembly.GetAssembly(typeof(EstadoMap)))
+                    .AddFromAssembly(Assembly.GetAssembly(typeof(Estado)))
+                )
+                // No .NET Core/.NET 5+ o validador de proxies do NHibernate 5.2 acusa falsamente
+                // "MemberwiseClone should be virtual" em todas as entidades. Desligá-lo é o contorno
+                // recomendado pela comunidade NHibernate; o lazy loading continua funcionando.
+                .ExposeConfiguration(cfg => cfg.SetProperty(NHibernate.Cfg.Environment.UseProxyValidator, "false"))
+                // Com o MySql.Data no .NET moderno, a leitura de palavras reservadas do banco durante a
+                // criação da SessionFactory falha com "Connection must be valid and open".
+                // O modo "none" apenas pula essa leitura (as colunas do SGFJU não usam palavras reservadas).
+                .ExposeConfiguration(cfg => cfg.SetProperty(NHibernate.Cfg.Environment.Hbm2ddlKeyWords, "none"))
+                .ExposeConfiguration(BuildSchema)
+                .BuildSessionFactory();
+            }
+            catch (HibernateException ORM_TierException)
+            {
+                string NOME_METODO = "CreateFactory";
+                var mensagemDetalhada = $"ORM_tIER.{NOME_CLASSE}.{NOME_METODO} - " + ORM_TierException.Message;
+                throw new DomainException(mensagemDetalhada);
+            }
+            catch (Exception repositoryException)
+            {
+                string NOME_METODO = "CreateFactory";
+                var mensagemDetalhada = $"{NOME_CLASSE}.{NOME_METODO} - " + repositoryException.Message;
+                throw new DomainException(mensagemDetalhada);
+            }
+        }
+
+        private static void BuildSchema(Configuration config)
+        {
+            SchemaExport schema = new SchemaExport(config);
+            SchemaUpdate schemaUpdate = new SchemaUpdate(config);
+
+            try
+            {
+                //schema.Drop(false, true);
+                //schema.Create(false, true);
+
+                //schemaUpdate.Execute(false, true);
+            }
+            catch (HibernateException ORM_TierException)
+            {
+                string NOME_METODO = "CreateFactory";
+                var mensagemDetalhada = $"ORM_tIER.{NOME_CLASSE}.{NOME_METODO} - " + ORM_TierException.Message;
+                throw new DomainException(mensagemDetalhada);
+            }
+            catch (Exception repositoryException)
+            {
+                string NOME_METODO = "CreateFactory";
+                var mensagemDetalhada = $"{NOME_CLASSE}.{NOME_METODO} - " + repositoryException.Message;
+                throw new DomainException(mensagemDetalhada);
+            }
+
+            //SchemaUpdate schemaUpdate = new SchemaUpdate(config);
+            //schemaUpdate.Execute(false, true);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="NLog" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SGFJU.Domain.Model.Infra.Serialization\SGFJU.Domain.Model.Infra.Serialization.csproj" />
+    <ProjectReference Include="..\SGFJU.Domain.Model\SGFJU.Domain.Model.csproj" />
+  </ItemGroup>
+
+</Project>
