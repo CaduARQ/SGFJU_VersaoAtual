@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using NHibernate;
 using SGFJU.Domain.Model.DomainExceptions;
 using SGFJU.Domain.Model.Entities;
@@ -2027,94 +2027,45 @@ namespace SGFJU.Domain.Model.Infra.DataAccess.MySql.Implementation
                 }
 
 
+                // SGFJU 2.0: projetos e departamentos com IN (...). A versão antiga usava "AND x OR y" sem parênteses.
                 if (parametrosConsultaGeral.IdsProjetosSelecionadosParaPesquisa != null &&
                     parametrosConsultaGeral.IdsProjetosSelecionadosParaPesquisa.Count > 0) {
-                    foreach (var projetoSelecionado in parametrosConsultaGeral.IdsProjetosSelecionadosParaPesquisa){
-                        if (!joinRealizadoTabelaProjeto) {
-                            joinRealizadoTabelaProjeto = true;
-
-                            SQLQuery.Append("   LEFT JOIN sgfju_dev.SGFJU_TBL_JOVEM_PROJETO JPROJ ");
-                            SQLQuery.Append("		   ON JPROJ.ID_JOVEM = JV.ID_JOVEM            ");
-
-                            SQLWhere.Append(" AND JPROJ.ID_PROJETO = " + projetoSelecionado + " ");
-                        }
-                        else {
-                            SQLWhere.Append(" OR (JPROJ.ID_PROJETO = " + projetoSelecionado + " )");
-                        }
-                    }
+                    SQLQuery.Append("   INNER JOIN sgfju_dev.SGFJU_TBL_JOVEM_PROJETO JPROJ ");
+                    SQLQuery.Append("		   ON JPROJ.ID_JOVEM = JV.ID_JOVEM            ");
+                    SQLWhere.Append(" AND JPROJ.ID_PROJETO IN (" + string.Join(",", parametrosConsultaGeral.IdsProjetosSelecionadosParaPesquisa) + ") ");
                 }
 
                 if (parametrosConsultaGeral.DepartamentosSelecionados != null &&
-                    parametrosConsultaGeral.DepartamentosSelecionados.Count >0){
-                    foreach (var departamentoSelecionadoParaPesquisa in parametrosConsultaGeral.DepartamentosSelecionados){
-                        if (!joinRealizadoTabelaDepartamento){
-                            joinRealizadoTabelaDepartamento = true;
-                            SQLQuery.Append("   LEFT JOIN sgfju_dev.SGFJU_TBL_JOVEM_DEPTO_PROJETO JDP_PROJ ");
-                            SQLQuery.Append("		   ON JDP_PROJ.JOVEM_ID = JV.ID_JOVEM            ");
-
-                            SQLWhere.Append("  AND JDP_PROJ.DEPARTAMENTOPROJETO_ID = " + departamentoSelecionadoParaPesquisa + " ");
-                        }
-                        else {
-                            SQLWhere.Append("  OR ( JDP_PROJ.DEPARTAMENTOPROJETO_ID = " + departamentoSelecionadoParaPesquisa + " )");
-                        }
-                    }
+                    parametrosConsultaGeral.DepartamentosSelecionados.Count > 0) {
+                    SQLQuery.Append("   INNER JOIN sgfju_dev.SGFJU_TBL_JOVEM_DEPTO_PROJETO JDP_PROJ ");
+                    SQLQuery.Append("		   ON JDP_PROJ.JOVEM_ID = JV.ID_JOVEM            ");
+                    SQLWhere.Append(" AND JDP_PROJ.DEPARTAMENTOPROJETO_ID IN (" + string.Join(",", parametrosConsultaGeral.DepartamentosSelecionados) + ") ");
                 }
 
-                if (parametrosConsultaGeral.ParametrosHabilidade != null &&
-                    parametrosConsultaGeral.ParametrosHabilidade.Count > 0) {
-                    foreach (var parametroHabilidade in parametrosConsultaGeral.ParametrosHabilidade) {                        
-                        if (!joinRealizadoTabelaHabilidade) {
-                            joinRealizadoTabelaHabilidade = true;
-                            SQLQuery.Append("   LEFT JOIN sgfju_dev.SGFJU_TBL_JOVEM_HABILIDADE JHAB ");
-                            SQLQuery.Append("		   ON JHAB.ID_JOVEM = JV.ID_JOVEM            ");
-
-                            SQLWhere.Append(" AND JHAB.ID_HABILIDADE = " + parametroHabilidade.IdHabilidade + " ");
-                            SQLWhere.Append(" AND JHAB.ID_NIVEL = " + parametroHabilidade.IdNivel + " ");
-                        }
-                        else {
-                            SQLWhere.Append(" OR JHAB.ID_HABILIDADE = " + parametroHabilidade.IdHabilidade + " ");
-                            SQLWhere.Append(" AND JHAB.ID_NIVEL = " + parametroHabilidade.IdNivel + " ");
-                        }
+                // SGFJU 2.0: habilidades, esportes e tons de voz agora formam UM grupo entre parênteses
+                // ("possui qualquer uma destas"). A versão antiga concatenava "AND x OR y" e o OR anulava os demais filtros.
+                var condicoesHabilidade = new List<string>();
+                if (parametrosConsultaGeral.ParametrosHabilidade != null)
+                    foreach (var h in parametrosConsultaGeral.ParametrosHabilidade)
+                        condicoesHabilidade.Add(h.IdNivel > 0
+                            ? $"(JHAB.ID_HABILIDADE = {h.IdHabilidade} AND JHAB.ID_NIVEL = {h.IdNivel})"
+                            : $"(JHAB.ID_HABILIDADE = {h.IdHabilidade})");
+                if (parametrosConsultaGeral.HabilidadesEsporteSelecionadas != null)
+                    for (var i = 0; i < parametrosConsultaGeral.HabilidadesEsporteSelecionadas.Count; i++) {
+                        var nivel = (parametrosConsultaGeral.IdsNivelHabilidadesEsporteSelecionadas != null && parametrosConsultaGeral.IdsNivelHabilidadesEsporteSelecionadas.Count > i)
+                            ? parametrosConsultaGeral.IdsNivelHabilidadesEsporteSelecionadas[i] : 0;
+                        condicoesHabilidade.Add(nivel > 0
+                            ? $"(JHAB.ID_HABILIDADE = {parametrosConsultaGeral.HabilidadesEsporteSelecionadas[i]} AND JHAB.ID_NIVEL = {nivel})"
+                            : $"(JHAB.ID_HABILIDADE = {parametrosConsultaGeral.HabilidadesEsporteSelecionadas[i]})");
                     }
+                if (parametrosConsultaGeral.TonsDeVozSelecionados != null)
+                    foreach (var t in parametrosConsultaGeral.TonsDeVozSelecionados)
+                        condicoesHabilidade.Add($"(JHAB.ID_HABILIDADE = {t})");
+                if (condicoesHabilidade.Count > 0) {
+                    SQLQuery.Append("   INNER JOIN sgfju_dev.SGFJU_TBL_JOVEM_HABILIDADE JHAB ");
+                    SQLQuery.Append("		   ON JHAB.ID_JOVEM = JV.ID_JOVEM            ");
+                    SQLWhere.Append(" AND ( " + string.Join(" OR ", condicoesHabilidade) + " ) ");
                 }
-
-                var iteradorHabilidadeEsporte = -1;
-
-                if (parametrosConsultaGeral.HabilidadesEsporteSelecionadas       != null &&
-                    parametrosConsultaGeral.HabilidadesEsporteSelecionadas.Count >  0) {
-                    foreach (var idHabilidadeEsporte in parametrosConsultaGeral.HabilidadesEsporteSelecionadas){
-                        iteradorHabilidadeEsporte++;
-                        if (!joinRealizadoTabelaHabilidade) {
-                            joinRealizadoTabelaHabilidade = true;
-                            SQLQuery.Append("   LEFT JOIN sgfju_dev.SGFJU_TBL_JOVEM_HABILIDADE JHAB ");
-                            SQLQuery.Append("		   ON JHAB.ID_JOVEM = JV.ID_JOVEM            ");
-
-                            SQLWhere.Append(" AND JHAB.ID_HABILIDADE = " + idHabilidadeEsporte + " ");
-                            SQLWhere.Append(" AND JHAB.ID_NIVEL = " + parametrosConsultaGeral.IdsNivelHabilidadesEsporteSelecionadas[iteradorHabilidadeEsporte] + " ");
-                        }
-                        else {
-                            SQLWhere.Append(" OR JHAB.ID_HABILIDADE = " + idHabilidadeEsporte + " ");
-                            SQLWhere.Append(" AND JHAB.ID_NIVEL = " + parametrosConsultaGeral.IdsNivelHabilidadesEsporteSelecionadas[iteradorHabilidadeEsporte] + " ");
-                        }
-                    }
-                }
-
-                if (parametrosConsultaGeral.TonsDeVozSelecionados       != null &&
-                    parametrosConsultaGeral.TonsDeVozSelecionados.Count >  0 ) {
-                    foreach (var tonDeVozSelecionadoParaPesquisa in parametrosConsultaGeral.TonsDeVozSelecionados){
-                        if (!joinRealizadoTabelaHabilidade) {
-                            joinRealizadoTabelaHabilidade = true;
-                            SQLQuery.Append("   LEFT JOIN sgfju_dev.SGFJU_TBL_JOVEM_HABILIDADE JHAB ");
-                            SQLQuery.Append("		   ON JHAB.ID_JOVEM = JV.ID_JOVEM            ");
-
-                            SQLWhere.Append(" AND JHAB.ID_HABILIDADE = " + tonDeVozSelecionadoParaPesquisa + " ");
-                        }
-                        else {
-                            SQLWhere.Append(" OR JHAB.ID_HABILIDADE = " + tonDeVozSelecionadoParaPesquisa + " ");
-                        }
-                    }
-                }
-
                 if (parametrosConsultaGeral.IdReuniaoFJU != 0) {
                     SQLQuery.Append("   LEFT JOIN sgfju_dev.SGFJU_TBL_JOVEM_REUNIAOFJU RFJU ");
                     SQLQuery.Append("		   ON RFJU.JOVEM_ID = JV.ID_JOVEM            ");

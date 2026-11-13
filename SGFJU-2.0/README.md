@@ -71,7 +71,7 @@ Build de produção: `npm run build && npm run start`.
 | 5 actions POST sem `[FromBody]` | corrigido |
 
 ### Front (`web/`)
-Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jovens** (filtros encadeados, busca, paginação, exportar CSV, link do WhatsApp), **novo jovem**, **editar jovem**, **ficha do jovem** (com foto), **igrejas/blocos/regiões** e **usuários**.
+Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jovens** (filtros encadeados, busca, paginação, exportar CSV, link do WhatsApp), **consulta geral**, **novo jovem**, **editar jovem**, **ficha do jovem** (com foto), **igrejas/blocos/regiões** e **usuários**.
 
 ### Cadastro de jovem (`/jovens/novo`)
 - Formulário em **7 etapas**, com os mesmos campos do `RegistraJovem.aspx`. Perguntas que dependem de outra só aparecem quando fazem sentido (ex.: "quando se batizou?" só depois de "Sim").
@@ -80,6 +80,21 @@ Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jove
 - As opções (projetos, tribos, livros, habilidades...) foram extraídas do formulário antigo com os **mesmos ids do banco** (`web/src/lib/opcoes-cadastro.ts`).
 - A etapa **Testemunho** traz um aviso de dados sensíveis (LGPD). Saúde mental, automutilação e vícios são dados pessoais sensíveis; o ideal é restringir quem pode vê-los.
 - Testado ponta a ponta: navegador → Next → API → MySQL, incluindo idioma, habilidade, reunião, projeto, contato, batismo e foto gravados.
+
+### Consulta geral (`/consulta`)
+- Os mesmos filtros da tela antiga, organizados em grupos: quem e onde, na obra, vida espiritual, projetos/habilidades/idiomas, estudo e trabalho, redes, datas e dados sensíveis.
+- Pílulas de três estados (indiferente → Sim → Não), contador de filtros ativos, "Limpar" e exportação CSV.
+- Ao voltar da ficha de um jovem, a consulta e o resultado continuam lá, como na tela antiga.
+- Endpoint `POST /api/v2/jovens/consulta`: as habilidades vêm no próprio pedido (a antiga guardava na sessão), o mesmo jovem não se repete e o resultado é limitado a 5.000 linhas.
+- A tela **Jovens** passou a usar este endpoint. O antigo ignorava o campo "Nome" e deixava um usuário estadual pedir jovens de outro estado.
+
+**Problemas graves encontrados e corrigidos:**
+- **Injeção de SQL.** A consulta monta o SQL juntando o texto digitado (ex.: `NOME LIKE '%" + nome + "%'`). Um nome como `x' OR '1'='1` traria todos os jovens, e coisas piores seriam possíveis. Agora todo filtro passa por `SqlSeguro`: datas e telefones são validados, e textos têm aspas e barras escapadas. A proteção vale também para a rota antiga `api/Jovens/ConsultaGeral`.
+- **Filtros com `OR` sem parênteses.** Ao escolher mais de uma habilidade, projeto ou departamento, a consulta antiga gerava `... AND x OR y`, e o `OR` anulava os outros filtros, **inclusive o de estado** (um pastor estadual via jovens de outros estados). Agora cada grupo vai entre parênteses (`IN (...)`).
+- **Restrição por estado:** usuários que não são ADM sempre ficam limitados ao próprio estado, seja qual for o `IdEstado` enviado.
+- Campos Sim/Não vazios (`""`) eram rejeitados com erro 400. Agora valem como "não informado".
+
+> ⚠️ **Injeção de SQL em outras telas:** o mesmo padrão aparece em cerca de 90 pontos de 9 repositórios (`JovemRepositoryImpl`, `CoordenadorRepositoryImpl`, `EstadoRepositoryImpl`, `BuscaAvancadaTestemunhoRepositoryImpl`...). As rotas migradas até agora estão protegidas. Ao migrar cada tela restante, troque a concatenação por parâmetros (`MySqlCommand.Parameters`) ou passe os filtros pelo `SqlSeguro`. **Isso também afeta o site antigo em produção.**
 
 ### Edição de jovem (`/jovens/{id}/editar`)
 - Usa **o mesmo formulário** do cadastro (pasta `web/src/app/(app)/jovens/_formulario/`), já preenchido. Todas as etapas ficam acessíveis, e "Salvar alterações" aparece em todas.
@@ -118,7 +133,7 @@ As rotas da API já existem. Falta só a tela em React.
 
 - [x] Novo jovem (`RegistraJovem.aspx`)
 - [x] Altera jovem (`AlteraJovem.aspx`)
-- [ ] Consulta geral (`ConsultaGeral*.html`)
+- [x] Consulta geral (`ConsultaGeral*.html`)
 - [ ] Autorizações e dashboard de camisas
 - [ ] Árvore da Vida (dashboards, associar/desassociar, obreiros, acompanhamento)
 - [ ] Altar Jovem (nacional/estadual, levantados, relatório)

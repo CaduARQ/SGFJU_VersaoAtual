@@ -482,6 +482,9 @@ namespace SGFJU.Api.Controllers
                 if (usuarioLogado.PerfilUsuario.Code != codigoADM)
                     parametrosConsultaGeral.IdEstado = usuarioLogado.EstadoUsuario.Id;
 
+                // SGFJU 2.0: proteção contra injeção de SQL (a consulta concatena os filtros no SQL).
+                SqlSeguro.Sanitizar(parametrosConsultaGeral);
+
                 if (sessaoAtual["ParametrosHabilidadeConsultaGeral"] != null) {
                     var listaParametrosHabilidades = (sessaoAtual["ParametrosHabilidadeConsultaGeral"] as IList<HabilidadeProjetoNivelDTO>);
                     foreach (var habilidadeParametro in listaParametrosHabilidades){

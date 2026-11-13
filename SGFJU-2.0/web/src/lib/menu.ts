@@ -44,7 +44,7 @@ const consultasSecretaria: MenuGrupo = {
   icon: Search,
   itens: [
     { label: "Todos os jovens", href: "/jovens" },
-    emMigracao("Geral (parâmetros)", "ConsultaGeralParametros.html"),
+    { label: "Consulta geral", href: "/consulta" },
     emMigracao("Autorizações de camisas", "GerenciaCamisasFJUEstado.html"),
     emMigracao("Testemunho", "BuscaEspecializadaTestemunho.html"),
   ],
@@ -110,7 +110,7 @@ export function menuDoPerfil(codigoPerfil: number): MenuGrupo[] {
           icon: BarChart3,
           itens: [
             { label: "Todos os jovens", href: "/jovens" },
-            emMigracao("Geral", "ConsultaGeral.html"),
+            { label: "Consulta geral", href: "/consulta" },
             emMigracao("Altar Jovem", "GerenciaNacionalAltarJovem.html"),
             emMigracao("Jovens levantados no altar", "ListaJovensLevantadosAltar.html"),
           ],
@@ -128,7 +128,7 @@ export function menuDoPerfil(codigoPerfil: number): MenuGrupo[] {
           icon: Search,
           itens: [
             { label: "Todos os jovens", href: "/jovens" },
-            emMigracao("Geral", "ConsultaGeralEstadual.html"),
+            { label: "Consulta geral", href: "/consulta" },
             emMigracao("Autorizações de camisas", "GerenciaCamisasFJUEstado.html"),
             emMigracao("Testemunho", "BuscaEspecializadaTestemunho.html"),
           ],

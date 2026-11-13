@@ -43,6 +43,7 @@ builder.Services
         options.JsonSerializerOptions.PropertyNamingPolicy = null;
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
         options.JsonSerializerOptions.NumberHandling = JsonNumberHandling.AllowReadingFromString;
+        options.JsonSerializerOptions.Converters.Add(new CharJsonConverter());
     });
 
 builder.Services
