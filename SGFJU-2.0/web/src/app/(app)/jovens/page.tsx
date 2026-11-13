@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState, type FormEvent } from "react";
-import { Download, Search } from "lucide-react";
+import { Download, Search, UserPlus } from "lucide-react";
 import { api } from "@/lib/api";
 import type { JovemResumo, ParametroPesquisaJovens } from "@/lib/types";
 import { useAuth } from "@/components/auth-provider";
@@ -66,7 +66,15 @@ export default function Jovens() {
 
   return (
     <>
-      <PageHeader title="Jovens" subtitle="Pesquise por estrutura ou nome" />
+      <PageHeader
+        title="Jovens"
+        subtitle="Pesquise por estrutura ou nome"
+        actions={
+          <Link href="/jovens/novo" className="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white hover:bg-brand-strong">
+            <UserPlus className="size-4" /> Novo jovem
+          </Link>
+        }
+      />
       <Card>
         <form onSubmit={pesquisar} className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
           <FiltroEstrutura valor={filtro} onChange={setFiltro} />

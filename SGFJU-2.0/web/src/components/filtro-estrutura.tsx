@@ -10,7 +10,7 @@ export type FiltroValor = { idEstado: number; idBloco: number; idRegiao: number;
 type Opcao = { id: number; nome: string };
 
 /** Selects encadeados Estado → Bloco → Região → Igreja (o estado só aparece para o ADM). */
-export function FiltroEstrutura({ valor, onChange }: { valor: FiltroValor; onChange: (v: FiltroValor) => void }) {
+export function FiltroEstrutura({ valor, onChange, rotuloVazio = "Todos" }: { valor: FiltroValor; onChange: (v: FiltroValor) => void; rotuloVazio?: string }) {
   const { usuario } = useAuth();
   const estados = useLista<Opcao>(usuario.EhAdm ? "Relatorios/ListaTodosTotaisDosEstados" : null, (u) =>
     api.get<TotaisGerais[]>(u).then((l) => l.map((e) => ({ id: e.IdEstado, nome: e.NomeEstado })).sort((a, b) => a.nome.localeCompare(b.nome))),
@@ -35,7 +35,7 @@ export function FiltroEstrutura({ valor, onChange }: { valor: FiltroValor; onCha
   const sel = (label: string, opcoes: Opcao[], atual: number, set: (n: number) => void, disabled = false) => (
     <Field label={label}>
       <Select value={atual} disabled={disabled} onChange={(e) => set(Number(e.target.value))}>
-        <option value={0}>Todos</option>
+        <option value={0}>{rotuloVazio}</option>
         {opcoes.map((o) => (
           <option key={o.id} value={o.id}>
             {o.nome}

@@ -68,7 +68,7 @@ const gerenciar: MenuGrupo = {
 const voluntarios: MenuGrupo = {
   label: "Voluntários",
   icon: UserPlus,
-  itens: [emMigracao("Novo jovem", "RegistraJovem.aspx")],
+  itens: [{ label: "Novo jovem", href: "/jovens/novo" }],
 };
 
 const relatorios: MenuGrupo = {

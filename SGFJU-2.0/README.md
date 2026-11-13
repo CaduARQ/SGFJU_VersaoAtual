@@ -71,7 +71,21 @@ Build de produção: `npm run build && npm run start`.
 | 5 actions POST sem `[FromBody]` | corrigido |
 
 ### Front (`web/`)
-Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jovens** (filtros encadeados, busca, paginação, exportar CSV, link do WhatsApp), **ficha do jovem**, **igrejas/blocos/regiões** e **usuários**. O layout é responsivo e funciona no celular.
+Telas prontas: **login**, **dashboard nacional**, **dashboard estadual**, **jovens** (filtros encadeados, busca, paginação, exportar CSV, link do WhatsApp), **novo jovem**, **ficha do jovem**, **igrejas/blocos/regiões** e **usuários**.
+
+### Cadastro de jovem (`/jovens/novo`)
+- Formulário em **7 etapas**, com os mesmos campos do `RegistraJovem.aspx`. Perguntas que dependem de outra só aparecem quando fazem sentido (ex.: "quando se batizou?" só depois de "Sim").
+- **Rascunho automático** no navegador: se fechar a aba, dá para continuar depois. O botão "Salvar agora" grava com o que já foi preenchido.
+- Na API, o endpoint é `POST /api/v2/jovens`, e tudo vai num único JSON. A tela antiga guardava idiomas, habilidades e cursos na sessão do servidor; a nova não usa sessão. A foto e o documento vão em `POST /api/v2/jovens/{id}/arquivos`, com o mesmo padrão de nome de arquivo do sistema antigo e só imagens aceitas como foto.
+- As opções (projetos, tribos, livros, habilidades...) foram extraídas do formulário antigo com os **mesmos ids do banco** (`web/src/lib/opcoes-cadastro.ts`).
+- A etapa **Testemunho** traz um aviso de dados sensíveis (LGPD). Saúde mental, automutilação e vícios são dados pessoais sensíveis; o ideal é restringir quem pode vê-los.
+- Testado ponta a ponta: navegador → Next → API → MySQL, incluindo idioma, habilidade, reunião, projeto, contato, batismo e foto gravados.
+
+**Diferenças em relação à tela antiga (correções):**
+- Sim/Não sempre gravados como `S`/`N` maiúsculos. A tela antiga gravava `s` minúsculo em alguns campos (coordenador, líder de tribo/projeto...), e o código C# que compara com `'S'` não reconhecia.
+- "Trabalha atualmente?" tinha as duas opções com valor `S` na tela antiga. Agora "Não" grava `N`.
+- O mês de chegada à Universal era gravado com o ano. Corrigido.
+- Idiomas fora da lista agora são salvos (a tela antiga perdia esses dados). O layout é responsivo e funciona no celular.
 
 O menu segue os mesmos perfis do sistema antigo (`menu*.txt`). Itens ainda não migrados aparecem como **"em breve"** e mostram qual página antiga usar.
 
@@ -94,7 +108,8 @@ O menu segue os mesmos perfis do sistema antigo (`menu*.txt`). Itens ainda não 
 
 As rotas da API já existem. Falta só a tela em React.
 
-- [ ] Novo jovem / Altera jovem (`RegistraJovem.aspx`, `AlteraJovem.aspx`): o maior formulário. Usa a sessão para idiomas, habilidades e cursos
+- [x] Novo jovem (`RegistraJovem.aspx`)
+- [ ] Altera jovem (`AlteraJovem.aspx`): dá para reaproveitar as etapas do cadastro
 - [ ] Consulta geral (`ConsultaGeral*.html`)
 - [ ] Autorizações e dashboard de camisas
 - [ ] Árvore da Vida (dashboards, associar/desassociar, obreiros, acompanhamento)
